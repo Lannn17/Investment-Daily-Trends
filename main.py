@@ -1,0 +1,742 @@
+#!/usr/bin/env python3
+"""Investment Daily Trends — automated daily investment digest."""
+
+import os
+import json
+import re
+import math
+import time
+import datetime
+import calendar
+import smtplib
+import argparse
+import configparser
+from difflib import SequenceMatcher
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from types import SimpleNamespace
+
+import feedparser
+import requests
+import yfinance as yf
+import google.generativeai as genai
+from bs4 import BeautifulSoup
+from fake_useragent import UserAgent
+from jinja2 import Template
+from dotenv import load_dotenv
+
+load_dotenv('.env')
+
+# ── CLI args ──────────────────────────────────────────────────────────────────
+_ap = argparse.ArgumentParser()
+_ap.add_argument('--test',     action='store_true', help='Quick test: 2 articles/section, state not saved')
+_ap.add_argument('--fulltest', action='store_true', help='Full test: production count, state cleared after')
+_ap.add_argument('--edition',  choices=['morning', 'evening'], default=None)
+_args = _ap.parse_args()
+TEST_MODE     = _args.test
+FULLTEST_MODE = _args.fulltest
+
+# ── Config ────────────────────────────────────────────────────────────────────
+config = configparser.ConfigParser()
+config.read('config.ini')
+
+def get_cfg(sec, key, default=None):
+    val = config.get(sec, key, fallback=default)
+    return val.strip('"') if val else default
+
+BASE                   = get_cfg('cfg', 'base', 'docs/')
+SIMILARITY_THRESHOLD   = float(get_cfg('cfg', 'similarity_threshold',   '0.70'))
+INTRA_BATCH_THRESHOLD  = float(get_cfg('cfg', 'intra_batch_threshold',  '0.60'))
+KEYWORD_LENGTH         = int(get_cfg('cfg', 'keyword_length', '3'))
+SUMMARY_LENGTH         = int(get_cfg('cfg', 'summary_length', '150'))
+HOT_MARKET_THRESHOLD   = float(get_cfg('cfg', 'hot_market_threshold', '0.02'))
+MARKET_NEWS_MAX        = int(get_cfg('cfg', 'market_news_max_items', '5'))
+JAPAN_NEWS_MAX         = int(get_cfg('cfg', 'japan_news_max_items',  '3'))
+HOT_MARKET_NEWS_MAX    = int(get_cfg('cfg', 'hot_market_news_max_items', '2'))
+
+INDICES_TICKERS    = [t.strip() for t in get_cfg('indices',    'tickers', '').split(',') if t.strip()]
+INDICES_LABELS     = [l.strip() for l in get_cfg('indices',    'labels',  '').split(',') if l.strip()]
+COMMODITIES_TICKERS = [t.strip() for t in get_cfg('commodities', 'tickers', '').split(',') if t.strip()]
+COMMODITIES_LABELS  = [l.strip() for l in get_cfg('commodities', 'labels',  '').split(',') if l.strip()]
+FX_TICKERS         = [t.strip() for t in get_cfg('fx', 'tickers', '').split(',') if t.strip()]
+FX_LABELS          = [l.strip() for l in get_cfg('fx', 'labels',  '').split(',') if l.strip()]
+
+HOT_MARKET_ETFS    = [t.strip() for t in get_cfg('hot_markets', 'etfs',   '').split(',') if t.strip()]
+HOT_MARKET_LABELS  = [l.strip() for l in get_cfg('hot_markets', 'labels', '').split(',') if l.strip()]
+
+MARKET_NEWS_URLS   = [u.strip() for u in get_cfg('market_news', 'url', '').split(',') if u.strip()]
+JAPAN_NEWS_URLS    = [u.strip() for u in get_cfg('japan_news',  'url', '').split(',') if u.strip()]
+
+# ── Gemini setup ──────────────────────────────────────────────────────────────
+GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY')
+DEFAULT_MODEL  = os.environ.get('GEMINI_MODEL', 'gemini-3.1-flash-lite-preview')
+
+def _chain(*models):
+    return [m.strip() for m in models if m and m.strip()]
+
+SCORE_MODEL_CHAIN     = _chain(os.environ.get('SCORE_MODEL'),     DEFAULT_MODEL)
+TRANSLATE_MODEL_CHAIN = _chain(os.environ.get('TRANSLATE_MODEL'), DEFAULT_MODEL)
+SUMMARY_MODEL_CHAIN   = _chain(os.environ.get('SUMMARY_MODEL'),   DEFAULT_MODEL)
+WATCHLIST_MODEL_CHAIN = _chain(os.environ.get('WATCHLIST_MODEL'), DEFAULT_MODEL)
+
+if GEMINI_API_KEY:
+    genai.configure(api_key=GEMINI_API_KEY)
+
+print(f"[models] score={SCORE_MODEL_CHAIN} translate={TRANSLATE_MODEL_CHAIN} "
+      f"summary={SUMMARY_MODEL_CHAIN} watchlist={WATCHLIST_MODEL_CHAIN}")
+
+# ── Watchlist ─────────────────────────────────────────────────────────────────
+# Built-in display names; watchlist.json names field takes priority
+BUILTIN_NAMES = {
+    'IAU':    'iShares Gold Trust',
+    'NEM':    'Newmont Corporation',
+    'NVDA':   'NVIDIA',
+    'TSM':    'Taiwan Semiconductor',
+    'BRK-B':  'Berkshire Hathaway B',
+    'LMT':    'Lockheed Martin',
+    '7203.T': 'Toyota Motor',
+    '9984.T': 'SoftBank Group',
+    'INDA':   'iShares MSCI India ETF',
+}
+
+def load_watchlist():
+    try:
+        with open('watchlist.json', 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        tickers = data.get('tickers', [])
+        names   = {**BUILTIN_NAMES, **data.get('names', {})}
+        return tickers, names
+    except Exception as e:
+        print(f"Warning: could not load watchlist.json: {e}")
+        return [], BUILTIN_NAMES
+
+WATCHLIST_TICKERS, WATCHLIST_NAMES = load_watchlist()
+
+# ── Timezone & run type ───────────────────────────────────────────────────────
+JST = datetime.timezone(datetime.timedelta(hours=9))
+
+def get_run_type():
+    if _args.edition:
+        return _args.edition
+    hour = datetime.datetime.now(JST).hour
+    return 'morning' if hour < 14 else 'evening'
+
+# ── State persistence (news dedup) ────────────────────────────────────────────
+def load_last_run():
+    try:
+        with open(os.path.join(BASE, 'last_run.json'), 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        return set(data.get('links', [])), data.get('fingerprints', [])
+    except Exception:
+        return set(), []
+
+def save_last_run(links, fingerprints):
+    try:
+        with open(os.path.join(BASE, 'last_run.json'), 'w', encoding='utf-8') as f:
+            json.dump({'links': list(links), 'fingerprints': fingerprints},
+                      f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print(f"Warning: could not save last_run: {e}")
+
+def load_morning_bench():
+    try:
+        with open(os.path.join(BASE, 'morning_bench.json'), 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+def save_morning_bench(bench):
+    try:
+        with open(os.path.join(BASE, 'morning_bench.json'), 'w', encoding='utf-8') as f:
+            json.dump(bench, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print(f"Warning: could not save morning_bench: {e}")
+
+# ── Dedup helpers ─────────────────────────────────────────────────────────────
+def text_fingerprint(title, text):
+    return (title + ' ' + text[:400]).lower().strip()
+
+def is_duplicate(fp, seen_fps, threshold=None):
+    thr = threshold if threshold is not None else SIMILARITY_THRESHOLD
+    return any(SequenceMatcher(None, fp, s).ratio() >= thr for s in seen_fps)
+
+# ── Price formatting ──────────────────────────────────────────────────────────
+def format_price(price):
+    """Smart price formatter based on magnitude."""
+    if price is None or (isinstance(price, float) and math.isnan(price)):
+        return 'N/A'
+    if price >= 10000:
+        return f'{price:,.0f}'
+    elif price >= 1000:
+        return f'{price:,.2f}'
+    elif price >= 100:
+        return f'{price:.2f}'
+    elif price >= 10:
+        return f'{price:.3f}'
+    else:
+        return f'{price:.4f}'
+
+def price_css(change):
+    if change > 0:  return 'up'
+    if change < 0:  return 'down'
+    return 'flat'
+
+def price_arrow(change):
+    return '▲' if change >= 0 else '▼'
+
+# ── yfinance price fetch ──────────────────────────────────────────────────────
+def fetch_price_item(ticker, label):
+    """Fetch today + 5-day history for one ticker. Returns dict or None."""
+    try:
+        hist = yf.Ticker(ticker).history(period='8d', auto_adjust=True)
+        hist = hist[hist['Close'].notna()]
+        if len(hist) < 2:
+            print(f"  [price] Insufficient history for {ticker}")
+            return None
+
+        today = float(hist['Close'].iloc[-1])
+        prev  = float(hist['Close'].iloc[-2])
+        change     = today - prev
+        change_pct = change / prev if prev else 0.0
+
+        hist5       = hist['Close'].tail(5)
+        start5      = float(hist5.iloc[0])
+        end5        = float(hist5.iloc[-1])
+        change_5d   = (end5 - start5) / start5 if start5 else 0.0
+
+        return {
+            'ticker':          ticker,
+            'label':           label,
+            'price':           today,
+            'price_fmt':       format_price(today),
+            'change':          change,
+            'change_fmt':      format_price(abs(change)),
+            'change_pct':      change_pct,
+            'change_pct_fmt':  f'{change_pct * 100:+.2f}%',
+            'change_arrow':    price_arrow(change),
+            'css':             price_css(change),
+            'history':         [format_price(float(v)) for v in hist5.values],
+            'history_dates':   [d.strftime('%m/%d') for d in hist5.index],
+            'change_5d':       change_5d,
+            'change_5d_fmt':   f'{change_5d * 100:+.2f}%',
+            'css5d':           price_css(change_5d),
+        }
+    except Exception as e:
+        print(f"  [price] Failed for {ticker}: {e}")
+        return None
+
+def _placeholder(ticker, label):
+    return {
+        'ticker': ticker, 'label': label,
+        'price': None, 'price_fmt': 'N/A',
+        'change': 0, 'change_fmt': 'N/A',
+        'change_pct': 0, 'change_pct_fmt': 'N/A',
+        'change_arrow': '-', 'css': 'flat',
+        'history': [], 'history_dates': [],
+        'change_5d': 0, 'change_5d_fmt': 'N/A', 'css5d': 'flat',
+    }
+
+def fetch_price_list(tickers, labels):
+    items = []
+    for ticker, label in zip(tickers, labels):
+        item = fetch_price_item(ticker, label)
+        items.append(item if item else _placeholder(ticker, label))
+    return items
+
+# ── Hot market detection ──────────────────────────────────────────────────────
+def detect_hot_markets():
+    """Screen emerging market ETFs; return up to 3 with abs daily move >= threshold."""
+    hot = []
+    for etf, label in zip(HOT_MARKET_ETFS, HOT_MARKET_LABELS):
+        try:
+            hist = yf.Ticker(etf).history(period='3d', auto_adjust=True)
+            hist = hist[hist['Close'].notna()]
+            if len(hist) < 2:
+                continue
+            today = float(hist['Close'].iloc[-1])
+            prev  = float(hist['Close'].iloc[-2])
+            pct   = (today - prev) / prev if prev else 0.0
+            if abs(pct) >= HOT_MARKET_THRESHOLD:
+                print(f"  [hot_market] {label} ({etf}): {pct * 100:+.2f}%")
+                hot.append({'country': label, 'etf': etf, 'pct': pct, 'news': []})
+        except Exception as e:
+            print(f"  [hot_market] Check failed for {etf}: {e}")
+
+    hot.sort(key=lambda x: abs(x['pct']), reverse=True)
+    return hot[:3]
+
+def fetch_ticker_news(ticker, max_items=3):
+    """Fetch top news headlines for a ticker via yfinance."""
+    try:
+        raw = yf.Ticker(ticker).news or []
+        items = []
+        for n in raw[:max_items]:
+            title = n.get('title', '')
+            link  = n.get('link') or n.get('url', '')
+            if title and link:
+                items.append(SimpleNamespace(title=title, link=link, summary=None))
+        return items
+    except Exception as e:
+        print(f"  [ticker_news] Failed for {ticker}: {e}")
+        return []
+
+# ── RSS helpers ───────────────────────────────────────────────────────────────
+MIN_CONTENT_LENGTH = 80
+
+def fetch_feed(url):
+    try:
+        ua = UserAgent()
+        headers = {'User-Agent': ua.random.strip()}
+        resp = requests.get(url, headers=headers, timeout=20)
+        if resp.status_code == 200:
+            return feedparser.parse(resp.text)
+        print(f"  [rss] HTTP {resp.status_code} for {url}")
+    except Exception as e:
+        print(f"  [rss] Fetch failed ({url}): {e}")
+    return None
+
+def clean_html(html_content):
+    soup = BeautifulSoup(html_content, 'html.parser')
+    for tag in soup.find_all(['script', 'style', 'img', 'a', 'video', 'audio', 'iframe', 'input']):
+        tag.decompose()
+    return soup.get_text()
+
+def clean_summary(text):
+    if not text:
+        return text
+    lines = [l for l in text.splitlines()
+             if not any(p in l for p in ['Thought:', 'thought:', '```', '.txt text'])]
+    return '\n'.join(lines).strip().replace('\n', '<br>\n')
+
+# ── Gemini API wrappers ───────────────────────────────────────────────────────
+def chat_with_gemini(prompt, models=None, max_retries=2):
+    """Try each model in chain; on quota/rate error switch immediately; on other errors retry."""
+    if not GEMINI_API_KEY:
+        raise ValueError("GEMINI_API_KEY not set")
+    chain = models or [DEFAULT_MODEL]
+    for i, model_name in enumerate(chain):
+        for attempt in range(max_retries + 1):
+            try:
+                model    = genai.GenerativeModel(model_name)
+                response = model.generate_content(prompt)
+                if i > 0:
+                    print(f"  Fell back to model: {model_name}")
+                return response.text
+            except Exception as e:
+                err = str(e).lower()
+                if any(k in err for k in ('quota', 'rate', '429', 'resource_exhausted')):
+                    print(f"  Quota/rate limit on {model_name}, trying next model...")
+                    break
+                if attempt < max_retries:
+                    wait = 2 ** attempt
+                    print(f"  Gemini error on {model_name} (attempt {attempt + 1}): {e}, retry in {wait}s")
+                    time.sleep(wait)
+                else:
+                    print(f"  Failed on {model_name} after {max_retries + 1} attempts: {e}")
+                    if i == len(chain) - 1:
+                        raise
+                    break
+    raise RuntimeError("All Gemini models exhausted")
+
+def score_entries(titles, topic=None, models=None):
+    """Score a batch of news titles 1-10. Returns list of floats."""
+    if not titles:
+        return []
+    numbered = '\n'.join(f'{i + 1}. {t}' for i, t in enumerate(titles))
+    hint     = f'（板块主题：{topic}）' if topic else ''
+    prompt   = (
+        f'以下是{len(titles)}条财经新闻标题{hint}。'
+        f'请综合评估每条标题与板块主题的相关性及新闻重要性，评分1-10（10=极重要且高度相关）。'
+        f'只输出JSON：{{"scores": [分数1, 分数2, ...]}}，不要输出任何其他内容。\n\n{numbered}'
+    )
+    try:
+        raw   = chat_with_gemini(prompt, models=models or SCORE_MODEL_CHAIN)
+        match = re.search(r'\{.*\}', raw, re.DOTALL)
+        if match:
+            scores = json.loads(match.group()).get('scores', [])
+            if len(scores) == len(titles):
+                return [float(s) for s in scores]
+    except Exception as e:
+        print(f"  score_entries failed: {e}")
+    return [5.0] * len(titles)
+
+def translate_titles(titles, models=None):
+    """Translate a batch of titles to Chinese. Returns list or None on failure."""
+    if not titles:
+        return titles
+    numbered = '\n'.join(f'{i + 1}. {t}' for i, t in enumerate(titles))
+    prompt   = (
+        f'请将以下{len(titles)}条英文/日文财经新闻标题翻译成中文。'
+        f'必须严格输出JSON数组，恰好{len(titles)}个元素：{{"titles": ["翻译1", "翻译2", ...]}}，'
+        f'不要输出任何其他内容。\n\n{numbered}'
+    )
+    try:
+        raw   = chat_with_gemini(prompt, models=models or TRANSLATE_MODEL_CHAIN)
+        match = re.search(r'\{.*\}', raw, re.DOTALL)
+        if match:
+            translated = json.loads(match.group()).get('titles', [])
+            if len(translated) == len(titles):
+                return [str(t).strip() for t in translated]
+            elif translated:
+                result = list(titles)
+                for k, t in enumerate(translated[:len(titles)]):
+                    result[k] = str(t).strip()
+                print(f"  translate_titles: partial {len(translated)}/{len(titles)}")
+                return result
+    except Exception as e:
+        print(f"  translate_titles failed: {e}")
+    return None
+
+def ai_summary(text, models=None):
+    """Generate bilingual keywords + Chinese summary for a news article."""
+    prompt = (
+        f'{text}\n\n'
+        f'以上为财经新闻内容，请用中英双语生成摘要和关键词。'
+        f'严格按以下格式输出两行，不得包含任何其他内容：\n'
+        f'关键词：[提取{KEYWORD_LENGTH}个关键词，逗号分隔]\n'
+        f'总结：[用中文详细概括文章要点，字数不少于80字，最多{SUMMARY_LENGTH}字]\n\n'
+        f'只输出以上两行纯文本。禁止输出思考过程、Markdown语法或代码块。'
+    )
+    return clean_summary(chat_with_gemini(prompt, models=models or SUMMARY_MODEL_CHAIN))
+
+def analyze_watchlist(items, models=None):
+    """Single Gemini call to analyse all watchlist tickers. Returns dict keyed by ticker."""
+    if not items:
+        return {}
+
+    parts = []
+    for item in items:
+        part = (
+            f"\n【{item['ticker']}】{item.get('name', item['ticker'])}\n"
+            f"今日价格：{item['price_fmt']}，涨跌：{item['change_pct_fmt']}\n"
+        )
+        if item.get('news_titles'):
+            part += '相关新闻：\n' + '\n'.join(f'  - {t}' for t in item['news_titles'][:3]) + '\n'
+        parts.append(part)
+
+    ticker_list = json.dumps([i['ticker'] for i in items], ensure_ascii=False)
+    prompt = (
+        '以下是今日自选标的的价格表现和相关新闻：\n'
+        + ''.join(parts)
+        + '\n请对每个标的给出：\n'
+          '1. 今日走势简析（结合价格和新闻背景，50字以内，中文）\n'
+          '2. 近期展望（bullish/bearish/neutral 三选一，并附一句中文理由）\n\n'
+          '严格输出JSON，顺序与输入一致：\n'
+          '{"analyses": [{"ticker": "...", "today": "...", "outlook": "bullish|bearish|neutral", "outlook_reason": "..."}]}\n'
+          f'不要输出任何其他内容。ticker顺序：{ticker_list}'
+    )
+    try:
+        raw   = chat_with_gemini(prompt, models=models or WATCHLIST_MODEL_CHAIN)
+        match = re.search(r'\{.*\}', raw, re.DOTALL)
+        if match:
+            analyses = json.loads(match.group()).get('analyses', [])
+            return {a['ticker']: a for a in analyses if isinstance(a, dict)}
+    except Exception as e:
+        print(f"  analyze_watchlist failed: {e}")
+    return {}
+
+# ── News section processing ───────────────────────────────────────────────────
+def process_news_section(urls, max_items, section_name, topic,
+                         last_run_links, last_run_fps, current_run_fps, seen_links,
+                         run_type='morning', morning_bench=None):
+    """Fetch RSS, deduplicate, score, translate, summarise. Returns (entries, bench_items)."""
+    candidates = []
+
+    for url in urls:
+        feed = fetch_feed(url)
+        if not feed:
+            continue
+        for entry in feed.entries:
+            if len(candidates) >= max_items * 8:
+                break
+
+            link = getattr(entry, 'link', '')
+            if not link:
+                continue
+            if link in seen_links or link in last_run_links:
+                continue
+            if link in {c[0].link for c in candidates}:
+                continue
+
+            title = getattr(entry, 'title', None) or link[:80]
+
+            # Skip articles older than 24 hours
+            if hasattr(entry, 'published_parsed') and entry.published_parsed:
+                pub_ts = calendar.timegm(entry.published_parsed)
+                now_ts = int(datetime.datetime.now(datetime.timezone.utc).timestamp())
+                if now_ts - pub_ts > 86400:
+                    continue
+
+            # Extract article text
+            try:
+                article = entry.content[0].value
+            except Exception:
+                article = getattr(entry, 'description', title)
+            cleaned = clean_html(article or title)
+            if len(cleaned) < MIN_CONTENT_LENGTH:
+                cleaned = title
+
+            # Semantic dedup
+            fp = text_fingerprint(title, cleaned)
+            if is_duplicate(fp, last_run_fps) or is_duplicate(fp, current_run_fps):
+                continue
+
+            entry.title   = title
+            entry.article = cleaned
+            candidates.append((entry, fp, cleaned))
+
+    # Evening re-pool: inject morning bench candidates
+    if run_type == 'evening' and morning_bench:
+        bench_list  = morning_bench.get(section_name, [])
+        bench_links = {e.link for e, _, _ in candidates}
+        for item in bench_list:
+            if item['link'] in seen_links or item['link'] in last_run_links:
+                continue
+            if item['link'] in bench_links:
+                continue
+            fake = SimpleNamespace(title=item['title'], link=item['link'],
+                                   article=item['article'], summary=None)
+            candidates.append((fake, item['fp'], item['article']))
+            bench_links.add(item['link'])
+
+    if not candidates:
+        return [], []
+
+    # Score
+    if GEMINI_API_KEY and SCORE_MODEL_CHAIN:
+        scores = score_entries([e.title for e, _, _ in candidates], topic=topic)
+        order  = sorted(range(len(candidates)), key=lambda i: -scores[i])
+        time.sleep(3)
+    else:
+        order = list(range(len(candidates)))
+
+    # Intra-batch dedup
+    deduped, ibfps = [], []
+    for i in order:
+        _, fp, _ = candidates[i]
+        if not is_duplicate(fp, ibfps, threshold=INTRA_BATCH_THRESHOLD):
+            deduped.append(i)
+            ibfps.append(fp)
+    order = deduped
+
+    # Save bench (morning only: ranked-out candidates)
+    bench_items = []
+    if run_type == 'morning' and len(order) > max_items:
+        for i in order[max_items:]:
+            e, fp_val, art = candidates[i]
+            bench_items.append({
+                'link': e.link, 'title': e.title,
+                'article': art, 'fp': fp_val,
+                'published': getattr(e, 'published', ''),
+            })
+
+    order = order[:max_items]
+    if TEST_MODE and not FULLTEST_MODE:
+        order = order[:2]
+
+    # Translate titles
+    if GEMINI_API_KEY and TRANSLATE_MODEL_CHAIN and order:
+        raw_titles = [candidates[i][0].title for i in order]
+        translated = translate_titles(raw_titles)
+        if translated:
+            for rank, i in enumerate(order):
+                candidates[i][0].title = translated[rank]
+        time.sleep(3)
+
+    # Summarise
+    entries = []
+    for i in order:
+        entry, fp, cleaned = candidates[i]
+        if GEMINI_API_KEY and SUMMARY_MODEL_CHAIN:
+            try:
+                entry.summary = ai_summary(cleaned)
+                if not entry.summary or not entry.summary.strip():
+                    entry.summary = cleaned[:200]
+            except Exception as e:
+                entry.summary = cleaned[:200]
+                print(f"  Summarisation failed for [{entry.title}]: {e}")
+            time.sleep(3)
+        else:
+            entry.summary = None
+
+        entries.append(entry)
+        seen_links.add(entry.link)
+        current_run_fps.append(fp)
+
+    print(f"  [{section_name}] candidates: {len(candidates)} → selected: {len(entries)}")
+    return entries, bench_items
+
+# ── Bootstrap ─────────────────────────────────────────────────────────────────
+os.makedirs(BASE, exist_ok=True)
+
+run_type = get_run_type()
+now = datetime.datetime.now(JST)
+print(f"[run] type={run_type}  time={now.strftime('%Y-%m-%d %H:%M:%S')} JST")
+
+last_run_links, last_run_fps = load_last_run()
+morning_bench      = load_morning_bench() if run_type == 'evening' else {}
+seen_links         = set()
+current_run_fps    = []
+current_run_links  = set()
+morning_bench_data = {}
+
+# ── Step 1: Price data ────────────────────────────────────────────────────────
+print("[prices] Fetching indices...")
+indices_data = fetch_price_list(INDICES_TICKERS, INDICES_LABELS)
+
+print("[prices] Fetching commodities...")
+commodities_data = fetch_price_list(COMMODITIES_TICKERS, COMMODITIES_LABELS)
+
+print("[prices] Fetching FX...")
+fx_data = fetch_price_list(FX_TICKERS, FX_LABELS)
+
+# Derive shared hist_dates from first item that has them
+hist_dates = next(
+    (item['history_dates'] for item in indices_data + commodities_data if item.get('history_dates')),
+    []
+)
+
+# ── Step 2: Hot market detection ──────────────────────────────────────────────
+print("[hot_markets] Screening ETFs...")
+hot_markets = detect_hot_markets()
+if TEST_MODE:
+    hot_markets = hot_markets[:1]
+
+for hm in hot_markets:
+    hm['news'] = fetch_ticker_news(hm['etf'], max_items=HOT_MARKET_NEWS_MAX)
+    print(f"  [hot_markets] {hm['country']}: fetched {len(hm['news'])} news items")
+
+# ── Step 3: Watchlist prices + AI analysis ────────────────────────────────────
+print("[watchlist] Fetching prices...")
+watchlist_items = []
+for ticker in WATCHLIST_TICKERS:
+    label = WATCHLIST_NAMES.get(ticker, ticker)
+    item  = fetch_price_item(ticker, label)
+    if item is None:
+        item = _placeholder(ticker, label)
+    item['name']        = WATCHLIST_NAMES.get(ticker, ticker)
+    item['news_titles'] = [n.title for n in fetch_ticker_news(ticker, max_items=3)]
+    item['analysis']    = None
+    item['outlook']     = 'neutral'
+    item['outlook_css'] = 'neutral'
+    watchlist_items.append(item)
+
+if GEMINI_API_KEY and WATCHLIST_MODEL_CHAIN and watchlist_items:
+    print("[watchlist] Running combined AI analysis (1 API call)...")
+    analyses = analyze_watchlist(watchlist_items)
+    for item in watchlist_items:
+        a = analyses.get(item['ticker'])
+        if a:
+            item['outlook']     = a.get('outlook', 'neutral').lower()
+            if item['outlook'] not in ('bullish', 'bearish', 'neutral'):
+                item['outlook'] = 'neutral'
+            item['outlook_css'] = item['outlook']
+            today_text  = a.get('today', '')
+            reason_text = a.get('outlook_reason', '')
+            item['analysis'] = today_text + (f'\n{reason_text}' if reason_text else '')
+
+# ── Step 4: News sections ─────────────────────────────────────────────────────
+print("[news] Processing market_news...")
+market_news_entries, mn_bench = process_news_section(
+    MARKET_NEWS_URLS, MARKET_NEWS_MAX, 'market_news', '全球财经市场',
+    last_run_links, last_run_fps, current_run_fps, seen_links,
+    run_type=run_type, morning_bench=morning_bench,
+)
+for e in market_news_entries:
+    current_run_links.add(e.link)
+if run_type == 'morning' and mn_bench:
+    morning_bench_data['market_news'] = mn_bench
+
+print("[news] Processing japan_news...")
+japan_news_entries, jn_bench = process_news_section(
+    JAPAN_NEWS_URLS, JAPAN_NEWS_MAX, 'japan_news', '日本金融市场',
+    last_run_links, last_run_fps, current_run_fps, seen_links,
+    run_type=run_type, morning_bench=morning_bench,
+)
+for e in japan_news_entries:
+    current_run_links.add(e.link)
+if run_type == 'morning' and jn_bench:
+    morning_bench_data['japan_news'] = jn_bench
+
+# ── Step 5: Save state ────────────────────────────────────────────────────────
+if FULLTEST_MODE:
+    for path in [os.path.join(BASE, 'last_run.json'), os.path.join(BASE, 'morning_bench.json')]:
+        try:
+            os.remove(path)
+        except Exception:
+            pass
+    print("[FULLTEST] State cleared — next run starts fresh")
+elif TEST_MODE:
+    print("[TEST] State not saved — next run re-fetches same articles")
+else:
+    all_fps = [text_fingerprint(e.title, getattr(e, 'article', e.title))
+               for e in market_news_entries + japan_news_entries]
+    save_last_run(current_run_links, all_fps)
+    if run_type == 'morning':
+        save_morning_bench(morning_bench_data)
+
+# ── Step 6: Render daily.html ─────────────────────────────────────────────────
+edition = 'Morning Brief' if run_type == 'morning' else 'Evening Brief'
+if FULLTEST_MODE:
+    edition = f'[FULLTEST] {edition}'
+elif TEST_MODE:
+    edition = '[TEST] Daily Brief'
+
+daily_html_path = os.path.join(BASE, 'daily.html')
+with open(daily_html_path, 'w', encoding='utf-8') as f:
+    tmpl = Template(open('daily_template.html', encoding='utf-8').read())
+    html = tmpl.render(
+        edition=edition,
+        update_date=now.strftime('%Y-%m-%d'),
+        update_time=now.strftime('%Y-%m-%d %H:%M:%S'),
+        indices=indices_data,
+        commodities=commodities_data,
+        fx=fx_data,
+        hist_dates=hist_dates,
+        watchlist=watchlist_items,
+        market_news=market_news_entries,
+        japan_news=japan_news_entries,
+        hot_markets=hot_markets,
+    )
+    f.write(html)
+print(f"[output] daily.html → {daily_html_path}")
+
+# ── Step 7: Send email ────────────────────────────────────────────────────────
+def send_daily_email():
+    smtp_host = os.environ.get('SMTP_HOST')
+    smtp_port = int(os.environ.get('SMTP_PORT') or '587')
+    smtp_user = os.environ.get('SMTP_USER')
+    smtp_pass = os.environ.get('SMTP_PASS')
+    recipient = os.environ.get('RECIPIENT_EMAIL')
+
+    if not all([smtp_host, smtp_user, smtp_pass, recipient]):
+        print("[email] Not configured — set SMTP_HOST, SMTP_USER, SMTP_PASS, RECIPIENT_EMAIL.")
+        return
+
+    with open(daily_html_path, 'r', encoding='utf-8') as f:
+        html_content = f.read()
+
+    if FULLTEST_MODE:
+        subject = f'[FULLTEST] {edition} {now.strftime("%Y-%m-%d")}'
+    elif TEST_MODE:
+        subject = f'[TEST] Daily Brief {now.strftime("%Y-%m-%d %H:%M")}'
+    else:
+        subject = f'{edition} {now.strftime("%Y-%m-%d")}'
+
+    msg            = MIMEMultipart('alternative')
+    msg['Subject'] = subject
+    msg['From']    = smtp_user
+    msg['To']      = recipient
+    msg.attach(MIMEText(html_content, 'html'))
+
+    try:
+        with smtplib.SMTP(smtp_host, smtp_port) as server:
+            server.ehlo()
+            server.starttls()
+            server.login(smtp_user, smtp_pass)
+            server.sendmail(smtp_user, recipient, msg.as_string())
+        print(f"[email] Digest sent to {recipient}")
+    except Exception as e:
+        print(f"[email] Failed to send: {e}")
+
+send_daily_email()

@@ -1,0 +1,9 @@
+feedparser
+requests
+yfinance
+google-generativeai
+jinja2
+beautifulsoup4
+lxml
+fake-useragent
+python-dotenv

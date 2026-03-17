@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>{{ edition }} — {{ update_date }}</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f0f2f5; color: #1a1a2e; }
+
+    /* ── Header ── */
+    header { background: linear-gradient(135deg, #0f3460 0%, #16213e 100%); color: #fff; padding: 24px 32px 18px; text-align: center; }
+    header h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: 0.04em; margin-bottom: 6px; }
+    .header-sub { font-size: 0.82rem; color: #8ab4f8; }
+
+    /* ── Block labels ── */
+    .block-label { background: #1a1a2e; color: #8ab4f8; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 7px 32px; }
+
+    /* ── Price Dashboard ── */
+    .price-wrap { background: #fff; padding: 20px 24px 24px; }
+
+    .tab-bar { display: flex; gap: 0; margin-bottom: 16px; border-bottom: 2px solid #e0e4ea; }
+    .tab-btn { padding: 7px 20px; font-size: 0.82rem; font-weight: 600; cursor: pointer; border: none; background: none; color: #888; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: color .15s; }
+    .tab-btn.active { color: #0f3460; border-bottom-color: #0f3460; }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
+    .price-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; margin-bottom: 20px; }
+    .price-card { border: 1px solid #e8eaed; border-radius: 8px; padding: 12px 16px; background: #fafbfc; }
+    .price-card-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; }
+    .price-ticker { font-size: 0.78rem; font-weight: 700; color: #555; letter-spacing: 0.04em; }
+    .price-label { font-size: 0.72rem; color: #999; }
+    .price-value { font-size: 1.25rem; font-weight: 700; color: #1a1a2e; }
+    .price-change { font-size: 0.82rem; font-weight: 600; margin-top: 2px; }
+    .up   { color: #1a9e5a; }
+    .down { color: #d32f2f; }
+    .flat { color: #888; }
+
+    .section-title { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #0f3460; margin: 20px 0 10px; padding-bottom: 4px; border-bottom: 1px solid #e0e4ea; }
+
+    /* 5-day table */
+    .hist-table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+    .hist-table th { background: #f0f2f5; color: #555; font-weight: 600; text-align: right; padding: 6px 10px; }
+    .hist-table th:first-child { text-align: left; }
+    .hist-table td { padding: 6px 10px; border-bottom: 1px solid #f0f2f5; text-align: right; }
+    .hist-table td:first-child { text-align: left; font-weight: 600; }
+    .hist-table tr:last-child td { border-bottom: none; }
+
+    /* ── Watchlist ── */
+    .watchlist-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+    .wl-card { border: 1px solid #e8eaed; border-radius: 8px; padding: 14px 16px; background: #fafbfc; }
+    .wl-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+    .wl-ticker { font-size: 0.9rem; font-weight: 700; color: #0f3460; }
+    .wl-name   { font-size: 0.7rem; color: #999; margin-top: 2px; }
+    .wl-price  { text-align: right; }
+    .wl-price-val  { font-size: 1.1rem; font-weight: 700; }
+    .wl-analysis { font-size: 0.78rem; color: #444; line-height: 1.55; margin-top: 8px; padding-top: 8px; border-top: 1px solid #eee; white-space: pre-line; }
+    .wl-outlook { display: inline-block; margin-top: 6px; padding: 2px 8px; border-radius: 3px; font-size: 0.7rem; font-weight: 700; }
+    .outlook-bullish  { background: #e6f4ea; color: #1a9e5a; }
+    .outlook-bearish  { background: #fce8e6; color: #d32f2f; }
+    .outlook-neutral  { background: #f0f2f5; color: #555; }
+
+    /* ── News Block ── */
+    .news-wrap { background: #fff; margin-top: 2px; padding: 20px 24px 24px; }
+    .news-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+    @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } }
+
+    .news-section { border-right: 1px solid #e8eaed; border-bottom: 1px solid #e8eaed; }
+    .news-section:nth-child(2n) { border-right: none; }
+    .news-section-header { padding: 16px 20px; color: #fff; }
+    .news-section-header h2 { font-size: 1rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 3px; }
+    .news-section-header .count { font-size: 0.72rem; opacity: 0.8; }
+
+    .market-news-hdr  { background: #1565c0; }
+    .japan-news-hdr   { background: #6a1b9a; }
+    .hot-market-hdr   { background: #e65100; }
+
+    .articles { background: #fff; }
+    .article { padding: 13px 18px; border-bottom: 1px solid #f0f2f5; }
+    .article:last-child { border-bottom: none; }
+    .article-title { font-size: 0.88rem; font-weight: 600; line-height: 1.4; margin-bottom: 5px; }
+    .article-title a { color: #1a1a2e; text-decoration: none; }
+    .article-title a:hover { color: #1565c0; text-decoration: underline; }
+    .article-meta { font-size: 0.7rem; color: #999; margin-bottom: 5px; }
+    .article-summary { font-size: 0.8rem; color: #444; line-height: 1.6; white-space: pre-line; }
+    .empty { padding: 28px; color: #aaa; font-size: 0.82rem; text-align: center; }
+
+    /* Hot market badge */
+    .hot-badge { display: inline-block; padding: 1px 7px; border-radius: 3px; font-size: 0.68rem; font-weight: 700; margin-right: 6px; }
+    .hot-up   { background: #e6f4ea; color: #1a9e5a; }
+    .hot-down { background: #fce8e6; color: #d32f2f; }
+
+    footer { text-align: center; padding: 14px; font-size: 0.75rem; color: #aaa; border-top: 1px solid #e8eaed; background: #fff; margin-top: 2px; }
+
+    @media (max-width: 600px) {
+      .price-grid { grid-template-columns: 1fr 1fr; }
+      .watchlist-grid { grid-template-columns: 1fr; }
+      header { padding: 18px 16px 14px; }
+      .price-wrap, .news-wrap { padding: 14px 14px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>{{ edition }}</h1>
+  <span class="header-sub">{{ update_date }} &nbsp;·&nbsp; {{ update_time }} JST</span>
+</header>
+
+<!-- ═══════════════════════════════════════════════
+     BLOCK 1: PRICE DASHBOARD
+═══════════════════════════════════════════════ -->
+<div class="block-label">▸ Block 1 &nbsp; Price Dashboard</div>
+<div class="price-wrap">
+
+  <!-- Tab bar (web version only — email strips JS) -->
+  <div class="tab-bar" id="tabBar">
+    <button class="tab-btn active" onclick="switchTab('today')">Today</button>
+    <button class="tab-btn"       onclick="switchTab('fiveday')">5-Day</button>
+  </div>
+
+  <!-- ── TODAY TAB ── -->
+  <div class="tab-panel active" id="tab-today">
+
+    <div class="section-title">Global Indices</div>
+    <div class="price-grid">
+      {% for item in indices %}
+      <div class="price-card">
+        <div class="price-card-header">
+          <span class="price-ticker">{{ item.ticker }}</span>
+          <span class="price-label">{{ item.label }}</span>
+        </div>
+        <div class="price-value">{{ item.price_fmt }}</div>
+        <div class="price-change {{ item.css }}">
+          {{ item.change_arrow }} {{ item.change_fmt }} &nbsp;({{ item.change_pct_fmt }})
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="section-title">Commodities</div>
+    <div class="price-grid">
+      {% for item in commodities %}
+      <div class="price-card">
+        <div class="price-card-header">
+          <span class="price-ticker">{{ item.ticker }}</span>
+          <span class="price-label">{{ item.label }}</span>
+        </div>
+        <div class="price-value">{{ item.price_fmt }}</div>
+        <div class="price-change {{ item.css }}">
+          {{ item.change_arrow }} {{ item.change_fmt }} &nbsp;({{ item.change_pct_fmt }})
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="section-title">Foreign Exchange</div>
+    <div class="price-grid">
+      {% for item in fx %}
+      <div class="price-card">
+        <div class="price-card-header">
+          <span class="price-ticker">{{ item.ticker }}</span>
+          <span class="price-label">{{ item.label }}</span>
+        </div>
+        <div class="price-value">{{ item.price_fmt }}</div>
+        <div class="price-change {{ item.css }}">
+          {{ item.change_arrow }} {{ item.change_fmt }} &nbsp;({{ item.change_pct_fmt }})
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div><!-- /tab-today -->
+
+  <!-- ── 5-DAY TAB ── -->
+  <div class="tab-panel" id="tab-fiveday">
+
+    <div class="section-title">Global Indices — 5-Day Close</div>
+    <table class="hist-table">
+      <thead>
+        <tr>
+          <th>Ticker</th>
+          {% for d in hist_dates %}<th>{{ d }}</th>{% endfor %}
+          <th>5D Chg</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in indices %}
+        <tr>
+          <td>{{ item.label }}</td>
+          {% for v in item.history %}<td>{{ v }}</td>{% endfor %}
+          <td class="{{ item.css5d }}">{{ item.change_5d_fmt }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <div class="section-title" style="margin-top:20px;">Commodities — 5-Day Close</div>
+    <table class="hist-table">
+      <thead>
+        <tr>
+          <th>Ticker</th>
+          {% for d in hist_dates %}<th>{{ d }}</th>{% endfor %}
+          <th>5D Chg</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in commodities %}
+        <tr>
+          <td>{{ item.label }}</td>
+          {% for v in item.history %}<td>{{ v }}</td>{% endfor %}
+          <td class="{{ item.css5d }}">{{ item.change_5d_fmt }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+  </div><!-- /tab-fiveday -->
+
+  <!-- ── WATCHLIST ── -->
+  <div class="section-title" style="margin-top:24px;">Watchlist</div>
+  <div class="watchlist-grid">
+    {% for item in watchlist %}
+    <div class="wl-card">
+      <div class="wl-header">
+        <div>
+          <div class="wl-ticker">{{ item.ticker }}</div>
+          <div class="wl-name">{{ item.name }}</div>
+        </div>
+        <div class="wl-price">
+          <div class="wl-price-val {{ item.css }}">{{ item.price_fmt }}</div>
+          <div class="price-change {{ item.css }}">{{ item.change_arrow }} {{ item.change_pct_fmt }}</div>
+        </div>
+      </div>
+      {% if item.analysis %}
+      <div class="wl-analysis">{{ item.analysis }}</div>
+      {% endif %}
+      {% if item.outlook %}
+      <span class="wl-outlook outlook-{{ item.outlook_css }}">{{ item.outlook }}</span>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+
+</div><!-- /price-wrap -->
+
+<!-- ═══════════════════════════════════════════════
+     BLOCK 2: MARKET NEWS
+═══════════════════════════════════════════════ -->
+<div class="block-label">▸ Block 2 &nbsp; Market News</div>
+<div class="news-wrap">
+  <div class="news-grid">
+
+    <!-- Global Market News -->
+    <div class="news-section">
+      <div class="news-section-header market-news-hdr">
+        <h2>Global Markets</h2>
+        <span class="count">{{ market_news | length }} articles</span>
+      </div>
+      <div class="articles">
+        {% if market_news %}
+          {% for entry in market_news %}
+          <div class="article">
+            <div class="article-title"><a href="{{ entry.link }}" target="_blank" rel="noopener">{{ entry.title }}</a></div>
+            {% if entry.summary %}
+            <div class="article-summary">{{ entry.summary | safe }}</div>
+            {% endif %}
+          </div>
+          {% endfor %}
+        {% else %}
+          <div class="empty">No articles available.</div>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Japan News -->
+    <div class="news-section">
+      <div class="news-section-header japan-news-hdr">
+        <h2>Japan Markets</h2>
+        <span class="count">{{ japan_news | length }} articles</span>
+      </div>
+      <div class="articles">
+        {% if japan_news %}
+          {% for entry in japan_news %}
+          <div class="article">
+            <div class="article-title"><a href="{{ entry.link }}" target="_blank" rel="noopener">{{ entry.title }}</a></div>
+            {% if entry.summary %}
+            <div class="article-summary">{{ entry.summary | safe }}</div>
+            {% endif %}
+          </div>
+          {% endfor %}
+        {% else %}
+          <div class="empty">No articles available.</div>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Hot Markets (spans full width if present) -->
+    {% if hot_markets %}
+    <div class="news-section" style="grid-column: 1 / -1;">
+      <div class="news-section-header hot-market-hdr">
+        <h2>Hot Markets Today</h2>
+        <span class="count">{{ hot_markets | length }} market(s) triggered ±2%</span>
+      </div>
+      <div class="articles">
+        {% for hm in hot_markets %}
+        <div class="article">
+          <div class="article-title">
+            <span class="hot-badge {{ 'hot-up' if hm.pct >= 0 else 'hot-down' }}">
+              {{ hm.country }} {{ '+' if hm.pct >= 0 else '' }}{{ "%.2f"|format(hm.pct * 100) }}%
+            </span>
+            {{ hm.etf }}
+          </div>
+          {% for n in hm.news %}
+          <div class="article" style="padding-left:24px; border-left: 3px solid #e65100; margin:8px 0;">
+            <div class="article-title"><a href="{{ n.link }}" target="_blank" rel="noopener">{{ n.title }}</a></div>
+            {% if n.summary %}
+            <div class="article-summary">{{ n.summary | safe }}</div>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+  </div><!-- /news-grid -->
+</div><!-- /news-wrap -->
+
+<footer>
+  Investment Daily Trends &nbsp;·&nbsp; {{ update_time }} JST &nbsp;·&nbsp;
+  Prices via Yahoo Finance (15-min delay intraday, exact at close)
+</footer>
+
+<script>
+function switchTab(name) {
+  document.querySelectorAll('.tab-panel').forEach(function(p){ p.classList.remove('active'); });
+  document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
+  document.getElementById('tab-' + name).classList.add('active');
+  var btns = document.querySelectorAll('.tab-btn');
+  btns[name === 'today' ? 0 : 1].classList.add('active');
+}
+</script>
+
+</body>
+</html>
