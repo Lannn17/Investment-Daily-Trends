@@ -25,6 +25,7 @@ from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 from jinja2 import Template
 from dotenv import load_dotenv
+import pandas as pd
 
 load_dotenv('.env')
 
@@ -32,10 +33,12 @@ load_dotenv('.env')
 _ap = argparse.ArgumentParser()
 _ap.add_argument('--test',     action='store_true', help='Quick test: 2 articles/section, state not saved')
 _ap.add_argument('--fulltest', action='store_true', help='Full test: production count, state cleared after')
+_ap.add_argument('--uitest',   action='store_true', help='UI test: skip all API/data calls, render from cache only')
 _ap.add_argument('--edition',  choices=['morning', 'evening'], default=None)
 _args = _ap.parse_args()
 TEST_MODE     = _args.test
 FULLTEST_MODE = _args.fulltest
+UITEST_MODE   = _args.uitest
 
 # ── Config ────────────────────────────────────────────────────────────────────
 config = configparser.ConfigParser()
@@ -112,6 +115,17 @@ def load_watchlist():
 
 WATCHLIST_TICKERS, WATCHLIST_NAMES = load_watchlist()
 
+# ── Sector universe ───────────────────────────────────────────────────────────
+def load_sector_universe():
+    try:
+        with open('sector_universe.json', 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception as e:
+        print(f"Warning: could not load sector_universe.json: {e}")
+        return {'sectors': []}
+
+SECTOR_UNIVERSE = load_sector_universe()
+
 # ── Timezone & run type ───────────────────────────────────────────────────────
 JST = datetime.timezone(datetime.timedelta(hours=9))
 
@@ -151,6 +165,40 @@ def save_morning_bench(bench):
             json.dump(bench, f, ensure_ascii=False, indent=2)
     except Exception as e:
         print(f"Warning: could not save morning_bench: {e}")
+
+def _entry_to_dict(e):
+    """Convert SimpleNamespace news entry to plain dict for JSON serialisation."""
+    return e.__dict__ if hasattr(e, '__dict__') else dict(e)
+
+def save_render_cache(ctx):
+    """Save render context to JSON so --uitest can skip all API calls."""
+    try:
+        cache = {}
+        for key, val in ctx.items():
+            if key in ('market_news', 'japan_news'):
+                cache[key] = [_entry_to_dict(e) for e in val]
+            elif key == 'hot_markets':
+                cache[key] = [
+                    {**{k: v for k, v in hm.items() if k != 'news'},
+                     'news': [_entry_to_dict(n) for n in hm.get('news', [])]}
+                    for hm in val
+                ]
+            else:
+                cache[key] = val
+        with open(os.path.join(BASE, 'render_cache.json'), 'w', encoding='utf-8') as f:
+            json.dump(cache, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print(f"Warning: could not save render_cache: {e}")
+
+def load_render_cache():
+    """Load render context from JSON cache for --uitest mode."""
+    with open(os.path.join(BASE, 'render_cache.json'), 'r', encoding='utf-8') as f:
+        cache = json.load(f)
+    for key in ('market_news', 'japan_news'):
+        cache[key] = [SimpleNamespace(**d) for d in cache.get(key, [])]
+    for hm in cache.get('hot_markets', []):
+        hm['news'] = [SimpleNamespace(**n) for n in hm.get('news', [])]
+    return cache
 
 # ── Dedup helpers ─────────────────────────────────────────────────────────────
 def text_fingerprint(title, text):
@@ -248,26 +296,106 @@ def fetch_price_list(tickers, labels):
     return items
 
 # ── Hot market detection ──────────────────────────────────────────────────────
-def detect_hot_markets():
-    """Screen emerging market ETFs; return up to 3 with abs daily move >= threshold."""
-    hot = []
-    for etf, label in zip(HOT_MARKET_ETFS, HOT_MARKET_LABELS):
-        try:
-            hist = yf.Ticker(etf).history(period='3d', auto_adjust=True)
-            hist = hist[hist['Close'].notna()]
-            if len(hist) < 2:
+def batch_price_data(tickers):
+    """Batch download daily price and % change for a list of tickers.
+    Returns dict: ticker -> {price, price_fmt, pct, change_pct_fmt, change_arrow, css, url}
+    """
+    if not tickers:
+        return {}
+    try:
+        raw = yf.download(list(tickers), period='2d', auto_adjust=True,
+                          progress=False, threads=False)
+        if raw.empty:
+            return {}
+        if isinstance(raw.columns, pd.MultiIndex):
+            closes = raw['Close']
+        else:
+            t = tickers[0] if len(tickers) == 1 else None
+            if t:
+                closes = pd.DataFrame({t: raw['Close']})
+            else:
+                return {}
+        result = {}
+        for ticker in tickers:
+            if ticker not in closes.columns:
                 continue
-            today = float(hist['Close'].iloc[-1])
-            prev  = float(hist['Close'].iloc[-2])
+            col = closes[ticker].dropna()
+            if len(col) < 2:
+                continue
+            today = float(col.iloc[-1])
+            prev  = float(col.iloc[-2])
             pct   = (today - prev) / prev if prev else 0.0
-            if abs(pct) >= HOT_MARKET_THRESHOLD:
-                print(f"  [hot_market] {label} ({etf}): {pct * 100:+.2f}%")
-                hot.append({'country': label, 'etf': etf, 'pct': pct, 'news': []})
-        except Exception as e:
-            print(f"  [hot_market] Check failed for {etf}: {e}")
+            result[ticker] = {
+                'price':          today,
+                'price_fmt':      format_price(today),
+                'pct':            pct,
+                'change_pct_fmt': f'{pct * 100:+.2f}%',
+                'change_arrow':   price_arrow(pct),
+                'css':            price_css(pct),
+                'url':            ticker_url(ticker),
+            }
+        return result
+    except Exception as e:
+        print(f"  [batch_price_data] Failed: {e}")
+        return {}
 
-    hot.sort(key=lambda x: abs(x['pct']), reverse=True)
-    return hot[:3]
+
+def detect_hot_sectors():
+    """Two-stage hot sector detection using sector_universe.json.
+    Stage 1: one batch download of all sector ETFs -> top movers above threshold.
+    Stage 2: for each triggered sector, batch download constituents -> top 3 stocks.
+    """
+    sectors = SECTOR_UNIVERSE.get('sectors', [])
+    if not sectors:
+        return []
+
+    # Stage 1: one call for all sector ETFs
+    all_etfs = [s['etf'] for s in sectors]
+    print(f"  [hot_sectors] Stage 1: screening {len(all_etfs)} sector ETFs...")
+    etf_data = batch_price_data(all_etfs)
+
+    sorted_etfs = sorted(etf_data.items(), key=lambda x: abs(x[1]['pct']), reverse=True)
+    triggered = [(etf, d) for etf, d in sorted_etfs
+                 if abs(d['pct']) >= HOT_MARKET_THRESHOLD][:3]
+
+    if not triggered:
+        print("  [hot_sectors] No sectors above threshold")
+        return []
+
+    sector_map = {s['etf']: s for s in sectors}
+    hot = []
+
+    for etf, price_data in triggered:
+        info  = sector_map.get(etf, {})
+        label = info.get('label', etf)
+        print(f"  [hot_sectors] Triggered: {label} ({etf}) {price_data['change_pct_fmt']}")
+
+        hm = {
+            'country':             label,
+            'label':               label,
+            'etf':                 etf,
+            'etf_source':          info.get('source', ''),
+            'pct':                 price_data['pct'],
+            'url':                 ticker_url(etf),
+            'price_fmt':           price_data['price_fmt'],
+            'change_pct_fmt':      price_data['change_pct_fmt'],
+            'constituents_source': info.get('constituents_source', ''),
+            'top_movers':          [],
+            'news':                [],
+        }
+
+        # Stage 2: top movers within sector
+        constituents = info.get('constituents', [])
+        if constituents:
+            print(f"  [hot_sectors] Stage 2: screening {len(constituents)} constituents...")
+            const_data = batch_price_data(constituents)
+            sorted_c = sorted(const_data.items(),
+                              key=lambda x: abs(x[1]['pct']), reverse=True)[:3]
+            hm['top_movers'] = [{'ticker': t, **d} for t, d in sorted_c]
+
+        hot.append(hm)
+
+    return hot
 
 def fetch_ticker_news(ticker, max_items=3):
     """Fetch top news headlines for a ticker via yfinance."""
@@ -397,11 +525,11 @@ def ai_summary(text, models=None):
     """Generate bilingual keywords + Chinese summary for a news article."""
     prompt = (
         f'{text}\n\n'
-        f'以上为财经新闻内容，请用中英双语生成摘要和关键词。'
+        f'以上为财经新闻内容，请用中文生成摘要和关键词。'
         f'严格按以下格式输出两行，不得包含任何其他内容：\n'
         f'关键词：[提取{KEYWORD_LENGTH}个关键词，逗号分隔]\n'
         f'总结：[用中文详细概括文章要点，字数不少于80字，最多{SUMMARY_LENGTH}字]\n\n'
-        f'只输出以上两行纯文本。禁止输出思考过程、Markdown语法或代码块。'
+        f'只输出以上两行纯文本，全部使用中文。禁止输出英文、思考过程、Markdown语法或代码块。'
     )
     return clean_summary(chat_with_gemini(prompt, models=models or SUMMARY_MODEL_CHAIN))
 
@@ -577,160 +705,198 @@ os.makedirs(BASE, exist_ok=True)
 
 run_type = get_run_type()
 now = datetime.datetime.now(JST)
-print(f"[run] type={run_type}  time={now.strftime('%Y-%m-%d %H:%M:%S')} JST")
 
-last_run_links, last_run_fps = load_last_run()
-morning_bench      = load_morning_bench() if run_type == 'evening' else {}
-seen_links         = set()
-current_run_fps    = []
-current_run_links  = set()
-morning_bench_data = {}
+if UITEST_MODE:
+    # ── UI Test: load cache, skip all network/AI calls ──────────────────────
+    print(f"[uitest] time={now.strftime('%Y-%m-%d %H:%M:%S')} JST - loading render cache, no API calls")
+    _c = load_render_cache()
+    indices_data        = _c['indices']
+    commodities_data    = _c['commodities']
+    fx_data             = _c['fx']
+    hist_dates          = _c.get('hist_dates', [])
+    hot_markets         = _c['hot_markets']
+    watchlist_items     = _c['watchlist']
+    market_news_entries = _c['market_news']
+    japan_news_entries  = _c['japan_news']
 
-# ── Step 1: Price data ────────────────────────────────────────────────────────
-print("[prices] Fetching indices...")
-indices_data = fetch_price_list(INDICES_TICKERS, INDICES_LABELS)
+else:
+    print(f"[run] type={run_type}  time={now.strftime('%Y-%m-%d %H:%M:%S')} JST")
 
-print("[prices] Fetching commodities...")
-commodities_data = fetch_price_list(COMMODITIES_TICKERS, COMMODITIES_LABELS)
+    last_run_links, last_run_fps = load_last_run()
+    morning_bench      = load_morning_bench() if run_type == 'evening' else {}
+    seen_links         = set()
+    current_run_fps    = []
+    current_run_links  = set()
+    morning_bench_data = {}
 
-print("[prices] Fetching FX...")
-fx_data = fetch_price_list(FX_TICKERS, FX_LABELS)
+    # ── Step 1: Price data ────────────────────────────────────────────────────
+    print("[prices] Fetching indices...")
+    indices_data = fetch_price_list(INDICES_TICKERS, INDICES_LABELS)
 
-# Derive shared hist_dates from first item that has them
-hist_dates = next(
-    (item['history_dates'] for item in indices_data + commodities_data if item.get('history_dates')),
-    []
-)
+    print("[prices] Fetching commodities...")
+    commodities_data = fetch_price_list(COMMODITIES_TICKERS, COMMODITIES_LABELS)
 
-# ── Step 2: Hot market detection ──────────────────────────────────────────────
-print("[hot_markets] Screening ETFs...")
-hot_markets = detect_hot_markets()
-if TEST_MODE:
-    hot_markets = hot_markets[:1]
+    print("[prices] Fetching FX...")
+    fx_data = fetch_price_list(FX_TICKERS, FX_LABELS)
 
-for hm in hot_markets:
-    hm['news'] = fetch_ticker_news(hm['etf'], max_items=HOT_MARKET_NEWS_MAX)
-    print(f"  [hot_markets] {hm['country']}: fetched {len(hm['news'])} news items")
+    hist_dates = next(
+        (item['history_dates'] for item in indices_data + commodities_data if item.get('history_dates')),
+        []
+    )
 
-# ── Step 3: All Block-1 items + Watchlist — single combined AI analysis ────────
-def _init_ai_fields(items):
-    for item in items:
-        item.setdefault('name',        item.get('label', item['ticker']))
-        item.setdefault('news_titles', [n.title for n in fetch_ticker_news(item['ticker'], max_items=3)])
+    # ── Step 2: Hot sector detection (two-stage) ─────────────────────────────
+    print("[hot_sectors] Detecting hot sectors...")
+    hot_markets = detect_hot_sectors()
+    if TEST_MODE:
+        hot_markets = hot_markets[:1]
+
+    for hm in hot_markets:
+        hm['news'] = fetch_ticker_news(hm['etf'], max_items=HOT_MARKET_NEWS_MAX)
+        print(f"  [hot_sectors] {hm['label']}: fetched {len(hm['news'])} news items")
+
+    # ── Step 3: All Block-1 + Watchlist — single combined AI analysis ─────────
+    def _init_ai_fields(items):
+        for item in items:
+            item.setdefault('name',        item.get('label', item['ticker']))
+            item.setdefault('news_titles', [n.title for n in fetch_ticker_news(item['ticker'], max_items=3)])
+            item['analysis']    = None
+            item['outlook']     = 'neutral'
+            item['outlook_css'] = 'neutral'
+
+    print("[ai] Fetching news for indices / commodities / FX / hot markets...")
+    _init_ai_fields(indices_data)
+    _init_ai_fields(commodities_data)
+    _init_ai_fields(fx_data)
+
+    for hm in hot_markets:
+        mover_ctx = [f"{m['ticker']} {m['change_pct_fmt']}" for m in hm.get('top_movers', [])]
+        hm.update({
+            'ticker':          hm['etf'],
+            'name':            hm['label'],
+            'news_titles':     [n.title for n in hm['news']] + mover_ctx,
+            'analysis':        None,
+            'outlook':         'neutral',
+            'outlook_css':     'neutral',
+        })
+
+    print("[watchlist] Fetching prices...")
+    watchlist_items = []
+    for ticker in WATCHLIST_TICKERS:
+        label = WATCHLIST_NAMES.get(ticker, ticker)
+        item  = fetch_price_item(ticker, label)
+        if item is None:
+            item = _placeholder(ticker, label)
+        item['name']        = WATCHLIST_NAMES.get(ticker, ticker)
+        item['news_titles'] = [n.title for n in fetch_ticker_news(ticker, max_items=3)]
         item['analysis']    = None
         item['outlook']     = 'neutral'
         item['outlook_css'] = 'neutral'
+        watchlist_items.append(item)
 
-print("[ai] Fetching news for indices / commodities / FX...")
-_init_ai_fields(indices_data)
-_init_ai_fields(commodities_data)
-_init_ai_fields(fx_data)
+    if GEMINI_API_KEY and WATCHLIST_MODEL_CHAIN:
+        all_ai_items = (
+            [i for i in indices_data     if i['price_fmt'] != 'N/A'] +
+            [i for i in commodities_data  if i['price_fmt'] != 'N/A'] +
+            [i for i in fx_data           if i['price_fmt'] != 'N/A'] +
+            [hm for hm in hot_markets     if hm.get('price_fmt', 'N/A') != 'N/A'] +
+            watchlist_items
+        )
+        if all_ai_items:
+            print(f"[ai] Combined analysis for {len(all_ai_items)} items (1 API call)...")
+            analyses = analyze_watchlist(all_ai_items)
+            def _apply_analysis(items):
+                for item in items:
+                    a = analyses.get(item['ticker'])
+                    if a:
+                        item['outlook'] = a.get('outlook', 'neutral').lower()
+                        if item['outlook'] not in ('bullish', 'bearish', 'neutral'):
+                            item['outlook'] = 'neutral'
+                        item['outlook_css'] = item['outlook']
+                        today_text  = a.get('today', '')
+                        reason_text = a.get('outlook_reason', '')
+                        item['analysis'] = today_text + (f'\n{reason_text}' if reason_text else '')
+            _apply_analysis(indices_data)
+            _apply_analysis(commodities_data)
+            _apply_analysis(fx_data)
+            _apply_analysis(hot_markets)
+            _apply_analysis(watchlist_items)
 
-print("[watchlist] Fetching prices...")
-watchlist_items = []
-for ticker in WATCHLIST_TICKERS:
-    label = WATCHLIST_NAMES.get(ticker, ticker)
-    item  = fetch_price_item(ticker, label)
-    if item is None:
-        item = _placeholder(ticker, label)
-    item['name']        = WATCHLIST_NAMES.get(ticker, ticker)
-    item['news_titles'] = [n.title for n in fetch_ticker_news(ticker, max_items=3)]
-    item['analysis']    = None
-    item['outlook']     = 'neutral'
-    item['outlook_css'] = 'neutral'
-    watchlist_items.append(item)
-
-# Single combined AI call: all Block-1 + watchlist
-if GEMINI_API_KEY and WATCHLIST_MODEL_CHAIN:
-    all_ai_items = (
-        [i for i in indices_data    if i['price_fmt'] != 'N/A'] +
-        [i for i in commodities_data if i['price_fmt'] != 'N/A'] +
-        [i for i in fx_data          if i['price_fmt'] != 'N/A'] +
-        watchlist_items
+    # ── Step 4: News sections ─────────────────────────────────────────────────
+    print("[news] Processing market_news...")
+    market_news_entries, mn_bench = process_news_section(
+        MARKET_NEWS_URLS, MARKET_NEWS_MAX, 'market_news', '全球财经市场',
+        last_run_links, last_run_fps, current_run_fps, seen_links,
+        run_type=run_type, morning_bench=morning_bench,
     )
-    if all_ai_items:
-        print(f"[ai] Combined analysis for {len(all_ai_items)} items (1 API call)...")
-        analyses = analyze_watchlist(all_ai_items)
-        def _apply_analysis(items):
-            for item in items:
-                a = analyses.get(item['ticker'])
-                if a:
-                    item['outlook'] = a.get('outlook', 'neutral').lower()
-                    if item['outlook'] not in ('bullish', 'bearish', 'neutral'):
-                        item['outlook'] = 'neutral'
-                    item['outlook_css'] = item['outlook']
-                    today_text  = a.get('today', '')
-                    reason_text = a.get('outlook_reason', '')
-                    item['analysis'] = today_text + (f'\n{reason_text}' if reason_text else '')
-        _apply_analysis(indices_data)
-        _apply_analysis(commodities_data)
-        _apply_analysis(fx_data)
-        _apply_analysis(watchlist_items)
+    for e in market_news_entries:
+        current_run_links.add(e.link)
+    if run_type == 'morning' and mn_bench:
+        morning_bench_data['market_news'] = mn_bench
 
-# ── Step 4: News sections ─────────────────────────────────────────────────────
-print("[news] Processing market_news...")
-market_news_entries, mn_bench = process_news_section(
-    MARKET_NEWS_URLS, MARKET_NEWS_MAX, 'market_news', '全球财经市场',
-    last_run_links, last_run_fps, current_run_fps, seen_links,
-    run_type=run_type, morning_bench=morning_bench,
-)
-for e in market_news_entries:
-    current_run_links.add(e.link)
-if run_type == 'morning' and mn_bench:
-    morning_bench_data['market_news'] = mn_bench
+    print("[news] Processing japan_news...")
+    japan_news_entries, jn_bench = process_news_section(
+        JAPAN_NEWS_URLS, JAPAN_NEWS_MAX, 'japan_news', '日本金融市场',
+        last_run_links, last_run_fps, current_run_fps, seen_links,
+        run_type=run_type, morning_bench=morning_bench,
+    )
+    for e in japan_news_entries:
+        current_run_links.add(e.link)
+    if run_type == 'morning' and jn_bench:
+        morning_bench_data['japan_news'] = jn_bench
 
-print("[news] Processing japan_news...")
-japan_news_entries, jn_bench = process_news_section(
-    JAPAN_NEWS_URLS, JAPAN_NEWS_MAX, 'japan_news', '日本金融市场',
-    last_run_links, last_run_fps, current_run_fps, seen_links,
-    run_type=run_type, morning_bench=morning_bench,
-)
-for e in japan_news_entries:
-    current_run_links.add(e.link)
-if run_type == 'morning' and jn_bench:
-    morning_bench_data['japan_news'] = jn_bench
+    # ── Step 5: Save state ────────────────────────────────────────────────────
+    if FULLTEST_MODE:
+        for path in [os.path.join(BASE, 'last_run.json'), os.path.join(BASE, 'morning_bench.json')]:
+            try:
+                os.remove(path)
+            except Exception:
+                pass
+        print("[FULLTEST] State cleared — next run starts fresh")
+    elif TEST_MODE:
+        print("[TEST] State not saved - next run re-fetches same articles")
+    else:
+        all_fps = [text_fingerprint(e.title, getattr(e, 'article', e.title))
+                   for e in market_news_entries + japan_news_entries]
+        save_last_run(current_run_links, all_fps)
+        if run_type == 'morning':
+            save_morning_bench(morning_bench_data)
 
-# ── Step 5: Save state ────────────────────────────────────────────────────────
-if FULLTEST_MODE:
-    for path in [os.path.join(BASE, 'last_run.json'), os.path.join(BASE, 'morning_bench.json')]:
-        try:
-            os.remove(path)
-        except Exception:
-            pass
-    print("[FULLTEST] State cleared — next run starts fresh")
-elif TEST_MODE:
-    print("[TEST] State not saved - next run re-fetches same articles")
-else:
-    all_fps = [text_fingerprint(e.title, getattr(e, 'article', e.title))
-               for e in market_news_entries + japan_news_entries]
-    save_last_run(current_run_links, all_fps)
-    if run_type == 'morning':
-        save_morning_bench(morning_bench_data)
+    if not FULLTEST_MODE:
+        save_render_cache(dict(
+            indices=indices_data, commodities=commodities_data, fx=fx_data,
+            hist_dates=hist_dates, watchlist=watchlist_items,
+            market_news=market_news_entries, japan_news=japan_news_entries,
+            hot_markets=hot_markets,
+        ))
 
-# ── Step 6: Render daily.html ─────────────────────────────────────────────────
-edition = 'Morning Brief' if run_type == 'morning' else 'Evening Brief'
-if FULLTEST_MODE:
-    edition = f'[FULLTEST] {edition}'
+# ── Step 6: Render daily.html (web) and email HTML ───────────────────────────
+if UITEST_MODE:
+    edition = '[UITEST] Daily Brief'
+elif FULLTEST_MODE:
+    edition = f'[FULLTEST] {"Morning Brief" if run_type == "morning" else "Evening Brief"}'
 elif TEST_MODE:
     edition = '[TEST] Daily Brief'
+else:
+    edition = 'Morning Brief' if run_type == 'morning' else 'Evening Brief'
+
+_render_ctx = dict(
+    edition=edition,
+    update_date=now.strftime('%Y-%m-%d'),
+    update_time=now.strftime('%Y-%m-%d %H:%M:%S'),
+    indices=indices_data,
+    commodities=commodities_data,
+    fx=fx_data,
+    hist_dates=hist_dates,
+    watchlist=watchlist_items,
+    market_news=market_news_entries,
+    japan_news=japan_news_entries,
+    hot_markets=hot_markets,
+)
 
 daily_html_path = os.path.join(BASE, 'daily.html')
 with open(daily_html_path, 'w', encoding='utf-8') as f:
     tmpl = Template(open('daily_template.html', encoding='utf-8').read())
-    html = tmpl.render(
-        edition=edition,
-        update_date=now.strftime('%Y-%m-%d'),
-        update_time=now.strftime('%Y-%m-%d %H:%M:%S'),
-        indices=indices_data,
-        commodities=commodities_data,
-        fx=fx_data,
-        hist_dates=hist_dates,
-        watchlist=watchlist_items,
-        market_news=market_news_entries,
-        japan_news=japan_news_entries,
-        hot_markets=hot_markets,
-    )
-    f.write(html)
+    f.write(tmpl.render(**_render_ctx))
 print(f"[output] daily.html -> {daily_html_path}")
 
 # ── Step 7: Send email ────────────────────────────────────────────────────────

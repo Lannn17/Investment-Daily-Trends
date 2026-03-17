@@ -1,0 +1,234 @@
+{
+  "sectors": [
+    {
+      "etf": "XLK", "label": "US Technology", "group": "us_sectors",
+      "source": "SPDR", "constituents_source": "SPDR XLK top holdings",
+      "constituents": ["AAPL","MSFT","NVDA","AVGO","ORCL","CRM","AMD","QCOM","TXN","AMAT","MU","NOW","ADBE","ACN","CSCO","INTU","KLAC","LRCX","PANW","IBM"]
+    },
+    {
+      "etf": "XLF", "label": "US Financials", "group": "us_sectors",
+      "source": "SPDR", "constituents_source": "SPDR XLF top holdings",
+      "constituents": ["BRK-B","JPM","V","MA","BAC","WFC","GS","MS","AXP","SCHW","SPGI","CB","MMC","PNC","TFC","COF","MET","PRU","ICE","BX"]
+    },
+    {
+      "etf": "XLV", "label": "US Health Care", "group": "us_sectors",
+      "source": "SPDR", "constituents_source": "SPDR XLV top holdings",
+      "constituents": ["LLY","UNH","JNJ","ABT","MRK","TMO","DHR","ABBV","BMY","AMGN","GILD","CVS","CI","HCA","SYK","BSX","MDT","ISRG","VRTX","REGN"]
+    },
+    {
+      "etf": "XLE", "label": "US Energy", "group": "us_sectors",
+      "source": "SPDR", "constituents_source": "SPDR XLE top holdings",
+      "constituents": ["XOM","CVX","COP","EOG","SLB","MPC","PSX","VLO","OXY","HAL","DVN","BKR","HES","FANG","APA"]
+    },
+    {
+      "etf": "XLI", "label": "US Industrials", "group": "us_sectors",
+      "source": "SPDR", "constituents_source": "SPDR XLI top holdings",
+      "constituents": ["GE","HON","UNP","CAT","BA","LMT","RTX","DE","UPS","FDX","EMR","ETN","PH","GD","NOC","CSX","NSC","MMM","ROK","DOV"]
+    },
+    {
+      "etf": "XLY", "label": "US Consumer Discretionary", "group": "us_sectors",
+      "source": "SPDR", "constituents_source": "SPDR XLY top holdings",
+      "constituents": ["AMZN","TSLA","HD","MCD","NKE","SBUX","TJX","BKNG","LOW","CMG","MAR","HLT","YUM","DHI","LEN","ABNB","RCL","CCL","MGM","PHM"]
+    },
+    {
+      "etf": "XLP", "label": "US Consumer Staples", "group": "us_sectors",
+      "source": "SPDR", "constituents_source": "SPDR XLP top holdings",
+      "constituents": ["WMT","PG","COST","KO","PEP","PM","MO","MDLZ","CL","KMB","STZ","SYY","KHC","HRL","TSN","GIS","CAG","K","MKC","CHD"]
+    },
+    {
+      "etf": "XLU", "label": "US Utilities", "group": "us_sectors",
+      "source": "SPDR", "constituents_source": "SPDR XLU top holdings",
+      "constituents": ["NEE","SO","DUK","AEP","SRE","D","EXC","XEL","ED","ETR","WEC","ES","AES","CMS","NI","PEG","AWK","PPL","EIX","FE"]
+    },
+    {
+      "etf": "XLRE", "label": "US Real Estate", "group": "us_sectors",
+      "source": "SPDR", "constituents_source": "SPDR XLRE top holdings",
+      "constituents": ["PLD","AMT","EQIX","SPG","PSA","O","DLR","VICI","EQR","AVB","ARE","MAA","VTR","SBA","WELL","CCI","CBRE","IRM","WY","ESS"]
+    },
+    {
+      "etf": "XLB", "label": "US Materials", "group": "us_sectors",
+      "source": "SPDR", "constituents_source": "SPDR XLB top holdings",
+      "constituents": ["LIN","APD","SHW","FCX","NEM","NUE","DOW","DD","PPG","IFF","CF","MOS","ALB","ECL","EMN","RPM","FMC","BALL","IP","PKG"]
+    },
+    {
+      "etf": "XLC", "label": "US Communication Services", "group": "us_sectors",
+      "source": "SPDR", "constituents_source": "SPDR XLC top holdings",
+      "constituents": ["META","GOOGL","GOOG","NFLX","DIS","CMCSA","T","VZ","TMUS","EA","TTWO","OMC","IPG","WBD","FOXA","PARA"]
+    },
+    {
+      "etf": "INDA", "label": "India", "group": "em_country",
+      "source": "iShares MSCI India", "constituents_source": "iShares INDA top holdings",
+      "constituents": ["RELIANCE.NS","TCS.NS","HDFCBANK.NS","ICICIBANK.NS","INFY.NS","HINDUNILVR.NS","KOTAKBANK.NS","LT.NS","SBIN.NS","BHARTIARTL.NS","WIPRO.NS","HCLTECH.NS","AXISBANK.NS","BAJFINANCE.NS","MARUTI.NS"]
+    },
+    {
+      "etf": "MCHI", "label": "China", "group": "em_country",
+      "source": "iShares MSCI China", "constituents_source": "iShares MCHI top holdings",
+      "constituents": ["700.HK","9988.HK","3690.HK","1810.HK","9999.HK","2318.HK","BABA","JD","PDD","BIDU","NIO","TCEHY","NTES","BILI"]
+    },
+    {
+      "etf": "EWZ", "label": "Brazil", "group": "em_country",
+      "source": "iShares MSCI Brazil", "constituents_source": "iShares EWZ top holdings",
+      "constituents": ["VALE","PBR","ITUB","BBD","ABEV","GGB","SID","ERJ","TIMB","BRFS","AZUL","CIG"]
+    },
+    {
+      "etf": "EWY", "label": "South Korea", "group": "em_country",
+      "source": "iShares MSCI South Korea", "constituents_source": "iShares EWY top holdings",
+      "constituents": ["005930.KS","000660.KS","005380.KS","035420.KS","051910.KS","207940.KS","006400.KS","035720.KS","105560.KS","003550.KS","012330.KS","000270.KS"]
+    },
+    {
+      "etf": "EWT", "label": "Taiwan", "group": "em_country",
+      "source": "iShares MSCI Taiwan", "constituents_source": "iShares EWT top holdings",
+      "constituents": ["TSM","2330.TW","2317.TW","2454.TW","2382.TW","2308.TW","2303.TW","2881.TW","2891.TW","2412.TW","3711.TW","2002.TW"]
+    },
+    {
+      "etf": "EZA", "label": "South Africa", "group": "em_country",
+      "source": "iShares MSCI South Africa", "constituents_source": "iShares EZA top holdings",
+      "constituents": ["NPN.JO","BTI","GFI","HMY","AU","MTN.JO","FSR.JO","SBK.JO","AGL.JO","SOL.JO"]
+    },
+    {
+      "etf": "TUR", "label": "Turkey", "group": "em_country",
+      "source": "iShares MSCI Turkey", "constituents_source": "iShares TUR top holdings",
+      "constituents": ["TKOMY","EREGL.IS","KRDMD.IS","THYAO.IS","AKBNK.IS","GARAN.IS","SAHOL.IS","BIMAS.IS","PETKM.IS"]
+    },
+    {
+      "etf": "EWW", "label": "Mexico", "group": "em_country",
+      "source": "iShares MSCI Mexico", "constituents_source": "iShares EWW top holdings",
+      "constituents": ["AMXL.MX","FMX","CX","WALMEX.MX","GAPB.MX","ASURB.MX","OMAB.MX","BIMBOA.MX","FEMSAUBD.MX"]
+    },
+    {
+      "etf": "EIDO", "label": "Indonesia", "group": "em_country",
+      "source": "iShares MSCI Indonesia", "constituents_source": "iShares EIDO top holdings",
+      "constituents": ["BBCA.JK","BBRI.JK","BMRI.JK","TLKM.JK","ASII.JK","GOTO.JK","BREN.JK","BYAN.JK"]
+    },
+    {
+      "etf": "THD", "label": "Thailand", "group": "em_country",
+      "source": "iShares MSCI Thailand", "constituents_source": "iShares THD top holdings",
+      "constituents": ["PTT.BK","SCB.BK","KBANK.BK","AOT.BK","CPALL.BK","CPF.BK","TRUE.BK","GULF.BK","ADVANC.BK"]
+    },
+    {
+      "etf": "EWM", "label": "Malaysia", "group": "em_country",
+      "source": "iShares MSCI Malaysia", "constituents_source": "iShares EWM top holdings",
+      "constituents": ["1155.KL","1023.KL","7277.KL","5183.KL","3816.KL","1082.KL","5296.KL","6888.KL"]
+    },
+    {
+      "etf": "ECH", "label": "Chile", "group": "em_country",
+      "source": "iShares MSCI Chile", "constituents_source": "iShares ECH top holdings",
+      "constituents": ["SQM","LTM.SN","CHILE.SN","BCI.SN","ECL.SN","BSANTANDER.SN","COPEC.SN"]
+    },
+    {
+      "etf": "ARGT", "label": "Argentina", "group": "em_country",
+      "source": "Global X MSCI Argentina", "constituents_source": "Global X ARGT top holdings",
+      "constituents": ["GLOB","MELI","YPF","PAM","GGAL","BMA","TGS","LOMA"]
+    },
+    {
+      "etf": "VNM", "label": "Vietnam", "group": "em_country",
+      "source": "VanEck Vietnam", "constituents_source": "VanEck VNM top holdings",
+      "constituents": ["VIC.VN","VHM.VN","MSN.VN","HPG.VN","VCB.VN","TCB.VN","MWG.VN","FPT.VN"]
+    },
+    {
+      "etf": "1615.T", "label": "Japan Banks", "group": "japan_sectors",
+      "source": "NEXT FUNDS TOPIX-17 Banks", "constituents_source": "NEXT FUNDS 1615.T holdings",
+      "constituents": ["8306.T","8316.T","8411.T","8354.T","7182.T","8369.T","8308.T","8331.T"]
+    },
+    {
+      "etf": "1617.T", "label": "Japan Foods", "group": "japan_sectors",
+      "source": "NEXT FUNDS TOPIX-17 Foods", "constituents_source": "NEXT FUNDS 1617.T holdings",
+      "constituents": ["2802.T","2267.T","2282.T","2501.T","2503.T","2914.T","2269.T","2871.T"]
+    },
+    {
+      "etf": "1618.T", "label": "Japan Energy", "group": "japan_sectors",
+      "source": "NEXT FUNDS TOPIX-17 Energy", "constituents_source": "NEXT FUNDS 1618.T holdings",
+      "constituents": ["5019.T","5020.T","5021.T","1605.T","1662.T"]
+    },
+    {
+      "etf": "1619.T", "label": "Japan Construction", "group": "japan_sectors",
+      "source": "NEXT FUNDS TOPIX-17 Construction", "constituents_source": "NEXT FUNDS 1619.T holdings",
+      "constituents": ["1801.T","1802.T","1803.T","1812.T","1925.T","1928.T"]
+    },
+    {
+      "etf": "1621.T", "label": "Japan Pharmaceuticals", "group": "japan_sectors",
+      "source": "NEXT FUNDS TOPIX-17 Pharmaceuticals", "constituents_source": "NEXT FUNDS 1621.T holdings",
+      "constituents": ["4502.T","4503.T","4568.T","4519.T","4523.T","4506.T","4507.T","4151.T"]
+    },
+    {
+      "etf": "1622.T", "label": "Japan Automobiles", "group": "japan_sectors",
+      "source": "NEXT FUNDS TOPIX-17 Automobiles", "constituents_source": "NEXT FUNDS 1622.T holdings",
+      "constituents": ["7203.T","7267.T","7269.T","7201.T","7270.T","7272.T","6902.T","7011.T"]
+    },
+    {
+      "etf": "1623.T", "label": "Japan Steel & Nonferrous", "group": "japan_sectors",
+      "source": "NEXT FUNDS TOPIX-17 Steel", "constituents_source": "NEXT FUNDS 1623.T holdings",
+      "constituents": ["5401.T","5411.T","5714.T","5713.T","5706.T","5801.T","5802.T"]
+    },
+    {
+      "etf": "1624.T", "label": "Japan Machinery", "group": "japan_sectors",
+      "source": "NEXT FUNDS TOPIX-17 Machinery", "constituents_source": "NEXT FUNDS 1624.T holdings",
+      "constituents": ["6501.T","7011.T","6326.T","6361.T","6305.T","6367.T","7013.T","6301.T"]
+    },
+    {
+      "etf": "1625.T", "label": "Japan Electronics", "group": "japan_sectors",
+      "source": "NEXT FUNDS TOPIX-17 Electronics", "constituents_source": "NEXT FUNDS 1625.T holdings",
+      "constituents": ["6758.T","6752.T","6971.T","6981.T","6645.T","6723.T","6770.T","6857.T"]
+    },
+    {
+      "etf": "1626.T", "label": "Japan IT & Services", "group": "japan_sectors",
+      "source": "NEXT FUNDS TOPIX-17 IT", "constituents_source": "NEXT FUNDS 1626.T holdings",
+      "constituents": ["9432.T","9433.T","9984.T","4755.T","3659.T","4307.T","9613.T","3769.T"]
+    },
+    {
+      "etf": "1627.T", "label": "Japan Financial Services", "group": "japan_sectors",
+      "source": "NEXT FUNDS TOPIX-17 Financial Services", "constituents_source": "NEXT FUNDS 1627.T holdings",
+      "constituents": ["8591.T","8601.T","8604.T","8725.T","8750.T","8766.T","8630.T","8795.T"]
+    },
+    {
+      "etf": "1628.T", "label": "Japan Real Estate", "group": "japan_sectors",
+      "source": "NEXT FUNDS TOPIX-17 Real Estate", "constituents_source": "NEXT FUNDS 1628.T holdings",
+      "constituents": ["8801.T","8802.T","3003.T","8830.T","8815.T","8953.T","8972.T","8963.T"]
+    },
+    {
+      "etf": "GC=F", "label": "Gold", "group": "commodities",
+      "source": "COMEX Gold Futures", "constituents_source": "Major gold mining companies",
+      "constituents": ["NEM","GOLD","AEM","KGC","WPM","FNV","PAAS","AGI","HL"]
+    },
+    {
+      "etf": "SI=F", "label": "Silver", "group": "commodities",
+      "source": "COMEX Silver Futures", "constituents_source": "Major silver mining companies",
+      "constituents": ["PAAS","AG","WPM","SSRM","SVM","HL","MAG"]
+    },
+    {
+      "etf": "CL=F", "label": "WTI Crude Oil", "group": "commodities",
+      "source": "NYMEX WTI Crude Futures", "constituents_source": "Major US oil producers",
+      "constituents": ["XOM","CVX","COP","SLB","EOG","HAL","OXY","DVN","PSX","MPC"]
+    },
+    {
+      "etf": "BZ=F", "label": "Brent Crude", "group": "commodities",
+      "source": "ICE Brent Crude Futures", "constituents_source": "Major international oil producers",
+      "constituents": ["BP","SHEL","TTE","EQNR","E","CNQ","IMO"]
+    },
+    {
+      "etf": "NG=F", "label": "Natural Gas", "group": "commodities",
+      "source": "NYMEX Natural Gas Futures", "constituents_source": "Major natural gas producers",
+      "constituents": ["EQT","AR","CNX","RRC","SWN","CRK","CTRA","KMI"]
+    },
+    {
+      "etf": "HG=F", "label": "Copper", "group": "commodities",
+      "source": "COMEX Copper Futures", "constituents_source": "Major copper producers",
+      "constituents": ["FCX","SCCO","TECK","HBM","CMCL","SBSW"]
+    },
+    {
+      "etf": "ZC=F", "label": "Corn", "group": "commodities",
+      "source": "CBOT Corn Futures", "constituents_source": "Major agribusiness companies",
+      "constituents": ["ADM","BG","CTVA","INGR","MOS","NTR"]
+    },
+    {
+      "etf": "ZW=F", "label": "Wheat", "group": "commodities",
+      "source": "CBOT Wheat Futures", "constituents_source": "Major agribusiness companies",
+      "constituents": ["ADM","BG","MOS","NTR","AGCO","DE"]
+    },
+    {
+      "etf": "ZS=F", "label": "Soybeans", "group": "commodities",
+      "source": "CBOT Soybean Futures", "constituents_source": "Major agribusiness companies",
+      "constituents": ["ADM","BG","INGR","CTVA","CF","MOS"]
+    }
+  ]
+}

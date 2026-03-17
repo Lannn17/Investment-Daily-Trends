@@ -13,50 +13,80 @@
     header h1 { font-size: 1.3rem; font-weight: 700; letter-spacing: 0.04em; margin-bottom: 4px; }
     .header-sub { font-size: 0.76rem; color: #8ab4f8; }
 
-    /* ── Block labels ── */
-    .block-label { background: #1a1a2e; color: #8ab4f8; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 5px 20px; }
+    /* ── Typography hierarchy ──
+       Level 1 (block title):    1.2rem  — Price Dashboard, Market News
+       Level 2 (section title):  0.95rem — Global Indices, Global Markets, etc.
+       Level 3 (card name):      0.78rem — specific ticker label
+    ── */
+    .block-title {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #0f3460;
+      padding: 16px 0 10px;
+      border-bottom: 2px solid #0f3460;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #0f3460;
+      margin: 14px 0 8px;
+      padding-bottom: 3px;
+      border-bottom: 1px solid #e0e4ea;
+    }
 
     /* ── Price Dashboard ── */
-    .price-wrap { background: #fff; padding: 14px 16px 18px; }
-    .section-title { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #0f3460; margin: 12px 0 7px; padding-bottom: 3px; border-bottom: 1px solid #e0e4ea; }
+    .price-wrap { background: #fff; padding: 0 16px 18px; }
 
-    /* Unified 4-column grid */
-    .price-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 4px; }
+    /* Fixed 5-column rectangular grid */
+    .price-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-bottom: 4px; }
 
-    /* Unified price card */
+    /* Rectangular card */
     .price-card {
+      aspect-ratio: 3 / 2;
       border: 1px solid #e8eaed;
       border-radius: 8px;
-      padding: 10px 11px;
+      padding: 10px 12px;
       background: #fafbfc;
       display: flex;
       flex-direction: column;
+      overflow: hidden;
     }
-    .card-name { font-size: 0.8rem; font-weight: 700; color: #1a1a2e; line-height: 1.2; margin-bottom: 1px; }
-    .card-ticker a { font-size: 0.64rem; color: #888; text-decoration: none; letter-spacing: 0.02em; }
+    .card-name { font-size: 0.78rem; font-weight: 700; color: #1a1a2e; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .card-ticker a { font-size: 0.62rem; color: #999; text-decoration: none; }
     .card-ticker a:hover { color: #1565c0; text-decoration: underline; }
-    .card-price { font-size: 1.08rem; font-weight: 700; color: #1a1a2e; margin-top: 6px; line-height: 1.1; }
-    .card-change { font-size: 0.72rem; font-weight: 600; margin-top: 2px; }
+    .card-price { font-size: 1rem; font-weight: 700; color: #1a1a2e; margin-top: 4px; line-height: 1.1; }
+    .card-change { font-size: 0.7rem; font-weight: 600; margin-top: 1px; }
     .up   { color: #1a9e5a; }
     .down { color: #d32f2f; }
     .flat { color: #888; }
-    .card-divider { border: none; border-top: 1px solid #eee; margin: 7px 0 5px; }
-    .card-analysis { font-size: 0.68rem; color: #555; line-height: 1.45; flex: 1; }
-    .card-outlook { display: inline-block; margin-top: 5px; padding: 1px 6px; border-radius: 3px; font-size: 0.62rem; font-weight: 700; }
+    .card-divider { border: none; border-top: 1px solid #eee; margin: 5px 0 4px; flex-shrink: 0; }
+    .card-analysis {
+      font-size: 0.76rem;
+      color: #555;
+      line-height: 1.45;
+      flex: 1;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+    .card-outlook { display: inline-block; margin-top: 3px; padding: 1px 5px; border-radius: 3px; font-size: 0.62rem; font-weight: 700; flex-shrink: 0; }
     .outlook-bullish { background: #e6f4ea; color: #1a9e5a; }
     .outlook-bearish { background: #fce8e6; color: #d32f2f; }
     .outlook-neutral { background: #f0f2f5; color: #555; }
 
     /* ── News Block ── */
-    .news-wrap { background: #fff; margin-top: 2px; padding: 14px 16px 18px; }
+    .news-wrap { background: #fff; margin-top: 2px; padding: 0 16px 18px; }
     .news-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
     @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } }
 
     .news-section { border-right: 1px solid #e8eaed; border-bottom: 1px solid #e8eaed; }
     .news-section:nth-child(2n) { border-right: none; }
     .news-section-header { padding: 10px 14px; color: #fff; }
-    .news-section-header h2 { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 2px; }
-    .news-section-header .count { font-size: 0.66rem; opacity: 0.8; }
+    /* Level 2 title — matches .section-title size */
+    .news-section-header h2 { font-size: 0.95rem; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; margin-bottom: 2px; }
+    .news-section-header .count { font-size: 0.68rem; opacity: 0.8; }
     .market-news-hdr { background: #1565c0; }
     .japan-news-hdr  { background: #6a1b9a; }
     .hot-market-hdr  { background: #e65100; }
@@ -64,26 +94,59 @@
     .articles { background: #fff; }
     .article { padding: 10px 14px; border-bottom: 1px solid #f0f2f5; }
     .article:last-child { border-bottom: none; }
-    .article-title { font-size: 0.83rem; font-weight: 600; line-height: 1.4; margin-bottom: 4px; }
+    .article-title { font-size: 0.85rem; font-weight: 600; line-height: 1.4; margin-bottom: 4px; }
     .article-title a { color: #1a1a2e; text-decoration: none; }
     .article-title a:hover { color: #1565c0; text-decoration: underline; }
     .article-summary { font-size: 0.76rem; color: #444; line-height: 1.6; white-space: pre-line; }
     .empty { padding: 22px; color: #aaa; font-size: 0.78rem; text-align: center; }
 
-    .hot-badge { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 0.64rem; font-weight: 700; margin-right: 5px; }
+    .hot-badge { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 0.68rem; font-weight: 700; margin-right: 5px; }
     .hot-up  { background: #e6f4ea; color: #1a9e5a; }
     .hot-down { background: #fce8e6; color: #d32f2f; }
+    .hot-source-label { font-size: 0.65rem; color: #aaa; margin-left: 6px; }
+    .top-movers { margin: 7px 0 4px; background: #f8f9fa; border-radius: 5px; padding: 7px 10px; }
+    .top-mover-item { display: flex; align-items: center; gap: 7px; padding: 2px 0; }
+    .top-mover-ticker { font-size: 0.82rem; font-weight: 700; color: #1a1a2e; text-decoration: none; }
+    .top-mover-ticker:hover { color: #1565c0; text-decoration: underline; }
+    .top-mover-price { font-size: 0.73rem; color: #777; }
+    .constituents-source { font-size: 0.63rem; color: #bbb; margin-top: 4px; }
 
     footer { text-align: center; padding: 11px; font-size: 0.7rem; color: #aaa; border-top: 1px solid #e8eaed; background: #fff; margin-top: 2px; }
 
     /* ── Responsive ── */
-    @media (max-width: 900px) {
-      .price-grid { grid-template-columns: repeat(3, 1fr); }
-    }
     @media (max-width: 600px) {
-      .price-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
-      header { padding: 12px 12px 10px; }
-      .price-wrap, .news-wrap { padding: 10px 10px 14px; }
+      /* Layout: 2-col card grid, same structure as desktop */
+      .price-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+      header { padding: 14px 14px 10px; }
+      header h1 { font-size: 1.15rem; }
+      .price-wrap, .news-wrap { padding: 0 12px 16px; }
+      .block-title { font-size: 1.05rem; padding: 14px 0 8px; }
+      .section-title { font-size: 0.9rem; margin: 12px 0 6px; }
+
+      /* Fixed card height — enables internal scroll on analysis and bottom-pinned badge */
+      .price-card {
+        aspect-ratio: unset;
+        height: 200px;
+        padding: 9px 10px;
+      }
+
+      /* Scale text to be readable without zooming (≥ 12px) */
+      .card-name     { font-size: 0.8rem; }
+      .card-ticker a { font-size: 0.7rem; }
+      .card-price    { font-size: 0.98rem; margin-top: 3px; }
+      .card-change   { font-size: 0.73rem; }
+      .card-divider  { margin: 4px 0 3px; }
+      /* Analysis fills remaining height; scrolls if text overflows */
+      .card-analysis { font-size: 0.75rem; flex: 1; min-height: 0; overflow-y: auto; display: block; -webkit-line-clamp: unset; -webkit-overflow-scrolling: touch; }
+      /* Badge is last flex child — always at the bottom of the card */
+      .card-outlook  { font-size: 0.67rem; flex-shrink: 0; }
+
+      /* News: single-column, same article style as desktop */
+      .news-grid { grid-template-columns: 1fr; }
+      .news-section { border-right: none; }
+      .news-section-header h2 { font-size: 0.9rem; }
+      .article-title   { font-size: 0.86rem; }
+      .article-summary { font-size: 0.76rem; }
     }
   </style>
 </head>
@@ -95,12 +158,11 @@
 </header>
 
 <!-- ═══════════════════════════════════════════════
-     BLOCK 1: PRICE DASHBOARD
+     PRICE DASHBOARD
 ═══════════════════════════════════════════════ -->
-<div class="block-label">▸ Block 1 &nbsp; Price Dashboard</div>
 <div class="price-wrap">
+  <div class="block-title">Price Dashboard</div>
 
-  <!-- Global Indices -->
   <div class="section-title">Global Indices</div>
   <div class="price-grid">
     {% for item in indices %}
@@ -118,7 +180,6 @@
     {% endfor %}
   </div>
 
-  <!-- Commodities -->
   <div class="section-title">Commodities</div>
   <div class="price-grid">
     {% for item in commodities %}
@@ -136,7 +197,6 @@
     {% endfor %}
   </div>
 
-  <!-- Foreign Exchange -->
   <div class="section-title">Foreign Exchange</div>
   <div class="price-grid">
     {% for item in fx %}
@@ -154,8 +214,7 @@
     {% endfor %}
   </div>
 
-  <!-- Watchlist -->
-  <div class="section-title" style="margin-top:14px;">Watchlist</div>
+  <div class="section-title">Watchlist</div>
   <div class="price-grid">
     {% for item in watchlist %}
     <div class="price-card">
@@ -175,10 +234,10 @@
 </div><!-- /price-wrap -->
 
 <!-- ═══════════════════════════════════════════════
-     BLOCK 2: MARKET NEWS
+     MARKET NEWS
 ═══════════════════════════════════════════════ -->
-<div class="block-label">▸ Block 2 &nbsp; Market News</div>
 <div class="news-wrap">
+  <div class="block-title">Market News</div>
   <div class="news-grid">
 
     <!-- Global Market News -->
@@ -239,10 +298,30 @@
             <span class="hot-badge {{ 'hot-up' if hm.pct >= 0 else 'hot-down' }}">
               {{ hm.country }} {{ '+' if hm.pct >= 0 else '' }}{{ "%.2f"|format(hm.pct * 100) }}%
             </span>
-            {{ hm.etf }}
+            <a href="{{ hm.url }}" target="_blank" rel="noopener" style="color:#1a1a2e; text-decoration:none;">{{ hm.etf }}</a>
+            {% if hm.etf_source %}<span class="hot-source-label">{{ hm.etf_source }}</span>{% endif %}
           </div>
+          {% if hm.top_movers %}
+          <div class="top-movers">
+            {% for m in hm.top_movers %}
+            <div class="top-mover-item">
+              <span class="hot-badge {{ 'hot-up' if m.pct >= 0 else 'hot-down' }}">{{ m.change_pct_fmt }}</span>
+              <a href="{{ m.url }}" target="_blank" rel="noopener" class="top-mover-ticker">{{ m.ticker }}</a>
+              <span class="top-mover-price">{{ m.price_fmt }}</span>
+            </div>
+            {% endfor %}
+            {% if hm.constituents_source %}
+            <div class="constituents-source">Source: {{ hm.constituents_source }}</div>
+            {% endif %}
+          </div>
+          {% endif %}
+          {% if hm.analysis %}
+          <div class="article-summary" style="margin-top:5px;">{{ hm.analysis }}
+            <span class="card-outlook outlook-{{ hm.outlook_css }}" style="margin-left:6px;">{{ hm.outlook }}</span>
+          </div>
+          {% endif %}
           {% for n in hm.news %}
-          <div class="article" style="padding-left:20px; border-left:3px solid #e65100; margin:5px 0;">
+          <div class="article" style="padding-left:20px; border-left:3px solid #e65100; margin:6px 0;">
             <div class="article-title"><a href="{{ n.link }}" target="_blank" rel="noopener">{{ n.title }}</a></div>
             {% if n.summary %}<div class="article-summary">{{ n.summary | safe }}</div>{% endif %}
           </div>

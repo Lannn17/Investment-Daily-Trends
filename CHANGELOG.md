@@ -5,6 +5,27 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [v0.3.0] - 2026-03-17
+
+### Added
+- Two-stage hot sector detection replacing the old fixed EM ETF list
+- Stage 1: single `yf.download()` batch call screens 46 sector ETFs (US SPDR 11 sectors, 14 EM country ETFs, 12 Japan TOPIX-17 sectors, 9 commodity futures)
+- Stage 2: for each triggered sector, batch downloads constituent stocks and surfaces top 3 movers
+- `sector_universe.json`: curated constituent lists (~10–20 stocks per sector) with source attribution
+- Source labels displayed in report for both sector ETF and constituent data
+- `batch_price_data()` helper for efficient multi-ticker batch downloads via pandas MultiIndex
+
+### Changed
+- `detect_hot_markets()` replaced by `detect_hot_sectors()` with two-stage logic
+- Hot markets section in template now shows sector ETF source, top 3 movers with price/change, and constituent source attribution
+- AI analysis context enriched with top mover ticker + % change info
+
+### 新增 / 变更
+- 热门市场模块改为两阶段板块筛选：第一阶段批量下载46个板块ETF，第二阶段下载触发板块的成分股找出涨跌最大标的
+- 新增 sector_universe.json 管理全球板块及成分股列表，报告中标注数据来源
+
+---
+
 ## [v0.2.0] - 2026-03-17
 
 ### Added
