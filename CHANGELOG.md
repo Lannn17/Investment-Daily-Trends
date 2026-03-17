@@ -5,6 +5,24 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [v0.2.0] - 2026-03-17
+
+### Added
+- AI analysis (today trend + outlook) for all Block 1 items: indices, commodities, FX, watchlist
+- All 21 items analysed in a single combined Gemini call (no extra API cost)
+- Ticker hyperlinks on every price card linking to Yahoo Finance
+
+### Changed
+- Price dashboard redesigned: unified 4-column card grid (3-col tablet, 2-col mobile)
+- Each ticker displayed as a compact square card with price, change, AI analysis, and outlook badge
+- Removed 5-day tab and JavaScript tab switching; today-only view always shown
+
+### 新增 / 变更
+- 所有价格标的（指数、商品、外汇、自选）均增加AI走势分析，合并为单次Gemini调用
+- 价格面板改为4列紧凑方块布局，手机端自适应2列；移除5日标签页
+
+---
+
 ## [v0.1.0] - 2026-03-17
 
 ### Added

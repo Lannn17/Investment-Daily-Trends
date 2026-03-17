@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>[TEST] Daily Brief — 2026-03-17</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f0f2f5; color: #1a1a2e; }
+
+    /* ── Header ── */
+    header { background: linear-gradient(135deg, #0f3460 0%, #16213e 100%); color: #fff; padding: 18px 20px 12px; text-align: center; }
+    header h1 { font-size: 1.3rem; font-weight: 700; letter-spacing: 0.04em; margin-bottom: 4px; }
+    .header-sub { font-size: 0.76rem; color: #8ab4f8; }
+
+    /* ── Block labels ── */
+    .block-label { background: #1a1a2e; color: #8ab4f8; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 5px 20px; }
+
+    /* ── Price Dashboard ── */
+    .price-wrap { background: #fff; padding: 14px 16px 18px; }
+    .section-title { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #0f3460; margin: 12px 0 7px; padding-bottom: 3px; border-bottom: 1px solid #e0e4ea; }
+
+    /* Unified 4-column grid */
+    .price-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 4px; }
+
+    /* Unified price card */
+    .price-card {
+      border: 1px solid #e8eaed;
+      border-radius: 8px;
+      padding: 10px 11px;
+      background: #fafbfc;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-name { font-size: 0.8rem; font-weight: 700; color: #1a1a2e; line-height: 1.2; margin-bottom: 1px; }
+    .card-ticker a { font-size: 0.64rem; color: #888; text-decoration: none; letter-spacing: 0.02em; }
+    .card-ticker a:hover { color: #1565c0; text-decoration: underline; }
+    .card-price { font-size: 1.08rem; font-weight: 700; color: #1a1a2e; margin-top: 6px; line-height: 1.1; }
+    .card-change { font-size: 0.72rem; font-weight: 600; margin-top: 2px; }
+    .up   { color: #1a9e5a; }
+    .down { color: #d32f2f; }
+    .flat { color: #888; }
+    .card-divider { border: none; border-top: 1px solid #eee; margin: 7px 0 5px; }
+    .card-analysis { font-size: 0.68rem; color: #555; line-height: 1.45; flex: 1; }
+    .card-outlook { display: inline-block; margin-top: 5px; padding: 1px 6px; border-radius: 3px; font-size: 0.62rem; font-weight: 700; }
+    .outlook-bullish { background: #e6f4ea; color: #1a9e5a; }
+    .outlook-bearish { background: #fce8e6; color: #d32f2f; }
+    .outlook-neutral { background: #f0f2f5; color: #555; }
+
+    /* ── News Block ── */
+    .news-wrap { background: #fff; margin-top: 2px; padding: 14px 16px 18px; }
+    .news-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+    @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } }
+
+    .news-section { border-right: 1px solid #e8eaed; border-bottom: 1px solid #e8eaed; }
+    .news-section:nth-child(2n) { border-right: none; }
+    .news-section-header { padding: 10px 14px; color: #fff; }
+    .news-section-header h2 { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 2px; }
+    .news-section-header .count { font-size: 0.66rem; opacity: 0.8; }
+    .market-news-hdr { background: #1565c0; }
+    .japan-news-hdr  { background: #6a1b9a; }
+    .hot-market-hdr  { background: #e65100; }
+
+    .articles { background: #fff; }
+    .article { padding: 10px 14px; border-bottom: 1px solid #f0f2f5; }
+    .article:last-child { border-bottom: none; }
+    .article-title { font-size: 0.83rem; font-weight: 600; line-height: 1.4; margin-bottom: 4px; }
+    .article-title a { color: #1a1a2e; text-decoration: none; }
+    .article-title a:hover { color: #1565c0; text-decoration: underline; }
+    .article-summary { font-size: 0.76rem; color: #444; line-height: 1.6; white-space: pre-line; }
+    .empty { padding: 22px; color: #aaa; font-size: 0.78rem; text-align: center; }
+
+    .hot-badge { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 0.64rem; font-weight: 700; margin-right: 5px; }
+    .hot-up  { background: #e6f4ea; color: #1a9e5a; }
+    .hot-down { background: #fce8e6; color: #d32f2f; }
+
+    footer { text-align: center; padding: 11px; font-size: 0.7rem; color: #aaa; border-top: 1px solid #e8eaed; background: #fff; margin-top: 2px; }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .price-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .price-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
+      header { padding: 12px 12px 10px; }
+      .price-wrap, .news-wrap { padding: 10px 10px 14px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>[TEST] Daily Brief</h1>
+  <span class="header-sub">2026-03-17 &nbsp;·&nbsp; 2026-03-17 11:32:36 JST</span>
+</header>
+
+<!-- ═══════════════════════════════════════════════
+     BLOCK 1: PRICE DASHBOARD
+═══════════════════════════════════════════════ -->
+<div class="block-label">▸ Block 1 &nbsp; Price Dashboard</div>
+<div class="price-wrap">
+
+  <!-- Global Indices -->
+  <div class="section-title">Global Indices</div>
+  <div class="price-grid">
+    
+    <div class="price-card">
+      <div class="card-name">S&P 500</div>
+      <div class="card-ticker"><a href="https://finance.yahoo.com/quote/^GSPC" target="_blank" rel="noopener">^GSPC</a></div>
+      <div class="card-price">6,699.38</div>
+      <div class="card-change up">▲ 67.190 (+1.01%)</div>
+      
+      <hr class="card-divider">
+      <div class="card-analysis">市场乐观情绪高涨，标普500指数全线上扬，成功站稳高位，反映出投资者对经济前景的信心。
+宏观经济数据支撑市场韧性，多头动能依然强劲。</div>
+      <span class="card-outlook outlook-bullish">bullish</span>
+      
+    </div>
+    
+    <div class="price-card">
+      <div class="card-name">NASDAQ</div>
+      <div class="card-ticker"><a href="https://finance.yahoo.com/quote/^IXIC" target="_blank" rel="noopener">^IXIC</a></div>
+      <div class="card-price">22,374</div>
+      <div class="card-change up">▲ 268.82 (+1.22%)</div>
+      
+      <hr class="card-divider">
+      <div class="card-analysis">科技板块领涨，纳指表现强于大盘，显示资金重新青睐高成长性资产，投资者风险偏好明显回升。
+科技巨头基本面支撑稳固，且AI驱动的增长叙事仍在延续。</div>
+      <span class="card-outlook outlook-bullish">bullish</span>
+      
+    </div>
+    
+    <div class="price-card">
+      <div class="card-name">Dow Jones</div>
+      <div class="card-ticker"><a href="https://finance.yahoo.com/quote/^DJI" target="_blank" rel="noopener">^DJI</a></div>
+      <div class="card-price">46,946</div>
+      <div class="card-change up">▲ 387.94 (+0.83%)</div>
+      
+      <hr class="card-divider">
+      <div class="card-analysis">蓝筹股普遍上涨，道指稳步攀升，主要受工业和金融板块贡献，市场呈现均衡普涨态势。
+传统行业盈利复苏叠加市场情绪改善，指数具备持续上行空间。</div>
+      <span class="card-outlook outlook-bullish">bullish</span>
+      
+    </div>
+    
+    <div class="price-card">
+      <div class="card-name">Nikkei 225</div>
+      <div class="card-ticker"><a href="https://finance.yahoo.com/quote/^N225" target="_blank" rel="noopener">^N225</a></div>
+      <div class="card-price">53,944</div>
+      <div class="card-change up">▲ 124.81 (+0.23%)</div>
+      
+      <hr class="card-divider">
+      <div class="card-analysis">日经指数微幅收涨，涨幅相对温和，受制于日元汇率波动及获利回吐压力，整体交投谨慎。
+缺乏新的重磅催化剂，指数或将维持窄幅震荡整理。</div>
+      <span class="card-outlook outlook-neutral">neutral</span>
+      
+    </div>
+    
+    <div class="price-card">
+      <div class="card-name">Hang Seng</div>
+      <div class="card-ticker"><a href="https://finance.yahoo.com/quote/^HSI" target="_blank" rel="noopener">^HSI</a></div>
+      <div class="card-price">26,234</div>
+      <div class="card-change up">▲ 768.53 (+3.02%)</div>
+      
+      <hr class="card-divider">
+      <div class="card-analysis">港股大幅走高，受益于政策利好预期与低位买盘涌入，权重股全面反弹，领跑亚太市场。
+估值修复动力强劲，政策宽松预期有望提振市场情绪。</div>
+      <span class="card-outlook outlook-bullish">bullish</span>
+      
+    </div>
+    
+  </div>
+
+  <!-- Commodities -->
+  <div class="section-title">Commodities</div>
+  <div class="price-grid">
+    
+    <div class="price-card">
+      <div class="card-name">Gold</div>
+      <div class="card-ticker"><a href="https://finance.yahoo.com/quote/GC=F" target="_blank" rel="noopener">GC=F</a></div>
+      <div class="card-price">5,026.40</div>
+      <div class="card-change down">▼ 26.100 (-0.52%)</div>
+      
+      <hr class="card-divider">
+      <div class="card-analysis">避险情绪减弱导致金价小幅回撤，投资者获利了结，盘中价格承压下行。
+全球地缘不确定性与央行购金需求对金价形成支撑，但短期面临获利回吐。</div>
+      <span class="card-outlook outlook-neutral">neutral</span>
+      
+    </div>
+    
+    <div class="price-card">
+      <div class="card-name">Silver</div>
+      <div class="card-ticker"><a href="https://finance.yahoo.com/quote/SI=F" target="_blank" rel="noopener">SI=F</a></div>
+      <div class="card-price">81.375</div>
+      <div class="card-change up">▲ 0.4610 (+0.57%)</div>
+      
+      <hr class="card-divider">
+      <div class="card-analysis">白银表现强于黄金，受益于工业需求回暖预期，盘中震荡走高，展现出较好的抗跌性。
+工业属性驱动需求增长，白银价格波动中枢有上移趋势。</div>
+      <span class="card-outlook outlook-bullish">bullish</span>
+      
+    </div>
+    
+    <div class="price-card">
+      <div class="card-name">WTI Oil</div>
+      <div class="card-ticker"><a href="https://finance.yahoo.com/quote/CL=F" target="_blank" rel="noopener">CL=F</a></div>
+      <div class="card-price">96.040</div>
+      <div class="card-change down">▼ 2.6700 (-2.70%)</div>
+      
+      <hr class="card-divider">
+      <div class="card-analysis">WTI原油大幅下跌，供应担忧缓解及对需求前景的质疑引发市场大规模抛售。
+需求端增长乏力叠加库存压力，油价短期面临下行风险。</div>
+      <span class="card-outlook outlook-bearish">bearish</span>
+      
+    </div>
+    
+    <div class="price-card">
+      <div class="card-name">Brent Oil</div>
+      <div class="card-ticker"><a href="https://finance.yahoo.com/quote/BZ=F" target="_blank" rel="noopener">BZ=F</a></div>
+      <div class="card-price">103.03</div>
+      <div class="card-change down">▼ 0.1100 (-0.11%)</div>
+      
+      <hr class="card-divider">
+      <div class="card-analysis">布伦特原油窄幅震荡，受全球能源需求预期分歧影响，价格表现相对克制。
+供需博弈加剧，缺乏显著方向性推动因素。</div>
+      <span class="card-outlook outlook-neutral">neutral</span>
+      
+    </div>
+    
+  </div>
+
+  <!-- Foreign Exchange -->
+  <div class="section-title">Foreign Exchange</div>
+  <div class="price-grid">
+    
+    <div class="price-card">
+      <div class="card-name">USD/JPY</div>
+      <div class="card-ticker"><a href="https://finance.yahoo.com/quote/USDJPY=X" target="_blank" rel="noopener">USDJPY=X</a></div>
+      <div class="card-price">159.32</div>
+      <div class="card-change up">▲ 0.1150 (+0.07%)</div>
+      
+      <hr class="card-divider">
+      <div class="card-analysis">汇价波动有限，日元在震荡中寻找方向，市场关注日本央行后续货币政策的微调信号。
+美日利差处于高位但存在缩窄预期，汇价短期维持震荡。</div>
+      <span class="card-outlook outlook-neutral">neutral</span>
+      
+    </div>
+    
+    <div class="price-card">
+      <div class="card-name">CNY/JPY</div>
+      <div class="card-ticker"><a href="https://finance.yahoo.com/quote/CNYJPY=X" target="_blank" rel="noopener">CNYJPY=X</a></div>
+      <div class="card-price">23.126</div>
+      <div class="card-change down">▼ 0.0494 (-0.21%)</div>
+      
+      <hr class="card-divider">
+      <div class="card-analysis">人民币对日元小幅走弱，受汇率套利及区域资金流动影响，交易表现相对疲软。
+跨币种利差波动较小，汇价缺乏明显突破动力。</div>
+      <span class="card-outlook outlook-neutral">neutral</span>
+      
+    </div>
+    
+    <div class="price-card">
+      <div class="card-name">EUR/JPY</div>
+      <div class="card-ticker"><a href="https://finance.yahoo.com/quote/EURJPY=X" target="_blank" rel="noopener">EURJPY=X</a></div>
+      <div class="card-price">183.16</div>
+      <div class="card-change down">▼ 0.2720 (-0.15%)</div>
+      
+      <hr class="card-divider">
+      <div class="card-analysis">欧元兑日元微幅收跌，欧洲经济数据偏弱，市场避险情绪小幅打压该交叉汇率。
+欧洲经济增长动能不足，汇率短期承压。</div>
+      <span class="card-outlook outlook-bearish">bearish</span>
+      
+    </div>
+    
+  </div>
+
+  <!-- Watchlist -->
+  <div class="section-title" style="margin-top:14px;">Watchlist</div>
+  <div class="price-grid">
+    
+    <div class="price-card">
+      <div class="card-name">iShares Gold Trust</div>
+      <div class="card-ticker"><a href="https://finance.yahoo.com/quote/IAU" target="_blank" rel="noopener">IAU</a></div>
+      <div class="card-price down">94.330</div>
+      <div class="card-change down">▼ -0.05%</div>
+      
+      <hr class="card-divider">
+      <div class="card-analysis">随金价调整微幅回落，ETF资金流向平稳，反映投资者对于当前金价高位的观望情绪。
+黄金整体处于盘整区间，缺乏趋势性行情引导。</div>
+      <span class="card-outlook outlook-neutral">neutral</span>
+      
+    </div>
+    
+    <div class="price-card">
+      <div class="card-name">Newmont Corporation</div>
+      <div class="card-ticker"><a href="https://finance.yahoo.com/quote/NEM" target="_blank" rel="noopener">NEM</a></div>
+      <div class="card-price up">110.19</div>
+      <div class="card-change up">▲ +0.56%</div>
+      
+      <hr class="card-divider">
+      <div class="card-analysis">金矿股表现相对坚挺，小幅上涨，显示市场对黄金开采企业盈利能力的预期依然稳定。
+高金价环境下企业现金流改善，具备中长期投资价值。</div>
+      <span class="card-outlook outlook-bullish">bullish</span>
+      
+    </div>
+    
+    <div class="price-card">
+      <div class="card-name">NVIDIA</div>
+      <div class="card-ticker"><a href="https://finance.yahoo.com/quote/NVDA" target="_blank" rel="noopener">NVDA</a></div>
+      <div class="card-price up">183.22</div>
+      <div class="card-change up">▲ +1.65%</div>
+      
+      <hr class="card-divider">
+      <div class="card-analysis">英伟达股价延续涨势，受AI芯片强劲需求及市场对财报预期的乐观情绪推动。
+AI基础设施领域的垄断地位确保了持续的增长确定性。</div>
+      <span class="card-outlook outlook-bullish">bullish</span>
+      
+    </div>
+    
+    <div class="price-card">
+      <div class="card-name">Taiwan Semiconductor</div>
+      <div class="card-ticker"><a href="https://finance.yahoo.com/quote/TSM" target="_blank" rel="noopener">TSM</a></div>
+      <div class="card-price up">340.23</div>
+      <div class="card-change up">▲ +0.57%</div>
+      
+      <hr class="card-divider">
+      <div class="card-analysis">台积电股价稳健，随半导体板块整体走高，受益于先进制程的长期竞争优势。
+全球晶圆制造需求旺盛，基本面表现优异。</div>
+      <span class="card-outlook outlook-bullish">bullish</span>
+      
+    </div>
+    
+    <div class="price-card">
+      <div class="card-name">Berkshire Hathaway B</div>
+      <div class="card-ticker"><a href="https://finance.yahoo.com/quote/BRK-B" target="_blank" rel="noopener">BRK-B</a></div>
+      <div class="card-price up">492.21</div>
+      <div class="card-change up">▲ +0.44%</div>
+      
+      <hr class="card-divider">
+      <div class="card-analysis">伯克希尔随市场整体反弹，波动较小，展现出防御性资产的稳定性及价值配置优势。
+庞大的现金储备及核心资产的稳健盈利提供坚实支撑。</div>
+      <span class="card-outlook outlook-bullish">bullish</span>
+      
+    </div>
+    
+    <div class="price-card">
+      <div class="card-name">Lockheed Martin</div>
+      <div class="card-ticker"><a href="https://finance.yahoo.com/quote/LMT" target="_blank" rel="noopener">LMT</a></div>
+      <div class="card-price down">645.20</div>
+      <div class="card-change down">▼ -0.12%</div>
+      
+      <hr class="card-divider">
+      <div class="card-analysis">洛克希德马丁股价小幅波动，受地缘局势预期影响，表现较为平淡，缺乏增长动力。
+估值处于合理区间，需等待新的国防订单或业绩催化剂。</div>
+      <span class="card-outlook outlook-neutral">neutral</span>
+      
+    </div>
+    
+    <div class="price-card">
+      <div class="card-name">Toyota Motor</div>
+      <div class="card-ticker"><a href="https://finance.yahoo.com/quote/7203.T" target="_blank" rel="noopener">7203.T</a></div>
+      <div class="card-price up">3,373.00</div>
+      <div class="card-change up">▲ +0.09%</div>
+      
+      <hr class="card-divider">
+      <div class="card-analysis">丰田汽车微幅上涨，受惠于全球车市回暖及汇率有利影响，市场表现保持平稳。
+稳健的全球生产布局及电动化转型推进，提升估值弹性。</div>
+      <span class="card-outlook outlook-bullish">bullish</span>
+      
+    </div>
+    
+    <div class="price-card">
+      <div class="card-name">SoftBank Group</div>
+      <div class="card-ticker"><a href="https://finance.yahoo.com/quote/9984.T" target="_blank" rel="noopener">9984.T</a></div>
+      <div class="card-price down">3,550.00</div>
+      <div class="card-change down">▼ -0.78%</div>
+      
+      <hr class="card-divider">
+      <div class="card-analysis">软银集团股价小幅下跌，受旗下投资组合波动影响，投资者对科技投资前景持谨慎态度。
+投资组合估值波动大，市场对公司未来投资策略存疑。</div>
+      <span class="card-outlook outlook-neutral">neutral</span>
+      
+    </div>
+    
+    <div class="price-card">
+      <div class="card-name">iShares MSCI India ETF</div>
+      <div class="card-ticker"><a href="https://finance.yahoo.com/quote/INDA" target="_blank" rel="noopener">INDA</a></div>
+      <div class="card-price up">48.560</div>
+      <div class="card-change up">▲ +1.04%</div>
+      
+      <hr class="card-divider">
+      <div class="card-analysis">印度ETF表现良好，受外资持续流入及印度强劲经济增长前景的支撑，领涨新兴市场。
+印度经济结构优化与增长潜力，吸引全球长线资本配置。</div>
+      <span class="card-outlook outlook-bullish">bullish</span>
+      
+    </div>
+    
+  </div>
+
+</div><!-- /price-wrap -->
+
+<!-- ═══════════════════════════════════════════════
+     BLOCK 2: MARKET NEWS
+═══════════════════════════════════════════════ -->
+<div class="block-label">▸ Block 2 &nbsp; Market News</div>
+<div class="news-wrap">
+  <div class="news-grid">
+
+    <!-- Global Market News -->
+    <div class="news-section">
+      <div class="news-section-header market-news-hdr">
+        <h2>Global Markets</h2>
+        <span class="count">2 articles</span>
+      </div>
+      <div class="articles">
+        
+          
+          <div class="article">
+            <div class="article-title"><a href="https://www.cnbc.com/2026/03/16/trump-china-iran-xi-war-trade.html" target="_blank" rel="noopener">特朗普称美国因伊朗战争要求中国将习近平会晤推迟“一个月左右”</a></div>
+            
+            <div class="article-summary">关键词：伊朗局势, 特朗普, 习近平<br>
+总结：尽管外界普遍认为伊朗战争不会导致特朗普与习近平在中国的会晤取消，但分析人士指出，当前不断升级的伊朗地缘政治危机必然会对双方的沟通基调产生重要影响。此次会晤将不可避免地触及能源安全、地区稳定及全球贸易平衡等议题，伊朗局势的演变将成为双方谈判桌上绕不开的核心变量，直接影响两国在经济与外交层面可能达成的协议框架及合作深度。</div>
+            
+          </div>
+          
+          <div class="article">
+            <div class="article-title"><a href="https://www.cnbc.com/2026/03/16/strait-of-hormuz-trump-says-coalition-to-protect-oil-tankers-not-ready-yet.html" target="_blank" rel="noopener">特朗普暗示强制开放霍尔木兹海峡的联盟尚未准备就绪：“有些人不太积极”</a></div>
+            
+            <div class="article-summary">关键词：特朗普,霍尔木兹海峡,盟友<br>
+总结：美国总统特朗普于周一公开表示，面对近期霍尔木兹海峡油轮频频遇袭引发的安全危机，美国所寻求的组建国际护航联盟计划进展并不顺利。他指出，部分美国传统盟友在受邀参与该军事行动时表现得并不积极，甚至明确表示不愿加入。这一表态反映出美国在推动中东海域安全战略方面正面临外交压力，其旨在联合盟友共同应对地区挑战、保障国际航运安全的努力未能获得广泛的国际响应，盟友对于直接卷入该地区冲突仍存有极大的顾虑。</div>
+            
+          </div>
+          
+        
+      </div>
+    </div>
+
+    <!-- Japan News -->
+    <div class="news-section">
+      <div class="news-section-header japan-news-hdr">
+        <h2>Japan Markets</h2>
+        <span class="count">2 articles</span>
+      </div>
+      <div class="articles">
+        
+          
+          <div class="article">
+            <div class="article-title"><a href="http://www3.nhk.or.jp/news/html/20260317/k10015077271000.html" target="_blank" rel="noopener">春斗将于18日迎来集中答复日，餐饮业有望以高于物价涨幅的薪资水平提早达成协议</a></div>
+            
+            <div class="article-summary">关键词：春斗, 外食产业, 薪资上涨<br>
+总结：今年日本春斗于18日迎来集中答复日。面对严峻的人手不足问题，外食行业多家企业选择以高于物价上涨幅度的水准快速敲定涨薪方案。通过大幅提升薪资待遇，企业旨在增强竞争力，从而吸引并留住宝贵的人才资源，以应对长期劳动力短缺带来的经营挑战，推动行业整体薪酬水平的持续改善。<br>
+<br>
+Keywords: Shunto, Foodservice Industry, Wage Increase<br>
+Summary: Japan's annual "Shunto" wage negotiations reached its peak on the 18th. Faced with a severe labor shortage, many companies in the foodservice industry are settling on wage increases early, aiming for levels that exceed inflation. By significantly raising salaries, these businesses are striving to secure and retain talent, thereby strengthening their operational stability and addressing the persistent workforce challenges across the sector.</div>
+            
+          </div>
+          
+          <div class="article">
+            <div class="article-title"><a href="http://www3.nhk.or.jp/news/html/20260317/k10015077291000.html" target="_blank" rel="noopener">全日空新任社长：原油价格高涨暂无直接影响，但担忧价格居高不下</a></div>
+            
+            <div class="article-summary">关键词：全日空, 平泽寿一, 原油价格<br>
+总结：即将出任全日空社长的平泽寿一副社长在接受NHK采访时指出，近期受伊朗局势影响的原油价格波动对公司目前运营尚无直接冲击。然而，随着全日空国际航线业务比重的不断扩大，平泽表示对油价长期高位运行的趋势深感担忧，并强调这将对公司的成本控制及经营稳定性构成严峻挑战，未来将密切关注全球能源市场的动向，以应对潜在的经营压力。</div>
+            
+          </div>
+          
+        
+      </div>
+    </div>
+
+    <!-- Hot Markets (full width) -->
+    
+    <div class="news-section" style="grid-column: 1 / -1;">
+      <div class="news-section-header hot-market-hdr">
+        <h2>Hot Markets Today</h2>
+        <span class="count">1 market(s) triggered ±2%</span>
+      </div>
+      <div class="articles">
+        
+        <div class="article">
+          <div class="article-title">
+            <span class="hot-badge hot-up">
+              S.Korea +7.21%
+            </span>
+            EWY
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+    
+
+  </div><!-- /news-grid -->
+</div><!-- /news-wrap -->
+
+<footer>
+  Investment Daily Trends &nbsp;·&nbsp; 2026-03-17 11:32:36 JST &nbsp;·&nbsp;
+  Prices via Yahoo Finance (15-min delay intraday, exact at close)
+</footer>
+
+</body>
+</html>

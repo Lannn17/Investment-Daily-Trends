@@ -19,7 +19,8 @@ from types import SimpleNamespace
 import feedparser
 import requests
 import yfinance as yf
-import google.generativeai as genai
+from google import genai
+from google.genai import types as genai_types
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 from jinja2 import Template
@@ -79,8 +80,7 @@ TRANSLATE_MODEL_CHAIN = _chain(os.environ.get('TRANSLATE_MODEL'), DEFAULT_MODEL)
 SUMMARY_MODEL_CHAIN   = _chain(os.environ.get('SUMMARY_MODEL'),   DEFAULT_MODEL)
 WATCHLIST_MODEL_CHAIN = _chain(os.environ.get('WATCHLIST_MODEL'), DEFAULT_MODEL)
 
-if GEMINI_API_KEY:
-    genai.configure(api_key=GEMINI_API_KEY)
+_gemini_client = genai.Client(api_key=GEMINI_API_KEY) if GEMINI_API_KEY else None
 
 print(f"[models] score={SCORE_MODEL_CHAIN} translate={TRANSLATE_MODEL_CHAIN} "
       f"summary={SUMMARY_MODEL_CHAIN} watchlist={WATCHLIST_MODEL_CHAIN}")
@@ -161,6 +161,9 @@ def is_duplicate(fp, seen_fps, threshold=None):
     return any(SequenceMatcher(None, fp, s).ratio() >= thr for s in seen_fps)
 
 # ── Price formatting ──────────────────────────────────────────────────────────
+def ticker_url(ticker):
+    return f'https://finance.yahoo.com/quote/{ticker}'
+
 def format_price(price):
     """Smart price formatter based on magnitude."""
     if price is None or (isinstance(price, float) and math.isnan(price)):
@@ -207,6 +210,7 @@ def fetch_price_item(ticker, label):
         return {
             'ticker':          ticker,
             'label':           label,
+            'url':             ticker_url(ticker),
             'price':           today,
             'price_fmt':       format_price(today),
             'change':          change,
@@ -227,7 +231,7 @@ def fetch_price_item(ticker, label):
 
 def _placeholder(ticker, label):
     return {
-        'ticker': ticker, 'label': label,
+        'ticker': ticker, 'label': label, 'url': ticker_url(ticker),
         'price': None, 'price_fmt': 'N/A',
         'change': 0, 'change_fmt': 'N/A',
         'change_pct': 0, 'change_pct_fmt': 'N/A',
@@ -311,14 +315,16 @@ def clean_summary(text):
 # ── Gemini API wrappers ───────────────────────────────────────────────────────
 def chat_with_gemini(prompt, models=None, max_retries=2):
     """Try each model in chain; on quota/rate error switch immediately; on other errors retry."""
-    if not GEMINI_API_KEY:
+    if not _gemini_client:
         raise ValueError("GEMINI_API_KEY not set")
     chain = models or [DEFAULT_MODEL]
     for i, model_name in enumerate(chain):
         for attempt in range(max_retries + 1):
             try:
-                model    = genai.GenerativeModel(model_name)
-                response = model.generate_content(prompt)
+                response = _gemini_client.models.generate_content(
+                    model=model_name,
+                    contents=prompt,
+                )
                 if i > 0:
                     print(f"  Fell back to model: {model_name}")
                 return response.text
@@ -563,7 +569,7 @@ def process_news_section(urls, max_items, section_name, topic,
         seen_links.add(entry.link)
         current_run_fps.append(fp)
 
-    print(f"  [{section_name}] candidates: {len(candidates)} → selected: {len(entries)}")
+    print(f"  [{section_name}] candidates: {len(candidates)} -> selected: {len(entries)}")
     return entries, bench_items
 
 # ── Bootstrap ─────────────────────────────────────────────────────────────────
@@ -606,7 +612,20 @@ for hm in hot_markets:
     hm['news'] = fetch_ticker_news(hm['etf'], max_items=HOT_MARKET_NEWS_MAX)
     print(f"  [hot_markets] {hm['country']}: fetched {len(hm['news'])} news items")
 
-# ── Step 3: Watchlist prices + AI analysis ────────────────────────────────────
+# ── Step 3: All Block-1 items + Watchlist — single combined AI analysis ────────
+def _init_ai_fields(items):
+    for item in items:
+        item.setdefault('name',        item.get('label', item['ticker']))
+        item.setdefault('news_titles', [n.title for n in fetch_ticker_news(item['ticker'], max_items=3)])
+        item['analysis']    = None
+        item['outlook']     = 'neutral'
+        item['outlook_css'] = 'neutral'
+
+print("[ai] Fetching news for indices / commodities / FX...")
+_init_ai_fields(indices_data)
+_init_ai_fields(commodities_data)
+_init_ai_fields(fx_data)
+
 print("[watchlist] Fetching prices...")
 watchlist_items = []
 for ticker in WATCHLIST_TICKERS:
@@ -621,19 +640,32 @@ for ticker in WATCHLIST_TICKERS:
     item['outlook_css'] = 'neutral'
     watchlist_items.append(item)
 
-if GEMINI_API_KEY and WATCHLIST_MODEL_CHAIN and watchlist_items:
-    print("[watchlist] Running combined AI analysis (1 API call)...")
-    analyses = analyze_watchlist(watchlist_items)
-    for item in watchlist_items:
-        a = analyses.get(item['ticker'])
-        if a:
-            item['outlook']     = a.get('outlook', 'neutral').lower()
-            if item['outlook'] not in ('bullish', 'bearish', 'neutral'):
-                item['outlook'] = 'neutral'
-            item['outlook_css'] = item['outlook']
-            today_text  = a.get('today', '')
-            reason_text = a.get('outlook_reason', '')
-            item['analysis'] = today_text + (f'\n{reason_text}' if reason_text else '')
+# Single combined AI call: all Block-1 + watchlist
+if GEMINI_API_KEY and WATCHLIST_MODEL_CHAIN:
+    all_ai_items = (
+        [i for i in indices_data    if i['price_fmt'] != 'N/A'] +
+        [i for i in commodities_data if i['price_fmt'] != 'N/A'] +
+        [i for i in fx_data          if i['price_fmt'] != 'N/A'] +
+        watchlist_items
+    )
+    if all_ai_items:
+        print(f"[ai] Combined analysis for {len(all_ai_items)} items (1 API call)...")
+        analyses = analyze_watchlist(all_ai_items)
+        def _apply_analysis(items):
+            for item in items:
+                a = analyses.get(item['ticker'])
+                if a:
+                    item['outlook'] = a.get('outlook', 'neutral').lower()
+                    if item['outlook'] not in ('bullish', 'bearish', 'neutral'):
+                        item['outlook'] = 'neutral'
+                    item['outlook_css'] = item['outlook']
+                    today_text  = a.get('today', '')
+                    reason_text = a.get('outlook_reason', '')
+                    item['analysis'] = today_text + (f'\n{reason_text}' if reason_text else '')
+        _apply_analysis(indices_data)
+        _apply_analysis(commodities_data)
+        _apply_analysis(fx_data)
+        _apply_analysis(watchlist_items)
 
 # ── Step 4: News sections ─────────────────────────────────────────────────────
 print("[news] Processing market_news...")
@@ -667,7 +699,7 @@ if FULLTEST_MODE:
             pass
     print("[FULLTEST] State cleared — next run starts fresh")
 elif TEST_MODE:
-    print("[TEST] State not saved — next run re-fetches same articles")
+    print("[TEST] State not saved - next run re-fetches same articles")
 else:
     all_fps = [text_fingerprint(e.title, getattr(e, 'article', e.title))
                for e in market_news_entries + japan_news_entries]
@@ -699,7 +731,7 @@ with open(daily_html_path, 'w', encoding='utf-8') as f:
         hot_markets=hot_markets,
     )
     f.write(html)
-print(f"[output] daily.html → {daily_html_path}")
+print(f"[output] daily.html -> {daily_html_path}")
 
 # ── Step 7: Send email ────────────────────────────────────────────────────────
 def send_daily_email():
@@ -710,7 +742,7 @@ def send_daily_email():
     recipient = os.environ.get('RECIPIENT_EMAIL')
 
     if not all([smtp_host, smtp_user, smtp_pass, recipient]):
-        print("[email] Not configured — set SMTP_HOST, SMTP_USER, SMTP_PASS, RECIPIENT_EMAIL.")
+        print("[email] Not configured - set SMTP_HOST, SMTP_USER, SMTP_PASS, RECIPIENT_EMAIL.")
         return
 
     with open(daily_html_path, 'r', encoding='utf-8') as f:

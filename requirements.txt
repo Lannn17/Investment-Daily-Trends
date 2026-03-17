@@ -1,7 +1,7 @@
 feedparser
 requests
 yfinance
-google-generativeai
+google-genai
 jinja2
 beautifulsoup4
 lxml
