@@ -237,6 +237,18 @@ def price_css(change):
 def price_arrow(change):
     return '▲' if change >= 0 else '▼'
 
+# ── Market close times (local hour) by UTC offset ────────────────────────────
+# Bar timestamps from yfinance are midnight of the trading day in the local exchange tz.
+# Adding the standard close hour gives the actual close time for that exchange.
+_CLOSE_HOURS_BY_UTC_OFFSET = {
+    -5.0: 16.0,   # EST  → NYSE/NASDAQ 16:00 EST  = 06:00 JST
+    -4.0: 16.0,   # EDT  → NYSE/NASDAQ 16:00 EDT  = 05:00 JST
+     9.0: 15.5,   # JST  → TSE         15:30 JST  = 15:30 JST
+     8.0: 16.0,   # HKT/SGT            16:00       = 17:00 JST
+     0.0: 16.5,   # GMT  → London      16:30 GMT  = 01:30 JST (+1d)
+     1.0: 17.5,   # CET  → Frankfurt   17:30 CET  = 01:30 JST (+1d)
+}
+
 # ── yfinance price fetch ──────────────────────────────────────────────────────
 def fetch_price_item(ticker, label):
     """Fetch today + 5-day history for one ticker. Returns dict or None."""
@@ -257,6 +269,22 @@ def fetch_price_item(ticker, label):
         end5        = float(hist5.iloc[-1])
         change_5d   = (end5 - start5) / start5 if start5 else 0.0
 
+        # as_of: estimate the exchange close time in JST from bar timestamp + known close offset
+        try:
+            ts = hist.index[-1]
+            if hasattr(ts, 'tzinfo') and ts.tzinfo is not None:
+                tz_offset_h = ts.tzinfo.utcoffset(ts).total_seconds() / 3600
+                close_h = _CLOSE_HOURS_BY_UTC_OFFSET.get(tz_offset_h)
+                if close_h is not None:
+                    close_ts = ts + datetime.timedelta(hours=close_h)
+                    as_of = close_ts.astimezone(JST).strftime('%m/%d %H:%M')
+                else:
+                    as_of = ts.astimezone(JST).strftime('%m/%d')  # unknown exchange: date only
+            else:
+                as_of = ts.replace(tzinfo=datetime.timezone.utc).astimezone(JST).strftime('%m/%d')
+        except Exception:
+            as_of = ''
+
         return {
             'ticker':          ticker,
             'label':           label,
@@ -274,6 +302,7 @@ def fetch_price_item(ticker, label):
             'change_5d':       change_5d,
             'change_5d_fmt':   f'{change_5d * 100:+.2f}%',
             'css5d':           price_css(change_5d),
+            'as_of':           as_of,
         }
     except Exception as e:
         print(f"  [price] Failed for {ticker}: {e}")
@@ -288,6 +317,7 @@ def _placeholder(ticker, label):
         'change_arrow': '-', 'css': 'flat',
         'history': [], 'history_dates': [],
         'change_5d': 0, 'change_5d_fmt': 'N/A', 'css5d': 'flat',
+        'as_of': '',
     }
 
 def fetch_price_list(tickers, labels):
@@ -535,7 +565,7 @@ def ai_summary(text, models=None):
     )
     return clean_summary(chat_with_gemini(prompt, models=models or SUMMARY_MODEL_CHAIN))
 
-def analyze_watchlist(items, models=None):
+def analyze_watchlist(items, run_type='morning', models=None):
     """Single Gemini call to analyse all watchlist tickers. Returns dict keyed by ticker."""
     if not items:
         return {}
@@ -550,12 +580,24 @@ def analyze_watchlist(items, models=None):
             part += '相关新闻：\n' + '\n'.join(f'  - {t}' for t in item['news_titles'][:3]) + '\n'
         parts.append(part)
 
+    if run_type == 'morning':
+        context_hint = (
+            '【当前时间：东京07:30 — 早报】美欧市场已收盘，日本市场即将开盘（09:00 JST）。\n'
+            '分析角度：美欧相关标的做隔夜收盘复盘；日本/亚洲相关标的做今日开盘前瞻。\n\n'
+        )
+    else:
+        context_hint = (
+            '【当前时间：东京22:00 — 晚报】日本市场已收盘（15:30 JST），欧洲盘中，美股即将开盘（22:30 JST）。\n'
+            '分析角度：日本相关标的做今日收盘复盘；美股/商品/FX做美股开盘前瞻；欧洲相关标的做盘中动态简析。\n\n'
+        )
+
     ticker_list = json.dumps([i['ticker'] for i in items], ensure_ascii=False)
     prompt = (
-        '以下是今日自选标的的价格表现和相关新闻：\n'
+        context_hint
+        + '以下是各标的的价格表现和相关新闻：\n'
         + ''.join(parts)
         + '\n请对每个标的给出：\n'
-          '1. 今日走势简析（结合价格和新闻背景，50字以内，中文）\n'
+          '1. 走势简析（结合时间背景、价格和新闻，50字以内，中文）\n'
           '2. 近期展望（bullish/bearish/neutral 三选一，并附一句中文理由）\n\n'
           '严格输出JSON，顺序与输入一致：\n'
           '{"analyses": [{"ticker": "...", "today": "...", "outlook": "bullish|bearish|neutral", "outlook_reason": "..."}]}\n'
@@ -805,7 +847,7 @@ else:
         )
         if all_ai_items:
             print(f"[ai] Combined analysis for {len(all_ai_items)} items (1 API call)...")
-            analyses = analyze_watchlist(all_ai_items)
+            analyses = analyze_watchlist(all_ai_items, run_type=run_type)
             def _apply_analysis(items):
                 for item in items:
                     a = analyses.get(item['ticker'])
@@ -824,9 +866,16 @@ else:
             _apply_analysis(watchlist_items)
 
     # ── Step 4: News sections ─────────────────────────────────────────────────
+    if run_type == 'morning':
+        market_news_topic = '全球财经市场 · 美欧隔夜复盘及亚市开盘前瞻'
+        japan_news_topic  = '日本金融市场 · 今日开盘前瞻'
+    else:
+        market_news_topic = '全球财经市场 · 欧市盘中动态及美股开盘前瞻'
+        japan_news_topic  = '日本金融市场 · 今日收盘复盘'
+
     print("[news] Processing market_news...")
     market_news_entries, mn_bench = process_news_section(
-        MARKET_NEWS_URLS, MARKET_NEWS_MAX, 'market_news', '全球财经市场',
+        MARKET_NEWS_URLS, MARKET_NEWS_MAX, 'market_news', market_news_topic,
         last_run_links, last_run_fps, current_run_fps, seen_links,
         run_type=run_type, morning_bench=morning_bench,
     )
@@ -837,7 +886,7 @@ else:
 
     print("[news] Processing japan_news...")
     japan_news_entries, jn_bench = process_news_section(
-        JAPAN_NEWS_URLS, JAPAN_NEWS_MAX, 'japan_news', '日本金融市场',
+        JAPAN_NEWS_URLS, JAPAN_NEWS_MAX, 'japan_news', japan_news_topic,
         last_run_links, last_run_fps, current_run_fps, seen_links,
         run_type=run_type, morning_bench=morning_bench,
     )
@@ -872,17 +921,30 @@ else:
         ))
 
 # ── Step 6: Render daily.html (web) and email HTML ───────────────────────────
+_brief = 'Morning Brief' if run_type == 'morning' else 'Evening Brief'
 if UITEST_MODE:
-    edition = '[UITEST] Daily Brief'
+    edition = f'[UITEST] {_brief}'
 elif FULLTEST_MODE:
-    edition = f'[FULLTEST] {"Morning Brief" if run_type == "morning" else "Evening Brief"}'
+    edition = f'[FULLTEST] {_brief}'
 elif TEST_MODE:
-    edition = '[TEST] Daily Brief'
+    edition = f'[TEST] {_brief}'
 else:
-    edition = 'Morning Brief' if run_type == 'morning' else 'Evening Brief'
+    edition = _brief
+
+if run_type == 'morning':
+    _news_s1_title = 'Morning Brief · Global Markets'
+    _news_s1_sub   = 'US/EU overnight · Japan opens 09:00 JST'
+    _news_s2_title = 'Morning Brief · Japan Markets'
+    _news_s2_sub   = 'Open preview — 09:00 JST'
+else:
+    _news_s1_title = 'Evening Brief · Global Markets'
+    _news_s1_sub   = 'EU open · US opens 22:30 JST'
+    _news_s2_title = 'Evening Brief · Japan Markets'
+    _news_s2_sub   = 'Session recap — closed 15:30 JST'
 
 _render_ctx = dict(
     edition=edition,
+    run_type=run_type,
     update_date=now.strftime('%Y-%m-%d'),
     update_time=now.strftime('%Y-%m-%d %H:%M:%S'),
     indices=indices_data,
@@ -893,6 +955,10 @@ _render_ctx = dict(
     market_news=market_news_entries,
     japan_news=japan_news_entries,
     hot_markets=hot_markets,
+    news_section_1_title=_news_s1_title,
+    news_section_1_sub=_news_s1_sub,
+    news_section_2_title=_news_s2_title,
+    news_section_2_sub=_news_s2_sub,
 )
 
 daily_html_path = os.path.join(BASE, 'daily.html')
@@ -920,7 +986,7 @@ def send_daily_email():
     if FULLTEST_MODE:
         subject = f'[FULLTEST] {edition} {now.strftime("%Y-%m-%d")}'
     elif TEST_MODE:
-        subject = f'[TEST] Daily Brief {now.strftime("%Y-%m-%d %H:%M")}'
+        subject = f'[TEST] {_brief} {now.strftime("%Y-%m-%d %H:%M")}'
     else:
         subject = f'{edition} {now.strftime("%Y-%m-%d")}'
 

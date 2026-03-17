@@ -168,7 +168,7 @@
     {% for item in indices %}
     <div class="price-card">
       <div class="card-name">{{ item.label }}</div>
-      <div class="card-ticker"><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.ticker }}</a></div>
+      <div class="card-ticker"><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.ticker }}</a>{% if item.as_of %}<span style="font-size:0.58rem;color:#bbb;margin-left:4px;">{{ item.as_of }}</span>{% endif %}</div>
       <div class="card-price">{{ item.price_fmt }}</div>
       <div class="card-change {{ item.css }}">{{ item.change_arrow }} {{ item.change_fmt }} ({{ item.change_pct_fmt }})</div>
       {% if item.analysis %}
@@ -185,7 +185,7 @@
     {% for item in commodities %}
     <div class="price-card">
       <div class="card-name">{{ item.label }}</div>
-      <div class="card-ticker"><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.ticker }}</a></div>
+      <div class="card-ticker"><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.ticker }}</a>{% if item.as_of %}<span style="font-size:0.58rem;color:#bbb;margin-left:4px;">{{ item.as_of }}</span>{% endif %}</div>
       <div class="card-price">{{ item.price_fmt }}</div>
       <div class="card-change {{ item.css }}">{{ item.change_arrow }} {{ item.change_fmt }} ({{ item.change_pct_fmt }})</div>
       {% if item.analysis %}
@@ -202,7 +202,7 @@
     {% for item in fx %}
     <div class="price-card">
       <div class="card-name">{{ item.label }}</div>
-      <div class="card-ticker"><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.ticker }}</a></div>
+      <div class="card-ticker"><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.ticker }}</a>{% if item.as_of %}<span style="font-size:0.58rem;color:#bbb;margin-left:4px;">{{ item.as_of }}</span>{% endif %}</div>
       <div class="card-price">{{ item.price_fmt }}</div>
       <div class="card-change {{ item.css }}">{{ item.change_arrow }} {{ item.change_fmt }} ({{ item.change_pct_fmt }})</div>
       {% if item.analysis %}
@@ -219,7 +219,7 @@
     {% for item in watchlist %}
     <div class="price-card">
       <div class="card-name">{{ item.name }}</div>
-      <div class="card-ticker"><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.ticker }}</a></div>
+      <div class="card-ticker"><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.ticker }}</a>{% if item.as_of %}<span style="font-size:0.58rem;color:#bbb;margin-left:4px;">{{ item.as_of }}</span>{% endif %}</div>
       <div class="card-price {{ item.css }}">{{ item.price_fmt }}</div>
       <div class="card-change {{ item.css }}">{{ item.change_arrow }} {{ item.change_pct_fmt }}</div>
       {% if item.analysis %}
@@ -243,8 +243,8 @@
     <!-- Global Market News -->
     <div class="news-section">
       <div class="news-section-header market-news-hdr">
-        <h2>Global Markets</h2>
-        <span class="count">{{ market_news | length }} articles</span>
+        <h2>{{ news_section_1_title }}</h2>
+        <span class="count">{{ news_section_1_sub }} · {{ market_news | length }} articles</span>
       </div>
       <div class="articles">
         {% if market_news %}
@@ -265,8 +265,8 @@
     <!-- Japan News -->
     <div class="news-section">
       <div class="news-section-header japan-news-hdr">
-        <h2>Japan Markets</h2>
-        <span class="count">{{ japan_news | length }} articles</span>
+        <h2>{{ news_section_2_title }}</h2>
+        <span class="count">{{ news_section_2_sub }} · {{ japan_news | length }} articles</span>
       </div>
       <div class="articles">
         {% if japan_news %}

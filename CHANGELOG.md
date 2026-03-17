@@ -5,6 +5,22 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [v0.3.3] - 2026-03-17
+
+### Added
+- Price cards now show exchange close time (JST) next to each ticker — computed from bar timestamp + per-exchange close offset
+- News section headers are now context-aware: "Morning Brief · Global Markets" vs "Evening Brief · Global Markets", with JST timing sub-label
+- AI analysis prompt is now run-type aware: morning prompt focuses on US/EU overnight recap + Japan open preview; evening prompt focuses on Japan session recap + US pre-market outlook
+- News scoring topics vary by run type to surface the most relevant articles for each edition
+
+### Changed
+- Report title (`edition`) and email subject now always include "Morning Brief" / "Evening Brief" in test/uitest modes (was "Daily Brief")
+
+### 新增 / 变更
+- 价格标的显示交易所收盘时间（JST）；新闻区标题区分早晚报；AI分析提示词按早晚报角度调整；报告标题在测试模式下也区分早晚
+
+---
+
 ## [v0.3.2] - 2026-03-17
 
 ### Changed
