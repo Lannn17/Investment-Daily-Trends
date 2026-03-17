@@ -58,10 +58,8 @@ Follows Semantic Versioning: `vMAJOR.MINOR.PATCH`
 | MAJOR | Architecture refactor, breaking change |
 
 - Current version recorded at top of this file
-- On every code change before committing:
-  1. Determine upgrade type
-  2. Update version at top of this file — **version number decided by the user, not Claude**
-  3. Add new entry to CHANGELOG.md
+- Claude determines the version bump type autonomously — do not ask the user
+- Update version at top of this file and add entry to CHANGELOG.md before every commit
 
 ---
 
@@ -85,10 +83,12 @@ Follows Semantic Versioning: `vMAJOR.MINOR.PATCH`
 ## Rule 5: Workflow Per Change
 
 1. Modify code files
-2. Determine version bump type — **ask the user for the version number**
-3. Update this file's version at top
-4. Update CHANGELOG.md
-5. Commit with English message
+2. **Run `python main.py --test` and confirm exit code 0 before proceeding**
+3. Determine version bump type (PATCH / MINOR / MAJOR)
+4. Update version at top of this file
+5. Add new entry to CHANGELOG.md
+6. Commit with English message
+7. Push to remote
 
 ---
 
@@ -98,5 +98,6 @@ Follows Semantic Versioning: `vMAJOR.MINOR.PATCH`
 - **Watchlist AI analysis**: single combined Gemini call for all tickers to minimise API usage
 - **Hot market detection**: yfinance ETF screening first, AI only if triggered
 - **Email structure**: Block 1 = Price Dashboard, Block 2 = Market News (always separated)
-- **Price table**: today-only in email; today / 5-day tab switch on GitHub Pages web version
+- **Price table**: today-only view; 5-day tab removed as of v0.2.0
+- **Block 1 AI analysis**: all indices, commodities, FX, and watchlist items analysed in one combined Gemini call
 - **Gemini model**: gemini-3.1-flash-lite-preview (default); fallback models via env vars
