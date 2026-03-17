@@ -1,6 +1,7 @@
 feedparser
 requests
 yfinance
+pandas
 google-genai
 jinja2
 beautifulsoup4
