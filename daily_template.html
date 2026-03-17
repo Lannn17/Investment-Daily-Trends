@@ -284,56 +284,60 @@
       </div>
     </div>
 
-    <!-- Hot Markets (full width) -->
-    {% if hot_markets %}
-    <div class="news-section" style="grid-column: 1 / -1;">
-      <div class="news-section-header hot-market-hdr">
-        <h2>Hot Markets Today</h2>
-        <span class="count">{{ hot_markets | length }} market(s) triggered ±2%</span>
-      </div>
-      <div class="articles">
-        {% for hm in hot_markets %}
-        <div class="article">
-          <div class="article-title">
-            <span class="hot-badge {{ 'hot-up' if hm.pct >= 0 else 'hot-down' }}">
-              {{ hm.country }} {{ '+' if hm.pct >= 0 else '' }}{{ "%.2f"|format(hm.pct * 100) }}%
-            </span>
-            <a href="{{ hm.url }}" target="_blank" rel="noopener" style="color:#1a1a2e; text-decoration:none;">{{ hm.etf }}</a>
-            {% if hm.etf_source %}<span class="hot-source-label">{{ hm.etf_source }}</span>{% endif %}
-          </div>
-          {% if hm.top_movers %}
-          <div class="top-movers">
-            {% for m in hm.top_movers %}
-            <div class="top-mover-item">
-              <span class="hot-badge {{ 'hot-up' if m.pct >= 0 else 'hot-down' }}">{{ m.change_pct_fmt }}</span>
-              <a href="{{ m.url }}" target="_blank" rel="noopener" class="top-mover-ticker">{{ m.ticker }}</a>
-              <span class="top-mover-price">{{ m.price_fmt }}</span>
-            </div>
-            {% endfor %}
-            {% if hm.constituents_source %}
-            <div class="constituents-source">Source: {{ hm.constituents_source }}</div>
-            {% endif %}
-          </div>
-          {% endif %}
-          {% if hm.analysis %}
-          <div class="article-summary" style="margin-top:5px;">{{ hm.analysis }}
-            <span class="card-outlook outlook-{{ hm.outlook_css }}" style="margin-left:6px;">{{ hm.outlook }}</span>
-          </div>
-          {% endif %}
-          {% for n in hm.news %}
-          <div class="article" style="padding-left:20px; border-left:3px solid #e65100; margin:6px 0;">
-            <div class="article-title"><a href="{{ n.link }}" target="_blank" rel="noopener">{{ n.title }}</a></div>
-            {% if n.summary %}<div class="article-summary">{{ n.summary | safe }}</div>{% endif %}
+  </div><!-- /news-grid -->
+</div><!-- /news-wrap -->
+
+<!-- ═══════════════════════════════════════════════
+     HOT SECTORS TODAY
+═══════════════════════════════════════════════ -->
+{% if hot_markets %}
+<div class="news-wrap" style="margin-top:2px;">
+  <div class="block-title">Hot Sectors Today</div>
+  <div class="news-section" style="border-right:none;">
+    <div class="news-section-header hot-market-hdr">
+      <h2>Top Movers — {{ hot_markets | length }} sector(s) triggered ±2%</h2>
+    </div>
+    <div class="articles">
+      {% for hm in hot_markets %}
+      <div class="article">
+        <div class="article-title">
+          <span class="hot-badge {{ 'hot-up' if hm.pct >= 0 else 'hot-down' }}">
+            {{ hm.country }} {{ '+' if hm.pct >= 0 else '' }}{{ "%.2f"|format(hm.pct * 100) }}%
+          </span>
+          <a href="{{ hm.url }}" target="_blank" rel="noopener" style="color:#1a1a2e; text-decoration:none;">{{ hm.etf }}</a>
+          {% if hm.etf_source %}<span class="hot-source-label">{{ hm.etf_source }}</span>{% endif %}
+        </div>
+        {% if hm.top_movers %}
+        <div class="top-movers">
+          {% for m in hm.top_movers %}
+          <div class="top-mover-item">
+            <span class="hot-badge {{ 'hot-up' if m.pct >= 0 else 'hot-down' }}">{{ m.change_pct_fmt }}</span>
+            <a href="{{ m.url }}" target="_blank" rel="noopener" class="top-mover-ticker">{{ m.ticker }}</a>
+            <span class="top-mover-price">{{ m.price_fmt }}</span>
           </div>
           {% endfor %}
+          {% if hm.constituents_source %}
+          <div class="constituents-source">Source: {{ hm.constituents_source }}</div>
+          {% endif %}
+        </div>
+        {% endif %}
+        {% if hm.analysis %}
+        <div class="article-summary" style="margin-top:5px;">{{ hm.analysis }}
+          <span class="card-outlook outlook-{{ hm.outlook_css }}" style="margin-left:6px;">{{ hm.outlook }}</span>
+        </div>
+        {% endif %}
+        {% for n in hm.news %}
+        <div class="article" style="padding-left:20px; border-left:3px solid #e65100; margin:6px 0;">
+          <div class="article-title"><a href="{{ n.link }}" target="_blank" rel="noopener">{{ n.title }}</a></div>
+          {% if n.summary %}<div class="article-summary">{{ n.summary | safe }}</div>{% endif %}
         </div>
         {% endfor %}
       </div>
+      {% endfor %}
     </div>
-    {% endif %}
-
-  </div><!-- /news-grid -->
-</div><!-- /news-wrap -->
+  </div>
+</div>
+{% endif %}
 
 <footer>
   Investment Daily Trends &nbsp;·&nbsp; {{ update_time }} JST &nbsp;·&nbsp;

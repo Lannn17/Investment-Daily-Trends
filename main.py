@@ -34,11 +34,13 @@ _ap = argparse.ArgumentParser()
 _ap.add_argument('--test',     action='store_true', help='Quick test: 2 articles/section, state not saved')
 _ap.add_argument('--fulltest', action='store_true', help='Full test: production count, state cleared after')
 _ap.add_argument('--uitest',   action='store_true', help='UI test: skip all API/data calls, render from cache only')
+_ap.add_argument('--email',    action='store_true', help='Force send email even in test/uitest mode')
 _ap.add_argument('--edition',  choices=['morning', 'evening'], default=None)
 _args = _ap.parse_args()
 TEST_MODE     = _args.test
 FULLTEST_MODE = _args.fulltest
 UITEST_MODE   = _args.uitest
+FORCE_EMAIL   = _args.email
 
 # ── Config ────────────────────────────────────────────────────────────────────
 config = configparser.ConfigParser()
@@ -356,7 +358,7 @@ def detect_hot_sectors():
 
     sorted_etfs = sorted(etf_data.items(), key=lambda x: abs(x[1]['pct']), reverse=True)
     triggered = [(etf, d) for etf, d in sorted_etfs
-                 if abs(d['pct']) >= HOT_MARKET_THRESHOLD][:3]
+                 if abs(d['pct']) >= HOT_MARKET_THRESHOLD][:5]
 
     if not triggered:
         print("  [hot_sectors] No sectors above threshold")
@@ -748,7 +750,7 @@ else:
     print("[hot_sectors] Detecting hot sectors...")
     hot_markets = detect_hot_sectors()
     if TEST_MODE:
-        hot_markets = hot_markets[:1]
+        hot_markets = hot_markets[:2]
 
     for hm in hot_markets:
         hm['news'] = fetch_ticker_news(hm['etf'], max_items=HOT_MARKET_NEWS_MAX)
@@ -899,6 +901,8 @@ with open(daily_html_path, 'w', encoding='utf-8') as f:
     f.write(tmpl.render(**_render_ctx))
 print(f"[output] daily.html -> {daily_html_path}")
 
+email_html = Template(open('email_template.html', encoding='utf-8').read()).render(**_render_ctx)
+
 # ── Step 7: Send email ────────────────────────────────────────────────────────
 def send_daily_email():
     smtp_host = os.environ.get('SMTP_HOST')
@@ -911,8 +915,7 @@ def send_daily_email():
         print("[email] Not configured - set SMTP_HOST, SMTP_USER, SMTP_PASS, RECIPIENT_EMAIL.")
         return
 
-    with open(daily_html_path, 'r', encoding='utf-8') as f:
-        html_content = f.read()
+    html_content = email_html
 
     if FULLTEST_MODE:
         subject = f'[FULLTEST] {edition} {now.strftime("%Y-%m-%d")}'
@@ -937,4 +940,7 @@ def send_daily_email():
     except Exception as e:
         print(f"[email] Failed to send: {e}")
 
-send_daily_email()
+if FORCE_EMAIL or not (TEST_MODE or FULLTEST_MODE or UITEST_MODE):
+    send_daily_email()
+else:
+    print("[email] Skipped in test mode - use --email to force send")

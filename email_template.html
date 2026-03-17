@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ edition }}</title>
+</head>
+<body style="margin:0;padding:0;background:#f0f2f5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#1a1a2e;">
+
+{# ── Macro: single price card (full-width, 1 per row) ── #}
+{% macro price_card(item) %}
+<div style="border:1px solid #e8eaed;border-radius:8px;padding:12px 14px;background:#fafbfc;margin-bottom:8px;">
+  <div style="font-size:15px;font-weight:700;color:#1a1a2e;">{{ item.label if item.label else item.name }}</div>
+  <div style="font-size:12px;color:#999;margin-top:2px;"><a href="{{ item.url }}" style="color:#999;text-decoration:none;">{{ item.ticker }}</a></div>
+  <div style="font-size:20px;font-weight:700;color:#1a1a2e;margin-top:6px;line-height:1.1;">{{ item.price_fmt }}</div>
+  <div style="font-size:14px;font-weight:600;margin-top:3px;color:{% if item.css == 'up' %}#1a9e5a{% elif item.css == 'down' %}#d32f2f{% else %}#888{% endif %};">
+    {{ item.change_arrow }} {{ item.change_pct_fmt }}
+  </div>
+  {% if item.analysis %}
+  <div style="border-top:1px solid #eee;margin-top:8px;padding-top:7px;">
+    <div style="font-size:13px;color:#555;line-height:1.55;">{{ item.analysis }}</div>
+    <div style="margin-top:5px;">
+      <span style="display:inline-block;padding:2px 7px;border-radius:3px;font-size:11px;font-weight:700;
+        background:{% if item.outlook == 'bullish' %}#e6f4ea{% elif item.outlook == 'bearish' %}#fce8e6{% else %}#f0f2f5{% endif %};
+        color:{% if item.outlook == 'bullish' %}#1a9e5a{% elif item.outlook == 'bearish' %}#d32f2f{% else %}#555{% endif %};">{{ item.outlook }}</span>
+    </div>
+  </div>
+  {% endif %}
+</div>
+{% endmacro %}
+
+{# ── Macro: 1-column price list (full width per card) ── #}
+{% macro price_grid(items) %}
+{% for item in items %}
+{{ price_card(item) }}
+{% endfor %}
+{% endmacro %}
+
+{# ── Outer wrapper ── #}
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#f0f2f5;">
+<tr><td style="padding:0;">
+
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#fff;max-width:600px;margin:0 auto;">
+
+  {# ── Header ── #}
+  <tr>
+    <td style="background:#0f3460;padding:18px 16px 12px;text-align:center;">
+      <div style="font-size:20px;font-weight:800;letter-spacing:0.04em;color:#fff;margin-bottom:4px;">{{ edition }}</div>
+      <div style="font-size:12px;color:#8ab4f8;">{{ update_date }} &nbsp;·&nbsp; {{ update_time }} JST</div>
+    </td>
+  </tr>
+
+  {# ── Price Dashboard ── #}
+  <tr>
+    <td style="padding:0 14px 20px;background:#fff;">
+      <div style="font-size:20px;font-weight:800;color:#0f3460;padding:14px 0 8px;border-bottom:2px solid #0f3460;margin-bottom:10px;">Price Dashboard</div>
+
+      <div style="font-size:16px;font-weight:700;color:#0f3460;margin:12px 0 8px;padding-bottom:3px;border-bottom:1px solid #e0e4ea;">Global Indices</div>
+      {{ price_grid(indices) }}
+
+      <div style="font-size:16px;font-weight:700;color:#0f3460;margin:12px 0 8px;padding-bottom:3px;border-bottom:1px solid #e0e4ea;">Commodities</div>
+      {{ price_grid(commodities) }}
+
+      <div style="font-size:16px;font-weight:700;color:#0f3460;margin:12px 0 8px;padding-bottom:3px;border-bottom:1px solid #e0e4ea;">Foreign Exchange</div>
+      {{ price_grid(fx) }}
+
+      <div style="font-size:16px;font-weight:700;color:#0f3460;margin:12px 0 8px;padding-bottom:3px;border-bottom:1px solid #e0e4ea;">Watchlist</div>
+      {{ price_grid(watchlist) }}
+    </td>
+  </tr>
+
+  {# ── Market News ── #}
+  <tr>
+    <td style="padding:0 14px 20px;background:#fff;border-top:2px solid #f0f2f5;">
+      <div style="font-size:20px;font-weight:800;color:#0f3460;padding:14px 0 8px;border-bottom:2px solid #0f3460;margin-bottom:12px;">Market News</div>
+
+      {# Global Markets #}
+      <table width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e8eaed;border-radius:6px;margin-bottom:12px;">
+        <tr>
+          <td style="background:#1565c0;padding:10px 14px;border-radius:6px 6px 0 0;">
+            <div style="font-size:16px;font-weight:700;text-transform:uppercase;color:#fff;letter-spacing:0.03em;">Global Markets</div>
+            <div style="font-size:12px;color:rgba(255,255,255,0.8);">{{ market_news | length }} articles</div>
+          </td>
+        </tr>
+        {% if market_news %}
+          {% for entry in market_news %}
+          <tr>
+            <td style="padding:10px 14px;border-bottom:1px solid #f0f2f5;background:#fff;">
+              <div style="font-size:15px;font-weight:600;line-height:1.4;margin-bottom:4px;">
+                <a href="{{ entry.link }}" style="color:#1a1a2e;text-decoration:none;">{{ entry.title }}</a>
+              </div>
+              {% if entry.summary %}<div style="font-size:13px;color:#444;line-height:1.55;white-space:pre-line;">{{ entry.summary | safe }}</div>{% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        {% else %}
+          <tr><td style="padding:20px;color:#aaa;font-size:12px;text-align:center;background:#fff;">No articles available.</td></tr>
+        {% endif %}
+      </table>
+
+      {# Japan Markets #}
+      <table width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e8eaed;border-radius:6px;margin-bottom:12px;">
+        <tr>
+          <td style="background:#6a1b9a;padding:10px 14px;border-radius:6px 6px 0 0;">
+            <div style="font-size:16px;font-weight:700;text-transform:uppercase;color:#fff;letter-spacing:0.03em;">Japan Markets</div>
+            <div style="font-size:12px;color:rgba(255,255,255,0.8);">{{ japan_news | length }} articles</div>
+          </td>
+        </tr>
+        {% if japan_news %}
+          {% for entry in japan_news %}
+          <tr>
+            <td style="padding:10px 14px;border-bottom:1px solid #f0f2f5;background:#fff;">
+              <div style="font-size:15px;font-weight:600;line-height:1.4;margin-bottom:4px;">
+                <a href="{{ entry.link }}" style="color:#1a1a2e;text-decoration:none;">{{ entry.title }}</a>
+              </div>
+              {% if entry.summary %}<div style="font-size:13px;color:#444;line-height:1.55;white-space:pre-line;">{{ entry.summary | safe }}</div>{% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        {% else %}
+          <tr><td style="padding:20px;color:#aaa;font-size:12px;text-align:center;background:#fff;">No articles available.</td></tr>
+        {% endif %}
+      </table>
+
+    </td>
+  </tr>
+
+  {# ── Hot Sectors Today ── #}
+  {% if hot_markets %}
+  <tr>
+    <td style="padding:0 14px 20px;background:#fff;border-top:2px solid #f0f2f5;">
+      <div style="font-size:20px;font-weight:800;color:#0f3460;padding:14px 0 8px;border-bottom:2px solid #0f3460;margin-bottom:12px;">Hot Sectors Today</div>
+      <table width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e8eaed;border-radius:6px;margin-bottom:12px;">
+        <tr>
+          <td style="background:#e65100;padding:10px 14px;border-radius:6px 6px 0 0;">
+            <div style="font-size:16px;font-weight:700;text-transform:uppercase;color:#fff;letter-spacing:0.03em;">Top Movers</div>
+            <div style="font-size:12px;color:rgba(255,255,255,0.8);">{{ hot_markets | length }} sector(s) triggered</div>
+          </td>
+        </tr>
+        {% for hm in hot_markets %}
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #f0f2f5;background:#fff;">
+            {# Sector badge + ETF name #}
+            <div style="margin-bottom:6px;">
+              <span style="display:inline-block;padding:2px 7px;border-radius:3px;font-size:11px;font-weight:700;margin-right:4px;
+                background:{% if hm.pct >= 0 %}#e6f4ea{% else %}#fce8e6{% endif %};
+                color:{% if hm.pct >= 0 %}#1a9e5a{% else %}#d32f2f{% endif %};">
+                {{ hm.country }} {{ '+' if hm.pct >= 0 else '' }}{{ "%.2f"|format(hm.pct * 100) }}%
+              </span>
+              <a href="{{ hm.url }}" style="color:#1a1a2e;text-decoration:none;font-size:13px;font-weight:600;">{{ hm.etf }}</a>
+              {% if hm.etf_source %}<span style="font-size:11px;color:#aaa;margin-left:5px;">{{ hm.etf_source }}</span>{% endif %}
+            </div>
+            {# Top movers #}
+            {% if hm.top_movers %}
+            <div style="background:#f8f9fa;border-radius:5px;padding:8px 10px;margin-bottom:7px;">
+              {% for m in hm.top_movers %}
+              <div style="margin:3px 0;">
+                <span style="display:inline-block;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:700;margin-right:3px;
+                  background:{% if m.pct >= 0 %}#e6f4ea{% else %}#fce8e6{% endif %};
+                  color:{% if m.pct >= 0 %}#1a9e5a{% else %}#d32f2f{% endif %};">{{ m.change_pct_fmt }}</span>
+                <a href="{{ m.url }}" style="color:#1a1a2e;text-decoration:none;font-size:12px;font-weight:700;">{{ m.ticker }}</a>
+                <span style="font-size:11px;color:#777;margin-left:4px;">{{ m.price_fmt }}</span>
+              </div>
+              {% endfor %}
+              {% if hm.constituents_source %}
+              <div style="font-size:10px;color:#bbb;margin-top:5px;">Source: {{ hm.constituents_source }}</div>
+              {% endif %}
+            </div>
+            {% endif %}
+            {# AI analysis #}
+            {% if hm.analysis %}
+            <div style="font-size:12px;color:#555;line-height:1.5;margin-bottom:5px;">
+              {{ hm.analysis }}
+              <span style="display:inline-block;margin-left:5px;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:700;
+                background:{% if hm.outlook == 'bullish' %}#e6f4ea{% elif hm.outlook == 'bearish' %}#fce8e6{% else %}#f0f2f5{% endif %};
+                color:{% if hm.outlook == 'bullish' %}#1a9e5a{% elif hm.outlook == 'bearish' %}#d32f2f{% else %}#555{% endif %};">{{ hm.outlook }}</span>
+            </div>
+            {% endif %}
+            {# News #}
+            {% for n in hm.news %}
+            <div style="padding:6px 0 6px 12px;border-left:3px solid #e65100;margin:5px 0;">
+              <div style="font-size:12px;font-weight:600;"><a href="{{ n.link }}" style="color:#1a1a2e;text-decoration:none;">{{ n.title }}</a></div>
+              {% if n.summary %}<div style="font-size:11px;color:#555;line-height:1.5;">{{ n.summary | safe }}</div>{% endif %}
+            </div>
+            {% endfor %}
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+    </td>
+  </tr>
+  {% endif %}
+
+  {# ── Footer ── #}
+  <tr>
+    <td style="text-align:center;padding:12px;font-size:11px;color:#aaa;border-top:1px solid #e8eaed;background:#fff;">
+      Investment Daily Trends &nbsp;·&nbsp; {{ update_time }} JST &nbsp;·&nbsp; Prices via Yahoo Finance
+    </td>
+  </tr>
+
+</table>
+</td></tr>
+</table>
+
+</body>
+</html>

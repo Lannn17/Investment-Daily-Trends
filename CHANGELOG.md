@@ -5,6 +5,33 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [v0.3.2] - 2026-03-17
+
+### Changed
+- Hot Sectors Today extracted from Market News block into its own standalone section at the end of both `daily_template.html` and `email_template.html`
+- Max triggered sectors increased from 3 to 5; TEST_MODE display limit increased from 1 to 2
+
+### 变更
+- 热门板块模块从市场新闻区独立出来，在两个模板末尾作为独立区块展示；测试模式最多展示2个，正常模式最多5个
+
+---
+
+## [v0.3.1] - 2026-03-17
+
+### Added
+- `email_template.html`: table-based email layout matching the mobile web design (2-col price grid, inline styles, no CSS Grid — Gmail compatible)
+- `--email` CLI flag: explicit opt-in to send email in test/uitest modes; test runs no longer auto-send
+
+### Changed
+- Email now renders from `email_template.html` instead of `daily.html`
+- `--test` / `--uitest` / `--fulltest` modes skip email by default
+
+### 新增 / 变更
+- 新增邮件模板（table布局，内联样式），兼容Gmail手机端，视觉效果与手机网页预览一致
+- 新增 --email 参数，测试模式下默认不发邮件，需显式指定才发送
+
+---
+
 ## [v0.3.0] - 2026-03-17
 
 ### Added
