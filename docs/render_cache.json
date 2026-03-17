@@ -186,12 +186,12 @@
       "ticker": "GC=F",
       "label": "Gold",
       "url": "https://finance.yahoo.com/quote/GC=F",
-      "price": 5003.5,
-      "price_fmt": "5,003.50",
-      "change": 9.5,
-      "change_fmt": "9.5000",
-      "change_pct": 0.0019022827392871447,
-      "change_pct_fmt": "+0.19%",
+      "price": 5005.0,
+      "price_fmt": "5,005.00",
+      "change": 11.0,
+      "change_fmt": "11.000",
+      "change_pct": 0.0022026431718061676,
+      "change_pct_fmt": "+0.22%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
@@ -199,7 +199,7 @@
         "5,115.80",
         "5,052.50",
         "4,994.00",
-        "5,003.50"
+        "5,005.00"
       ],
       "history_dates": [
         "03/11",
@@ -208,8 +208,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": -0.031718060425207424,
-      "change_5d_fmt": "-3.17%",
+      "change_5d": -0.031427779040304415,
+      "change_5d_fmt": "-3.14%",
       "css5d": "down",
       "as_of": "03/18 05:00",
       "name": "Gold",
@@ -222,12 +222,12 @@
       "ticker": "SI=F",
       "label": "Silver",
       "url": "https://finance.yahoo.com/quote/SI=F",
-      "price": 79.07499694824219,
-      "price_fmt": "79.075",
-      "change": -1.1880035400390625,
-      "change_fmt": "1.1880",
-      "change_pct": -0.014801384608248183,
-      "change_pct_fmt": "-1.48%",
+      "price": 79.2750015258789,
+      "price_fmt": "79.275",
+      "change": -0.9879989624023438,
+      "change_fmt": "0.9880",
+      "change_pct": -0.01230951940983811,
+      "change_pct_fmt": "-1.23%",
       "change_arrow": "▼",
       "css": "down",
       "history": [
@@ -235,7 +235,7 @@
         "84.670",
         "80.914",
         "80.263",
-        "79.075"
+        "79.275"
       ],
       "history_dates": [
         "03/11",
@@ -244,8 +244,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": -0.07041680269497491,
-      "change_5d_fmt": "-7.04%",
+      "change_5d": -0.06806560570565508,
+      "change_5d_fmt": "-6.81%",
       "css5d": "down",
       "as_of": "03/18 05:00",
       "name": "Silver",
@@ -258,12 +258,12 @@
       "ticker": "CL=F",
       "label": "WTI Oil",
       "url": "https://finance.yahoo.com/quote/CL=F",
-      "price": 95.19999694824219,
-      "price_fmt": "95.200",
-      "change": 1.6999969482421875,
-      "change_fmt": "1.7000",
-      "change_pct": 0.01818178554269719,
-      "change_pct_fmt": "+1.82%",
+      "price": 95.0999984741211,
+      "price_fmt": "95.100",
+      "change": 1.5999984741210938,
+      "change_fmt": "1.6000",
+      "change_pct": 0.017112283145680147,
+      "change_pct_fmt": "+1.71%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
@@ -271,7 +271,7 @@
         "95.730",
         "98.710",
         "93.500",
-        "95.200"
+        "95.100"
       ],
       "history_dates": [
         "03/11",
@@ -280,8 +280,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": 0.09111744353286175,
-      "change_5d_fmt": "+9.11%",
+      "change_5d": 0.0899713292162876,
+      "change_5d_fmt": "+9.00%",
       "css5d": "up",
       "as_of": "03/18 05:00",
       "name": "WTI Oil",
@@ -294,12 +294,12 @@
       "ticker": "BZ=F",
       "label": "Brent Oil",
       "url": "https://finance.yahoo.com/quote/BZ=F",
-      "price": 103.5,
-      "price_fmt": "103.50",
-      "change": 3.2900009155273438,
-      "change_fmt": "3.2900",
-      "change_pct": 0.032831064220986736,
-      "change_pct_fmt": "+3.28%",
+      "price": 103.4000015258789,
+      "price_fmt": "103.40",
+      "change": 3.19000244140625,
+      "change_fmt": "3.1900",
+      "change_pct": 0.03183317503792428,
+      "change_pct_fmt": "+3.18%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
@@ -307,7 +307,7 @@
         "100.46",
         "103.14",
         "100.21",
-        "103.50"
+        "103.40"
       ],
       "history_dates": [
         "03/11",
@@ -316,8 +316,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": 0.1252445773279917,
-      "change_5d_fmt": "+12.52%",
+      "change_5d": 0.12415740108890153,
+      "change_5d_fmt": "+12.42%",
       "css5d": "up",
       "as_of": "03/18 05:00",
       "name": "Brent Oil",
@@ -332,12 +332,12 @@
       "ticker": "USDJPY=X",
       "label": "USD/JPY",
       "url": "https://finance.yahoo.com/quote/USDJPY=X",
-      "price": 158.96400451660156,
-      "price_fmt": "158.96",
-      "change": -0.6039886474609375,
-      "change_fmt": "0.6040",
-      "change_pct": -0.00378514911094944,
-      "change_pct_fmt": "-0.38%",
+      "price": 158.9040069580078,
+      "price_fmt": "158.90",
+      "change": -0.6639862060546875,
+      "change_fmt": "0.6640",
+      "change_pct": -0.00416114906810916,
+      "change_pct_fmt": "-0.42%",
       "change_arrow": "▼",
       "css": "down",
       "history": [
@@ -345,7 +345,7 @@
         "159.07",
         "159.21",
         "159.57",
-        "158.96"
+        "158.90"
       ],
       "history_dates": [
         "03/11",
@@ -354,8 +354,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": 0.005375906700524476,
-      "change_5d_fmt": "+0.54%",
+      "change_5d": 0.004996449099072886,
+      "change_5d_fmt": "+0.50%",
       "css5d": "up",
       "as_of": "03/18 01:30",
       "name": "USD/JPY",
@@ -404,12 +404,12 @@
       "ticker": "EURJPY=X",
       "label": "EUR/JPY",
       "url": "https://finance.yahoo.com/quote/EURJPY=X",
-      "price": 183.4499969482422,
-      "price_fmt": "183.45",
-      "change": 0.99200439453125,
-      "change_fmt": "0.9920",
-      "change_pct": 0.00543689196974602,
-      "change_pct_fmt": "+0.54%",
+      "price": 183.3780059814453,
+      "price_fmt": "183.38",
+      "change": 0.920013427734375,
+      "change_fmt": "0.9200",
+      "change_pct": 0.005042330099425745,
+      "change_pct_fmt": "+0.50%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
@@ -417,7 +417,7 @@
         "183.62",
         "183.43",
         "182.46",
-        "183.45"
+        "183.38"
       ],
       "history_dates": [
         "03/11",
@@ -426,8 +426,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": -0.0006918018283250915,
-      "change_5d_fmt": "-0.07%",
+      "change_5d": -0.0010839586258785917,
+      "change_5d_fmt": "-0.11%",
       "css5d": "down",
       "as_of": "03/18 01:30",
       "name": "EUR/JPY",
@@ -772,45 +772,45 @@
   ],
   "market_news": [
     {
-      "title": "Daily – Vickers Top Buyers & Sellers for 03/17/2026",
-      "article": "Daily – Vickers Top Buyers & Sellers for 03/17/2026",
+      "title": "Analyst Report: Kimco Realty Corp",
+      "article": "Analyst Report: Kimco Realty Corp",
       "summary": null
     },
     {
-      "title": "Daily Spotlight: Argus Adjusts Sector Ratings",
-      "article": "Daily Spotlight: Argus Adjusts Sector Ratings",
+      "title": "Israel says Iran’s security chief, Ali Larijani, has been killed in a strike",
+      "article": "Ali  Larijani was seen as the right-hand man of Iran's late supreme leader Ayatollah Ali Khamenei.",
       "summary": null
     },
     {
-      "title": "Technical Assessment: Bullish in the Intermediate-Term",
-      "article": "Technical Assessment: Bullish in the Intermediate-Term",
+      "title": "Jensen Huang says Nvidia has received orders from China and is 'restarting our manufacturing'",
+      "article": "Nvidia is gearing up to sell its H200 processors to customers in China after a lengthy delay due to restrictions from both the U.S. and Chinese government.",
       "summary": null
     },
     {
-      "title": "Analyst Report: MarketAxess Holdings Inc",
-      "article": "Analyst Report: MarketAxess Holdings Inc",
+      "title": "Asia-Pacific markets set to rise as Middle East tensions escalate after UAE energy attacks",
+      "article": "Asia-Pacific markets were set to climb on Wednesday as investors tracked escalating tensions in the Middle East.",
       "summary": null
     },
     {
-      "title": "The Fed issues its latest interest rate decision Wednesday. Here's what to expect",
-      "article": "The Fed issues its latest interest rate decision Wednesday. Here's what to expect",
+      "title": "Iran targets UAE energy infrastructure as gas field set ablaze, tanker struck near Strait of Hormuz",
+      "article": "Oil prices advanced on Tuesday as energy market participants monitored Middle East supply disruptions.",
       "summary": null
     }
   ],
   "japan_news": [
     {
-      "title": "NY原油 WTI先物価格が高止まり イラン情勢のエスカレート懸念",
-      "article": "17日のニューヨーク原油市場で国際的な取り引きの指標となるWTIの先物価格は依然、高止まりしています。イスラエルがイランの最高安全保障委員会のラリジャニ事務局長を殺害したと発表したことで投資家の間では事態がエスカレートすることへの懸念がくすぶっている形です。",
+      "title": "春闘 きょう集中回答日 物価上昇上回る賃上げ実現するかが焦点",
+      "article": "ことしの春闘は18日が集中回答日で、すでに大手企業では高い水準の賃上げでの決着が相次いでいます。一方、中小企業については、イラン情勢の悪化が賃上げの判断に影響を与えかねないという見方もあり、物価の上昇を上回る賃上げが実現するかが焦点です。",
       "summary": null
     },
     {
-      "title": "中国の景気減速 現地進出の日本企業で戦略見直す動き",
-      "article": "中国の景気が減速し、デフレの懸念も指摘される中、現地に進出する日本の企業の間では、低価格帯の商品を強化した店舗を新たに出店するなど、戦略を見直す動きが出ています。",
+      "title": "政府 日米首脳会談でアラスカ産原油調達の意向伝える方針",
+      "article": "イラン情勢の緊迫化で原油の安定供給に懸念が生じていることを受けて、政府は、今週開かれる日米首脳会談で、アラスカ州の原油の増産に向けて協力し、その原油を調達する意向を伝える方針であることが明らかになりました。世界の原油供給力の向上につなげるとともに、原油調達の多角化を図るねらいです。",
       "summary": null
     },
     {
-      "title": "日銀 きょうから金融政策決定会合 イラン情勢めぐる議論が焦点",
-      "article": "日銀は18日から2日間にわたって金融政策決定会合を開きます。イラン情勢の悪化で原油の価格上昇や安定供給への懸念が広がる中、国内の経済、物価への影響や今後の金融政策の運営についてどのような議論が行われるかが焦点です。",
+      "title": "オーストラリア 政策金利引き上げ イラン情勢のインフレ抑制で",
+      "article": "オーストラリアの中央銀行にあたる準備銀行は、イラン情勢の影響で燃料価格が急激に上昇していて、この状況が続けばインフレに拍車がかかるなどとして政策金利を0.25％引き上げることを決めたと発表しました。",
       "summary": null
     }
   ],
@@ -820,10 +820,10 @@
       "label": "Brent Crude",
       "etf": "BZ=F",
       "etf_source": "ICE Brent Crude Futures",
-      "pct": 0.03263151683800004,
+      "pct": 0.03183317503792428,
       "url": "https://finance.yahoo.com/quote/BZ=F",
-      "price_fmt": "103.48",
-      "change_pct_fmt": "+3.26%",
+      "price_fmt": "103.40",
+      "change_pct_fmt": "+3.18%",
       "constituents_source": "Major international oil producers",
       "top_movers": [
         {
