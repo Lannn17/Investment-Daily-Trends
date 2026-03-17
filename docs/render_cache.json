@@ -4,12 +4,12 @@
       "ticker": "^GSPC",
       "label": "S&P 500",
       "url": "https://finance.yahoo.com/quote/^GSPC",
-      "price": 6730.77001953125,
-      "price_fmt": "6,730.77",
-      "change": 31.39013671875,
-      "change_fmt": "31.390",
-      "change_pct": 0.0046855287008402855,
-      "change_pct_fmt": "+0.47%",
+      "price": 6716.08984375,
+      "price_fmt": "6,716.09",
+      "change": 16.7099609375,
+      "change_fmt": "16.710",
+      "change_pct": 0.002494254875793804,
+      "change_pct_fmt": "+0.25%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
@@ -17,7 +17,7 @@
         "6,672.62",
         "6,632.19",
         "6,699.38",
-        "6,730.77"
+        "6,716.09"
       ],
       "history_dates": [
         "03/11",
@@ -26,8 +26,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": -0.0066456782157433844,
-      "change_5d_fmt": "-0.66%",
+      "change_5d": -0.00881223806172559,
+      "change_5d_fmt": "-0.88%",
       "css5d": "down",
       "as_of": "03/18 05:00",
       "name": "S&P 500",
@@ -40,12 +40,12 @@
       "ticker": "^IXIC",
       "label": "NASDAQ",
       "url": "https://finance.yahoo.com/quote/^IXIC",
-      "price": 22482.2109375,
-      "price_fmt": "22,482",
-      "change": 108.03125,
-      "change_fmt": "108.03",
-      "change_pct": 0.004828389308965587,
-      "change_pct_fmt": "+0.48%",
+      "price": 22479.52734375,
+      "price_fmt": "22,480",
+      "change": 105.34765625,
+      "change_fmt": "105.35",
+      "change_pct": 0.00470844776082922,
+      "change_pct_fmt": "+0.47%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
@@ -53,7 +53,7 @@
         "22,312",
         "22,105",
         "22,374",
-        "22,482"
+        "22,480"
       ],
       "history_dates": [
         "03/11",
@@ -62,8 +62,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": -0.010297524843605164,
-      "change_5d_fmt": "-1.03%",
+      "change_5d": -0.01041566088387597,
+      "change_5d_fmt": "-1.04%",
       "css5d": "down",
       "as_of": "03/18 05:00",
       "name": "NASDAQ",
@@ -76,12 +76,12 @@
       "ticker": "^DJI",
       "label": "Dow Jones",
       "url": "https://finance.yahoo.com/quote/^DJI",
-      "price": 47162.828125,
-      "price_fmt": "47,163",
-      "change": 216.41796875,
-      "change_fmt": "216.42",
-      "change_pct": 0.0046098938775021156,
-      "change_pct_fmt": "+0.46%",
+      "price": 46993.26171875,
+      "price_fmt": "46,993",
+      "change": 46.8515625,
+      "change_fmt": "46.852",
+      "change_pct": 0.000997979661151208,
+      "change_pct_fmt": "+0.10%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
@@ -89,7 +89,7 @@
         "46,678",
         "46,558",
         "46,946",
-        "47,163"
+        "46,993"
       ],
       "history_dates": [
         "03/11",
@@ -98,8 +98,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": -0.005366007127051301,
-      "change_5d_fmt": "-0.54%",
+      "change_5d": -0.008942054586685148,
+      "change_5d_fmt": "-0.89%",
       "css5d": "down",
       "as_of": "03/18 05:00",
       "name": "Dow Jones",
@@ -186,12 +186,12 @@
       "ticker": "GC=F",
       "label": "Gold",
       "url": "https://finance.yahoo.com/quote/GC=F",
-      "price": 5017.10009765625,
-      "price_fmt": "5,017.10",
-      "change": 23.10009765625,
-      "change_fmt": "23.100",
-      "change_pct": 0.00462557021550861,
-      "change_pct_fmt": "+0.46%",
+      "price": 5003.5,
+      "price_fmt": "5,003.50",
+      "change": 9.5,
+      "change_fmt": "9.5000",
+      "change_pct": 0.0019022827392871447,
+      "change_pct_fmt": "+0.19%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
@@ -199,7 +199,7 @@
         "5,115.80",
         "5,052.50",
         "4,994.00",
-        "5,017.10"
+        "5,003.50"
       ],
       "history_dates": [
         "03/11",
@@ -208,8 +208,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": -0.029086156970225843,
-      "change_5d_fmt": "-2.91%",
+      "change_5d": -0.031718060425207424,
+      "change_5d_fmt": "-3.17%",
       "css5d": "down",
       "as_of": "03/18 05:00",
       "name": "Gold",
@@ -222,20 +222,20 @@
       "ticker": "SI=F",
       "label": "Silver",
       "url": "https://finance.yahoo.com/quote/SI=F",
-      "price": 81.16500091552734,
-      "price_fmt": "81.165",
-      "change": 0.9020004272460938,
-      "change_fmt": "0.9020",
-      "change_pct": 0.011238060149243856,
-      "change_pct_fmt": "+1.12%",
-      "change_arrow": "▲",
-      "css": "up",
+      "price": 79.07499694824219,
+      "price_fmt": "79.075",
+      "change": -1.1880035400390625,
+      "change_fmt": "1.1880",
+      "change_pct": -0.014801384608248183,
+      "change_pct_fmt": "-1.48%",
+      "change_arrow": "▼",
+      "css": "down",
       "history": [
         "85.065",
         "84.670",
         "80.914",
         "80.263",
-        "81.165"
+        "79.075"
       ],
       "history_dates": [
         "03/11",
@@ -244,8 +244,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": -0.04584730986830068,
-      "change_5d_fmt": "-4.58%",
+      "change_5d": -0.07041680269497491,
+      "change_5d_fmt": "-7.04%",
       "css5d": "down",
       "as_of": "03/18 05:00",
       "name": "Silver",
@@ -258,12 +258,12 @@
       "ticker": "CL=F",
       "label": "WTI Oil",
       "url": "https://finance.yahoo.com/quote/CL=F",
-      "price": 94.4000015258789,
-      "price_fmt": "94.400",
-      "change": 0.9000015258789062,
-      "change_fmt": "0.9000",
-      "change_pct": 0.009625684768758356,
-      "change_pct_fmt": "+0.96%",
+      "price": 95.19999694824219,
+      "price_fmt": "95.200",
+      "change": 1.6999969482421875,
+      "change_fmt": "1.7000",
+      "change_pct": 0.01818178554269719,
+      "change_pct_fmt": "+1.82%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
@@ -271,7 +271,7 @@
         "95.730",
         "98.710",
         "93.500",
-        "94.400"
+        "95.200"
       ],
       "history_dates": [
         "03/11",
@@ -280,8 +280,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": 0.08194844155735136,
-      "change_5d_fmt": "+8.19%",
+      "change_5d": 0.09111744353286175,
+      "change_5d_fmt": "+9.11%",
       "css5d": "up",
       "as_of": "03/18 05:00",
       "name": "WTI Oil",
@@ -294,12 +294,12 @@
       "ticker": "BZ=F",
       "label": "Brent Oil",
       "url": "https://finance.yahoo.com/quote/BZ=F",
-      "price": 102.04000091552734,
-      "price_fmt": "102.04",
-      "change": 1.8300018310546875,
-      "change_fmt": "1.8300",
-      "change_pct": 0.01826166897289437,
-      "change_pct_fmt": "+1.83%",
+      "price": 103.5,
+      "price_fmt": "103.50",
+      "change": 3.2900009155273438,
+      "change_fmt": "3.2900",
+      "change_pct": 0.032831064220986736,
+      "change_pct_fmt": "+3.28%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
@@ -307,7 +307,7 @@
         "100.46",
         "103.14",
         "100.21",
-        "102.04"
+        "103.50"
       ],
       "history_dates": [
         "03/11",
@@ -316,8 +316,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": 0.10937157198783046,
-      "change_5d_fmt": "+10.94%",
+      "change_5d": 0.1252445773279917,
+      "change_5d_fmt": "+12.52%",
       "css5d": "up",
       "as_of": "03/18 05:00",
       "name": "Brent Oil",
@@ -332,12 +332,12 @@
       "ticker": "USDJPY=X",
       "label": "USD/JPY",
       "url": "https://finance.yahoo.com/quote/USDJPY=X",
-      "price": 158.92300415039062,
-      "price_fmt": "158.92",
-      "change": -0.644989013671875,
-      "change_fmt": "0.6450",
-      "change_pct": -0.004042095165091904,
-      "change_pct_fmt": "-0.40%",
+      "price": 158.96400451660156,
+      "price_fmt": "158.96",
+      "change": -0.6039886474609375,
+      "change_fmt": "0.6040",
+      "change_pct": -0.00378514911094944,
+      "change_pct_fmt": "-0.38%",
       "change_arrow": "▼",
       "css": "down",
       "history": [
@@ -345,7 +345,7 @@
         "159.07",
         "159.21",
         "159.57",
-        "158.92"
+        "158.96"
       ],
       "history_dates": [
         "03/11",
@@ -354,8 +354,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": 0.0051165978055345415,
-      "change_5d_fmt": "+0.51%",
+      "change_5d": 0.005375906700524476,
+      "change_5d_fmt": "+0.54%",
       "css5d": "up",
       "as_of": "03/18 01:30",
       "name": "USD/JPY",
@@ -368,12 +368,12 @@
       "ticker": "JPYCNY=X",
       "label": "JPY/CNY",
       "url": "https://finance.yahoo.com/quote/JPYCNY=X",
-      "price": 0.04328000172972679,
+      "price": 0.04326999932527542,
       "price_fmt": "0.0433",
-      "change": 5.700066685676575e-05,
-      "change_fmt": "0.0001",
-      "change_pct": 0.001318757732112479,
-      "change_pct_fmt": "+0.13%",
+      "change": 4.699826240539551e-05,
+      "change_fmt": "0.0000",
+      "change_pct": 0.0010873438042174391,
+      "change_pct_fmt": "+0.11%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
@@ -390,8 +390,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": -0.004714246208916435,
-      "change_5d_fmt": "-0.47%",
+      "change_5d": -0.004944265854393196,
+      "change_5d_fmt": "-0.49%",
       "css5d": "down",
       "as_of": "03/18 01:30",
       "name": "JPY/CNY",
@@ -404,12 +404,12 @@
       "ticker": "EURJPY=X",
       "label": "EUR/JPY",
       "url": "https://finance.yahoo.com/quote/EURJPY=X",
-      "price": 183.22300720214844,
-      "price_fmt": "183.22",
-      "change": 0.7650146484375,
-      "change_fmt": "0.7650",
-      "change_pct": 0.004192826182784508,
-      "change_pct_fmt": "+0.42%",
+      "price": 183.4499969482422,
+      "price_fmt": "183.45",
+      "change": 0.99200439453125,
+      "change_fmt": "0.9920",
+      "change_pct": 0.00543689196974602,
+      "change_pct_fmt": "+0.54%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
@@ -417,7 +417,7 @@
         "183.62",
         "183.43",
         "182.46",
-        "183.22"
+        "183.45"
       ],
       "history_dates": [
         "03/11",
@@ -426,8 +426,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": -0.0019282843464272254,
-      "change_5d_fmt": "-0.19%",
+      "change_5d": -0.0006918018283250915,
+      "change_5d_fmt": "-0.07%",
       "css5d": "down",
       "as_of": "03/18 01:30",
       "name": "EUR/JPY",
@@ -449,12 +449,12 @@
       "ticker": "IAU",
       "label": "iShares Gold Trust",
       "url": "https://finance.yahoo.com/quote/IAU",
-      "price": 94.31999969482422,
-      "price_fmt": "94.320",
-      "change": -0.01000213623046875,
-      "change_fmt": "0.0100",
-      "change_pct": -0.00010603345739760088,
-      "change_pct_fmt": "-0.01%",
+      "price": 94.06999969482422,
+      "price_fmt": "94.070",
+      "change": -0.26000213623046875,
+      "change_fmt": "0.2600",
+      "change_pct": -0.002756303733526194,
+      "change_pct_fmt": "-0.28%",
       "change_arrow": "▼",
       "css": "down",
       "history": [
@@ -462,7 +462,7 @@
         "95.650",
         "94.380",
         "94.330",
-        "94.320"
+        "94.070"
       ],
       "history_dates": [
         "03/11",
@@ -471,8 +471,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": -0.03311125838940084,
-      "change_5d_fmt": "-3.31%",
+      "change_5d": -0.03567404662291177,
+      "change_5d_fmt": "-3.57%",
       "css5d": "down",
       "as_of": "03/18 05:00",
       "name": "iShares Gold Trust",
@@ -485,12 +485,12 @@
       "ticker": "NEM",
       "label": "Newmont Corporation",
       "url": "https://finance.yahoo.com/quote/NEM",
-      "price": 112.13500213623047,
-      "price_fmt": "112.14",
-      "change": 1.9449996948242188,
-      "change_fmt": "1.9450",
-      "change_pct": 0.017651326361105002,
-      "change_pct_fmt": "+1.77%",
+      "price": 111.04000091552734,
+      "price_fmt": "111.04",
+      "change": 0.8499984741210938,
+      "change_fmt": "0.8500",
+      "change_pct": 0.007713934615557179,
+      "change_pct_fmt": "+0.77%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
@@ -498,7 +498,7 @@
         "114.48",
         "109.58",
         "110.19",
-        "112.14"
+        "111.04"
       ],
       "history_dates": [
         "03/11",
@@ -507,8 +507,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": -0.035065803118026755,
-      "change_5d_fmt": "-3.51%",
+      "change_5d": -0.044488410719177945,
+      "change_5d_fmt": "-4.45%",
       "css5d": "down",
       "as_of": "03/18 05:00",
       "name": "Newmont Corporation",
@@ -521,32 +521,32 @@
       "ticker": "NVDA",
       "label": "NVIDIA",
       "url": "https://finance.yahoo.com/quote/NVDA",
-      "price": 183.22000122070312,
-      "price_fmt": "183.22",
-      "change": 2.970001220703125,
-      "change_fmt": "2.9700",
-      "change_pct": 0.016477121890169904,
-      "change_pct_fmt": "+1.65%",
-      "change_arrow": "▲",
-      "css": "up",
+      "price": 181.92999267578125,
+      "price_fmt": "181.93",
+      "change": -1.290008544921875,
+      "change_fmt": "1.2900",
+      "change_pct": -0.007040762669616821,
+      "change_pct_fmt": "-0.70%",
+      "change_arrow": "▼",
+      "css": "down",
       "history": [
-        "184.76",
         "186.03",
         "183.14",
         "180.25",
-        "183.22"
+        "183.22",
+        "181.93"
       ],
       "history_dates": [
-        "03/10",
         "03/11",
         "03/12",
         "03/13",
-        "03/16"
+        "03/16",
+        "03/17"
       ],
-      "change_5d": -0.008335183283847157,
-      "change_5d_fmt": "-0.83%",
+      "change_5d": -0.022039488955648542,
+      "change_5d_fmt": "-2.20%",
       "css5d": "down",
-      "as_of": "03/17 05:00",
+      "as_of": "03/18 05:00",
       "name": "NVIDIA",
       "news_titles": [],
       "analysis": null,
@@ -557,32 +557,32 @@
       "ticker": "TSM",
       "label": "Taiwan Semiconductor",
       "url": "https://finance.yahoo.com/quote/TSM",
-      "price": 340.2300109863281,
-      "price_fmt": "340.23",
-      "change": 1.920013427734375,
-      "change_fmt": "1.9200",
-      "change_pct": 0.005675307976678512,
-      "change_pct_fmt": "+0.57%",
+      "price": 345.9800109863281,
+      "price_fmt": "345.98",
+      "change": 5.75,
+      "change_fmt": "5.7500",
+      "change_pct": 0.016900331582539493,
+      "change_pct_fmt": "+1.69%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
-        "347.09",
         "354.56",
         "336.71",
         "338.31",
-        "340.23"
+        "340.23",
+        "345.98"
       ],
       "history_dates": [
-        "03/10",
         "03/11",
         "03/12",
         "03/13",
-        "03/16"
+        "03/16",
+        "03/17"
       ],
-      "change_5d": -0.019764284260397794,
-      "change_5d_fmt": "-1.98%",
+      "change_5d": -0.02419896951530105,
+      "change_5d_fmt": "-2.42%",
       "css5d": "down",
-      "as_of": "03/17 05:00",
+      "as_of": "03/18 05:00",
       "name": "Taiwan Semiconductor",
       "news_titles": [],
       "analysis": null,
@@ -593,12 +593,12 @@
       "ticker": "BRK-B",
       "label": "Berkshire Hathaway B",
       "url": "https://finance.yahoo.com/quote/BRK-B",
-      "price": 492.34490966796875,
-      "price_fmt": "492.34",
-      "change": 0.134918212890625,
-      "change_fmt": "0.1349",
-      "change_pct": 0.0002741070178030679,
-      "change_pct_fmt": "+0.03%",
+      "price": 492.5799865722656,
+      "price_fmt": "492.58",
+      "change": 0.3699951171875,
+      "change_fmt": "0.3700",
+      "change_pct": 0.0007517017606524305,
+      "change_pct_fmt": "+0.08%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
@@ -606,7 +606,7 @@
         "491.89",
         "490.03",
         "492.21",
-        "492.34"
+        "492.58"
       ],
       "history_dates": [
         "03/11",
@@ -615,8 +615,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": -0.002482115278623994,
-      "change_5d_fmt": "-0.25%",
+      "change_5d": -0.0020058365323296383,
+      "change_5d_fmt": "-0.20%",
       "css5d": "down",
       "as_of": "03/18 05:00",
       "name": "Berkshire Hathaway B",
@@ -629,12 +629,12 @@
       "ticker": "LMT",
       "label": "Lockheed Martin",
       "url": "https://finance.yahoo.com/quote/LMT",
-      "price": 637.6500244140625,
-      "price_fmt": "637.65",
-      "change": -7.54998779296875,
-      "change_fmt": "7.5500",
-      "change_pct": -0.011701778750968337,
-      "change_pct_fmt": "-1.17%",
+      "price": 636.3300170898438,
+      "price_fmt": "636.33",
+      "change": -8.8699951171875,
+      "change_fmt": "8.8700",
+      "change_pct": -0.013747667311483719,
+      "change_pct_fmt": "-1.37%",
       "change_arrow": "▼",
       "css": "down",
       "history": [
@@ -642,7 +642,7 @@
         "652.83",
         "646.00",
         "645.20",
-        "637.65"
+        "636.33"
       ],
       "history_dates": [
         "03/11",
@@ -651,8 +651,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": -0.018199373061492073,
-      "change_5d_fmt": "-1.82%",
+      "change_5d": -0.020231810870417546,
+      "change_5d_fmt": "-2.02%",
       "css5d": "down",
       "as_of": "03/18 05:00",
       "name": "Lockheed Martin",
@@ -737,32 +737,32 @@
       "ticker": "INDA",
       "label": "iShares MSCI India ETF",
       "url": "https://finance.yahoo.com/quote/INDA",
-      "price": 48.560001373291016,
-      "price_fmt": "48.560",
-      "change": 0.5,
-      "change_fmt": "0.5000",
-      "change_pct": 0.010403661791775796,
-      "change_pct_fmt": "+1.04%",
-      "change_arrow": "▲",
-      "css": "up",
+      "price": 48.52000045776367,
+      "price_fmt": "48.520",
+      "change": -0.04000091552734375,
+      "change_fmt": "0.0400",
+      "change_pct": -0.0008237420592278867,
+      "change_pct_fmt": "-0.08%",
+      "change_arrow": "▼",
+      "css": "down",
       "history": [
-        "49.930",
         "49.270",
         "48.520",
         "48.060",
-        "48.560"
+        "48.560",
+        "48.520"
       ],
       "history_dates": [
-        "03/10",
         "03/11",
         "03/12",
         "03/13",
-        "03/16"
+        "03/16",
+        "03/17"
       ],
-      "change_5d": -0.027438392219331722,
-      "change_5d_fmt": "-2.74%",
+      "change_5d": -0.01522224463226729,
+      "change_5d_fmt": "-1.52%",
       "css5d": "down",
-      "as_of": "03/17 05:00",
+      "as_of": "03/18 05:00",
       "name": "iShares MSCI India ETF",
       "news_titles": [],
       "analysis": null,
@@ -772,49 +772,103 @@
   ],
   "market_news": [
     {
-      "title": "Is Crispr Therapeutics (CRSP) The Best Gene-Editing Stock to Buy Now?",
-      "article": "Is Crispr Therapeutics (CRSP) The Best Gene-Editing Stock to Buy Now?",
+      "title": "Daily – Vickers Top Buyers & Sellers for 03/17/2026",
+      "article": "Daily – Vickers Top Buyers & Sellers for 03/17/2026",
       "summary": null
     },
     {
-      "title": "CAAP Q4 2025 Earnings Call Transcript",
-      "article": "CAAP Q4 2025 Earnings Call Transcript",
+      "title": "Daily Spotlight: Argus Adjusts Sector Ratings",
+      "article": "Daily Spotlight: Argus Adjusts Sector Ratings",
       "summary": null
     },
     {
-      "title": "Here’s Why Elite Hedge Funds Were Buying Advanced Micro Devices (AMD) For 2026",
-      "article": "Here’s Why Elite Hedge Funds Were Buying Advanced Micro Devices (AMD) For 2026",
+      "title": "Technical Assessment: Bullish in the Intermediate-Term",
+      "article": "Technical Assessment: Bullish in the Intermediate-Term",
       "summary": null
     },
     {
-      "title": "Is Robinhood Markets (HOOD) a Top Tech Stock for 2026?",
-      "article": "Is Robinhood Markets (HOOD) a Top Tech Stock for 2026?",
+      "title": "Analyst Report: MarketAxess Holdings Inc",
+      "article": "Analyst Report: MarketAxess Holdings Inc",
       "summary": null
     },
     {
-      "title": "US pending home sales unexpectedly rebound in February on lower mortgage rates",
-      "article": "US pending home sales unexpectedly rebound in February on lower mortgage rates",
+      "title": "The Fed issues its latest interest rate decision Wednesday. Here's what to expect",
+      "article": "The Fed issues its latest interest rate decision Wednesday. Here's what to expect",
       "summary": null
     }
   ],
   "japan_news": [
     {
-      "title": "政府 日米首脳会談でアラスカ産原油調達の意向伝える方針",
-      "article": "イラン情勢の緊迫化で原油の安定供給に懸念が生じていることを受けて、政府は、今週開かれる日米首脳会談で、アラスカ州の原油の増産に向けて協力し、その原油を調達する意向を伝える方針であることが明らかになりました。世界の原油供給力の向上につなげるとともに、原油調達の多角化を図るねらいです。",
+      "title": "NY原油 WTI先物価格が高止まり イラン情勢のエスカレート懸念",
+      "article": "17日のニューヨーク原油市場で国際的な取り引きの指標となるWTIの先物価格は依然、高止まりしています。イスラエルがイランの最高安全保障委員会のラリジャニ事務局長を殺害したと発表したことで投資家の間では事態がエスカレートすることへの懸念がくすぶっている形です。",
       "summary": null
     },
     {
-      "title": "オーストラリア 政策金利引き上げ イラン情勢のインフレ抑制で",
-      "article": "オーストラリアの中央銀行にあたる準備銀行は、イラン情勢の影響で燃料価格が急激に上昇していて、この状況が続けばインフレに拍車がかかるなどとして政策金利を0.25％引き上げることを決めたと発表しました。",
+      "title": "中国の景気減速 現地進出の日本企業で戦略見直す動き",
+      "article": "中国の景気が減速し、デフレの懸念も指摘される中、現地に進出する日本の企業の間では、低価格帯の商品を強化した店舗を新たに出店するなど、戦略を見直す動きが出ています。",
       "summary": null
     },
     {
-      "title": "日米両政府 重要鉱物 サプライチェーン強じん化へ新計画で調整",
-      "article": "今週予定されている日米首脳会談にあわせて日米両政府が重要鉱物の輸出管理を強める中国を念頭に、サプライチェーンの強じん化を図るための新たな行動計画を策定する方向で調整を進めていることが分かりました。",
+      "title": "日銀 きょうから金融政策決定会合 イラン情勢めぐる議論が焦点",
+      "article": "日銀は18日から2日間にわたって金融政策決定会合を開きます。イラン情勢の悪化で原油の価格上昇や安定供給への懸念が広がる中、国内の経済、物価への影響や今後の金融政策の運営についてどのような議論が行われるかが焦点です。",
       "summary": null
     }
   ],
   "hot_markets": [
+    {
+      "country": "Brent Crude",
+      "label": "Brent Crude",
+      "etf": "BZ=F",
+      "etf_source": "ICE Brent Crude Futures",
+      "pct": 0.03263151683800004,
+      "url": "https://finance.yahoo.com/quote/BZ=F",
+      "price_fmt": "103.48",
+      "change_pct_fmt": "+3.26%",
+      "constituents_source": "Major international oil producers",
+      "top_movers": [
+        {
+          "ticker": "E",
+          "price": 53.70000076293945,
+          "price_fmt": "53.700",
+          "pct": 0.04089941081819747,
+          "change_pct_fmt": "+4.09%",
+          "change_arrow": "▲",
+          "css": "up",
+          "url": "https://finance.yahoo.com/quote/E"
+        },
+        {
+          "ticker": "TTE",
+          "price": 86.04000091552734,
+          "price_fmt": "86.040",
+          "pct": 0.03837799036630117,
+          "change_pct_fmt": "+3.84%",
+          "change_arrow": "▲",
+          "css": "up",
+          "url": "https://finance.yahoo.com/quote/TTE"
+        },
+        {
+          "ticker": "EQNR",
+          "price": 36.939998626708984,
+          "price_fmt": "36.940",
+          "pct": 0.03676669995292387,
+          "change_pct_fmt": "+3.68%",
+          "change_arrow": "▲",
+          "css": "up",
+          "url": "https://finance.yahoo.com/quote/EQNR"
+        }
+      ],
+      "ticker": "BZ=F",
+      "name": "Brent Crude",
+      "news_titles": [
+        "E +4.09%",
+        "TTE +3.84%",
+        "EQNR +3.68%"
+      ],
+      "analysis": null,
+      "outlook": "neutral",
+      "outlook_css": "neutral",
+      "news": []
+    },
     {
       "country": "Japan Steel & Nonferrous",
       "label": "Japan Steel & Nonferrous",
@@ -874,10 +928,10 @@
       "label": "Thailand",
       "etf": "THD",
       "etf_source": "iShares MSCI Thailand",
-      "pct": 0.024107253396241445,
+      "pct": 0.023805848068034378,
       "url": "https://finance.yahoo.com/quote/THD",
-      "price_fmt": "67.970",
-      "change_pct_fmt": "+2.41%",
+      "price_fmt": "67.950",
+      "change_pct_fmt": "+2.38%",
       "constituents_source": "iShares THD top holdings",
       "top_movers": [
         {
@@ -928,49 +982,49 @@
       "label": "Argentina",
       "etf": "ARGT",
       "etf_source": "Global X MSCI Argentina",
-      "pct": 0.02124926634442979,
+      "pct": 0.02171629395464247,
       "url": "https://finance.yahoo.com/quote/ARGT",
-      "price_fmt": "87.470",
-      "change_pct_fmt": "+2.12%",
+      "price_fmt": "87.510",
+      "change_pct_fmt": "+2.17%",
       "constituents_source": "Global X ARGT top holdings",
       "top_movers": [
         {
-          "ticker": "GLOB",
-          "price": 45.48500061035156,
-          "price_fmt": "45.485",
-          "pct": 0.02305446574417229,
-          "change_pct_fmt": "+2.31%",
+          "ticker": "PAM",
+          "price": 84.29000091552734,
+          "price_fmt": "84.290",
+          "pct": 0.050866498910663985,
+          "change_pct_fmt": "+5.09%",
           "change_arrow": "▲",
           "css": "up",
-          "url": "https://finance.yahoo.com/quote/GLOB"
+          "url": "https://finance.yahoo.com/quote/PAM"
         },
         {
-          "ticker": "YPF",
-          "price": 38.16999816894531,
-          "price_fmt": "38.170",
-          "pct": 0.019225564521706748,
-          "change_pct_fmt": "+1.92%",
+          "ticker": "TGS",
+          "price": 31.739999771118164,
+          "price_fmt": "31.740",
+          "pct": 0.03657736450646047,
+          "change_pct_fmt": "+3.66%",
           "change_arrow": "▲",
           "css": "up",
-          "url": "https://finance.yahoo.com/quote/YPF"
+          "url": "https://finance.yahoo.com/quote/TGS"
         },
         {
-          "ticker": "GGAL",
-          "price": 41.630001068115234,
-          "price_fmt": "41.630",
-          "pct": 0.01884484694717793,
-          "change_pct_fmt": "+1.88%",
+          "ticker": "BMA",
+          "price": 66.81999969482422,
+          "price_fmt": "66.820",
+          "pct": 0.017821753872832812,
+          "change_pct_fmt": "+1.78%",
           "change_arrow": "▲",
           "css": "up",
-          "url": "https://finance.yahoo.com/quote/GGAL"
+          "url": "https://finance.yahoo.com/quote/BMA"
         }
       ],
       "ticker": "ARGT",
       "name": "Argentina",
       "news_titles": [
-        "GLOB +2.31%",
-        "YPF +1.92%",
-        "GGAL +1.88%"
+        "PAM +5.09%",
+        "TGS +3.66%",
+        "BMA +1.78%"
       ],
       "analysis": null,
       "outlook": "neutral",
