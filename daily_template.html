@@ -112,6 +112,14 @@
     .constituents-source { font-size: 0.63rem; color: #bbb; margin-top: 4px; }
 
     footer { text-align: center; padding: 11px; font-size: 0.7rem; color: #aaa; border-top: 1px solid #e8eaed; background: #fff; margin-top: 2px; }
+    .copy-ai-btn {
+      display: inline-block; margin-left: 10px;
+      padding: 3px 10px; border-radius: 4px; border: 1px solid #c5cae9;
+      background: #f0f4ff; color: #3949ab; font-size: 0.68rem; font-weight: 600;
+      cursor: pointer; vertical-align: middle; transition: background 0.15s;
+    }
+    .copy-ai-btn:hover { background: #e3e8ff; }
+    .copy-ai-btn.copied { background: #e6f4ea; color: #1a9e5a; border-color: #b2dfcc; }
 
     /* ── Responsive ── */
     @media (max-width: 600px) {
@@ -342,7 +350,70 @@
 <footer>
   Investment Daily Trends &nbsp;·&nbsp; {{ update_time }} JST &nbsp;·&nbsp;
   Prices via Yahoo Finance (15-min delay intraday, exact at close)
+  &nbsp;·&nbsp;
+  <button class="copy-ai-btn" id="copyAiBtn" onclick="copyForAI()">Copy for AI</button>
 </footer>
+
+<script>
+function copyForAI() {
+  const lines = [];
+  const edition = document.querySelector('header h1')?.textContent?.trim() || 'Investment Digest';
+  const date    = document.querySelector('.header-sub')?.textContent?.trim() || '';
+  lines.push(edition + ' — ' + date + '\n');
+
+  // Price Dashboard: section titles + cards
+  const priceWrap = document.querySelector('.price-wrap');
+  if (priceWrap) {
+    lines.push('=== PRICE DASHBOARD ===');
+    priceWrap.querySelectorAll('.section-title, .price-card').forEach(el => {
+      if (el.classList.contains('section-title')) {
+        lines.push('\n[' + el.textContent.trim() + ']');
+      } else {
+        const name     = el.querySelector('.card-name')?.textContent?.trim()     || '';
+        const price    = el.querySelector('.card-price')?.textContent?.trim()    || '';
+        const change   = el.querySelector('.card-change')?.textContent?.trim()   || '';
+        const analysis = el.querySelector('.card-analysis')?.textContent?.trim() || '';
+        const outlook  = el.querySelector('.card-outlook')?.textContent?.trim()  || '';
+        let row = name + ': ' + price + '  ' + change;
+        if (analysis) row += '\n  Analysis: ' + analysis + (outlook ? ' [' + outlook + ']' : '');
+        lines.push(row);
+      }
+    });
+  }
+
+  // News sections
+  document.querySelectorAll('.news-section').forEach(section => {
+    const title = section.querySelector('h2')?.textContent?.trim() || '';
+    lines.push('\n=== ' + title.toUpperCase() + ' ===');
+    section.querySelectorAll('.article').forEach(article => {
+      const t = article.querySelector('.article-title')?.textContent?.trim() || '';
+      const s = article.querySelector('.article-summary')?.textContent?.trim() || '';
+      if (t) lines.push('• ' + t);
+      if (s) lines.push('  ' + s);
+    });
+  });
+
+  // Hot Sectors (if present)
+  document.querySelectorAll('.block-title').forEach(bt => {
+    if (bt.textContent.includes('Hot Sectors')) {
+      lines.push('\n=== HOT SECTORS TODAY ===');
+      bt.closest('.news-wrap')?.querySelectorAll('.article').forEach(article => {
+        const t = article.querySelector('.article-title')?.textContent?.trim() || '';
+        const s = article.querySelector('.article-summary')?.textContent?.trim() || '';
+        if (t) lines.push('• ' + t);
+        if (s) lines.push('  ' + s);
+      });
+    }
+  });
+
+  navigator.clipboard.writeText(lines.join('\n')).then(() => {
+    const btn = document.getElementById('copyAiBtn');
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copy for AI'; btn.classList.remove('copied'); }, 2000);
+  });
+}
+</script>
 
 </body>
 </html>

@@ -5,6 +5,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [v0.3.5] - 2026-03-18
+
+### Added
+- "Copy for AI" button in the web page footer — copies the full digest context (price dashboard with AI analyses, all news summaries, hot sectors) as plain text to clipboard, ready to paste into any AI chat
+
+### 新增
+- 网页底部新增「Copy for AI」按钮，一键复制当日日报内容（价格分析、新闻摘要、热点板块）至剪贴板，方便粘贴至任意 AI 对话继续追问
+
+---
+
 ## [v0.3.4] - 2026-03-18
 
 ### Fixed
