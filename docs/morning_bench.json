@@ -1,13 +1,6 @@
 {
   "market_news": [
     {
-      "link": "https://www.cnbc.com/2026/03/17/tesla-to-buy-4-point-3-billion-lg-energy-battery-cells-made-in-michigan.html",
-      "title": "Tesla to buy $4.3 billion of LG Energy battery cells from disbanded GM plant",
-      "article": "Tesla is expanding ties with LG Energy Solution to include a $4.3 billion deal for U.S.-produced cells for energy storage systems from Michigan.",
-      "fp": "tesla to buy $4.3 billion of lg energy battery cells from disbanded gm plant tesla is expanding ties with lg energy solution to include a $4.3 billion deal for u.s.-produced cells for energy storage systems from michigan.",
-      "published": "Tue, 17 Mar 2026 22:43:16 GMT"
-    },
-    {
       "link": "https://www.cnbc.com/2026/03/17/arizona-kalshi-criminal-misdemeanor-charges.html",
       "title": "Arizona charges Kalshi with criminal misdemeanors, alleging it's an illegal gambling operation",
       "article": "The Arizona charges are the first criminal charges to have been filed against Kalshi, though the company is embroiled in multiple lawsuits over its predictions platform.",
@@ -237,15 +230,22 @@
       "article": "Beyond the $100 barrel, there are “second-round” effects that can hit your portfolio.",
       "fp": "3 signals will reveal if the iran oil shock is just a blip — or the new normal beyond the $100 barrel, there are “second-round” effects that can hit your portfolio.",
       "published": "Tue, 17 Mar 2026 21:07:00 GMT"
+    },
+    {
+      "link": "https://www.marketwatch.com/story/microns-stock-rises-as-enthusiasm-builds-ahead-of-earnings-cd2db500?mod=mw_rss_topstories",
+      "title": "Micron’s stock gains officially carry the company into an exclusive club",
+      "article": "Micron joins only 15 other S&P 500 components that are worth $500 billion or more.",
+      "fp": "micron’s stock gains officially carry the company into an exclusive club micron joins only 15 other s&p 500 components that are worth $500 billion or more.",
+      "published": "Tue, 17 Mar 2026 20:44:00 GMT"
     }
   ],
   "japan_news": [
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260318/k10015078191000.html",
-      "title": "日銀 きょうから金融政策決定会合 イラン情勢めぐる議論が焦点",
-      "article": "日銀は18日から2日間にわたって金融政策決定会合を開きます。イラン情勢の悪化で原油の価格上昇や安定供給への懸念が広がる中、国内の経済、物価への影響や今後の金融政策の運営についてどのような議論が行われるかが焦点です。",
-      "fp": "日銀 きょうから金融政策決定会合 イラン情勢めぐる議論が焦点 日銀は18日から2日間にわたって金融政策決定会合を開きます。イラン情勢の悪化で原油の価格上昇や安定供給への懸念が広がる中、国内の経済、物価への影響や今後の金融政策の運営についてどのような議論が行われるかが焦点です。",
-      "published": "Wed, 18 Mar 2026 04:37:50 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260317/k10015078161000.html",
+      "title": "オーストラリア 政策金利引き上げ イラン情勢のインフレ抑制で",
+      "article": "オーストラリアの中央銀行にあたる準備銀行は、イラン情勢の影響で燃料価格が急激に上昇していて、この状況が続けばインフレに拍車がかかるなどとして政策金利を0.25％引き上げることを決めたと発表しました。",
+      "fp": "オーストラリア 政策金利引き上げ イラン情勢のインフレ抑制で オーストラリアの中央銀行にあたる準備銀行は、イラン情勢の影響で燃料価格が急激に上昇していて、この状況が続けばインフレに拍車がかかるなどとして政策金利を0.25％引き上げることを決めたと発表しました。",
+      "published": "Tue, 17 Mar 2026 21:14:28 +0900"
     },
     {
       "link": "http://www3.nhk.or.jp/news/html/20260317/k10015078171000.html",
