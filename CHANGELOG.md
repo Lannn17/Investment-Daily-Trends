@@ -5,6 +5,17 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [v0.3.4] - 2026-03-18
+
+### Fixed
+- `GEMINI_MODEL` env var set to empty string (e.g. via absent GitHub Secret) now correctly falls back to the hardcoded default model instead of producing an empty model chain and silently skipping all AI calls
+- Removed unused model-override secrets (`GEMINI_MODEL`, `SCORE_MODEL`, `TRANSLATE_MODEL`, `SUMMARY_MODEL`, `WATCHLIST_MODEL`) from `cron-job.yml` — these were never set and caused empty-string injection into the env
+
+### 修复
+- `GEMINI_MODEL` 为空字符串时正确回退至默认模型；移除工作流中从未设置的冗余 model secret 引用
+
+---
+
 ## [v0.3.3] - 2026-03-17
 
 ### Added
