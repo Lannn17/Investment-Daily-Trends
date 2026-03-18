@@ -5,6 +5,17 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [v0.3.6] - 2026-03-18
+
+### Fixed
+- Translation prompts (`translate_titles`, `ai_summary`) now preserve brand/company/product names in English instead of translating them to Chinese
+- English person names rendered as `English Name（中文译名）`; Japanese person names rendered as `漢字名（ひらがな）`
+
+### 修复
+- 翻译提示词更新：品牌名、公司名、产品名保留英文；英文人名附中文译名；日文人名附平假名注音
+
+---
+
 ## [v0.3.5] - 2026-03-18
 
 ### Added

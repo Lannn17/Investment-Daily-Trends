@@ -532,7 +532,10 @@ def translate_titles(titles, models=None):
         return titles
     numbered = '\n'.join(f'{i + 1}. {t}' for i, t in enumerate(titles))
     prompt   = (
-        f'请将以下{len(titles)}条英文/日文财经新闻标题翻译成中文。'
+        f'请将以下{len(titles)}条英文/日文财经新闻标题翻译成中文。遵守以下规则：\n'
+        f'1. 品牌名、公司名、产品名保留英文原文，不得翻译（例如：lululemon、Apple、Tesla、Nvidia）。\n'
+        f'2. 英文人名使用双语格式：保留英文原名并附上中文互联网常见译名，格式为"英文名（中文译名）"（例如：Elon Musk（马斯克））。\n'
+        f'3. 日文人名使用双语格式：保留汉字原名并附上平假名读音，格式为"汉字名（平假名）"（例如：石破茂（いしばしげる））。\n'
         f'必须严格输出JSON数组，恰好{len(titles)}个元素：{{"titles": ["翻译1", "翻译2", ...]}}，'
         f'不要输出任何其他内容。\n\n{numbered}'
     )
@@ -558,10 +561,11 @@ def ai_summary(text, models=None):
     prompt = (
         f'{text}\n\n'
         f'以上为财经新闻内容，请用中文生成摘要和关键词。'
+        f'规则：品牌名、公司名、产品名保留英文原文；英文人名使用"英文名（中文译名）"格式；日文人名使用"汉字名（平假名）"格式。'
         f'严格按以下格式输出两行，不得包含任何其他内容：\n'
         f'关键词：[提取{KEYWORD_LENGTH}个关键词，逗号分隔]\n'
         f'总结：[用中文详细概括文章要点，字数不少于80字，最多{SUMMARY_LENGTH}字]\n\n'
-        f'只输出以上两行纯文本，全部使用中文。禁止输出英文、思考过程、Markdown语法或代码块。'
+        f'只输出以上两行纯文本。禁止输出思考过程、Markdown语法或代码块。'
     )
     return clean_summary(chat_with_gemini(prompt, models=models or SUMMARY_MODEL_CHAIN))
 
