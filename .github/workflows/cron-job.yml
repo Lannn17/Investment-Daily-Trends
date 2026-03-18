@@ -32,6 +32,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Check secrets presence
+        run: |
+          echo "SMTP_HOST set: ${{ secrets.SMTP_HOST != '' }}"
+          echo "SMTP_PORT set: ${{ secrets.SMTP_PORT != '' }}"
+          echo "SMTP_USER set: ${{ secrets.SMTP_USER != '' }}"
+          echo "SMTP_PASS set: ${{ secrets.SMTP_PASS != '' }}"
+          echo "RECIPIENT_EMAIL set: ${{ secrets.RECIPIENT_EMAIL != '' }}"
+
       - name: Run Investment Daily Trends
         run: python main.py
         env:
