@@ -112,32 +112,32 @@
       "ticker": "^N225",
       "label": "Nikkei 225",
       "url": "https://finance.yahoo.com/quote/^N225",
-      "price": 53700.390625,
-      "price_fmt": "53,700",
-      "change": -50.7578125,
-      "change_fmt": "50.758",
-      "change_pct": -0.0009443112189318048,
-      "change_pct_fmt": "-0.09%",
+      "price": 53751.1484375,
+      "price_fmt": "53,751",
+      "change": -68.4609375,
+      "change_fmt": "68.461",
+      "change_pct": -0.001272044488895921,
+      "change_pct_fmt": "-0.13%",
       "change_arrow": "▼",
       "css": "down",
       "history": [
+        "54,248",
         "55,025",
         "54,453",
         "53,820",
-        "53,751",
-        "53,700"
+        "53,751"
       ],
       "history_dates": [
+        "03/10",
         "03/11",
         "03/12",
         "03/13",
-        "03/16",
-        "03/17"
+        "03/16"
       ],
-      "change_5d": -0.024079446306551063,
-      "change_5d_fmt": "-2.41%",
+      "change_5d": -0.009166026526708598,
+      "change_5d_fmt": "-0.92%",
       "css5d": "down",
-      "as_of": "03/17 15:30",
+      "as_of": "03/16 15:30",
       "name": "Nikkei 225",
       "news_titles": [],
       "analysis": null,
@@ -186,12 +186,12 @@
       "ticker": "GC=F",
       "label": "Gold",
       "url": "https://finance.yahoo.com/quote/GC=F",
-      "price": 5005.0,
-      "price_fmt": "5,005.00",
-      "change": 11.0,
-      "change_fmt": "11.000",
-      "change_pct": 0.0022026431718061676,
-      "change_pct_fmt": "+0.22%",
+      "price": 5006.39990234375,
+      "price_fmt": "5,006.40",
+      "change": 12.39990234375,
+      "change_fmt": "12.400",
+      "change_pct": 0.0024829600207749297,
+      "change_pct_fmt": "+0.25%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
@@ -199,7 +199,7 @@
         "5,115.80",
         "5,052.50",
         "4,994.00",
-        "5,005.00"
+        "5,006.40"
       ],
       "history_dates": [
         "03/11",
@@ -208,8 +208,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": -0.031427779040304415,
-      "change_5d_fmt": "-3.14%",
+      "change_5d": -0.031156868646255942,
+      "change_5d_fmt": "-3.12%",
       "css5d": "down",
       "as_of": "03/18 05:00",
       "name": "Gold",
@@ -222,12 +222,12 @@
       "ticker": "SI=F",
       "label": "Silver",
       "url": "https://finance.yahoo.com/quote/SI=F",
-      "price": 79.2750015258789,
-      "price_fmt": "79.275",
-      "change": -0.9879989624023438,
-      "change_fmt": "0.9880",
-      "change_pct": -0.01230951940983811,
-      "change_pct_fmt": "-1.23%",
+      "price": 79.34500122070312,
+      "price_fmt": "79.345",
+      "change": -0.917999267578125,
+      "change_fmt": "0.9180",
+      "change_pct": -0.011437390354129072,
+      "change_pct_fmt": "-1.14%",
       "change_arrow": "▼",
       "css": "down",
       "history": [
@@ -235,7 +235,7 @@
         "84.670",
         "80.914",
         "80.263",
-        "79.275"
+        "79.345"
       ],
       "history_dates": [
         "03/11",
@@ -244,8 +244,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": -0.06806560570565508,
-      "change_5d_fmt": "-6.81%",
+      "change_5d": -0.06724270918164174,
+      "change_5d_fmt": "-6.72%",
       "css5d": "down",
       "as_of": "03/18 05:00",
       "name": "Silver",
@@ -258,12 +258,12 @@
       "ticker": "CL=F",
       "label": "WTI Oil",
       "url": "https://finance.yahoo.com/quote/CL=F",
-      "price": 95.0999984741211,
-      "price_fmt": "95.100",
-      "change": 1.5999984741210938,
-      "change_fmt": "1.6000",
-      "change_pct": 0.017112283145680147,
-      "change_pct_fmt": "+1.71%",
+      "price": 95.29000091552734,
+      "price_fmt": "95.290",
+      "change": 1.7900009155273438,
+      "change_fmt": "1.7900",
+      "change_pct": 0.019144394818474266,
+      "change_pct_fmt": "+1.91%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
@@ -271,7 +271,7 @@
         "95.730",
         "98.710",
         "93.500",
-        "95.100"
+        "95.290"
       ],
       "history_dates": [
         "03/11",
@@ -280,8 +280,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": 0.0899713292162876,
-      "change_5d_fmt": "+9.00%",
+      "change_5d": 0.09214900762782056,
+      "change_5d_fmt": "+9.21%",
       "css5d": "up",
       "as_of": "03/18 05:00",
       "name": "WTI Oil",
@@ -294,12 +294,12 @@
       "ticker": "BZ=F",
       "label": "Brent Oil",
       "url": "https://finance.yahoo.com/quote/BZ=F",
-      "price": 103.4000015258789,
-      "price_fmt": "103.40",
-      "change": 3.19000244140625,
-      "change_fmt": "3.1900",
-      "change_pct": 0.03183317503792428,
-      "change_pct_fmt": "+3.18%",
+      "price": 103.54000091552734,
+      "price_fmt": "103.54",
+      "change": 3.3300018310546875,
+      "change_fmt": "3.3300",
+      "change_pct": 0.03323023512102461,
+      "change_pct_fmt": "+3.32%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
@@ -307,7 +307,7 @@
         "100.46",
         "103.14",
         "100.21",
-        "103.40"
+        "103.54"
       ],
       "history_dates": [
         "03/11",
@@ -316,8 +316,8 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": 0.12415740108890153,
-      "change_5d_fmt": "+12.42%",
+      "change_5d": 0.1256794644128738,
+      "change_5d_fmt": "+12.57%",
       "css5d": "up",
       "as_of": "03/18 05:00",
       "name": "Brent Oil",
@@ -332,32 +332,32 @@
       "ticker": "USDJPY=X",
       "label": "USD/JPY",
       "url": "https://finance.yahoo.com/quote/USDJPY=X",
-      "price": 158.9040069580078,
-      "price_fmt": "158.90",
-      "change": -0.6639862060546875,
-      "change_fmt": "0.6640",
-      "change_pct": -0.00416114906810916,
-      "change_pct_fmt": "-0.42%",
+      "price": 158.85699462890625,
+      "price_fmt": "158.86",
+      "change": -0.2480010986328125,
+      "change_fmt": "0.2480",
+      "change_pct": -0.0015587260318180357,
+      "change_pct_fmt": "-0.16%",
       "change_arrow": "▼",
       "css": "down",
       "history": [
-        "158.11",
         "159.07",
         "159.21",
         "159.57",
-        "158.90"
+        "159.10",
+        "158.86"
       ],
       "history_dates": [
-        "03/11",
         "03/12",
         "03/13",
         "03/16",
-        "03/17"
+        "03/17",
+        "03/18"
       ],
-      "change_5d": 0.004996449099072886,
-      "change_5d_fmt": "+0.50%",
-      "css5d": "up",
-      "as_of": "03/18 01:30",
+      "change_5d": -0.0013704373629934334,
+      "change_5d_fmt": "-0.14%",
+      "css5d": "down",
+      "as_of": "03/19 01:30",
       "name": "USD/JPY",
       "news_titles": [],
       "analysis": null,
@@ -368,12 +368,12 @@
       "ticker": "JPYCNY=X",
       "label": "JPY/CNY",
       "url": "https://finance.yahoo.com/quote/JPYCNY=X",
-      "price": 0.04326999932527542,
-      "price_fmt": "0.0433",
-      "change": 4.699826240539551e-05,
-      "change_fmt": "0.0000",
-      "change_pct": 0.0010873438042174391,
-      "change_pct_fmt": "+0.11%",
+      "price": 0.04371599853038788,
+      "price_fmt": "0.0437",
+      "change": 0.0004929974675178528,
+      "change_fmt": "0.0005",
+      "change_pct": 0.011405905545539588,
+      "change_pct_fmt": "+1.14%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
@@ -381,7 +381,7 @@
         "0.0432",
         "0.0431",
         "0.0432",
-        "0.0433"
+        "0.0437"
       ],
       "history_dates": [
         "03/11",
@@ -390,9 +390,9 @@
         "03/16",
         "03/17"
       ],
-      "change_5d": -0.004944265854393196,
-      "change_5d_fmt": "-0.49%",
-      "css5d": "down",
+      "change_5d": 0.00531212595036236,
+      "change_5d_fmt": "+0.53%",
+      "css5d": "up",
       "as_of": "03/18 01:30",
       "name": "JPY/CNY",
       "news_titles": [],
@@ -404,32 +404,32 @@
       "ticker": "EURJPY=X",
       "label": "EUR/JPY",
       "url": "https://finance.yahoo.com/quote/EURJPY=X",
-      "price": 183.3780059814453,
-      "price_fmt": "183.38",
-      "change": 0.920013427734375,
-      "change_fmt": "0.9200",
-      "change_pct": 0.005042330099425745,
-      "change_pct_fmt": "+0.50%",
+      "price": 183.36700439453125,
+      "price_fmt": "183.37",
+      "change": 0.4170074462890625,
+      "change_fmt": "0.4170",
+      "change_pct": 0.002279352026483153,
+      "change_pct_fmt": "+0.23%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
-        "183.58",
         "183.62",
         "183.43",
         "182.46",
-        "183.38"
+        "182.95",
+        "183.37"
       ],
       "history_dates": [
-        "03/11",
         "03/12",
         "03/13",
         "03/16",
-        "03/17"
+        "03/17",
+        "03/18"
       ],
-      "change_5d": -0.0010839586258785917,
-      "change_5d_fmt": "-0.11%",
+      "change_5d": -0.0013724009870650271,
+      "change_5d_fmt": "-0.14%",
       "css5d": "down",
-      "as_of": "03/18 01:30",
+      "as_of": "03/19 01:30",
       "name": "EUR/JPY",
       "news_titles": [],
       "analysis": null,
@@ -772,45 +772,45 @@
   ],
   "market_news": [
     {
-      "title": "Analyst Report: Kimco Realty Corp",
-      "article": "Analyst Report: Kimco Realty Corp",
+      "title": "Daily – Vickers Top Buyers & Sellers for 03/17/2026",
+      "article": "Daily – Vickers Top Buyers & Sellers for 03/17/2026",
       "summary": null
     },
     {
-      "title": "Israel says Iran’s security chief, Ali Larijani, has been killed in a strike",
-      "article": "Ali  Larijani was seen as the right-hand man of Iran's late supreme leader Ayatollah Ali Khamenei.",
+      "title": "Daily Spotlight: Argus Adjusts Sector Ratings",
+      "article": "Daily Spotlight: Argus Adjusts Sector Ratings",
       "summary": null
     },
     {
-      "title": "Jensen Huang says Nvidia has received orders from China and is 'restarting our manufacturing'",
-      "article": "Nvidia is gearing up to sell its H200 processors to customers in China after a lengthy delay due to restrictions from both the U.S. and Chinese government.",
+      "title": "Technical Assessment: Bullish in the Intermediate-Term",
+      "article": "Technical Assessment: Bullish in the Intermediate-Term",
       "summary": null
     },
     {
-      "title": "Asia-Pacific markets set to rise as Middle East tensions escalate after UAE energy attacks",
-      "article": "Asia-Pacific markets were set to climb on Wednesday as investors tracked escalating tensions in the Middle East.",
+      "title": "Analyst Report: MarketAxess Holdings Inc",
+      "article": "Analyst Report: MarketAxess Holdings Inc",
       "summary": null
     },
     {
-      "title": "Iran targets UAE energy infrastructure as gas field set ablaze, tanker struck near Strait of Hormuz",
-      "article": "Oil prices advanced on Tuesday as energy market participants monitored Middle East supply disruptions.",
+      "title": "The Fed issues its latest interest rate decision Wednesday. Here's what to expect",
+      "article": "The Fed issues its latest interest rate decision Wednesday. Here's what to expect",
       "summary": null
     }
   ],
   "japan_news": [
     {
-      "title": "春闘 きょう集中回答日 物価上昇上回る賃上げ実現するかが焦点",
-      "article": "ことしの春闘は18日が集中回答日で、すでに大手企業では高い水準の賃上げでの決着が相次いでいます。一方、中小企業については、イラン情勢の悪化が賃上げの判断に影響を与えかねないという見方もあり、物価の上昇を上回る賃上げが実現するかが焦点です。",
+      "title": "2月貿易統計 米向け輸出額 前年同月比8％減 減少は3か月連続",
+      "article": "財務省が発表した2月の貿易統計によりますと、アメリカ向けの輸出額は去年の同じ月と比べて8％減り、3か月連続で減少しました。このうち自動車の輸出額は、14.8％減少しました。トランプ政権による関税措置の影響が続いていることがうかがえます。",
       "summary": null
     },
     {
-      "title": "政府 日米首脳会談でアラスカ産原油調達の意向伝える方針",
-      "article": "イラン情勢の緊迫化で原油の安定供給に懸念が生じていることを受けて、政府は、今週開かれる日米首脳会談で、アラスカ州の原油の増産に向けて協力し、その原油を調達する意向を伝える方針であることが明らかになりました。世界の原油供給力の向上につなげるとともに、原油調達の多角化を図るねらいです。",
+      "title": "NY原油 WTI先物価格が高止まり イラン情勢のエスカレート懸念",
+      "article": "17日のニューヨーク原油市場で国際的な取り引きの指標となるWTIの先物価格は依然、高止まりしています。イスラエルがイランの最高安全保障委員会のラリジャニ事務局長を殺害したと発表したことで投資家の間では事態がエスカレートすることへの懸念がくすぶっている形です。",
       "summary": null
     },
     {
-      "title": "オーストラリア 政策金利引き上げ イラン情勢のインフレ抑制で",
-      "article": "オーストラリアの中央銀行にあたる準備銀行は、イラン情勢の影響で燃料価格が急激に上昇していて、この状況が続けばインフレに拍車がかかるなどとして政策金利を0.25％引き上げることを決めたと発表しました。",
+      "title": "中国の景気減速 現地進出の日本企業で戦略見直す動き",
+      "article": "中国の景気が減速し、デフレの懸念も指摘される中、現地に進出する日本の企業の間では、低価格帯の商品を強化した店舗を新たに出店するなど、戦略を見直す動きが出ています。",
       "summary": null
     }
   ],
@@ -820,10 +820,10 @@
       "label": "Brent Crude",
       "etf": "BZ=F",
       "etf_source": "ICE Brent Crude Futures",
-      "pct": 0.03183317503792428,
+      "pct": 0.03323023512102461,
       "url": "https://finance.yahoo.com/quote/BZ=F",
-      "price_fmt": "103.40",
-      "change_pct_fmt": "+3.18%",
+      "price_fmt": "103.54",
+      "change_pct_fmt": "+3.32%",
       "constituents_source": "Major international oil producers",
       "top_movers": [
         {
@@ -863,60 +863,6 @@
         "E +4.09%",
         "TTE +3.84%",
         "EQNR +3.68%"
-      ],
-      "analysis": null,
-      "outlook": "neutral",
-      "outlook_css": "neutral",
-      "news": []
-    },
-    {
-      "country": "Japan Steel & Nonferrous",
-      "label": "Japan Steel & Nonferrous",
-      "etf": "1623.T",
-      "etf_source": "NEXT FUNDS TOPIX-17 Steel",
-      "pct": -0.02690077319587629,
-      "url": "https://finance.yahoo.com/quote/1623.T",
-      "price_fmt": "60,410",
-      "change_pct_fmt": "-2.69%",
-      "constituents_source": "NEXT FUNDS 1623.T holdings",
-      "top_movers": [
-        {
-          "ticker": "5801.T",
-          "price": 27440.0,
-          "price_fmt": "27,440",
-          "pct": -0.06682536983506207,
-          "change_pct_fmt": "-6.68%",
-          "change_arrow": "▼",
-          "css": "down",
-          "url": "https://finance.yahoo.com/quote/5801.T"
-        },
-        {
-          "ticker": "5802.T",
-          "price": 9525.0,
-          "price_fmt": "9,525.00",
-          "pct": -0.06157635467980296,
-          "change_pct_fmt": "-6.16%",
-          "change_arrow": "▼",
-          "css": "down",
-          "url": "https://finance.yahoo.com/quote/5802.T"
-        },
-        {
-          "ticker": "5706.T",
-          "price": 30110.0,
-          "price_fmt": "30,110",
-          "pct": -0.04715189873417722,
-          "change_pct_fmt": "-4.72%",
-          "change_arrow": "▼",
-          "css": "down",
-          "url": "https://finance.yahoo.com/quote/5706.T"
-        }
-      ],
-      "ticker": "1623.T",
-      "name": "Japan Steel & Nonferrous",
-      "news_titles": [
-        "5801.T -6.68%",
-        "5802.T -6.16%",
-        "5706.T -4.72%"
       ],
       "analysis": null,
       "outlook": "neutral",
