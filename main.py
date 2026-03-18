@@ -75,7 +75,7 @@ JAPAN_NEWS_URLS    = [u.strip() for u in get_cfg('japan_news',  'url', '').split
 
 # ── Gemini setup ──────────────────────────────────────────────────────────────
 GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY')
-DEFAULT_MODEL  = os.environ.get('GEMINI_MODEL', 'gemini-3.1-flash-lite-preview')
+DEFAULT_MODEL  = os.environ.get('GEMINI_MODEL') or 'gemini-3.1-flash-lite-preview'
 
 def _chain(*models):
     return [m.strip() for m in models if m and m.strip()]
