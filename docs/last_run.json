@@ -1,22 +1,22 @@
 {
   "links": [
-    "https://finance.yahoo.com/economy/policy/articles/european-central-bank-holds-rates-135514720.html",
-    "https://finance.yahoo.com/markets/crypto/articles/bybit-offers-interest-payments-tokenized-134900896.html",
-    "http://www3.nhk.or.jp/news/html/20260319/k10015079931000.html",
-    "https://finance.yahoo.com/markets/crypto/articles/avalanche-says-best-crypto-products-135300770.html",
-    "http://www3.nhk.or.jp/news/html/20260319/k10015079621000.html",
-    "https://finance.yahoo.com/sectors/technology/articles/google-expands-utility-deals-curb-134554393.html",
-    "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-slide-amid-inflation-worries-as-iran-war-sends-oil-surging-133439504.html",
-    "http://www3.nhk.or.jp/news/html/20260319/k10015079281000.html"
+    "https://www.cnbc.com/2026/03/19/trump-powell-warsh-fed-doj-pirro.html",
+    "https://www.cnbc.com/2026/03/19/gold-and-silver-sell-off-as-inflation-fears-grip-global-markets.html",
+    "http://www3.nhk.or.jp/news/html/20260320/k10015080171000.html",
+    "https://www.cnbc.com/2026/03/19/traders-rate-cut.html",
+    "http://www3.nhk.or.jp/news/html/20260319/k10015079461000.html",
+    "http://www3.nhk.or.jp/news/html/20260319/k10015079411000.html",
+    "https://www.cnbc.com/2026/03/19/copper-joins-gold-in-broad-commodities-sell-off-theres-a-worrying-reason-behind-it.html",
+    "https://www.cnbc.com/2026/03/19/interest-rates-bonds-bank-of-england-european-central-bank-investors-iran-war-ecb-inflation.html"
   ],
   "fingerprints": [
-    "欧洲中央银行维持利率不变，伊朗战争引发的能源冲击带来巨大不确定性 european central bank holds rates unchanged as energy shock from iran war causes massive uncertainty",
-    "avalanche表示最好的加密产品不会有加密货币的“使用感” avalanche says the best crypto products won’t feel like crypto",
-    "bybit提供代币化黄金利息支付 bybit offers interest payments on tokenized gold",
-    "今日股市：受通胀担忧影响，道琼斯指数、s&p 500和nasdaq下跌，同时伊朗战争推高油价 stock market today: dow, s&p 500, nasdaq slide amid inflation worries as iran war sends oil surging",
-    "google扩大公用事业协议，以控制高峰时段的数据中心电力使用 google expands utility deals to curb data‑center power use during peak demand",
-    "日元汇率一度逼近1美元兑160日元，市场对美国降息步伐放缓的预期扩大 19日の東京外国為替市場は、原油の先物価格が高止まりしていることに加え、アメリカの利下げペースが鈍化するという見方が広がったことから円を売る動きが強まって一時、1ドル＝160円に迫る水準まで円安が進みました。",
-    "日本银行决定维持货币政策不变，“当面伊朗局势成为关键点” 日銀は19日まで開いた金融政策決定会合で政策の維持を決めました。植田総裁は会見で、今後も利上げを目指す姿勢を示す一方、当面はイラン情勢の影響が政策判断の重要なポイントになるとして、経済や物価に及ぼす影響を点検していく考えを示しました。",
-    "股价一度下跌超过2000日元，受原油期货价格上涨等影响呈现全面下跌行情 株価 一時2000円超下落 原油の先物価格上昇などで全面安の展開"
+    "在fed做出决议后，交易员目前认为今年降息的可能性微乎其微 all of the positive economic talk out of this week's federal reserve meeting had a negative impact on investors",
+    "donald trump（特朗普）暗示司法部应继续对jerome powell（鲍威尔）进行调查，这使kevin warsh（沃什）的fed提名事宜复杂化 powell has accused the doj of investigating him in retaliation for his refusal to lower interest rates as much or as quickly as trump has demanded.",
+    "铜与黄金一同在大规模大宗商品抛售潮中走低，其背后有着令人担忧的原因 after major rallies, metals were under pressure on thursday as rising oil prices increased both inflation and growth worries.",
+    "随着通胀担忧席卷全球市场，黄金和白银的抛售潮加速 the metals shed around 5% and 10%, respectively, while mining stocks and etfs linked to gold and silver also fell.",
+    "受伊朗战争影响，欧洲各国央行面临政府债券的“完美风暴” bond yields have surged as europe's central banks grapple with new inflation fears.",
+    "纽约市场日元汇率一度跌至1美元兑157日元区间，受日美利差缩小预期影响 19日のニューヨーク外国為替市場ではドルを売って円を買う動きが進み、円相場は一時、1ドル＝157円台まで値上がりしました。日銀の植田総裁が利上げを続ける姿勢を維持し、日米の金利差が縮小するとの思惑が出たことなどが要因です。前日のニューヨーク市場では、アメリカのfrb＝連邦準備制度理事会による利下げのペースが緩やかになるとの観測から、円相場は一時、1ドル＝159円台後半まで円安ドル高が進み、160円に迫りましたが、そこから一転して2円あまり値上がりする、荒い値動きとなっています。",
+    "日本央行决定维持金融政策不变，或受伊朗局势影响 日銀は19日まで開いた金融政策決定会合で、今の金融政策を維持することを賛成多数で決めました。イラン情勢を受けて原油価格の上昇や円安が続く中、国内の経済、物価への影響を慎重に確認する必要があると判断したとみられます。",
+    "财务大臣片山（かたやま）表示日元贬值美元升值持续，“易产生波动，感到极度紧张” 中東情勢の緊迫を背景にした円安ドル高の進行について、片山財務大臣は、19日は取り引きの手がかりが多く、投機的な動きが出やすいとして、「非常な緊張感を持って見ている。しっかり構える」と市場をけん制しました。"
   ]
 }
