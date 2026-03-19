@@ -75,6 +75,9 @@
     .outlook-bullish { background: #e6f4ea; color: #1a9e5a; }
     .outlook-bearish { background: #fce8e6; color: #d32f2f; }
     .outlook-neutral { background: #f0f2f5; color: #555; }
+    .market-badge { display: inline-block; padding: 1px 4px; border-radius: 3px; font-size: 0.52rem; font-weight: 700; margin-left: 5px; vertical-align: middle; }
+    .market-open   { background: #e6f4ea; color: #1a9e5a; }
+    .market-closed { background: #f0f2f5; color: #999; }
 
     /* ── News Block ── */
     .news-wrap { background: #fff; margin-top: 2px; padding: 0 16px 18px; }
@@ -176,7 +179,7 @@
     {% for item in indices %}
     <div class="price-card">
       <div class="card-name">{{ item.label }}</div>
-      <div class="card-ticker"><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.ticker }}</a>{% if item.as_of %}<span style="font-size:0.58rem;color:#bbb;margin-left:4px;">{{ item.as_of }}</span>{% endif %}</div>
+      <div class="card-ticker"><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.ticker }}</a>{% if item.market_name %}<span class="market-badge {{ 'market-open' if item.market_open else 'market-closed' }}">{{ item.market_name }} · {{ 'OPEN' if item.market_open else 'CLOSED' }}</span>{% endif %}{% if item.as_of %}<span style="font-size:0.58rem;color:#bbb;margin-left:4px;">{{ item.as_of }}</span>{% endif %}</div>
       <div class="card-price">{{ item.price_fmt }}</div>
       <div class="card-change {{ item.css }}">{{ item.change_arrow }} {{ item.change_fmt }} ({{ item.change_pct_fmt }})</div>
       {% if item.analysis %}
@@ -193,7 +196,7 @@
     {% for item in commodities %}
     <div class="price-card">
       <div class="card-name">{{ item.label }}</div>
-      <div class="card-ticker"><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.ticker }}</a>{% if item.as_of %}<span style="font-size:0.58rem;color:#bbb;margin-left:4px;">{{ item.as_of }}</span>{% endif %}</div>
+      <div class="card-ticker"><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.ticker }}</a>{% if item.market_name %}<span class="market-badge {{ 'market-open' if item.market_open else 'market-closed' }}">{{ item.market_name }} · {{ 'OPEN' if item.market_open else 'CLOSED' }}</span>{% endif %}{% if item.as_of %}<span style="font-size:0.58rem;color:#bbb;margin-left:4px;">{{ item.as_of }}</span>{% endif %}</div>
       <div class="card-price">{{ item.price_fmt }}</div>
       <div class="card-change {{ item.css }}">{{ item.change_arrow }} {{ item.change_fmt }} ({{ item.change_pct_fmt }})</div>
       {% if item.analysis %}
@@ -210,7 +213,7 @@
     {% for item in fx %}
     <div class="price-card">
       <div class="card-name">{{ item.label }}</div>
-      <div class="card-ticker"><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.ticker }}</a>{% if item.as_of %}<span style="font-size:0.58rem;color:#bbb;margin-left:4px;">{{ item.as_of }}</span>{% endif %}</div>
+      <div class="card-ticker"><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.ticker }}</a>{% if item.market_name %}<span class="market-badge {{ 'market-open' if item.market_open else 'market-closed' }}">{{ item.market_name }} · {{ 'OPEN' if item.market_open else 'CLOSED' }}</span>{% endif %}{% if item.as_of %}<span style="font-size:0.58rem;color:#bbb;margin-left:4px;">{{ item.as_of }}</span>{% endif %}</div>
       <div class="card-price">{{ item.price_fmt }}</div>
       <div class="card-change {{ item.css }}">{{ item.change_arrow }} {{ item.change_fmt }} ({{ item.change_pct_fmt }})</div>
       {% if item.analysis %}
@@ -227,7 +230,7 @@
     {% for item in watchlist %}
     <div class="price-card">
       <div class="card-name">{{ item.name }}</div>
-      <div class="card-ticker"><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.ticker }}</a>{% if item.as_of %}<span style="font-size:0.58rem;color:#bbb;margin-left:4px;">{{ item.as_of }}</span>{% endif %}</div>
+      <div class="card-ticker"><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.ticker }}</a>{% if item.market_name %}<span class="market-badge {{ 'market-open' if item.market_open else 'market-closed' }}">{{ item.market_name }} · {{ 'OPEN' if item.market_open else 'CLOSED' }}</span>{% endif %}{% if item.as_of %}<span style="font-size:0.58rem;color:#bbb;margin-left:4px;">{{ item.as_of }}</span>{% endif %}</div>
       <div class="card-price {{ item.css }}">{{ item.price_fmt }}</div>
       <div class="card-change {{ item.css }}">{{ item.change_arrow }} {{ item.change_pct_fmt }}</div>
       {% if item.analysis %}

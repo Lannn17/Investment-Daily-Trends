@@ -237,16 +237,17 @@ def price_css(change):
 def price_arrow(change):
     return '▲' if change >= 0 else '▼'
 
-# ── Market close times (local hour) by UTC offset ────────────────────────────
+# ── Market session hours by UTC offset ───────────────────────────────────────
+# (exchange_name, open_local_hour, close_local_hour)
 # Bar timestamps from yfinance are midnight of the trading day in the local exchange tz.
-# Adding the standard close hour gives the actual close time for that exchange.
-_CLOSE_HOURS_BY_UTC_OFFSET = {
-    -5.0: 16.0,   # EST  → NYSE/NASDAQ 16:00 EST  = 06:00 JST
-    -4.0: 16.0,   # EDT  → NYSE/NASDAQ 16:00 EDT  = 05:00 JST
-     9.0: 15.5,   # JST  → TSE         15:30 JST  = 15:30 JST
-     8.0: 16.0,   # HKT/SGT            16:00       = 17:00 JST
-     0.0: 16.5,   # GMT  → London      16:30 GMT  = 01:30 JST (+1d)
-     1.0: 17.5,   # CET  → Frankfurt   17:30 CET  = 01:30 JST (+1d)
+# Used to determine: market closed → show close time; open → show fetch time; pre-open → show fetch time.
+_MARKET_SESSIONS = {
+    -5.0: ('NYSE/NASDAQ', 9.5,  16.0),  # EST
+    -4.0: ('NYSE/NASDAQ', 9.5,  16.0),  # EDT
+     9.0: ('TSE',         9.0,  15.5),  # JST
+     8.0: ('HKEX/SGX',   9.0,  16.0),  # HKT/SGT
+     0.0: ('LSE',         8.0,  16.5),  # GMT
+     1.0: ('XETRA',       9.0,  17.5),  # CET
 }
 
 # ── yfinance price fetch ──────────────────────────────────────────────────────
@@ -269,21 +270,42 @@ def fetch_price_item(ticker, label):
         end5        = float(hist5.iloc[-1])
         change_5d   = (end5 - start5) / start5 if start5 else 0.0
 
-        # as_of: estimate the exchange close time in JST from bar timestamp + known close offset
+        # as_of + market status: determine the time this price corresponds to.
+        # market closed  → as_of = confirmed close time (JST); market_open = False
+        # market open    → as_of = current fetch time (JST);   market_open = True
+        # pre-open       → as_of = current fetch time (JST);   market_open = False
         try:
-            ts = hist.index[-1]
+            ts      = hist.index[-1]
+            now_utc = datetime.datetime.now(datetime.timezone.utc)
+            now_jst = datetime.datetime.now(JST)
+            as_of       = ''
+            market_name = ''
+            market_open = False
             if hasattr(ts, 'tzinfo') and ts.tzinfo is not None:
                 tz_offset_h = ts.tzinfo.utcoffset(ts).total_seconds() / 3600
-                close_h = _CLOSE_HOURS_BY_UTC_OFFSET.get(tz_offset_h)
-                if close_h is not None:
+                session = _MARKET_SESSIONS.get(tz_offset_h)
+                if session:
+                    exch, open_h, close_h = session
+                    market_name = exch
+                    open_ts  = ts + datetime.timedelta(hours=open_h)
                     close_ts = ts + datetime.timedelta(hours=close_h)
-                    as_of = close_ts.astimezone(JST).strftime('%m/%d %H:%M')
+                    if close_ts.astimezone(datetime.timezone.utc) <= now_utc:
+                        as_of       = close_ts.astimezone(JST).strftime('%m/%d %H:%M')
+                        market_open = False
+                    elif open_ts.astimezone(datetime.timezone.utc) <= now_utc:
+                        as_of       = now_jst.strftime('%m/%d %H:%M')
+                        market_open = True
+                    else:
+                        as_of       = now_jst.strftime('%m/%d %H:%M')
+                        market_open = False
                 else:
-                    as_of = ts.astimezone(JST).strftime('%m/%d')  # unknown exchange: date only
+                    as_of = ts.astimezone(JST).strftime('%m/%d')
             else:
                 as_of = ts.replace(tzinfo=datetime.timezone.utc).astimezone(JST).strftime('%m/%d')
         except Exception:
-            as_of = ''
+            as_of       = ''
+            market_name = ''
+            market_open = False
 
         return {
             'ticker':          ticker,
@@ -303,6 +325,8 @@ def fetch_price_item(ticker, label):
             'change_5d_fmt':   f'{change_5d * 100:+.2f}%',
             'css5d':           price_css(change_5d),
             'as_of':           as_of,
+            'market_name':     market_name,
+            'market_open':     market_open,
         }
     except Exception as e:
         print(f"  [price] Failed for {ticker}: {e}")
@@ -317,7 +341,7 @@ def _placeholder(ticker, label):
         'change_arrow': '-', 'css': 'flat',
         'history': [], 'history_dates': [],
         'change_5d': 0, 'change_5d_fmt': 'N/A', 'css5d': 'flat',
-        'as_of': '',
+        'as_of': '', 'market_name': '', 'market_open': False,
     }
 
 def fetch_price_list(tickers, labels):

@@ -11,7 +11,7 @@
 {% macro price_card(item) %}
 <div style="border:1px solid #e8eaed;border-radius:8px;padding:12px 14px;background:#fafbfc;margin-bottom:8px;">
   <div style="font-size:15px;font-weight:700;color:#1a1a2e;">{{ item.label if item.label else item.name }}</div>
-  <div style="font-size:12px;color:#999;margin-top:2px;"><a href="{{ item.url }}" style="color:#999;text-decoration:none;">{{ item.ticker }}</a>{% if item.as_of %}<span style="font-size:10px;color:#ccc;margin-left:5px;">{{ item.as_of }}</span>{% endif %}</div>
+  <div style="font-size:12px;color:#999;margin-top:2px;"><a href="{{ item.url }}" style="color:#999;text-decoration:none;">{{ item.ticker }}</a>{% if item.market_name %}<span style="display:inline-block;padding:1px 4px;border-radius:3px;font-size:9px;font-weight:700;margin-left:5px;background:{{ '#e6f4ea' if item.market_open else '#f0f2f5' }};color:{{ '#1a9e5a' if item.market_open else '#999' }};">{{ item.market_name }} · {{ 'OPEN' if item.market_open else 'CLOSED' }}</span>{% endif %}{% if item.as_of %}<span style="font-size:10px;color:#ccc;margin-left:5px;">{{ item.as_of }}</span>{% endif %}</div>
   <div style="font-size:20px;font-weight:700;color:#1a1a2e;margin-top:6px;line-height:1.1;">{{ item.price_fmt }}</div>
   <div style="font-size:14px;font-weight:600;margin-top:3px;color:{% if item.css == 'up' %}#1a9e5a{% elif item.css == 'down' %}#d32f2f{% else %}#888{% endif %};">
     {{ item.change_arrow }} {{ item.change_pct_fmt }}

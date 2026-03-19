@@ -5,6 +5,20 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [v0.3.7] - 2026-03-19
+
+### Added
+- Market status badge on each price card: shows exchange name (NYSE/NASDAQ, TSE, LSE, etc.) and whether the market was OPEN or CLOSED at digest fetch time
+
+### Fixed
+- Price card `as_of` no longer shows a future timestamp. Logic: market closed → confirmed close time (JST); market open → current fetch time; pre-open → current fetch time
+
+### 新增 / 修复
+- 价格卡片新增交易所状态标签（如 NYSE/NASDAQ · CLOSED），直观显示抓取时刻该市场是否开盘
+- 修复晚报美股标的时间显示"未来时间"（如 03/19 05:00）的问题
+
+---
+
 ## [v0.3.6] - 2026-03-18
 
 ### Fixed
