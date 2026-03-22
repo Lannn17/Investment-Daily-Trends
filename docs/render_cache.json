@@ -34,7 +34,7 @@
       "market_open": false,
       "name": "S&P 500",
       "news_titles": [],
-      "analysis": "受高利率压力及市场避险情绪升温影响，标普500显著下挫，跌破关键技术位。\n宏观不确定性增加，市场正经历深度回调修正。",
+      "analysis": "市场避险情绪升温，美股面临较大抛压，三大指数盘前齐跌，宏观不确定性增加。\n宏观环境恶化且市场情绪脆弱，短期内技术性回调压力沉重。",
       "outlook": "bearish",
       "outlook_css": "bearish"
     },
@@ -72,7 +72,7 @@
       "market_open": false,
       "name": "NASDAQ",
       "news_titles": [],
-      "analysis": "权重科技股表现疲软，纳指领跌美股，成长股估值压力在紧缩环境下进一步显现。\n高利率环境持续压制科技成长股的盈利预期。",
+      "analysis": "科技板块领跌，受纳指高估值修正及半导体板块疲软影响，市场避险需求显著。\n资金从成长股撤离趋势明显，流动性溢价受压。",
       "outlook": "bearish",
       "outlook_css": "bearish"
     },
@@ -110,7 +110,7 @@
       "market_open": false,
       "name": "Dow Jones",
       "news_titles": [],
-      "analysis": "道指全线承压，防御性板块未能提供有效支撑，市场整体情绪偏向谨慎避险。\n市场动能减弱，且缺乏强劲的宏观驱动因素支持反弹。",
+      "analysis": "蓝筹股随大盘普跌，防御性板块受损，市场关注即将到来的美股开盘流动性变化。\n全球避险情绪蔓延，道指成分股难以独善其身。",
       "outlook": "bearish",
       "outlook_css": "bearish"
     },
@@ -148,7 +148,7 @@
       "market_open": false,
       "name": "Nikkei 225",
       "news_titles": [],
-      "analysis": "受隔夜美股崩盘拖累，日经指数面临巨大补跌压力，市场波动率急剧攀升。\n全球风险资产遭抛售，日经短期内难逃下行调整。",
+      "analysis": "日经指数重挫，主要受日元升值及科技股全球性回调压力拖累，全天表现疲软。\n日元升值不利于出口导向型经济，短期卖压沉重。",
       "outlook": "bearish",
       "outlook_css": "bearish"
     },
@@ -186,7 +186,7 @@
       "market_open": false,
       "name": "Hang Seng",
       "news_titles": [],
-      "analysis": "恒指受地区性流动性收紧与避险情绪影响，呈弱势震荡，未能守住支撑。\n外部市场环境恶化，叠加本地资金流出压力，短期难言乐观。",
+      "analysis": "港股跟随亚太市场走弱，市场人气低迷，投资避险情绪占据主导。\n缺乏利好支撑，受外围悲观情绪联动明显。",
       "outlook": "bearish",
       "outlook_css": "bearish"
     }
@@ -226,7 +226,7 @@
       "market_open": false,
       "name": "Gold",
       "news_titles": [],
-      "analysis": "美元走强令金价受压，避险需求未能抵消美债收益率攀升带来的价格回调。\n虽有长期避险价值，但短期内受货币政策影响波动加剧。",
+      "analysis": "金价随大盘下跌，避险属性被流动性危机掩盖，获利回吐现象明显。\n短期受保证金追缴压力，长期避险属性仍具支撑。",
       "outlook": "neutral",
       "outlook_css": "neutral"
     },
@@ -264,7 +264,7 @@
       "market_open": false,
       "name": "Silver",
       "news_titles": [],
-      "analysis": "跟随贵金属与工业金属普跌，白银因双重属性承压，下行速度快于黄金。\n工业需求预期降温与宏观紧缩双重打压价格。",
+      "analysis": "受工业属性及大宗商品整体情绪影响，白银跌幅超黄金，显示金属市场承压。\n工业需求预期走弱，贵金属整体回调风险增加。",
       "outlook": "bearish",
       "outlook_css": "bearish"
     },
@@ -302,7 +302,7 @@
       "market_open": false,
       "name": "WTI Oil",
       "news_titles": [],
-      "analysis": "供应担忧推动油价逆势收涨，地缘政治不确定性支撑WTI油价保持强势。\n地缘风险溢价尚存，且库存结构提供了短期支撑。",
+      "analysis": "受地缘因素支撑逆势上涨，但与布油走势分化，能源市场波动加剧。\n供给端紧张叠加地缘风险溢价，提供有力支撑。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -340,7 +340,7 @@
       "market_open": false,
       "name": "Brent Oil",
       "news_titles": [],
-      "analysis": "布伦特原油出现分歧回调，主要是对全球经济需求放缓的预判引发获利回吐。\n供需博弈加剧，短期方向选择不明朗。",
+      "analysis": "油价波动剧烈，布油收低反映全球需求放缓担忧，与WTI走势背离。\n能源供给与需求预期博弈激烈，走势不明朗。",
       "outlook": "neutral",
       "outlook_css": "neutral"
     }
@@ -370,17 +370,17 @@
         "03/18",
         "03/19",
         "03/20",
-        "03/21"
+        "03/22"
       ],
       "change_5d": 0.0007228276688495992,
       "change_5d_fmt": "+0.07%",
       "css5d": "up",
-      "as_of": "03/22 01:30",
+      "as_of": "03/22 22:41",
       "market_name": "LSE",
-      "market_open": false,
+      "market_open": true,
       "name": "USD/JPY",
       "news_titles": [],
-      "analysis": "避险驱动加上美日利差预期，美元兑日元走强，突破关键压力位。\n利率差持续存在，美元短期维持相对强势。",
+      "analysis": "日元兑美元小幅走强，汇率波动加剧日本出口企业压力，资本流动性趋紧。\n美日利差预期收敛及避险需求推动日元反弹。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -418,9 +418,9 @@
       "market_open": false,
       "name": "JPY/CNY",
       "news_titles": [],
-      "analysis": "日元走强导致兑人民币汇率小幅上行，反映市场在动荡中的汇率套利行为。\n波动处于窄幅震荡区间，趋势性不明。",
-      "outlook": "neutral",
-      "outlook_css": "neutral"
+      "analysis": "日元走强导致汇率上涨，反映出区域货币结构的动态调整。\n日元整体买盘增强，带动对人民币汇率升值。",
+      "outlook": "bullish",
+      "outlook_css": "bullish"
     },
     {
       "ticker": "EURJPY=X",
@@ -446,19 +446,19 @@
         "03/18",
         "03/19",
         "03/20",
-        "03/21"
+        "03/22"
       ],
       "change_5d": 0.007094857458553767,
       "change_5d_fmt": "+0.71%",
       "css5d": "up",
-      "as_of": "03/22 01:30",
+      "as_of": "03/22 22:41",
       "market_name": "LSE",
-      "market_open": false,
+      "market_open": true,
       "name": "EUR/JPY",
       "news_titles": [],
-      "analysis": "交叉盘受欧元区经济数据表现影响，日元兑欧元呈现窄幅区间波动后的反弹。\n双方货币政策皆面临挑战，趋势并不明显。",
-      "outlook": "neutral",
-      "outlook_css": "neutral"
+      "analysis": "受避险驱动，欧元对日元走势分化，反映欧洲盘交易时段的市场博弈。\n日元作为避险资产的买盘压制了汇价上涨。",
+      "outlook": "bearish",
+      "outlook_css": "bearish"
     }
   ],
   "hist_dates": [
@@ -503,7 +503,7 @@
       "market_open": false,
       "name": "iShares Gold Trust",
       "news_titles": [],
-      "analysis": "跟随现货黄金下跌，投资者的避险资金选择流向现金而非黄金信托。\n需观察金价在关键支撑位的表现，暂不宜盲目做空。",
+      "analysis": "实物黄金信托紧随金价下跌，反映持有者在市场动荡中选择变现。\n与黄金现货走势同步，短期调整，长期资产配置需求仍存。",
       "outlook": "neutral",
       "outlook_css": "neutral"
     },
@@ -541,7 +541,7 @@
       "market_open": false,
       "name": "Newmont Corporation",
       "news_titles": [],
-      "analysis": "黄金生产成本压力与金价回落，导致Newmont股价显著承压，表现弱于大盘。\n盈利空间压缩，叠加贵金属市场的短期低迷。",
+      "analysis": "贵金属矿企跟随大盘下挫，不仅受金价拖累，且受矿业成本上升担忧影响。\n金价回调叠加板块抛压，短期技术形态走弱。",
       "outlook": "bearish",
       "outlook_css": "bearish"
     },
@@ -579,7 +579,7 @@
       "market_open": false,
       "name": "NVIDIA",
       "news_titles": [],
-      "analysis": "科技风向标NVDA随纳指回调，高估值在当前避险情绪下遭到抛售。\n虽然基本面强劲，但短期技术面承压严重，需修复。",
+      "analysis": "AI龙头引领科技板块下跌，市场对其高估值及芯片需求持续性产生质疑。\n科技成长股在流动性紧缩环境下估值回归压力大。",
       "outlook": "bearish",
       "outlook_css": "bearish"
     },
@@ -617,7 +617,7 @@
       "market_open": false,
       "name": "Taiwan Semiconductor",
       "news_titles": [],
-      "analysis": "芯片制造需求担忧叠加半导体板块集体杀跌，台积电股价表现承压。\n全球半导体需求周期进入消化期，短期动能不足。",
+      "analysis": "受全球半导体景气度担忧影响，盘中抛压沉重，紧随纳指走弱。\n全球芯片需求放缓，技术指标已跌破关键支撑。",
       "outlook": "bearish",
       "outlook_css": "bearish"
     },
@@ -655,7 +655,7 @@
       "market_open": false,
       "name": "Berkshire Hathaway B",
       "news_titles": [],
-      "analysis": "伯克希尔表现相对抗跌，显示出极强的防御性价值，有效缓冲市场波动。\n拥有充沛现金流，是市场动荡期的避险首选。",
+      "analysis": "防御性表现尚可，跌幅远小于大盘，显示价值投资资金的韧性。\n现金流充裕，在动荡市场中具有极强的避险属性。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -693,7 +693,7 @@
       "market_open": false,
       "name": "Lockheed Martin",
       "news_titles": [],
-      "analysis": "国防预算预期与订单平稳，但在整体市场惨淡背景下难免小幅修正。\n刚性需求支持，长期抗风险能力依然稳健。",
+      "analysis": "国防板块随大盘小幅回调，地缘政治支撑其相对表现好于平均。\n地缘冲突加剧背景下，国防订单具备确定性。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -731,9 +731,9 @@
       "market_open": false,
       "name": "Toyota Motor",
       "news_titles": [],
-      "analysis": "丰田汽车随全球需求预期放缓及日股整体下挫，面临短期盈利估值修正。\n产业竞争力犹在，但短期内受宏观情绪压制。",
-      "outlook": "neutral",
-      "outlook_css": "neutral"
+      "analysis": "丰田汽车收跌，受日元升值及全球汽车消费疲软预期影响。\n汇率波动不利出口，短期基本面承受压力。",
+      "outlook": "bearish",
+      "outlook_css": "bearish"
     },
     {
       "ticker": "9984.T",
@@ -769,7 +769,7 @@
       "market_open": false,
       "name": "SoftBank Group",
       "news_titles": [],
-      "analysis": "软银集团风险资产敞口受美科技股崩盘冲击，股价领跌日股蓝筹。\n投资组合受全球科技估值波动影响巨大，波动率高。",
+      "analysis": "软银集团大跌，受科技股投资组合估值下行压力及市场情绪低迷影响。\n受投组资产公允价值缩水打击，市场卖压重。",
       "outlook": "bearish",
       "outlook_css": "bearish"
     },
@@ -807,39 +807,45 @@
       "market_open": false,
       "name": "iShares MSCI India ETF",
       "news_titles": [],
-      "analysis": "受全球避险情绪蔓延影响，印度市场出现获利回吐，短期资金流出加剧。\n印度经济成长预期支撑，但短期受制于外部资金流。",
+      "analysis": "印度市场随亚太普跌，海外资金撤离新兴市场现象明显。\n结构性成长空间犹在，但短期内难抵全球性资金撤离。",
       "outlook": "neutral",
       "outlook_css": "neutral"
     }
   ],
   "market_news": [
     {
-      "title": "在退休前，Warren Buffett（巴菲特）给投资者留下了一个3730亿美元的警告。历史告诉我们接下来股市会发生什么。",
-      "article": "Before Retiring, Warren Buffett Left Investors With a $373 Billion Warning. Here's What History Says the Stock Market Will Do Next.",
-      "summary": "关键词：Warren Buffett, Berkshire Hathaway, 股市风险<br>\n总结：文章探讨了Warren Buffett（沃伦·巴菲特）在卸任前发出的严厉警告，指出Berkshire Hathaway持有的巨额现金储备高达3730亿美元，暗示其对当前股市高估值的担忧。历史数据表明，在市场处于历史高点且缺乏价值投资机会时，往往预示着回调风险。投资者应关注Warren Buffett（沃伦·巴菲特）的审慎态度，意识到当前股市可能正处于过度狂热阶段，未来市场波动性或将显著加剧，建议采取防御性投资策略。"
+      "title": "OpenAI的数据中心转型凸显了华尔街在IPO前对其支出水平的担忧",
+      "article": "As OpenAI gears up for a potential IPO, it's outlined a more tempered infrastructure strategy and has moved away from an ambitious agreement with Nvidia.",
+      "summary": "关键词：OpenAI, IPO, Nvidia<br>\n总结：随着OpenAI筹备潜在的首次公开募股（IPO），公司正对基础设施战略进行审慎调整。为了优化运营与资源配置，OpenAI已决定放弃此前与Nvidia达成的一项规模宏大的基础设施合作协议，转而采取更为稳健的长期规划。这一战略转型标志着OpenAI在追求技术领先的同时，更加注重财务的可持续性与资本市场的预期，旨在通过精简资源投入，为未来上市进程奠定更为坚实稳固的基础。"
     },
     {
-      "title": "NVIDIA Corporation (NVDA) 现在是一只值得买入的股票吗？",
-      "article": "Is NVIDIA Corporation (NVDA) A Good Stock To Buy Now?",
-      "summary": "关键词：NVIDIA, 股票投资, 人工智能<br>\n总结：本文主要探讨了NVIDIA当前是否具备投资价值。作为AI芯片市场的领导者，NVIDIA凭借其核心产品在高性能计算和数据中心领域的统治地位，持续保持强劲的增长势头。然而，投资者在决策时也需考量高昂的估值水平、行业竞争的加剧以及供应链波动等潜在风险。总体而言，该股被视为高成长性资产，但市场对于其未来的利润增速预期极高，投资者需审慎评估短期波动与长期AI基础设施扩张带来的投资机会。"
+      "title": "美股连续四周下跌，华尔街关注的三大主题",
+      "article": "3 themes that gripped Wall Street as stocks dropped for a 4th straight week",
+      "summary": "关键词：美股,通胀,利率<br>\n总结：美股连续四周下跌，市场情绪深受三大主题影响：首先是顽固的通胀数据打击了投资者信心，迫使市场调低对美联储降息的预期；其次是美债收益率持续攀升，导致融资成本上升并对股票估值构成压力，尤其是科技成长股受创明显；最后是地缘政治局势紧张引发的避险情绪，叠加财报季表现参差不齐，促使资金流出股市转向防御，整体市场陷入对经济增长前景和高利率环境的深切担忧之中。"
     },
     {
-      "title": "Warren Buffett（巴菲特）和 Markwayne Mullin（马奎恩·穆林）押注了相同的10只股票——其中一些可能会让你感到惊讶。",
-      "article": "Warren Buffett, Markwayne Mullin Bet On The Same 10 Stocks – Some Might Surprise You",
-      "summary": "关键词：Warren Buffett, Markwayne Mullin, 投资组合<br>\n总结：财经报道指出，全球知名投资人Warren Buffett（沃伦·巴菲特）与美国参议员Markwayne Mullin（马克韦恩·穆林）在资产配置上展现出惊人的重合度，两人共同持有的10只股票成为市场关注焦点。虽然两人的身份背景与投资目标差异巨大，但他们不约而同地看好特定行业及优质蓝筹股。这一重合不仅凸显了部分个股的长期投资价值，也为普通投资者提供了一份结合了顶级投资策略与政策洞察力的参考名单。"
+      "title": "股票市场其实并不像你想象的那样在意石油价格",
+      "article": "The stock market actually doesn’t care as much about oil prices as you think",
+      "summary": "关键词：Stock market, Oil prices, 市场相关性<br>\n总结：尽管传统观点认为油价波动直接左右股市，但近期市场表现显示二者关联度显著减弱。尽管全球能源市场仍存在不确定性，但投资者在评估企业盈利能力和宏观经济前景时，已将重心转向通胀数据、美联储政策以及科技企业的增长表现。这种脱钩现象反映出当前市场不仅关注能源成本，更注重多维度的风险评估与经济增长韧性，油价已不再是衡量股市走势的唯一关键指标。"
     },
     {
-      "title": "Berkshire Hathaway 的股票现在值得买入吗？",
-      "article": "Is Berkshire Hathaway Stock a Buy Right Now?",
-      "summary": "关键词：Berkshire Hathaway, Warren Buffett(沃伦·巴菲特), 股票投资<br>\n总结：本文探讨了当前阶段投资Berkshire Hathaway股票的可行性。分析指出，作为由Warren Buffett(沃伦·巴菲特)领导的多元化巨头，该公司的价值不仅取决于其庞大的保险、能源与铁路业务，还与现金储备及市场估值密切相关。投资者需关注其在当前经济环境下对资产的配置策略，以及其作为防御性资产在市场波动中的表现。综合评估认为，尽管公司基本面稳健，但投资者仍需权衡当前高位股价与未来潜在收益的风险比，从而做出理性决策。"
+      "title": "Donald Trump（特朗普）威胁称，如果霍尔木兹海峡不重新开放，将攻击伊朗发电厂",
+      "article": "Iran and Israel traded attacks on Saturday as the war in the Middle East escalated into a dangerous new direction at the start of its fourth week.",
+      "summary": "关键词：Iran, Israel, 中东冲突<br>\n总结：中东地区局势在本轮冲突进入第四周之际急剧恶化，Iran与Israel于周六爆发了直接的相互攻击，标志着双方对抗进入了极其危险的新阶段。此次军事行动显著加剧了该地区的紧张氛围，引发了国际社会对冲突进一步蔓延及失控的深切担忧。随着战事升级，地区安全不确定性大幅上升，全球市场及政治格局正面临严峻挑战，外交调解空间亦在此时变得愈发逼仄。"
     },
     {
-      "title": "这一核能趋势在2026年对投资者而言可能比预想的规模更大。",
-      "article": "This Nuclear Energy Trend Could Be Bigger Than Investors Think in 2026",
-      "summary": "关键词：Nuclear Energy, SMR, Clean Energy<br>\n总结：随着全球对零碳能源需求激增，核能行业正迎来复苏契机。预计到2026年，小型模块化反应堆（SMR）技术将取得突破性进展，不仅能提供更灵活的电力输出，还大幅降低了传统核电站的建设成本与安全风险。分析认为，政策扶持力度加大叠加科技巨头对数据中心电力稳定性的高度依赖，将推动核能板块成为未来资本市场的增长引擎，投资者应重点关注行业技术的落地应用与商业化进程。"
+      "title": "华尔街顶级分析师看好这3只股票的长期前景",
+      "article": "Amid elevated tensions in the Middle East, top analysts say investors should hold these 3 names for a strong long-term return.",
+      "summary": "关键词：Middle East, 投资, 长期回报<br>\n总结：受近期中东地区紧张局势升级影响，市场不确定性显著增加。尽管地缘政治环境动荡，但华尔街顶级分析师仍看好市场潜力，并建议投资者关注三只具备较强抗风险能力与增长前景的股票。分析师认为，通过在当前环境下持有这些优质标的，投资者有望在规避短期剧烈波动的同时，获得更为稳健且可观的长期投资回报，从而在充满挑战的全球经济背景下实现资产的持续增值。"
     }
   ],
-  "japan_news": [],
+  "japan_news": [
+    {
+      "title": "如何增加女性管理人员？企业重新审视工作方式的举措有哪些？",
+      "article": "働く女性の待遇改善につなげようと、4月に改正女性活躍推進法が施行され、企業に対する男女の賃金格差や女性管理職比率の公表義務が拡大します。宮崎県にある会社では、これまでの働き方を抜本的に見直し、女性管理職の割合を32％にまで高めました。なかなか休みをとる意識が広がらないという悩みに直面する中、会社がとった工夫とは。(社会部 平井千裕)",
+      "summary": "关键词：女性活跃推进法, 薪资差距, 女性管理职<br>\n总结：为改善职场待遇，日本4月施行了修订后的《女性活跃推进法》，强制企业公开男女薪资差距及女性管理人员比例。宫崎县一家企业通过彻底改革工作方式，成功将女性管理人员比例提升至32%。针对员工休假意识薄弱的难题，公司采取了一系列针对性举措，通过优化制度与企业文化建设，有效促进了女性职业发展与工作生活平衡，为其他企业提供了参考范本。"
+    }
+  ],
   "hot_markets": [
     {
       "country": "South Korea",
@@ -890,7 +896,7 @@
         "012330.KS -3.03%",
         "051910.KS +2.14%"
       ],
-      "analysis": "韩国市场受半导体板块拖累，EWY大幅重挫，市场对于贸易环境充满忧虑。\n出口导向型经济受全球需求降温的负面影响显著。",
+      "analysis": "韩国市场大幅下挫，受半导体及工业板块拖累，市场出现恐慌性抛售。\n出口导向型经济受全球经济放缓影响显著。",
       "outlook": "bearish",
       "outlook_css": "bearish",
       "news": []
@@ -944,7 +950,7 @@
         "8591.T -3.48%",
         "8725.T -2.68%"
       ],
-      "analysis": "日本金融股跟随全球避险浪潮下跌，投资者担忧利率环境与资产质量。\n金融板块受整体市场环境拖累，短期情绪低迷。",
+      "analysis": "金融服务板块全线收跌，反映出市场对利率环境及金融稳定性担忧。\n避险情绪及行业获利预期下调，缺乏买盘。",
       "outlook": "bearish",
       "outlook_css": "bearish",
       "news": []
@@ -998,7 +1004,7 @@
         "COPEC.SN -4.39%",
         "CHILE.SN -2.19%"
       ],
-      "analysis": "智利ETF受资源类权重股拖累明显，大宗商品价格走弱冲击其出口预期。\n资源价格波动对本地经济冲击巨大，风险溢价上升。",
+      "analysis": "智利ETF大跌，原材料权重股走弱，受全球大宗商品周期性回调拖累。\n资源出口国面临全球需求疲软的直接冲击。",
       "outlook": "bearish",
       "outlook_css": "bearish",
       "news": []
@@ -1052,7 +1058,7 @@
         "PEG -4.03%",
         "CMS -3.91%"
       ],
-      "analysis": "公用事业板块未能发挥避险功效，反而随高估值板块出现严重补跌。\n估值修正后，其防御属性可能在后期重新获得关注。",
+      "analysis": "公用事业板块遭遇重创，作为防御性板块却大跌，显示市场抛售毫无差别。\n估值调整完成后或具性价比，目前仍处恐慌阶段。",
       "outlook": "neutral",
       "outlook_css": "neutral",
       "news": []
@@ -1106,7 +1112,7 @@
         "SID -4.20%",
         "VALE -3.96%"
       ],
-      "analysis": "巴西股市大幅回调，受全球大宗商品价格不稳及资金撤离新兴市场影响。\n外部流动性收紧，新兴市场资产估值面临重塑。",
+      "analysis": "巴西股市下跌，受大宗商品价格波动及能源股抛售影响，市场风险溢价上升。\n大宗商品相关企业盈利预期减弱，资金流出。",
       "outlook": "bearish",
       "outlook_css": "bearish",
       "news": []
