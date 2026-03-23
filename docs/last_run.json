@@ -1,22 +1,22 @@
 {
   "links": [
-    "http://www3.nhk.or.jp/news/html/20260323/k10015081731000.html",
-    "http://www3.nhk.or.jp/news/html/20260323/k10015082191000.html",
-    "https://finance.yahoo.com/economy/policy/articles/many-fed-rate-cuts-now-220500797.html",
-    "https://finance.yahoo.com/sectors/energy/articles/week-ahead-oil-surge-fed-135300928.html",
-    "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-trump-iran-nvidia-tesla/?src=A00220&yptr=yahoo",
-    "http://www3.nhk.or.jp/news/html/20260323/k10015082151000.html",
-    "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-soar-as-trump-postpones-iran-strike-citing-very-good-talks-133200376.html",
-    "https://www.barrons.com/livecoverage/stock-market-news-today-032326/card/dow-surges-800-points-at-the-open-37BTRyMDV7CPauEneLY6?siteid=yhoof2&yptr=yahoo"
+    "https://www.cnbc.com/2026/03/23/chevron-ceo-oil-price-iran-war-strait-hormuz.html",
+    "https://www.cnbc.com/2026/03/23/volume-in-stock-and-oil-futures-surged-minutes-before-trumps-market-turning-post.html",
+    "https://www.cnbc.com/2026/03/23/oil-prices-trump-iran-strait-of-hormuz-wti-crude-middle-east-lng-gas.html",
+    "https://www.cnbc.com/2026/03/23/iran-war-energy-oil-gas-middle-east-iea-us-uae-qatar.html",
+    "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-monday-march-23-gold-briefly-falls-below-4300-its-lowest-price-of-2026-104957419.html",
+    "http://www3.nhk.or.jp/news/html/20260324/k10015082421000.html",
+    "http://www3.nhk.or.jp/news/html/20260323/k10015081691000.html",
+    "http://www3.nhk.or.jp/news/html/20260323/k10015081721000.html"
   ],
   "fingerprints": [
-    "今日股市：受donald trump（特朗普）推迟对伊朗打击并称会谈“非常好”的消息影响，dow、s&p 500、nasdaq大幅飙升 stock market today: dow, s&p 500, nasdaq soar as trump postpones iran strike, citing 'very good' talks",
-    "今日股市：受donald trump（特朗普）关于伊朗评论的影响，dow飙升700点；nvidia股价上涨（实时报道） stock market today: dow surges 700 points on trump's iran comments; nvidia stock climbs (live coverage)",
-    "dow开盘后不久飙升900点 dow surges 900 points shortly after the open",
-    "下周展望：油价飙升与fed信号定调华尔街市场 week ahead: oil surge and fed signals set the tone for wall street",
-    "我们现在预计2026年fed会进行多少次降息？ how many fed rate cuts can we now expect in 2026?",
-    "日元汇率下跌，避险情绪推动美元买盘 円相場 値下がり “有事に強い”ドル買い進む",
-    "因原油供应混乱持续的担忧，股价一度下跌超2600日元 連休明けの23日の東京株式市場、アメリカとイランとの間で緊張が高まる中、原油の供給をめぐる混乱が長引くことへの懸念が強まり、日経平均株価は一時、2600円以上、値下がりしました。",
-    "春季劳资谈判薪资涨幅连续3年保持在5%水平，中小企业未能达到6%以上的目标 ことしの春闘で、連合がこれまでに経営側から示された回答を集計したところ、賃上げ率は3年連続で5％台だったことが分かりました。しかし、中小企業に限ると目標の「6％以上」に届いておらず、連合は交渉をサポートしていきたいとしています。"
+    "chevron ceo表示伊朗战争对石油市场的影响尚未完全定价，交易员掌握的信息‘十分有限’ chevron ceo mike wirth said the physical supply of oil is much tighter than the oil futures market suggests.",
+    "donald trump（特朗普）宣布暂停对伊朗能源基础设施的打击五天后，油价暴跌近11% president donald trump said monday that the u.s. and iran had productive talks over the weekend about ending the war.",
+    "iea负责人表示，超过40项中东能源资产‘严重受损’ the iea’s fatih birol warned that damage to energy infrastructure across the middle east would take some time to repair.",
+    "3月23日星期一金价：黄金短暂跌破4,300美元，创下2026年最低价格 gold price today, monday, march 23: gold briefly falls below $4,300, its lowest price of 2026",
+    "在donald trump（特朗普）发布扭转市场的推文前几分钟，股票和石油期货交易量激增 the timing of the earlier volume spikes — across both equities and crude — caught the attention of traders.",
+    "纽约原油市场wti期货价格一度下跌约14%，市场对紧张局势缓解抱有期待 23日のニューヨーク原油市場では、高騰していた国際的な取り引きの指標、wtiの先物価格が先週末から一時、およそ14％下落しました。アメリカのトランプ大統領がイランの発電所などへの攻撃を延期すると表明したことで緊張緩和への期待が広がったことが背景にあります。",
+    "日本政府拟动用约8000亿日元预备费，用于汽油价格激变缓和措施 政府は、イラン情勢を受けて先週から実施しているガソリン価格などの急激な値上がりを抑えるための激変緩和措置について、事態の長期化も想定して追加の資金を準備しておく必要があるとして今年度予算の予備費からおよそ8000億円を支出する方針を固めました。",
+    "纽约原油市场期货价格一度突破每桶100美元，市场担忧局势恶化 22日のニューヨーク原油市場では国際的な取り引きの指標となるwtiの先物価格が上昇し、一時、1バレル＝100ドルを超えました。アメリカのトランプ大統領がホルムズ海峡を48時間以内に開放しなければ、イランの発電所を攻撃すると警告したことをきっかけに、投資家の間で事態が一段とエスカレートすることへの懸念が広がった形です。"
   ]
 }
