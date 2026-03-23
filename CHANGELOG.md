@@ -5,6 +5,32 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [v0.3.9] - 2026-03-23
+
+### Added
+- Weekend Edition: Saturday and Sunday evening runs now produce a "Daily Markets · Weekend" digest — prices labelled as Friday's last close, Hot Sectors block hidden (markets closed), news still included, yellow banner alerts readers to the weekend context
+- Digest title renamed from "Morning/Evening Brief" to "Daily Markets · Morning/Evening/Weekend" to distinguish from other news digest projects
+
+### Changed
+- Morning cron restricted to weekdays only (`1-5`); evening cron unchanged (runs daily)
+
+### 新增 / 修改
+- 新增周末版本：周六、周日晚间推送"Daily Markets · Weekend"，价格标注为周五收盘价，热门板块跳过，顶部显示黄色提示横幅
+- 摘要标题由"Morning/Evening Brief"改为"Daily Markets · Morning/Evening/Weekend"
+- 早报 cron 限制为工作日（周一至周五），晚报保持每日运行
+
+---
+
+## [v0.3.8] - 2026-03-23
+
+### Added
+- Hot Sectors top movers now display the company's English short name next to the ticker symbol, making emerging-market and sector tickers (e.g. `003550.KS`, `5020.T`) immediately identifiable
+
+### 新增
+- 热门板块涨跌股票旁新增英文公司简称，便于不熟悉新兴市场代码的读者快速识别
+
+---
+
 ## [v0.3.7] - 2026-03-19
 
 ### Added

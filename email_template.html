@@ -49,6 +49,13 @@
       <div style="font-size:12px;color:#8ab4f8;">{{ update_date }} &nbsp;·&nbsp; {{ update_time }} JST</div>
     </td>
   </tr>
+  {% if weekend_mode %}
+  <tr>
+    <td style="background:#fff3cd;color:#856404;text-align:center;padding:7px 16px;font-size:12px;font-weight:600;">
+      Weekend Edition — Markets closed. Prices reflect Friday's last close.
+    </td>
+  </tr>
+  {% endif %}
 
   {# ── Price Dashboard ── #}
   <tr>

@@ -447,11 +447,38 @@ def detect_hot_sectors():
             const_data = batch_price_data(constituents)
             sorted_c = sorted(const_data.items(),
                               key=lambda x: abs(x[1]['pct']), reverse=True)[:3]
-            hm['top_movers'] = [{'ticker': t, **d} for t, d in sorted_c]
+            movers = [{'ticker': t, **d} for t, d in sorted_c]
+            for m in movers:
+                m['name'] = _fetch_ticker_short_name(m['ticker'])
+            hm['top_movers'] = movers
 
         hot.append(hm)
 
     return hot
+
+def _fetch_ticker_short_name(ticker):
+    """Return an English display name for a ticker via yfinance.
+    Falls back through shortName → longName → ticker symbol; never returns blank.
+    """
+    try:
+        info = yf.Ticker(ticker).info
+        for key in ('shortName', 'longName'):
+            name = (info.get(key) or '').strip()
+            if name:
+                # Prefer an ASCII-safe name; if non-ASCII characters dominate,
+                # keep looking but don't discard as a last resort.
+                non_ascii = sum(1 for c in name if ord(c) > 127)
+                if non_ascii <= 2:
+                    return name
+        # All available names are non-English — return the least-bad option
+        for key in ('shortName', 'longName'):
+            name = (info.get(key) or '').strip()
+            if name:
+                return name
+    except Exception:
+        pass
+    return ticker
+
 
 def fetch_ticker_news(ticker, max_items=3):
     """Fetch top news headlines for a ticker via yfinance."""
@@ -777,6 +804,7 @@ os.makedirs(BASE, exist_ok=True)
 
 run_type = get_run_type()
 now = datetime.datetime.now(JST)
+WEEKEND_MODE = now.weekday() >= 5  # Saturday=5, Sunday=6
 
 if UITEST_MODE:
     # ── UI Test: load cache, skip all network/AI calls ──────────────────────
@@ -817,8 +845,12 @@ else:
     )
 
     # ── Step 2: Hot sector detection (two-stage) ─────────────────────────────
-    print("[hot_sectors] Detecting hot sectors...")
-    hot_markets = detect_hot_sectors()
+    if WEEKEND_MODE:
+        print("[hot_sectors] Skipped — weekend, markets closed")
+        hot_markets = []
+    else:
+        print("[hot_sectors] Detecting hot sectors...")
+        hot_markets = detect_hot_sectors()
     if TEST_MODE:
         hot_markets = hot_markets[:2]
 
@@ -894,7 +926,10 @@ else:
             _apply_analysis(watchlist_items)
 
     # ── Step 4: News sections ─────────────────────────────────────────────────
-    if run_type == 'morning':
+    if WEEKEND_MODE:
+        market_news_topic = '全球财经市场 · 周末要闻速览'
+        japan_news_topic  = '日本金融市场 · 周末动态'
+    elif run_type == 'morning':
         market_news_topic = '全球财经市场 · 美欧隔夜复盘及亚市开盘前瞻'
         japan_news_topic  = '日本金融市场 · 今日开盘前瞻'
     else:
@@ -949,7 +984,13 @@ else:
         ))
 
 # ── Step 6: Render daily.html (web) and email HTML ───────────────────────────
-_brief = 'Morning Brief' if run_type == 'morning' else 'Evening Brief'
+if WEEKEND_MODE:
+    _brief = 'Daily Markets · Weekend'
+elif run_type == 'morning':
+    _brief = 'Daily Markets · Morning'
+else:
+    _brief = 'Daily Markets · Evening'
+
 if UITEST_MODE:
     edition = f'[UITEST] {_brief}'
 elif FULLTEST_MODE:
@@ -959,20 +1000,26 @@ elif TEST_MODE:
 else:
     edition = _brief
 
-if run_type == 'morning':
-    _news_s1_title = 'Morning Brief · Global Markets'
+if WEEKEND_MODE:
+    _news_s1_title = 'Daily Markets · Global News'
+    _news_s1_sub   = 'Weekend Edition — prices reflect Friday\'s last close'
+    _news_s2_title = 'Daily Markets · Japan News'
+    _news_s2_sub   = 'Weekend Edition'
+elif run_type == 'morning':
+    _news_s1_title = 'Daily Markets · Global Markets'
     _news_s1_sub   = 'US/EU overnight · Japan opens 09:00 JST'
-    _news_s2_title = 'Morning Brief · Japan Markets'
+    _news_s2_title = 'Daily Markets · Japan Markets'
     _news_s2_sub   = 'Open preview — 09:00 JST'
 else:
-    _news_s1_title = 'Evening Brief · Global Markets'
+    _news_s1_title = 'Daily Markets · Global Markets'
     _news_s1_sub   = 'EU open · US opens 22:30 JST'
-    _news_s2_title = 'Evening Brief · Japan Markets'
+    _news_s2_title = 'Daily Markets · Japan Markets'
     _news_s2_sub   = 'Session recap — closed 15:30 JST'
 
 _render_ctx = dict(
     edition=edition,
     run_type=run_type,
+    weekend_mode=WEEKEND_MODE,
     update_date=now.strftime('%Y-%m-%d'),
     update_time=now.strftime('%Y-%m-%d %H:%M:%S'),
     indices=indices_data,
