@@ -1,22 +1,22 @@
 {
   "links": [
-    "http://www3.nhk.or.jp/news/html/20260325/k10015083521000.html",
-    "https://finance.yahoo.com/markets/stocks/articles/nasdaq-could-pop-2-today-135702177.html",
-    "http://www3.nhk.or.jp/news/html/20260325/k10015083661000.html",
-    "https://finance.yahoo.com/markets/stocks/articles/p-500-rips-1-higher-134953148.html",
-    "http://www3.nhk.or.jp/news/html/20260325/k10015083971000.html",
-    "https://finance.yahoo.com/markets/article/arm-stock-rockets-15-following-ai-chip-debut-205700269.html",
-    "https://www.marketwatch.com/story/a-bad-treasury-auction-is-offering-a-glimpse-into-the-anxiety-on-wall-street-over-the-iran-war-fd17f7a6?mod=mw_rss_topstories",
-    "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-trump-iran-peace-plan-oil-prices/?src=A00220&yptr=yahoo"
+    "https://www.cnbc.com/2026/03/25/recession-odds-climb-on-wall-street-as-economy-shows-cracks-beneath-the-surface.html",
+    "http://www3.nhk.or.jp/news/html/20260325/k10015084021000.html",
+    "https://www.cnbc.com/2026/03/25/us-postal-fuel-surcharge-package-deliveries-iran-oil.html",
+    "https://www.cnbc.com/2026/03/25/iran-war-us-trump.html",
+    "http://www3.nhk.or.jp/news/html/20260326/k10015084101000.html",
+    "http://www3.nhk.or.jp/news/html/20260326/k10015084111000.html",
+    "https://www.cnbc.com/2026/03/25/fertilizer-price-iran-war-food-security-inflation-urea-potash-nitrogen-farmers.html",
+    "https://www.cnbc.com/2026/03/25/iran-war-gas-prices-epa-waiver.html"
   ],
   "fingerprints": [
-    "今日股市：受trump（特朗普）和平计划推动，道琼斯指数上涨；油价下跌（实时报道） stock market today: dow rallies on trump peace plan; oil prices dive (live coverage)",
-    "因对伊朗和平谈判抱有期待，s&p 500指数大涨1%，油价跌破100美元/桶的关键关口 the s&p 500 rips 1% higher on hope for iran peace negotiations and oil falls below critical $100 barrel line",
-    "受今日新闻影响，nasdaq指数或将上涨2% the nasdaq could pop 2% on today’s news",
-    "arm股价在ai芯片发布后飙升15% arm stock rockets 15% following ai chip debut",
-    "一场糟糕的国债拍卖揭示了华尔街对伊朗战争的担忧 wall street jitters about the iran war spilled over tuesday into a vital part of u.s. financial markets that typically hum along without a hitch.",
-    "日元汇率下跌，受伊朗局势前景不明朗影响，市场出现美元抢购动向 円相場 値下がり イラン情勢先行き不透明感からドル確保の動き",
-    "股价一度回升至5万4000日元区间，受伊朗局势相关警惕感减弱影响 25日の東京株式市場、イラン情勢をめぐる警戒感がいくぶん後退し、このところ値下がりした銘柄を買い戻す動きが広がって、日経平均株価は一時、5万4000円台を回復しました。",
-    "日本银行1月金融政策决定会议：有意见称“应把握时机，不应错过加息节点” 日銀は25日、政策金利の据え置きを決めたことし1月の金融政策決定会合の議事要旨を公表しました。前の会合で利上げに踏み切ったばかりでしたが、円安によって物価の上昇がさらに加速するリスクを念頭に次の利上げをタイミングを逃さず検討すべきだといった意見が複数出ていました。"
+    "伊朗无意与美国进行谈判；外交部长表示正在评估donald trump（特朗普）提出的结束战争的提议 president donald trump has claimed the u.s. and iran are \"in negotiations now.\" but the islamic republic denies any direct talks to end the war.",
+    "由于伊朗战争推高油价，u.s. postal service寻求对包裹递送征收8%的燃油附加费 oil prices have jumped more than 40% since feb. 28, when the u.s. and israel attacked iran.",
+    "donald trump（特朗普）政府豁免汽油法规以应对飙升的燃油价格 epa administrator lee zeldin said the waivers will help prevent a fuel supply disruption in the u.s. during the iran war.",
+    "不仅仅是石油和天然气。霍尔木兹海峡的封锁正在动摇另一种重要的大宗商品 “i'm a lot more concerned about the current crisis than i was when russia-ukraine happened four years ago,” one fund manager told cnbc.",
+    "随着经济表面下出现裂痕，wall street的经济衰退概率攀升 economists have pulled up their risk assessments of a contraction amid heightened uncertainty over geopolitical risk and a labor market slump.",
+    "honda与sony停止ev研发及销售，ev市场放缓影响双方合作 ホンダとソニーグループは、両社が共同で手がけてきたev＝電気自動車の開発・販売計画を中止すると発表しました。ev市場の減速で自動車メーカー各社は戦略の修正を迫られていて、業界に大きな反響を広げたホンダとソニーの提携にも影響を及ぼした形です。",
+    "因honda调整战略，honda与sony停止ev研发及销售 ホンダとソニーグループは両社が共同で手がけてきたev＝電気自動車の事業方針を見直し、開発・販売計画を中止すると発表しました。ホンダはev事業で巨額損失が発生する見通しになり、戦略の見直しを進めていて、これにともない、技術や工場などの活用が困難になったとしています。",
+    "石油“国家储备”今日起投放，全国11处基地将陆续出库 政府は、国が持っている石油の「国家備蓄」を26日から放出します。民間企業に保有を義務づけている「民間備蓄」とあわせて、過去最大規模の石油を放出し、安定供給につなげたい考えです。"
   ]
 }
