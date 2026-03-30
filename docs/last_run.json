@@ -1,22 +1,22 @@
 {
   "links": [
-    "http://www3.nhk.or.jp/news/html/20260330/k10015087451000.html",
-    "https://finance.yahoo.com/news/2-magnificent-7-stocks-see-stunning-plunges-130430799.html",
-    "http://www3.nhk.or.jp/news/html/20260330/k10015087571000.html",
-    "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-rise-entering-shortened-week-featuring-jobs-data-war-uncertainty-230645176.html",
-    "https://finance.yahoo.com/news/stock-market-bulls-dont-forget-this-one-oil-price-shocks-usually-lead-to-a-recession-131921062.html",
-    "https://finance.yahoo.com/markets/commodities/articles/stock-futures-inch-oil-pushes-104300684.html",
-    "http://www3.nhk.or.jp/news/html/20260330/k10015087791000.html",
-    "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-war-news-powell/?src=A00220&yptr=yahoo"
+    "https://www.cnbc.com/2026/03/30/powell-sees-inflation-outlook-in-check-no-wider-crisis-yet-in-private-credit.html",
+    "https://www.cnbc.com/2026/03/30/trump-iran-oil-middle-east-war-israel-us-kuwait-attack-.html",
+    "http://www3.nhk.or.jp/news/html/20260330/k10015087381000.html",
+    "https://www.cnbc.com/2026/03/30/china-suppliers-warn-higher-us-prices-hormuz-closure.html",
+    "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-monday-march-30-gold-holds-strong-opening-above-4500-111116970.html",
+    "http://www3.nhk.or.jp/news/html/20260330/k10015087351000.html",
+    "http://www3.nhk.or.jp/news/html/20260331/k10015088191000.html",
+    "https://www.cnbc.com/2026/03/30/oil-price-today-wti-brent-yemen-houthis-israel-iran-war.html"
   ],
   "fingerprints": [
-    "今日股市：进入包含就业数据与战争不确定性的缩短交易周，dow、s&p 500 与 nasdaq 指数上涨 stock market today: dow, s&p 500, nasdaq rise entering shortened week featuring jobs data, war uncertainty",
-    "今日股市：受美国与伊朗相关消息影响 dow 指数上涨；接下来将关注 jerome powell（鲍威尔）的评论（实时报道） stock market today: dow rises on u.s.-iran news; powell comments up next (live coverage)",
-    "美股上涨，油价走高 u.s. stocks advance and oil pushes higher",
-    "股市多头们，别忘了这一点：油价冲击通常会导致经济衰退 stock market bulls, don't forget this one: oil price shocks usually lead to a recession",
-    "2只“magnificent 7”股票出现惊人暴跌 2 'magnificent 7' stocks see stunning plunges",
-    "日元汇率一度跌至1美元兑160日元区间后小幅回升 週明けの東京外国為替市場、朝方に一時、1ドル＝160円台まで円安が進みましたが、財務省の三村財務官が「そろそろ断固たる措置も必要になる」と、市場をけん制したことなどを受けて、円を買い戻す動きが出て159円台後半まで小幅に値上がりしました。",
-    "众议院预算委员会：日本央行行长植田和男（うえだかずお）表示“将密切关注汇率动向” 日銀の植田総裁は30日の衆議院予算委員会で、イラン情勢の悪化などを受けて外国為替市場で一時、1ドル＝160円台まで円安が進んだことについて、過去と比べると為替の変動が物価に影響しやすくなっているという認識を示したで、動向を注意深く見ていく考えを示しました。",
-    "日本央行3月货币政策会议纪要显示：多位委员指出有必要加息 日銀は30日、政策金利を据え置いた今月の金融政策決定会合の主な意見を公表しました。イラン情勢の悪化で景気が冷え込むことへの懸念が示される一方、円安やエネルギー価格の上昇で急激な物価上昇を招かないよう、利上げの必要性を指摘する意見が相次いでいたことがわかりました。"
+    "brent原油价格创下月度涨幅纪录，wti原油价格自2022年以来首次收于100美元上方 oil prices climbed on monday after yemen's houthis said they had fired missiles at israel, opening a new front in the u.s.- and israeli-led conflict with iran.",
+    "jerome powell（杰罗姆·鲍威尔）认为通胀前景可控，无需因石油冲击而加息 powell sees inflation outlook in check, no need to hike rates because of oil shock",
+    "据报道donald trump（唐纳德·特朗普）想要“夺取伊朗石油”，而tehran（德黑兰）正瞄准kuwait（科威特）的水电设施 the middle east conflict has entered its fifth week, with attacks expanding across the region and raising risks to energy and infrastructure.",
+    "3月30日周一金价：黄金走势强劲，开盘价高于4500美元 gold price today, monday, march 30: gold holds strong, opening above $4,500",
+    "中国供应商警告称，受strait of hormuz（霍尔木兹海峡）关闭影响，美国消费者的商品价格将会上涨 the iran war has stalled shipments of oil and its products through the strait of hormuz, raising concerns among chinese manufacturers about supply chain disruptions.",
+    "长期利率一度升至2.39%，创下约27年来的最高水平 30日の債券市場では、長期金利の代表的な指標である10年ものの国債の利回りが一時、2.39％まで上昇しました。日本相互証券によりますと、1999年2月以来、およそ27年ぶりの高い水準です。イラン情勢の長期化で原油価格の高止まりが続けば世界的に物価上昇が加速するという懸念が出ていることや、それに伴って、日銀が早期の利上げに踏み切るのではないかという見方が出ていることから国債が売られ、長期金利が上昇しています。",
+    "股市大幅下跌，因伊朗局势长期化引发对全球经济造成打击的担忧 株価 大幅な値下がり イラン情勢長期化で世界経済への打撃懸念",
+    "纽约原油市场，wti期货价格一度涨至每桶105美元区间 30日のニューヨーク原油市場では、アメリカのトランプ大統領がイランのエネルギー関連施設への攻撃を示唆するなど軍事的な圧力を強めるなか、国際的な取り引きの指標となるwtiの先物価格は一時、1バレル＝105ドル台まで上昇しました。"
   ]
 }
