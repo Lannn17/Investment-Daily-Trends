@@ -1,22 +1,22 @@
 {
   "links": [
-    "http://www3.nhk.or.jp/news/html/20260331/k10015088821000.html",
-    "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-trump-iran-war-oil-prices-climb/?src=A00220&yptr=yahoo",
-    "https://www.investors.com/news/technology/eli-lilly-centessa-pharmaceuticals-acquisition-narcolepsy-insomnia/?src=A00220&yptr=yahoo",
-    "http://www3.nhk.or.jp/news/html/20260331/k10015088831000.html",
-    "https://www.cnbc.com/2026/03/31/warren-buffett-says-he-sold-apple-too-soon-and-would-buy-more-of-it-though-not-in-this-market-.html",
-    "https://www.investors.com/news/rtx-3-8bil-f35-contract-defense-stocks-iran-war-middle-east/?src=A00220&yptr=yahoo",
-    "http://www3.nhk.or.jp/news/html/20260331/k10015088291000.html",
-    "https://finance.yahoo.com/markets/crypto/articles/rule-change-opens-u-401-135300106.html"
+    "http://www3.nhk.or.jp/news/html/20260331/k10015088271000.html",
+    "https://www.cnbc.com/2026/03/31/nike-nke-earnings-q3-2026.html",
+    "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html",
+    "https://www.cnbc.com/2026/03/31/why-4-a-gallon-gas-prices-wont-trigger-fed-interest-rate-hikes-and-could-lead-to-cuts.html",
+    "https://www.marketwatch.com/story/stocks-surge-ending-a-tough-month-on-a-high-note-but-theres-skepticism-about-the-rally-4ee11873?mod=mw_rss_topstories",
+    "https://www.cnbc.com/2026/03/31/microsofts-stock-closes-worst-quarter-since-2008-financial-crisis.html",
+    "http://www3.nhk.or.jp/news/html/20260331/k10015088191000.html",
+    "http://www3.nhk.or.jp/news/html/20260401/k10015089421000.html"
   ],
   "fingerprints": [
-    "今日股市：受donald trump（特朗普）释放善意信号影响，dow大幅上涨；油价走高（实时报道） stock market today: dow surges over trump's olive branch; oil prices higher (live coverage)",
-    "规则变更：美国401(k)计划获准投资加密货币 rule change opens u.s. 401(k) plans to crypto investments",
-    "rtx获得38亿美元f-35合同，受伊朗战争影响国防股回落 rtx lands $3.8 bil f-35 contract, defense stocks retreat amid iran war",
-    "eli lilly将以最高78亿美元收购centessa pharma；centessa股价飙升 eli lilly to buy centessa pharma for up to $7.8 billion; centessa shares skyrocket",
-    "warren buffett（巴菲特）表示过早卖出apple，虽仍愿增持，但不在当前市场环境下进行 apple remains berkshire hathaway's largest holding even after the conglomerate trimmed its stake at the end of last year.",
-    "日元汇率小幅波动 円相場 小幅な値動き",
-    "股价开盘大幅下跌后一度转涨，走势剧烈 31日の東京株式市場、大幅な値下がりで取り引きが始まった後、トランプ大統領がホルムズ海峡の事実上の封鎖が続いたままでも軍事作戦を終える用意があると側近たちに伝えたと報じられたことを受けて、一時、上昇に転じるなど、荒い値動きとなりました。",
-    "房贷浮动利率上调，部分银行利率超过1% 大手銀行5行は31日、4月に適用する住宅ローンの金利を公表し、このうち4行が新規の借り入れを対象にした変動型の住宅ローン金利を引き上げました。最も優遇する場合の水準が1％を上回る銀行もあり、金利の上昇傾向が一段と鮮明になっています。"
+    "股市大涨，为艰难的一个月画上句号。但市场对此次反弹仍持怀疑态度。 u.s. stocks surged tuesday on growing optimistic about a potential end to the the iran war.",
+    "受ai相关担忧影响，microsoft经历了自2008年以来在华尔街表现最差的一个季度：“redmond陷入了困境”。 with microsoft losing almost a quarter of its value this year, investors have reset the company's earnings multiple to the lowest since late 2022.",
+    "为何每加仑4美元的汽油价格不会触发fed加息，反而可能导致降息？ while there's still plenty of uncertainty about where rates are headed, wall street commentary shifted back to expectations for cuts.",
+    "因业绩展望疲软且预计中国市场销售额将下滑20%，nike股价下跌9%。 nike has shown some gains in north america, its largest market, amid its turnaround, but the strength was offset by weakness in china.",
+    "openai完成创纪录的1220亿美元融资，市场对其ipo预期升温。 the round totaled $122 billion of committed capital, up from the $110 billion figure that was previously announced.",
+    "nyダウ上涨超1100美元，市场期待伊朗局势尽早平息 nyダウ 1100ドル超値上がり イラン情勢早期収束へ期待感",
+    "ny原油市场wti期货价格一度上涨至每桶106美元区间 30日のニューヨーク原油市場では、クウェートのタンカーがイランの攻撃を受けたと伝わったことなどで攻撃の応酬がさらに激しくなるとの懸念から、国際的な取り引きの指標となるwtiの先物価格は一時、1バレル＝106ドル台まで上昇しました。その後は荒い値動きとなっています。",
+    "东京23区3月消费者物价指数同比上涨1.7%，未来或将进一步扩大 東京23区の今月の消費者物価指数の速報値は、天候による変動が大きい生鮮食品を除いた総合で去年の同じ月と比べて1.7％上昇し、2か月連続で2％を下回りました。ただイラン情勢の緊迫化で物価の上昇幅は、今後、拡大するという見方が広がっています。"
   ]
 }
