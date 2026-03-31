@@ -1,22 +1,22 @@
 {
   "links": [
-    "https://www.cnbc.com/2026/03/30/powell-sees-inflation-outlook-in-check-no-wider-crisis-yet-in-private-credit.html",
-    "https://www.cnbc.com/2026/03/30/trump-iran-oil-middle-east-war-israel-us-kuwait-attack-.html",
-    "http://www3.nhk.or.jp/news/html/20260330/k10015087381000.html",
-    "https://www.cnbc.com/2026/03/30/china-suppliers-warn-higher-us-prices-hormuz-closure.html",
-    "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-monday-march-30-gold-holds-strong-opening-above-4500-111116970.html",
-    "http://www3.nhk.or.jp/news/html/20260330/k10015087351000.html",
-    "http://www3.nhk.or.jp/news/html/20260331/k10015088191000.html",
-    "https://www.cnbc.com/2026/03/30/oil-price-today-wti-brent-yemen-houthis-israel-iran-war.html"
+    "http://www3.nhk.or.jp/news/html/20260331/k10015088821000.html",
+    "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-trump-iran-war-oil-prices-climb/?src=A00220&yptr=yahoo",
+    "https://www.investors.com/news/technology/eli-lilly-centessa-pharmaceuticals-acquisition-narcolepsy-insomnia/?src=A00220&yptr=yahoo",
+    "http://www3.nhk.or.jp/news/html/20260331/k10015088831000.html",
+    "https://www.cnbc.com/2026/03/31/warren-buffett-says-he-sold-apple-too-soon-and-would-buy-more-of-it-though-not-in-this-market-.html",
+    "https://www.investors.com/news/rtx-3-8bil-f35-contract-defense-stocks-iran-war-middle-east/?src=A00220&yptr=yahoo",
+    "http://www3.nhk.or.jp/news/html/20260331/k10015088291000.html",
+    "https://finance.yahoo.com/markets/crypto/articles/rule-change-opens-u-401-135300106.html"
   ],
   "fingerprints": [
-    "brent原油价格创下月度涨幅纪录，wti原油价格自2022年以来首次收于100美元上方 oil prices climbed on monday after yemen's houthis said they had fired missiles at israel, opening a new front in the u.s.- and israeli-led conflict with iran.",
-    "jerome powell（杰罗姆·鲍威尔）认为通胀前景可控，无需因石油冲击而加息 powell sees inflation outlook in check, no need to hike rates because of oil shock",
-    "据报道donald trump（唐纳德·特朗普）想要“夺取伊朗石油”，而tehran（德黑兰）正瞄准kuwait（科威特）的水电设施 the middle east conflict has entered its fifth week, with attacks expanding across the region and raising risks to energy and infrastructure.",
-    "3月30日周一金价：黄金走势强劲，开盘价高于4500美元 gold price today, monday, march 30: gold holds strong, opening above $4,500",
-    "中国供应商警告称，受strait of hormuz（霍尔木兹海峡）关闭影响，美国消费者的商品价格将会上涨 the iran war has stalled shipments of oil and its products through the strait of hormuz, raising concerns among chinese manufacturers about supply chain disruptions.",
-    "长期利率一度升至2.39%，创下约27年来的最高水平 30日の債券市場では、長期金利の代表的な指標である10年ものの国債の利回りが一時、2.39％まで上昇しました。日本相互証券によりますと、1999年2月以来、およそ27年ぶりの高い水準です。イラン情勢の長期化で原油価格の高止まりが続けば世界的に物価上昇が加速するという懸念が出ていることや、それに伴って、日銀が早期の利上げに踏み切るのではないかという見方が出ていることから国債が売られ、長期金利が上昇しています。",
-    "股市大幅下跌，因伊朗局势长期化引发对全球经济造成打击的担忧 株価 大幅な値下がり イラン情勢長期化で世界経済への打撃懸念",
-    "纽约原油市场，wti期货价格一度涨至每桶105美元区间 30日のニューヨーク原油市場では、アメリカのトランプ大統領がイランのエネルギー関連施設への攻撃を示唆するなど軍事的な圧力を強めるなか、国際的な取り引きの指標となるwtiの先物価格は一時、1バレル＝105ドル台まで上昇しました。"
+    "今日股市：受donald trump（特朗普）释放善意信号影响，dow大幅上涨；油价走高（实时报道） stock market today: dow surges over trump's olive branch; oil prices higher (live coverage)",
+    "规则变更：美国401(k)计划获准投资加密货币 rule change opens u.s. 401(k) plans to crypto investments",
+    "rtx获得38亿美元f-35合同，受伊朗战争影响国防股回落 rtx lands $3.8 bil f-35 contract, defense stocks retreat amid iran war",
+    "eli lilly将以最高78亿美元收购centessa pharma；centessa股价飙升 eli lilly to buy centessa pharma for up to $7.8 billion; centessa shares skyrocket",
+    "warren buffett（巴菲特）表示过早卖出apple，虽仍愿增持，但不在当前市场环境下进行 apple remains berkshire hathaway's largest holding even after the conglomerate trimmed its stake at the end of last year.",
+    "日元汇率小幅波动 円相場 小幅な値動き",
+    "股价开盘大幅下跌后一度转涨，走势剧烈 31日の東京株式市場、大幅な値下がりで取り引きが始まった後、トランプ大統領がホルムズ海峡の事実上の封鎖が続いたままでも軍事作戦を終える用意があると側近たちに伝えたと報じられたことを受けて、一時、上昇に転じるなど、荒い値動きとなりました。",
+    "房贷浮动利率上调，部分银行利率超过1% 大手銀行5行は31日、4月に適用する住宅ローンの金利を公表し、このうち4行が新規の借り入れを対象にした変動型の住宅ローン金利を引き上げました。最も優遇する場合の水準が1％を上回る銀行もあり、金利の上昇傾向が一段と鮮明になっています。"
   ]
 }
