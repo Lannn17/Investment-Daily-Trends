@@ -1,22 +1,22 @@
 {
   "links": [
-    "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-climb-as-deescalation-talk-in-iran-extends-rally-133208948.html",
-    "https://finance.yahoo.com/news/nike-stock-tumbles-more-than-13-hits-11-year-low-as-weakness-in-china-high-oil-prices-weigh-on-outlook-140026004.html",
-    "http://www3.nhk.or.jp/news/html/20260401/k10015089481000.html",
-    "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-war-jobs-data-nike-stock/?src=A00220&yptr=yahoo",
-    "https://finance.yahoo.com/economy/articles/us-manufacturing-sector-grows-march-140114096.html",
-    "http://www3.nhk.or.jp/news/html/20260401/k10015090211000.html",
-    "http://www3.nhk.or.jp/news/html/20260401/k10015090081000.html",
-    "https://www.cnbc.com/2026/03/31/marvell-nvidia-stock-stake.html"
+    "https://www.cnbc.com/2026/04/01/intel-stock-ireland-stake-chip-factory.html",
+    "https://www.cnbc.com/2026/04/01/private-sector-hiring-totaled-62000-in-march-better-than-expected-adp-says.html",
+    "https://www.cnbc.com/2026/04/01/oil-prices-today-brent-wti.html",
+    "https://www.cnbc.com/2026/04/01/nike-q3-2026-turnaround-drags-china-sales-slump.html",
+    "http://www3.nhk.or.jp/news/html/20260401/k10015089741000.html",
+    "https://www.cnbc.com/2026/04/01/spacex-confidentially-files-for-ipo-setting-stage-for-record-offering.html",
+    "http://www3.nhk.or.jp/news/html/20260401/k10015090101000.html",
+    "http://www3.nhk.or.jp/news/html/20260401/k10015089451000.html"
   ],
   "fingerprints": [
-    "今日股市：受donald trump（特朗普）战事言论影响，道指上涨；amazon、tesla股价攀升（实时报道） stock market today: dow higher on trump's war comments; amazon, tesla rise (live coverage)",
-    "今日股市：受伊朗局势缓和言论提振，道指、s&p 500、nasdaq延续涨势 stock market today: dow s&p 500, nasdaq climb as deescalation talk in iran extends rally",
-    "nike股价暴跌逾13%触及11年新低，中国市场疲软及高油价拖累业绩预期 nike stock tumbles more than 13%, hits 11-year low as weakness in china, high oil prices weigh on outlook",
-    "nvidia斥资20亿美元入股，marvell股价大涨13%，此类投资动向持续 nvidia has also made $2 billion investments in coreweave, nebius and coherent in recent months.",
-    "美国3月制造业实现增长；供应商交付表现恶化 us manufacturing sector grows in march; supplier delivery performance deteriorates",
-    "日元汇率上涨，对iran局势长期化的担忧有所缓解 4月1日の東京外国為替市場、イラン情勢が長期化することへの懸念が和らいだことで、有事に強いとされるドルをいったん売って円を買い戻す動きが進み、円相場は、値上がりしました。",
-    "股价涨幅超过2600日元，创下今年以来最大值 4月1日の東京株式市場、イラン情勢をめぐり、事態が長期化することへの懸念が和らいで1日を通して全面高の展開となりました。日経平均株価の終値としての値上がり幅は、2600円を超え、ことしに入って最も大きくなりました。",
-    "日本央行新任审议委员浅田统一郎（asada toichiro）：“将综合平衡各项因素进行政策判断” 日銀の金融政策の決定に関わる審議委員に中央大学名誉教授の浅田統一郎氏が就任し、イラン情勢の影響で原油価格が高騰する中、物価上昇を抑えることと景気を下支えすることのバランスを考慮しながら政策を判断したいという考えを示しました。"
+    "adp报告显示，3月私营部门新增就业人数为6.2万人，好于预期 private sector employment growth kept pace, but health care and construction continued to provide nearly all the momentum.",
+    "donald trump（特朗普）暗示战争可能在几周内结束，油价跌至100美元左右 crude prices fell wednesday as president donald trump signaled a willingness to exit the iran war even as the strait of hormuz remains largely closed.",
+    "spacex秘密提交ipo申请，为创纪录的上市做准备 elon musk's spacex is reportedly targeting a valuation of around $1.75 trillion in its forthcoming ipo.",
+    "因复苏缓慢且中国市场疲软，华尔街对nike失去耐心 nike warned that its turnaround is taking longer than it expected, leading three wall street banks to downgrade the stock as investors lose patience.",
+    "回购爱尔兰芯片工厂展现重振迹象，intel股价大涨9% the semiconductor company will now wholly own fab 34 after spending $14.2 billion to repurchase the 49% stake it sold to apollo global management two years ago.",
+    "日本央行短观报告：大型制造业前景恶化，各企业现状如何？ 日銀が4月1日に発表した短観＝企業短期経済観測調査で、大企業の製造業の景気判断を示す指数は4期連続の改善となりました。一方、先行きの見通しは悪化していて、イラン情勢の悪化で原油価格が上昇する中、慎重な見方が表れた形です。",
+    "全银协会长：将支持企业的资金周转与经营稳定化，关注伊朗局势 全国銀行協会の加藤勝彦会長は4月1日の会見で、イラン情勢の悪化が長引けば幅広い業種に影響が及ぶ可能性があるとして、銀行業界として企業の資金繰りや経営の安定化に向けた支援に取り組む考えを示しました。",
+    "ana（全日空）与jal（日本航空）燃油附加费：6月出票起最高涨至约2倍 全日空と日本航空は国際線の運賃に上乗せする「燃油サーチャージ」について、イラン情勢の緊迫化による原油価格の高騰を反映させ、ことし6月の発券分から最大でおよそ2倍に引き上げる見通しです。"
   ]
 }
