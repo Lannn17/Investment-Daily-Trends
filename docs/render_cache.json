@@ -34,19 +34,19 @@
       "market_open": false,
       "name": "S&P 500",
       "news_titles": [],
-      "analysis": "美股微幅收高，市场在经济不确定性中寻找方向，整体情绪偏向谨慎乐观。\n指数处于历史高位，短期缺乏强力上行动力，预计维持震荡走势。",
-      "outlook": "neutral",
-      "outlook_css": "neutral"
+      "analysis": "美股盘前窄幅震荡，市场等待开盘后的动能指引，整体情绪谨慎偏乐观。\n宏观环境保持韧性，温和上涨趋势未破。",
+      "outlook": "bullish",
+      "outlook_css": "bullish"
     },
     {
       "ticker": "^IXIC",
       "label": "NASDAQ",
       "url": "https://finance.yahoo.com/quote/^IXIC",
-      "price": 21879.181640625,
+      "price": 21879.1796875,
       "price_fmt": "21,879",
-      "change": 38.232421875,
-      "change_fmt": "38.232",
-      "change_pct": 0.0017504926865622792,
+      "change": 38.23046875,
+      "change_fmt": "38.230",
+      "change_pct": 0.001750403261648534,
       "change_pct_fmt": "+0.18%",
       "change_arrow": "▲",
       "css": "up",
@@ -64,7 +64,7 @@
         "04/01",
         "04/02"
       ],
-      "change_5d": 0.044434136772345686,
+      "change_5d": 0.044434043537120674,
       "change_5d_fmt": "+4.44%",
       "css5d": "up",
       "as_of": "04/03 05:00",
@@ -72,7 +72,7 @@
       "market_open": false,
       "name": "NASDAQ",
       "news_titles": [],
-      "analysis": "纳指受科技股带动小幅反弹，NVDA等龙头个股表现相对坚挺，支撑了大盘。\nAI核心驱动力仍在，科技板块在回调后具备较强的承接力。",
+      "analysis": "科技股领涨，纳指表现略强于大盘，市场关注焦点仍在半导体与AI板块。\nAI浪潮持续推动科技板块估值扩张。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -110,7 +110,7 @@
       "market_open": false,
       "name": "Dow Jones",
       "news_titles": [],
-      "analysis": "道指收盘微跌，受金融及传统工业股震荡影响，市场缺乏明确驱动因子。\n估值处于高位，权重股表现乏力，短期面临获利盘抛压。",
+      "analysis": "道指微跌，受蓝筹股分化影响，资金在不同行业板块间进行轮动配置。\n工业与传统权重股近期表现乏力，走势趋于平稳。",
       "outlook": "neutral",
       "outlook_css": "neutral"
     },
@@ -118,37 +118,37 @@
       "ticker": "^N225",
       "label": "Nikkei 225",
       "url": "https://finance.yahoo.com/quote/^N225",
-      "price": 53739.6796875,
-      "price_fmt": "53,740",
-      "change": 2675.9609375,
-      "change_fmt": "2,675.96",
-      "change_pct": 0.05240434897820676,
-      "change_pct_fmt": "+5.24%",
+      "price": 53123.48828125,
+      "price_fmt": "53,123",
+      "change": 660.21875,
+      "change_fmt": "660.22",
+      "change_pct": 0.012584399636144246,
+      "change_pct_fmt": "+1.26%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
-        "53,604",
-        "53,373",
         "51,886",
         "51,064",
-        "53,740"
+        "53,740",
+        "52,463",
+        "53,123"
       ],
       "history_dates": [
-        "03/26",
-        "03/27",
         "03/30",
         "03/31",
-        "04/01"
+        "04/01",
+        "04/02",
+        "04/03"
       ],
-      "change_5d": 0.0025377237177914807,
-      "change_5d_fmt": "+0.25%",
+      "change_5d": 0.02385306748332314,
+      "change_5d_fmt": "+2.39%",
       "css5d": "up",
-      "as_of": "04/01 15:30",
+      "as_of": "04/03 15:30",
       "market_name": "TSE",
       "market_open": false,
       "name": "Nikkei 225",
       "news_titles": [],
-      "analysis": "日经昨日表现强势，市场情绪高涨，但需警惕今日开盘后的获利回吐压力。\n日元贬值叠加市场成交活跃，日股整体趋势依然向上。",
+      "analysis": "日经指数大涨，受大宗商品价格波动及板块轮动影响，市场信心显著回升。\n企业盈利预期改善，日股整体趋势依然强劲。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -156,39 +156,39 @@
       "ticker": "^HSI",
       "label": "Hang Seng",
       "url": "https://finance.yahoo.com/quote/^HSI",
-      "price": 25294.029296875,
-      "price_fmt": "25,294",
-      "change": 505.888671875,
-      "change_fmt": "505.89",
-      "change_pct": 0.020408496124343735,
-      "change_pct_fmt": "+2.04%",
-      "change_arrow": "▲",
-      "css": "up",
+      "price": 25116.529296875,
+      "price_fmt": "25,117",
+      "change": -177.5,
+      "change_fmt": "177.50",
+      "change_pct": -0.0070174663718733645,
+      "change_pct_fmt": "-0.70%",
+      "change_arrow": "▼",
+      "css": "down",
       "history": [
-        "24,856",
         "24,952",
         "24,751",
         "24,788",
-        "25,294"
+        "25,294",
+        "25,117"
       ],
       "history_dates": [
-        "03/26",
         "03/27",
         "03/30",
         "03/31",
-        "04/01"
+        "04/01",
+        "04/02"
       ],
-      "change_5d": 0.017605087089199445,
-      "change_5d_fmt": "+1.76%",
+      "change_5d": 0.006598638332233691,
+      "change_5d_fmt": "+0.66%",
       "css5d": "up",
-      "as_of": "04/01 17:00",
+      "as_of": "04/02 17:00",
       "market_name": "HKEX/SGX",
       "market_open": false,
       "name": "Hang Seng",
       "news_titles": [],
-      "analysis": "恒指昨日大涨，显示出明显的估值修复行情，吸引资金回流亚洲市场。\n政策预期叠加低估值优势，短期买盘动能较强。",
-      "outlook": "bullish",
-      "outlook_css": "bullish"
+      "analysis": "恒指收跌，市场面临外部压力，避险情绪导致资金流出，表现弱于主要区域市场。\n短期内面临较大的流动性压力及情绪波动。",
+      "outlook": "bearish",
+      "outlook_css": "bearish"
     }
   ],
   "commodities": [
@@ -196,12 +196,12 @@
       "ticker": "GC=F",
       "label": "Gold",
       "url": "https://finance.yahoo.com/quote/GC=F",
-      "price": 4702.7001953125,
-      "price_fmt": "4,702.70",
-      "change": -80.5,
-      "change_fmt": "80.500",
-      "change_pct": -0.016829736727074354,
-      "change_pct_fmt": "-1.68%",
+      "price": 4651.5,
+      "price_fmt": "4,651.50",
+      "change": -131.7001953125,
+      "change_fmt": "131.70",
+      "change_pct": -0.02753390824861673,
+      "change_pct_fmt": "-2.75%",
       "change_arrow": "▼",
       "css": "down",
       "history": [
@@ -209,7 +209,7 @@
         "4,526.00",
         "4,647.60",
         "4,783.20",
-        "4,702.70"
+        "4,651.50"
       ],
       "history_dates": [
         "03/27",
@@ -218,15 +218,15 @@
         "04/01",
         "04/02"
       ],
-      "change_5d": 0.046905653453361534,
-      "change_5d_fmt": "+4.69%",
+      "change_5d": 0.03550756901157614,
+      "change_5d_fmt": "+3.55%",
       "css5d": "up",
       "as_of": "04/03 05:00",
       "market_name": "NYSE/NASDAQ",
       "market_open": false,
       "name": "Gold",
       "news_titles": [],
-      "analysis": "受美元走强和避险情绪消退影响，金价显著回调，跌破关键支撑位。\n高利率环境与避险需求减弱压制了贵金属价格。",
+      "analysis": "重复统计，贵金属集体回调，市场进入去杠杆与避险回落阶段。\n短期避险需求降温，黄金上行空间受限。",
       "outlook": "bearish",
       "outlook_css": "bearish"
     },
@@ -234,12 +234,12 @@
       "ticker": "SI=F",
       "label": "Silver",
       "url": "https://finance.yahoo.com/quote/SI=F",
-      "price": 73.16999816894531,
-      "price_fmt": "73.170",
-      "change": -2.6969985961914062,
-      "change_fmt": "2.6970",
-      "change_pct": -0.03554903596013652,
-      "change_pct_fmt": "-3.55%",
+      "price": 72.73500061035156,
+      "price_fmt": "72.735",
+      "change": -3.1319961547851562,
+      "change_fmt": "3.1320",
+      "change_pct": -0.04128272224193811,
+      "change_pct_fmt": "-4.13%",
       "change_arrow": "▼",
       "css": "down",
       "history": [
@@ -247,7 +247,7 @@
         "70.324",
         "74.690",
         "75.867",
-        "73.170"
+        "72.735"
       ],
       "history_dates": [
         "03/27",
@@ -256,15 +256,15 @@
         "04/01",
         "04/02"
       ],
-      "change_5d": 0.05212452506208722,
-      "change_5d_fmt": "+5.21%",
+      "change_5d": 0.04586961716005503,
+      "change_5d_fmt": "+4.59%",
       "css5d": "up",
       "as_of": "04/03 05:00",
       "market_name": "NYSE/NASDAQ",
       "market_open": false,
       "name": "Silver",
       "news_titles": [],
-      "analysis": "银价跌幅扩大，贵金属板块整体面临流动性收紧带来的抛售压力。\n宏观环境不利于非生息资产表现。",
+      "analysis": "重复统计，白银工业属性与金融属性双重承压，短期走势疲软。\n获利盘出清导致价格重心快速下移。",
       "outlook": "bearish",
       "outlook_css": "bearish"
     },
@@ -272,12 +272,12 @@
       "ticker": "CL=F",
       "label": "WTI Oil",
       "url": "https://finance.yahoo.com/quote/CL=F",
-      "price": 112.05999755859375,
-      "price_fmt": "112.06",
-      "change": 11.939994812011719,
-      "change_fmt": "11.940",
-      "change_pct": 0.11925683664066154,
-      "change_pct_fmt": "+11.93%",
+      "price": 111.54000091552734,
+      "price_fmt": "111.54",
+      "change": 11.419998168945312,
+      "change_fmt": "11.420",
+      "change_pct": 0.11406310283321658,
+      "change_pct_fmt": "+11.41%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
@@ -285,7 +285,7 @@
         "102.88",
         "101.38",
         "100.12",
-        "112.06"
+        "111.54"
       ],
       "history_dates": [
         "03/27",
@@ -294,15 +294,15 @@
         "04/01",
         "04/02"
       ],
-      "change_5d": 0.12464871783445255,
-      "change_5d_fmt": "+12.46%",
+      "change_5d": 0.11942996385761914,
+      "change_5d_fmt": "+11.94%",
       "css5d": "up",
       "as_of": "04/03 05:00",
       "market_name": "NYSE/NASDAQ",
       "market_open": false,
       "name": "WTI Oil",
       "news_titles": [],
-      "analysis": "WTI油价飙升，市场正密切关注地缘紧张对运输航线的进一步影响。\n供应溢价短期内难被挤出。",
+      "analysis": "重复统计，原油市场多头情绪浓厚，相关能源股同步上扬。\n原油供应危机成为市场的核心叙事。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -310,12 +310,12 @@
       "ticker": "BZ=F",
       "label": "Brent Oil",
       "url": "https://finance.yahoo.com/quote/BZ=F",
-      "price": 109.05000305175781,
-      "price_fmt": "109.05",
-      "change": 7.8899993896484375,
-      "change_fmt": "7.8900",
-      "change_pct": 0.07799524618447326,
-      "change_pct_fmt": "+7.80%",
+      "price": 109.02999877929688,
+      "price_fmt": "109.03",
+      "change": 7.8699951171875,
+      "change_fmt": "7.8700",
+      "change_pct": 0.07779749735354444,
+      "change_pct_fmt": "+7.78%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
@@ -323,7 +323,7 @@
         "112.78",
         "118.35",
         "101.16",
-        "109.05"
+        "109.03"
       ],
       "history_dates": [
         "03/27",
@@ -332,15 +332,15 @@
         "04/01",
         "04/02"
       ],
-      "change_5d": -0.031269402617118865,
-      "change_5d_fmt": "-3.13%",
+      "change_5d": -0.031447107800695026,
+      "change_5d_fmt": "-3.14%",
       "css5d": "down",
       "as_of": "04/03 05:00",
       "market_name": "NYSE/NASDAQ",
       "market_open": false,
       "name": "Brent Oil",
       "news_titles": [],
-      "analysis": "能源股表现优异，布油价格攀升，市场对能源供应持续性存在深度忧虑。\n市场情绪受供应端波动主导。",
+      "analysis": "重复统计，布伦特原油延续强势表现，反映能源市场供需极度失衡。\n地缘政治因素强化了多头仓位。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     }
@@ -350,37 +350,37 @@
       "ticker": "USDJPY=X",
       "label": "USD/JPY",
       "url": "https://finance.yahoo.com/quote/USDJPY=X",
-      "price": 159.53500366210938,
-      "price_fmt": "159.54",
-      "change": 0.9560089111328125,
-      "change_fmt": "0.9560",
-      "change_pct": 0.0060285973727735795,
-      "change_pct_fmt": "+0.60%",
+      "price": 159.50999450683594,
+      "price_fmt": "159.51",
+      "change": 0.821990966796875,
+      "change_fmt": "0.8220",
+      "change_pct": 0.005179918761719602,
+      "change_pct_fmt": "+0.52%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
-        "159.70",
         "160.23",
         "159.84",
         "158.58",
-        "159.54"
+        "158.69",
+        "159.51"
       ],
       "history_dates": [
-        "03/27",
         "03/30",
         "03/31",
         "04/01",
-        "04/02"
+        "04/02",
+        "04/03"
       ],
-      "change_5d": -0.0010581519211882717,
-      "change_5d_fmt": "-0.11%",
+      "change_5d": -0.004518385939751997,
+      "change_5d_fmt": "-0.45%",
       "css5d": "down",
-      "as_of": "04/03 01:30",
+      "as_of": "04/03 23:01",
       "market_name": "XETRA",
-      "market_open": false,
+      "market_open": true,
       "name": "USD/JPY",
       "news_titles": [],
-      "analysis": "美元兑日元走高，日元贬值压力未减，这对日本出口导向型企业构成压力。\n日元持续疲软，加大输入型通胀风险，可能引发央行干预。",
+      "analysis": "日元走软，美元兑日元走高，反映出利差交易逻辑下日元的脆弱性。\n货币政策分化持续对日元施加贬值压力。",
       "outlook": "bearish",
       "outlook_css": "bearish"
     },
@@ -388,37 +388,37 @@
       "ticker": "JPYCNY=X",
       "label": "JPY/CNY",
       "url": "https://finance.yahoo.com/quote/JPYCNY=X",
-      "price": 0.04309000074863434,
+      "price": 0.04307999834418297,
       "price_fmt": "0.0431",
-      "change": -0.00038499757647514343,
-      "change_fmt": "0.0004",
-      "change_pct": -0.008855608770726131,
-      "change_pct_fmt": "-0.89%",
+      "change": -0.00020800158381462097,
+      "change_fmt": "0.0002",
+      "change_pct": -0.004805063393101948,
+      "change_pct_fmt": "-0.48%",
       "change_arrow": "▼",
       "css": "down",
       "history": [
-        "0.0433",
         "0.0431",
         "0.0432",
         "0.0435",
+        "0.0433",
         "0.0431"
       ],
       "history_dates": [
-        "03/27",
         "03/30",
         "03/31",
         "04/01",
-        "04/02"
+        "04/02",
+        "04/03"
       ],
-      "change_5d": -0.0041369154572897275,
-      "change_5d_fmt": "-0.41%",
+      "change_5d": -0.0012288370432356657,
+      "change_5d_fmt": "-0.12%",
       "css5d": "down",
-      "as_of": "04/03 01:30",
+      "as_of": "04/03 23:01",
       "market_name": "XETRA",
-      "market_open": false,
+      "market_open": true,
       "name": "JPY/CNY",
       "news_titles": [],
-      "analysis": "日元兑人民币走低，反映出日元在区域内的购买力进一步减弱。\n日元疲软趋势短期难以扭转。",
+      "analysis": "日元对人民币汇率下行，受避险逻辑及两国利差预期波动的影响。\n汇率疲软反映了市场对日本经济及货币政策的信心不足。",
       "outlook": "bearish",
       "outlook_css": "bearish"
     },
@@ -426,39 +426,39 @@
       "ticker": "EURJPY=X",
       "label": "EUR/JPY",
       "url": "https://finance.yahoo.com/quote/EURJPY=X",
-      "price": 184.08200073242188,
-      "price_fmt": "184.08",
-      "change": 0.60699462890625,
-      "change_fmt": "0.6070",
-      "change_pct": 0.0033083232522896707,
-      "change_pct_fmt": "+0.33%",
+      "price": 183.9810028076172,
+      "price_fmt": "183.98",
+      "change": 0.0830078125,
+      "change_fmt": "0.0830",
+      "change_pct": 0.0004513796493659651,
+      "change_pct_fmt": "+0.05%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
-        "184.22",
         "184.13",
         "183.12",
         "183.48",
-        "184.08"
+        "183.90",
+        "183.98"
       ],
       "history_dates": [
-        "03/27",
         "03/30",
         "03/31",
         "04/01",
-        "04/02"
+        "04/02",
+        "04/03"
       ],
-      "change_5d": -0.0007707914917076552,
+      "change_5d": -0.0007929097558810858,
       "change_5d_fmt": "-0.08%",
       "css5d": "down",
-      "as_of": "04/03 01:30",
+      "as_of": "04/03 23:01",
       "market_name": "XETRA",
-      "market_open": false,
+      "market_open": true,
       "name": "EUR/JPY",
       "news_titles": [],
-      "analysis": "欧元兑日元上行，货币政策差异化导致日元在主要货币对中表现持续偏弱。\n日元流动性压力未解，利差逻辑支撑该汇率对走强。",
-      "outlook": "bullish",
-      "outlook_css": "bullish"
+      "analysis": "汇价波动有限，市场处于平衡状态，欧日政策预期的博弈尚不明朗。\n缺乏新的宏观触发点，短期内将维持震荡。",
+      "outlook": "neutral",
+      "outlook_css": "neutral"
     }
   ],
   "hist_dates": [
@@ -503,7 +503,7 @@
       "market_open": false,
       "name": "iShares Gold Trust",
       "news_titles": [],
-      "analysis": "黄金ETF跟随金价大幅下挫，资金避险意愿减弱，选择离场。\n金价走弱趋势已成，ETF资产流出压力增大。",
+      "analysis": "受黄金期货价格大跌影响，实物金ETF大幅走低，同步反映市场情绪转向。\n资金从避险资产向成长型资产切换。",
       "outlook": "bearish",
       "outlook_css": "bearish"
     },
@@ -541,7 +541,7 @@
       "market_open": false,
       "name": "Newmont Corporation",
       "news_titles": [],
-      "analysis": "Newmont股价微涨，显示在金价大跌背景下，个股具备一定的抗跌性。\n金矿股表现与金价脱钩，短期波动较大。",
+      "analysis": "尽管黄金大跌，纽蒙特矿业表现平稳，展现出行业龙头的抗跌性。\n基本面价值支撑，但受金价拖累，上涨动能不足。",
       "outlook": "neutral",
       "outlook_css": "neutral"
     },
@@ -579,7 +579,7 @@
       "market_open": false,
       "name": "NVIDIA",
       "news_titles": [],
-      "analysis": "英伟达股价保持增长，作为AI龙头，其业绩预期支撑了估值底线。\n行业核心地位稳固，AI增长预期仍是上涨动力。",
+      "analysis": "科技龙头英伟达逆势微涨，市场对其AI核心竞争力的预期依旧牢固。\nAI半导体领域无可替代的市场地位。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -617,7 +617,7 @@
       "market_open": false,
       "name": "Taiwan Semiconductor",
       "news_titles": [],
-      "analysis": "台积电股价微跌，受全球芯片产业链情绪波动影响，投资者态度趋于审慎。\n全球半导体景气度面临考验，股价在高位横盘。",
+      "analysis": "台积电小幅下挫，反映出部分资金在半导体高位进行获利了结。\n行业景气高位，短期面临技术性修正。",
       "outlook": "neutral",
       "outlook_css": "neutral"
     },
@@ -655,7 +655,7 @@
       "market_open": false,
       "name": "Berkshire Hathaway B",
       "news_titles": [],
-      "analysis": "伯克希尔哈撒韦微幅回调，市场等待巴菲特关于宏观经济的进一步表态。\n价值投资标的近期缺乏热点，维持区间震荡。",
+      "analysis": "伯克希尔哈撒韦微跌，作为防御性标的，在大盘普涨环境下表现相对稳健。\n避险配置属性，走势跟随大盘同步性减弱。",
       "outlook": "neutral",
       "outlook_css": "neutral"
     },
@@ -693,7 +693,7 @@
       "market_open": false,
       "name": "Lockheed Martin",
       "news_titles": [],
-      "analysis": "洛克希德马丁上涨，地缘局势紧张提升了国防订单的预期。\n地缘冲突加剧导致防务开支预期增加。",
+      "analysis": "受地缘政治预期支撑，洛克希德马丁表现稳定，具备较强防御与攻守平衡属性。\n国防预算持续增长提供长期业绩保障。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -701,37 +701,37 @@
       "ticker": "7203.T",
       "label": "Toyota Motor",
       "url": "https://finance.yahoo.com/quote/7203.T",
-      "price": 3262.0,
-      "price_fmt": "3,262.00",
-      "change": -49.0,
-      "change_fmt": "49.000",
-      "change_pct": -0.014799154334038054,
-      "change_pct_fmt": "-1.48%",
+      "price": 3255.0,
+      "price_fmt": "3,255.00",
+      "change": -7.0,
+      "change_fmt": "7.0000",
+      "change_pct": -0.002145922746781116,
+      "change_pct_fmt": "-0.21%",
       "change_arrow": "▼",
       "css": "down",
       "history": [
-        "3,358.00",
         "3,224.00",
         "3,162.00",
         "3,311.00",
-        "3,262.00"
+        "3,262.00",
+        "3,255.00"
       ],
       "history_dates": [
-        "03/27",
         "03/30",
         "03/31",
         "04/01",
-        "04/02"
+        "04/02",
+        "04/03"
       ],
-      "change_5d": -0.02858844550327576,
-      "change_5d_fmt": "-2.86%",
-      "css5d": "down",
-      "as_of": "04/02 15:30",
+      "change_5d": 0.009615384615384616,
+      "change_5d_fmt": "+0.96%",
+      "css5d": "up",
+      "as_of": "04/03 15:30",
       "market_name": "TSE",
       "market_open": false,
       "name": "Toyota Motor",
       "news_titles": [],
-      "analysis": "丰田汽车微跌，日元贬值双刃剑效应凸显，成本端压力抑制了市场买入意愿。\n出口增长与进口成本上升博弈，股价处于震荡期。",
+      "analysis": "丰田汽车股价微调，在日股大涨背景下表现温和，反映个股的防守特征。\n基本面扎实，但缺乏短期催化剂。",
       "outlook": "neutral",
       "outlook_css": "neutral"
     },
@@ -739,39 +739,39 @@
       "ticker": "9984.T",
       "label": "SoftBank Group",
       "url": "https://finance.yahoo.com/quote/9984.T",
-      "price": 3604.0,
-      "price_fmt": "3,604.00",
-      "change": -160.0,
-      "change_fmt": "160.00",
-      "change_pct": -0.04250797024442083,
-      "change_pct_fmt": "-4.25%",
-      "change_arrow": "▼",
-      "css": "down",
+      "price": 3609.0,
+      "price_fmt": "3,609.00",
+      "change": 5.0,
+      "change_fmt": "5.0000",
+      "change_pct": 0.0013873473917869034,
+      "change_pct_fmt": "+0.14%",
+      "change_arrow": "▲",
+      "css": "up",
       "history": [
-        "3,940.50",
         "3,692.00",
         "3,555.00",
         "3,764.00",
-        "3,604.00"
+        "3,604.00",
+        "3,609.00"
       ],
       "history_dates": [
-        "03/27",
         "03/30",
         "03/31",
         "04/01",
-        "04/02"
+        "04/02",
+        "04/03"
       ],
-      "change_5d": -0.08539525440933891,
-      "change_5d_fmt": "-8.54%",
+      "change_5d": -0.02248104008667389,
+      "change_5d_fmt": "-2.25%",
       "css5d": "down",
-      "as_of": "04/02 15:30",
+      "as_of": "04/03 15:30",
       "market_name": "TSE",
       "market_open": false,
       "name": "SoftBank Group",
       "news_titles": [],
-      "analysis": "软银集团昨日大跌，受投资组合资产价值波动影响，投资者信心受挫。\n科技投资组合面临重估压力，短期反弹乏力。",
-      "outlook": "bearish",
-      "outlook_css": "bearish"
+      "analysis": "软银集团表现平淡，市场对其投资组合估值的波动持观望态度。\n旗下投资组合表现与市场情绪挂钩，波动加剧。",
+      "outlook": "neutral",
+      "outlook_css": "neutral"
     },
     {
       "ticker": "INDA",
@@ -807,53 +807,53 @@
       "market_open": false,
       "name": "iShares MSCI India ETF",
       "news_titles": [],
-      "analysis": "印度ETF微幅收跌，市场在前期上涨后进入技术性调整期。\n估值较高，市场正处于寻找支撑位的整理阶段。",
+      "analysis": "印度市场ETF微跌，受全球避险情绪与新兴市场资金流向影响。\n新兴市场短期吸引力有所分化。",
       "outlook": "neutral",
       "outlook_css": "neutral"
     }
   ],
   "market_news": [
     {
-      "title": "由于交付报告令人失望，Tesla 股价遭遇 2026 年以来最大跌幅",
-      "article": "Tesla is coming off a year of declining deliveries due in part to increased competition from rivals in China offering lower-cost models.",
-      "summary": "关键词：Tesla, 电动汽车, 市场竞争<br>\n总结：Tesla在经历交付量下滑的低谷后，目前正面临严峻的市场挑战。其销量受挫的主要原因之一是来自中国本土车企的激烈竞争，这些竞争对手推出了大量价格更具吸引力且性能优越的车型，严重挤压了Tesla的市场份额。为了扭转颓势并维持市场领导地位，Tesla亟需应对日益加剧的价格战以及全球电动汽车市场格局的深刻变革，如何平衡利润空间与竞争力将成为未来发展的关键。"
+      "title": "美国3月非农就业人数增加17.8万人，超出预期；失业率为4.3%",
+      "article": "Nonfarm payrolls were expected to increase by 59,000 in March, with the unemployment rate holding at 4.4%.",
+      "summary": "关键词：非农就业人数, 失业率, 经济预期<br>\n总结：根据最新的财经数据预测显示，市场普遍预计3月份非农就业人数将增加59,000人。与此同时，分析人士认为劳动力市场的整体状况将保持稳定，失业率预计将维持在4.4%的水平不变。这一数据反映了当前宏观经济在就业层面的预期走向，投资者正密切关注该指标，以评估美国劳动力市场的韧性及未来货币政策的潜在调整方向，相关数据对市场情绪及经济走势具有重要的参考意义。"
     },
     {
-      "title": "受 Donald Trump（特朗普）关于伊朗战争的讲话影响，市场担忧进一步升级，美国油价飙升 11%",
-      "article": "Oil surged as Trump in his address to the nation on Iran war said that he expected the conflict to last another two to three weeks.",
-      "summary": "关键词：Oil, Trump, Iran<br>\n总结：受特朗普（Trump）关于伊朗局势最新讲话的影响，国际油价出现明显上涨。在针对伊朗战争的全国电视讲话中，特朗普（Trump）预测两国之间的军事冲突仍将持续两到三周时间。这一地缘政治紧张局势的升级以及对战争时长预期的不确定性，引发了市场对石油供应受阻的担忧，从而直接推动了能源价格的快速攀升，资本市场对此反应剧烈。"
+      "title": "受强劲就业报告引发对Fed降息预期的质疑影响，美股期货与Bitcoin价格下跌，美债收益率攀升",
+      "article": "Stock futures have slipped while Treasury yields pressed higher during Friday’s holiday trading session after a hotter-than-expected jobs report raised more questions about whether the Federal Reserve will deliver an interest-rate cut this year.",
+      "summary": "关键词：Stock futures, Treasury yields, Federal Reserve<br>\n总结：周五假日交易时段，受美国就业数据表现强劲影响，市场对美联储年内降息的预期产生动摇。这一超预期的就业报告引发了投资者的广泛担忧，导致美股期货价格出现下滑，同时国债收益率随之走高。目前市场正重新评估宏观经济走势，并密切关注美联储后续的货币政策走向，整体投资情绪趋于谨慎。"
     },
     {
-      "title": "交付报告暗示 Tesla “正在积极牺牲”电动汽车业务，导致股价下跌",
-      "article": "Elon Musk’s company reported vehicle sales and energy-storage deployments that were well below Wall Street’s expectations.",
-      "summary": "关键词：Tesla, Vehicle sales, Energy storage<br>\n总结：Elon Musk（埃隆·马斯克）旗下的Tesla公司最新发布的财报数据显示，其汽车交付量及能源存储设备的部署规模均显著低于华尔街分析师的预期。这一疲软的业绩表现反映出该公司在核心业务领域面临较大的增长压力。市场普遍担忧在当前竞争激烈的电动汽车市场环境下，Tesla的销售放缓趋势可能会对公司未来的财务盈利能力以及整体资本市场的表现产生持续的负面影响。"
+      "title": "Cramer（克莱默）本周前瞻：两份关键经济报告及Levi's、Delta的财报",
+      "article": "CNBC's Jim Cramer outlined what investors should watch in the week ahead, including Middle East developments, major earnings and key inflation data.",
+      "summary": "关键词：Jim Cramer（吉姆·克莱默）, 财报季, 通胀数据<br>\n总结：CNBC评论员Jim Cramer（吉姆·克莱默）指出，投资者在未来一周需密切关注全球宏观形势与企业基本面。重点关注内容包括：中东地区局势的最新进展及其对市场情绪的潜在影响；企业财报季的披露情况，这将揭示各行业的盈利能力；以及关键的通胀数据，这些经济指标将成为美联储后续政策路径的重要决策依据。市场波动风险加大，投资者应谨慎应对。"
     },
     {
-      "title": "3 月份就业报告将于周五发布，以下是市场预期",
-      "article": "The U.S. economy is projected to show job gains of 59,000 in March, with the unemployment rate holding at 4.4%.",
-      "summary": "关键词：美国经济,就业增长,失业率<br>\n总结：根据最新经济预测，美国经济在三月份的就业市场表现趋于平稳，预计将新增就业岗位59,000个。与此同时，全国失业率预计将保持在4.4%的水平，维持稳定。该数据反映了当前劳动力市场的增长态势，尽管新增职位规模相对温和，但整体就业环境并未出现大幅波动，显示出美国宏观经济在面对复杂环境时依然保持了一定的韧性与稳定性，相关分析将持续关注后续经济政策对市场的影响。"
+      "title": "受霍尔木兹海峡有望重开的预期提振，亚太市场在复活节假期交易中普遍上涨",
+      "article": "South Korea's Kospi led gains in the region while Japan's Nikkei 225 also opened higher. The Australian and Hong Kong markets were closed for the Easter weekend.",
+      "summary": "关键词：Kospi, Nikkei 225, 亚太股市<br>\n总结：受假期效应影响，亚太地区部分市场休市，其余主要股指表现活跃。其中，South Korea的Kospi指数领跑区域内涨幅，表现亮眼；Japan的Nikkei 225指数同样高开，呈现出稳健的上涨趋势。与此同时，受Easter假期因素干扰，Australia和Hong Kong的金融市场处于休市状态，交投相对清淡。整体来看，区域内市场走势呈现出明显的区域性分化特征。"
     },
     {
-      "title": "由于伊朗战争推高能源价格，Amazon 将向卖家加收 3.5% 的燃油和物流附加费",
-      "article": "With the Iran war now in its fifth week, Amazon said it's adding a 3.5% fuel and logistics surcharge for third-party sellers in the U.S. and Canada.",
-      "summary": "关键词：Amazon, 燃油附加费, 第三方卖家<br>\n总结：受近期地区冲突持续影响，全球物流成本显著攀升。Amazon正式宣布针对美国及加拿大地区的第三方卖家加收3.5%的燃油及物流附加费。此举旨在应对运输与仓储成本上升带来的经营压力。作为全球电商巨头，Amazon此次调整收费政策直接影响相关卖家的利润空间与定价策略，反映出当前地缘政治局势对国际供应链与电商物流生态所造成的连锁反应。"
+      "title": "美国就业报告显示3月新增就业17.8万人，但这种招聘小高潮难以持续",
+      "article": "The U.S. added a greater-than-expected 178,000 jobs in March and the unemployment rate fell a tick to 4.3% — signs that the labor market is holding firm even as the economy undergoes another spasm of uncertainty tied to the Iran war.",
+      "summary": "关键词：美国就业市场,失业率,伊朗局势<br>\n总结：美国三月就业数据表现强劲，新增就业岗位达17.8万个，超出市场预期，同时失业率小幅下降至4.3%。这一数据表明，尽管近期伊朗局势升级引发了经济领域的不确定性，并造成了一定的市场动荡，但美国劳动力市场依然展现出稳健的发展韧性，并未受到外部地缘政治风险的显著冲击，就业增长趋势保持稳定，为整体经济提供了一定的支撑。"
     }
   ],
   "japan_news": [
     {
-      "title": "【今日早间Biz 4月2日（周四）】原油价格上涨对物价的影响",
-      "article": "NHKニュース「おはよう日本」で平日朝に放送している経済ニュースコーナー「おはBiz」。最新のビジネストレンドや働き方、お役立ちサービスやスタートアップ企業の情報など、ギュギュっとコンパクトにお届けします。",
-      "summary": "关键词：おはよう日本, おはBiz, 财经新闻<br>\n总结：NHK新闻节目“おはよう日本”中于平日早间播出的财经新闻板块“おはBiz”，旨在为观众高效传递最新的商业趋势、职场动态、便捷实用服务以及初创企业资讯。该栏目将复杂多变的经济信息精炼化，以紧凑的形式呈现，帮助忙碌的观众在清晨快速掌握行业核心动向，是了解日本职场革新与创新企业发展的重要信息窗口。"
+      "title": "日元汇率在1美元兑159日元中段附近小幅波动",
+      "article": "3日の東京外国為替市場は、イラン情勢をめぐって原油の先物価格が上昇する中、経済への影響を懸念して日本の円を売る動きが出る一方、日本時間の3日夜に発表されるアメリカの雇用統計の内容を見極めたいという投資家が多く、円相場は1ドル＝159円台半ばを中心に小幅な値動きとなりました。",
+      "summary": "关键词：日元, 原油价格, 美国就业统计<br>\n总结：3日东京外汇市场中，受伊朗局势紧张影响，原油期货价格上涨引发对经济前景的担忧，导致日元遭到抛售。然而，由于市场正静待当晚美国就业统计数据的发布，投资者态度普遍谨慎，汇率波动受到限制。最终，日元对美元汇率维持在159.50左右的窄幅区间内波动。市场参与者普遍倾向于在关键宏观数据出炉前保持观望，整体市场成交节奏较为缓慢。"
     },
     {
-      "title": "【解析】Donald Trump（特朗普）总统演讲对日本经济的影响",
-      "article": "アメリカのトランプ大統領はイラン情勢について国民向けの演説を行い「核心的な戦略目標がほぼ達成されつつある」と述べるとともに、今後2週間から3週間、激しく攻撃を行う考えを示しました。一方で、イラン側と協議は続いているという認識を示しました。演説を受けての経済への影響をまとめています。",
-      "summary": "关键词：Trump, Iran, 经济影响<br>\n总结：美国总统Trump发表全国演说，表示针对伊朗的核心战略目标已接近实现，并预告将在未来两至三周内加大军事打击力度。尽管军事行动升级，Trump同时指出美伊双方仍保持沟通与协调。受此地缘政治紧张局势加剧的影响，市场对未来经济不确定性的担忧升温，该言论引发了金融市场对能源价格波动及全球贸易环境潜在风险的深度关注，经济前景面临严峻挑战。"
+      "title": "股价一度上涨超过900日元，出现回购前一日下跌个股的动向",
+      "article": "3日の東京株式市場は、2日に大きく値下がりした銘柄を買い戻す動きに加え、原油や石油製品の供給に対する懸念がいくぶん和らいだのを背景に化学や機械などの銘柄も買われ、日経平均株価は一時900円余り値上がりしました。",
+      "summary": "关键词：日经平均指数,东京股市,市场回暖<br>\n总结：3日的东京股市表现强劲，日经平均指数盘中一度大幅上涨超过900点。此次上涨的主要原因在于投资者对2日出现大幅下跌的个股进行了逢低买入。此外，由于市场对原油及石油产品供应的担忧情绪有所缓解，带动了化学、机械等相关板块的全面走高，推动了整体行情的修复，市场交投气氛较前一个交易日明显回暖，呈现出明显的买入力量。"
     },
     {
-      "title": "针对以石油为原料的医疗物资等，日本政府将着手掌握包含海外在内的供应链实况",
-      "article": "緊迫するイラン情勢の影響で一部の事業者では医療用物資などの調達が難しくなっています。政府は供給の安定化に向けて、海外を含めたサプライチェーン＝供給網の実態把握を進めていくことを決めました。",
-      "summary": "关键词：イラン情勢, 医療用物資, サプライチェーン<br>\n总结：受紧张的伊朗局势影响，部分运营商面临医疗物资采购困难。为确保供应稳定，日本政府决定加强对供应链的管控，将全面摸排并掌握包括海外在内的供应链现状。政府旨在通过此次调查，明确风险节点，从而制定有效的应对措施，确保国内医疗物资能够持续、稳定地供应，以保障医疗系统的正常运转并减轻相关行业受到的地缘政治负面影响。"
+      "title": "长期利率一度升至2.395%，创下约27年来的最高水平",
+      "article": "3日の債券市場では、長期金利の代表的な指標である10年ものの国債の利回りが一時、2.395％まで上昇しました。日本相互証券によりますと1999年2月以来、およそ27年ぶりの高い水準です。イラン情勢をめぐって原油価格の高騰が今後も続き、国内の物価上昇がさらに加速するのではないかという見方から国債が売られ、長期金利が上昇しています。",
+      "summary": "关键词：日本国债,长期利率,物价上涨<br>\n总结：3日，日本10年期国债收益率一度升至2.395%，创下自1999年2月以来约27年来的最高水平。此次利率飙升主要是由于伊朗局势紧张导致原油价格持续上涨，市场担忧国内通胀压力加剧，从而引发国债抛售。根据日本相互证券的数据，这一现象反映出投资者对未来物价走势的高度警惕，长期的通胀预期正在推高市场的基准利率水平。"
     }
   ],
   "hot_markets": [
@@ -862,10 +862,10 @@
       "label": "WTI Crude Oil",
       "etf": "CL=F",
       "etf_source": "NYMEX WTI Crude Futures",
-      "pct": 0.11925683664066154,
+      "pct": 0.11406310283321658,
       "url": "https://finance.yahoo.com/quote/CL=F",
-      "price_fmt": "112.06",
-      "change_pct_fmt": "+11.93%",
+      "price_fmt": "111.54",
+      "change_pct_fmt": "+11.41%",
       "constituents_source": "Major US oil producers",
       "top_movers": [
         {
@@ -909,7 +909,7 @@
         "COP +1.67%",
         "EOG +1.58%"
       ],
-      "analysis": "WTI油价飙升，市场正密切关注地缘紧张对运输航线的进一步影响。\n供应溢价短期内难被挤出。",
+      "analysis": "重复统计，原油市场多头情绪浓厚，相关能源股同步上扬。\n原油供应危机成为市场的核心叙事。",
       "outlook": "bullish",
       "outlook_css": "bullish",
       "news": []
@@ -919,10 +919,10 @@
       "label": "Brent Crude",
       "etf": "BZ=F",
       "etf_source": "ICE Brent Crude Futures",
-      "pct": 0.07799524618447326,
+      "pct": 0.07779749735354444,
       "url": "https://finance.yahoo.com/quote/BZ=F",
-      "price_fmt": "109.05",
-      "change_pct_fmt": "+7.80%",
+      "price_fmt": "109.03",
+      "change_pct_fmt": "+7.78%",
       "constituents_source": "Major international oil producers",
       "top_movers": [
         {
@@ -966,7 +966,7 @@
         "EQNR +3.37%",
         "TTE +2.91%"
       ],
-      "analysis": "能源股表现优异，布油价格攀升，市场对能源供应持续性存在深度忧虑。\n市场情绪受供应端波动主导。",
+      "analysis": "重复统计，布伦特原油延续强势表现，反映能源市场供需极度失衡。\n地缘政治因素强化了多头仓位。",
       "outlook": "bullish",
       "outlook_css": "bullish",
       "news": []
@@ -976,10 +976,10 @@
       "label": "Silver",
       "etf": "SI=F",
       "etf_source": "COMEX Silver Futures",
-      "pct": -0.03554903596013652,
+      "pct": -0.04128272224193811,
       "url": "https://finance.yahoo.com/quote/SI=F",
-      "price_fmt": "73.170",
-      "change_pct_fmt": "-3.55%",
+      "price_fmt": "72.735",
+      "change_pct_fmt": "-4.13%",
       "constituents_source": "Major silver mining companies",
       "top_movers": [
         {
@@ -1023,64 +1023,121 @@
         "SVM -0.99%",
         "WPM -0.91%"
       ],
-      "analysis": "银价跌幅扩大，贵金属板块整体面临流动性收紧带来的抛售压力。\n宏观环境不利于非生息资产表现。",
+      "analysis": "重复统计，白银工业属性与金融属性双重承压，短期走势疲软。\n获利盘出清导致价格重心快速下移。",
       "outlook": "bearish",
       "outlook_css": "bearish",
       "news": []
     },
     {
-      "country": "South Korea",
-      "label": "South Korea",
-      "etf": "EWY",
-      "etf_source": "iShares MSCI South Korea",
-      "pct": -0.02654094788244712,
-      "url": "https://finance.yahoo.com/quote/EWY",
-      "price_fmt": "122.87",
-      "change_pct_fmt": "-2.65%",
-      "constituents_source": "iShares EWY top holdings",
+      "country": "Japan Steel & Nonferrous",
+      "label": "Japan Steel & Nonferrous",
+      "etf": "1623.T",
+      "etf_source": "NEXT FUNDS TOPIX-17 Steel",
+      "pct": 0.0381439894319683,
+      "url": "https://finance.yahoo.com/quote/1623.T",
+      "price_fmt": "62,870",
+      "change_pct_fmt": "+3.81%",
+      "constituents_source": "NEXT FUNDS 1623.T holdings",
       "top_movers": [
         {
-          "ticker": "000660.KS",
-          "price": 830000.0,
-          "price_fmt": "830,000",
-          "pct": -0.07469342251950947,
-          "change_pct_fmt": "-7.47%",
-          "change_arrow": "▼",
-          "css": "down",
-          "url": "https://finance.yahoo.com/quote/000660.KS",
-          "name": "SK hynix"
+          "ticker": "5801.T",
+          "price": 35800.0,
+          "price_fmt": "35,800",
+          "pct": 0.10425663170882171,
+          "change_pct_fmt": "+10.43%",
+          "change_arrow": "▲",
+          "css": "up",
+          "url": "https://finance.yahoo.com/quote/5801.T",
+          "name": "FURUKAWA ELECTRIC CO"
         },
         {
-          "ticker": "035420.KS",
-          "price": 195800.0,
-          "price_fmt": "195,800",
-          "pct": -0.06983372921615202,
-          "change_pct_fmt": "-6.98%",
-          "change_arrow": "▼",
-          "css": "down",
-          "url": "https://finance.yahoo.com/quote/035420.KS",
-          "name": "NAVER"
+          "ticker": "5706.T",
+          "price": 31520.0,
+          "price_fmt": "31,520",
+          "pct": 0.06306913996627318,
+          "change_pct_fmt": "+6.31%",
+          "change_arrow": "▲",
+          "css": "up",
+          "url": "https://finance.yahoo.com/quote/5706.T",
+          "name": "MITSUI KINZOKU CO LTD"
         },
         {
-          "ticker": "005930.KS",
-          "price": 178400.0,
-          "price_fmt": "178,400",
-          "pct": -0.05931979963089903,
-          "change_pct_fmt": "-5.93%",
-          "change_arrow": "▼",
-          "css": "down",
-          "url": "https://finance.yahoo.com/quote/005930.KS",
-          "name": "SamsungElec"
+          "ticker": "5802.T",
+          "price": 9400.0,
+          "price_fmt": "9,400.00",
+          "pct": 0.03251318101933216,
+          "change_pct_fmt": "+3.25%",
+          "change_arrow": "▲",
+          "css": "up",
+          "url": "https://finance.yahoo.com/quote/5802.T",
+          "name": "SUMITOMO ELECTRIC INDUSTRIES"
         }
       ],
-      "ticker": "EWY",
-      "name": "South Korea",
+      "ticker": "1623.T",
+      "name": "Japan Steel & Nonferrous",
       "news_titles": [
-        "000660.KS -7.47%",
-        "035420.KS -6.98%",
-        "005930.KS -5.93%"
+        "5801.T +10.43%",
+        "5706.T +6.31%",
+        "5802.T +3.25%"
       ],
-      "analysis": "韩国ETF大幅收跌，芯片巨头领跌，显示市场对半导体周期回调的担忧。\n科技龙头遭遇剧烈抛售，短期市场情绪恶化。",
+      "analysis": "日本钢铁与有色金属板块大幅收高，得益于行业景气度回升及个股强势表现。\n工业需求预期提升支撑相关板块估值。",
+      "outlook": "bullish",
+      "outlook_css": "bullish",
+      "news": []
+    },
+    {
+      "country": "Gold",
+      "label": "Gold",
+      "etf": "GC=F",
+      "etf_source": "COMEX Gold Futures",
+      "pct": -0.02753390824861673,
+      "url": "https://finance.yahoo.com/quote/GC=F",
+      "price_fmt": "4,651.50",
+      "change_pct_fmt": "-2.75%",
+      "constituents_source": "Major gold mining companies",
+      "top_movers": [
+        {
+          "ticker": "KGC",
+          "price": 31.510000228881836,
+          "price_fmt": "31.510",
+          "pct": -0.015927552204584045,
+          "change_pct_fmt": "-1.59%",
+          "change_arrow": "▼",
+          "css": "down",
+          "url": "https://finance.yahoo.com/quote/KGC",
+          "name": "Kinross Gold Corporation"
+        },
+        {
+          "ticker": "GOLD",
+          "price": 41.27000045776367,
+          "price_fmt": "41.270",
+          "pct": -0.012915591910798312,
+          "change_pct_fmt": "-1.29%",
+          "change_arrow": "▼",
+          "css": "down",
+          "url": "https://finance.yahoo.com/quote/GOLD",
+          "name": "Gold.com, Inc."
+        },
+        {
+          "ticker": "WPM",
+          "price": 135.55999755859375,
+          "price_fmt": "135.56",
+          "pct": -0.009064367437878716,
+          "change_pct_fmt": "-0.91%",
+          "change_arrow": "▼",
+          "css": "down",
+          "url": "https://finance.yahoo.com/quote/WPM",
+          "name": "Wheaton Precious Metals Corp"
+        }
+      ],
+      "ticker": "GC=F",
+      "name": "Gold",
+      "news_titles": [
+        "KGC -1.59%",
+        "GOLD -1.29%",
+        "WPM -0.91%"
+      ],
+      "analysis": "重复统计，贵金属集体回调，市场进入去杠杆与避险回落阶段。\n短期避险需求降温，黄金上行空间受限。",
       "outlook": "bearish",
       "outlook_css": "bearish",
       "news": []
