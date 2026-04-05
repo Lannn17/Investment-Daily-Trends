@@ -5,6 +5,22 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [v0.4.0] - 2026-04-06
+
+### Changed
+- Refactored monolithic `main.py` (~1088 lines) into modular `src/` package with 7 focused modules:
+  - `src/config.py` — CLI args, config.ini constants, model chains, watchlist/sector universe
+  - `src/state.py` — state persistence (last_run, morning_bench, render_cache) and dedup helpers
+  - `src/price.py` — price formatting utilities and yfinance single/list fetch
+  - `src/hot_sectors.py` — batch price screening and two-stage hot sector detection
+  - `src/ai_client.py` — Gemini client and all AI functions (score/translate/summarise/analyse)
+  - `src/news.py` — RSS fetch, HTML cleaning, and full news processing pipeline
+  - `src/output.py` — HTML rendering and SMTP email delivery
+- `main.py` reduced to a thin orchestration entry point (~247 lines)
+
+### 修改
+- 将单体 `main.py` 重构为模块化 `src/` 包，按功能拆分为7个独立模块，`main.py` 仅保留编排逻辑
+
 ## [v0.3.9] - 2026-03-23
 
 ### Added
