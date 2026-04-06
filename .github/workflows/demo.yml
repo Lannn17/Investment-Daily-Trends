@@ -1,0 +1,53 @@
+name: Demo Daily Digest
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 22 * * *'  # UTC 22:30 = JST 07:30
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  demo-digest:
+    runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run demo digest
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python main.py --demo
+
+      - name: Upload HTML artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: demo-digest-${{ github.run_number }}
+          path: demo/output/daily.html
+          retention-days: 30
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: demo/output/
+
+  deploy-pages:
+    needs: demo-digest
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

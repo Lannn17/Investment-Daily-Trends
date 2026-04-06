@@ -4,14 +4,14 @@ import json
 
 import yfinance as yf
 
-from .config import WATCHLIST_NAMES
+from .config import WATCHLIST_NAMES, _data_path
 from .price import fetch_price_item, format_price, price_css
 
 
 def load_portfolio():
     """Load portfolio.json. Returns dict or None if missing/invalid."""
     try:
-        with open('portfolio.json', 'r', encoding='utf-8') as f:
+        with open(_data_path('portfolio.json'), 'r', encoding='utf-8') as f:
             return json.load(f)
     except FileNotFoundError:
         return None

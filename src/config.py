@@ -17,12 +17,15 @@ _ap.add_argument('--fulltest', action='store_true', help='Full test: production 
 _ap.add_argument('--uitest',   action='store_true', help='UI test: skip all API/data calls, render from cache only')
 _ap.add_argument('--email',    action='store_true', help='Force send email even in test/uitest mode')
 _ap.add_argument('--edition',  choices=['morning', 'evening'], default=None)
+_ap.add_argument('--demo',     action='store_true', help='Demo mode: isolated data in demo/, Japanese output, no email')
 _args = _ap.parse_args()
 
 TEST_MODE     = _args.test
 FULLTEST_MODE = _args.fulltest
 UITEST_MODE   = _args.uitest
 FORCE_EMAIL   = _args.email
+DEMO_MODE     = _args.demo
+LANG          = 'ja' if DEMO_MODE else 'zh'
 
 # ── config.ini ────────────────────────────────────────────────────────────────
 _config = configparser.ConfigParser()
@@ -33,6 +36,16 @@ def get_cfg(sec, key, default=None):
     return val.strip('"') if val else default
 
 BASE                  = get_cfg('cfg', 'base', 'docs/')
+if DEMO_MODE:
+    BASE = 'demo/output/'
+
+def _data_path(filename):
+    """Return demo/<filename> if DEMO_MODE and the file exists there, else <filename>."""
+    if DEMO_MODE:
+        demo_path = os.path.join('demo', filename)
+        if os.path.exists(demo_path):
+            return demo_path
+    return filename
 SIMILARITY_THRESHOLD  = float(get_cfg('cfg', 'similarity_threshold',  '0.70'))
 INTRA_BATCH_THRESHOLD = float(get_cfg('cfg', 'intra_batch_threshold', '0.60'))
 KEYWORD_LENGTH        = int(get_cfg('cfg', 'keyword_length', '3'))
@@ -85,7 +98,7 @@ BUILTIN_NAMES = {
 
 def load_watchlist():
     try:
-        with open('watchlist.json', 'r', encoding='utf-8') as f:
+        with open(_data_path('watchlist.json'), 'r', encoding='utf-8') as f:
             data = json.load(f)
         tickers = data.get('tickers', [])
         names   = {**BUILTIN_NAMES, **data.get('names', {})}
@@ -99,7 +112,7 @@ WATCHLIST_TICKERS, WATCHLIST_NAMES = load_watchlist()
 # ── Sector universe ───────────────────────────────────────────────────────────
 def load_sector_universe():
     try:
-        with open('sector_universe.json', 'r', encoding='utf-8') as f:
+        with open(_data_path('sector_universe.json'), 'r', encoding='utf-8') as f:
             return json.load(f)
     except Exception as e:
         print(f"Warning: could not load sector_universe.json: {e}")

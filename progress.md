@@ -99,3 +99,44 @@ total_pnl/fmt, total_pnl_pct/fmt, total_css
 - Both `--uitest` and `--test` pass
 
 **All features complete.** ✅
+
+---
+
+## Demo Mode (v0.7.0) — In Progress
+
+### Goal
+展示用デモモード。個人データなし・日本語AI出力・GitHub Pages配信。
+
+### 実装済み ✅
+
+| File | 変更内容 |
+|------|---------|
+| `src/config.py` | `--demo` CLI引数、`DEMO_MODE`/`LANG` グローバル、`BASE` オーバーライド (`demo/output/`)、`_data_path()` ヘルパー、`load_watchlist()`/`load_sector_universe()` に適用 |
+| `src/ai_client.py` | `LANG` インポート、`PROMPTS = {'zh':..., 'ja':...}` 辞書追加、`score_entries` / `translate_titles` / `ai_summary` / `analyze_watchlist` / `analyze_portfolio_risk` の5関数を `PROMPTS[LANG]` から取得するよう全リファクタ |
+| `src/portfolio.py` | `load_portfolio()` を `_data_path('portfolio.json')` に変更 |
+| `main.py` | `DEMO_MODE`/`LANG` インポート、ニューストピック文字列を `_NEWS_TOPICS[LANG]` で zh/ja 切り替え、メール送信をデモ時スキップ |
+| `demo/watchlist.json` | 新規作成（9銘柄: MSFT/GOOGL/AMZN/TSM/BRK-B/LMT/7203.T/9984.T/INDA） |
+| `demo/portfolio.json` | 新規作成（6ポジション: NVDA/AAPL/VOO/7203.T/9984.T/IAU、2アカウント） |
+| `.github/workflows/demo.yml` | 新規作成（手動 + UTC 22:30 スケジュール、GitHub Pages デプロイ） |
+| `.gitignore` | `demo/output/` と `watchlist.json` を追加 |
+
+### 未実施 ⏳
+
+- `python main.py --demo --test` で動作確認（exit 0 確認）
+- `CLAUDE.md` バージョン v0.6.0 → v0.7.0 更新
+- `CHANGELOG.md` エントリ追加
+- git commit & push
+
+### 既知のギャップ
+
+- `analyze_portfolio()` のプロンプトは中国語のまま（仕様書でスコープ外と明記）→ デモ時もポートフォリオ投資アドバイス欄は中国語で出力される
+- GitHub Pages を有効にするには Settings → Pages → Source: GitHub Actions の設定が必要
+
+### 将来の計画
+
+| 優先度 | タスク |
+|--------|--------|
+| 高 | `analyze_portfolio()` も日本語化（PROMPTS に追加） |
+| 中 | `demo/sector_universe.json` を作成し、デモ用ホットセクター定義を分離 |
+| 低 | `daily_template.html` / `email_template.html` の固定テキスト（セクションタイトル等）を `lang` 変数で zh/ja 切り替え |
+| 低 | fund_scraper.py — 日本の投資信託（eMAXIS 等）の基準価額スクレイピング |

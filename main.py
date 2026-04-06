@@ -5,7 +5,7 @@ import os
 import datetime
 
 from src.config import (
-    TEST_MODE, FULLTEST_MODE, UITEST_MODE, FORCE_EMAIL,
+    TEST_MODE, FULLTEST_MODE, UITEST_MODE, FORCE_EMAIL, DEMO_MODE, LANG,
     BASE, JST, get_run_type,
     INDICES_TICKERS, INDICES_LABELS,
     COMMODITIES_TICKERS, COMMODITIES_LABELS,
@@ -196,15 +196,34 @@ else:
                 pos['advice'] = adv.get('reason', '')
 
     # ── Step 4: News sections ─────────────────────────────────────────────────
+    _NEWS_TOPICS = {
+        'zh': {
+            'market_weekend': '全球财经市场 · 周末要闻速览',
+            'japan_weekend':  '日本金融市场 · 周末动态',
+            'market_morning': '全球财经市场 · 美欧隔夜复盘及亚市开盘前瞻',
+            'japan_morning':  '日本金融市场 · 今日开盘前瞻',
+            'market_evening': '全球财经市场 · 欧市盘中动态及美股开盘前瞻',
+            'japan_evening':  '日本金融市场 · 今日收盘复盘',
+        },
+        'ja': {
+            'market_weekend': 'グローバル金融市場 · 週末ニュースまとめ',
+            'japan_weekend':  '日本金融市場 · 週末動向',
+            'market_morning': 'グローバル金融市場 · 米欧夜間振り返りとアジア開場前展望',
+            'japan_morning':  '日本金融市場 · 本日寄り付き前展望',
+            'market_evening': 'グローバル金融市場 · 欧州場中動向と米国開場前展望',
+            'japan_evening':  '日本金融市場 · 本日終値振り返り',
+        },
+    }
+    _t = _NEWS_TOPICS[LANG]
     if WEEKEND_MODE:
-        market_news_topic = '全球财经市场 · 周末要闻速览'
-        japan_news_topic  = '日本金融市场 · 周末动态'
+        market_news_topic = _t['market_weekend']
+        japan_news_topic  = _t['japan_weekend']
     elif run_type == 'morning':
-        market_news_topic = '全球财经市场 · 美欧隔夜复盘及亚市开盘前瞻'
-        japan_news_topic  = '日本金融市场 · 今日开盘前瞻'
+        market_news_topic = _t['market_morning']
+        japan_news_topic  = _t['japan_morning']
     else:
-        market_news_topic = '全球财经市场 · 欧市盘中动态及美股开盘前瞻'
-        japan_news_topic  = '日本金融市场 · 今日收盘复盘'
+        market_news_topic = _t['market_evening']
+        japan_news_topic  = _t['japan_evening']
 
     print("[news] Processing market_news...")
     market_news_entries, mn_bench = process_news_section(
@@ -274,7 +293,9 @@ render_daily_html(ctx)
 email_html = render_email_html(ctx)
 
 # ── Step 7: Send email ────────────────────────────────────────────────────────
-if FORCE_EMAIL or not (TEST_MODE or FULLTEST_MODE or UITEST_MODE):
+if DEMO_MODE:
+    print(f"[email] Skipped — demo mode, view output at {BASE}daily.html")
+elif FORCE_EMAIL or not (TEST_MODE or FULLTEST_MODE or UITEST_MODE):
     send_daily_email(email_html, edition, now)
 else:
     print("[email] Skipped in test mode - use --email to force send")

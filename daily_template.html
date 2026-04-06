@@ -275,7 +275,10 @@
           <div style="font-weight:600;">{{ p.name }}</div>
           <div style="font-size:0.72rem;color:#aaa;">{{ p.ticker }}</div>
         </td>
-        <td style="padding:7px 8px;text-align:right;color:#888;">{{ p.total_shares }}</td>
+        <td style="padding:7px 8px;text-align:right;color:#888;">
+          <div>{{ p.total_shares }}股</div>
+          <div style="font-size:0.7rem;color:#bbb;">@{{ p.avg_cost_fmt }} {{ p.cost_ccy }}</div>
+        </td>
         <td style="padding:7px 8px;text-align:right;">{{ p.price_fmt }}</td>
         <td style="padding:7px 8px;text-align:right;" class="{{ p.price_effect_css }}">{{ p.price_effect_fmt }}</td>
         <td style="padding:7px 8px;text-align:right;" class="{{ p.fx_effect_css }}">{{ p.fx_effect_fmt }}</td>

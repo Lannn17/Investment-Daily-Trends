@@ -10,11 +10,122 @@ from .config import (
     GEMINI_API_KEY, DEFAULT_MODEL,
     SCORE_MODEL_CHAIN, TRANSLATE_MODEL_CHAIN,
     SUMMARY_MODEL_CHAIN, WATCHLIST_MODEL_CHAIN,
-    KEYWORD_LENGTH, SUMMARY_LENGTH,
+    KEYWORD_LENGTH, SUMMARY_LENGTH, LANG,
 )
 
 # ── Client init ───────────────────────────────────────────────────────────────
 _gemini_client = genai.Client(api_key=GEMINI_API_KEY) if GEMINI_API_KEY else None
+
+# ── Multilingual prompt templates ─────────────────────────────────────────────
+# JSON output keys (scores/titles/analyses/alerts) are always English for parse stability.
+PROMPTS = {
+    'zh': {
+        'score_hint': '（板块主题：{topic}）',
+        'score': (
+            '以下是{n}条财经新闻标题{hint}。'
+            '请综合评估每条标题与板块主题的相关性及新闻重要性，评分1-10（10=极重要且高度相关）。'
+            '只输出JSON：{{"scores": [分数1, 分数2, ...]}}，不要输出任何其他内容。\n\n{numbered}'
+        ),
+        'translate': (
+            '请将以下{n}条英文/日文财经新闻标题翻译成中文。遵守以下规则：\n'
+            '1. 品牌名、公司名、产品名保留英文原文，不得翻译（例如：lululemon、Apple、Tesla、Nvidia）。\n'
+            '2. 英文人名使用双语格式：保留英文原名并附上中文互联网常见译名，格式为"英文名（中文译名）"（例如：Elon Musk（马斯克））。\n'
+            '3. 日文人名使用双语格式：保留汉字原名并附上平假名读音，格式为"汉字名（平假名）"（例如：石破茂（いしばしげる））。\n'
+            '必须严格输出JSON数组，恰好{n}个元素：{{"titles": ["翻译1", "翻译2", ...]}}，不要输出任何其他内容。\n\n{numbered}'
+        ),
+        'summary': (
+            '{text}\n\n'
+            '以上为财经新闻内容，请用中文生成摘要和关键词。'
+            '规则：品牌名、公司名、产品名保留英文原文；英文人名使用"英文名（中文译名）"格式；日文人名使用"汉字名（平假名）"格式。'
+            '严格按以下格式输出两行，不得包含任何其他内容：\n'
+            '关键词：[提取{kw_len}个关键词，逗号分隔]\n'
+            '总结：[用中文详细概括文章要点，字数不少于80字，最多{sum_len}字]\n\n'
+            '只输出以上两行纯文本。禁止输出思考过程、Markdown语法或代码块。'
+        ),
+        'watchlist_ctx_morning': (
+            '【当前时间：东京07:30 — 早报】美欧市场已收盘，日本市场即将开盘（09:00 JST）。\n'
+            '分析角度：美欧相关标的做隔夜收盘复盘；日本/亚洲相关标的做今日开盘前瞻。\n\n'
+        ),
+        'watchlist_ctx_evening': (
+            '【当前时间：东京22:00 — 晚报】日本市场已收盘（15:30 JST），欧洲盘中，美股即将开盘（22:30 JST）。\n'
+            '分析角度：日本相关标的做今日收盘复盘；美股/商品/FX做美股开盘前瞻；欧洲相关标的做盘中动态简析。\n\n'
+        ),
+        'watchlist_price_label': '今日价格：{price}，涨跌：{change}\n',
+        'watchlist_news_label':  '相关新闻：\n',
+        'watchlist_intro':       '以下是各标的的价格表现和相关新闻：\n',
+        'watchlist_instruction': (
+            '\n请对每个标的给出：\n'
+            '1. 走势简析（结合时间背景、价格和新闻，50字以内，中文）\n'
+            '2. 近期展望（bullish/bearish/neutral 三选一，并附一句中文理由）\n\n'
+            '严格输出JSON，顺序与输入一致：\n'
+            '{{"analyses": [{{"ticker": "...", "today": "...", "outlook": "bullish|bearish|neutral", "outlook_reason": "..."}}]}}\n'
+            '不要输出任何其他内容。ticker顺序：{ticker_list}'
+        ),
+        'risk': (
+            '以下是我的持仓列表：\n{holdings}\n\n'
+            '以下是今日财经新闻标题（共{n}条）：\n{news}\n\n'
+            '请找出与持仓直接相关的新闻（行业政策、监管、竞争对手重大动态、宏观风险等），'
+            '并生成简短的风险/机会提醒（30字以内中文）。\n'
+            '只输出与持仓确实相关的条目，无相关则返回空数组。\n'
+            '严格输出JSON，不要输出任何其他内容：\n'
+            '{{"alerts": [{{"ticker": "持仓代码", "alert": "提醒内容"}}]}}\n'
+            '合法的ticker值只能来自此列表：{ticker_list}'
+        ),
+    },
+    'ja': {
+        'score_hint': '（セクターテーマ：{topic}）',
+        'score': (
+            '以下は{n}件の金融ニュース見出し{hint}です。'
+            '各見出しのテーマとの関連性とニュースの重要度を総合的に評価し、1〜10点で採点してください（10=極めて重要かつ高関連）。'
+            'JSON形式のみ出力：{{"scores": [点数1, 点数2, ...]}}、他は何も出力しないこと。\n\n{numbered}'
+        ),
+        'translate': (
+            '以下の{n}件の英語/中国語の金融ニュース見出しを日本語に翻訳してください。ルール：\n'
+            '1. ブランド名・企業名・製品名は英語原文を保持（例：lululemon、Apple、Tesla、Nvidia）。\n'
+            '2. 英語人名は「英語名（カタカナ読み）」形式（例：Elon Musk（イーロン・マスク））。\n'
+            '3. 中国語人名は漢字を保持しカタカナ読みを付加。\n'
+            'JSON配列で出力（{n}要素）：{{"titles": ["翻訳1", "翻訳2", ...]}}、他は何も出力しないこと。\n\n{numbered}'
+        ),
+        'summary': (
+            '{text}\n\n'
+            '上記は金融ニュースの内容です。日本語で要約とキーワードを生成してください。'
+            'ルール：ブランド名・企業名は英語原文を保持。'
+            '以下の形式で2行のみ出力：\n'
+            'キーワード：[{kw_len}個のキーワード、カンマ区切り]\n'
+            '要約：[日本語で記事の要点を詳しくまとめる。80字以上、最大{sum_len}字]\n\n'
+            '純粋なテキスト2行のみ出力。思考過程・Markdown・コードブロック禁止。'
+        ),
+        'watchlist_ctx_morning': (
+            '【現在時刻：東京07:30 — 朝刊】米欧市場は引け済み、日本市場は09:00 JSTに開場予定。\n'
+            '分析の視点：米欧関連銘柄は昨夜の終値を振り返り；日本・アジア関連銘柄は本日の寄り付き前展望を記載。\n\n'
+        ),
+        'watchlist_ctx_evening': (
+            '【現在時刻：東京22:00 — 夕刊】日本市場は15:30 JSTに引け済み、欧州は場中、米国株は22:30 JSTに開場予定。\n'
+            '分析の視点：日本関連銘柄は本日終値を振り返り；米株・商品・FXは米国開場前の展望；欧州関連銘柄は場中の動向を記載。\n\n'
+        ),
+        'watchlist_price_label': '本日価格：{price}、騰落：{change}\n',
+        'watchlist_news_label':  '関連ニュース：\n',
+        'watchlist_intro':       '以下は各銘柄の価格動向と関連ニュースです：\n',
+        'watchlist_instruction': (
+            '\n各銘柄について以下を提供してください：\n'
+            '1. 今日の動向分析（時間背景・価格・ニュースを踏まえて、50字以内、日本語）\n'
+            '2. 短期見通し（bullish/bearish/neutral から一つ選び、日本語で一文の理由を添える）\n\n'
+            '厳密にJSONのみ出力（入力順を維持）：\n'
+            '{{"analyses": [{{"ticker": "...", "today": "...", "outlook": "bullish|bearish|neutral", "outlook_reason": "..."}}]}}\n'
+            '他は何も出力しないこと。ticker順：{ticker_list}'
+        ),
+        'risk': (
+            '以下は私の保有銘柄リストです：\n{holdings}\n\n'
+            '以下は本日の金融ニュース見出し（{n}件）：\n{news}\n\n'
+            '保有銘柄に直接関連するニュース（業界政策・規制・競合他社の重大動向・マクロリスク等）を見つけ出し、'
+            '簡潔なリスク/機会の警告（30字以内の日本語）を生成してください。\n'
+            '明確な関連があるものだけ出力し、なければ空配列を返すこと。\n'
+            '厳密にJSONのみ出力：\n'
+            '{{"alerts": [{{"ticker": "保有コード", "alert": "警告内容"}}]}}\n'
+            '有効なtickerはこのリストのみ：{ticker_list}'
+        ),
+    },
+}
 
 
 # ── Core API wrapper ──────────────────────────────────────────────────────────
@@ -55,13 +166,10 @@ def score_entries(titles, topic=None, models=None):
     """Score a batch of news titles 1-10. Returns list of floats."""
     if not titles:
         return []
+    p        = PROMPTS[LANG]
     numbered = '\n'.join(f'{i + 1}. {t}' for i, t in enumerate(titles))
-    hint     = f'（板块主题：{topic}）' if topic else ''
-    prompt   = (
-        f'以下是{len(titles)}条财经新闻标题{hint}。'
-        f'请综合评估每条标题与板块主题的相关性及新闻重要性，评分1-10（10=极重要且高度相关）。'
-        f'只输出JSON：{{"scores": [分数1, 分数2, ...]}}，不要输出任何其他内容。\n\n{numbered}'
-    )
+    hint     = p['score_hint'].format(topic=topic) if topic else ''
+    prompt   = p['score'].format(n=len(titles), hint=hint, numbered=numbered)
     try:
         raw   = chat_with_gemini(prompt, models=models or SCORE_MODEL_CHAIN)
         match = re.search(r'\{.*\}', raw, re.DOTALL)
@@ -76,18 +184,12 @@ def score_entries(titles, topic=None, models=None):
 
 # ── Translation ───────────────────────────────────────────────────────────────
 def translate_titles(titles, models=None):
-    """Translate a batch of titles to Chinese. Returns list or None on failure."""
+    """Translate a batch of titles. Returns list or None on failure."""
     if not titles:
         return titles
+    p        = PROMPTS[LANG]
     numbered = '\n'.join(f'{i + 1}. {t}' for i, t in enumerate(titles))
-    prompt   = (
-        f'请将以下{len(titles)}条英文/日文财经新闻标题翻译成中文。遵守以下规则：\n'
-        f'1. 品牌名、公司名、产品名保留英文原文，不得翻译（例如：lululemon、Apple、Tesla、Nvidia）。\n'
-        f'2. 英文人名使用双语格式：保留英文原名并附上中文互联网常见译名，格式为"英文名（中文译名）"（例如：Elon Musk（马斯克））。\n'
-        f'3. 日文人名使用双语格式：保留汉字原名并附上平假名读音，格式为"汉字名（平假名）"（例如：石破茂（いしばしげる））。\n'
-        f'必须严格输出JSON数组，恰好{len(titles)}个元素：{{"titles": ["翻译1", "翻译2", ...]}}，'
-        f'不要输出任何其他内容。\n\n{numbered}'
-    )
+    prompt   = p['translate'].format(n=len(titles), numbered=numbered)
     try:
         raw   = chat_with_gemini(prompt, models=models or TRANSLATE_MODEL_CHAIN)
         match = re.search(r'\{.*\}', raw, re.DOTALL)
@@ -115,15 +217,9 @@ def _clean_summary(text):
     return '\n'.join(lines).strip().replace('\n', '<br>\n')
 
 def ai_summary(text, models=None):
-    """Generate bilingual keywords + Chinese summary for a news article."""
-    prompt = (
-        f'{text}\n\n'
-        f'以上为财经新闻内容，请用中文生成摘要和关键词。'
-        f'规则：品牌名、公司名、产品名保留英文原文；英文人名使用"英文名（中文译名）"格式；日文人名使用"汉字名（平假名）"格式。'
-        f'严格按以下格式输出两行，不得包含任何其他内容：\n'
-        f'关键词：[提取{KEYWORD_LENGTH}个关键词，逗号分隔]\n'
-        f'总结：[用中文详细概括文章要点，字数不少于80字，最多{SUMMARY_LENGTH}字]\n\n'
-        f'只输出以上两行纯文本。禁止输出思考过程、Markdown语法或代码块。'
+    """Generate keywords + language-appropriate summary for a news article."""
+    prompt = PROMPTS[LANG]['summary'].format(
+        text=text, kw_len=KEYWORD_LENGTH, sum_len=SUMMARY_LENGTH
     )
     return _clean_summary(chat_with_gemini(prompt, models=models or SUMMARY_MODEL_CHAIN))
 
@@ -134,38 +230,26 @@ def analyze_watchlist(items, run_type='morning', models=None):
     if not items:
         return {}
 
+    p     = PROMPTS[LANG]
     parts = []
     for item in items:
         part = (
             f"\n【{item['ticker']}】{item.get('name', item['ticker'])}\n"
-            f"今日价格：{item['price_fmt']}，涨跌：{item['change_pct_fmt']}\n"
+            + p['watchlist_price_label'].format(
+                price=item['price_fmt'], change=item['change_pct_fmt'])
         )
         if item.get('news_titles'):
-            part += '相关新闻：\n' + '\n'.join(f'  - {t}' for t in item['news_titles'][:3]) + '\n'
+            part += p['watchlist_news_label']
+            part += '\n'.join(f'  - {t}' for t in item['news_titles'][:3]) + '\n'
         parts.append(part)
 
-    if run_type == 'morning':
-        context_hint = (
-            '【当前时间：东京07:30 — 早报】美欧市场已收盘，日本市场即将开盘（09:00 JST）。\n'
-            '分析角度：美欧相关标的做隔夜收盘复盘；日本/亚洲相关标的做今日开盘前瞻。\n\n'
-        )
-    else:
-        context_hint = (
-            '【当前时间：东京22:00 — 晚报】日本市场已收盘（15:30 JST），欧洲盘中，美股即将开盘（22:30 JST）。\n'
-            '分析角度：日本相关标的做今日收盘复盘；美股/商品/FX做美股开盘前瞻；欧洲相关标的做盘中动态简析。\n\n'
-        )
-
-    ticker_list = json.dumps([i['ticker'] for i in items], ensure_ascii=False)
+    context_hint = p['watchlist_ctx_morning'] if run_type == 'morning' else p['watchlist_ctx_evening']
+    ticker_list  = json.dumps([i['ticker'] for i in items], ensure_ascii=False)
     prompt = (
         context_hint
-        + '以下是各标的的价格表现和相关新闻：\n'
+        + p['watchlist_intro']
         + ''.join(parts)
-        + '\n请对每个标的给出：\n'
-          '1. 走势简析（结合时间背景、价格和新闻，50字以内，中文）\n'
-          '2. 近期展望（bullish/bearish/neutral 三选一，并附一句中文理由）\n\n'
-          '严格输出JSON，顺序与输入一致：\n'
-          '{"analyses": [{"ticker": "...", "today": "...", "outlook": "bullish|bearish|neutral", "outlook_reason": "..."}]}\n'
-          f'不要输出任何其他内容。ticker顺序：{ticker_list}'
+        + p['watchlist_instruction'].format(ticker_list=ticker_list)
     )
     try:
         raw   = chat_with_gemini(prompt, models=models or WATCHLIST_MODEL_CHAIN)
@@ -267,15 +351,8 @@ def analyze_portfolio_risk(portfolio_data, news_entries, models=None):
     news_text = '\n'.join(f'{i+1}. {t}' for i, t in enumerate(titles))
 
     ticker_list = json.dumps([p['ticker'] for p in positions], ensure_ascii=False)
-    prompt = (
-        f'以下是我的持仓列表：\n{holdings_text}\n\n'
-        f'以下是今日财经新闻标题（共{len(titles)}条）：\n{news_text}\n\n'
-        f'请找出与持仓直接相关的新闻（行业政策、监管、竞争对手重大动态、宏观风险等），'
-        f'并生成简短的风险/机会提醒（30字以内中文）。\n'
-        f'只输出与持仓确实相关的条目，无相关则返回空数组。\n'
-        f'严格输出JSON，不要输出任何其他内容：\n'
-        f'{{"alerts": [{{"ticker": "持仓代码", "alert": "提醒内容"}}]}}\n'
-        f'合法的ticker值只能来自此列表：{ticker_list}'
+    prompt = PROMPTS[LANG]['risk'].format(
+        holdings=holdings_text, n=len(titles), news=news_text, ticker_list=ticker_list
     )
 
     try:
