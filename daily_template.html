@@ -231,6 +231,70 @@
     {% endfor %}
   </div>
 
+  {% if portfolio %}
+  <div class="section-title">
+    Portfolio · {{ portfolio.base_currency }}
+    <span class="{{ portfolio.total_css }}" style="font-size:0.75rem;font-weight:600;margin-left:10px;">
+      {{ portfolio.total_pnl_pct_fmt }} &nbsp;|&nbsp; {{ portfolio.total_value_fmt }} {{ portfolio.base_currency }}
+    </span>
+  </div>
+  <table style="width:100%;border-collapse:collapse;margin-bottom:16px;font-size:0.85rem;">
+    <thead>
+      <tr style="background:#f5f5f5;color:#666;font-size:0.75rem;">
+        <th style="padding:6px 8px;text-align:left;font-weight:600;">标的</th>
+        <th style="padding:6px 8px;text-align:right;font-weight:600;">持仓</th>
+        <th style="padding:6px 8px;text-align:right;font-weight:600;">现价</th>
+        <th style="padding:6px 8px;text-align:right;font-weight:600;">今日</th>
+        <th style="padding:6px 8px;text-align:right;font-weight:600;">盈亏</th>
+        <th style="padding:6px 8px;text-align:right;font-weight:600;">占比</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for p in portfolio.positions %}{% if not p.error %}
+      <tr style="border-bottom:1px solid #eee;">
+        <td style="padding:7px 8px;">
+          <div style="font-weight:600;">{{ p.name }}</div>
+          <div style="font-size:0.72rem;color:#aaa;">{{ p.ticker }}</div>
+        </td>
+        <td style="padding:7px 8px;text-align:right;color:#888;">{{ p.total_shares }}</td>
+        <td style="padding:7px 8px;text-align:right;">{{ p.price_fmt }}</td>
+        <td style="padding:7px 8px;text-align:right;" class="{{ p.day_css }}">{{ p.day_change_fmt }}</td>
+        <td style="padding:7px 8px;text-align:right;font-weight:600;" class="{{ p.pnl_css }}">{{ p.pnl_pct_fmt }}</td>
+        <td style="padding:7px 8px;text-align:right;color:#888;">{{ p.weight_fmt }}</td>
+      </tr>
+      {# Speculative: per-lot breakdown when more than one lot #}
+      {% if p.strategy == 'speculative' and p.lots | length > 1 %}
+      {% for lot in p.lots %}
+      <tr style="background:#fafbfc;font-size:0.75rem;color:#aaa;">
+        <td style="padding:2px 8px 2px 20px;" colspan="2">批次{{ loop.index }} @{{ lot.cost_fmt }} · {{ lot.date }}</td>
+        <td style="padding:2px 8px;text-align:right;">{{ lot.shares }}股</td>
+        <td colspan="3" style="padding:2px 8px;text-align:right;" class="{{ lot.pnl_css }}">{{ lot.pnl_pct_fmt }}</td>
+      </tr>
+      {% endfor %}
+      {% endif %}
+      {# AI advice row #}
+      {% if p.advice %}
+      <tr style="border-bottom:1px solid #eee;">
+        <td colspan="6" style="padding:4px 8px 8px;font-size:0.78rem;color:#555;line-height:1.5;">
+          <span class="card-outlook" style="margin-right:6px;
+            background:{% if p.action == 'add' %}#e6f4ea{% elif p.action == 'cut' %}#fce8e6{% else %}#f0f2f5{% endif %};
+            color:{% if p.action == 'add' %}#1a9e5a{% elif p.action == 'cut' %}#d32f2f{% else %}#555{% endif %};">
+            {% if p.action == 'add' %}加仓{% elif p.action == 'cut' %}减仓{% elif p.action == 'hold' %}持有{% else %}观察{% endif %}
+          </span>{{ p.advice }}
+        </td>
+      </tr>
+      {% endif %}
+      {% endif %}{% endfor %}
+      <tr style="border-top:2px solid #ddd;font-weight:700;">
+        <td colspan="3" style="padding:8px 8px;">合计</td>
+        <td></td>
+        <td style="padding:8px 8px;text-align:right;" class="{{ portfolio.total_css }}">{{ portfolio.total_pnl_pct_fmt }}</td>
+        <td style="padding:8px 8px;text-align:right;color:#888;">{{ portfolio.total_value_fmt }}</td>
+      </tr>
+    </tbody>
+  </table>
+  {% endif %}
+
   <div class="section-title">Watchlist</div>
   <div class="price-grid">
     {% for item in watchlist %}

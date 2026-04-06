@@ -5,6 +5,20 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [v0.5.0] - 2026-04-06
+
+### Added
+- Portfolio tracking feature (`src/portfolio.py`): per-lot P&L computation with FX conversion to a base currency
+- `portfolio.json` config file: supports multiple buy lots per position, `strategy` field (`speculative` / `dca`) to differentiate active trading vs systematic investing (e.g. NISA DCA)
+- Portfolio AI analysis (`analyze_portfolio` in `src/ai_client.py`): strategy-aware Gemini advice — speculative positions receive per-lot breakdown with hold/add/cut recommendation; DCA positions receive long-term fundamental outlook
+- Portfolio block in email and daily HTML: appears before Watchlist in the Price Dashboard; shows per-lot detail rows for speculative positions and AI advice badge per position
+- `portfolio.json` added to `.gitignore` to keep personal holdings private
+
+### 新增
+- Portfolio 持仓追踪：支持逐笔买入记录，按 strategy 区分投机（speculative）和定投（dca）策略；AI 针对两种策略给出差异化投资建议；邮件和网页均展示 Portfolio 板块
+
+---
+
 ## [v0.4.0] - 2026-04-06
 
 ### Changed

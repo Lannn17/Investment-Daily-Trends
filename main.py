@@ -23,7 +23,8 @@ from src.state import (
 )
 from src.price import fetch_price_list, fetch_price_item, _placeholder
 from src.hot_sectors import detect_hot_sectors, fetch_ticker_news
-from src.ai_client import analyze_watchlist
+from src.ai_client import analyze_watchlist, analyze_portfolio
+from src.portfolio import load_portfolio, compute_portfolio
 from src.news import process_news_section
 from src.output import build_render_context, render_daily_html, render_email_html, send_daily_email
 
@@ -63,6 +64,7 @@ if UITEST_MODE:
     watchlist_items     = _c['watchlist']
     market_news_entries = _c['market_news']
     japan_news_entries  = _c['japan_news']
+    portfolio_data      = _c.get('portfolio')
 
 else:
     print(f"[run] type={run_type}  time={now.strftime('%Y-%m-%d %H:%M:%S')} JST")
@@ -172,6 +174,25 @@ else:
             _apply_analysis(hot_markets)
             _apply_analysis(watchlist_items)
 
+    # ── Step 3.5: Portfolio ───────────────────────────────────────────────────
+    print("[portfolio] Computing positions...")
+    portfolio_cfg = load_portfolio()
+    _price_cache  = {
+        item['ticker']: item
+        for item in watchlist_items + indices_data + commodities_data + fx_data
+        if item.get('price') is not None
+    }
+    portfolio_data = compute_portfolio(portfolio_cfg, price_cache=_price_cache)
+
+    if portfolio_data and GEMINI_API_KEY and WATCHLIST_MODEL_CHAIN:
+        print("[ai] Analyzing portfolio positions...")
+        _portfolio_advice = analyze_portfolio(portfolio_data, run_type=run_type)
+        for pos in portfolio_data['positions']:
+            adv = _portfolio_advice.get(pos['ticker'])
+            if adv:
+                pos['action'] = adv.get('action', 'monitor')
+                pos['advice'] = adv.get('reason', '')
+
     # ── Step 4: News sections ─────────────────────────────────────────────────
     if WEEKEND_MODE:
         market_news_topic = '全球财经市场 · 周末要闻速览'
@@ -227,7 +248,7 @@ else:
             indices=indices_data, commodities=commodities_data, fx=fx_data,
             hist_dates=hist_dates, watchlist=watchlist_items,
             market_news=market_news_entries, japan_news=japan_news_entries,
-            hot_markets=hot_markets,
+            hot_markets=hot_markets, portfolio=portfolio_data,
         ))
 
 # ── Step 6: Render ────────────────────────────────────────────────────────────
@@ -236,6 +257,7 @@ ctx = build_render_context(
     indices_data, commodities_data, fx_data,
     hist_dates, watchlist_items,
     market_news_entries, japan_news_entries, hot_markets,
+    portfolio_data=portfolio_data,
 )
 render_daily_html(ctx)
 email_html = render_email_html(ctx)

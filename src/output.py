@@ -14,7 +14,8 @@ from .config import BASE, TEST_MODE, FULLTEST_MODE, UITEST_MODE
 def build_render_context(run_type, weekend_mode, now, edition,
                           indices_data, commodities_data, fx_data,
                           hist_dates, watchlist_items,
-                          market_news_entries, japan_news_entries, hot_markets):
+                          market_news_entries, japan_news_entries, hot_markets,
+                          portfolio_data=None):
     """Assemble Jinja2 template context dict."""
     if weekend_mode:
         s1_title = 'Daily Markets · Global News'
@@ -50,6 +51,7 @@ def build_render_context(run_type, weekend_mode, now, edition,
         news_section_1_sub=s1_sub,
         news_section_2_title=s2_title,
         news_section_2_sub=s2_sub,
+        portfolio=portfolio_data,
     )
 
 

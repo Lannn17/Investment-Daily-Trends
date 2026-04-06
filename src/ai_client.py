@@ -176,3 +176,65 @@ def analyze_watchlist(items, run_type='morning', models=None):
     except Exception as e:
         print(f"  analyze_watchlist failed: {e}")
     return {}
+
+
+# ── Portfolio analysis ────────────────────────────────────────────────────────
+def analyze_portfolio(portfolio_data, run_type='morning', models=None):
+    """
+    Single Gemini call to analyse portfolio positions and generate investment advice.
+    Differentiates between speculative (per-lot focus) and dca (long-term focus).
+    Returns dict keyed by ticker: {action, reason}.
+    """
+    if not portfolio_data:
+        return {}
+
+    positions = [p for p in portfolio_data.get('positions', []) if not p.get('error')]
+    if not positions:
+        return {}
+
+    parts = []
+    for pos in positions:
+        if pos['strategy'] == 'dca':
+            part = (
+                f"\n【{pos['ticker']}】{pos['name']} [策略：定投/NISA]\n"
+                f"总持仓：{pos['total_shares']}股，均价：{pos['avg_cost_fmt']} {pos['cost_ccy']}\n"
+                f"当前价：{pos['price_fmt']}，今日涨跌：{pos['day_change_fmt']}\n"
+                f"总盈亏：{pos['pnl_pct_fmt']}，组合占比：{pos['weight_fmt']}\n"
+            )
+        else:
+            part = (
+                f"\n【{pos['ticker']}】{pos['name']} [策略：投机/主动]\n"
+                f"当前价：{pos['price_fmt']}，今日涨跌：{pos['day_change_fmt']}\n"
+                f"各批次持仓：\n"
+            )
+            for i, lot in enumerate(pos['lots'], 1):
+                part += (
+                    f"  批次{i}：{lot['shares']}股 @{lot['cost_fmt']} {pos['cost_ccy']}"
+                    f"（{lot['date']}）盈亏 {lot['pnl_pct_fmt']}\n"
+                )
+            part += f"总盈亏：{pos['pnl_pct_fmt']}，组合占比：{pos['weight_fmt']}\n"
+        parts.append(part)
+
+    base_ccy = portfolio_data['base_currency']
+    prompt = (
+        f'以下是我的投资组合（基准货币：{base_ccy}），'
+        f'总资产：{portfolio_data["total_value_fmt"]} {base_ccy}，'
+        f'总盈亏：{portfolio_data["total_pnl_pct_fmt"]}。\n\n'
+        + ''.join(parts)
+        + '\n请对每个持仓给出投资建议，规则如下：\n'
+          '- dca（定投）类：重点分析长期基本面，判断是否适合继续定投，忽略短期波动\n'
+          '- speculative（投机）类：针对各批次盈亏状态，给出具体操作建议\n\n'
+          'action 只能从以下四个选一个：hold（持有）/ add（加仓）/ cut（减仓）/ monitor（观察）\n\n'
+          '严格输出JSON，不要输出任何其他内容：\n'
+          '{"advice": [{"ticker": "...", "action": "hold|add|cut|monitor", "reason": "...（50字以内中文）"}]}'
+    )
+
+    try:
+        raw   = chat_with_gemini(prompt, models=models or WATCHLIST_MODEL_CHAIN)
+        match = re.search(r'\{.*\}', raw, re.DOTALL)
+        if match:
+            advice = json.loads(match.group()).get('advice', [])
+            return {a['ticker']: a for a in advice if isinstance(a, dict)}
+    except Exception as e:
+        print(f"  analyze_portfolio failed: {e}")
+    return {}

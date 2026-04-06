@@ -71,6 +71,63 @@
       <div style="font-size:16px;font-weight:700;color:#0f3460;margin:12px 0 8px;padding-bottom:3px;border-bottom:1px solid #e0e4ea;">Foreign Exchange</div>
       {{ price_grid(fx) }}
 
+      {% if portfolio %}
+      <div style="font-size:16px;font-weight:700;color:#0f3460;margin:12px 0 4px;padding-bottom:3px;border-bottom:1px solid #e0e4ea;">
+        Portfolio · {{ portfolio.base_currency }}
+        <span style="font-size:13px;font-weight:600;margin-left:10px;color:{% if portfolio.total_css == 'up' %}#1a9e5a{% elif portfolio.total_css == 'down' %}#d32f2f{% else %}#888{% endif %};">
+          {{ portfolio.total_pnl_pct_fmt }} &nbsp;|&nbsp; {{ portfolio.total_value_fmt }} {{ portfolio.base_currency }}
+        </span>
+      </div>
+      <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin-bottom:12px;">
+        <tr style="background:#f5f5f5;font-size:11px;color:#666;border-bottom:1px solid #e0e4ea;">
+          <th style="padding:5px 6px;text-align:left;font-weight:600;">标的</th>
+          <th style="padding:5px 6px;text-align:right;font-weight:600;">持仓</th>
+          <th style="padding:5px 6px;text-align:right;font-weight:600;">现价</th>
+          <th style="padding:5px 6px;text-align:right;font-weight:600;">今日</th>
+          <th style="padding:5px 6px;text-align:right;font-weight:600;">盈亏</th>
+          <th style="padding:5px 6px;text-align:right;font-weight:600;">占比</th>
+        </tr>
+        {% for p in portfolio.positions %}{% if not p.error %}
+        <tr style="border-bottom:1px solid #f5f5f5;">
+          <td style="padding:6px 6px 3px;font-size:13px;font-weight:600;">{{ p.name }}<br><span style="font-size:10px;color:#aaa;font-weight:400;">{{ p.ticker }}</span></td>
+          <td style="padding:6px 6px 3px;text-align:right;font-size:12px;color:#888;">{{ p.total_shares }}</td>
+          <td style="padding:6px 6px 3px;text-align:right;font-size:13px;">{{ p.price_fmt }}</td>
+          <td style="padding:6px 6px 3px;text-align:right;font-size:13px;color:{% if p.day_css == 'up' %}#1a9e5a{% elif p.day_css == 'down' %}#d32f2f{% else %}#888{% endif %};">{{ p.day_change_fmt }}</td>
+          <td style="padding:6px 6px 3px;text-align:right;font-size:13px;font-weight:600;color:{% if p.pnl_css == 'up' %}#1a9e5a{% elif p.pnl_css == 'down' %}#d32f2f{% else %}#888{% endif %};">{{ p.pnl_pct_fmt }}</td>
+          <td style="padding:6px 6px 3px;text-align:right;font-size:12px;color:#888;">{{ p.weight_fmt }}</td>
+        </tr>
+        {# Speculative: per-lot breakdown when more than one lot #}
+        {% if p.strategy == 'speculative' and p.lots | length > 1 %}
+        {% for lot in p.lots %}
+        <tr style="background:#fafbfc;">
+          <td style="padding:1px 6px 3px 16px;font-size:11px;color:#bbb;" colspan="2">批次{{ loop.index }} @{{ lot.cost_fmt }} · {{ lot.date }}</td>
+          <td style="padding:1px 6px 3px;text-align:right;font-size:11px;color:#bbb;">{{ lot.shares }}股</td>
+          <td colspan="3" style="padding:1px 6px 3px;text-align:right;font-size:11px;color:{% if lot.pnl_css == 'up' %}#1a9e5a{% elif lot.pnl_css == 'down' %}#d32f2f{% else %}#bbb{% endif %};">{{ lot.pnl_pct_fmt }}</td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+        {# AI advice row #}
+        {% if p.advice %}
+        <tr style="border-bottom:1px solid #f5f5f5;">
+          <td colspan="6" style="padding:3px 6px 8px;font-size:12px;color:#555;line-height:1.5;">
+            <span style="display:inline-block;padding:1px 7px;border-radius:3px;font-size:10px;font-weight:700;margin-right:6px;
+              background:{% if p.action == 'add' %}#e6f4ea{% elif p.action == 'cut' %}#fce8e6{% else %}#f0f2f5{% endif %};
+              color:{% if p.action == 'add' %}#1a9e5a{% elif p.action == 'cut' %}#d32f2f{% else %}#555{% endif %};">
+              {% if p.action == 'add' %}加仓{% elif p.action == 'cut' %}减仓{% elif p.action == 'hold' %}持有{% else %}观察{% endif %}
+            </span>{{ p.advice }}
+          </td>
+        </tr>
+        {% endif %}
+        {% endif %}{% endfor %}
+        <tr style="border-top:2px solid #e0e4ea;font-weight:700;">
+          <td colspan="3" style="padding:7px 6px;font-size:13px;">合计</td>
+          <td></td>
+          <td style="padding:7px 6px;text-align:right;font-size:13px;color:{% if portfolio.total_css == 'up' %}#1a9e5a{% elif portfolio.total_css == 'down' %}#d32f2f{% else %}#888{% endif %};">{{ portfolio.total_pnl_pct_fmt }}</td>
+          <td style="padding:7px 6px;text-align:right;font-size:13px;color:#888;">{{ portfolio.total_value_fmt }}</td>
+        </tr>
+      </table>
+      {% endif %}
+
       <div style="font-size:16px;font-weight:700;color:#0f3460;margin:12px 0 8px;padding-bottom:3px;border-bottom:1px solid #e0e4ea;">Watchlist</div>
       {{ price_grid(watchlist) }}
     </td>
