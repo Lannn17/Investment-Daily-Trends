@@ -238,3 +238,62 @@ def analyze_portfolio(portfolio_data, run_type='morning', models=None):
     except Exception as e:
         print(f"  analyze_portfolio failed: {e}")
     return {}
+
+
+# ── Portfolio risk alerts ──────────────────────────────────────────────────────
+def analyze_portfolio_risk(portfolio_data, news_entries, models=None):
+    """
+    Cross-reference portfolio holdings with recent news to surface relevant alerts.
+    news_entries: combined list of market_news + japan_news entry objects (have .title).
+    Returns list of dicts: [{ticker, name, alert}] — only items with actual hits.
+    """
+    if not portfolio_data or not news_entries:
+        return []
+
+    positions = [p for p in portfolio_data.get('positions', []) if not p.get('error')]
+    if not positions:
+        return []
+
+    # Build holdings summary
+    holdings_lines = []
+    for pos in positions:
+        holdings_lines.append(f"  - {pos['ticker']} ({pos['name']})")
+    holdings_text = '\n'.join(holdings_lines)
+
+    # Collect news titles (cap at 20 to keep prompt short)
+    titles = [getattr(e, 'title', str(e)) for e in news_entries[:20]]
+    if not titles:
+        return []
+    news_text = '\n'.join(f'{i+1}. {t}' for i, t in enumerate(titles))
+
+    ticker_list = json.dumps([p['ticker'] for p in positions], ensure_ascii=False)
+    prompt = (
+        f'以下是我的持仓列表：\n{holdings_text}\n\n'
+        f'以下是今日财经新闻标题（共{len(titles)}条）：\n{news_text}\n\n'
+        f'请找出与持仓直接相关的新闻（行业政策、监管、竞争对手重大动态、宏观风险等），'
+        f'并生成简短的风险/机会提醒（30字以内中文）。\n'
+        f'只输出与持仓确实相关的条目，无相关则返回空数组。\n'
+        f'严格输出JSON，不要输出任何其他内容：\n'
+        f'{{"alerts": [{{"ticker": "持仓代码", "alert": "提醒内容"}}]}}\n'
+        f'合法的ticker值只能来自此列表：{ticker_list}'
+    )
+
+    try:
+        raw   = chat_with_gemini(prompt, models=models or WATCHLIST_MODEL_CHAIN)
+        match = re.search(r'\{.*\}', raw, re.DOTALL)
+        if match:
+            alerts = json.loads(match.group()).get('alerts', [])
+            valid_tickers = {p['ticker'] for p in positions}
+            result = []
+            for a in alerts:
+                if not isinstance(a, dict):
+                    continue
+                ticker = a.get('ticker', '')
+                alert  = a.get('alert', '').strip()
+                if ticker in valid_tickers and alert:
+                    name = next((p['name'] for p in positions if p['ticker'] == ticker), ticker)
+                    result.append({'ticker': ticker, 'name': name, 'alert': alert})
+            return result
+    except Exception as e:
+        print(f"  analyze_portfolio_risk failed: {e}")
+    return []

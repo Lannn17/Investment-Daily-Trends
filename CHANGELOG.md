@@ -5,6 +5,27 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [v0.6.0] - 2026-04-06
+
+### Added
+- FX breakdown columns in portfolio table: Stock% (price change in native currency) / FX% (currency effect) / JPY計% (total return in base currency), replacing the single "今日" column
+- Portfolio day return: back-calculated from `price / (1 + day_change_pct)` and previous-day FX rate; displayed in summary bar and totals row
+- Benchmark alpha comparison (`compute_benchmarks` in `src/portfolio.py`): compares portfolio daily return vs configurable index benchmarks; alpha shown in summary bar and per-benchmark rows below totals
+- `portfolio.json`: added `"benchmarks"` array (e.g. `["^GSPC", "^N225"]`) and optional `"account"` field per position
+- FX rate summary row: displays current rates and daily change for each foreign currency used in the portfolio
+- Risk alerts (`analyze_portfolio_risk` in `src/ai_client.py`): cross-references holdings against today's top news titles; surfaces relevant alerts as a warning block in both HTML and email templates
+- Multi-account grouping: positions are grouped by `account` field using Jinja2 `groupby`; account header row shown automatically when any position has a non-empty account value; backward compatible
+
+### Changed
+- `src/portfolio.py`: `fetch_fx_pairs()` now fetches 5-day history to compute previous-day FX rate needed for day return; `compute_portfolio()` updated with all new fields; `compute_benchmarks()` added
+- `main.py`: added Step 4.5 (portfolio risk alerts); added `compute_benchmarks` call after `compute_portfolio`
+- Portfolio table colspan updated 6→8 for per-lot rows and AI advice rows
+
+### 新增
+- Portfolio 增强：FX三列拆分（Stock%/FX%/JPY計%）、组合今日收益率、Benchmark Alpha对比（vs S&P500/日经）、FX汇率摘要行、持仓风险提醒（AI关联新闻×持仓）、多账户分组显示
+
+---
+
 ## [v0.5.0] - 2026-04-06
 
 ### Added

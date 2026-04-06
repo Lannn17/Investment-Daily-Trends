@@ -23,8 +23,8 @@ from src.state import (
 )
 from src.price import fetch_price_list, fetch_price_item, _placeholder
 from src.hot_sectors import detect_hot_sectors, fetch_ticker_news
-from src.ai_client import analyze_watchlist, analyze_portfolio
-from src.portfolio import load_portfolio, compute_portfolio
+from src.ai_client import analyze_watchlist, analyze_portfolio, analyze_portfolio_risk
+from src.portfolio import load_portfolio, compute_portfolio, compute_benchmarks
 from src.news import process_news_section
 from src.output import build_render_context, render_daily_html, render_email_html, send_daily_email
 
@@ -184,6 +184,8 @@ else:
     }
     portfolio_data = compute_portfolio(portfolio_cfg, price_cache=_price_cache)
 
+    compute_benchmarks(portfolio_data, indices_data)
+
     if portfolio_data and GEMINI_API_KEY and WATCHLIST_MODEL_CHAIN:
         print("[ai] Analyzing portfolio positions...")
         _portfolio_advice = analyze_portfolio(portfolio_data, run_type=run_type)
@@ -225,6 +227,15 @@ else:
         current_run_links.add(e.link)
     if run_type == 'morning' and jn_bench:
         morning_bench_data['japan_news'] = jn_bench
+
+    # ── Step 4.5: Portfolio risk alerts ───────────────────────────────────────
+    if portfolio_data and GEMINI_API_KEY and WATCHLIST_MODEL_CHAIN:
+        print("[ai] Analyzing portfolio risk alerts...")
+        _all_news = market_news_entries + japan_news_entries
+        _risk_alerts = analyze_portfolio_risk(portfolio_data, _all_news)
+        portfolio_data['risk_alerts'] = _risk_alerts
+        if _risk_alerts:
+            print(f"  [risk] {len(_risk_alerts)} alert(s): {[a['ticker'] for a in _risk_alerts]}")
 
     # ── Step 5: Save state ────────────────────────────────────────────────────
     if FULLTEST_MODE:
