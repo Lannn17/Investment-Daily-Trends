@@ -5,6 +5,27 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [v0.7.0] - 2026-04-07
+
+### Added
+- Demo mode (`--demo` CLI flag): runs with `demo/watchlist.json` and `demo/portfolio.json`, outputs to `demo/output/`, skips email send
+- Japanese language output (`LANG=ja`): all AI prompts (score, translate, summary, watchlist analysis, portfolio risk alerts) now support `zh`/`ja` switching via `PROMPTS[LANG]` dict in `src/ai_client.py`
+- `demo/watchlist.json`: 9-ticker demo watchlist (MSFT/GOOGL/AMZN/TSM/BRK-B/LMT/7203.T/9984.T/INDA)
+- `demo/portfolio.json`: 6-position demo portfolio (NVDA/AAPL/VOO/7203.T/9984.T/IAU, 2 accounts)
+- `.github/workflows/demo.yml`: GitHub Actions workflow for demo — manual trigger + UTC 22:30 schedule, deploys to GitHub Pages
+
+### Changed
+- `src/config.py`: added `--demo` argument, `DEMO_MODE`/`LANG` globals, `BASE` override, `_data_path()` helper; `load_watchlist()`/`load_sector_universe()` use `_data_path()`
+- `src/portfolio.py`: `load_portfolio()` uses `_data_path('portfolio.json')`
+- `main.py`: imports `DEMO_MODE`/`LANG`; news topic strings switch via `_NEWS_TOPICS[LANG]`; email skipped in demo mode
+- Fixed `UnicodeEncodeError` on Windows when printing em dash in demo mode skip message
+
+### 新增
+- デモモード追加（`--demo`）：個人データなしでデモ用 JSON を使用、出力を `demo/output/` に書き出し、メール送信スキップ
+- 日本語AI出力対応（`LANG=ja`）：スコアリング・翻訳・要約・ウォッチリスト分析・リスクアラートの全プロンプトを zh/ja 切替に対応
+
+---
+
 ## [v0.6.0] - 2026-04-06
 
 ### Added

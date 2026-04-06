@@ -294,7 +294,7 @@ email_html = render_email_html(ctx)
 
 # ── Step 7: Send email ────────────────────────────────────────────────────────
 if DEMO_MODE:
-    print(f"[email] Skipped — demo mode, view output at {BASE}daily.html")
+    print(f"[email] Skipped - demo mode, view output at {BASE}daily.html")
 elif FORCE_EMAIL or not (TEST_MODE or FULLTEST_MODE or UITEST_MODE):
     send_daily_email(email_html, edition, now)
 else:

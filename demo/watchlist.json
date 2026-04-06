@@ -1,0 +1,19 @@
+{
+  "tickers": [
+    "MSFT", "GOOGL", "AMZN", "TSM",
+    "BRK-B", "LMT",
+    "7203.T", "9984.T",
+    "INDA"
+  ],
+  "names": {
+    "MSFT":   "Microsoft",
+    "GOOGL":  "Alphabet",
+    "AMZN":   "Amazon",
+    "TSM":    "Taiwan Semiconductor",
+    "BRK-B":  "Berkshire Hathaway B",
+    "LMT":    "Lockheed Martin",
+    "7203.T": "Toyota Motor",
+    "9984.T": "SoftBank Group",
+    "INDA":   "iShares MSCI India ETF"
+  }
+}

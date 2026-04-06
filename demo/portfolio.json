@@ -1,0 +1,69 @@
+{
+  "base_currency": "JPY",
+  "benchmarks": ["^GSPC", "^N225"],
+  "positions": [
+    {
+      "ticker": "NVDA",
+      "account": "Demo Brokerage",
+      "type": "stock",
+      "strategy": "speculative",
+      "cost_currency": "USD",
+      "lots": [
+        { "shares": 15, "cost": 95.00,  "date": "2024-02-10" },
+        { "shares": 10, "cost": 125.00, "date": "2024-07-15" }
+      ]
+    },
+    {
+      "ticker": "AAPL",
+      "account": "Demo Brokerage",
+      "type": "stock",
+      "strategy": "speculative",
+      "cost_currency": "USD",
+      "lots": [
+        { "shares": 20, "cost": 182.00, "date": "2024-03-01" }
+      ]
+    },
+    {
+      "ticker": "VOO",
+      "account": "Demo NISA",
+      "type": "stock",
+      "strategy": "dca",
+      "cost_currency": "USD",
+      "lots": [
+        { "shares": 5, "cost": 480.00, "date": "2024-01-10" },
+        { "shares": 5, "cost": 502.00, "date": "2024-04-10" },
+        { "shares": 5, "cost": 515.00, "date": "2024-07-10" }
+      ]
+    },
+    {
+      "ticker": "7203.T",
+      "account": "Demo NISA",
+      "type": "stock",
+      "strategy": "dca",
+      "cost_currency": "JPY",
+      "lots": [
+        { "shares": 100, "cost": 2650, "date": "2024-01-15" }
+      ]
+    },
+    {
+      "ticker": "9984.T",
+      "account": "Demo Brokerage",
+      "type": "stock",
+      "strategy": "speculative",
+      "cost_currency": "JPY",
+      "lots": [
+        { "shares": 50, "cost": 7800, "date": "2024-05-20" }
+      ]
+    },
+    {
+      "ticker": "IAU",
+      "account": "Demo NISA",
+      "type": "stock",
+      "strategy": "dca",
+      "cost_currency": "USD",
+      "lots": [
+        { "shares": 80, "cost": 44.50, "date": "2024-06-01" }
+      ]
+    }
+  ]
+}

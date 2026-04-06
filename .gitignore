@@ -2,6 +2,6 @@
 __pycache__/
 *.pyc
 docs/render_cache.json
-portfolio.json
-watchlist.json
+/portfolio.json
+/watchlist.json
 demo/output/
