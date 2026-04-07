@@ -71,6 +71,31 @@ PROMPTS = {
             '{{"alerts": [{{"ticker": "持仓代码", "alert": "提醒内容"}}]}}\n'
             '合法的ticker值只能来自此列表：{ticker_list}'
         ),
+        'portfolio_header': (
+            '以下是我的投资组合（基准货币：{base_ccy}），'
+            '总资产：{total_value} {base_ccy}，总盈亏：{total_pnl_pct}。\n\n'
+        ),
+        'portfolio_dca': (
+            '\n【{ticker}】{name} [策略：定投/NISA]\n'
+            '总持仓：{total_shares}股，均价：{avg_cost} {cost_ccy}\n'
+            '当前价：{price}，今日涨跌：{day_change}\n'
+            '总盈亏：{pnl_pct}，组合占比：{weight}\n'
+        ),
+        'portfolio_spec_header': (
+            '\n【{ticker}】{name} [策略：投机/主动]\n'
+            '当前价：{price}，今日涨跌：{day_change}\n'
+            '各批次持仓：\n'
+        ),
+        'portfolio_lot': '  批次{i}：{shares}股 @{cost} {cost_ccy}（{date}）盈亏 {pnl_pct}\n',
+        'portfolio_spec_tail': '总盈亏：{pnl_pct}，组合占比：{weight}\n',
+        'portfolio_instruction': (
+            '\n请对每个持仓给出投资建议，规则如下：\n'
+            '- dca（定投）类：重点分析长期基本面，判断是否适合继续定投，忽略短期波动\n'
+            '- speculative（投机）类：针对各批次盈亏状态，给出具体操作建议\n\n'
+            'action 只能从以下四个选一个：hold（持有）/ add（加仓）/ cut（减仓）/ monitor（观察）\n\n'
+            '严格输出JSON，不要输出任何其他内容：\n'
+            '{{"advice": [{{"ticker": "...", "action": "hold|add|cut|monitor", "reason": "...（50字以内中文）"}}]}}'
+        ),
     },
     'ja': {
         'score_hint': '（セクターテーマ：{topic}）',
@@ -123,6 +148,31 @@ PROMPTS = {
             '厳密にJSONのみ出力：\n'
             '{{"alerts": [{{"ticker": "保有コード", "alert": "警告内容"}}]}}\n'
             '有効なtickerはこのリストのみ：{ticker_list}'
+        ),
+        'portfolio_header': (
+            '以下は私の投資ポートフォリオ（基準通貨：{base_ccy}）、'
+            '総資産：{total_value} {base_ccy}、総損益：{total_pnl_pct}。\n\n'
+        ),
+        'portfolio_dca': (
+            '\n【{ticker}】{name} [戦略：積立/NISA]\n'
+            '総保有：{total_shares}株、平均単価：{avg_cost} {cost_ccy}\n'
+            '現在値：{price}、本日騰落：{day_change}\n'
+            '総損益：{pnl_pct}、ポートフォリオ比率：{weight}\n'
+        ),
+        'portfolio_spec_header': (
+            '\n【{ticker}】{name} [戦略：投機/アクティブ]\n'
+            '現在値：{price}、本日騰落：{day_change}\n'
+            '各ロット保有：\n'
+        ),
+        'portfolio_lot': '  ロット{i}：{shares}株 @{cost} {cost_ccy}（{date}）損益 {pnl_pct}\n',
+        'portfolio_spec_tail': '総損益：{pnl_pct}、ポートフォリオ比率：{weight}\n',
+        'portfolio_instruction': (
+            '\n各保有銘柄について投資アドバイスを提供してください。ルール：\n'
+            '- dca（積立）類：長期ファンダメンタルズを重視し、積立継続が適切か判断、短期変動は無視\n'
+            '- speculative（投機）類：各ロットの損益状況を踏まえて具体的な操作アドバイスを提示\n\n'
+            'action は次の4つから一つ選ぶこと：hold（保有）/ add（買増し）/ cut（売減し）/ monitor（観察）\n\n'
+            '厳密にJSONのみ出力：\n'
+            '{{"advice": [{{"ticker": "...", "action": "hold|add|cut|monitor", "reason": "...（50字以内の日本語）"}}]}}'
         ),
     },
 }
@@ -276,41 +326,41 @@ def analyze_portfolio(portfolio_data, run_type='morning', models=None):
     if not positions:
         return {}
 
+    p     = PROMPTS[LANG]
     parts = []
     for pos in positions:
         if pos['strategy'] == 'dca':
-            part = (
-                f"\n【{pos['ticker']}】{pos['name']} [策略：定投/NISA]\n"
-                f"总持仓：{pos['total_shares']}股，均价：{pos['avg_cost_fmt']} {pos['cost_ccy']}\n"
-                f"当前价：{pos['price_fmt']}，今日涨跌：{pos['day_change_fmt']}\n"
-                f"总盈亏：{pos['pnl_pct_fmt']}，组合占比：{pos['weight_fmt']}\n"
+            part = p['portfolio_dca'].format(
+                ticker=pos['ticker'], name=pos['name'],
+                total_shares=pos['total_shares'], avg_cost=pos['avg_cost_fmt'],
+                cost_ccy=pos['cost_ccy'], price=pos['price_fmt'],
+                day_change=pos['day_change_fmt'], pnl_pct=pos['pnl_pct_fmt'],
+                weight=pos['weight_fmt'],
             )
         else:
-            part = (
-                f"\n【{pos['ticker']}】{pos['name']} [策略：投机/主动]\n"
-                f"当前价：{pos['price_fmt']}，今日涨跌：{pos['day_change_fmt']}\n"
-                f"各批次持仓：\n"
+            part = p['portfolio_spec_header'].format(
+                ticker=pos['ticker'], name=pos['name'],
+                price=pos['price_fmt'], day_change=pos['day_change_fmt'],
             )
             for i, lot in enumerate(pos['lots'], 1):
-                part += (
-                    f"  批次{i}：{lot['shares']}股 @{lot['cost_fmt']} {pos['cost_ccy']}"
-                    f"（{lot['date']}）盈亏 {lot['pnl_pct_fmt']}\n"
+                part += p['portfolio_lot'].format(
+                    i=i, shares=lot['shares'], cost=lot['cost_fmt'],
+                    cost_ccy=pos['cost_ccy'], date=lot['date'], pnl_pct=lot['pnl_pct_fmt'],
                 )
-            part += f"总盈亏：{pos['pnl_pct_fmt']}，组合占比：{pos['weight_fmt']}\n"
+            part += p['portfolio_spec_tail'].format(
+                pnl_pct=pos['pnl_pct_fmt'], weight=pos['weight_fmt'],
+            )
         parts.append(part)
 
     base_ccy = portfolio_data['base_currency']
     prompt = (
-        f'以下是我的投资组合（基准货币：{base_ccy}），'
-        f'总资产：{portfolio_data["total_value_fmt"]} {base_ccy}，'
-        f'总盈亏：{portfolio_data["total_pnl_pct_fmt"]}。\n\n'
+        p['portfolio_header'].format(
+            base_ccy=base_ccy,
+            total_value=portfolio_data['total_value_fmt'],
+            total_pnl_pct=portfolio_data['total_pnl_pct_fmt'],
+        )
         + ''.join(parts)
-        + '\n请对每个持仓给出投资建议，规则如下：\n'
-          '- dca（定投）类：重点分析长期基本面，判断是否适合继续定投，忽略短期波动\n'
-          '- speculative（投机）类：针对各批次盈亏状态，给出具体操作建议\n\n'
-          'action 只能从以下四个选一个：hold（持有）/ add（加仓）/ cut（减仓）/ monitor（观察）\n\n'
-          '严格输出JSON，不要输出任何其他内容：\n'
-          '{"advice": [{"ticker": "...", "action": "hold|add|cut|monitor", "reason": "...（50字以内中文）"}]}'
+        + p['portfolio_instruction']
     )
 
     try:

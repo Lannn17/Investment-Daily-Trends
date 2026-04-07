@@ -236,9 +236,9 @@
   <div class="section-title">
     Portfolio · {{ portfolio.base_currency }}
     <span style="font-size:0.75rem;font-weight:600;margin-left:10px;">
-      今日 <span class="{{ portfolio.day_return_css }}">{{ portfolio.day_return_fmt }}</span>
+      {{ pf_labels.today }} <span class="{{ portfolio.day_return_css }}">{{ portfolio.day_return_fmt }}</span>
       &nbsp;|&nbsp;
-      总计 <span class="{{ portfolio.total_css }}">{{ portfolio.total_pnl_pct_fmt }}</span>
+      {{ pf_labels.total }} <span class="{{ portfolio.total_css }}">{{ portfolio.total_pnl_pct_fmt }}</span>
       &nbsp;·&nbsp; {{ portfolio.total_value_fmt }} {{ portfolio.base_currency }}
       {% for b in portfolio.benchmarks %}
       &nbsp;|&nbsp; vs {{ b.label }} <span class="{{ b.alpha_css }}">α {{ b.alpha_fmt }}</span>
@@ -249,14 +249,14 @@
   <table style="width:100%;border-collapse:collapse;margin-bottom:8px;font-size:0.85rem;">
     <thead>
       <tr style="background:#f5f5f5;color:#666;font-size:0.75rem;">
-        <th style="padding:6px 8px;text-align:left;font-weight:600;">标的</th>
-        <th style="padding:6px 8px;text-align:right;font-weight:600;">持仓</th>
-        <th style="padding:6px 8px;text-align:right;font-weight:600;">现价</th>
+        <th style="padding:6px 8px;text-align:left;font-weight:600;">{{ pf_labels.col_ticker }}</th>
+        <th style="padding:6px 8px;text-align:right;font-weight:600;">{{ pf_labels.col_shares }}</th>
+        <th style="padding:6px 8px;text-align:right;font-weight:600;">{{ pf_labels.col_price }}</th>
         <th style="padding:6px 8px;text-align:right;font-weight:600;">Stock%</th>
         <th style="padding:6px 8px;text-align:right;font-weight:600;">FX%</th>
         <th style="padding:6px 8px;text-align:right;font-weight:600;">{{ portfolio.base_currency }}%</th>
-        <th style="padding:6px 8px;text-align:right;font-weight:600;">盈亏</th>
-        <th style="padding:6px 8px;text-align:right;font-weight:600;">占比</th>
+        <th style="padding:6px 8px;text-align:right;font-weight:600;">{{ pf_labels.col_pnl }}</th>
+        <th style="padding:6px 8px;text-align:right;font-weight:600;">{{ pf_labels.col_weight }}</th>
       </tr>
     </thead>
     <tbody>
@@ -276,7 +276,7 @@
           <div style="font-size:0.72rem;color:#aaa;">{{ p.ticker }}</div>
         </td>
         <td style="padding:7px 8px;text-align:right;color:#888;">
-          <div>{{ p.total_shares }}股</div>
+          <div>{{ p.total_shares }}{{ pf_labels.shares_unit }}</div>
           <div style="font-size:0.7rem;color:#bbb;">@{{ p.avg_cost_fmt }} {{ p.cost_ccy }}</div>
         </td>
         <td style="padding:7px 8px;text-align:right;">{{ p.price_fmt }}</td>
@@ -290,8 +290,8 @@
       {% if p.strategy == 'speculative' and p.lots | length > 1 %}
       {% for lot in p.lots %}
       <tr style="background:#fafbfc;font-size:0.75rem;color:#aaa;">
-        <td style="padding:2px 8px 2px 20px;" colspan="2">批次{{ loop.index }} @{{ lot.cost_fmt }} · {{ lot.date }}</td>
-        <td style="padding:2px 8px;text-align:right;">{{ lot.shares }}股</td>
+        <td style="padding:2px 8px 2px 20px;" colspan="2">{{ pf_labels.lot_prefix }}{{ loop.index }} @{{ lot.cost_fmt }} · {{ lot.date }}</td>
+        <td style="padding:2px 8px;text-align:right;">{{ lot.shares }}{{ pf_labels.shares_unit }}</td>
         <td colspan="5" style="padding:2px 8px;text-align:right;" class="{{ lot.pnl_css }}">{{ lot.pnl_pct_fmt }}</td>
       </tr>
       {% endfor %}
@@ -303,7 +303,7 @@
           <span class="card-outlook" style="margin-right:6px;
             background:{% if p.action == 'add' %}#e6f4ea{% elif p.action == 'cut' %}#fce8e6{% else %}#f0f2f5{% endif %};
             color:{% if p.action == 'add' %}#1a9e5a{% elif p.action == 'cut' %}#d32f2f{% else %}#555{% endif %};">
-            {% if p.action == 'add' %}加仓{% elif p.action == 'cut' %}减仓{% elif p.action == 'hold' %}持有{% else %}观察{% endif %}
+            {% if p.action == 'add' %}{{ pf_labels.action_add }}{% elif p.action == 'cut' %}{{ pf_labels.action_cut }}{% elif p.action == 'hold' %}{{ pf_labels.action_hold }}{% else %}{{ pf_labels.action_watch }}{% endif %}
           </span>{{ p.advice }}
         </td>
       </tr>
@@ -312,7 +312,7 @@
       {% endfor %}
       {# Totals row #}
       <tr style="border-top:2px solid #ddd;font-weight:700;">
-        <td colspan="4" style="padding:8px 8px;">合计</td>
+        <td colspan="4" style="padding:8px 8px;">{{ pf_labels.totals_row }}</td>
         <td></td>
         <td style="padding:8px 8px;text-align:right;" class="{{ portfolio.day_return_css }}">{{ portfolio.day_return_fmt }}</td>
         <td style="padding:8px 8px;text-align:right;" class="{{ portfolio.total_css }}">{{ portfolio.total_pnl_pct_fmt }}</td>
@@ -332,7 +332,7 @@
   {# ── FX Rate Summary ── #}
   {% if portfolio.fx_rates %}
   <div style="font-size:0.75rem;color:#888;margin-bottom:16px;padding:4px 0;">
-    FX汇率：
+    {{ pf_labels.fx_label }}
     {% for ccy, fx in portfolio.fx_rates.items() %}
     <span style="margin-right:12px;">
       {{ ccy }}/{{ portfolio.base_currency }} {{ fx.rate_fmt }}
@@ -344,7 +344,7 @@
   {# ── Risk Alerts ── #}
   {% if portfolio.risk_alerts %}
   <div style="background:#fff8e1;border-left:3px solid #f9a825;padding:8px 12px;margin-bottom:16px;font-size:0.8rem;">
-    <div style="font-weight:700;color:#e65100;margin-bottom:4px;">⚠ 持仓风险提醒</div>
+    <div style="font-weight:700;color:#e65100;margin-bottom:4px;">{{ pf_labels.risk_title }}</div>
     {% for alert in portfolio.risk_alerts %}
     <div style="padding:2px 0;color:#555;">
       <span style="font-weight:600;color:#333;">{{ alert.ticker }}</span>

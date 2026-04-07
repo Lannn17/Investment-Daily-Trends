@@ -7,7 +7,46 @@ from email.mime.text import MIMEText
 
 from jinja2 import Template
 
-from .config import BASE, TEST_MODE, FULLTEST_MODE, UITEST_MODE
+from .config import BASE, TEST_MODE, FULLTEST_MODE, UITEST_MODE, LANG
+
+_PORTFOLIO_LABELS = {
+    'zh': {
+        'today':        '今日',
+        'total':        '总计',
+        'col_ticker':   '标的',
+        'col_shares':   '持仓',
+        'col_price':    '现价',
+        'col_pnl':      '盈亏',
+        'col_weight':   '占比',
+        'shares_unit':  '股',
+        'lot_prefix':   '批次',
+        'action_add':   '加仓',
+        'action_cut':   '减仓',
+        'action_hold':  '持有',
+        'action_watch': '观察',
+        'totals_row':   '合计',
+        'fx_label':     'FX汇率：',
+        'risk_title':   '⚠ 持仓风险提醒',
+    },
+    'ja': {
+        'today':        '本日',
+        'total':        '合計',
+        'col_ticker':   '銘柄',
+        'col_shares':   '保有数',
+        'col_price':    '現在値',
+        'col_pnl':      '損益',
+        'col_weight':   '比率',
+        'shares_unit':  '株',
+        'lot_prefix':   'ロット',
+        'action_add':   '買増し',
+        'action_cut':   '売減し',
+        'action_hold':  '保有',
+        'action_watch': '観察',
+        'totals_row':   '合計',
+        'fx_label':     '為替レート：',
+        'risk_title':   '⚠ ポジションリスク警告',
+    },
+}
 
 
 # ── Render context ────────────────────────────────────────────────────────────
@@ -52,6 +91,7 @@ def build_render_context(run_type, weekend_mode, now, edition,
         news_section_2_title=s2_title,
         news_section_2_sub=s2_sub,
         portfolio=portfolio_data,
+        pf_labels=_PORTFOLIO_LABELS.get(LANG, _PORTFOLIO_LABELS['zh']),
     )
 
 

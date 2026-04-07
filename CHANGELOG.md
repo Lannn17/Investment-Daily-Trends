@@ -5,6 +5,18 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [v0.7.1] - 2026-04-07
+
+### Fixed
+- Portfolio module UI labels now language-aware: Chinese for production email, Japanese for demo mode
+- `analyze_portfolio()` was hardcoded in Chinese; now uses `PROMPTS[LANG]` like all other AI functions
+- Added `_PORTFOLIO_LABELS` dict to `src/output.py` and passed as `pf_labels` to Jinja2 template
+- `daily_template.html` portfolio section now uses template variables instead of hardcoded text
+
+中文摘要：修复了 Portfolio 模块在 Demo 模式下 UI 标签和 AI 分析仍显示中文的问题，通过语言变量隔离实现中日双语切换。
+
+---
+
 ## [v0.7.0] - 2026-04-07
 
 ### Added

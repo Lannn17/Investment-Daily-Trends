@@ -1,6 +1,6 @@
 # CLAUDE.md — Project Memory
 
-Current version: v0.7.0
+Current version: v0.7.1
 
 ---
 
