@@ -37,6 +37,9 @@ jobs:
           path: demo/output/daily.html
           retention-days: 30
 
+      - name: Create index.html for GitHub Pages
+        run: cp demo/output/daily.html demo/output/index.html
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
