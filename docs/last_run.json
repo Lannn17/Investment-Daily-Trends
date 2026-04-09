@@ -1,22 +1,22 @@
 {
   "links": [
-    "http://www3.nhk.or.jp/news/html/20260409/k10015095871000.html",
-    "http://www3.nhk.or.jp/news/html/20260408/k10015095341000.html",
-    "https://finance.yahoo.com/economy/article/imf-head-says-global-growth-outlook-is-lower-due-to-war-in-iran-142300705.html",
-    "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-inflation-data-coreweave-crwv-stock/?src=A00220&yptr=yahoo",
-    "https://www.marketwatch.com/story/the-s-p-500-smashed-back-above-2-key-moving-averages-in-a-rare-display-of-strength-heres-what-history-shows-happens-next-7141e5fe?mod=mw_rss_topstories",
-    "http://www3.nhk.or.jp/news/html/20260409/k10015095581000.html",
-    "https://www.cnbc.com/2026/04/08/ceasefire-iran-war-lebanon.html",
-    "https://finance.yahoo.com/sectors/technology/article/amazon-ceo-jassy-says-company-could-sell-ai-chips-raising-stakes-for-nvidia-amd-142835117.html"
+    "http://www3.nhk.or.jp/news/html/20260409/k10015096061000.html",
+    "http://www3.nhk.or.jp/news/html/20260409/k10015095441000.html",
+    "https://www.cnbc.com/2026/04/09/iran-war-oil-strait-hormuz-tanker-ship-uae.html",
+    "http://www3.nhk.or.jp/news/html/20260409/k10015096181000.html",
+    "https://www.marketwatch.com/story/netflix-big-banks-face-a-moment-of-truth-as-the-iran-cease-fire-rally-meets-earnings-season-35324a21?mod=mw_rss_topstories",
+    "https://www.cnbc.com/2026/04/09/iran-war-oil-saudi-arabia-east-west-pipeline.html",
+    "https://www.cnbc.com/2026/04/09/core-inflation-was-3percent-in-february-as-expected-key-fed-gauge-shows.html",
+    "https://www.cnbc.com/2026/04/09/oil-prices-today-wti-brent-iran-accuse-us-of-ceasefire-breach.html"
   ],
   "fingerprints": [
-    "今日股市：受停火协议脆弱及通胀数据升温影响，道琼斯指数轻微下跌；石油股反弹（实时报道） stock market today: dow drops mildly on fragile ceasefire, hot inflation data; oil stocks rebound (live coverage)",
-    "amazon首席执行官jassy（贾西）表示公司可能销售ai芯片，加剧与nvidia及amd的竞争 amazon ceo jassy says company could sell ai chips, raising stakes for nvidia, amd",
-    "imf总裁表示受伊朗战争影响，全球经济增长前景走低 imf head says global growth outlook is lower due to war in iran",
-    "s&p 500指数罕见走强，强势突破两条关键移动平均线。历史数据揭示后续走势 s&p 500 smashes back above two key moving averages, in a rare display of strength. here’s what history shows happens next.",
-    "伊朗议会议长说，美国已违反停火协议 the two-week ceasefire agreement between the u.s. and iran appeared at risk of unraveling less than a day after it was announced.",
-    "日元汇率下跌，受停火协议前景不明影响，出现抛售日元买入美元的操作 円相場 値下がり 停戦合意先行き不透明で円売りドル買いの動き",
-    "股价下跌，投资者对美国与伊朗能否维持停火感到不安 株価 値下がり アメリカとイラン停戦維持に投資家間で不透明感",
-    "ny dow一度大幅上涨超过1400美元，受美伊达成两周停火协议提振 8日のニューヨーク株式市場では取り引き開始直後から買い注文が広がり、ダウ平均株価は前日の終値と比べて一時、1400ドルを超える大幅な値上がりとなっています。アメリカとイランが2週間の停戦で合意し、原油の先物価格が急激に下落したことで、世界経済が減速するとの懸念がひとまず和らいだ形です。"
+    "伊朗袭击沙特关键输油管道及生产设施，导致该国石油产量大减 the damage to saudi infrastructure will only compound the disruption to global oil supplies trigged by iran's attacks on tankers in the strait of hormuz.",
+    "阿联酋石油公司首席执行官表示，停火后伊朗控制了进出权限，霍尔木兹海峡尚未开放 sultan ahmed al jaber demanded a full reopening of the strait, warning that the oil supply disruption will increase if iran maintains control of the passage.",
+    "在以色列同意与黎巴嫩谈判后，油价涨势减弱 oil prices were volatile thursday as the u.s.-iran ceasefire agreement remained fragile.",
+    "美联储关键指标显示，在美国面临与伊朗开战之际，通胀率仍维持在3%的水平 the gauge released thursday offers the federal reserve a snapshot of conditions leading into the iran war.",
+    "随着伊朗停火带来的涨势遇上财报季，netflix及各大银行面临关键考验 “sawtooth” volatility pattern in options prices suggests a strong postearnings move for netflix.",
+    "【今日财经早报 4月9日（周四）】原油的稳定供应与价格成为焦点 nhkニュース「おはよう日本」で平日朝に放送している経済ニュースコーナー「おはbiz」。最新のビジネストレンドや働き方、お役立ちサービスやスタートアップ企業の情報など、ギュギュっとコンパクトにお届けします。",
+    "纽约原油市场 wti期货价格上涨，一度达到每桶102美元区间 9日のニューヨーク原油市場では国際的な取り引きの指標となるwtiの先物価格が上昇し、一時、1バレル＝100ドルの大台を再び超えました。アメリカとイランが2週間の停戦で合意したあとも、イスラエルによるレバノンへの攻撃が続いていることに加え、ホルムズ海峡を通過できる船舶が限定されていると報じられたことで投資家の間で早期の正常化は難しいとの見方が広がりました。",
+    "日本政府要求大型石油批发商向重要设施直接销售，受伊朗局势影响 イラン情勢の影響で医療や公共交通などの分野で石油の調達に懸念の声が出ていることを受けて、政府は9日、大手石油元売りに対し、重要施設に直接販売を行うよう文書で要請しました。"
   ]
 }
