@@ -1,22 +1,22 @@
 {
   "links": [
-    "http://www3.nhk.or.jp/news/html/20260409/k10015096061000.html",
-    "http://www3.nhk.or.jp/news/html/20260409/k10015095441000.html",
-    "https://www.cnbc.com/2026/04/09/iran-war-oil-strait-hormuz-tanker-ship-uae.html",
-    "http://www3.nhk.or.jp/news/html/20260409/k10015096181000.html",
-    "https://www.marketwatch.com/story/netflix-big-banks-face-a-moment-of-truth-as-the-iran-cease-fire-rally-meets-earnings-season-35324a21?mod=mw_rss_topstories",
-    "https://www.cnbc.com/2026/04/09/iran-war-oil-saudi-arabia-east-west-pipeline.html",
-    "https://www.cnbc.com/2026/04/09/core-inflation-was-3percent-in-february-as-expected-key-fed-gauge-shows.html",
-    "https://www.cnbc.com/2026/04/09/oil-prices-today-wti-brent-iran-accuse-us-of-ceasefire-breach.html"
+    "https://www.cnbc.com/2026/04/10/cpi-inflation-report-march-2026.html",
+    "https://finance.yahoo.com/news/live/stock-market-today-stocks-mixed-as-nasdaq-rises-dow-falls-after-march-cpi-data-shows-surging-energy-costs-230420728.html",
+    "https://www.barrons.com/livecoverage/stock-market-news-today-041026/card/what-s-keeping-buyers-of-treasuries-away-K1d0Tb5dpTMQO0gmCS5h?siteid=yhoof2&yptr=yahoo",
+    "http://www3.nhk.or.jp/news/html/20260409/k10015096051000.html",
+    "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-cpi-inflation-data-march-tsmc-stock/?src=A00220&yptr=yahoo",
+    "https://www.cnbc.com/2026/04/10/consumer-sentiment-inflation-fears-iran-war.html",
+    "http://www3.nhk.or.jp/news/html/20260410/k10015096771000.html",
+    "http://www3.nhk.or.jp/news/html/20260410/k10015095401000.html"
   ],
   "fingerprints": [
-    "伊朗袭击沙特关键输油管道及生产设施，导致该国石油产量大减 the damage to saudi infrastructure will only compound the disruption to global oil supplies trigged by iran's attacks on tankers in the strait of hormuz.",
-    "阿联酋石油公司首席执行官表示，停火后伊朗控制了进出权限，霍尔木兹海峡尚未开放 sultan ahmed al jaber demanded a full reopening of the strait, warning that the oil supply disruption will increase if iran maintains control of the passage.",
-    "在以色列同意与黎巴嫩谈判后，油价涨势减弱 oil prices were volatile thursday as the u.s.-iran ceasefire agreement remained fragile.",
-    "美联储关键指标显示，在美国面临与伊朗开战之际，通胀率仍维持在3%的水平 the gauge released thursday offers the federal reserve a snapshot of conditions leading into the iran war.",
-    "随着伊朗停火带来的涨势遇上财报季，netflix及各大银行面临关键考验 “sawtooth” volatility pattern in options prices suggests a strong postearnings move for netflix.",
-    "【今日财经早报 4月9日（周四）】原油的稳定供应与价格成为焦点 nhkニュース「おはよう日本」で平日朝に放送している経済ニュースコーナー「おはbiz」。最新のビジネストレンドや働き方、お役立ちサービスやスタートアップ企業の情報など、ギュギュっとコンパクトにお届けします。",
-    "纽约原油市场 wti期货价格上涨，一度达到每桶102美元区间 9日のニューヨーク原油市場では国際的な取り引きの指標となるwtiの先物価格が上昇し、一時、1バレル＝100ドルの大台を再び超えました。アメリカとイランが2週間の停戦で合意したあとも、イスラエルによるレバノンへの攻撃が続いていることに加え、ホルムズ海峡を通過できる船舶が限定されていると報じられたことで投資家の間で早期の正常化は難しいとの見方が広がりました。",
-    "日本政府要求大型石油批发商向重要设施直接销售，受伊朗局势影响 イラン情勢の影響で医療や公共交通などの分野で石油の調達に懸念の声が出ていることを受けて、政府は9日、大手石油元売りに対し、重要施設に直接販売を行うよう文書で要請しました。"
+    "今日股市：受3月cpi数据中能源成本飙升影响，美股表现不一，nasdaq上涨，dow下跌 stock market today: stocks mixed as nasdaq rises, dow falls after march cpi data shows surging energy costs",
+    "今日股市：受意外cpi通胀数据影响，dow震荡；nvidia芯片代工方tsmc股价上涨（实时报道） stock market today: dow wavers on surprise cpi inflation data; nvidia chipmaker tsmc jumps (live coverage)",
+    "受伊朗冲突导致能源价格飙升影响，3月消费者价格指数上涨3.3% the consumer price index was expected to show a 3.3% year-over-year gain in march, according to the dow jones consensus.",
+    "是什么让美国国债买家望而却步 what's keeping buyers of treasuries away",
+    "受伊朗战争影响，消费者信心指数跌至历史低点，通胀担忧加剧 consumer sentiment hits record low, inflation fears rise amid iran war",
+    "日元汇率跌至1美元兑159日元前半，市场出现“避险买入美元”趋势 10日の東京外国為替市場、アメリカとイランによる戦闘の終結に向けた協議の行方が不透明だという受け止めから、夕方にかけて「有事のドル買い」が進み、ドルに対する円相場は1ドル＝159円台前半に値下がりしました。",
+    "日经平均股价一度跌至约1个月以来最低的57000日元区间 株価 一時 約1か月ぶりの5万7000円台に",
+    "seven & i hd因中东局势恶化推迟旗下美国子公司上市 セブン＆アイ・ホールディングスは、中東情勢の悪化に伴って北米のコンビニ事業の見通しが不透明になっているとして、ことし下半期までに予定していたアメリカの子会社の上場を延期すると発表しました。最短で2027年度の上場を目指すとしています。"
   ]
 }
