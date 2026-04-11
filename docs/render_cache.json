@@ -34,7 +34,7 @@
       "market_open": false,
       "name": "S&P 500",
       "news_titles": [],
-      "analysis": "市场在历史高位附近高位震荡，获利回吐压力显现，整体表现平淡。\n指数处于高位整理期，缺乏明确的进一步催化剂，多空处于平衡状态。",
+      "analysis": "大盘微跌，受道指拖累，多空在开盘前显现谨慎情绪，等待经济数据指引。\n市场在高位震荡，缺乏明确驱动力，多空博弈加剧。",
       "outlook": "neutral",
       "outlook_css": "neutral"
     },
@@ -42,11 +42,11 @@
       "ticker": "^IXIC",
       "label": "NASDAQ",
       "url": "https://finance.yahoo.com/quote/^IXIC",
-      "price": 22902.89453125,
+      "price": 22902.890625,
       "price_fmt": "22,903",
-      "change": 80.474609375,
-      "change_fmt": "80.475",
-      "change_pct": 0.0035261207904542196,
+      "change": 80.470703125,
+      "change_fmt": "80.471",
+      "change_pct": 0.0035259496320050555,
       "change_pct_fmt": "+0.35%",
       "change_arrow": "▲",
       "css": "up",
@@ -64,7 +64,7 @@
         "04/09",
         "04/10"
       ],
-      "change_5d": 0.041213888034994456,
+      "change_5d": 0.041213710448631105,
       "change_5d_fmt": "+4.12%",
       "css5d": "up",
       "as_of": "04/11 05:00",
@@ -72,7 +72,7 @@
       "market_open": false,
       "name": "NASDAQ",
       "news_titles": [],
-      "analysis": "受科技股尤其是半导体板块强势反弹带动，纳指逆势收涨，市场人气回升。\n人工智能产业链领涨，科技巨头的盈利预期支撑指数进一步上行。",
+      "analysis": "科技板块支撑纳指上涨，受英伟达等头部公司走强带动，表现优于大盘。\nAI板块资金关注度高，有望持续引领纳指反弹。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -110,85 +110,85 @@
       "market_open": false,
       "name": "Dow Jones",
       "news_titles": [],
-      "analysis": "道指表现滞后，权重股回调拖累指数，市场呈现明显的板块轮动特征。\n价值股近期波动加大，指数进入区间震荡整理，缺乏上行动能。",
-      "outlook": "neutral",
-      "outlook_css": "neutral"
+      "analysis": "道指收跌，防御性板块遇冷，投资者在美股开盘前调整持仓配置。\n近期权重股表现不振，面临一定回撤风险。",
+      "outlook": "bearish",
+      "outlook_css": "bearish"
     },
     {
       "ticker": "^N225",
       "label": "Nikkei 225",
       "url": "https://finance.yahoo.com/quote/^N225",
-      "price": 55895.3203125,
-      "price_fmt": "55,895",
-      "change": -413.1015625,
-      "change_fmt": "413.10",
-      "change_pct": -0.0073364081028065575,
-      "change_pct_fmt": "-0.73%",
-      "change_arrow": "▼",
-      "css": "down",
+      "price": 56924.109375,
+      "price_fmt": "56,924",
+      "change": 1028.7890625,
+      "change_fmt": "1,028.79",
+      "change_pct": 0.018405638553428767,
+      "change_pct_fmt": "+1.84%",
+      "change_arrow": "▲",
+      "css": "up",
       "history": [
-        "53,123",
         "53,414",
         "53,430",
         "56,308",
-        "55,895"
+        "55,895",
+        "56,924"
       ],
       "history_dates": [
-        "04/03",
         "04/06",
         "04/07",
         "04/08",
-        "04/09"
+        "04/09",
+        "04/10"
       ],
-      "change_5d": 0.05217714651144852,
-      "change_5d_fmt": "+5.22%",
+      "change_5d": 0.06572154751438178,
+      "change_5d_fmt": "+6.57%",
       "css5d": "up",
-      "as_of": "04/09 15:30",
+      "as_of": "04/10 15:30",
       "market_name": "TSE",
       "market_open": false,
       "name": "Nikkei 225",
       "news_titles": [],
-      "analysis": "受前一交易日美股调整影响，日经指数承受短期获利抛压，情绪偏谨慎。\n日元走强对出口导向型企业构成压力，需关注开盘后支撑力度。",
-      "outlook": "neutral",
-      "outlook_css": "neutral"
+      "analysis": "日经大涨1.84%，市场情绪乐观，追随全球科技股趋势并受益于弱势日元。\n汇率利好出口及资金流入，技术面处于上升趋势。",
+      "outlook": "bullish",
+      "outlook_css": "bullish"
     },
     {
       "ticker": "^HSI",
       "label": "Hang Seng",
       "url": "https://finance.yahoo.com/quote/^HSI",
-      "price": 25752.400390625,
-      "price_fmt": "25,752",
-      "change": -140.619140625,
-      "change_fmt": "140.62",
-      "change_pct": -0.005430774130274312,
-      "change_pct_fmt": "-0.54%",
-      "change_arrow": "▼",
-      "css": "down",
+      "price": 25893.5390625,
+      "price_fmt": "25,894",
+      "change": 141.138671875,
+      "change_fmt": "141.14",
+      "change_pct": 0.00548060257428976,
+      "change_pct_fmt": "+0.55%",
+      "change_arrow": "▲",
+      "css": "up",
       "history": [
-        "24,788",
         "25,294",
         "25,117",
         "25,893",
-        "25,752"
+        "25,752",
+        "25,894"
       ],
       "history_dates": [
-        "03/31",
         "04/01",
         "04/02",
         "04/08",
-        "04/09"
+        "04/09",
+        "04/10"
       ],
-      "change_5d": 0.03890004418695684,
-      "change_5d_fmt": "+3.89%",
+      "change_5d": 0.023701631661313352,
+      "change_5d_fmt": "+2.37%",
       "css5d": "up",
-      "as_of": "04/09 17:00",
+      "as_of": "04/10 17:00",
       "market_name": "HKEX/SGX",
       "market_open": false,
       "name": "Hang Seng",
       "news_titles": [],
-      "analysis": "受外围市场情绪波动影响，恒指近期震荡回调，市场做多动能略显不足。\n流动性压力和市场情绪低迷，导致短期内难以形成有效反弹。",
-      "outlook": "bearish",
-      "outlook_css": "bearish"
+      "analysis": "恒指温和上涨，受亚洲市场整体氛围带动，显示出一定的韧性。\n宏观流动性预期仍有不确定性，走势以反复震荡为主。",
+      "outlook": "neutral",
+      "outlook_css": "neutral"
     }
   ],
   "commodities": [
@@ -196,12 +196,12 @@
       "ticker": "GC=F",
       "label": "Gold",
       "url": "https://finance.yahoo.com/quote/GC=F",
-      "price": 4771.0,
-      "price_fmt": "4,771.00",
-      "change": -21.2001953125,
-      "change_fmt": "21.200",
-      "change_pct": -0.004423896007774678,
-      "change_pct_fmt": "-0.44%",
+      "price": 4761.89990234375,
+      "price_fmt": "4,761.90",
+      "change": -30.30029296875,
+      "change_fmt": "30.300",
+      "change_pct": -0.006322835385380663,
+      "change_pct_fmt": "-0.63%",
       "change_arrow": "▼",
       "css": "down",
       "history": [
@@ -209,7 +209,7 @@
         "4,657.10",
         "4,749.50",
         "4,792.20",
-        "4,771.00"
+        "4,761.90"
       ],
       "history_dates": [
         "04/06",
@@ -218,36 +218,36 @@
         "04/09",
         "04/10"
       ],
-      "change_5d": 0.024523320757217637,
-      "change_5d_fmt": "+2.45%",
+      "change_5d": 0.02256916811207066,
+      "change_5d_fmt": "+2.26%",
       "css5d": "up",
       "as_of": "04/11 05:00",
       "market_name": "NYSE/NASDAQ",
       "market_open": false,
       "name": "Gold",
       "news_titles": [],
-      "analysis": "美元走强及避险需求减弱导致金价小幅走软，多头获利了结意愿增强。\n金价在关键阻力位受阻，短期需观察美元汇率波动带来的方向性指引。",
-      "outlook": "neutral",
-      "outlook_css": "neutral"
+      "analysis": "黄金走弱，美元走强抑制避险资产吸引力，多头动力不足。\n美元走强及高利率预期对金价构成压制。",
+      "outlook": "bearish",
+      "outlook_css": "bearish"
     },
     {
       "ticker": "SI=F",
       "label": "Silver",
       "url": "https://finance.yahoo.com/quote/SI=F",
-      "price": 76.0250015258789,
-      "price_fmt": "76.025",
-      "change": -0.2519989013671875,
-      "change_fmt": "0.2520",
-      "change_pct": -0.0033037337592679334,
-      "change_pct_fmt": "-0.33%",
-      "change_arrow": "▼",
-      "css": "down",
+      "price": 76.3239974975586,
+      "price_fmt": "76.324",
+      "change": 0.0469970703125,
+      "change_fmt": "0.0470",
+      "change_pct": 0.0006161368439930509,
+      "change_pct_fmt": "+0.06%",
+      "change_arrow": "▲",
+      "css": "up",
       "history": [
         "72.661",
         "71.826",
         "75.224",
         "76.277",
-        "76.025"
+        "76.324"
       ],
       "history_dates": [
         "04/06",
@@ -256,15 +256,15 @@
         "04/09",
         "04/10"
       ],
-      "change_5d": 0.046297164489512245,
-      "change_5d_fmt": "+4.63%",
+      "change_5d": 0.05041210866686623,
+      "change_5d_fmt": "+5.04%",
       "css5d": "up",
       "as_of": "04/11 05:00",
       "market_name": "NYSE/NASDAQ",
       "market_open": false,
       "name": "Silver",
       "news_titles": [],
-      "analysis": "跟随黄金弱势运行，白银呈现缩量回调，工业需求预期波动影响价格。\n贵金属整体震荡，银价缺乏独立驱动力，维持区间震荡概率大。",
+      "analysis": "白银微涨，呈现一定的抗跌性，与工业需求属性关联。\n受贵金属与工业品双重逻辑影响，方向尚不明朗。",
       "outlook": "neutral",
       "outlook_css": "neutral"
     },
@@ -272,12 +272,12 @@
       "ticker": "CL=F",
       "label": "WTI Oil",
       "url": "https://finance.yahoo.com/quote/CL=F",
-      "price": 95.62999725341797,
-      "price_fmt": "95.630",
-      "change": -2.2400054931640625,
-      "change_fmt": "2.2400",
-      "change_pct": -0.022887559316455537,
-      "change_pct_fmt": "-2.29%",
+      "price": 96.56999969482422,
+      "price_fmt": "96.570",
+      "change": -1.3000030517578125,
+      "change_fmt": "1.3000",
+      "change_pct": -0.013282957139829172,
+      "change_pct_fmt": "-1.33%",
       "change_arrow": "▼",
       "css": "down",
       "history": [
@@ -285,7 +285,7 @@
         "112.95",
         "94.410",
         "97.870",
-        "95.630"
+        "96.570"
       ],
       "history_dates": [
         "04/06",
@@ -294,15 +294,15 @@
         "04/09",
         "04/10"
       ],
-      "change_5d": -0.14927502768463596,
-      "change_5d_fmt": "-14.93%",
+      "change_5d": -0.14091276088646218,
+      "change_5d_fmt": "-14.09%",
       "css5d": "down",
       "as_of": "04/11 05:00",
       "market_name": "NYSE/NASDAQ",
       "market_open": false,
       "name": "WTI Oil",
       "news_titles": [],
-      "analysis": "受供应预期变化影响，油价大幅下挫，市场对需求增长放缓担忧加剧。\n宏观经济担忧压制原油需求，技术性破位后短期下行压力较大。",
+      "analysis": "油价下挫超1%，担忧需求放缓，美盘开盘前空头情绪占据主导。\n库存预期及宏观需求不确定性限制了油价反弹。",
       "outlook": "bearish",
       "outlook_css": "bearish"
     },
@@ -310,12 +310,12 @@
       "ticker": "BZ=F",
       "label": "Brent Oil",
       "url": "https://finance.yahoo.com/quote/BZ=F",
-      "price": 94.44999694824219,
-      "price_fmt": "94.450",
-      "change": -1.470001220703125,
-      "change_fmt": "1.4700",
-      "change_pct": -0.015325284078029173,
-      "change_pct_fmt": "-1.53%",
+      "price": 95.19999694824219,
+      "price_fmt": "95.200",
+      "change": -0.720001220703125,
+      "change_fmt": "0.7200",
+      "change_pct": -0.0075062680822301124,
+      "change_pct_fmt": "-0.75%",
       "change_arrow": "▼",
       "css": "down",
       "history": [
@@ -323,7 +323,7 @@
         "109.27",
         "94.750",
         "95.920",
-        "94.450"
+        "95.200"
       ],
       "history_dates": [
         "04/06",
@@ -332,15 +332,15 @@
         "04/09",
         "04/10"
       ],
-      "change_5d": -0.1395645455346008,
-      "change_5d_fmt": "-13.96%",
+      "change_5d": -0.1327320774382526,
+      "change_5d_fmt": "-13.27%",
       "css5d": "down",
       "as_of": "04/11 05:00",
       "market_name": "NYSE/NASDAQ",
       "market_open": false,
       "name": "Brent Oil",
       "news_titles": [],
-      "analysis": "布伦特原油跟随WTI同步下跌，市场交投情绪偏空，能源板块承压明显。\n全球能源需求不确定性增加，短期油价重心有下移风险。",
+      "analysis": "布油跌幅收窄，但在能源需求预期疲软压力下仍表现偏弱。\n全球经济增长放缓预期压制大宗商品定价。",
       "outlook": "bearish",
       "outlook_css": "bearish"
     }
@@ -380,7 +380,7 @@
       "market_open": false,
       "name": "USD/JPY",
       "news_titles": [],
-      "analysis": "日元兑美元持续走弱，汇率触及高位，反映出两国货币政策利差影响。\n美日利差支撑汇率处于高位，日元进一步贬值逻辑依然存在。",
+      "analysis": "美元兑日元上涨，利差优势推动汇率维持高位，避险需求回落。\n美联储利率政策与日本央行政策差异持续支撑美元。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -418,7 +418,7 @@
       "market_open": false,
       "name": "JPY/CNY",
       "news_titles": [],
-      "analysis": "受日元整体走弱影响，日元兑人民币汇率回落，资本流动方向偏向避险。\n日元在国际货币组合中表现疲软，汇率重心面临下行挑战。",
+      "analysis": "日元兑人民币小幅贬值，显示日元在交叉盘中表现疲软。\n日本货币政策维持宽松，汇率弱势短期难改。",
       "outlook": "bearish",
       "outlook_css": "bearish"
     },
@@ -456,7 +456,7 @@
       "market_open": false,
       "name": "EUR/JPY",
       "news_titles": [],
-      "analysis": "欧强日弱特征显著，汇率大幅拉升，反映避险资金流出日元的趋势。\n利差优势支撑欧元表现，短期汇率上升趋势保持完好。",
+      "analysis": "欧日交叉盘大涨，反映出风险偏好升温，欧元表现强势。\n利差套息交易依然活跃，推升欧元对日元汇率。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     }
@@ -503,9 +503,9 @@
       "market_open": false,
       "name": "iShares Gold Trust",
       "news_titles": [],
-      "analysis": "受金价现货走低拖累，ETF价格小幅收跌，机构配置情绪转为观望。\n受贵金属市场震荡影响，短期缺乏进一步流入的动力。",
-      "outlook": "neutral",
-      "outlook_css": "neutral"
+      "analysis": "黄金ETF跟随国际金价回撤，投资者避险意愿短期降低。\n金价整体承压，ETF资金流入速度减缓。",
+      "outlook": "bearish",
+      "outlook_css": "bearish"
     },
     {
       "ticker": "NEM",
@@ -541,9 +541,9 @@
       "market_open": false,
       "name": "Newmont Corporation",
       "news_titles": [],
-      "analysis": "在金价下跌背景下逆势上涨，显示市场对其开采效率及现金流改善的认可。\n公司基本面支撑强劲，抗风险能力在行业中表现突出。",
-      "outlook": "bullish",
-      "outlook_css": "bullish"
+      "analysis": "纽蒙特矿业股价上涨，可能受特定公司利好或机构调仓影响。\n金价低迷与股价逆势上涨背离，需警惕回调风险。",
+      "outlook": "neutral",
+      "outlook_css": "neutral"
     },
     {
       "ticker": "NVDA",
@@ -579,7 +579,7 @@
       "market_open": false,
       "name": "NVIDIA",
       "news_titles": [],
-      "analysis": "科技股领涨主力，英伟达表现强劲，市场对AI芯片需求预期持续升温。\n行业龙头地位稳固，订单需求充足，技术面维持强劲上行态势。",
+      "analysis": "英伟达涨幅超过2%，持续领跑AI芯片赛道，市场信心强劲。\n基本面强劲，AI行业需求依然是市场核心逻辑。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -617,7 +617,7 @@
       "market_open": false,
       "name": "Taiwan Semiconductor",
       "news_titles": [],
-      "analysis": "得益于台积电产能扩张预期，股价跟随科技板块反弹，市场信心稳固。\n作为芯片制造核心，受益于全球AI产业链扩张的长期红利。",
+      "analysis": "台积电随科技股上涨，供应需求稳定提升投资者信心。\n全球半导体需求强劲，具备明确的业绩支撑。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -655,7 +655,7 @@
       "market_open": false,
       "name": "Berkshire Hathaway B",
       "news_titles": [],
-      "analysis": "受防御性配置需求减弱影响，伯克希尔股价微跌，市场处于平稳调整中。\n作为价值投资标杆，走势稳健，缺乏短期爆发式增长契机。",
+      "analysis": "伯克希尔下跌，作为价值标杆，市场对宏观环境保持谨慎。\n属于防守型标的，短期内难以跑赢科技成长股。",
       "outlook": "neutral",
       "outlook_css": "neutral"
     },
@@ -693,7 +693,7 @@
       "market_open": false,
       "name": "Lockheed Martin",
       "news_titles": [],
-      "analysis": "地缘政治担忧边际降温，军工板块出现获利盘回吐，股价承压明显。\n需求虽然稳定，但估值在高位，短期缺乏催化剂驱动进一步上涨。",
+      "analysis": "洛克希德马丁下跌，地缘局势预期调整导致军工股获利回吐。\n受地缘政策波动影响，短期处于盘整阶段。",
       "outlook": "neutral",
       "outlook_css": "neutral"
     },
@@ -731,7 +731,7 @@
       "market_open": false,
       "name": "Toyota Motor",
       "news_titles": [],
-      "analysis": "日元走强背景下汽车出口预期受阻，股价小幅下探，投资者情绪谨慎。\n汇率波动对盈利影响显著，短期股价表现将受制于日元汇率走势。",
+      "analysis": "丰田汽车微跌，尽管汇率有利，但投资者在财报季前表现谨慎。\n缺乏新的催化剂，处于区间震荡整理中。",
       "outlook": "neutral",
       "outlook_css": "neutral"
     },
@@ -769,7 +769,7 @@
       "market_open": false,
       "name": "SoftBank Group",
       "news_titles": [],
-      "analysis": "随全球科技股复苏震荡微涨，公司投资组合表现对股价形成支撑。\n科技领域投资布局进入收获期，估值修复动力依然充足。",
+      "analysis": "软银集团微涨，跟随大盘与科技板块反弹，市场情绪平稳。\n旗下投资组合估值回升，带动股价重心上移。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -807,53 +807,56 @@
       "market_open": false,
       "name": "iShares MSCI India ETF",
       "news_titles": [],
-      "analysis": "印度市场表现强劲，ETF小幅上涨，反映外资对新兴市场的长期信心。\n经济增长预期领先，资金持续流入，市场结构处于良性上行周期。",
+      "analysis": "印度ETF小幅上涨，新兴市场吸引力体现，资金持续流入。\n长期增长潜力大，受到国际资本的青睐。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     }
   ],
   "market_news": [
     {
-      "title": "由于Donald Trump（特朗普）要求重新开放霍尔木兹海峡，美国油价跌破100美元",
-      "article": "U.S. President Donald Trump on Thursday warned Iran to \"stop now\" if it was charging tankers to transit the Strait of Hormuz.",
-      "summary": "关键词：Donald Trump（唐纳德·特朗普）, Iran（伊朗）, Strait of Hormuz（霍尔木兹海峡）<br>\n总结：美国总统Donald Trump（唐纳德·特朗普）在周四发出明确警告，要求Iran（伊朗）立即停止针对在该地区航行的油轮收取通行费的行为。该表态针对的是日益紧张的Strait of Hormuz（霍尔木兹海峡）局势。作为全球重要的能源运输通道，该海峡的航行安全始终备受国际关注。Trump（特朗普）此举旨在通过外交施压，警告任何企图干扰国际能源运输的行为，以维护地区贸易安全及保障全球能源市场的供应稳定性。"
+      "title": "道琼斯期货：美伊和平谈判开启；Google、Amazon、Nvidia处于买入区间",
+      "article": "Dow Jones Futures: U.S.-Iran Peace Talks Begin; Google, Amazon, Nvidia In Buy Areas",
+      "summary": "关键词：Dow Jones Futures, U.S.-Iran, AI Tech Stocks<br>\n总结：受美伊和平谈判开启的利好消息影响，Dow Jones Futures表现受到市场高度关注。与此同时，科技板块走势强劲，Google、Amazon及Nvidia等行业巨头股价处于理想的买入区间，显示出投资者对人工智能及云计算领域未来增长的信心。整体市场情绪在宏观地缘政治与科技股强劲基本面的双重推动下，呈现出积极的交易氛围，资金正持续流入这些具备成长潜力的头部公司，投资者应密切关注相关市场动向。"
     },
     {
-      "title": "受伊朗战争推高油价影响，爱尔兰因燃油抗议陷入瘫痪",
-      "article": "Protestors are taking issue with the government's response to the spike in fuel prices since the onset of the Iran war.",
-      "summary": "关键词：伊朗战争,燃油价格,抗议活动<br>\n总结：自伊朗战争爆发以来，全球燃油价格出现显著上涨，引发了民众的强烈不满。针对政府在应对这一能源危机时的决策与措施，各界抗议者纷纷表达了不满与诉求，认为政府未能有效缓解物价飙升带来的生活压力。目前，抗议活动已成为公众针对政府能源政策表达抗议的重要方式，迫使当局必须重新审视现行的应对策略，以平息日益高涨的社会舆论压力并寻求长期解决方案。"
+      "title": "为什么4月13日周一对股市反弹至关重要",
+      "article": "Why Monday, April 13 Begins A Critical Week For The Stock Market Rally",
+      "summary": "关键词：Stock Market, 经济复苏, 财报季<br>\n总结：4月13日所在的这一周被视为美股反弹的关键期，市场主要聚焦于三个核心变量：一是随着各州逐步重启经济，投资者对疫情后的经济复苏预期日益强烈；二是第一季度财报季正式拉开帷幕，企业盈利指引将揭示疫情对各行业的实际冲击程度；三是美联储及各国央行的进一步刺激政策动向。市场将通过这一周的交易表现，评估本轮上涨行情是基本面支撑的持续回暖，还是仅为超跌后的暂时性反弹。"
     },
     {
-      "title": "由于AI芯片需求持续强劲，TSMC营收跃升35%创下历史新高",
-      "article": "TSMC is benefiting from sustained demand for advanced semiconductors from its key customers like Apple and Nvidia.",
-      "summary": "关键词：TSMC, Apple, Nvidia<br>\n总结：TSMC凭借其在先进制程领域的卓越技术优势，持续从Apple和Nvidia等核心客户处获得强劲的订单需求。在全球人工智能产业高速发展的背景下，Nvidia对高性能计算芯片的需求激增，加之Apple在高端移动设备领域的持续投入，共同驱动了TSMC产能利用率维持高位。这种来自行业龙头的长期订单支持，不仅巩固了TSMC在半导体代工市场的领导地位，也为其未来的营收增长提供了持续且稳定的动力保障。"
+      "title": "伊朗战争背景下消费者信心降至历史新低，通胀担忧加剧",
+      "article": "The university's headline index of consumer sentiment tumbled to 47.6, down 10.7% from March to its lowest on record.",
+      "summary": "关键词：University of Michigan, 消费者信心指数, 历史新低<br>\n总结：University of Michigan公布的消费者信心指数出现大幅下滑，跌至47.6点，较3月份下降了10.7%。这一数据创下了该指数自发布以来的历史最低纪录。此次数据的急剧走低，反映出消费者对当前经济环境的极度担忧，显示出通货膨胀压力、经济增长放缓预期以及市场不确定性正对民众的消费信心与财务信心造成严重冲击，整体市场情绪持续低迷。"
     },
     {
-      "title": "伊朗袭击沙特关键输油管道及生产设施，导致该国石油产量大幅下降",
-      "article": "The damage to Saudi infrastructure will only compound the disruption to global oil supplies trigged by Iran's attacks on tankers in the Strait of Hormuz.",
-      "summary": "关键词：Saudi infrastructure, oil supplies, Strait of Hormuz<br>\n总结：由于Iran此前在Strait of Hormuz针对油轮发动攻击，全球原油供应已受到严重干扰。此次Saudi的基础设施再度遭遇破坏，不仅进一步加剧了能源市场的动荡，还可能导致全球油价出现更剧烈的波动。这一连串的袭击事件严重威胁了中东地区的物流安全，使得全球能源供应稳定性面临重大挑战，市场对于原油短缺及地缘政治风险的担忧情绪日益浓厚。"
+      "title": "Cramer（克莱默）警告称美伊停火后市场呈现“极度自负”状态",
+      "article": "\"The idea that everything will finally go right in the Middle East seems like a real stretch to me,\" Cramer said.",
+      "summary": "关键词：Middle East, Cramer, 地缘政治<br>\n总结：Cramer（克莱默）在近期的财经评论中表达了对中东局势的审慎态度。他明确指出，认为该地区局势能够最终走向全面好转的观点过于乐观，甚至显得有些不切实际。这番言论反映出金融市场对于中东地区持续的地缘政治动荡及其对全球经济与投资环境可能产生的不利影响，仍持深度的怀疑和忧虑，认为短时间内该地区的和平与稳定难以实现。"
     },
     {
-      "title": "一张图看懂2026年3月通胀细分数据",
-      "article": "The Iran war has pushed up gasoline, airline fares and other prices for consumers.",
-      "summary": "关键词：Iran, gasoline, 消费价格<br>\n总结：由于伊朗冲突局势持续紧张，全球能源市场受到显著冲击，导致国际油价大幅波动，进而传导至消费终端。目前，民众的日常生活成本已明显上升，汽油价格持续走高，同时航空旅行的燃油附加费及票价也出现大幅上涨。此次地缘政治危机引发的连锁反应，正给全球消费者带来沉重的经济负担，并对航空业及相关交通运输产业的经营成本造成了巨大压力。"
+      "title": "伊朗议长称若无黎巴嫩停火及资产解冻，无法开启与美国的谈判",
+      "link": "https://www.cnbc.com/2026/04/10/iran-war-vance-negotiations-trump-oil-hormuz-strait.html",
+      "article": "President Trump is frustrated by Iran continuing to throttle most shipping traffic through the Strait of Hormuz, the world's most important oil route.",
+      "summary": "关键词：Trump（特朗普）, Iran（伊朗）, Strait of Hormuz（霍尔木兹海峡）<br>\n总结：近期，伊朗持续干扰并限制霍尔木兹海峡的航运往来，该海峡作为全球最为关键的石油运输通道，其受阻引发了外界的极大关注。对此，President Trump（特朗普）表达了强烈的不满，认为伊朗的行为对全球能源安全构成威胁。这一局势紧张升级，不仅加剧了波斯湾地区的地缘政治动荡，也给全球原油供应链的稳定性带来了巨大的不确定性，国际社会正密切关注局势的后续发展。"
     }
   ],
   "japan_news": [
     {
-      "title": "针对特定技能制度，“外食产业”接收人数预计将达上限",
-      "article": "専門技能があると認められた外国人を受け入れる特定技能制度をめぐり、「外食業」での受け入れが上限に達する見通しとなったため、13日から一時的に停止されます。これを受けて外食企業の間では、採用計画を見直さざるをえない事例が相次いでいることがわかりました。",
-      "summary": "关键词：特定技能制度, 外食业, 用工荒<br>\n总结：由于日本特定技能制度中“外食业”的外国劳动力接收人数即将达到上限，政府决定自13日起暂停该领域的接收申请。此政策变动对日本餐饮企业造成了直接冲击，许多企业被迫紧急修改此前的招聘计划。目前，随着用工缺口的进一步扩大，外食行业面临严峻的人力资源配置挑战，企业经营活动及未来扩张策略均受到不同程度的影响。"
+      "title": "3月企业物价指数环比上涨0.8%，受汽油等价格上涨影响",
+      "link": "http://www3.nhk.or.jp/news/html/20260410/k10015096341000.html",
+      "article": "企業の間で取り引きされるモノの価格を示す先月の企業物価指数はイラン情勢を受けてガソリンや化学製品が値上がりしていることから、前の月と比べて0.8％上昇しました。",
+      "summary": "关键词：企业物价指数, 能源价格, 通货膨胀<br>\n总结：受伊朗局势持续紧张的影响，国际能源市场波动加剧，直接导致汽油及相关化学产品的生产成本攀升。受此传导，上个月企业间交易商品的价格水平显著上涨，企业物价指数较上月环比上升0.8%。这一数据反映出地缘政治冲突对供应链成本的冲击正在显现，企业面临的输入型通胀压力进一步加大，引发了市场对于未来物价持续上涨以及生产成本转嫁的广泛关注。"
     },
     {
-      "title": "为扩大农林水产品及食品出口，经济产业省与农林水产省设立新团队",
-      "article": "農林水産物や食品の輸出を拡大するため、経済産業省と農林水産省は新たなチームを設け、輸出を目指す事業者からの相談対応や販売先の開拓支援などを強化することにしています。",
-      "summary": "关键词：农林水产物, 农林水产省, 经济产业省<br>\n总结：为进一步扩大农林水产物及食品的海外出口规模，日本经济产业省与农林水产省决定成立联合工作组。该团队将通过整合两部门资源，为有志于拓展海外市场的相关企业提供专业的咨询服务，并重点协助企业进行海外销售渠道的开发。通过此次跨部门协作，旨在强化对出口业务的政策支持力度，解决企业在海外拓展过程中遇到的实际困难，从而提升日本相关产品在国际市场上的竞争力。"
+      "title": "日本经济产业省宣布向Rapidus追加支援6315亿日元研发费用",
+      "article": "経済産業省は11日、先端半導体の量産を目指すラピダスに対し、今年度の研究開発費として6315億円を追加支援すると発表しました。あわせてAI向けの先端半導体の開発を目指す民間企業への資金支援も明らかにし、ラピダスの取引先の確保につなげたい考えです。",
+      "summary": "关键词：METI, Rapidus, 半导体<br>\n总结：日本经济产业省（METI）于11日宣布，将向致力于尖端半导体量产的Rapidus追加提供6315亿日元的研究开发补助金。此举旨在加速日本国内半导体产业的复兴。同时，政府还将为研发AI专用芯片的民营企业提供资金支持，通过强化政策引导，不仅旨在实现技术突破，更意在通过多方协同，为Rapidus培育稳定的商业合作伙伴，从而构建完整的产业生态链，提升日本在全球半导体市场的竞争力。"
     },
     {
-      "title": "受停火影响举办紧急研讨会，中东地区进驻企业咨询如何确保安全",
-      "article": "イラン情勢をめぐり、都内のコンサルティング会社には中東地域に進出している企業から相談が相次いでいて、アメリカとイランが停戦に合意したことを受けて会社は10日、緊急のセミナーを開き、情勢などの分析結果を伝えたうえで企業からの相談に応じました。",
-      "summary": "关键词：イラン, 中东局势, 企业咨询<br>\n总结：鉴于近期伊朗局势波动，位于东京都内的一家咨询公司近期接连接到中东地区业务企业的紧急咨询。针对美国与伊朗达成停火协议的最新进展，该咨询公司于10日紧急举办研讨会，详细分析了当前的中东形势，并为参会企业提供针对性的经营建议与应对策略，旨在帮助企业降低地缘政治风险，保障在该地区业务的平稳运行。"
+      "title": "【伊朗局势 国内影响】生产与流通，各地现场的情况",
+      "link": "http://www3.nhk.or.jp/news/html/20260410/k10015096321000.html",
+      "article": "アメリカとイランは2週間にわたる停戦で合意しましたが、原油価格が高止まりする中、影響はさまざまな業界に広がっています。燃料の調達や「ナフサ」由来の原材料、資材の確保に不安を抱える製造業などの現場を取材しました。",
+      "summary": "关键词：美国, 伊朗, 原油价格<br>\n总结：尽管美国与伊朗达成两周停战协议，但全球原油价格仍维持高位运行。这种局势持续对多个行业产生负面影响，尤其是依赖燃料成本及“Naphtha”作为原材料的制造业，正面临严重的供应链压力。企业在采购燃料和原材料方面感到极度不安，不仅生产经营成本大幅上升，对于后续原材料的稳定供应也缺乏明确预期，整个产业链正处于严峻的经营挑战之中。"
     }
   ],
   "hot_markets": [],
