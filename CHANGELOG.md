@@ -5,6 +5,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [v0.7.2] - 2026-04-13
+
+### Fixed
+- Morning cron schedule corrected from `1-5` to `0-4` (UTC) so it covers Mon-Fri JST mornings
+- Previous schedule (`30 22 * * 1-5`) ran Tue-Sat JST, missing Monday morning entirely
+
+中文摘要：修复 Cron 时区偏移 Bug，早间邮件原先在 JST 周一早上不触发，改为 UTC `0-4`（周日到周四）后正确覆盖 JST 周一到周五。
+
+---
+
 ## [v0.7.1] - 2026-04-07
 
 ### Fixed

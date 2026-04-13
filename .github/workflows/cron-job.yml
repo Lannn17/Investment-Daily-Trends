@@ -2,8 +2,8 @@ name: investment_daily
 
 on:
   schedule:
-    # Morning: 07:30 JST = 22:30 UTC (previous day) — weekdays only
-    - cron: '30 22 * * 1-5'
+    # Morning: 07:30 JST = 22:30 UTC (previous day) — weekdays only (Sun-Thu UTC = Mon-Fri JST)
+    - cron: '30 22 * * 0-4'
     # Evening: 22:00 JST = 13:00 UTC — every day (weekends get Weekend Edition)
     - cron: '0 13 * * *'
   workflow_dispatch:
