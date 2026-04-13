@@ -1,22 +1,22 @@
 {
   "links": [
-    "https://www.cnbc.com/2026/04/12/trump-iran-war-strait-of-hormuz.html",
-    "http://www3.nhk.or.jp/news/html/20260410/k10015096721000.html",
-    "http://www3.nhk.or.jp/news/html/20260410/k10015096501000.html",
-    "https://www.cnbc.com/2026/04/10/powell-bessent-us-bank-ceos-anthropic-mythos-ai-cyber.html",
-    "https://www.marketwatch.com/story/vance-leaves-pakistan-talks-with-no-deal-how-financial-markets-are-reacting-ef6916b3?mod=mw_rss_topstories",
-    "http://www3.nhk.or.jp/news/html/20260412/k10015097731000.html",
-    "https://www.cnbc.com/2026/04/10/warsh-fed-nomination-hearing-delayed.html",
-    "https://www.cnbc.com/2026/04/11/stocks-gain-on-iran-ceasefire-plus-3-things-that-drove-last-weeks-market.html"
+    "https://finance.yahoo.com/news/opec-lowers-second-quarter-global-135441178.html",
+    "http://www3.nhk.or.jp/news/html/20260413/k10015098391000.html",
+    "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-war-blockade-oil-prices/?src=A00220&yptr=yahoo",
+    "http://www3.nhk.or.jp/news/html/20260413/k10015098281000.html",
+    "http://www3.nhk.or.jp/news/html/20260413/k10015098411000.html",
+    "https://finance.yahoo.com/news/gas-prices-likely-to-jump-again-as-oil-surges-back-above-100-135353176.html",
+    "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-trim-losses-after-trump-orders-hormuz-blockade-against-iran-142624712.html",
+    "https://finance.yahoo.com/markets/commodities/articles/gold-continues-fall-middle-east-142400008.html"
   ],
   "fingerprints": [
-    "trump（特朗普）表示伊朗和平谈判失败后，美国将封锁霍尔木兹海峡 trump said the u.s. blockade will stop iran from policing the strait and benefiting economically while the rest of the world suffers from its closure.",
-    "trump（特朗普）宣布封锁霍尔木兹海峡，此前vance（万斯）在巴基斯坦的谈判无果而终，金融市场如何反应 as u.s.-iran talks in pakistan ended without a deal, u.s. stock futures were sliding and oil was climbing, based on trading via a crypto-based trading platform.",
-    "伊朗停火协议促使股市上涨，以及驱动上周市场的另外三件事 although the market rally cooled on friday, the s&p 500 still ended the week 3.6% higher.",
-    "powell（鲍威尔）与bessent（贝森特）和美国各大银行讨论了anthropic的mythos ai网络威胁 anthropic rolled out the new mythos ai model to a select group of companies over concerns that hackers could exploit its capabilities.",
-    "kevin warsh（凯文·沃什）的美联储主席确认计划遇阻，提名听证会推迟 president trump's nomination of kevin warsh as federal reserve chair already faced a hurdle by sen. thom tillis over a probe of current chair jerome powell.",
-    "财务大臣加藤胜信（かとうかつのぶ）要求各省厅“进行自我检讨”，以重新评估政策效果低下的补贴等支出 政府は、政策効果が低い補助金や租税特別措置の見直しに向けた会議を開き、片山財務大臣は、各省庁に対し夏の概算要求や税制改正要望の前に国民の意見も踏まえて政策効果を自己点検するよう求めました。",
-    "softbank与nec及honda等成立新公司，旨在“开发国产ai” 周囲の状況を自律的に理解してロボットなどを動かす「フィジカルai」の開発競争が世界で激しさを増す中、通信大手のソフトバンクは、necやホンダなどと国産のaiを開発する新会社を設立したことが関係者への取材でわかりました。aiの開発では、アメリカや中国が先行していて、海外勢に対抗できるかが焦点となります。",
-    "超市大米平均价格为5公斤3933日元，连续8周出现下跌 スーパーのコメ平均価格 5キロ 3933円 8週連続で値下がり"
+    "今日股市：在donald trump（特朗普）下令对伊朗实施霍尔木兹海峡封锁后，dow、s&p 500、nasdaq跌幅收窄 stock market today: dow, s&p 500, nasdaq trim losses after trump orders hormuz blockade against iran",
+    "今日股市：dow因donald trump（特朗普）的伊朗行动而下跌；这些biotech和software股票表现亮眼（实时报道） stock market today: dow dips on trump iran move; these biotech, software stocks shine (live coverage)",
+    "因伊朗战争，opec下调第二季度全球石油需求预测 opec lowers second-quarter global oil demand forecast on iran war",
+    "随着油价回升至100美元以上，汽油价格“可能再次跳涨” gas prices 'likely to jump again' as oil surges back above $100",
+    "随着中东局势恶化，黄金持续下跌 gold continues to fall as middle east tensions worsen",
+    "日元汇率跌至1美元兑159日元后半，受伊朗局势影响走低 円相場 1ドル=159円台後半 イラン情勢受け値下がり",
+    "日本银行总裁植田和男（うえだかずお）：“伊朗局势仍不明朗，将持续关注其影响” 日銀の植田総裁は13日、信託業界の会合に寄せたあいさつで、イラン情勢が不透明で、原油価格の上昇が景気の下押しにも物価の押し上げにもつながる可能性があると指摘し、経済、物価への影響を注意深く見ていく考えを示しました。",
+    "因关税措施而暂停受理的寄往美国邮件将于14日恢复，日本邮政（japan post） 日本郵便は、トランプ政権による関税措置の影響で停止していたアメリカ向けの郵便物の引き受けについて、制度の変更に伴う手続きが整ったとして、14日から再開すると発表しました。"
   ]
 }
