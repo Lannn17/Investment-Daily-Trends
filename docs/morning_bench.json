@@ -1,300 +1,293 @@
 {
   "market_news": [
     {
-      "link": "https://www.cnbc.com/2026/04/14/stocks-keep-the-rally-going-and-oil-tumbles-heres-why-we-have-some-trepidation-.html",
-      "title": "Stocks keep the rally going and oil tumbles. Here's why we have some trepidation",
+      "link": "https://www.cnbc.com/2026/04/15/iran-war-budget-white-house-russ-vought.html",
+      "title": "White House budget chief Russell Vought won't estimate Iran war cost in testimony",
+      "article": "Office of Management and Budget Director Russell Vought testified before the House Budget Committee on Wednesday.",
+      "fp": "white house budget chief russell vought won't estimate iran war cost in testimony office of management and budget director russell vought testified before the house budget committee on wednesday.",
+      "published": "Wed, 15 Apr 2026 18:30:48 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/15/iran-war-energy-facilities-refinery-pipeline-lng.html",
+      "title": "Iran war damaged as much as $58 billion of energy infrastructure, Rystad estimates",
+      "article": "It could take years to repair damaged energy infrastructure in the Middle East and restore production to prewar levels.",
+      "fp": "iran war damaged as much as $58 billion of energy infrastructure, rystad estimates it could take years to repair damaged energy infrastructure in the middle east and restore production to prewar levels.",
+      "published": "Wed, 15 Apr 2026 20:42:48 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/15/banks-citizenship-data-collection-customer-accounts.html",
+      "title": "Treasury Secretary Scott Bessent is preparing banks to collect citizenship data",
+      "article": "Treasury Secretary Scott Bessent says the Trump administration expects banks to comply in collecting citizenship information from customers.",
+      "fp": "treasury secretary scott bessent is preparing banks to collect citizenship data treasury secretary scott bessent says the trump administration expects banks to comply in collecting citizenship information from customers.",
+      "published": "Wed, 15 Apr 2026 21:59:18 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/15/goldman-sachs-bond-traders-wall-street-rivals.html",
+      "title": "Goldman Sachs bond traders stumbled as Wall Street rivals thrived: 'A fire is being lit under' them",
+      "article": "Goldman's identity as a trader's firm — one expected to perform in turbulent markets — makes any stumble in the division notable.",
+      "fp": "goldman sachs bond traders stumbled as wall street rivals thrived: 'a fire is being lit under' them goldman's identity as a trader's firm — one expected to perform in turbulent markets — makes any stumble in the division notable.",
+      "published": "Wed, 15 Apr 2026 21:31:54 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/15/allbirds-bird-stock-shoes-ai.html",
+      "title": "Struggling shoe retailer Allbirds makes bizarre pivot to AI, adds $127 million in value",
+      "article": "Allbirds announced a deal with American Exchange Group to sell its intellectual property and other assets for $39 million in March.",
+      "fp": "struggling shoe retailer allbirds makes bizarre pivot to ai, adds $127 million in value allbirds announced a deal with american exchange group to sell its intellectual property and other assets for $39 million in march.",
+      "published": "Wed, 15 Apr 2026 22:41:59 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/15/beef-cattle-grilling-inflation.html",
+      "title": "Cattle prices soar to record highs as grilling season heats up",
+      "article": "Cattle futures contracts have jumped more than 25% over the past 12 months as ranchers face rising costs and cut the size of herds.",
+      "fp": "cattle prices soar to record highs as grilling season heats up cattle futures contracts have jumped more than 25% over the past 12 months as ranchers face rising costs and cut the size of herds.",
+      "published": "Wed, 15 Apr 2026 20:31:04 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/15/ford-ev-leader-doug-field.html",
+      "title": "Ford EV chief leaving automaker amid new restructuring efforts",
+      "article": "The departure was announced alongside Ford detailing a new restructuring that includes the establishment of a \"Product Creation and Industrialization\" unit.",
+      "fp": "ford ev chief leaving automaker amid new restructuring efforts the departure was announced alongside ford detailing a new restructuring that includes the establishment of a \"product creation and industrialization\" unit.",
+      "published": "Wed, 15 Apr 2026 21:11:57 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/15/trump-threatens-to-fire-powell-if-the-fed-chair-doesnt-leave-office-on-his-own.html",
+      "title": "Trump threatens to fire Powell if the Fed chair doesn't leave office on his own",
+      "article": "Though most Fed chairs in the past have left after being replaced, Powell has demurred on what he plans to do.",
+      "fp": "trump threatens to fire powell if the fed chair doesn't leave office on his own though most fed chairs in the past have left after being replaced, powell has demurred on what he plans to do.",
+      "published": "Wed, 15 Apr 2026 14:43:27 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/15/iran-conflict-oil-prices-cruise-lines.html",
+      "title": "For cruise lines, Iran conflict and oil prices threaten to dent profits",
+      "article": "Even as the industry navigates choppy seas, cruise companies are looking for their next avenues for growth.",
+      "fp": "for cruise lines, iran conflict and oil prices threaten to dent profits even as the industry navigates choppy seas, cruise companies are looking for their next avenues for growth.",
+      "published": "Wed, 15 Apr 2026 21:44:30 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/15/a-few-tankers-and-ships-are-going-through-the-strait-of-hormuz-heres-the-latest-traffic.html",
+      "title": "A few tankers and ships are going through the Strait of Hormuz. Here's the latest traffic",
+      "article": "Tanker transits Tuesday were 90% below traffic before the U.S. and Israel attacked Iran, according to shipping data.",
+      "fp": "a few tankers and ships are going through the strait of hormuz. here's the latest traffic tanker transits tuesday were 90% below traffic before the u.s. and israel attacked iran, according to shipping data.",
+      "published": "Wed, 15 Apr 2026 18:13:42 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/15/iran-war-trump-peace-deal-us-talks-stock-market-oil-prices-.html",
+      "title": "Iran war 'very close to over,' Trump says — and the stock market 'is going to boom'",
+      "article": "The U.S. has beaten Iran \"militarily\" and that the war is \"very close to over,\" Trump said, claiming a peace deal likely.",
+      "fp": "iran war 'very close to over,' trump says — and the stock market 'is going to boom' the u.s. has beaten iran \"militarily\" and that the war is \"very close to over,\" trump said, claiming a peace deal likely.",
+      "published": "Wed, 15 Apr 2026 14:19:53 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/15/anthropic-outage-elevated-errors-claude-chatbot-code-api.html",
+      "title": "Anthropic products are operational after brief outage, status page says",
+      "article": "Anthropic said it is working to \"fully resolve this issue,\" according to its page showing the status of the Claude chatbot, Claude Code and the API.",
+      "fp": "anthropic products are operational after brief outage, status page says anthropic said it is working to \"fully resolve this issue,\" according to its page showing the status of the claude chatbot, claude code and the api.",
+      "published": "Wed, 15 Apr 2026 17:57:36 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/15/nvidias-long-awaited-stock-breakout-is-proof-that-patience-pays-off.html",
+      "title": "Nvidia's long-awaited stock breakout is proof that patience pays off",
       "article": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
-      "fp": "stocks keep the rally going and oil tumbles. here's why we have some trepidation every weekday, the investing club releases the homestretch; an actionable afternoon update just in time for the last hour of trading.",
-      "published": "Tue, 14 Apr 2026 19:06:48 GMT"
+      "fp": "nvidia's long-awaited stock breakout is proof that patience pays off every weekday, the investing club releases the homestretch; an actionable afternoon update just in time for the last hour of trading.",
+      "published": "Wed, 15 Apr 2026 19:01:12 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/14/oracle-orcl-bloom-energy-be-stock-data-center-ai-power.html",
-      "title": "Oracle jumps for a second day, Bloom Energy soars 22% on AI data center power deal",
-      "article": "Oracle stocks bounced as software shares continued to recover and the company expanded a capacity deal with Bloom Energy.",
-      "fp": "oracle jumps for a second day, bloom energy soars 22% on ai data center power deal oracle stocks bounced as software shares continued to recover and the company expanded a capacity deal with bloom energy.",
-      "published": "Tue, 14 Apr 2026 20:17:38 GMT"
+      "link": "https://www.cnbc.com/2026/04/15/bank-of-america-bac-earnings-q1-2026.html",
+      "title": "Bank of America tops estimates as CEO Brian Moynihan says consumer banking is 'healthy'",
+      "article": "Bank of America, the second-largest U.S. bank by assets, has topped expectations for earnings per share for 23 consecutive quarters.",
+      "fp": "bank of america tops estimates as ceo brian moynihan says consumer banking is 'healthy' bank of america, the second-largest u.s. bank by assets, has topped expectations for earnings per share for 23 consecutive quarters.",
+      "published": "Wed, 15 Apr 2026 14:54:03 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/14/wholesale-prices-rose-0point5percent-in-march-much-less-than-expected-despite-war-impact.html",
-      "title": "Wholesale prices rose 0.5% in March, much less than expected despite war impact",
-      "article": "The producer price index was expected to increase 1.1% in March, according to the Dow Jones consensus estimate.",
-      "fp": "wholesale prices rose 0.5% in march, much less than expected despite war impact the producer price index was expected to increase 1.1% in march, according to the dow jones consensus estimate.",
-      "published": "Tue, 14 Apr 2026 14:08:43 GMT"
+      "link": "https://www.cnbc.com/2026/04/15/tesla-tsla-stock-analyst-upgrade-software-updates.html",
+      "title": "Tesla stock adds nearly 8% as Elon Musk touts chip progress",
+      "article": "UBS analysts changed their previously bearish rating on shares of Tesla this week.",
+      "fp": "tesla stock adds nearly 8% as elon musk touts chip progress ubs analysts changed their previously bearish rating on shares of tesla this week.",
+      "published": "Wed, 15 Apr 2026 20:20:39 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/14/china-us-strait-of-hormuz-war-donald-trump-oil-energy-crisis-conflict-middle-east-iran.html",
-      "title": "China calls U.S. blockade of the Strait of Hormuz 'dangerous and irresponsible'",
-      "article": "The Chinese foreign ministry said only a \"comprehensive ceasefire\" would help ease the ongoing crisis in the Middle East.",
-      "fp": "china calls u.s. blockade of the strait of hormuz 'dangerous and irresponsible' the chinese foreign ministry said only a \"comprehensive ceasefire\" would help ease the ongoing crisis in the middle east.",
-      "published": "Tue, 14 Apr 2026 09:29:14 GMT"
+      "link": "https://www.cnbc.com/2026/04/15/fifa-president-iran-team-coming-for-sure-to-2026-world-cup-in-us.html",
+      "title": "Iran team is 'coming for sure' to 2026 World Cup in U.S., says FIFA President Infantino",
+      "article": "Amid war with the U.S., Iran's participation in the World Cup is uncertain. But FIFA President Gianni Infantino tells CNBC they will play in North America.",
+      "fp": "iran team is 'coming for sure' to 2026 world cup in u.s., says fifa president infantino amid war with the u.s., iran's participation in the world cup is uncertain. but fifa president gianni infantino tells cnbc they will play in north america.",
+      "published": "Wed, 15 Apr 2026 17:48:57 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/14/oil-wti-brent-as-markets-hormuz-blockade-vance-trump.html",
-      "title": "U.S. oil price tumbles below $92 as White House considers further talks with Iran",
-      "article": "U.S. Vice President JD Vance said Monday that the next steps in U.S.-Iran peace efforts now depend on Tehran.",
-      "fp": "u.s. oil price tumbles below $92 as white house considers further talks with iran u.s. vice president jd vance said monday that the next steps in u.s.-iran peace efforts now depend on tehran.",
-      "published": "Tue, 14 Apr 2026 19:14:14 GMT"
+      "link": "https://www.cnbc.com/2026/04/15/world-bank-ajay-banga-iran-war-hormuz-strait.html",
+      "title": "World Bank president: Prepare for months of disruption, even after Hormuz Strait reopens",
+      "article": "It will take \"a few months for things to come back\" once the Strait of Hormuz is no longer effectively closed, Banga said.",
+      "fp": "world bank president: prepare for months of disruption, even after hormuz strait reopens it will take \"a few months for things to come back\" once the strait of hormuz is no longer effectively closed, banga said.",
+      "published": "Wed, 15 Apr 2026 18:23:48 GMT"
     },
     {
-      "link": "https://www.marketwatch.com/story/history-says-theres-a-good-chance-we-havent-seen-the-stock-market-lows-yet-66d015fa?mod=mw_rss_topstories",
-      "title": "History says there’s a good chance we haven’t seen the stock-market lows yet",
-      "article": "The U.S. stock market has suffered a significant correction in every single midterm election year since 1950, warns Lansing Street Advisors.",
-      "fp": "history says there’s a good chance we haven’t seen the stock-market lows yet the u.s. stock market has suffered a significant correction in every single midterm election year since 1950, warns lansing street advisors.",
-      "published": "Tue, 14 Apr 2026 22:41:00 GMT"
+      "link": "https://www.cnbc.com/2026/04/15/santacon-charity-fraud-new-york-doj.html",
+      "title": "SantaCon promoter arrested for charity fraud, New York federal prosecutors say",
+      "article": "More than 25,000 people dressed as Santa Claus and other Christmas characters pass through New York bars in an annual event meant to raise money for charity.",
+      "fp": "santacon promoter arrested for charity fraud, new york federal prosecutors say more than 25,000 people dressed as santa claus and other christmas characters pass through new york bars in an annual event meant to raise money for charity.",
+      "published": "Wed, 15 Apr 2026 22:19:30 GMT"
     },
     {
-      "link": "https://www.marketwatch.com/story/nvidias-stock-is-on-a-10-day-winning-streak-heres-why-investors-are-getting-back-on-board-with-ai-bf0bb59e?mod=mw_rss_topstories",
-      "title": "Nvidia’s stock is on a 10-day winning streak. Here’s why investors are getting back on board with AI.",
-      "article": "The AI trade has been full of uncertainty, but investors seem to be getting excited again",
-      "fp": "nvidia’s stock is on a 10-day winning streak. here’s why investors are getting back on board with ai. the ai trade has been full of uncertainty, but investors seem to be getting excited again",
-      "published": "Tue, 14 Apr 2026 21:55:00 GMT"
+      "link": "https://www.cnbc.com/2026/04/15/fed-justice-jeanine-pirro-jerome-powell-investigation.html",
+      "title": "Jeanine Pirro pursues Fed pressure while clock ticks on her appeal in Powell probe",
+      "article": "The U.S. attorney for the District of Columbia has yet to file a planned appeal to a judge's ruling quashing her subpoenas to the Federal Reserve.",
+      "fp": "jeanine pirro pursues fed pressure while clock ticks on her appeal in powell probe the u.s. attorney for the district of columbia has yet to file a planned appeal to a judge's ruling quashing her subpoenas to the federal reserve.",
+      "published": "Wed, 15 Apr 2026 18:22:04 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_46729_PortfolioIdeas_1776191669000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "War and Uncertainty",
-      "article": "War and Uncertainty",
-      "fp": "war and uncertainty war and uncertainty",
-      "published": "2026-04-14T18:34:29Z"
+      "link": "https://www.cnbc.com/2026/04/15/anthropics-mythos-isnt-threatening-bitcoin-the-real-ai-risk-is-at-crypto-exchanges-.html",
+      "title": "Anthropic's Mythos isn't threatening bitcoin. The real AI risk is at crypto exchanges",
+      "article": "The Bitcoin blockchain itself has never been hacked and has operated securely and without interruption since 2009. The Mythos threat probably won't change that.",
+      "fp": "anthropic's mythos isn't threatening bitcoin. the real ai risk is at crypto exchanges the bitcoin blockchain itself has never been hacked and has operated securely and without interruption since 2009. the mythos threat probably won't change that.",
+      "published": "Wed, 15 Apr 2026 18:55:27 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_46727_MarketUpdate_1776186603000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "Market Update: ATO, JPM",
-      "article": "Market Update: ATO, JPM",
-      "fp": "market update: ato, jpm market update: ato, jpm",
-      "published": "2026-04-14T17:10:03Z"
+      "link": "https://www.cnbc.com/2026/04/15/iran-war-trump-us-uk-rachel-reeves-uk-imf-oil-energy.html",
+      "title": "UK finance minister Rachel Reeves blasts Trump administration over economic impact of Iran war",
+      "article": "U.K. Finance Minister Rachel Reeves called for an immediate de-escalation to the Middle East conflict on Wednesday.",
+      "fp": "uk finance minister rachel reeves blasts trump administration over economic impact of iran war u.k. finance minister rachel reeves called for an immediate de-escalation to the middle east conflict on wednesday.",
+      "published": "Wed, 15 Apr 2026 16:19:30 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/14/jim-cramer-says-the-market-rally-shows-why-you-cant-bail-on-stocks.html",
-      "title": "Cramer: The market's biggest fears 'just didn't happen' – and that's why you can't leave the game",
-      "article": "CNBC's Jim Cramer explained why bailing on stocks when things look bleak ends up hurting you in the long run.",
-      "fp": "cramer: the market's biggest fears 'just didn't happen' – and that's why you can't leave the game cnbc's jim cramer explained why bailing on stocks when things look bleak ends up hurting you in the long run.",
-      "published": "Tue, 14 Apr 2026 22:50:38 GMT"
+      "link": "https://www.cnbc.com/2026/04/15/tax-day-election-pay-democrats.html",
+      "title": "Tax Day proposal to exempt Election Day poll worker pay floated by House Democrats",
+      "article": "Democrats and Republicans in Washington are both trying to capitalize on Tax Day.",
+      "fp": "tax day proposal to exempt election day poll worker pay floated by house democrats democrats and republicans in washington are both trying to capitalize on tax day.",
+      "published": "Wed, 15 Apr 2026 16:00:01 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/14/trump-iran-war-strait-of-hormuz-negotiations.html",
-      "title": "More U.S.-Iran peace deal talks are in discussion, White House says",
-      "article": "Traffic through the Strait of Hormuz remains at a trickle, despite President Donald Trump proclaiming that a ceasefire with Iran depended on it reopening.",
-      "fp": "more u.s.-iran peace deal talks are in discussion, white house says traffic through the strait of hormuz remains at a trickle, despite president donald trump proclaiming that a ceasefire with iran depended on it reopening.",
-      "published": "Tue, 14 Apr 2026 17:33:46 GMT"
+      "link": "https://www.cnbc.com/2026/04/15/cleveland-fed-president-hammack-expects-interest-rates-to-stay-on-hold-for-a-good-while.html",
+      "title": "Cleveland Fed President Hammack expects interest rates to stay on hold 'for a good while'",
+      "article": "The central bank official advocated a patient approach as officials watch incoming data for clues about where the U.S. economy is heading.",
+      "fp": "cleveland fed president hammack expects interest rates to stay on hold 'for a good while' the central bank official advocated a patient approach as officials watch incoming data for clues about where the u.s. economy is heading.",
+      "published": "Wed, 15 Apr 2026 15:21:07 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/14/federal-reserve-warsh-wealth.html",
-      "title": "Fed nominee Warsh filings detail vast wealth, far exceeding past chairs",
-      "article": "Kevin Warsh, nominee to lead the Federal Reserve, detailed his holdings in newly released financial disclosures.",
-      "fp": "fed nominee warsh filings detail vast wealth, far exceeding past chairs kevin warsh, nominee to lead the federal reserve, detailed his holdings in newly released financial disclosures.",
-      "published": "Tue, 14 Apr 2026 18:02:47 GMT"
+      "link": "https://www.cnbc.com/2026/04/15/trump-accounts.html",
+      "title": "Trump Accounts for kids now total 5 million, and 1.2 million can get $1,000 seed money, Bessent says",
+      "article": "About 5 million children have been signed up for Trump Accounts, according to Treasury Secretary Scott Bessent. Here's what families need to know.",
+      "fp": "trump accounts for kids now total 5 million, and 1.2 million can get $1,000 seed money, bessent says about 5 million children have been signed up for trump accounts, according to treasury secretary scott bessent. here's what families need to know.",
+      "published": "Wed, 15 Apr 2026 19:32:04 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/14/david-einhorn-signals-caution-as-his-hedge-fund-greenlight-prioritizes-capital-protection.html",
-      "title": "David Einhorn signals caution as his hedge fund Greenlight prioritizes capital protection",
-      "article": "\"It probably won't surprise anyone that we are again putting capital preservation at the top of our priorities,\" Einhorn said in his latest investor letter.",
-      "fp": "david einhorn signals caution as his hedge fund greenlight prioritizes capital protection \"it probably won't surprise anyone that we are again putting capital preservation at the top of our priorities,\" einhorn said in his latest investor letter.",
-      "published": "Tue, 14 Apr 2026 18:23:50 GMT"
+      "link": "https://www.cnbc.com/2026/04/15/snap-stock-layoffs-16-percent-workforce.html",
+      "title": "Snap's stock jumps on plans to axe 16% of its workforce citing AI efficiencies",
+      "article": "Snap was up in premarket trading on Wednesday after announcing plans to lay off up to 16% of its global workforce citing AI-driven efficiencies",
+      "fp": "snap's stock jumps on plans to axe 16% of its workforce citing ai efficiencies snap was up in premarket trading on wednesday after announcing plans to lay off up to 16% of its global workforce citing ai-driven efficiencies",
+      "published": "Wed, 15 Apr 2026 16:43:14 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/14/amazon-globalstar-satellite-leo-internet.html",
-      "title": "Amazon to buy Globalstar to bolster Leo satellite business in deal worth about $11.6 billion",
-      "article": "Amazon said it would acquire Globalstar, giving its nascent satellite internet business a boost as it vies to compete with Elon Musk's SpaceX.",
-      "fp": "amazon to buy globalstar to bolster leo satellite business in deal worth about $11.6 billion amazon said it would acquire globalstar, giving its nascent satellite internet business a boost as it vies to compete with elon musk's spacex.",
-      "published": "Tue, 14 Apr 2026 16:10:22 GMT"
+      "link": "https://www.cnbc.com/2026/04/15/irs-tax-extension.html",
+      "title": "How to file a tax extension for free by the April 15 deadline",
+      "article": "You can file an IRS tax extension by April 15 if you need more time on your taxes. Here are some free options.",
+      "fp": "how to file a tax extension for free by the april 15 deadline you can file an irs tax extension by april 15 if you need more time on your taxes. here are some free options.",
+      "published": "Wed, 15 Apr 2026 17:07:48 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/14/iran-war-cost-us-taxpayer-trillion-harvard.html",
-      "title": "The Iran war could cost the American taxpayer $1 trillion, says Harvard academic",
-      "article": "As efforts to reach a lasting settlement have so far proved unsuccessful, one Harvard academic estimates the total could end up far higher than was promised.",
-      "fp": "the iran war could cost the american taxpayer $1 trillion, says harvard academic as efforts to reach a lasting settlement have so far proved unsuccessful, one harvard academic estimates the total could end up far higher than was promised.",
-      "published": "Tue, 14 Apr 2026 13:03:11 GMT"
+      "link": "https://www.cnbc.com/2026/04/15/tax-day-earned-income-credit-child.html",
+      "title": "Parents could see $5,500 boost to earned income tax credit under new Democratic measure",
+      "article": "The bill would also increase the maximum qualifying income to claim the EITC to nearly $100,000 annually.",
+      "fp": "parents could see $5,500 boost to earned income tax credit under new democratic measure the bill would also increase the maximum qualifying income to claim the eitc to nearly $100,000 annually.",
+      "published": "Wed, 15 Apr 2026 15:53:29 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/14/meta-commits-to-one-gigawatt-of-custom-chips-with-broadcom-as-hock-tan-agrees-to-leave-board.html",
-      "title": "Meta commits to 1 gigawatt of custom chips with Broadcom as Hock Tan agrees to leave board",
-      "article": "Meta commits to deploying 1 GW of custom in-house MTIA chips codesigned with Broadcom in sweeping new multiyear deal announced Tuesday",
-      "fp": "meta commits to 1 gigawatt of custom chips with broadcom as hock tan agrees to leave board meta commits to deploying 1 gw of custom in-house mtia chips codesigned with broadcom in sweeping new multiyear deal announced tuesday",
-      "published": "Tue, 14 Apr 2026 22:32:20 GMT"
+      "link": "https://www.marketwatch.com/story/shes-a-smoker-my-mother-55-has-no-car-and-no-job-should-i-buy-her-life-insurance-e98caa2d?mod=mw_rss_topstories",
+      "title": "‘She’s a smoker’: My mother, 55, has no car and no job. Should I buy her life insurance?",
+      "article": "“My brothers and I are willing to split the cost of life insurance for her, if we can find a policy.”",
+      "fp": "‘she’s a smoker’: my mother, 55, has no car and no job. should i buy her life insurance? “my brothers and i are willing to split the cost of life insurance for her, if we can find a policy.”",
+      "published": "Wed, 15 Apr 2026 22:57:00 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/14/crypto-exchange-kraken-confirms-it-has-confidentially-filed-for-an-ipo.html",
-      "title": "Crypto exchange Kraken confirms it has confidentially filed for an IPO",
-      "article": "Kraken co-CEO Arjun Sethi said the crypto exchange has confidentially filed for a U.S. initial public offering, confirming CNBC's previous reporting.",
-      "fp": "crypto exchange kraken confirms it has confidentially filed for an ipo kraken co-ceo arjun sethi said the crypto exchange has confidentially filed for a u.s. initial public offering, confirming cnbc's previous reporting.",
-      "published": "Tue, 14 Apr 2026 23:07:39 GMT"
+      "link": "https://www.marketwatch.com/story/im-selling-my-law-practice-and-retiring-do-i-pay-off-the-2-million-loan-on-my-office-building-or-keep-the-mortgage-e8a4015b?mod=mw_rss_topstories",
+      "title": "I’m selling my law practice and retiring. Do I pay off the $2 million loan on my office building — or keep the mortgage?",
+      "article": "I’m selling my law practice and retiring. Do I pay off the $2 million loan on my office building — or keep the mortgage?",
+      "fp": "i’m selling my law practice and retiring. do i pay off the $2 million loan on my office building — or keep the mortgage? i’m selling my law practice and retiring. do i pay off the $2 million loan on my office building — or keep the mortgage?",
+      "published": "Wed, 15 Apr 2026 22:57:00 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/14/blackstone-exec-joan-solotar-private-credit-signal-noise.html",
-      "title": "Blackstone’s Joan Solotar says investors should separate ‘signal from the noise’ in private credit",
-      "article": "Joan Solotar, global head of Blackstone Private Wealth, said the capital flight from private credit isn't justified by the likely returns and potential losses.",
-      "fp": "blackstone’s joan solotar says investors should separate ‘signal from the noise’ in private credit joan solotar, global head of blackstone private wealth, said the capital flight from private credit isn't justified by the likely returns and potential losses.",
-      "published": "Tue, 14 Apr 2026 17:59:10 GMT"
+      "link": "https://www.marketwatch.com/story/live-nation-stock-falls-as-jury-finds-ticketing-giant-acted-as-an-illegal-monopoly-1f21ac77?mod=mw_rss_topstories",
+      "title": "Live Nation stock falls as jury finds ticketing giant acted as an illegal monopoly. Here’s what happens next.",
+      "article": "Shares of Live Nation sank on Wednesday after a jury found that the Ticketmaster parent had acted as an illegal monopoly over the ticketing industry, according to reports.",
+      "fp": "live nation stock falls as jury finds ticketing giant acted as an illegal monopoly. here’s what happens next. shares of live nation sank on wednesday after a jury found that the ticketmaster parent had acted as an illegal monopoly over the ticketing industry, according to reports.",
+      "published": "Wed, 15 Apr 2026 22:46:00 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/14/jet-fuel-shortage-middle-east-crisis-flight-cancellations-europe.html",
-      "title": "A 'systemic' jet fuel shortage is brewing in Europe — and flights could be hit hard",
-      "article": "'We've seen constraints in countries like Vietnam and Thailand on air travel, but this is also spilling over to Europe,' an ING analyst told CNBC.",
-      "fp": "a 'systemic' jet fuel shortage is brewing in europe — and flights could be hit hard 'we've seen constraints in countries like vietnam and thailand on air travel, but this is also spilling over to europe,' an ing analyst told cnbc.",
-      "published": "Tue, 14 Apr 2026 14:05:09 GMT"
+      "link": "https://www.marketwatch.com/story/microsofts-stock-has-sprung-back-to-life-its-on-its-strongest-run-in-3-years-by-one-measure-02b7e184?mod=mw_rss_topstories",
+      "title": "Microsoft’s stock has sprung back to life — and is on its strongest run in 3 years, by one measure",
+      "article": "After frustrating investors for months, Microsoft shares just clinched their best three-session performance since April 2023.",
+      "fp": "microsoft’s stock has sprung back to life — and is on its strongest run in 3 years, by one measure after frustrating investors for months, microsoft shares just clinched their best three-session performance since april 2023.",
+      "published": "Wed, 15 Apr 2026 22:13:00 GMT"
     },
     {
-      "link": "https://www.marketwatch.com/story/why-one-analyst-believes-microsofts-stock-may-be-bottoming-out-560a3478?mod=mw_rss_topstories",
-      "title": "Why one analyst believes Microsoft’s stock may be bottoming out",
-      "article": "Bernstein’s Mark Moerdler sees a good entry point for new investors in the stock, as Microsoft should start reaping the benefits of capex.",
-      "fp": "why one analyst believes microsoft’s stock may be bottoming out bernstein’s mark moerdler sees a good entry point for new investors in the stock, as microsoft should start reaping the benefits of capex.",
-      "published": "Tue, 14 Apr 2026 22:05:00 GMT"
-    },
-    {
-      "link": "https://www.cnbc.com/2026/04/14/jamie-dimon-anthropic-mythos-vulnerabilities-cyber-attacks.html",
-      "title": "Jamie Dimon says Anthropic's Mythos reveals 'a lot more vulnerabilities' for cyberattacks",
-      "article": "The remarks show how a technology welcomed by corporations as a productivity boon can also pose serious threats, like uncovering new ways to hack into systems.",
-      "fp": "jamie dimon says anthropic's mythos reveals 'a lot more vulnerabilities' for cyberattacks the remarks show how a technology welcomed by corporations as a productivity boon can also pose serious threats, like uncovering new ways to hack into systems.",
-      "published": "Tue, 14 Apr 2026 20:55:03 GMT"
-    },
-    {
-      "link": "https://www.cnbc.com/2026/04/14/prediction-markets-will-grow-to-1-trillion-by-2030-bernstein-says.html",
-      "title": "Prediction markets will grow to $1 trillion by 2030, Bernstein estimates",
-      "article": "The investment bank said volumes will reach an estimated $240 billion in 2026 and grow at a 80% compound annual rate between 2025 and 2030.",
-      "fp": "prediction markets will grow to $1 trillion by 2030, bernstein estimates the investment bank said volumes will reach an estimated $240 billion in 2026 and grow at a 80% compound annual rate between 2025 and 2030.",
-      "published": "Tue, 14 Apr 2026 18:12:58 GMT"
-    },
-    {
-      "link": "https://www.cnbc.com/2026/04/14/ceos-are-betting-ai-will-augment-work-rather-than-displace-all-workers.html",
-      "title": "CEOs are betting AI will augment work rather than displace all workers",
-      "article": "Panelists at the Semafor World Economy conference said artificial intelligence can supplement the work that's already done, improving its quantity and quality.",
-      "fp": "ceos are betting ai will augment work rather than displace all workers panelists at the semafor world economy conference said artificial intelligence can supplement the work that's already done, improving its quantity and quality.",
-      "published": "Tue, 14 Apr 2026 16:04:59 GMT"
-    },
-    {
-      "link": "https://finance.yahoo.com/economy/articles/costco-reveals-shift-shopper-spending-180800970.html",
-      "title": "Costco reveals shift in shopper spending behavior",
-      "article": "Costco reveals shift in shopper spending behavior",
-      "fp": "costco reveals shift in shopper spending behavior costco reveals shift in shopper spending behavior",
-      "published": "2026-04-14T18:08:00Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_3110_AnalystReport_1776186603000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "Analyst Report: JPMorgan Chase & Co",
-      "article": "Analyst Report: JPMorgan Chase & Co",
-      "fp": "analyst report: jpmorgan chase & co analyst report: jpmorgan chase & co",
-      "published": "2026-04-14T17:10:03Z"
-    },
-    {
-      "link": "https://www.cnbc.com/2026/04/14/gen-z-investors-stock-market-volatility.html",
-      "title": "Market volatility may 'weigh heavily' on Gen Z, advisor says: How young investors can adapt",
-      "article": "For young investors, the recent market volatility can be especially unsettling. Financial advisors have tips to help you through it.",
-      "fp": "market volatility may 'weigh heavily' on gen z, advisor says: how young investors can adapt for young investors, the recent market volatility can be especially unsettling. financial advisors have tips to help you through it.",
-      "published": "Tue, 14 Apr 2026 18:52:06 GMT"
-    },
-    {
-      "link": "https://www.cnbc.com/2026/04/14/united-airlines-american-airlines-merger-report.html",
-      "title": "What a United-American merger would mean, from antitrust hurdles to airfare",
-      "article": "United Airlines CEO Scott Kirby reportedly floated a potential merger with Trump administration officials earlier this year.",
-      "fp": "what a united-american merger would mean, from antitrust hurdles to airfare united airlines ceo scott kirby reportedly floated a potential merger with trump administration officials earlier this year.",
-      "published": "Tue, 14 Apr 2026 20:38:20 GMT"
-    },
-    {
-      "link": "https://www.cnbc.com/2026/04/14/car-loan-terms.html",
-      "title": "Share of 7-year car loans grows as buyers 'work harder to make the numbers fit,' expert says",
-      "article": "With the amount financed reaching an all-time high, more car buyers are stretching out their loans to at least seven years to afford the monthly payments.",
-      "fp": "share of 7-year car loans grows as buyers 'work harder to make the numbers fit,' expert says with the amount financed reaching an all-time high, more car buyers are stretching out their loans to at least seven years to afford the monthly payments.",
-      "published": "Tue, 14 Apr 2026 12:36:00 GMT"
-    },
-    {
-      "link": "https://www.cnbc.com/2026/04/14/lucid-ceo-silvio-napoli.html",
-      "title": "Lucid names auto industry outsider as CEO, expands Uber deal",
-      "article": "Lucid Group has named the former chairman and CEO of Schindler Group, an industrial manufacturer of escalators and elevators, as its new chief executive.",
-      "fp": "lucid names auto industry outsider as ceo, expands uber deal lucid group has named the former chairman and ceo of schindler group, an industrial manufacturer of escalators and elevators, as its new chief executive.",
-      "published": "Tue, 14 Apr 2026 21:43:06 GMT"
-    },
-    {
-      "link": "https://finance.yahoo.com/markets/crypto/articles/major-gold-holder-launches-self-174018917.html",
-      "title": "Major gold holder launches self-custody wallet",
-      "article": "Major gold holder launches self-custody wallet",
-      "fp": "major gold holder launches self-custody wallet major gold holder launches self-custody wallet",
-      "published": "2026-04-14T17:40:18Z"
-    },
-    {
-      "link": "https://www.cnbc.com/2026/04/14/elon-musk-xai-memphis-data-centers.html",
-      "title": "NAACP sues Elon Musk's xAI over Memphis data center air pollution",
-      "article": "Elon Musk, who is the world's richest person, has been counting on the greater Memphis area to serve as the backbone for xAI's buildout.",
-      "fp": "naacp sues elon musk's xai over memphis data center air pollution elon musk, who is the world's richest person, has been counting on the greater memphis area to serve as the backbone for xai's buildout.",
-      "published": "Tue, 14 Apr 2026 23:12:08 GMT"
-    },
-    {
-      "link": "https://www.cnbc.com/2026/04/14/nrcc-touts-tax-cuts-in-new-2026-election-messaging-ad.html",
-      "title": "House Republican campaign arm touts tax cuts in new 2026 election ad",
-      "article": "Republicans are trying to defend a razor-thin majority in the House and are running on tax policies passed last year.",
-      "fp": "house republican campaign arm touts tax cuts in new 2026 election ad republicans are trying to defend a razor-thin majority in the house and are running on tax policies passed last year.",
-      "published": "Tue, 14 Apr 2026 11:36:37 GMT"
-    },
-    {
-      "link": "https://www.cnbc.com/2026/04/14/sam-altman-openai-molotov-attack-arraignment.html",
-      "title": "Altman arson suspect Moreno-Gama suffered 'acute mental health crisis,' lawyer says",
-      "article": "Daniel Moreno-Gama allegedly threw a lit Molotov cocktail at the driveway gate of OpenAI CEO Sam Altman's home.",
-      "fp": "altman arson suspect moreno-gama suffered 'acute mental health crisis,' lawyer says daniel moreno-gama allegedly threw a lit molotov cocktail at the driveway gate of openai ceo sam altman's home.",
-      "published": "Tue, 14 Apr 2026 22:09:03 GMT"
-    },
-    {
-      "link": "https://www.cnbc.com/2026/04/14/eric-swalwell-accuser-rape-california.html",
-      "title": "New Eric Swalwell accuser Lonna Drewes says 'he raped me,' will file police report",
-      "article": "Eric Swalwell already faced a pending criminal investigation by the Manhattan DA's office over an allegation of sexual assault by another woman.",
-      "fp": "new eric swalwell accuser lonna drewes says 'he raped me,' will file police report eric swalwell already faced a pending criminal investigation by the manhattan da's office over an allegation of sexual assault by another woman.",
-      "published": "Tue, 14 Apr 2026 21:06:35 GMT"
+      "link": "https://www.marketwatch.com/story/iran-war-is-a-major-source-of-uncertainty-for-u-s-businesses-feds-beige-book-says-52d45d7b?mod=mw_rss_topstories",
+      "title": "U.S. businesses hit the brakes on hiring and spending as Iran war dims optimism over economy, Fed report finds",
+      "article": "Many Fed districts also reported growing signs of financial strain among consumers, along with increased price sensitivity and rising demand at food banks.",
+      "fp": "u.s. businesses hit the brakes on hiring and spending as iran war dims optimism over economy, fed report finds many fed districts also reported growing signs of financial strain among consumers, along with increased price sensitivity and rising demand at food banks.",
+      "published": "Wed, 15 Apr 2026 22:12:00 GMT"
     }
   ],
   "japan_news": [
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260414/k10015099231000.html",
-      "title": "中国 3月輸出額 伸びが大幅鈍化 原油高がどう影響するか焦点",
-      "article": "中国の3月の輸出額は、ヨーロッパや東南アジア向けが伸びたことから、去年の同じ月と比べて2％余り増えました。ただ、前の2か月間と比べると伸びが大幅に鈍化していて、イラン情勢の緊迫化に伴う原油価格の高止まりが、今後、どう影響するかが焦点です。",
-      "fp": "中国 3月輸出額 伸びが大幅鈍化 原油高がどう影響するか焦点 中国の3月の輸出額は、ヨーロッパや東南アジア向けが伸びたことから、去年の同じ月と比べて2％余り増えました。ただ、前の2か月間と比べると伸びが大幅に鈍化していて、イラン情勢の緊迫化に伴う原油価格の高止まりが、今後、どう影響するかが焦点です。",
-      "published": "Tue, 14 Apr 2026 18:04:07 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260416/k10015100401000.html",
+      "title": "G7財務相・中銀総裁会議 イラン情勢受け経済や市場対応議論へ",
+      "article": "G7＝主要7か国の財務相・中央銀行総裁会議がアメリカ・ワシントンで日本時間の16日に開かれます。イラン情勢を受けて混乱が続く世界経済や金融市場の安定に向けて意見が交わされる見通しです。",
+      "fp": "g7財務相・中銀総裁会議 イラン情勢受け経済や市場対応議論へ g7＝主要7か国の財務相・中央銀行総裁会議がアメリカ・ワシントンで日本時間の16日に開かれます。イラン情勢を受けて混乱が続く世界経済や金融市場の安定に向けて意見が交わされる見通しです。",
+      "published": "Thu, 16 Apr 2026 05:14:21 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260414/k10015099041000.html",
-      "title": "【詳しく】イラン情勢 石油製品に影響 シンナーも品薄に",
-      "article": "イラン情勢を受けて塗装に必要なシンナーの調達が困難になっているなどとして、塗装業者で作る業界団体が14日、国に対応を求める要望書を提出しました。石油製品の調達をめぐって影響が広がっています。",
-      "fp": "【詳しく】イラン情勢 石油製品に影響 シンナーも品薄に イラン情勢を受けて塗装に必要なシンナーの調達が困難になっているなどとして、塗装業者で作る業界団体が14日、国に対応を求める要望書を提出しました。石油製品の調達をめぐって影響が広がっています。",
-      "published": "Tue, 14 Apr 2026 19:16:08 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260416/k10015100291000.html",
+      "title": "政府備蓄米 2年ぶり買い入れ 初回落札は予定の5％余にとどまる",
+      "article": "ことし生産されるコメを対象とした政府備蓄米の買い入れが2年ぶりに行われ、1回目の入札の結果、落札されたのは予定数量の5.6％にとどまりました。コメ価格の先行きが見通しにくい中、慎重な姿勢を示した業者が多かったとみられます。",
+      "fp": "政府備蓄米 2年ぶり買い入れ 初回落札は予定の5％余にとどまる ことし生産されるコメを対象とした政府備蓄米の買い入れが2年ぶりに行われ、1回目の入札の結果、落札されたのは予定数量の5.6％にとどまりました。コメ価格の先行きが見通しにくい中、慎重な姿勢を示した業者が多かったとみられます。",
+      "published": "Thu, 16 Apr 2026 05:00:48 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260414/k10015099021000.html",
-      "title": "日産 販売モデル9割に自動運転などAI活用へ 長期経営方針",
-      "article": "経営再建中の日産自動車は販売モデルの9割に自動運転などAIを活用した機能を搭載することなどを盛り込んだ長期的な経営方針を明らかにしました。今後は、コスト削減に加え、販売台数やブランドイメージの回復に向けた計画の実効性が問われることになります。",
-      "fp": "日産 販売モデル9割に自動運転などai活用へ 長期経営方針 経営再建中の日産自動車は販売モデルの9割に自動運転などaiを活用した機能を搭載することなどを盛り込んだ長期的な経営方針を明らかにしました。今後は、コスト削減に加え、販売台数やブランドイメージの回復に向けた計画の実効性が問われることになります。",
-      "published": "Tue, 14 Apr 2026 13:59:04 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260415/k10015100141000.html",
+      "title": "円相場 対ドルで小幅な値動き イラン情勢にらみ伸び悩み",
+      "article": "15日の東京外国為替市場、アメリカとイランが近く協議を再開するとの見方から、ドルを売って円を買う動きが進んだものの、その後、ドルを買い戻す動きも出て、円相場は、小幅な値動きとなりました。",
+      "fp": "円相場 対ドルで小幅な値動き イラン情勢にらみ伸び悩み 15日の東京外国為替市場、アメリカとイランが近く協議を再開するとの見方から、ドルを売って円を買う動きが進んだものの、その後、ドルを買い戻す動きも出て、円相場は、小幅な値動きとなりました。",
+      "published": "Wed, 15 Apr 2026 18:31:48 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260415/k10015099401000.html",
-      "title": "鶏肉も値上がり 業界関係者「消費者の節約志向が背景」",
-      "article": "鶏肉の3月の小売価格は、もも肉100グラム当たりおよそ150円と平年に比べて1割ほど高く、業界関係者は消費者の節約志向により、割安な鶏肉の需要が高まっていることが主な要因だとみています。",
-      "fp": "鶏肉も値上がり 業界関係者「消費者の節約志向が背景」 鶏肉の3月の小売価格は、もも肉100グラム当たりおよそ150円と平年に比べて1割ほど高く、業界関係者は消費者の節約志向により、割安な鶏肉の需要が高まっていることが主な要因だとみています。",
-      "published": "Wed, 15 Apr 2026 05:38:40 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260415/k10015100151000.html",
+      "title": "民間の石油備蓄義務の引き下げ措置 来月15日まで1か月間延長",
+      "article": "民間の石油備蓄義務の引き下げ措置 来月15日まで1か月間延長",
+      "fp": "民間の石油備蓄義務の引き下げ措置 来月15日まで1か月間延長 民間の石油備蓄義務の引き下げ措置 来月15日まで1か月間延長",
+      "published": "Wed, 15 Apr 2026 18:08:54 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260414/k10015098831000.html",
-      "title": "サンマの国際会議 大阪で始まる 漁獲量の上限引き下げが焦点に",
-      "article": "北太平洋でのサンマの資源管理を話し合う国際会議が、14日から大阪市で始まりました。漁の不振が続くサンマ資源を回復させるため、漁獲量の上限を引き下げることで合意できるかが焦点となります。",
-      "fp": "サンマの国際会議 大阪で始まる 漁獲量の上限引き下げが焦点に 北太平洋でのサンマの資源管理を話し合う国際会議が、14日から大阪市で始まりました。漁の不振が続くサンマ資源を回復させるため、漁獲量の上限を引き下げることで合意できるかが焦点となります。",
-      "published": "Tue, 14 Apr 2026 11:36:48 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260415/k10015100071000.html",
+      "title": "サントリー 第一三共の子会社を買収へ 健康関連事業を強化",
+      "article": "サントリーホールディングスは、市販の鎮痛剤やかぜ薬などを製造・販売する第一三共の子会社を2400億円余りで買収すると発表しました。健康志向の高まりを背景に、ビール大手の間では医薬品や健康食品などの分野への投資を拡大する動きが相次いでいます。",
+      "fp": "サントリー 第一三共の子会社を買収へ 健康関連事業を強化 サントリーホールディングスは、市販の鎮痛剤やかぜ薬などを製造・販売する第一三共の子会社を2400億円余りで買収すると発表しました。健康志向の高まりを背景に、ビール大手の間では医薬品や健康食品などの分野への投資を拡大する動きが相次いでいます。",
+      "published": "Wed, 15 Apr 2026 17:58:34 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260415/k10015099461000.html",
-      "title": "東京23区 武蔵野 三鷹のタクシー運賃 20日から値上げ",
-      "article": "東京23区 武蔵野 三鷹のタクシー運賃 20日から値上げ",
-      "fp": "東京23区 武蔵野 三鷹のタクシー運賃 20日から値上げ 東京23区 武蔵野 三鷹のタクシー運賃 20日から値上げ",
-      "published": "Wed, 15 Apr 2026 05:15:15 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260415/k10015087631000.html",
+      "title": "話題の船「ちきゅう」の中へ レアアースふくむ泥どうとった？",
+      "article": "話題の船「ちきゅう」の中へ レアアースふくむ泥どうとった？",
+      "fp": "話題の船「ちきゅう」の中へ レアアースふくむ泥どうとった？ 話題の船「ちきゅう」の中へ レアアースふくむ泥どうとった？",
+      "published": "Wed, 15 Apr 2026 16:27:18 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260414/k10015098801000.html",
-      "title": "特定技能 外食業での受け入れ一時停止 農相 「影響は承知」",
-      "article": "専門技能があると認められた外国人を受け入れる特定技能制度をめぐり、「外食業」での受け入れが13日から停止されました。これについて鈴木農林水産大臣は、「一部の外食企業では、今後の採用計画に影響が及ぶとの声があることもじゅうじゅう承知している」と述べたうえで、事業者への相談に丁寧に応じていく考えを示しました。",
-      "fp": "特定技能 外食業での受け入れ一時停止 農相 「影響は承知」 専門技能があると認められた外国人を受け入れる特定技能制度をめぐり、「外食業」での受け入れが13日から停止されました。これについて鈴木農林水産大臣は、「一部の外食企業では、今後の採用計画に影響が及ぶとの声があることもじゅうじゅう承知している」と述べたうえで、事業者への相談に丁寧に応じていく考えを示しました。",
-      "published": "Tue, 14 Apr 2026 11:07:15 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260415/k10015099751000.html",
+      "title": "株価 5万8000円台回復 米 イラン近く協議再開との見方から",
+      "article": "15日の東京株式市場、イラン情勢をめぐってアメリカとイランの間で近く協議が再開するとの見方から原油の先物価格が下落していることを背景に、多くの銘柄に買い注文が集まり、日経平均株価は取り引き時間中としてはおよそ1か月半ぶりに5万8000円台を回復しました。",
+      "fp": "株価 5万8000円台回復 米 イラン近く協議再開との見方から 15日の東京株式市場、イラン情勢をめぐってアメリカとイランの間で近く協議が再開するとの見方から原油の先物価格が下落していることを背景に、多くの銘柄に買い注文が集まり、日経平均株価は取り引き時間中としてはおよそ1か月半ぶりに5万8000円台を回復しました。",
+      "published": "Wed, 15 Apr 2026 16:14:49 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260414/k10015098811000.html",
-      "title": "きょうのおはBiz 4月14日(火) 伝統の大島紬 デザインに商機",
+      "link": "http://www3.nhk.or.jp/news/html/20260415/k10015100011000.html",
+      "title": "ガソリン価格 全国平均1リットル167.5円 4週ぶり値上がり",
+      "article": "レギュラーガソリンの小売価格は、13日時点の全国平均で1リットル当たり167.5円と、前の週より0.1円値上がりしました。政府による激変緩和措置で、170円程度の水準が続いています。",
+      "fp": "ガソリン価格 全国平均1リットル167.5円 4週ぶり値上がり レギュラーガソリンの小売価格は、13日時点の全国平均で1リットル当たり167.5円と、前の週より0.1円値上がりしました。政府による激変緩和措置で、170円程度の水準が続いています。",
+      "published": "Wed, 15 Apr 2026 15:29:42 +0900"
+    },
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260415/k10015099771000.html",
+      "title": "【きょうのおはBiz 4月15日(水)】韓国 “Kフード”の戦略",
       "article": "NHKニュース「おはよう日本」で平日朝に放送している経済ニュースコーナー「おはBiz」。最新のビジネストレンドや働き方、お役立ちサービスやスタートアップ企業の情報など、ギュギュっとコンパクトにお届けします。",
-      "fp": "きょうのおはbiz 4月14日(火) 伝統の大島紬 デザインに商機 nhkニュース「おはよう日本」で平日朝に放送している経済ニュースコーナー「おはbiz」。最新のビジネストレンドや働き方、お役立ちサービスやスタートアップ企業の情報など、ギュギュっとコンパクトにお届けします。",
-      "published": "Tue, 14 Apr 2026 12:31:09 +0900"
+      "fp": "【きょうのおはbiz 4月15日(水)】韓国 “kフード”の戦略 nhkニュース「おはよう日本」で平日朝に放送している経済ニュースコーナー「おはbiz」。最新のビジネストレンドや働き方、お役立ちサービスやスタートアップ企業の情報など、ギュギュっとコンパクトにお届けします。",
+      "published": "Wed, 15 Apr 2026 12:58:06 +0900"
     }
   ]
 }
