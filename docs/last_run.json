@@ -1,18 +1,22 @@
 {
   "links": [
-    "https://finance.yahoo.com/markets/stocks/articles/wall-street-turbulence-resilient-nvidia-223000086.html",
-    "https://finance.yahoo.com/news/firing-on-all-cylinders-wall-street-strategists-expect-a-strong-quarter-of-earnings-growth-121555493.html",
-    "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-oil-prices-strait-of-hormuz-tesla-earnings/?src=A00220&yptr=yahoo",
-    "https://finance.yahoo.com/news/stock-market-records-iran-updates-and-tesla-earnings-what-to-watch-this-week-115312657.html",
-    "https://finance.yahoo.com/sectors/energy/articles/europe-faces-summer-jet-fuel-190000293.html",
-    "http://www3.nhk.or.jp/news/html/20260420/k10015103111000.html"
+    "https://finance.yahoo.com/sectors/technology/articles/tesla-ev-rebound-just-got-143137112.html",
+    "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-oil-prices/?src=A00220&yptr=yahoo",
+    "http://www3.nhk.or.jp/news/html/20260420/k10015103421000.html",
+    "https://finance.yahoo.com/markets/stocks/live/stock-market-today-sp-500-nasdaq-dow-edge-lower-as-us-iran-tensions-flare-up-again-shuttering-hormuz-230354669.html",
+    "http://www3.nhk.or.jp/news/html/20260420/k10015103831000.html",
+    "http://www3.nhk.or.jp/news/html/20260420/k10015103241000.html",
+    "https://finance.yahoo.com/sectors/energy/articles/wall-street-just-sent-oil-203300330.html",
+    "https://www.investors.com/news/tesla-earnings-elon-musk-robotaxis-optimus-electric-vehicles/?src=A00220&yptr=yahoo"
   ],
   "fingerprints": [
-    "道琼斯指数期货下跌，油价飙升；donald trump（特朗普）宣布在霍尔木兹海峡关闭的情况下与伊朗进行新的会谈 dow jones futures fall, oil prices jump; trump announces new iran talks with hormuz shut",
-    "股市纪录、伊朗动态与tesla财报：本周看点 stock market records, iran updates, and tesla earnings: what to watch this week",
-    "随着伊朗战争导致供应骤减，欧洲面临夏季航空燃油危机 europe faces summer jet fuel crisis as iran war slashes supply",
-    "“全速前进”：华尔街策略师预计季度盈利将强劲增长 'firing on all cylinders': wall street strategists expect a strong quarter of earnings growth",
-    "华尔街动荡：nvidia的韧性如何？ wall street turbulence: how resilient is nvidia?",
-    "各大车企强化东南亚战略，与中国厂商竞争加剧 アメリカのトランプ政権による関税措置が日本の自動車メーカーの業績に大きな影響を与える中、各社は東南アジア市場の重要性が高まっているとして、徐々に存在感を高める中国メーカーのevとの販売競争を念頭に戦略を強化しています。"
+    "今日股市：受美伊局势再度紧张及霍尔木兹海峡关闭影响，s&p 500、nasdaq与dow小幅收跌 stock market today: s&p 500, nasdaq, dow edge lower as us-iran tensions flare up again, shuttering hormuz",
+    "今日股市：美伊紧张局势加剧，dow震荡走低；能源股表现抢眼（实时报道） stock market today: dow wavers as u.s.-iran tensions rise; energy stocks shine (live coverage)",
+    "在伊朗采取行动后，华尔街向石油股释放了强烈的悲观信号 wall street just sent oil stocks a brutal message after iran’s move",
+    "tesla的电动汽车需求反弹成真——伊朗战争引发电动汽车需求飙升 tesla’s ev rebound just got real — iran war sends ev demand soaring",
+    "tesla财报：电动汽车销量增长，但现金流转为负值 tesla earnings: ev sales gain as cash flows turn negative",
+    "日元汇率小幅波动，市场静观伊朗局势对停火协议的影响 週明けの20日の東京外国為替市場、停戦協議に向けたアメリカとイランの動きを見極めたいとして積極的な取り引きを控える投資家が多く、円相場は小幅な値動きとなりました。",
+    "股价上涨，受伊朗局势不明朗影响市场持观望态度 週明けの20日の東京株式市場は、停戦期限を前に、アメリカとイランの協議が実現するかが不透明だとして、積極的な取り引きが控えられる中、一部の銘柄に買い注文が入り、日経平均株価は値上がりしました。",
+    "纽约原油期货价格上涨至每桶91美元区间，美伊协议前景不明 19日のニューヨーク原油市場では、国際的な取り引きの指標となるwtiの先物価格が一時、1バレル＝91ドル台まで上昇しました。投資家の間でアメリカとイランの協議の行方が不透明になったという受け止めが広がった形です。"
   ]
 }
