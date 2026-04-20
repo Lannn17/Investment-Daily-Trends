@@ -1,22 +1,22 @@
 {
   "links": [
-    "https://finance.yahoo.com/sectors/technology/articles/tesla-ev-rebound-just-got-143137112.html",
-    "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-oil-prices/?src=A00220&yptr=yahoo",
-    "http://www3.nhk.or.jp/news/html/20260420/k10015103421000.html",
-    "https://finance.yahoo.com/markets/stocks/live/stock-market-today-sp-500-nasdaq-dow-edge-lower-as-us-iran-tensions-flare-up-again-shuttering-hormuz-230354669.html",
-    "http://www3.nhk.or.jp/news/html/20260420/k10015103831000.html",
-    "http://www3.nhk.or.jp/news/html/20260420/k10015103241000.html",
-    "https://finance.yahoo.com/sectors/energy/articles/wall-street-just-sent-oil-203300330.html",
-    "https://www.investors.com/news/tesla-earnings-elon-musk-robotaxis-optimus-electric-vehicles/?src=A00220&yptr=yahoo"
+    "http://www3.nhk.or.jp/news/html/20260420/k10015103431000.html",
+    "https://www.cnbc.com/2026/04/20/amazon-invest-up-to-25-billion-in-anthropic-part-of-ai-infrastructure.html",
+    "https://www.cnbc.com/2026/04/20/apple-names-john-ternus-ceo-replacing-tim-cook-who-becomes-chairman.html",
+    "https://www.cnbc.com/2026/04/19/oil-price-iran-war-strait-hormuz-tanker.html",
+    "https://www.cnbc.com/2026/04/20/kevin-warsh-fed-confirmation-senate.html",
+    "http://www3.nhk.or.jp/news/html/20260421/k10015104011000.html",
+    "https://www.marketwatch.com/story/tim-cook-to-step-down-after-15-years-at-the-helm-of-apple-68d0e126?mod=mw_rss_topstories",
+    "http://www3.nhk.or.jp/news/html/20260420/k10015103341000.html"
   ],
   "fingerprints": [
-    "今日股市：受美伊局势再度紧张及霍尔木兹海峡关闭影响，s&p 500、nasdaq与dow小幅收跌 stock market today: s&p 500, nasdaq, dow edge lower as us-iran tensions flare up again, shuttering hormuz",
-    "今日股市：美伊紧张局势加剧，dow震荡走低；能源股表现抢眼（实时报道） stock market today: dow wavers as u.s.-iran tensions rise; energy stocks shine (live coverage)",
-    "在伊朗采取行动后，华尔街向石油股释放了强烈的悲观信号 wall street just sent oil stocks a brutal message after iran’s move",
-    "tesla的电动汽车需求反弹成真——伊朗战争引发电动汽车需求飙升 tesla’s ev rebound just got real — iran war sends ev demand soaring",
-    "tesla财报：电动汽车销量增长，但现金流转为负值 tesla earnings: ev sales gain as cash flows turn negative",
-    "日元汇率小幅波动，市场静观伊朗局势对停火协议的影响 週明けの20日の東京外国為替市場、停戦協議に向けたアメリカとイランの動きを見極めたいとして積極的な取り引きを控える投資家が多く、円相場は小幅な値動きとなりました。",
-    "股价上涨，受伊朗局势不明朗影响市场持观望态度 週明けの20日の東京株式市場は、停戦期限を前に、アメリカとイランの協議が実現するかが不透明だとして、積極的な取り引きが控えられる中、一部の銘柄に買い注文が入り、日経平均株価は値上がりしました。",
-    "纽约原油期货价格上涨至每桶91美元区间，美伊协议前景不明 19日のニューヨーク原油市場では、国際的な取り引きの指標となるwtiの先物価格が一時、1バレル＝91ドル台まで上昇しました。投資家の間でアメリカとイランの協議の行方が不透明になったという受け止めが広がった形です。"
+    "apple任命john ternus（约翰·特努斯）接替tim cook（蒂姆·库克）出任ceo，后者将担任董事长 apple said on monday that john ternus is succeeding tim cook as ceo, with cook assuming the role of executive chairman on sept. 1.",
+    "受伊朗和美国袭击商船影响，霍尔木兹海峡局势升级，油价大幅上涨 crude oil prices surged sunday, as the u.s. and iran teetered on the brink of a renewed war after attacks on commercial ships in the strait of hormuz.",
+    "apple ceo tim cook（蒂姆·库克）在见证公司股价飙升1900%后即将卸任，其继任者面临巨大挑战 john ternus is expected to usher in a renewed focus on hardware as apple positions itself for the age of ai.",
+    "amazon将向anthropic再投资最高250亿美元，作为ai基础设施协议的一部分 amazon is boosting its investment in anthropic, which is committing to spending over $100 billion on amazon cloud services over the next decade.",
+    "美联储主席提名人kevin warsh（凯文·沃什）表示，美联储必须“坚守本职”以维持独立性 warsh also expressed firm commitment to fighting inflation with only one mention of the labor market.",
+    "【今日早间biz 4月20日（周一）】因伊朗局势长期化，住宅市场走向如何 nhkニュース「おはよう日本」で平日朝に放送している経済ニュースコーナー「おはbiz」。最新のビジネストレンドや働き方、お役立ちサービスやスタートアップ企業の情報など、ギュギュっとコンパクトにお届けします。",
+    "中国对日稀土磁铁出口减少超过27%，市场分析认为或受管控加强影响 中国が、3月に日本向けに輸出したレアアースを使った磁石は、去年の同じ月と比べて27％余り減りました。中国政府は軍民両用の品目の日本向けの輸出規制を強化していて、その影響が表れ始めたという見方も出ています。",
+    "ana（全日空）、jal（日本航空）国际航线燃油附加费上调，提前至5月实施 全日空と日本航空は国際線の運賃に上乗せする燃油サーチャージについて、当初はことし6月の発券分から最大でおよそ2倍に引き上げる予定でしたが、5月に前倒しすることを決めました。原油価格の高騰で燃料価格が急激に上昇していることを受けての対応だとしています。"
   ]
 }
