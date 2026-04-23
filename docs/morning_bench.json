@@ -1,109 +1,53 @@
 {
   "market_news": [
     {
-      "link": "https://finance.yahoo.com/markets/stocks/article/tesla-q1-analyst-reaction-capex-rise-a-surprise-but-needed-for-ai-optimus-robotaxi-chip-fab-build-out-145253241.html",
-      "title": "Tesla Q1 analyst reaction: Capex rise a surprise but needed for AI, Optimus, robotaxi, chip fab build-out",
-      "article": "Tesla Q1 analyst reaction: Capex rise a surprise but needed for AI, Optimus, robotaxi, chip fab build-out",
-      "fp": "tesla q1 analyst reaction: capex rise a surprise but needed for ai, optimus, robotaxi, chip fab build-out tesla q1 analyst reaction: capex rise a surprise but needed for ai, optimus, robotaxi, chip fab build-out",
-      "published": "2026-04-23T14:52:53Z"
+      "link": "https://www.marketwatch.com/story/trump-is-swaying-the-market-like-no-president-has-in-decades-analysis-shows-879be0bc?mod=mw_rss_topstories",
+      "title": "Trump is swaying the market like no president has in decades, analysis shows",
+      "article": "Data suggests President Trump has been the driver behind the best and worst days for stocks in his second term.",
+      "fp": "trump is swaying the market like no president has in decades, analysis shows data suggests president trump has been the driver behind the best and worst days for stocks in his second term.",
+      "published": "Thu, 23 Apr 2026 22:09:00 GMT"
     },
     {
-      "link": "https://www.investors.com/news/tesla-stock-falls-capital-spending-plans-elon-musk-comments/?src=A00220&yptr=yahoo",
-      "title": "Why Tesla Stock Is Falling After Earnings Beat: Huge Capital Spending Plans, Elon Musk Comments",
-      "article": "Why Tesla Stock Is Falling After Earnings Beat: Huge Capital Spending Plans, Elon Musk Comments",
-      "fp": "why tesla stock is falling after earnings beat: huge capital spending plans, elon musk comments why tesla stock is falling after earnings beat: huge capital spending plans, elon musk comments",
-      "published": "2026-04-23T14:50:18Z"
+      "link": "https://www.marketwatch.com/story/servicenows-stock-sinks-toward-worst-day-ever-taking-the-software-sector-down-with-it-77fd240d?mod=mw_rss_topstories",
+      "title": "ServiceNow’s stock just had its worst day ever, taking the software sector down with it",
+      "article": "A prominent software ETF is seeing its biggest daily decline in a year. There’s “no room for nuance” in the sector, an analyst says.",
+      "fp": "servicenow’s stock just had its worst day ever, taking the software sector down with it a prominent software etf is seeing its biggest daily decline in a year. there’s “no room for nuance” in the sector, an analyst says.",
+      "published": "Thu, 23 Apr 2026 21:07:00 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/article/servicenow-stock-tumbles-17-as-war-in-iran-impacts-sales-growth-122641143.html",
-      "title": "ServiceNow stock tumbles 17% as war in Iran impacts sales growth",
-      "article": "ServiceNow stock tumbles 17% as war in Iran impacts sales growth",
-      "fp": "servicenow stock tumbles 17% as war in iran impacts sales growth servicenow stock tumbles 17% as war in iran impacts sales growth",
-      "published": "2026-04-23T12:26:41Z"
+      "link": "https://www.cnbc.com/2026/04/23/trump-israel-lebanon-ceasefire-iran-war.html",
+      "title": "Trump says Israel-Lebanon ceasefire extended by three weeks",
+      "article": "Israel and Lebanon agreed to extend their ceasefire by three weeks following a meeting in the White House with top U.S. officials, President Donald Trump said.",
+      "fp": "trump says israel-lebanon ceasefire extended by three weeks israel and lebanon agreed to extend their ceasefire by three weeks following a meeting in the white house with top u.s. officials, president donald trump said.",
+      "published": "Thu, 23 Apr 2026 21:58:58 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/sectors/energy/articles/trump-says-iran-no-choice-141654104.html",
-      "title": "Trump says Iran has 'no choice' but to make a 'great deal' with the US — for investors, the proof is in the oil prices",
-      "article": "Trump says Iran has 'no choice' but to make a 'great deal' with the US — for investors, the proof is in the oil prices",
-      "fp": "trump says iran has 'no choice' but to make a 'great deal' with the us — for investors, the proof is in the oil prices trump says iran has 'no choice' but to make a 'great deal' with the us — for investors, the proof is in the oil prices",
-      "published": "2026-04-23T14:16:54Z"
+      "link": "https://www.cnbc.com/2026/04/23/microsoft-plans-first-voluntary-retirement-program-for-us-employees.html",
+      "title": "Microsoft plans first-ever voluntary employee buyout for up to 7% of U.S. workforce",
+      "article": "Microsoft's inaugural voluntary buyouts will be open to workers at the senior director level and below whose years of employment and age add up to 70 or more.",
+      "fp": "microsoft plans first-ever voluntary employee buyout for up to 7% of u.s. workforce microsoft's inaugural voluntary buyouts will be open to workers at the senior director level and below whose years of employment and age add up to 70 or more.",
+      "published": "Thu, 23 Apr 2026 18:19:50 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/news/warner-bros-investors-approve-110-billion-sale-to-paramount-skydance-following-long-battle-with-netflix-150428059.html",
-      "title": "Warner Bros. investors approve $110 billion sale to Paramount Skydance, following long battle with Netflix",
-      "article": "Warner Bros. investors approve $110 billion sale to Paramount Skydance, following long battle with Netflix",
-      "fp": "warner bros. investors approve $110 billion sale to paramount skydance, following long battle with netflix warner bros. investors approve $110 billion sale to paramount skydance, following long battle with netflix",
-      "published": "2026-04-23T15:04:28Z"
+      "link": "https://www.cnbc.com/2026/04/23/meta-will-cut-10percent-of-workforce-as-it-pushes-more-into-ai.html",
+      "title": "Meta will cut 10% of workforce as company pushes deeper into AI",
+      "article": "Meta plans to lay off 10% of its workforce, about 8,000 employees, as the company continues to ramp up investments in artificial intelligence.",
+      "fp": "meta will cut 10% of workforce as company pushes deeper into ai meta plans to lay off 10% of its workforce, about 8,000 employees, as the company continues to ramp up investments in artificial intelligence.",
+      "published": "Thu, 23 Apr 2026 20:23:59 GMT"
     },
     {
-      "link": "https://www.investors.com/news/american-airlines-earnings-q1-2026-record-revenue-fuel-costs-outlook-aal-stock-southwest-luv/?src=A00220&yptr=yahoo",
-      "title": "American Airlines Tops Views, Cuts Outlook On $4 Bil Fuel Cost Hit",
-      "article": "American Airlines Tops Views, Cuts Outlook On $4 Bil Fuel Cost Hit",
-      "fp": "american airlines tops views, cuts outlook on $4 bil fuel cost hit american airlines tops views, cuts outlook on $4 bil fuel cost hit",
-      "published": "2026-04-23T14:25:27Z"
+      "link": "https://www.cnbc.com/2026/04/23/openai-announces-latest-artificial-intelligence-model.html",
+      "title": "OpenAI announces GPT-5.5, its latest artificial intelligence model",
+      "article": "The model is better at coding, using computers and pursuing deeper research capabilities, OpenAI says.",
+      "fp": "openai announces gpt-5.5, its latest artificial intelligence model the model is better at coding, using computers and pursuing deeper research capabilities, openai says.",
+      "published": "Thu, 23 Apr 2026 18:23:46 GMT"
     },
     {
-      "link": "https://www.investors.com/news/fcx-stock-dives-freeport-mcmoran-cuts-copper-output/?src=A00220&yptr=yahoo",
-      "title": "FCX Stock Dives On Copper Output Cut. These Stocks Are Rallying.",
-      "article": "FCX Stock Dives On Copper Output Cut. These Stocks Are Rallying.",
-      "fp": "fcx stock dives on copper output cut. these stocks are rallying. fcx stock dives on copper output cut. these stocks are rallying.",
-      "published": "2026-04-23T14:23:06Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/michael-burry-analyzed-1-000-141500664.html",
-      "title": "Michael Burry analyzed 1,000+ reports and found a $1.7 trillion 'earnings illusion' hiding in tech stocks",
-      "article": "Michael Burry analyzed 1,000+ reports and found a $1.7 trillion 'earnings illusion' hiding in tech stocks",
-      "fp": "michael burry analyzed 1,000+ reports and found a $1.7 trillion 'earnings illusion' hiding in tech stocks michael burry analyzed 1,000+ reports and found a $1.7 trillion 'earnings illusion' hiding in tech stocks",
-      "published": "2026-04-23T14:15:00Z"
-    },
-    {
-      "link": "https://www.cnbc.com/2026/04/23/warner-bros-discovery-shareholder-vote-paramount-deal.html",
-      "title": "Warner Bros. Discovery shareholders approve Paramount acquisition",
-      "article": "Warner Bros. Discovery held a special meeting on Thursday for shareholders to vote on Paramount's proposed acquisition of the company.",
-      "fp": "warner bros. discovery shareholders approve paramount acquisition warner bros. discovery held a special meeting on thursday for shareholders to vote on paramount's proposed acquisition of the company.",
-      "published": "Thu, 23 Apr 2026 14:31:30 GMT"
-    },
-    {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/axe-compute-260-million-gpu-145000004.html",
-      "title": "Axe Compute’s $260 Million GPU Deal Sends Stock Soaring More Than 80%",
-      "article": "Axe Compute’s $260 Million GPU Deal Sends Stock Soaring More Than 80%",
-      "fp": "axe compute’s $260 million gpu deal sends stock soaring more than 80% axe compute’s $260 million gpu deal sends stock soaring more than 80%",
-      "published": "2026-04-23T14:50:00Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/markets/options/articles/treasury-bond-etfs-back-fashion-145531174.html",
-      "title": "Treasury and Bond ETFs Are Back in Fashion: Here’s What to Own in April 2026",
-      "article": "Treasury and Bond ETFs Are Back in Fashion: Here’s What to Own in April 2026",
-      "fp": "treasury and bond etfs are back in fashion: here’s what to own in april 2026 treasury and bond etfs are back in fashion: here’s what to own in april 2026",
-      "published": "2026-04-23T14:55:31Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-price-today-thursday-april-23-2026-strong-opening-for-bitcoin-but-traders-still-cautious-114021085.html",
-      "title": "Bitcoin and ethereum price today, Thursday, April 23, 2026: Strong opening for bitcoin, but traders still cautious",
-      "article": "Bitcoin and ethereum price today, Thursday, April 23, 2026: Strong opening for bitcoin, but traders still cautious",
-      "fp": "bitcoin and ethereum price today, thursday, april 23, 2026: strong opening for bitcoin, but traders still cautious bitcoin and ethereum price today, thursday, april 23, 2026: strong opening for bitcoin, but traders still cautious",
-      "published": "2026-04-23T11:40:21Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/personal-finance/investing/article/gold-and-silver-prices-today-thursday-april-23-gold-and-silver-falling-as-oil-prices-soar-105853319.html",
-      "title": "Gold and silver prices today, Thursday, April 23: Gold and silver falling as oil prices soar",
-      "article": "Gold and silver prices today, Thursday, April 23: Gold and silver falling as oil prices soar",
-      "fp": "gold and silver prices today, thursday, april 23: gold and silver falling as oil prices soar gold and silver prices today, thursday, april 23: gold and silver falling as oil prices soar",
-      "published": "2026-04-23T10:58:53Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/why-oracle-stock-just-dropped-145109785.html",
-      "title": "Why Oracle Stock Just Dropped",
-      "article": "Why Oracle Stock Just Dropped",
-      "fp": "why oracle stock just dropped why oracle stock just dropped",
-      "published": "2026-04-23T14:51:09Z"
-    },
-    {
-      "link": "https://www.cnbc.com/2026/04/23/trump-administration-reclassifies-cannabis.html",
-      "title": "Trump administration moves to reclassify cannabis in major shift that could expand research",
-      "article": "Trump administration to reclassify marijuana as Schedule III, easing research barriers but not legalizing the drug or changing current federal penalties.",
-      "fp": "trump administration moves to reclassify cannabis in major shift that could expand research trump administration to reclassify marijuana as schedule iii, easing research barriers but not legalizing the drug or changing current federal penalties.",
-      "published": "Thu, 23 Apr 2026 13:21:43 GMT"
+      "link": "https://www.cnbc.com/2026/04/23/oil-markets-prices-fuel-shortages-iran-war-iea-chief.html",
+      "title": "'We are facing the biggest energy security threat in history,' IEA chief tells CNBC",
+      "article": "\"We are facing the biggest energy security threat in history,\" Fatih Birol, the head of the International Energy Agency, told CNBC on Thursday.",
+      "fp": "'we are facing the biggest energy security threat in history,' iea chief tells cnbc \"we are facing the biggest energy security threat in history,\" fatih birol, the head of the international energy agency, told cnbc on thursday.",
+      "published": "Thu, 23 Apr 2026 14:43:42 GMT"
     },
     {
       "link": "https://www.cnbc.com/2026/04/23/trumps-approval-rating-on-economy-and-overall-falls-to-lowest-of-his-two-terms-cnbc-survey-shows.html",
@@ -113,146 +57,209 @@
       "published": "Thu, 23 Apr 2026 15:06:38 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/milan-tech-firm-bending-spoons-144232478.html",
-      "title": "Milan tech firm Bending Spoons picks banks for $20 billion US listing, sources say",
-      "article": "Milan tech firm Bending Spoons picks banks for $20 billion US listing, sources say",
-      "fp": "milan tech firm bending spoons picks banks for $20 billion us listing, sources say milan tech firm bending spoons picks banks for $20 billion us listing, sources say",
-      "published": "2026-04-23T14:42:32Z"
+      "link": "https://www.cnbc.com/2026/04/23/american-airlines-aal-q1-2026-earnings.html",
+      "title": "American Airlines cuts 2026 earnings projections after surge in jet fuel",
+      "article": "American Airlines cut its 2026 earnings forecast, becoming the latest airline to lower its outlook after a surge in fuel costs added billions to its expenses.",
+      "fp": "american airlines cuts 2026 earnings projections after surge in jet fuel american airlines cut its 2026 earnings forecast, becoming the latest airline to lower its outlook after a surge in fuel costs added billions to its expenses.",
+      "published": "Thu, 23 Apr 2026 13:35:06 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/sectors/energy/articles/bp-shareholders-reject-2-resolutions-145320764.html",
-      "title": "BP shareholders reject 2 resolutions over climate disclosures",
-      "article": "BP shareholders reject 2 resolutions over climate disclosures",
-      "fp": "bp shareholders reject 2 resolutions over climate disclosures bp shareholders reject 2 resolutions over climate disclosures",
-      "published": "2026-04-23T14:53:20Z"
+      "link": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-buys-900-000-021700179.html",
+      "title": "Cathie Wood buys $900,000 of surging megacap stock",
+      "article": "Cathie Wood buys $900,000 of surging megacap stock",
+      "fp": "cathie wood buys $900,000 of surging megacap stock cathie wood buys $900,000 of surging megacap stock",
+      "published": "2026-04-23T02:17:00Z"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/meta-platforms-meta-trading-attractive-141400218.html",
-      "title": "Is Meta Platforms (META) Trading at an Attractive Price?",
-      "article": "Is Meta Platforms (META) Trading at an Attractive Price?",
-      "fp": "is meta platforms (meta) trading at an attractive price? is meta platforms (meta) trading at an attractive price?",
-      "published": "2026-04-23T14:14:00Z"
+      "link": "https://www.cnbc.com/2026/04/23/regeneron-inks-drug-pricing-deal-with-trump-will-offer-hearing-loss-therapy-for-free.html",
+      "title": "Regeneron inks drug pricing deal with Trump, will offer new hearing-loss therapy for free",
+      "article": "Regeneron is the latest in a string of major drugmakers to make pricing concessions for new and existing medicines under agreements with Trump.",
+      "fp": "regeneron inks drug pricing deal with trump, will offer new hearing-loss therapy for free regeneron is the latest in a string of major drugmakers to make pricing concessions for new and existing medicines under agreements with trump.",
+      "published": "Thu, 23 Apr 2026 19:47:17 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_46825_TechnicalAnalysis_1776942515000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "Technical Assessment: Bullish in the Intermediate-Term",
-      "article": "Technical Assessment: Bullish in the Intermediate-Term",
-      "fp": "technical assessment: bullish in the intermediate-term technical assessment: bullish in the intermediate-term",
-      "published": "2026-04-23T11:08:35Z"
+      "link": "https://www.cnbc.com/2026/04/23/spirit-airlines-bankruptcy-court-rescue.html",
+      "title": "Spirit Airlines lawyer says cash 'not going to last for very much longer,' but government rescue on the table",
+      "article": "Spirit Airlines confirmed it is in talks with the Trump administration for a rescue package.",
+      "fp": "spirit airlines lawyer says cash 'not going to last for very much longer,' but government rescue on the table spirit airlines confirmed it is in talks with the trump administration for a rescue package.",
+      "published": "Thu, 23 Apr 2026 22:59:02 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/commodities/articles/united-airlines-impose-market-disruption-145731063.html",
-      "title": "United Airlines to impose ‘market disruption’ surcharge on cargo",
-      "article": "United Airlines to impose ‘market disruption’ surcharge on cargo",
-      "fp": "united airlines to impose ‘market disruption’ surcharge on cargo united airlines to impose ‘market disruption’ surcharge on cargo",
-      "published": "2026-04-23T14:57:31Z"
+      "link": "https://www.cnbc.com/2026/04/23/nike-job-cuts-layoffs.html",
+      "title": "Nike cuts 1,400 roles in second round of layoffs this year",
+      "article": "Nike announced 1,400 layoffs, primarily in its technology department, on Thursday after cutting 775 jobs in January.",
+      "fp": "nike cuts 1,400 roles in second round of layoffs this year nike announced 1,400 layoffs, primarily in its technology department, on thursday after cutting 775 jobs in january.",
+      "published": "Thu, 23 Apr 2026 21:17:42 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/prediction-artificial-intelligence-ai-growth-145000141.html",
-      "title": "Prediction: This Artificial Intelligence (AI) Growth Stock Will Be the Nasdaq's Best Performer by Year-End",
-      "article": "Prediction: This Artificial Intelligence (AI) Growth Stock Will Be the Nasdaq's Best Performer by Year-End",
-      "fp": "prediction: this artificial intelligence (ai) growth stock will be the nasdaq's best performer by year-end prediction: this artificial intelligence (ai) growth stock will be the nasdaq's best performer by year-end",
-      "published": "2026-04-23T14:50:00Z"
+      "link": "https://www.cnbc.com/2026/04/23/what-cannabis-reclassification-means-for-investors.html",
+      "title": "What the Trump administration's move to reclassify marijuana means for investors",
+      "article": "The Department of Justice said it will immediately move FDA-approved marijuana from Schedule I to Schedule III under the Controlled Substances Act.",
+      "fp": "what the trump administration's move to reclassify marijuana means for investors the department of justice said it will immediately move fda-approved marijuana from schedule i to schedule iii under the controlled substances act.",
+      "published": "Thu, 23 Apr 2026 20:46:26 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_46823_MarketSummary_1776942494000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "Market Digest: HAL, NEM, T, PM, AGNC",
-      "article": "Market Digest: HAL, NEM, T, PM, AGNC",
-      "fp": "market digest: hal, nem, t, pm, agnc market digest: hal, nem, t, pm, agnc",
-      "published": "2026-04-23T11:08:14Z"
+      "link": "https://www.cnbc.com/2026/04/23/trump-china-ai-technology.html",
+      "title": "White House warns of 'industrial-scale' efforts in China to rip off U.S. AI tech",
+      "article": "The U.S. government has previously accused China of targeting American AI technology and intellectual property.",
+      "fp": "white house warns of 'industrial-scale' efforts in china to rip off u.s. ai tech the u.s. government has previously accused china of targeting american ai technology and intellectual property.",
+      "published": "Thu, 23 Apr 2026 18:10:21 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/viasat-vs-echostar-stability-vs-145052688.html",
-      "title": "Viasat vs. EchoStar: Stability vs. Gradual Declines in Revenue",
-      "article": "Viasat vs. EchoStar: Stability vs. Gradual Declines in Revenue",
-      "fp": "viasat vs. echostar: stability vs. gradual declines in revenue viasat vs. echostar: stability vs. gradual declines in revenue",
-      "published": "2026-04-23T14:50:52Z"
+      "link": "https://www.cnbc.com/2026/04/23/trump-administration-reclassifies-cannabis.html",
+      "title": "Trump administration moves to reclassify cannabis in major shift that could expand research",
+      "article": "Trump administration to reclassify marijuana as Schedule III, easing research barriers but not legalizing the drug or changing current federal penalties.",
+      "fp": "trump administration moves to reclassify cannabis in major shift that could expand research trump administration to reclassify marijuana as schedule iii, easing research barriers but not legalizing the drug or changing current federal penalties.",
+      "published": "Thu, 23 Apr 2026 19:57:45 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_5888_AnalystReport_1776943394000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "Analyst Report: AGNC Investment Corp",
-      "article": "Analyst Report: AGNC Investment Corp",
-      "fp": "analyst report: agnc investment corp analyst report: agnc investment corp",
-      "published": "2026-04-23T11:23:14Z"
+      "link": "https://www.marketwatch.com/story/the-cannabis-rescheduling-is-causing-celebration-and-confusion-as-marijuana-stocks-sell-off-f79330e0?mod=mw_rss_topstories",
+      "title": "The cannabis rescheduling is causing celebration — and confusion — as marijuana stocks sell off",
+      "article": "Marijuana stocks sold off Thursday, after acting U.S. Attorney General Todd Blanche signed an order rescheduling FDA-approved and state-licensed medical cannabis products as a less harmful substance — a move that led to celebration but also confusion among industry observers.",
+      "fp": "the cannabis rescheduling is causing celebration — and confusion — as marijuana stocks sell off marijuana stocks sold off thursday, after acting u.s. attorney general todd blanche signed an order rescheduling fda-approved and state-licensed medical cannabis products as a less harmful substance — a move that led to celebration but also confusion among industry observers.",
+      "published": "Thu, 23 Apr 2026 21:27:00 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/live-oak-lob-q1-2026-145320558.html",
-      "title": "Live Oak (LOB) Q1 2026 Earnings Transcript",
-      "article": "Live Oak (LOB) Q1 2026 Earnings Transcript",
-      "fp": "live oak (lob) q1 2026 earnings transcript live oak (lob) q1 2026 earnings transcript",
-      "published": "2026-04-23T14:53:20Z"
+      "link": "https://www.marketwatch.com/story/nike-is-cutting-1-400-more-jobs-the-companys-shakeup-is-not-done-yet-2851f3b8?mod=mw_rss_topstories",
+      "title": "Nike is cutting 1,400 more jobs — and the company’s shake-up is not done yet",
+      "article": "Nike on Thursday said it would cut around 1,400 jobs in its global operations, the latest efforts to shrink staff as the sneaker-maker’s turnaround efforts remain in flux and as it tries to bring new products to shelves more quickly.",
+      "fp": "nike is cutting 1,400 more jobs — and the company’s shake-up is not done yet nike on thursday said it would cut around 1,400 jobs in its global operations, the latest efforts to shrink staff as the sneaker-maker’s turnaround efforts remain in flux and as it tries to bring new products to shelves more quickly.",
+      "published": "Thu, 23 Apr 2026 21:22:00 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_46822_TopBottomInsiderActivity_1776938759000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "Daily – Vickers Top Buyers & Sellers for 04/23/2026",
-      "article": "Daily – Vickers Top Buyers & Sellers for 04/23/2026",
-      "fp": "daily – vickers top buyers & sellers for 04/23/2026 daily – vickers top buyers & sellers for 04/23/2026",
-      "published": "2026-04-23T10:05:59Z"
+      "link": "https://www.cnbc.com/2026/04/23/overlooked-industrial-dover-gets-the-markets-attention-with-a-strong-first-quarter.html",
+      "title": "Overlooked industrial Dover gets the market's attention with a strong first quarter",
+      "article": "We're raising our price target on the industrial conglomerate, which makes everything from gas pumps to data center components.",
+      "fp": "overlooked industrial dover gets the market's attention with a strong first quarter we're raising our price target on the industrial conglomerate, which makes everything from gas pumps to data center components.",
+      "published": "Thu, 23 Apr 2026 18:14:47 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/salmon-raises-100m-equity-debt-145549241.html",
-      "title": "Salmon raises $100M in equity and debt to bring digital credit to underbanked Filipinos",
-      "article": "Salmon raises $100M in equity and debt to bring digital credit to underbanked Filipinos",
-      "fp": "salmon raises $100m in equity and debt to bring digital credit to underbanked filipinos salmon raises $100m in equity and debt to bring digital credit to underbanked filipinos",
-      "published": "2026-04-23T14:55:49Z"
+      "link": "https://www.cnbc.com/2026/04/23/warner-bros-discovery-shareholder-vote-paramount-deal.html",
+      "title": "Warner Bros. Discovery shareholders approve Paramount acquisition",
+      "article": "Warner Bros. Discovery held a special meeting on Thursday for shareholders to vote on Paramount's proposed acquisition of the company.",
+      "fp": "warner bros. discovery shareholders approve paramount acquisition warner bros. discovery held a special meeting on thursday for shareholders to vote on paramount's proposed acquisition of the company.",
+      "published": "Thu, 23 Apr 2026 14:31:30 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-thursday-april-23-2026-100000257.html",
-      "title": "Best CD rates today, April 23, 2026 (lock in up to 4.05% APY)",
-      "article": "Best CD rates today, April 23, 2026 (lock in up to 4.05% APY)",
-      "fp": "best cd rates today, april 23, 2026 (lock in up to 4.05% apy) best cd rates today, april 23, 2026 (lock in up to 4.05% apy)",
-      "published": "2026-04-23T10:00:00Z"
+      "link": "https://www.cnbc.com/2026/04/23/kalshi-bettors-see-strait-of-hormuz-traffic-normal-by-july.html",
+      "title": "Kalshi traders don't see Strait of Hormuz traffic returning to normal until July",
+      "article": "Chances that traffic returns to normal fell below 50% on Wednesday, according to Kalshi bettors, despite the U.S. and Iran extending the ceasefire.",
+      "fp": "kalshi traders don't see strait of hormuz traffic returning to normal until july chances that traffic returns to normal fell below 50% on wednesday, according to kalshi bettors, despite the u.s. and iran extending the ceasefire.",
+      "published": "Thu, 23 Apr 2026 14:19:40 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/personal-finance/investing/article/money-moves-to-make-in-your-20s-191339909.html",
-      "title": "6 money moves to make in your 20s to help you get ahead",
-      "article": "6 money moves to make in your 20s to help you get ahead",
-      "fp": "6 money moves to make in your 20s to help you get ahead 6 money moves to make in your 20s to help you get ahead",
-      "published": "2026-04-22T19:13:39Z"
+      "link": "https://www.cnbc.com/2026/04/23/trump-economy-2026-election-republicans-democrats.html",
+      "title": "Trump's lack of focus on economy is spooking Republicans as 2026 election looms",
+      "article": "President Donald Trump has been posting a lot on social media about his White House ballroom, the Iran war, and Pope Leo XIV. Not much about rising gas prices.",
+      "fp": "trump's lack of focus on economy is spooking republicans as 2026 election looms president donald trump has been posting a lot on social media about his white house ballroom, the iran war, and pope leo xiv. not much about rising gas prices.",
+      "published": "Thu, 23 Apr 2026 11:13:24 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/23/american-airlines-ceo-merger-united.html",
+      "title": "American Airlines CEO says merger with United would be 'bad for customers'",
+      "article": "United CEO Scott Kirby floated the idea of a merger with American to a Trump administration official earlier this year, according to sources.",
+      "fp": "american airlines ceo says merger with united would be 'bad for customers' united ceo scott kirby floated the idea of a merger with american to a trump administration official earlier this year, according to sources.",
+      "published": "Thu, 23 Apr 2026 14:09:51 GMT"
+    },
+    {
+      "link": "https://www.marketwatch.com/story/employee-buyouts-like-microsofts-could-become-more-common-heres-what-workers-need-to-know-2b439281?mod=mw_rss_topstories",
+      "title": "Employee buyouts like Microsoft’s could become more common. Here’s what workers need to know.",
+      "article": "In today’s job market, buyouts like what Microsoft is reportedly proposing might become more common.",
+      "fp": "employee buyouts like microsoft’s could become more common. here’s what workers need to know. in today’s job market, buyouts like what microsoft is reportedly proposing might become more common.",
+      "published": "Thu, 23 Apr 2026 21:12:00 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/23/iran-economy-war-charts-rial-oil-strait-hormuz-blockade.html",
+      "title": "These charts show how Iran's economy is in freefall",
+      "article": "Tehran's hardline rhetoric belies a brutal reality facing the regime and Iranian citizens: its economy, vulnerable even before the war, is now in tatters.",
+      "fp": "these charts show how iran's economy is in freefall tehran's hardline rhetoric belies a brutal reality facing the regime and iranian citizens: its economy, vulnerable even before the war, is now in tatters.",
+      "published": "Thu, 23 Apr 2026 15:16:53 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/23/new-grads-are-finding-jobs-faster-despite-a-competitive-job-market-says-report.html",
+      "title": "New grads are finding jobs faster despite a competitive job market, says report",
+      "article": "New grads are finding jobs faster despite a competitive job market, especially in these fields, according to a report from ZipRecruiter.",
+      "fp": "new grads are finding jobs faster despite a competitive job market, says report new grads are finding jobs faster despite a competitive job market, especially in these fields, according to a report from ziprecruiter.",
+      "published": "Thu, 23 Apr 2026 17:32:34 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/23/doj-soldier-polymarket-bets-venezuela-maduro.html",
+      "title": "U.S. soldier arrested for $400K winning Polymarket bets on Maduro capture, DOJ says",
+      "article": "The arrest comes as concerns have grown about people with inside information making bets on the Polymarket and Kalshi prediction markets.",
+      "fp": "u.s. soldier arrested for $400k winning polymarket bets on maduro capture, doj says the arrest comes as concerns have grown about people with inside information making bets on the polymarket and kalshi prediction markets.",
+      "published": "Thu, 23 Apr 2026 23:00:51 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/23/starbucks-loyalty-changes-are-drawing-value-conscious-customers.html",
+      "title": "Starbucks' loyalty program changes are drawing value-conscious customers",
+      "article": "Starbucks made some major changes to its long-standing loyalty program last month.",
+      "fp": "starbucks' loyalty program changes are drawing value-conscious customers starbucks made some major changes to its long-standing loyalty program last month.",
+      "published": "Thu, 23 Apr 2026 17:26:33 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/23/nyc-mayor-mamdani-knocked-ken-griffin-in-pied-a-terre-tax-promo-his-firm-calls-the-move-shameful.html",
+      "title": "NYC Mayor Mamdani knocked Ken Griffin in pied-a-terre tax promo. His firm calls the move 'shameful'",
+      "article": "Chief Operating Officer Gerald Beeson saying in a memo that targeting Griffin showed \"ignorance and disdain\" toward contributors to the city's economy.",
+      "fp": "nyc mayor mamdani knocked ken griffin in pied-a-terre tax promo. his firm calls the move 'shameful' chief operating officer gerald beeson saying in a memo that targeting griffin showed \"ignorance and disdain\" toward contributors to the city's economy.",
+      "published": "Thu, 23 Apr 2026 20:46:42 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/23/luxury-real-estate.html",
+      "title": "What $1 million buys you in real estate around the world",
+      "article": "Luxury real estate in most major markets around the world continues to become more expensive, as the wealthy grow wealthier and more mobile.",
+      "fp": "what $1 million buys you in real estate around the world luxury real estate in most major markets around the world continues to become more expensive, as the wealthy grow wealthier and more mobile.",
+      "published": "Thu, 23 Apr 2026 18:52:40 GMT"
+    },
+    {
+      "link": "https://www.marketwatch.com/story/french-weather-forecasting-office-files-police-complaint-following-suspicious-surge-in-polymarket-bets-fb72729d?mod=mw_rss_topstories",
+      "title": "French weather forecast office files police complaint following suspicious Polymarket bets",
+      "article": "Temperature readings at Charles de Gaulle International Airport rose by a few degrees in a matter of minutes.",
+      "fp": "french weather forecast office files police complaint following suspicious polymarket bets temperature readings at charles de gaulle international airport rose by a few degrees in a matter of minutes.",
+      "published": "Thu, 23 Apr 2026 22:43:00 GMT"
+    },
+    {
+      "link": "https://www.marketwatch.com/story/this-is-unbelievable-my-adviser-made-300-000-trading-options-now-im-being-killed-by-taxes-do-i-complain-e30873b7?mod=mw_rss_topstories",
+      "title": "‘This is unbelievable’: My adviser made $300,000 trading options. Now I’m being killed by taxes. Do I fire him?",
+      "article": "‘This is unbelievable’: My adviser made $300,000 trading options. Now I’m being killed by taxes. Do I fire him?",
+      "fp": "‘this is unbelievable’: my adviser made $300,000 trading options. now i’m being killed by taxes. do i fire him? ‘this is unbelievable’: my adviser made $300,000 trading options. now i’m being killed by taxes. do i fire him?",
+      "published": "Thu, 23 Apr 2026 22:30:00 GMT"
+    },
+    {
+      "link": "https://www.marketwatch.com/story/im-56-my-home-has-400-000-in-equity-if-i-lose-my-job-should-i-do-a-reverse-mortgage-593a85f0?mod=mw_rss_topstories",
+      "title": "I’m 56. My home has $400,000 in equity. If I lose my job, should I do a reverse mortgage?",
+      "article": "I’m 56. My home has $400,000 in equity. If I lose my job, should I do a reverse mortgage?",
+      "fp": "i’m 56. my home has $400,000 in equity. if i lose my job, should i do a reverse mortgage? i’m 56. my home has $400,000 in equity. if i lose my job, should i do a reverse mortgage?",
+      "published": "Thu, 23 Apr 2026 21:21:00 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/23/epstein-files-doj-audit.html",
+      "title": "DOJ watchdog investigating handling of Jeffrey Epstein files",
+      "article": "Congress passed the Jeffrey Epstein files law in November after then-Attorney General Pam Bondi reneged on a promise to release the DOJ's investigatory file.",
+      "fp": "doj watchdog investigating handling of jeffrey epstein files congress passed the jeffrey epstein files law in november after then-attorney general pam bondi reneged on a promise to release the doj's investigatory file.",
+      "published": "Thu, 23 Apr 2026 19:02:17 GMT"
+    },
+    {
+      "link": "https://www.marketwatch.com/story/the-lord-has-taken-care-of-me-im-74-i-went-from-working-14-an-hour-to-3-4-million-heres-how-i-did-it-e0af1045?mod=mw_rss_topstories",
+      "title": "‘The Lord has taken care of me’: I’m 74. I went from earning $14 an hour to retiring with $3.4 million. Here’s how I did it.",
+      "article": "‘The Lord has taken care of me’: I’m 74. I went from earning $14 an hour to retiring with $3.4 million. Here’s how I did it.",
+      "fp": "‘the lord has taken care of me’: i’m 74. i went from earning $14 an hour to retiring with $3.4 million. here’s how i did it. ‘the lord has taken care of me’: i’m 74. i went from earning $14 an hour to retiring with $3.4 million. here’s how i did it.",
+      "published": "Thu, 23 Apr 2026 22:00:00 GMT"
     }
   ],
   "japan_news": [
-    {
-      "link": "http://www3.nhk.or.jp/news/html/20260423/k10015106591000.html",
-      "title": "4月景気判断「緩やかに回復」維持 「設備投資」など上方修正",
-      "article": "4月景気判断「緩やかに回復」維持 「設備投資」など上方修正",
-      "fp": "4月景気判断「緩やかに回復」維持 「設備投資」など上方修正 4月景気判断「緩やかに回復」維持 「設備投資」など上方修正",
-      "published": "Thu, 23 Apr 2026 18:19:27 +0900"
-    },
-    {
-      "link": "http://www3.nhk.or.jp/news/html/20260423/k10015106051000.html",
-      "title": "NYダウ340ドル余値上がり トランプ大統領の停戦延長表明で",
-      "article": "22日のニューヨーク株式市場では、アメリカのトランプ大統領が停戦の延長を表明し、戦闘再開への懸念がいったん和らいだことで買い注文が出て、ダウ平均株価は前日から340ドル余り値上がりしました。",
-      "fp": "nyダウ340ドル余値上がり トランプ大統領の停戦延長表明で 22日のニューヨーク株式市場では、アメリカのトランプ大統領が停戦の延長を表明し、戦闘再開への懸念がいったん和らいだことで買い注文が出て、ダウ平均株価は前日から340ドル余り値上がりしました。",
-      "published": "Thu, 23 Apr 2026 07:11:56 +0900"
-    },
-    {
-      "link": "http://www3.nhk.or.jp/news/html/20260423/k10015106171000.html",
-      "title": "政府 牧野フライスTOBに中止勧告 “国の安全損なうおそれ”",
-      "article": "アジア系の投資ファンドが予定している「牧野フライス製作所」に対するTOB＝株式公開買い付けについて、政府が中止を勧告したことが分かりました。政府は、会社が軍事転用の可能性がある高性能な工作機械を製造していることなどを理由に挙げています。",
-      "fp": "政府 牧野フライスtobに中止勧告 “国の安全損なうおそれ” アジア系の投資ファンドが予定している「牧野フライス製作所」に対するtob＝株式公開買い付けについて、政府が中止を勧告したことが分かりました。政府は、会社が軍事転用の可能性がある高性能な工作機械を製造していることなどを理由に挙げています。",
-      "published": "Thu, 23 Apr 2026 14:53:19 +0900"
-    },
-    {
-      "link": "http://www3.nhk.or.jp/news/html/20260423/k10015106101000.html",
-      "title": "東京23区中古マンション 平均1億2400万円 30％上昇",
-      "article": "東京23区中古マンション 平均1億2400万円 30％上昇",
-      "fp": "東京23区中古マンション 平均1億2400万円 30％上昇 東京23区中古マンション 平均1億2400万円 30％上昇",
-      "published": "Thu, 23 Apr 2026 11:06:04 +0900"
-    },
-    {
-      "link": "http://www3.nhk.or.jp/news/html/20260423/k10015106501000.html",
-      "title": "3月の石油化学製品の国内生産量 大幅減少 イラン情勢の影響で",
-      "article": "先月、国内で生産された「エチレン」などの石油化学製品の量は、幅広い種類で大幅な減少となりました。化学メーカーの業界団体は、イラン情勢の緊迫化で原料となる「ナフサ」の供給が滞ったことなどが要因だとしています。",
-      "fp": "3月の石油化学製品の国内生産量 大幅減少 イラン情勢の影響で 先月、国内で生産された「エチレン」などの石油化学製品の量は、幅広い種類で大幅な減少となりました。化学メーカーの業界団体は、イラン情勢の緊迫化で原料となる「ナフサ」の供給が滞ったことなどが要因だとしています。",
-      "published": "Thu, 23 Apr 2026 19:33:13 +0900"
-    },
     {
       "link": "http://www3.nhk.or.jp/news/html/20260423/k10015106451000.html",
       "title": "大手損保3社の社員 出向中にトヨタ内部情報を持ち出し",
       "article": "トヨタ自動車に出向していた損害保険大手3社の社員が内部情報を無断で持ち出していたことが分かりました。持ち出した情報には会議の議事録などが含まれていたとみられ、各社は件数や持ち出したあとどのように扱っていたのかを詳しく調べています。",
       "fp": "大手損保3社の社員 出向中にトヨタ内部情報を持ち出し トヨタ自動車に出向していた損害保険大手3社の社員が内部情報を無断で持ち出していたことが分かりました。持ち出した情報には会議の議事録などが含まれていたとみられ、各社は件数や持ち出したあとどのように扱っていたのかを詳しく調べています。",
       "published": "Thu, 23 Apr 2026 15:31:49 +0900"
+    },
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260423/k10015106211000.html",
+      "title": "羽田空港 国際線で搭乗手続きシステムに不具合 一部の便に遅れ",
+      "article": "23日朝、羽田空港の国際線で、搭乗手続きを行うシステムに不具合が起き、機械での搭乗手続きができない状態となりました。不具合は午前11時すぎに解消されたということですが、一部の便に遅れが出ています。",
+      "fp": "羽田空港 国際線で搭乗手続きシステムに不具合 一部の便に遅れ 23日朝、羽田空港の国際線で、搭乗手続きを行うシステムに不具合が起き、機械での搭乗手続きができない状態となりました。不具合は午前11時すぎに解消されたということですが、一部の便に遅れが出ています。",
+      "published": "Thu, 23 Apr 2026 12:13:17 +0900"
     },
     {
       "link": "http://www3.nhk.or.jp/news/html/20260423/k10015105841000.html",
@@ -269,18 +276,11 @@
       "published": "Thu, 23 Apr 2026 23:41:09 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260423/k10015106211000.html",
-      "title": "羽田空港 国際線で搭乗手続きシステムに不具合 一部の便に遅れ",
-      "article": "23日朝、羽田空港の国際線で、搭乗手続きを行うシステムに不具合が起き、機械での搭乗手続きができない状態となりました。不具合は午前11時すぎに解消されたということですが、一部の便に遅れが出ています。",
-      "fp": "羽田空港 国際線で搭乗手続きシステムに不具合 一部の便に遅れ 23日朝、羽田空港の国際線で、搭乗手続きを行うシステムに不具合が起き、機械での搭乗手続きができない状態となりました。不具合は午前11時すぎに解消されたということですが、一部の便に遅れが出ています。",
-      "published": "Thu, 23 Apr 2026 12:13:17 +0900"
-    },
-    {
-      "link": "http://www3.nhk.or.jp/news/html/20260423/k10015106041000.html",
-      "title": "ボーイング1-3月期決算 航空機の生産回復で増収も最終赤字",
-      "article": "アメリカの大手航空機メーカー「ボーイング」の、3月までの3か月間の決算では、航空機の生産ペースの回復によって売り上げが増加した一方、最終的な損益は赤字となりました。会社は主力機の生産を拡大し、業績の改善を進める方針です。",
-      "fp": "ボーイング1-3月期決算 航空機の生産回復で増収も最終赤字 アメリカの大手航空機メーカー「ボーイング」の、3月までの3か月間の決算では、航空機の生産ペースの回復によって売り上げが増加した一方、最終的な損益は赤字となりました。会社は主力機の生産を拡大し、業績の改善を進める方針です。",
-      "published": "Thu, 23 Apr 2026 05:40:17 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260423/k10015106501000.html",
+      "title": "3月の石油化学製品の国内生産量 大幅減少 イラン情勢の影響で",
+      "article": "先月、国内で生産された「エチレン」などの石油化学製品の量は、幅広い種類で大幅な減少となりました。化学メーカーの業界団体は、イラン情勢の緊迫化で原料となる「ナフサ」の供給が滞ったことなどが要因だとしています。",
+      "fp": "3月の石油化学製品の国内生産量 大幅減少 イラン情勢の影響で 先月、国内で生産された「エチレン」などの石油化学製品の量は、幅広い種類で大幅な減少となりました。化学メーカーの業界団体は、イラン情勢の緊迫化で原料となる「ナフサ」の供給が滞ったことなどが要因だとしています。",
+      "published": "Thu, 23 Apr 2026 19:33:13 +0900"
     },
     {
       "link": "http://www3.nhk.or.jp/news/html/20260423/k10015106861000.html",
