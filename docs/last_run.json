@@ -1,22 +1,22 @@
 {
   "links": [
-    "https://www.cnbc.com/2026/04/22/servicenow-now-earnings-q1-2026.html",
-    "https://www.cnbc.com/2026/04/22/ibm-q1-earnings-report-2026.html",
-    "https://www.cnbc.com/2026/04/22/iran-war-strait-hormuz-tanker-ship-trump-blockade.html",
-    "http://www3.nhk.or.jp/news/html/20260422/k10015105721000.html",
-    "http://www3.nhk.or.jp/news/html/20260422/k10015105331000.html",
-    "https://www.cnbc.com/2026/04/22/strait-of-hormuz-ships-attacked-iran-war.html",
-    "http://www3.nhk.or.jp/news/html/20260422/k10015105671000.html",
-    "https://www.cnbc.com/2026/04/22/tesla-tsla-q1-2026-earnings-report.html"
+    "http://www3.nhk.or.jp/news/html/20260423/k10015106151000.html",
+    "https://www.cnbc.com/2026/04/23/trump-hormuz-strait-iran-war.html",
+    "https://www.barrons.com/livecoverage/stock-market-news-today-042326/card/the-dow-falls-200-points-it-s-all-about-earnings--2IF2pLpZOsLpeVFdombP?siteid=yhoof2&yptr=yahoo",
+    "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-jobless-claims-tesla-tsla-stock-musk/?src=A00220&yptr=yahoo",
+    "https://finance.yahoo.com/markets/stocks/live/stock-market-today-dow-sp-500-and-nasdaq-slide-as-oil-rises-amid-hormuz-standoff-233045628.html",
+    "http://www3.nhk.or.jp/news/html/20260423/k10015106621000.html",
+    "https://www.investors.com/news/technology/chip-stocks-philadelphia-semiconductor-index-ai-stocks/?src=A00220&yptr=yahoo",
+    "http://www3.nhk.or.jp/news/html/20260423/k10015106061000.html"
   ],
   "fingerprints": [
-    "tesla营收不及预期但利润超预期，汽车毛利率大幅提升 tesla's stock has underperformed all of its megacap peers so far this year as global competition ramps up in the electric vehicle market.",
-    "ibm股价转跌，因公司财报超预期但维持业绩指引不变 investors have been attuned to mainframe disruption threats from artificial intelligence, but ibm posted 51% growth in z mainframe hardware revenue.",
-    "在donald trump（特朗普）延长停火协议后，iran扣押船只导致霍尔木兹海峡基本处于封闭状态 ship traffic in the strait of hormuz is still way below normal levels before the war when more than 100 vessels crossed daily.",
-    "iran表示在美国延长停火协议后扣押了两艘通过霍尔木兹海峡的船只 the attacks come shortly after president donald trump said the u.s. would extend the ceasefire with iran to allow peace talks to continue.",
-    "受iran战争影响订阅收入受挫，servicenow股价暴跌14% the software company beat expectations for earnings and revenue as it continued to expand its artificial intelligence offerings.",
-    "日本财务省地方财务局长会议：维持经济评估，但表示“密切关注中东局势的影响” 財務省は全国の景気の現状について最新の見方をまとめ、「緩やかに回復しつつある」という基調判断は据え置きましたが、中東情勢の影響を注視する必要があるとしています。",
-    "片山（かたやま）金融大臣将与金融业人士会晤，议题涉及美国新兴企业的ai模型 アメリカの新興ai企業が開発した新たなaiモデルをめぐって、悪用された場合、金融システムにリスクをもたらすおそれがあるといった指摘も出る中、片山金融担当大臣は近く、日銀や国内の大手金融機関などと会合を開き、対応について話し合う考えを明らかにしました。",
-    "石油资源开发（japan petroleum exploration）社长：中东局势“变数极多，不容乐观” 政府が筆頭株主のエネルギー関連会社「石油資源開発」の山下通郎社長は22日に開かれた記者会見で、中東情勢について「二転三転、四転していて楽観できない」と述べ、影響は当面続く可能性があるという認識を示しました。"
+    "nasdaq从高位回落，一切皆因财报而起。 nasdaq pull back from highs. it’s all about earnings.",
+    "今日股市：受霍尔木兹海峡对峙导致油价上涨影响，dow、s&p 500和nasdaq出现下跌。 stock market today: dow, s&p 500, and nasdaq slide as oil rises amid hormuz standoff",
+    "今日股市：dow轻微下跌；tesla因elon musk（马斯克）的评论而下挫，但texas instruments股价飙升（实时报道）。 stock market today: dow off lightly; tesla drops on musk comments but texas instruments soars (live coverage)",
+    "donald trump（特朗普）下令海军“击沉任何”在霍尔木兹海峡布雷的船只。 trump's post shows the u.s. ratcheting up tensions with iran over the strait, which has been largely choked off to oil tanker traffic since the war began.",
+    "受ai大趋势和analog复苏推动，芯片股迎来史诗级上涨。 chip stocks on epic run, fueled by ai megatrend, analog recovery",
+    "股价首次突破6万日元大关，随后卖单激增导致回落 23日の東京株式市場は、日経平均株価が取引時間中の最高値を更新し、初めて6万円の大台を突破しました。一部のai関連の銘柄に入った買い注文が株価を押し上げた形ですが、イラン情勢への懸念が続く中でその後は売り注文が膨らみ、結局値下がりで取り引きを終えました。",
+    "日元兑美元汇率小幅下跌，美伊谈判前景不明朗 円相場 対ドルで小幅に値下がり 米イラン協議の実現不透明",
+    "今日早间biz 4月23日（周四）：超九成企业对原油价格飙升等因素表示担忧 nhkニュース「おはよう日本」で平日朝に放送している経済ニュースコーナー「おはbiz」。最新のビジネストレンドや働き方、お役立ちサービスやスタートアップ企業の情報など、ギュギュっとコンパクトにお届けします。"
   ]
 }
