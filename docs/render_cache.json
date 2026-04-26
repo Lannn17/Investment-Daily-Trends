@@ -34,7 +34,7 @@
       "market_open": false,
       "name": "S&P 500",
       "news_titles": [],
-      "analysis": "科技股领涨带动标普高开高走，市场情绪在美股开盘前维持乐观态势。\n权重科技股表现强势，资金流入驱动指数上行。",
+      "analysis": "受科技股强劲反弹推动，标普500指数涨幅扩大，市场风险偏好有所回升。\n科技板块重回升势，带动大盘整体情绪转暖。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -72,7 +72,7 @@
       "market_open": false,
       "name": "NASDAQ",
       "news_titles": [],
-      "analysis": "在NVDA和TSM等芯片巨头的强劲推动下，纳指大幅收高，领跑大盘。\nAI板块需求旺盛，成长股动能依然强劲。",
+      "analysis": "受益于半导体巨头的大幅上涨，纳指表现强劲，领跑主要股指。\n龙头科技股动能强劲，技术面突破上方压力。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -110,7 +110,7 @@
       "market_open": false,
       "name": "Dow Jones",
       "news_titles": [],
-      "analysis": "道指表现低迷，在工业与防御性权重拖累下出现轻微回调，走势与成长股分化。\n传统行业价值股缺乏催化剂，陷入横盘震荡。",
+      "analysis": "成分股表现分化，工业及防御板块走弱拖累指数，表现滞后于科技板块。\n权重股表现疲软，指数进入高位震荡整理期。",
       "outlook": "neutral",
       "outlook_css": "neutral"
     },
@@ -148,7 +148,7 @@
       "market_open": false,
       "name": "Nikkei 225",
       "news_titles": [],
-      "analysis": "日经225在科技股提振下收涨接近1%，反映市场对半导体供应链的乐观预期。\n受美股科技板块联动效应带动，日股估值修复仍在持续。",
+      "analysis": "日经225在避险需求与科技股带动下收涨，市场交投活跃，重回6万点附近。\n受隔夜科技股带动及市场情绪改善，日股支撑稳固。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -186,7 +186,7 @@
       "market_open": false,
       "name": "Hang Seng",
       "news_titles": [],
-      "analysis": "恒指微幅收涨，在周边市场向好背景下展现出一定的韧性，成交趋于平稳。\n市场观望情绪较浓，缺乏持续放量的上涨动力。",
+      "analysis": "恒指窄幅震荡，在区域市场联动下小幅收涨，表现相对稳健。\n缺乏核心利好催化，短期处于横盘整固阶段。",
       "outlook": "neutral",
       "outlook_css": "neutral"
     }
@@ -196,12 +196,12 @@
       "ticker": "GC=F",
       "label": "Gold",
       "url": "https://finance.yahoo.com/quote/GC=F",
-      "price": 4722.2998046875,
-      "price_fmt": "4,722.30",
-      "change": 17.19970703125,
-      "change_fmt": "17.200",
-      "change_pct": 0.0036555454027041175,
-      "change_pct_fmt": "+0.37%",
+      "price": 4740.89990234375,
+      "price_fmt": "4,740.90",
+      "change": 35.7998046875,
+      "change_fmt": "35.800",
+      "change_pct": 0.007608723288444585,
+      "change_pct_fmt": "+0.76%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
@@ -209,7 +209,7 @@
         "4,698.40",
         "4,732.50",
         "4,705.10",
-        "4,722.30"
+        "4,740.90"
       ],
       "history_dates": [
         "04/20",
@@ -218,15 +218,15 @@
         "04/23",
         "04/24"
       ],
-      "change_5d": -0.017538445316026132,
-      "change_5d_fmt": "-1.75%",
+      "change_5d": -0.013668745886418993,
+      "change_5d_fmt": "-1.37%",
       "css5d": "down",
       "as_of": "04/25 05:00",
       "market_name": "NYSE/NASDAQ",
       "market_open": false,
       "name": "Gold",
       "news_titles": [],
-      "analysis": "黄金小幅反弹，在全球不确定性环境下发挥避险属性，维持稳步上行。\n避险需求支撑及对未来利率政策的预期利好金价。",
+      "analysis": "金价在避险情绪支撑下持续走强，保持稳健攀升态势。\n宏观不确定性犹存，贵金属避险资产配置需求上升。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -234,12 +234,12 @@
       "ticker": "SI=F",
       "label": "Silver",
       "url": "https://finance.yahoo.com/quote/SI=F",
-      "price": 76.38300323486328,
-      "price_fmt": "76.383",
-      "change": 0.9180068969726562,
-      "change_fmt": "0.9180",
-      "change_pct": 0.012164671589757028,
-      "change_pct_fmt": "+1.22%",
+      "price": 76.41400146484375,
+      "price_fmt": "76.414",
+      "change": 0.949005126953125,
+      "change_fmt": "0.9490",
+      "change_pct": 0.012575434612147909,
+      "change_pct_fmt": "+1.26%",
       "change_arrow": "▲",
       "css": "up",
       "history": [
@@ -247,7 +247,7 @@
         "76.411",
         "77.893",
         "75.465",
-        "76.383"
+        "76.414"
       ],
       "history_dates": [
         "04/20",
@@ -256,15 +256,15 @@
         "04/23",
         "04/24"
       ],
-      "change_5d": -0.04462725075069158,
-      "change_5d_fmt": "-4.46%",
+      "change_5d": -0.044239535382820494,
+      "change_5d_fmt": "-4.42%",
       "css5d": "down",
       "as_of": "04/25 05:00",
       "market_name": "NYSE/NASDAQ",
       "market_open": false,
       "name": "Silver",
       "news_titles": [],
-      "analysis": "白银表现优于黄金，受益于工业需求预期回暖，涨幅达到1.22%。\n工业需求复苏叠加金银比修复，白银弹性更佳。",
+      "analysis": "白银表现优于黄金，跟随贵金属整体涨势，市场流动性充裕。\n工业需求与投资需求共振，价格保持上行轨道。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -302,7 +302,7 @@
       "market_open": false,
       "name": "WTI Oil",
       "news_titles": [],
-      "analysis": "受市场供应担忧缓解及需求疲软预期影响，WTI原油盘中走低，跌幅超1.5%。\n能源供需平衡压力加大，短期面临下行风险。",
+      "analysis": "受供需预期影响，WTI原油承压下挫，能源板块整体走弱。\n原油供应担忧缓解及需求前景疲软压制价格。",
       "outlook": "bearish",
       "outlook_css": "bearish"
     },
@@ -310,20 +310,20 @@
       "ticker": "BZ=F",
       "label": "Brent Oil",
       "url": "https://finance.yahoo.com/quote/BZ=F",
-      "price": 105.33000183105469,
-      "price_fmt": "105.33",
-      "change": 0.26000213623046875,
-      "change_fmt": "0.2600",
-      "change_pct": 0.0024745611210206992,
-      "change_pct_fmt": "+0.25%",
-      "change_arrow": "▲",
-      "css": "up",
+      "price": 99.12999725341797,
+      "price_fmt": "99.130",
+      "change": -5.94000244140625,
+      "change_fmt": "5.9400",
+      "change_pct": -0.05653376281202042,
+      "change_pct_fmt": "-5.65%",
+      "change_arrow": "▼",
+      "css": "down",
       "history": [
         "95.480",
         "98.480",
         "101.91",
         "105.07",
-        "105.33"
+        "99.130"
       ],
       "history_dates": [
         "04/20",
@@ -332,17 +332,17 @@
         "04/23",
         "04/24"
       ],
-      "change_5d": 0.10316294645800098,
-      "change_5d_fmt": "+10.32%",
+      "change_5d": 0.03822783586254785,
+      "change_5d_fmt": "+3.82%",
       "css5d": "up",
       "as_of": "04/25 05:00",
       "market_name": "NYSE/NASDAQ",
       "market_open": false,
       "name": "Brent Oil",
       "news_titles": [],
-      "analysis": "布伦特原油窄幅震荡，与WTI走势出现偏差，体现了国际市场供需的区域差异。\n地缘溢价与需求担忧博弈，价格进入震荡区间。",
-      "outlook": "neutral",
-      "outlook_css": "neutral"
+      "analysis": "布伦特原油大幅跳水，跌幅显著，反映市场对能源前景的悲观情绪。\n市场对全球经济增长减速及原油供应过剩担忧加剧。",
+      "outlook": "bearish",
+      "outlook_css": "bearish"
     }
   ],
   "fx": [
@@ -380,7 +380,7 @@
       "market_open": false,
       "name": "USD/JPY",
       "news_titles": [],
-      "analysis": "美元兑日元窄幅波动，市场静待美联储动向，日元汇率相对平稳。\n日美息差压力存在，但干预风险制约汇率单边走势。",
+      "analysis": "美元兑日元波动极小，市场在美盘前保持静观，汇率维持在159附近。\n多空双方在关键心理关口博弈，短期缺乏明显趋势。",
       "outlook": "neutral",
       "outlook_css": "neutral"
     },
@@ -418,7 +418,7 @@
       "market_open": false,
       "name": "JPY/CNY",
       "news_titles": [],
-      "analysis": "日元兑人民币温和回升，汇率窄幅波动，体现两地货币政策的相对稳定性。\n双方宏观政策保持平衡，汇率缺乏大幅波动基础。",
+      "analysis": "日元兑人民币小幅升值，反映区域货币间的微弱调适。\n汇率波动处于窄幅震荡区间，趋势不明显。",
       "outlook": "neutral",
       "outlook_css": "neutral"
     },
@@ -456,7 +456,7 @@
       "market_open": false,
       "name": "EUR/JPY",
       "news_titles": [],
-      "analysis": "欧元兑日元震荡走高，欧元在欧洲盘中维持韧性，日元相对走弱。\n欧元区经济数据变动引导汇率，震荡趋势延续。",
+      "analysis": "欧元兑日元维持温和波动，未出现显著的方向性突破。\n欧日两国货币政策预期趋同，汇率维持震荡。",
       "outlook": "neutral",
       "outlook_css": "neutral"
     }
@@ -503,7 +503,7 @@
       "market_open": false,
       "name": "iShares Gold Trust",
       "news_titles": [],
-      "analysis": "追踪实物金价，IAU跟随现货黄金稳步上涨，符合市场对避险资产的需求。\n长期避险配置需求稳定，支撑ETF价格上涨。",
+      "analysis": "随现货黄金价格走高，IAU保持稳健增长，避险属性凸显。\n实物资产溢价支撑，延续整体上升趋势。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -541,7 +541,7 @@
       "market_open": false,
       "name": "Newmont Corporation",
       "news_titles": [],
-      "analysis": "纽蒙特矿业大涨8.68%，金价上涨叠加公司利好因素，驱动股价放量攀升。\n贵金属价格上行直接增厚公司利润，溢价空间打开。",
+      "analysis": "受金价大涨带动，纽蒙特矿业股价跳升，创出强劲涨幅。\n金价上涨直接推升矿企利润预期，买盘强劲。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -579,7 +579,7 @@
       "market_open": false,
       "name": "NVIDIA",
       "news_titles": [],
-      "analysis": "英伟达在AI算力需求支撑下大涨4.32%，成为美股市场核心驱动力。\nAI硬件需求依然处于爆发周期，龙头地位稳固。",
+      "analysis": "受AI需求预期提振，英伟达股价显著反弹，领跑纳指成份股。\n核心AI算力需求稳健，技术面修复行情确立。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -617,7 +617,7 @@
       "market_open": false,
       "name": "Taiwan Semiconductor",
       "news_titles": [],
-      "analysis": "台积电受益于芯片代工订单强劲，股价单日涨幅逾5%，带动全球半导体板块。\n先进制程壁垒显著，产能扩张带动增长预期。",
+      "analysis": "台积电随科技股板块集体走高，显示行业景气度持续修复。\n产能利用率回升及先进制程订单需求强劲。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -655,7 +655,7 @@
       "market_open": false,
       "name": "Berkshire Hathaway B",
       "news_titles": [],
-      "analysis": "伯克希尔哈撒韦微跌，市场处于资金再平衡过程，该防御性资产波动有限。\n现金储备充沛，但在科技股大涨时表现较为平淡。",
+      "analysis": "伯克希尔哈撒韦表现平淡，小幅下跌，显示防御性资金避险观望。\n公司市值庞大，短期难有爆发性表现，维持盘整。",
       "outlook": "neutral",
       "outlook_css": "neutral"
     },
@@ -693,7 +693,7 @@
       "market_open": false,
       "name": "Lockheed Martin",
       "news_titles": [],
-      "analysis": "洛克希德马丁今日跌幅超3%，或受机构调仓影响，防御性军工股短期承压。\n资金流向高增长科技板块，军工股面临短期获利回吐。",
+      "analysis": "国防板块领跌，洛克希德马丁受获利了结压力影响显著收低。\n近期涨幅过大引发估值修复，技术指标转弱。",
       "outlook": "bearish",
       "outlook_css": "bearish"
     },
@@ -731,9 +731,9 @@
       "market_open": false,
       "name": "Toyota Motor",
       "news_titles": [],
-      "analysis": "丰田汽车收跌1.79%，受出口预期及市场板块轮动压力影响，表现弱于大盘。\n汇率波动及行业竞争压力，使股价走势相对受限。",
-      "outlook": "neutral",
-      "outlook_css": "neutral"
+      "analysis": "丰田汽车因市场竞争及成本压力小幅收跌，落后于大盘表现。\n全球汽车需求放缓及汇率波动带来盈利担忧。",
+      "outlook": "bearish",
+      "outlook_css": "bearish"
     },
     {
       "ticker": "9984.T",
@@ -769,7 +769,7 @@
       "market_open": false,
       "name": "SoftBank Group",
       "news_titles": [],
-      "analysis": "软银集团表现亮眼，得益于旗下投资组合科技股的估值修复，收涨2.16%。\n全球科技资产反弹带动其资产净值提升。",
+      "analysis": "软银集团受投资标的市值回升带动，表现优于日经指数。\n持仓科技股估值反弹，提升集团资产净值预期。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     },
@@ -807,55 +807,58 @@
       "market_open": false,
       "name": "iShares MSCI India ETF",
       "news_titles": [],
-      "analysis": "印度市场ETF微涨，新兴市场资金配置持续，体现了印度经济的长期增长预期。\n外资持续流入，宏观基本面支撑印度市场走强。",
+      "analysis": "印度市场ETF录得小幅上涨，显示资金对新兴市场的持续关注。\n印度经济增长预期支撑，长期配置价值显现。",
       "outlook": "bullish",
       "outlook_css": "bullish"
     }
   ],
   "market_news": [
     {
-      "title": "Nvidia 股价创下收盘历史新高，市值再次突破 5 万亿美元",
-      "article": "Nvidia stock clinches record close, pushing market cap over $5 trillion once again",
-      "summary": "关键词：Nvidia, 市值, 股票<br>\n总结：Nvidia公司近期在股市表现强劲，股价成功创下历史最高收盘纪录，这一表现直接推动其市场总价值再次突破5万亿美元大关。作为人工智能芯片领域的领军企业，Nvidia持续受到市场的高度追捧与资金青睐。此次市值重返高点，不仅反映了投资者对该公司在高性能计算及AI基础设施领域长期增长潜力的坚定信心，也进一步稳固了Nvidia在全球资本市场的核心地位及行业统治力。"
+      "title": "分析显示，Donald Trump（特朗普）对市场的影响力是数十年来历任总统中前所未有的",
+      "link": "https://www.marketwatch.com/story/trump-is-swaying-the-market-like-no-president-has-in-decades-analysis-shows-879be0bc?mod=mw_rss_topstories",
+      "article": "Data suggests President Trump has been the driver behind the best and worst days for stocks in his second term.",
+      "summary": "关键词：Donald Trump（唐纳德·特朗普）, 股市波动, 第二任期<br>\n总结：该财经新闻指出，在Donald Trump（唐纳德·特朗普）的第二个总统任期内，其政策导向与政治言论已成为影响美国股市剧烈波动的核心驱动力。市场数据显示，在其任期内的多个交易日中，无论股市出现单日创纪录的上涨还是大幅下挫，Donald Trump（唐纳德·特朗普）的相关动态往往是引发此类行情的主要催化剂。这一现象凸显了当前资本市场对总统决策及地缘政治预期的高度敏感性。"
     },
     {
-      "title": "“我们无法生存”：Toyota、Honda 和 Ford 的首席执行官们针对中国发出了令人不寒而栗的警告——这可能会影响您的投资组合",
-      "article": "‘We will not survive’: Toyota, Honda and Ford CEOs issue chilling warning about China — and it could hit your portfolio",
-      "summary": "关键词：Toyota, Honda, Ford<br>\n总结：Toyota、Honda和Ford的CEO近期发出严厉警告，称若无法在成本控制和电动化转型上与中国车企竞争，传统汽车制造商将面临生存危机。他们指出，中国电动车企通过规模效应与垂直整合在价格上形成巨大优势，正通过出口迅速席卷全球市场。这一行业趋势不仅威胁到日美传统车企的市场份额，也可能对其长期股价与投资价值产生重大负面影响，投资者需关注全球汽车产业竞争格局的深刻变革。"
+      "title": "参议员Thom Tillis（提利斯）准备结束对Fed主席提名人Kevin Warsh（瓦尔什）的阻挠",
+      "article": "Sen. Tillis prepared to end blockade of Fed chair nominee Kevin Warsh",
+      "summary": "关键词：Kevin Warsh, Fed, Thom Tillis<br>\n总结：美国参议员Thom Tillis（汤姆·提利斯）近期释放出积极信号，表示已准备好结束对美联储主席提名人Kevin Warsh（凯文·沃什）的程序性阻挠。此前，由于部分共和党议员的反对，该职位的提名进程陷入停滞。这一变动意味着Kevin Warsh的提名案在参议院的审议将有望加速推进，市场对此高度关注，认为此举有助于缓解Fed高层领导力不确定的局面，确保货币政策制定工作的稳定性与连续性。"
     },
     {
-      "title": "道琼斯期货：Apple、Amazon 和 Google 引领 AI 驱动的股市财报季",
-      "article": "Dow Jones Futures: Apple, Amazon, Google Lead Earnings Wave For AI-Led Stock Market",
-      "summary": "关键词：Dow Jones Futures, Apple, AI<br>\n总结：受美股财报季密集发布的影响，道琼斯指数期货表现波动。市场焦点主要集中在Apple、Amazon及Google等科技巨头的财报之上。投资者高度关注这些公司在人工智能领域的布局及其盈利能力，以判断AI驱动的行情能否持续。随着大型科技股披露关键业绩数据，市场情绪受到显著影响，分析师密切观察这些核心企业如何通过创新技术在激烈的竞争中巩固优势，并以此作为引领美股后续走势的重要风向标。"
+      "title": "三大驱动力促成S&P 500指数又一个充满历史性但波动剧烈的一周",
+      "article": "The Iran war wasn't the only focus. Corporate earnings and a split between hardware and software stocks caught our attention as well.",
+      "summary": "关键词：Iran war, Corporate earnings, Hardware and software stocks<br>\n总结：财经市场近期呈现多元化焦点，除了地缘政治因素中Iran war带来的不确定性影响外，投资者的注意力亦高度集中于美股市场。近期发布的Corporate earnings显示出显著的行业分化特征，特别是Hardware与Software板块之间出现了明显的走势分歧。这种市场格局表明，资金正在根据不同业务模式的盈利能力及抗风险属性进行再配置，投资者需密切关注不同科技细分领域在当前宏观经济环境下的业绩表现差异。"
     },
     {
-      "title": "他会留下还是离开？随着刑事调查结束，美联储主席 Jerome Powell（鲍威尔）面临重大抉择",
-      "article": "The decision could have important ramifications for policymaking at an especially delicate time.",
-      "summary": "关键词：决策, 政策制定, 关键时期<br>\n总结：该决策可能会对当前的政策制定产生深远影响。当前正处于一个极其微妙且敏感的时期，任何政策上的微小变动都可能引发连锁反应，导致各领域局势的复杂化。因此，决策者在此时采取行动需格外谨慎，以平衡各方利益并确保社会经济的平稳运行。相关部门必须充分研判形势，审慎评估该决定可能带来的潜在风险与长期后果，从而在错综复杂的环境中做出最有利于全局发展的科学判断。"
+      "title": "Big Tech是当前牛市的双赢交易，这使得本周至关重要",
+      "article": "Big Tech has roared back in April. Why it could be your win-win trade during the U.S.-Iran standoff.",
+      "summary": "关键词：Big Tech, U.S.-Iran standoff, 股市投资<br>\n总结：在近期地缘政治紧张局势加剧、美国与伊朗对峙升级的背景下，Big Tech凭借其强劲的现金流和抗风险能力在四月强势反弹。分析认为，尽管市场面临宏观不确定性，但大型科技股表现出极强的防御属性与成长韧性，不仅能抵御避险情绪带来的市场波动，还能在动荡中提供稳定的投资回报，被视作当前市场环境下的优选配置，有望成为投资者在复杂局势中实现稳健收益的赢家。"
     },
     {
-      "title": "Baker Hughes 表示，霍尔木兹海峡可能要到 2026 年下半年才能完全重新开放",
-      "article": "Tanker traffic through the strait remains very low as the U.S. and Iran try to enforce competing blockades during a fragile ceasefire agreement.",
-      "summary": "关键词：Tanker, Strait, Ceasefire<br>\n总结：由于美国与伊朗在脆弱的停火协议期间持续执行相互竞争的封锁策略，导致该海峡的油轮通航量始终维持在极低水平。双方在这一关键能源运输通道上的博弈，使得航运业面临极大的不确定性，区域紧张局势虽处于停火状态，但通过该航道的正常贸易往来仍受到严重阻碍，油轮运营方普遍对此保持审慎观望态度。"
+      "title": "ServiceNow股价遭遇史上最惨重的一天，拖累软件行业集体下挫",
+      "link": "https://www.marketwatch.com/story/servicenows-stock-sinks-toward-worst-day-ever-taking-the-software-sector-down-with-it-77fd240d?mod=mw_rss_topstories",
+      "article": "A prominent software ETF is seeing its biggest daily decline in a year. There’s “no room for nuance” in the sector, an analyst says.",
+      "summary": "关键词：Software ETF, 市场抛售, 行业情绪<br>\n总结：受市场避险情绪影响，某知名Software ETF遭遇了近一年来的最大单日跌幅。分析师指出，当前软件行业正面临极端的市场反馈，投资者对该领域的估值与业绩预期已不再容忍任何模糊空间，导致资金撤离速度加剧。这种“无细微差别”的市场表现意味着一旦财报或宏观数据表现不及预期，相关个股及板块将面临激烈的回调压力，市场对软件行业的投资偏好正由温和转向严苛。"
     }
   ],
   "japan_news": [
     {
-      "title": "纽约股市，Nasdaq和S&P 500刷新历史最高点，Intel股价急升",
-      "article": "24日のニューヨーク株式市場では、AIの開発競争が進む中で好調な業績が見込めるとして半導体関連などの銘柄に買い注文が集まり、ナスダックの株価指数などが最高値を更新しました。",
-      "summary": "关键词：纽约股市, AI, 半导体<br>\n总结：24日纽约股市表现强劲，由于市场预期AI技术的开发竞争将持续带动行业需求，投资者纷纷买入相关半导体类股票。在此背景下，科技股受到有力支撑，推动Nasdaq指数等主要股指创下历史新高。此次上涨主要反映了华尔街对人工智能产业链长期增长潜力的乐观情绪，资金持续向具有高业绩成长预期的科技板块集中。"
+      "title": "美国电动汽车制造商 Tesla（特斯拉）1-3月财报实现营收利润双增长",
+      "link": "http://www3.nhk.or.jp/news/html/20260423/k10015105841000.html",
+      "article": "アメリカの電気自動車メーカー、テスラのことし1月から3月までの3か月間の決算は増収増益となりました。去年はイーロン・マスクCEOの政治的な言動をきっかけに広がった不買運動などの影響で減益が続いていましたが、収益がひとまず回復した形です。",
+      "summary": "关键词：Tesla, 财报, Elon Musk (埃隆·马斯克)<br>\n总结：Tesla发布了今年1月至3月的季度财报，数据显示公司实现了营收与利润的双增长，经营状况初步回暖。此前，由于首席执行官Elon Musk (埃隆·马斯克) 的政治言论引发了广泛的抵制运动，导致公司业绩持续下滑。此次财报的发布表明，尽管面临外部舆论环境的压力，Tesla的财务表现已走出低谷，在第一季度展现出强劲的复苏势头。"
     },
     {
-      "title": "三大头部财险公司员工在借调期间泄露Toyota内部信息",
-      "link": "http://www3.nhk.or.jp/news/html/20260423/k10015106451000.html",
-      "article": "トヨタ自動車に出向していた損害保険大手3社の社員が内部情報を無断で持ち出していたことが分かりました。持ち出した情報には会議の議事録などが含まれていたとみられ、各社は件数や持ち出したあとどのように扱っていたのかを詳しく調べています。",
-      "summary": "关键词：TOYOTA, 损害保险, 内部信息<br>\n总结：日本三家大型损害保险公司的员工在被派遣至TOYOTA工作期间，被发现存在违规带出内部信息的行为。据报道，被窃取的信息包含会议纪要等敏感商业资料。目前，这三家保险公司正针对信息泄露的具体数量、流向以及后续处理方式展开全面深入的内部调查，以查明该事件对公司业务及合作伙伴关系造成的影响。"
+      "title": "台湾 TSMC 将于 2029 年起量产 1.3 纳米级半导体",
+      "link": "http://www3.nhk.or.jp/news/html/20260423/k10015106891000.html",
+      "article": "台湾TSMC 2029年から1.3ナノメートル級半導体量産へ",
+      "summary": "关键词：TSMC, 1.3nm, 半导体<br>\n总结：TSMC计划在2029年正式启动1.3nm级别半导体的量产进程。这一技术迭代标志着公司在先进制程领域的持续领先，旨在通过更微小的制程工艺提升芯片的性能与能效，以满足人工智能、高性能计算等领域日益增长的市场需求。此举不仅巩固了TSMC在全球半导体制造代工市场的主导地位，也将进一步推动半导体行业向更高端的技术节点迈进。"
     },
     {
-      "title": "受伊朗局势影响，3月石化产品国内产量大幅下降",
-      "link": "http://www3.nhk.or.jp/news/html/20260423/k10015106501000.html",
-      "article": "先月、国内で生産された「エチレン」などの石油化学製品の量は、幅広い種類で大幅な減少となりました。化学メーカーの業界団体は、イラン情勢の緊迫化で原料となる「ナフサ」の供給が滞ったことなどが要因だとしています。",
-      "summary": "关键词：Ethylene, Naphtha, 石油化学<br>\n总结：上个月日本国内的Ethylene等石油化学产品产量出现大范围、大幅度下滑。据化学工业行业协会分析，此次减产的主要原因在于中东伊兰局势持续紧迫，导致作为核心原料的Naphtha供给出现延迟与短缺。受原材料供应受阻及不确定性增加的影响，日本相关石化产品的生产能力受到了显著抑制，行业整体供应水平面临严峻挑战。"
+      "title": "羽田机场国际线登机系统发生故障，导致部分航班延误",
+      "link": "http://www3.nhk.or.jp/news/html/20260423/k10015106211000.html",
+      "article": "23日朝、羽田空港の国際線で、搭乗手続きを行うシステムに不具合が起き、機械での搭乗手続きができない状態となりました。不具合は午前11時すぎに解消されたということですが、一部の便に遅れが出ています。",
+      "summary": "关键词：羽田空港, 搭乘手续, 系统故障<br>\n总结：23日早晨，羽田空港国际线航站楼的搭乘手续办理系统突发故障，导致旅客无法通过自助设备办理登机手续，现场运行受到严重影响。该故障直至当日上午11点过后才得以彻底修复。受此系统问题影响，部分国际航班的起飞时间被迫推迟，后续恢复正常运营仍需一定时间。目前相关部门正在进一步调查故障的具体原因，以防止类似事件再次发生并保障旅客的出行体验。"
     }
   ],
   "hot_markets": [],
