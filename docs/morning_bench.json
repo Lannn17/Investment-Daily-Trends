@@ -1,6 +1,202 @@
 {
   "market_news": [
     {
+      "link": "https://www.cnbc.com/2026/04/27/cramer-chip-stocks-worrisome-positioning.html",
+      "title": "Cramer calls blistering rally in chip stocks 'worrisome.' How he's protecting his portfolio",
+      "article": "CNBC's Jim Cramer explained that the recent run-up in AI related stocks may be a warning sign about the broader market.",
+      "fp": "cramer calls blistering rally in chip stocks 'worrisome.' how he's protecting his portfolio cnbc's jim cramer explained that the recent run-up in ai related stocks may be a warning sign about the broader market.",
+      "published": "Mon, 27 Apr 2026 22:45:10 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/27/biggest-winner-of-the-amended-microsoft-openai-deal-plus-mixed-news-for-lilly.html",
+      "title": "Biggest winner of the amended Microsoft-OpenAI deal — plus, mixed news for Eli Lilly",
+      "article": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
+      "fp": "biggest winner of the amended microsoft-openai deal — plus, mixed news for eli lilly every weekday, the investing club releases the homestretch; an actionable afternoon update just in time for the last hour of trading.",
+      "published": "Mon, 27 Apr 2026 19:09:28 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/27/nvidia-intel-call-buyers-defy-the-dip-in-chip-stocks.html",
+      "title": "Nvidia, Intel call buyers defy the dip in chip stocks",
+      "article": "One of the biggest trades in the group this morning is a $2.2 million purchase of 2,168 $210-strike calls in Nvidia that expire May 15.",
+      "fp": "nvidia, intel call buyers defy the dip in chip stocks one of the biggest trades in the group this morning is a $2.2 million purchase of 2,168 $210-strike calls in nvidia that expire may 15.",
+      "published": "Mon, 27 Apr 2026 18:59:46 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/27/openai-microsoft-partnership-revenue-cap.html",
+      "title": "OpenAI shakes up partnership with Microsoft, capping revenue share payments",
+      "article": "Things have changed since Microsoft and OpenAI announced a broad agreement following OpenAI's restructuring in October.",
+      "fp": "openai shakes up partnership with microsoft, capping revenue share payments things have changed since microsoft and openai announced a broad agreement following openai's restructuring in october.",
+      "published": "Mon, 27 Apr 2026 23:09:30 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/27/qualcomm-qcom-openai-smartphone-chip-partnership-stock.html",
+      "title": "Qualcomm up 7% on report it’s partnering with OpenAI on smartphone AI chip",
+      "article": "Qualcomm will be working alongside MediaTek to develop a smartphone chip for OpenAI, with manufacturer Luxshare co-designing the device, an analyst said.",
+      "fp": "qualcomm up 7% on report it’s partnering with openai on smartphone ai chip qualcomm will be working alongside mediatek to develop a smartphone chip for openai, with manufacturer luxshare co-designing the device, an analyst said.",
+      "published": "Mon, 27 Apr 2026 13:33:44 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/27/shell-arc-resources-acquisition-16-billion-energy-oil.html",
+      "title": "Oil giant Shell to buy Canada’s ARC Resources for $16.4 billion in push to boost output",
+      "article": "The transaction will add roughly 370,000 barrels of oil equivalent per day to Shell's portfolio and is designed to boost the firm's long-term production.",
+      "fp": "oil giant shell to buy canada’s arc resources for $16.4 billion in push to boost output the transaction will add roughly 370,000 barrels of oil equivalent per day to shell's portfolio and is designed to boost the firm's long-term production.",
+      "published": "Mon, 27 Apr 2026 16:27:38 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/27/gm-f-stla-earnings.html",
+      "title": "Wall Street expects solid Q1 results for GM, as Ford and Stellantis try to gain traction",
+      "article": "America's largest automakers are set to report first-quarter earnings results this week.",
+      "fp": "wall street expects solid q1 results for gm, as ford and stellantis try to gain traction america's largest automakers are set to report first-quarter earnings results this week.",
+      "published": "Mon, 27 Apr 2026 11:30:01 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/27/indian-drugmaker-sun-pharma-to-buy-us-firm-organon-in-11point75-billion-deal.html",
+      "title": "Sun Pharma shares jump 7% as India's largest drugmaker to buy U.S. firm Organon in $11.75 billion deal",
+      "article": "To fuel its global ambitions, Sun Pharmaceutical Industries will acquire New Jersey-based Organon & Co in an all-cash deal that values the U.S. company at $11.75 billion.",
+      "fp": "sun pharma shares jump 7% as india's largest drugmaker to buy u.s. firm organon in $11.75 billion deal to fuel its global ambitions, sun pharmaceutical industries will acquire new jersey-based organon & co in an all-cash deal that values the u.s. company at $11.75 billion.",
+      "published": "Mon, 27 Apr 2026 06:49:15 GMT"
+    },
+    {
+      "link": "https://www.marketwatch.com/story/arms-stock-snaps-a-seven-day-winning-streak-as-it-loses-some-of-its-ai-glow-8d390975?mod=mw_rss_topstories",
+      "title": "Arm’s stock snaps a seven-day winning streak as it loses some of its AI glow",
+      "article": "Arm shares led Nadsaq 100 decliners on Monday, reflecting more general pressure on AI names and specific concerns about whether Arm will play a role in a potential Qualcomm-OpenAI chip.",
+      "fp": "arm’s stock snaps a seven-day winning streak as it loses some of its ai glow arm shares led nadsaq 100 decliners on monday, reflecting more general pressure on ai names and specific concerns about whether arm will play a role in a potential qualcomm-openai chip.",
+      "published": "Mon, 27 Apr 2026 22:09:00 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/27/openai-partners-with-customers-bank-in-push-to-automate-finance.html",
+      "title": "This bank CEO let his AI clone handle an earnings call — now he's signing an OpenAI deal",
+      "article": "It's part of Customers Bank CEO Sam Sidhu's effort to get ahead in the industry's race to transform itself using AI agents as a new digital workforce",
+      "fp": "this bank ceo let his ai clone handle an earnings call — now he's signing an openai deal it's part of customers bank ceo sam sidhu's effort to get ahead in the industry's race to transform itself using ai agents as a new digital workforce",
+      "published": "Mon, 27 Apr 2026 18:45:54 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/27/dominos-pizza-dpz-earnings-stock-falls-on-weak-sales.html",
+      "title": "Domino's Pizza stock falls on disappointing sales — and CEO thinks more chains will follow",
+      "article": "CEO Russell Weiner said he expects more fast-food chains will report that winter weather and weak consumer sentiment hurt their quarterly sales.",
+      "fp": "domino's pizza stock falls on disappointing sales — and ceo thinks more chains will follow ceo russell weiner said he expects more fast-food chains will report that winter weather and weak consumer sentiment hurt their quarterly sales.",
+      "published": "Mon, 27 Apr 2026 22:53:46 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/27/united-airlines-merger-with-american-airlines-ceo-airline-confirms.html",
+      "title": "United Airlines CEO confirms he approached American Airlines about merger",
+      "article": "United CEO Scott Kirby said American rejected the idea, \"and without a willing partner, something this big simply can't get done.\"",
+      "fp": "united airlines ceo confirms he approached american airlines about merger united ceo scott kirby said american rejected the idea, \"and without a willing partner, something this big simply can't get done.\"",
+      "published": "Mon, 27 Apr 2026 14:51:42 GMT"
+    },
+    {
+      "link": "https://www.marketwatch.com/story/bed-bath-beyond-is-seeing-new-life-as-rare-sales-growth-lifts-stock-more-than-30-3e1ee945?mod=mw_rss_topstories",
+      "title": "Bed Bath & Beyond is seeing new life, as rare sales growth lifts stock more than 30%",
+      "article": "Management highlights the “first quarter of significant revenue growth in 19 quarters.” But the stock is still well below its meme-stock-era highs.",
+      "fp": "bed bath & beyond is seeing new life, as rare sales growth lifts stock more than 30% management highlights the “first quarter of significant revenue growth in 19 quarters.” but the stock is still well below its meme-stock-era highs.",
+      "published": "Mon, 27 Apr 2026 21:35:00 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/27/prediction-markets-prepare-to-invade-one-of-cryptos-biggest-and-riskiest-trades.html",
+      "title": "Prediction markets prepare to invade one of crypto’s biggest and riskiest trades",
+      "article": "There’s a land grab underway in the U.S. for perpetual futures, one of the biggest and riskiest parts of crypto — and prediction markets want a piece of it.",
+      "fp": "prediction markets prepare to invade one of crypto’s biggest and riskiest trades there’s a land grab underway in the u.s. for perpetual futures, one of the biggest and riskiest parts of crypto — and prediction markets want a piece of it.",
+      "published": "Mon, 27 Apr 2026 16:59:36 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/27/deepmind-ineffable-intelligence-record-seed-funding-nvidia-google.html",
+      "title": "Former Google DeepMind researcher's AI startup raises record $1.1 billion seed funding to pursue superintelligence",
+      "article": "Former Google DeepMind researcher's AI startup raises record $1.1 billion seed funding to pursue superintelligence",
+      "fp": "former google deepmind researcher's ai startup raises record $1.1 billion seed funding to pursue superintelligence former google deepmind researcher's ai startup raises record $1.1 billion seed funding to pursue superintelligence",
+      "published": "Mon, 27 Apr 2026 17:33:24 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/27/meta-manus-china-blocks-acquisition-ai-startup.html",
+      "title": "China blocks Meta's $2 billion takeover of AI startup Manus",
+      "article": "China said Monday it has decided to block Meta's $2 billion acquisition of Manus, a Singaporean AI startup with Chinese roots.",
+      "fp": "china blocks meta's $2 billion takeover of ai startup manus china said monday it has decided to block meta's $2 billion acquisition of manus, a singaporean ai startup with chinese roots.",
+      "published": "Mon, 27 Apr 2026 13:38:38 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/27/crispr-gene-editing-intellia-trial.html",
+      "title": "Intellia Therapeutics says its Crispr-based treatment succeeds in pivotal trial",
+      "article": "Intellia Therapeutics said its Crispr-based treatment for hereditary angioedema met its goals in a Phase 3 trial, marking a milestone for gene editing.",
+      "fp": "intellia therapeutics says its crispr-based treatment succeeds in pivotal trial intellia therapeutics said its crispr-based treatment for hereditary angioedema met its goals in a phase 3 trial, marking a milestone for gene editing.",
+      "published": "Mon, 27 Apr 2026 19:08:28 GMT"
+    },
+    {
+      "link": "https://finance.yahoo.com/research/reports/ARGUS_46859_MarketUpdate_1777310912000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
+      "title": "Market Update: CB, RTX, KDP, DLR",
+      "article": "Market Update: CB, RTX, KDP, DLR",
+      "fp": "market update: cb, rtx, kdp, dlr market update: cb, rtx, kdp, dlr",
+      "published": "2026-04-27T17:28:32Z"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/27/private-credit-funds-saba-capital-tender-offers-for-shares-are-below-initial-expectations.html",
+      "title": "Saba Capital finds little appetite for tender offer of shares in Blue Owl, Starwood private credit funds",
+      "article": "Investors' disinterest in getting liquidity at a steep discount comes amid a quarter that saw elevated redemptions across most private-credit, non-traded BDCs.",
+      "fp": "saba capital finds little appetite for tender offer of shares in blue owl, starwood private credit funds investors' disinterest in getting liquidity at a steep discount comes amid a quarter that saw elevated redemptions across most private-credit, non-traded bdcs.",
+      "published": "Mon, 27 Apr 2026 23:02:22 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/27/spotify-peloton-fitness-content-hub.html",
+      "title": "Spotify teams up with Peloton to launch global fitness content hub",
+      "article": "Spotify teams with Peloton to launch fitness content, potentially opening new revenue streams while expanding Peloton’s global reach.",
+      "fp": "spotify teams up with peloton to launch global fitness content hub spotify teams with peloton to launch fitness content, potentially opening new revenue streams while expanding peloton’s global reach.",
+      "published": "Mon, 27 Apr 2026 13:04:36 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/27/lpa-drugs-from-novartis-amgen-and-eli-lilly-aim-to-prevent-heart-attacks.html",
+      "title": "Pharma bets a little-known form of cholesterol will underpin its next blockbuster heart drugs",
+      "article": "Novartis, Amgen and Eli Lilly are betting that slashing levels of a particularly bad form of cholesterol could deliver the next blockbusters in cardiology.",
+      "fp": "pharma bets a little-known form of cholesterol will underpin its next blockbuster heart drugs novartis, amgen and eli lilly are betting that slashing levels of a particularly bad form of cholesterol could deliver the next blockbusters in cardiology.",
+      "published": "Mon, 27 Apr 2026 19:28:58 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/27/musk-altman-trial-openai-jury-selection.html",
+      "title": "Judge in Musk v. Altman seats nine-person jury. Opening arguments start Tuesday",
+      "article": "The Musk v. Altman trial kicked off at a federal courthouse in Oakland, California, with jury selection followed by opening arguments.",
+      "fp": "judge in musk v. altman seats nine-person jury. opening arguments start tuesday the musk v. altman trial kicked off at a federal courthouse in oakland, california, with jury selection followed by opening arguments.",
+      "published": "Mon, 27 Apr 2026 22:59:32 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/27/trump-iran-war-strait-of-hormuz-rubio.html",
+      "title": "Trump discussed Iran's Hormuz Strait proposal with top aides, White House says",
+      "article": "The Trump administration has repeatedly insisted that the central goal of the conflict is keeping Iran from ever obtaining a nuclear weapon.",
+      "fp": "trump discussed iran's hormuz strait proposal with top aides, white house says the trump administration has repeatedly insisted that the central goal of the conflict is keeping iran from ever obtaining a nuclear weapon.",
+      "published": "Mon, 27 Apr 2026 18:10:42 GMT"
+    },
+    {
+      "link": "https://finance.yahoo.com/research/reports/ARGUS_4555_AnalystReport_1777311812000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
+      "title": "Analyst Report: Digital Realty Trust Inc",
+      "article": "Analyst Report: Digital Realty Trust Inc",
+      "fp": "analyst report: digital realty trust inc analyst report: digital realty trust inc",
+      "published": "2026-04-27T17:43:32Z"
+    },
+    {
+      "link": "https://finance.yahoo.com/research/reports/ARGUS_2809_AnalystReport_1777311812000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
+      "title": "Analyst Report: Chubb Ltd",
+      "article": "Analyst Report: Chubb Ltd",
+      "fp": "analyst report: chubb ltd analyst report: chubb ltd",
+      "published": "2026-04-27T17:43:32Z"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/27/congressional-republicans-trump-white-house-ballroom.html",
+      "title": "Congressional Republicans rally around Trump's White House ballroom project",
+      "article": "A group of Senate Republicans is proposing a bill to authorize $400 million in federal funds for the construction of a White House ballroom.",
+      "fp": "congressional republicans rally around trump's white house ballroom project a group of senate republicans is proposing a bill to authorize $400 million in federal funds for the construction of a white house ballroom.",
+      "published": "Mon, 27 Apr 2026 23:13:27 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/27/trump-ballroom-whcd-doj-lawsuit.html",
+      "title": "Trump ballroom lawsuit plaintiff rejects DOJ demand to drop case after 'assassination attempt'",
+      "article": "Trump and others say the proposed White House ballroom would be much more secure than the Washington Hilton Hotel, where Saturday's shooting occurred.",
+      "fp": "trump ballroom lawsuit plaintiff rejects doj demand to drop case after 'assassination attempt' trump and others say the proposed white house ballroom would be much more secure than the washington hilton hotel, where saturday's shooting occurred.",
+      "published": "Mon, 27 Apr 2026 17:12:07 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/27/trump-supreme-court-maha-glyphosate.html",
+      "title": "MAHA is mad. Its alliance with Trump is about to face its biggest test",
+      "article": "Supreme Court arguments Monday and the farm bill put MAHA squarely at odds with President Donald Trump and the majority of Republicans in Congress.",
+      "fp": "maha is mad. its alliance with trump is about to face its biggest test supreme court arguments monday and the farm bill put maha squarely at odds with president donald trump and the majority of republicans in congress.",
+      "published": "Mon, 27 Apr 2026 16:07:27 GMT"
+    },
+    {
       "link": "https://finance.yahoo.com/research/reports/ARGUS_46856_StockPicks_1777289280000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
       "title": "Weekly Stock List",
       "article": "Weekly Stock List",
@@ -8,217 +204,42 @@
       "published": "2026-04-27T11:28:00Z"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/core-scientific-inc-corz-billionaire-142601231.html",
-      "title": "Core Scientific Inc. (CORZ): Billionaire Howard Marks Holds Bullish Position",
-      "article": "Core Scientific Inc. (CORZ): Billionaire Howard Marks Holds Bullish Position",
-      "fp": "core scientific inc. (corz): billionaire howard marks holds bullish position core scientific inc. (corz): billionaire howard marks holds bullish position",
-      "published": "2026-04-27T14:26:01Z"
+      "link": "https://www.cnbc.com/2026/04/27/cole-allen-whcd-arraigment-trump.html",
+      "title": "Cole Allen charged with trying to assassinate Trump at WHCD event",
+      "article": "The Secret Service is facing scrutiny over security at the White House Correspondents' Dinner, where President Donald Trump was evacuated Saturday.",
+      "fp": "cole allen charged with trying to assassinate trump at whcd event the secret service is facing scrutiny over security at the white house correspondents' dinner, where president donald trump was evacuated saturday.",
+      "published": "Mon, 27 Apr 2026 21:44:22 GMT"
     },
     {
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-iran-news-nvidia-stock-nvda/?src=A00220&yptr=yahoo",
-      "title": "Stock Market Today: Dow Firm As Pharma Stocks Shine; Nvidia Nears Record Highs (Live Coverage)",
-      "article": "Stock Market Today: Dow Firm As Pharma Stocks Shine; Nvidia Nears Record Highs (Live Coverage)",
-      "fp": "stock market today: dow firm as pharma stocks shine; nvidia nears record highs (live coverage) stock market today: dow firm as pharma stocks shine; nvidia nears record highs (live coverage)",
-      "published": "2026-04-27T14:26:00Z"
+      "link": "https://www.cnbc.com/2026/04/27/social-security-benefits-reduced.html",
+      "title": "Social Security benefits can be reduced for some retirees who work. How that may change",
+      "article": "A new bill in Congress calls for eliminating the retirement earnings test, which reduces Social Security for some workers who are younger than retirement age.",
+      "fp": "social security benefits can be reduced for some retirees who work. how that may change a new bill in congress calls for eliminating the retirement earnings test, which reduces social security for some workers who are younger than retirement age.",
+      "published": "Mon, 27 Apr 2026 15:51:32 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/sectors/energy/articles/expand-energy-corporation-exe-billionaire-142545202.html",
-      "title": "Expand Energy Corporation (EXE): Billionaire Howard Marks Likes Upside Potential of This Stock",
-      "article": "Expand Energy Corporation (EXE): Billionaire Howard Marks Likes Upside Potential of This Stock",
-      "fp": "expand energy corporation (exe): billionaire howard marks likes upside potential of this stock expand energy corporation (exe): billionaire howard marks likes upside potential of this stock",
-      "published": "2026-04-27T14:25:45Z"
+      "link": "https://www.cnbc.com/2026/04/27/25percent-of-gen-z-women-think-they-must-choose-between-love-and-career.html",
+      "title": "25% of Gen Z women think they must choose between love and career: It's 'the greatest challenge for women,' says expert",
+      "article": "Many Gen Z women believe to build their careers properly, they must put romantic relationships on hold, according to a new survey.",
+      "fp": "25% of gen z women think they must choose between love and career: it's 'the greatest challenge for women,' says expert many gen z women believe to build their careers properly, they must put romantic relationships on hold, according to a new survey.",
+      "published": "Mon, 27 Apr 2026 14:53:14 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_46853_MarketOutlook_1777288848000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "Daily Spotlight: Market Calmer as Earnings Take Center Stage",
-      "article": "Daily Spotlight: Market Calmer as Earnings Take Center Stage",
-      "fp": "daily spotlight: market calmer as earnings take center stage daily spotlight: market calmer as earnings take center stage",
-      "published": "2026-04-27T11:20:48Z"
+      "link": "https://www.marketwatch.com/story/we-believe-its-real-my-mom-received-a-check-from-a-class-action-lawsuit-it-bounced-could-this-be-a-scam-cffa7bdb?mod=mw_rss_topstories",
+      "title": "‘We believe it’s real’: My mom received a check from a class-action lawsuit. It bounced. Could this be a scam?",
+      "article": "‘We believe it’s real’: My mom received a check from a class-action lawsuit. It bounced. Could this be a scam?",
+      "fp": "‘we believe it’s real’: my mom received a check from a class-action lawsuit. it bounced. could this be a scam? ‘we believe it’s real’: my mom received a check from a class-action lawsuit. it bounced. could this be a scam?",
+      "published": "Mon, 27 Apr 2026 22:30:00 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/economy/policy/articles/pkf-smith-cooper-appoints-beverley-145318214.html",
-      "title": "PKF Smith Cooper appoints Beverley Scott as new corporate tax partner",
-      "article": "PKF Smith Cooper appoints Beverley Scott as new corporate tax partner",
-      "fp": "pkf smith cooper appoints beverley scott as new corporate tax partner pkf smith cooper appoints beverley scott as new corporate tax partner",
-      "published": "2026-04-27T14:53:18Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-likes-carvana-cvna-142459614.html",
-      "title": "Jim Cramer Likes Carvana (CVNA) Stock",
-      "article": "Jim Cramer Likes Carvana (CVNA) Stock",
-      "fp": "jim cramer likes carvana (cvna) stock jim cramer likes carvana (cvna) stock",
-      "published": "2026-04-27T14:24:59Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/sectors/technology/articles/honeywell-hon-one-jim-cramer-142227775.html",
-      "title": "Honeywell (HON) is One of Jim Cramer’s Top Quantum Computing Stocks",
-      "article": "Honeywell (HON) is One of Jim Cramer’s Top Quantum Computing Stocks",
-      "fp": "honeywell (hon) is one of jim cramer’s top quantum computing stocks honeywell (hon) is one of jim cramer’s top quantum computing stocks",
-      "published": "2026-04-27T14:22:27Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_46852_TechnicalAnalysis_1777288813000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "Technical Assessment: Bullish in the Intermediate-Term",
-      "article": "Technical Assessment: Bullish in the Intermediate-Term",
-      "fp": "technical assessment: bullish in the intermediate-term technical assessment: bullish in the intermediate-term",
-      "published": "2026-04-27T11:20:13Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/sectors/energy/articles/oil-stocks-surging-3-buy-145000297.html",
-      "title": "Oil Stocks Are Surging: 3 to Buy and Hold for Decades",
-      "article": "Oil Stocks Are Surging: 3 to Buy and Hold for Decades",
-      "fp": "oil stocks are surging: 3 to buy and hold for decades oil stocks are surging: 3 to buy and hold for decades",
-      "published": "2026-04-27T14:50:00Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-shares-why-buy-142141585.html",
-      "title": "Jim Cramer Shares Why You Should Buy Advanced Micro Devices (AMD)",
-      "article": "Jim Cramer Shares Why You Should Buy Advanced Micro Devices (AMD)",
-      "fp": "jim cramer shares why you should buy advanced micro devices (amd) jim cramer shares why you should buy advanced micro devices (amd)",
-      "published": "2026-04-27T14:21:41Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-proven-intel-intc-141958892.html",
-      "title": "Jim Cramer Proven Right About Intel (INTC) Shares",
-      "article": "Jim Cramer Proven Right About Intel (INTC) Shares",
-      "fp": "jim cramer proven right about intel (intc) shares jim cramer proven right about intel (intc) shares",
-      "published": "2026-04-27T14:19:58Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/news/have-software-stocks-reached-an-extreme-washout-yet-141914857.html",
-      "title": "Have software stocks reached an extreme washout yet?",
-      "article": "Have software stocks reached an extreme washout yet?",
-      "fp": "have software stocks reached an extreme washout yet? have software stocks reached an extreme washout yet?",
-      "published": "2026-04-27T14:19:14Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_2845_AnalystReport_1777287827000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "Analyst Report: Comcast Corp",
-      "article": "Analyst Report: Comcast Corp",
-      "fp": "analyst report: comcast corp analyst report: comcast corp",
-      "published": "2026-04-27T11:03:47Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/economy/policy/articles/ipsasb-seeks-input-updating-public-144740306.html",
-      "title": "IPSASB seeks input on updating public sector financial statements",
-      "article": "IPSASB seeks input on updating public sector financial statements",
-      "fp": "ipsasb seeks input on updating public sector financial statements ipsasb seeks input on updating public sector financial statements",
-      "published": "2026-04-27T14:47:40Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/anglogold-ashanti-plc-au-billionaire-141701969.html",
-      "title": "AngloGold Ashanti plc (AU): Billionaire Howard Marks Continues to Hold Sizeable Stake",
-      "article": "AngloGold Ashanti plc (AU): Billionaire Howard Marks Continues to Hold Sizeable Stake",
-      "fp": "anglogold ashanti plc (au): billionaire howard marks continues to hold sizeable stake anglogold ashanti plc (au): billionaire howard marks continues to hold sizeable stake",
-      "published": "2026-04-27T14:17:01Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/intuit-intu-just-joined-fed-141618871.html",
-      "title": "Intuit (INTU) Just Joined the Fed’s Instant Payments Network",
-      "article": "Intuit (INTU) Just Joined the Fed’s Instant Payments Network",
-      "fp": "intuit (intu) just joined the fed’s instant payments network intuit (intu) just joined the fed’s instant payments network",
-      "published": "2026-04-27T14:16:18Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/zscaler-zs-one-best-falling-141539337.html",
-      "title": "Is Zscaler (ZS) One of the Best Falling Stocks to Invest In Now?",
-      "article": "Is Zscaler (ZS) One of the Best Falling Stocks to Invest In Now?",
-      "fp": "is zscaler (zs) one of the best falling stocks to invest in now? is zscaler (zs) one of the best falling stocks to invest in now?",
-      "published": "2026-04-27T14:15:39Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/markets/crypto/articles/strategy-mstr-now-bitcoin-cantor-141421037.html",
-      "title": "Strategy (MSTR) Is Now All-In on Bitcoin; Cantor Just Raised Its Target Again",
-      "article": "Strategy (MSTR) Is Now All-In on Bitcoin; Cantor Just Raised Its Target Again",
-      "fp": "strategy (mstr) is now all-in on bitcoin; cantor just raised its target again strategy (mstr) is now all-in on bitcoin; cantor just raised its target again",
-      "published": "2026-04-27T14:14:21Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/markets/crypto/articles/bitmine-buys-236-million-eth-141400766.html",
-      "title": "BitMine Buys $236 Million Of ETH, Calls It ‘Wartime Store Of Value’",
-      "article": "BitMine Buys $236 Million Of ETH, Calls It ‘Wartime Store Of Value’",
-      "fp": "bitmine buys $236 million of eth, calls it ‘wartime store of value’ bitmine buys $236 million of eth, calls it ‘wartime store of value’",
-      "published": "2026-04-27T14:14:00Z"
-    },
-    {
-      "link": "https://www.investors.com/news/technology/ligand-stock-xoma-stock-acquisition/?src=A00220&yptr=yahoo",
-      "title": "Royalty Powerhouse: Ligand And Xoma Unite In $739 Million Deal",
-      "article": "Royalty Powerhouse: Ligand And Xoma Unite In $739 Million Deal",
-      "fp": "royalty powerhouse: ligand and xoma unite in $739 million deal royalty powerhouse: ligand and xoma unite in $739 million deal",
-      "published": "2026-04-27T14:13:30Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/sectors/healthcare/articles/protagonist-therapeutics-inc-ptgx-billionaire-140712596.html",
-      "title": "Protagonist Therapeutics Inc. (PTGX): Billionaire Joe Edelman Likes This Stock",
-      "article": "Protagonist Therapeutics Inc. (PTGX): Billionaire Joe Edelman Likes This Stock",
-      "fp": "protagonist therapeutics inc. (ptgx): billionaire joe edelman likes this stock protagonist therapeutics inc. (ptgx): billionaire joe edelman likes this stock",
-      "published": "2026-04-27T14:07:12Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/shark-tank-star-kevin-o-144605755.html",
-      "title": "'Shark Tank' Star Kevin O' Leary Spends $1000 A Day on Meals – But Says If You're 'Smart,' Don't Spend More Than 10% Of Bi-Weekly Paycheck On Dining",
-      "article": "'Shark Tank' Star Kevin O' Leary Spends $1000 A Day on Meals – But Says If You're 'Smart,' Don't Spend More Than 10% Of Bi-Weekly Paycheck On Dining",
-      "fp": "'shark tank' star kevin o' leary spends $1000 a day on meals – but says if you're 'smart,' don't spend more than 10% of bi-weekly paycheck on dining 'shark tank' star kevin o' leary spends $1000 a day on meals – but says if you're 'smart,' don't spend more than 10% of bi-weekly paycheck on dining",
-      "published": "2026-04-27T14:46:05Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/sectors/technology/article/microsoft-openai-rewrite-partnership-to-eliminate-exclusive-model-access-change-revenue-sharing-140522820.html",
-      "title": "Microsoft, OpenAI rewrite partnership to eliminate exclusive model access, change revenue sharing",
-      "article": "Microsoft, OpenAI rewrite partnership to eliminate exclusive model access, change revenue sharing",
-      "fp": "microsoft, openai rewrite partnership to eliminate exclusive model access, change revenue sharing microsoft, openai rewrite partnership to eliminate exclusive model access, change revenue sharing",
-      "published": "2026-04-27T14:05:22Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/sectors/healthcare/articles/apogee-therapeutics-inc-apge-primary-140516264.html",
-      "title": "Apogee Therapeutics Inc. (APGE): Primary Challenger to Established Blockbusters",
-      "article": "Apogee Therapeutics Inc. (APGE): Primary Challenger to Established Blockbusters",
-      "fp": "apogee therapeutics inc. (apge): primary challenger to established blockbusters apogee therapeutics inc. (apge): primary challenger to established blockbusters",
-      "published": "2026-04-27T14:05:16Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/economy/articles/restaurants-struggle-hire-dishwashers-immigration-140500565.html",
-      "title": "Restaurants struggle to hire dishwashers as immigration crackdown and teen labor decline hit workforce",
-      "article": "Restaurants struggle to hire dishwashers as immigration crackdown and teen labor decline hit workforce",
-      "fp": "restaurants struggle to hire dishwashers as immigration crackdown and teen labor decline hit workforce restaurants struggle to hire dishwashers as immigration crackdown and teen labor decline hit workforce",
-      "published": "2026-04-27T14:05:00Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/sectors/healthcare/articles/celcuity-inc-celc-likely-leader-140346925.html",
-      "title": "Celcuity Inc. (CELC): Likely Leader in Next Generation of Breast Cancer Treatments",
-      "article": "Celcuity Inc. (CELC): Likely Leader in Next Generation of Breast Cancer Treatments",
-      "fp": "celcuity inc. (celc): likely leader in next generation of breast cancer treatments celcuity inc. (celc): likely leader in next generation of breast cancer treatments",
-      "published": "2026-04-27T14:03:46Z"
+      "link": "https://www.marketwatch.com/story/i-hope-to-retire-early-im-56-and-have-80-in-a-traditional-ira-and-20-in-a-roth-am-i-in-trouble-8ec58195?mod=mw_rss_topstories",
+      "title": "‘I hope to retire early’: I’m 56 and have 80% in a traditional IRA and 20% in a Roth. Am I in trouble?",
+      "article": "“We have $3.5 million in savings — $2.5 million of which are in retirement accounts.”",
+      "fp": "‘i hope to retire early’: i’m 56 and have 80% in a traditional ira and 20% in a roth. am i in trouble? “we have $3.5 million in savings — $2.5 million of which are in retirement accounts.”",
+      "published": "Mon, 27 Apr 2026 22:01:00 GMT"
     }
   ],
   "japan_news": [
-    {
-      "link": "http://www3.nhk.or.jp/news/html/20260427/k10015109651000.html",
-      "title": "大和証券Gがオリックス銀行を買収 預金・融資で競争力強化へ",
-      "article": "大手証券の大和証券グループ本社は、金融サービス大手、オリックスの傘下の銀行をおよそ3700億円で買収すると発表しました。金利のある世界が本格化する中、証券の顧客にも預金や融資などのサービスを提供し、競争力を強化するねらいです。",
-      "fp": "大和証券gがオリックス銀行を買収 預金・融資で競争力強化へ 大手証券の大和証券グループ本社は、金融サービス大手、オリックスの傘下の銀行をおよそ3700億円で買収すると発表しました。金利のある世界が本格化する中、証券の顧客にも預金や融資などのサービスを提供し、競争力を強化するねらいです。",
-      "published": "Mon, 27 Apr 2026 21:28:05 +0900"
-    },
-    {
-      "link": "http://www3.nhk.or.jp/news/html/20260427/k10015109321000.html",
-      "title": "日産 昨年度の業績見通し 営業赤字から営業黒字に上方修正",
-      "article": "経営再建中の日産自動車は昨年度1年間の業績見通しについて、本業のもうけを示す営業損益をこれまでの600億円の赤字から500億円の黒字に修正すると発表しました。為替の変動などが主な要因で引き続き低迷する販売台数と収益力を回復させることが課題となります。",
-      "fp": "日産 昨年度の業績見通し 営業赤字から営業黒字に上方修正 経営再建中の日産自動車は昨年度1年間の業績見通しについて、本業のもうけを示す営業損益をこれまでの600億円の赤字から500億円の黒字に修正すると発表しました。為替の変動などが主な要因で引き続き低迷する販売台数と収益力を回復させることが課題となります。",
-      "published": "Mon, 27 Apr 2026 18:49:45 +0900"
-    },
-    {
-      "link": "http://www3.nhk.or.jp/news/html/20260427/k10015109341000.html",
-      "title": "NTT AI需要で国内データセンター3倍超に拡大 33年度までに",
-      "article": "AI向けのデータセンターの需要が急速に高まる中、NTTは、2033年度までに国内で運営するデータセンターの規模を、これまでの3倍余りに拡大する方針を明らかにしました。",
-      "fp": "ntt ai需要で国内データセンター3倍超に拡大 33年度までに ai向けのデータセンターの需要が急速に高まる中、nttは、2033年度までに国内で運営するデータセンターの規模を、これまでの3倍余りに拡大する方針を明らかにしました。",
-      "published": "Mon, 27 Apr 2026 17:14:59 +0900"
-    },
-    {
-      "link": "http://www3.nhk.or.jp/news/html/20260427/k10015109271000.html",
-      "title": "JERA「電気料金 夏ごろに高騰懸念」イラン情勢受け",
-      "article": "日本最大の発電事業者「JERA」は、イラン情勢の電気料金への影響について、火力発電の主な燃料となるLNG＝液化天然ガス価格の上昇を受けて、夏ごろに高騰する懸念があるという見方を示しました。",
-      "fp": "jera「電気料金 夏ごろに高騰懸念」イラン情勢受け 日本最大の発電事業者「jera」は、イラン情勢の電気料金への影響について、火力発電の主な燃料となるlng＝液化天然ガス価格の上昇を受けて、夏ごろに高騰する懸念があるという見方を示しました。",
-      "published": "Mon, 27 Apr 2026 14:30:47 +0900"
-    },
     {
       "link": "http://www3.nhk.or.jp/news/html/20260427/k10015109551000.html",
       "title": "日立が過去最高益 イラン情勢で生産・原材料調達などに影響も",
@@ -232,6 +253,27 @@
       "article": "半導体の受託生産で世界最大手のTSMCの機密情報を違法に取得したとして、台湾の裁判所は半導体製造装置メーカー大手「東京エレクトロン」の現地にある子会社に対し、日本円で罰金およそ7億6000万円の支払いを命じるとともに、この子会社の元従業員に懲役10年の判決を言い渡しました。",
       "fp": "東京エレクトロン台湾子会社に7億円余罰金 tsmc機密を違法取得 半導体の受託生産で世界最大手のtsmcの機密情報を違法に取得したとして、台湾の裁判所は半導体製造装置メーカー大手「東京エレクトロン」の現地にある子会社に対し、日本円で罰金およそ7億6000万円の支払いを命じるとともに、この子会社の元従業員に懲役10年の判決を言い渡しました。",
       "published": "Mon, 27 Apr 2026 19:53:06 +0900"
+    },
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260427/k10015109341000.html",
+      "title": "NTT AI需要で国内データセンター3倍超に拡大 33年度までに",
+      "article": "AI向けのデータセンターの需要が急速に高まる中、NTTは、2033年度までに国内で運営するデータセンターの規模を、これまでの3倍余りに拡大する方針を明らかにしました。",
+      "fp": "ntt ai需要で国内データセンター3倍超に拡大 33年度までに ai向けのデータセンターの需要が急速に高まる中、nttは、2033年度までに国内で運営するデータセンターの規模を、これまでの3倍余りに拡大する方針を明らかにしました。",
+      "published": "Mon, 27 Apr 2026 17:14:59 +0900"
+    },
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260428/k10015109601000.html",
+      "title": "政府 原油の代替調達 約6割の確保にめど 需要まかなう方針",
+      "article": "中東情勢をめぐって政府はホルムズ海峡を経由しない原油の代替調達について、来月はおよそ6割の確保にめどがついたとして、新たに行う20日分の国家備蓄の放出と組み合わせることで需要をまかなう方針です。一方、石油関連製品の供給を懸念する声は根強く、きめ細かく対応できるかが政府に問われています。",
+      "fp": "政府 原油の代替調達 約6割の確保にめど 需要まかなう方針 中東情勢をめぐって政府はホルムズ海峡を経由しない原油の代替調達について、来月はおよそ6割の確保にめどがついたとして、新たに行う20日分の国家備蓄の放出と組み合わせることで需要をまかなう方針です。一方、石油関連製品の供給を懸念する声は根強く、きめ細かく対応できるかが政府に問われています。",
+      "published": "Tue, 28 Apr 2026 06:47:44 +0900"
+    },
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260427/k10015109381000.html",
+      "title": "村田製作所 取引先や従業員の個人情報など約8万8000件流出か",
+      "article": "社内システムへの不正アクセスが明らかになった電子部品大手の「村田製作所」は、取引先や従業員の個人情報など、合わせておよそ8万8000件が外部に流出したか、流出したおそれがあるとする調査結果を公表しました。流出した情報が悪用されたケースは、現時点では確認されていないということです。",
+      "fp": "村田製作所 取引先や従業員の個人情報など約8万8000件流出か 社内システムへの不正アクセスが明らかになった電子部品大手の「村田製作所」は、取引先や従業員の個人情報など、合わせておよそ8万8000件が外部に流出したか、流出したおそれがあるとする調査結果を公表しました。流出した情報が悪用されたケースは、現時点では確認されていないということです。",
+      "published": "Mon, 27 Apr 2026 16:52:05 +0900"
     },
     {
       "link": "http://www3.nhk.or.jp/news/html/20260427/k10015109301000.html",
@@ -253,13 +295,6 @@
       "article": "東京ガスは家庭向けガスの基本料金についてことし10月の使用分から一律で月額150円値上げすると発表しました。人件費の高騰などが主な理由で、値上げは第2次石油危機の時以来、46年ぶりだとしています。",
       "fp": "東京ガス 10月使用分から家庭向けガスの基本料金値上げへ 東京ガスは家庭向けガスの基本料金についてことし10月の使用分から一律で月額150円値上げすると発表しました。人件費の高騰などが主な理由で、値上げは第2次石油危機の時以来、46年ぶりだとしています。",
       "published": "Mon, 27 Apr 2026 18:31:06 +0900"
-    },
-    {
-      "link": "http://www3.nhk.or.jp/news/html/20260427/k10015109381000.html",
-      "title": "村田製作所 取引先や従業員の個人情報など約8万8000件流出か",
-      "article": "社内システムへの不正アクセスが明らかになった電子部品大手の「村田製作所」は、取引先や従業員の個人情報など、合わせておよそ8万8000件が外部に流出したか、流出したおそれがあるとする調査結果を公表しました。流出した情報が悪用されたケースは、現時点では確認されていないということです。",
-      "fp": "村田製作所 取引先や従業員の個人情報など約8万8000件流出か 社内システムへの不正アクセスが明らかになった電子部品大手の「村田製作所」は、取引先や従業員の個人情報など、合わせておよそ8万8000件が外部に流出したか、流出したおそれがあるとする調査結果を公表しました。流出した情報が悪用されたケースは、現時点では確認されていないということです。",
-      "published": "Mon, 27 Apr 2026 16:52:05 +0900"
     },
     {
       "link": "http://www3.nhk.or.jp/news/html/20260427/k10015109451000.html",
