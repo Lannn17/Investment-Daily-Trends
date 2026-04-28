@@ -1,314 +1,391 @@
 {
   "market_news": [
     {
-      "link": "https://www.cnbc.com/2026/04/27/cramer-chip-stocks-worrisome-positioning.html",
-      "title": "Cramer calls blistering rally in chip stocks 'worrisome.' How he's protecting his portfolio",
-      "article": "CNBC's Jim Cramer explained that the recent run-up in AI related stocks may be a warning sign about the broader market.",
-      "fp": "cramer calls blistering rally in chip stocks 'worrisome.' how he's protecting his portfolio cnbc's jim cramer explained that the recent run-up in ai related stocks may be a warning sign about the broader market.",
-      "published": "Mon, 27 Apr 2026 22:45:10 GMT"
+      "link": "https://www.cnbc.com/2026/04/28/jamie-dimon-bond-crisis-global-debt-risks.html",
+      "title": "Jamie Dimon warns of 'some kind of bond crisis' ahead as global debt risks build",
+      "article": "Dimon, who runs JPMorgan Chase, the world's largest bank by market cap, said that today's growing mix of risks could combine in unpredictable ways.",
+      "fp": "jamie dimon warns of 'some kind of bond crisis' ahead as global debt risks build dimon, who runs jpmorgan chase, the world's largest bank by market cap, said that today's growing mix of risks could combine in unpredictable ways.",
+      "published": "Tue, 28 Apr 2026 18:44:41 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/biggest-winner-of-the-amended-microsoft-openai-deal-plus-mixed-news-for-lilly.html",
-      "title": "Biggest winner of the amended Microsoft-OpenAI deal — plus, mixed news for Eli Lilly",
-      "article": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
-      "fp": "biggest winner of the amended microsoft-openai deal — plus, mixed news for eli lilly every weekday, the investing club releases the homestretch; an actionable afternoon update just in time for the last hour of trading.",
-      "published": "Mon, 27 Apr 2026 19:09:28 GMT"
+      "link": "https://www.marketwatch.com/story/the-stock-markets-comeback-from-the-iran-inspired-selloff-hasnt-been-as-powerful-as-you-might-think-6138bbec?mod=mw_rss_topstories",
+      "title": "The stock market’s comeback from the Iran-inspired selloff hasn’t been as powerful as you might think",
+      "article": "Yes, the S&P 500 has powered back into record territory. But its equal-weighted sibling is still languishing below its previous peak.",
+      "fp": "the stock market’s comeback from the iran-inspired selloff hasn’t been as powerful as you might think yes, the s&p 500 has powered back into record territory. but its equal-weighted sibling is still languishing below its previous peak.",
+      "published": "Tue, 28 Apr 2026 22:31:00 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/nvidia-intel-call-buyers-defy-the-dip-in-chip-stocks.html",
-      "title": "Nvidia, Intel call buyers defy the dip in chip stocks",
-      "article": "One of the biggest trades in the group this morning is a $2.2 million purchase of 2,168 $210-strike calls in Nvidia that expire May 15.",
-      "fp": "nvidia, intel call buyers defy the dip in chip stocks one of the biggest trades in the group this morning is a $2.2 million purchase of 2,168 $210-strike calls in nvidia that expire may 15.",
-      "published": "Mon, 27 Apr 2026 18:59:46 GMT"
+      "link": "https://www.marketwatch.com/story/these-two-countries-are-the-most-likely-to-leave-opecs-orbit-next-991b6823?mod=mw_rss_topstories",
+      "title": "These two countries are the most likely to leave OPEC’s orbit next",
+      "article": "The U.A.E. was the “most likely” candidate to leave OPEC, but others may follow.",
+      "fp": "these two countries are the most likely to leave opec’s orbit next the u.a.e. was the “most likely” candidate to leave opec, but others may follow.",
+      "published": "Tue, 28 Apr 2026 22:17:00 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/openai-microsoft-partnership-revenue-cap.html",
-      "title": "OpenAI shakes up partnership with Microsoft, capping revenue share payments",
-      "article": "Things have changed since Microsoft and OpenAI announced a broad agreement following OpenAI's restructuring in October.",
-      "fp": "openai shakes up partnership with microsoft, capping revenue share payments things have changed since microsoft and openai announced a broad agreement following openai's restructuring in october.",
-      "published": "Mon, 27 Apr 2026 23:09:30 GMT"
+      "link": "https://www.marketwatch.com/story/heres-where-robinhoods-retail-traders-have-flocked-as-the-iran-conflict-rages-on-198adc30?mod=mw_rss_topstories",
+      "title": "Here’s where Robinhood’s retail traders have flocked as the Iran conflict rages on",
+      "article": "Prediction markets have been a haven for Robinhood traders seeking to ride out volatility.",
+      "fp": "here’s where robinhood’s retail traders have flocked as the iran conflict rages on prediction markets have been a haven for robinhood traders seeking to ride out volatility.",
+      "published": "Tue, 28 Apr 2026 22:01:00 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/qualcomm-qcom-openai-smartphone-chip-partnership-stock.html",
-      "title": "Qualcomm up 7% on report it’s partnering with OpenAI on smartphone AI chip",
-      "article": "Qualcomm will be working alongside MediaTek to develop a smartphone chip for OpenAI, with manufacturer Luxshare co-designing the device, an analyst said.",
-      "fp": "qualcomm up 7% on report it’s partnering with openai on smartphone ai chip qualcomm will be working alongside mediatek to develop a smartphone chip for openai, with manufacturer luxshare co-designing the device, an analyst said.",
-      "published": "Mon, 27 Apr 2026 13:33:44 GMT"
+      "link": "https://www.marketwatch.com/story/this-is-the-most-critical-question-facing-u-s-investors-right-now-and-it-has-nothing-to-do-with-iran-45bc8f2e?mod=mw_rss_topstories",
+      "title": "This is the most critical question facing U.S. investors right now — and it has nothing to do with Iran",
+      "article": "Chip stocks have pulled back from a parabolic rally, and there are technical and historical reasons for investors to worry that a deeper selloff in the sector will hurt the broader stock market.",
+      "fp": "this is the most critical question facing u.s. investors right now — and it has nothing to do with iran chip stocks have pulled back from a parabolic rally, and there are technical and historical reasons for investors to worry that a deeper selloff in the sector will hurt the broader stock market.",
+      "published": "Tue, 28 Apr 2026 21:52:00 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/shell-arc-resources-acquisition-16-billion-energy-oil.html",
-      "title": "Oil giant Shell to buy Canada’s ARC Resources for $16.4 billion in push to boost output",
-      "article": "The transaction will add roughly 370,000 barrels of oil equivalent per day to Shell's portfolio and is designed to boost the firm's long-term production.",
-      "fp": "oil giant shell to buy canada’s arc resources for $16.4 billion in push to boost output the transaction will add roughly 370,000 barrels of oil equivalent per day to shell's portfolio and is designed to boost the firm's long-term production.",
-      "published": "Mon, 27 Apr 2026 16:27:38 GMT"
+      "link": "https://www.cnbc.com/2026/04/28/traders-bet-nvidias-stock-will-return-to-record-highs-soon.html",
+      "title": "Traders bet Nvidia's stock will return to record highs soon",
+      "article": "Shares of Nvidia fell a bit on Tuesday after a WSJ report raised questions about OpenAI growth targets and the whole AI complex.",
+      "fp": "traders bet nvidia's stock will return to record highs soon shares of nvidia fell a bit on tuesday after a wsj report raised questions about openai growth targets and the whole ai complex.",
+      "published": "Tue, 28 Apr 2026 19:16:18 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/gm-f-stla-earnings.html",
-      "title": "Wall Street expects solid Q1 results for GM, as Ford and Stellantis try to gain traction",
-      "article": "America's largest automakers are set to report first-quarter earnings results this week.",
-      "fp": "wall street expects solid q1 results for gm, as ford and stellantis try to gain traction america's largest automakers are set to report first-quarter earnings results this week.",
-      "published": "Mon, 27 Apr 2026 11:30:01 GMT"
+      "link": "https://www.cnbc.com/2026/04/28/openai-brings-models-to-aws-after-ending-exclusivity-with-microsoft.html",
+      "title": "OpenAI brings its models to Amazon's cloud after ending exclusivity with Microsoft",
+      "article": "OpenAI's generative AI models are becoming available on Amazon's cloud a day after the AI company revamped its relationship with longtime partner Microsoft.",
+      "fp": "openai brings its models to amazon's cloud after ending exclusivity with microsoft openai's generative ai models are becoming available on amazon's cloud a day after the ai company revamped its relationship with longtime partner microsoft.",
+      "published": "Tue, 28 Apr 2026 17:47:39 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/indian-drugmaker-sun-pharma-to-buy-us-firm-organon-in-11point75-billion-deal.html",
-      "title": "Sun Pharma shares jump 7% as India's largest drugmaker to buy U.S. firm Organon in $11.75 billion deal",
-      "article": "To fuel its global ambitions, Sun Pharmaceutical Industries will acquire New Jersey-based Organon & Co in an all-cash deal that values the U.S. company at $11.75 billion.",
-      "fp": "sun pharma shares jump 7% as india's largest drugmaker to buy u.s. firm organon in $11.75 billion deal to fuel its global ambitions, sun pharmaceutical industries will acquire new jersey-based organon & co in an all-cash deal that values the u.s. company at $11.75 billion.",
-      "published": "Mon, 27 Apr 2026 06:49:15 GMT"
+      "link": "https://www.cnbc.com/2026/04/28/openai-reportedly-missed-revenue-targets-shares-of-oracle-and-these-chip-stocks-are-falling.html",
+      "title": "OpenAI reportedly missed revenue targets. Shares of Oracle and these chip stocks are falling",
+      "article": "OpenAI has recently missed its own projections for user growth and revenue, the WSJ reported.",
+      "fp": "openai reportedly missed revenue targets. shares of oracle and these chip stocks are falling openai has recently missed its own projections for user growth and revenue, the wsj reported.",
+      "published": "Tue, 28 Apr 2026 20:14:15 GMT"
     },
     {
-      "link": "https://www.marketwatch.com/story/arms-stock-snaps-a-seven-day-winning-streak-as-it-loses-some-of-its-ai-glow-8d390975?mod=mw_rss_topstories",
-      "title": "Arm’s stock snaps a seven-day winning streak as it loses some of its AI glow",
-      "article": "Arm shares led Nadsaq 100 decliners on Monday, reflecting more general pressure on AI names and specific concerns about whether Arm will play a role in a potential Qualcomm-OpenAI chip.",
-      "fp": "arm’s stock snaps a seven-day winning streak as it loses some of its ai glow arm shares led nadsaq 100 decliners on monday, reflecting more general pressure on ai names and specific concerns about whether arm will play a role in a potential qualcomm-openai chip.",
-      "published": "Mon, 27 Apr 2026 22:09:00 GMT"
+      "link": "https://www.cnbc.com/2026/04/28/meta-shares-look-iffy-into-earnings-how-to-trade-it.html",
+      "title": "Meta shares look 'iffy' into earnings. How to trade it",
+      "article": "Meta heads into earnings Wednesday after the bell with the fundamentals case largely intact. But the technicals are a bit shaky.",
+      "fp": "meta shares look 'iffy' into earnings. how to trade it meta heads into earnings wednesday after the bell with the fundamentals case largely intact. but the technicals are a bit shaky.",
+      "published": "Tue, 28 Apr 2026 15:53:55 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/openai-partners-with-customers-bank-in-push-to-automate-finance.html",
-      "title": "This bank CEO let his AI clone handle an earnings call — now he's signing an OpenAI deal",
-      "article": "It's part of Customers Bank CEO Sam Sidhu's effort to get ahead in the industry's race to transform itself using AI agents as a new digital workforce",
-      "fp": "this bank ceo let his ai clone handle an earnings call — now he's signing an openai deal it's part of customers bank ceo sam sidhu's effort to get ahead in the industry's race to transform itself using ai agents as a new digital workforce",
-      "published": "Mon, 27 Apr 2026 18:45:54 GMT"
+      "link": "https://www.cnbc.com/2026/04/28/spotify-stock-spot-earnings-beat-guidance.html",
+      "title": "Spotify stock plummets after earnings beat expectations as guidance disappoints",
+      "article": "Spotify stock plummets after earnings beat expectations as guidance disappoints",
+      "fp": "spotify stock plummets after earnings beat expectations as guidance disappoints spotify stock plummets after earnings beat expectations as guidance disappoints",
+      "published": "Tue, 28 Apr 2026 14:00:46 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/dominos-pizza-dpz-earnings-stock-falls-on-weak-sales.html",
-      "title": "Domino's Pizza stock falls on disappointing sales — and CEO thinks more chains will follow",
-      "article": "CEO Russell Weiner said he expects more fast-food chains will report that winter weather and weak consumer sentiment hurt their quarterly sales.",
-      "fp": "domino's pizza stock falls on disappointing sales — and ceo thinks more chains will follow ceo russell weiner said he expects more fast-food chains will report that winter weather and weak consumer sentiment hurt their quarterly sales.",
-      "published": "Mon, 27 Apr 2026 22:53:46 GMT"
+      "link": "https://www.cnbc.com/2026/04/28/meta-muse-spark-has-promise-wall-street-wants-zuckerberg-ai-strategy.html",
+      "title": "Meta's new AI model shows early promise, but investors want to see Zuckerberg's strategy",
+      "article": "Meta introduced its new AI model at the beginning of the second quarter, so Mark Zuckerberg's commentary about the future will be key during earnings.",
+      "fp": "meta's new ai model shows early promise, but investors want to see zuckerberg's strategy meta introduced its new ai model at the beginning of the second quarter, so mark zuckerberg's commentary about the future will be key during earnings.",
+      "published": "Tue, 28 Apr 2026 20:04:57 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/united-airlines-merger-with-american-airlines-ceo-airline-confirms.html",
-      "title": "United Airlines CEO confirms he approached American Airlines about merger",
-      "article": "United CEO Scott Kirby said American rejected the idea, \"and without a willing partner, something this big simply can't get done.\"",
-      "fp": "united airlines ceo confirms he approached american airlines about merger united ceo scott kirby said american rejected the idea, \"and without a willing partner, something this big simply can't get done.\"",
-      "published": "Mon, 27 Apr 2026 14:51:42 GMT"
+      "link": "https://www.marketwatch.com/story/its-time-for-a-microsoft-reset-heres-what-investors-should-focus-on-now-a5d9e334?mod=mw_rss_topstories",
+      "title": "It’s time for a Microsoft ‘reset.’ Here’s what investors should focus on now.",
+      "article": "With the cloud narrative now better understood, Microsoft has an opportunity to refocus investors around software and dispel negative sentiment.",
+      "fp": "it’s time for a microsoft ‘reset.’ here’s what investors should focus on now. with the cloud narrative now better understood, microsoft has an opportunity to refocus investors around software and dispel negative sentiment.",
+      "published": "Tue, 28 Apr 2026 22:20:00 GMT"
     },
     {
-      "link": "https://www.marketwatch.com/story/bed-bath-beyond-is-seeing-new-life-as-rare-sales-growth-lifts-stock-more-than-30-3e1ee945?mod=mw_rss_topstories",
-      "title": "Bed Bath & Beyond is seeing new life, as rare sales growth lifts stock more than 30%",
-      "article": "Management highlights the “first quarter of significant revenue growth in 19 quarters.” But the stock is still well below its meme-stock-era highs.",
-      "fp": "bed bath & beyond is seeing new life, as rare sales growth lifts stock more than 30% management highlights the “first quarter of significant revenue growth in 19 quarters.” but the stock is still well below its meme-stock-era highs.",
-      "published": "Mon, 27 Apr 2026 21:35:00 GMT"
+      "link": "https://www.cnbc.com/2026/04/28/gm-iran-war-vehicle-sales.html",
+      "title": "GM: Iran war causing cost increases, but pricey vehicles continue to sell",
+      "article": "GM CEO Mary Barra said the Detroit automaker continues to monitor any change in customer spending, but so far, the company's vehicle mix has remained healthy.",
+      "fp": "gm: iran war causing cost increases, but pricey vehicles continue to sell gm ceo mary barra said the detroit automaker continues to monitor any change in customer spending, but so far, the company's vehicle mix has remained healthy.",
+      "published": "Tue, 28 Apr 2026 18:11:06 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/prediction-markets-prepare-to-invade-one-of-cryptos-biggest-and-riskiest-trades.html",
-      "title": "Prediction markets prepare to invade one of crypto’s biggest and riskiest trades",
-      "article": "There’s a land grab underway in the U.S. for perpetual futures, one of the biggest and riskiest parts of crypto — and prediction markets want a piece of it.",
-      "fp": "prediction markets prepare to invade one of crypto’s biggest and riskiest trades there’s a land grab underway in the u.s. for perpetual futures, one of the biggest and riskiest parts of crypto — and prediction markets want a piece of it.",
-      "published": "Mon, 27 Apr 2026 16:59:36 GMT"
+      "link": "https://www.cnbc.com/2026/04/28/red-hot-corning-shares-slide-on-earnings-why-thats-a-gift-to-investors.html",
+      "title": "Red-hot Corning shares slide on earnings. Why that's a gift to investors",
+      "article": "Red-hot Corning shares slide on earnings. Why that's a gift to investors",
+      "fp": "red-hot corning shares slide on earnings. why that's a gift to investors red-hot corning shares slide on earnings. why that's a gift to investors",
+      "published": "Tue, 28 Apr 2026 19:20:38 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/deepmind-ineffable-intelligence-record-seed-funding-nvidia-google.html",
-      "title": "Former Google DeepMind researcher's AI startup raises record $1.1 billion seed funding to pursue superintelligence",
-      "article": "Former Google DeepMind researcher's AI startup raises record $1.1 billion seed funding to pursue superintelligence",
-      "fp": "former google deepmind researcher's ai startup raises record $1.1 billion seed funding to pursue superintelligence former google deepmind researcher's ai startup raises record $1.1 billion seed funding to pursue superintelligence",
-      "published": "Mon, 27 Apr 2026 17:33:24 GMT"
+      "link": "https://www.cnbc.com/2026/04/28/airbus-air-q1-earnings-stock-boeing.html",
+      "title": "Airbus reports falling profits as jet deliveries slow",
+      "article": "Airbus' first-quarter adjusted operating profit declined by 52% to 300 million euros, down from 624 million euros in the same period last year.",
+      "fp": "airbus reports falling profits as jet deliveries slow airbus' first-quarter adjusted operating profit declined by 52% to 300 million euros, down from 624 million euros in the same period last year.",
+      "published": "Tue, 28 Apr 2026 20:38:59 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/meta-manus-china-blocks-acquisition-ai-startup.html",
-      "title": "China blocks Meta's $2 billion takeover of AI startup Manus",
-      "article": "China said Monday it has decided to block Meta's $2 billion acquisition of Manus, a Singaporean AI startup with Chinese roots.",
-      "fp": "china blocks meta's $2 billion takeover of ai startup manus china said monday it has decided to block meta's $2 billion acquisition of manus, a singaporean ai startup with chinese roots.",
-      "published": "Mon, 27 Apr 2026 13:38:38 GMT"
+      "link": "https://www.cnbc.com/2026/04/28/china-meta-manus-ai-deal.html",
+      "title": "Op-ed: In blocking Meta-Manus deal, China sent a powerful reminder to Mark Zuckerberg and U.S. market about AI race",
+      "article": "When Mark Zuckerberg's Meta acquired Manus, a Singapore-based AI startup with Chinese roots, many saw a routine deal. They don't know China.",
+      "fp": "op-ed: in blocking meta-manus deal, china sent a powerful reminder to mark zuckerberg and u.s. market about ai race when mark zuckerberg's meta acquired manus, a singapore-based ai startup with chinese roots, many saw a routine deal. they don't know china.",
+      "published": "Tue, 28 Apr 2026 16:09:42 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/crispr-gene-editing-intellia-trial.html",
-      "title": "Intellia Therapeutics says its Crispr-based treatment succeeds in pivotal trial",
-      "article": "Intellia Therapeutics said its Crispr-based treatment for hereditary angioedema met its goals in a Phase 3 trial, marking a milestone for gene editing.",
-      "fp": "intellia therapeutics says its crispr-based treatment succeeds in pivotal trial intellia therapeutics said its crispr-based treatment for hereditary angioedema met its goals in a phase 3 trial, marking a milestone for gene editing.",
-      "published": "Mon, 27 Apr 2026 19:08:28 GMT"
+      "link": "https://www.marketwatch.com/story/bloom-energy-is-riding-the-ai-wave-with-a-major-lift-from-oracle-200109b4?mod=mw_rss_topstories",
+      "title": "Bloom Energy is riding the AI wave with a major lift from Oracle",
+      "article": "Bloom Energy is riding the AI wave with a major lift from Oracle",
+      "fp": "bloom energy is riding the ai wave with a major lift from oracle bloom energy is riding the ai wave with a major lift from oracle",
+      "published": "Tue, 28 Apr 2026 22:16:00 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_46859_MarketUpdate_1777310912000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "Market Update: CB, RTX, KDP, DLR",
-      "article": "Market Update: CB, RTX, KDP, DLR",
-      "fp": "market update: cb, rtx, kdp, dlr market update: cb, rtx, kdp, dlr",
-      "published": "2026-04-27T17:28:32Z"
+      "link": "https://www.marketwatch.com/story/the-elon-musk-sam-altman-trial-has-just-begun-heres-whats-at-stake-01df4a4c?mod=mw_rss_topstories",
+      "title": "The Elon Musk-Sam Altman trial has just begun. Here’s what’s at stake.",
+      "article": "Musk claims OpenAI abandoned its core mission in the pursuit of profit, but OpenAI’s lawyer says ‘we are here because Mr. Musk didn’t get his ⁠way.’",
+      "fp": "the elon musk-sam altman trial has just begun. here’s what’s at stake. musk claims openai abandoned its core mission in the pursuit of profit, but openai’s lawyer says ‘we are here because mr. musk didn’t get his ⁠way.’",
+      "published": "Tue, 28 Apr 2026 21:28:00 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/private-credit-funds-saba-capital-tender-offers-for-shares-are-below-initial-expectations.html",
-      "title": "Saba Capital finds little appetite for tender offer of shares in Blue Owl, Starwood private credit funds",
-      "article": "Investors' disinterest in getting liquidity at a steep discount comes amid a quarter that saw elevated redemptions across most private-credit, non-traded BDCs.",
-      "fp": "saba capital finds little appetite for tender offer of shares in blue owl, starwood private credit funds investors' disinterest in getting liquidity at a steep discount comes amid a quarter that saw elevated redemptions across most private-credit, non-traded bdcs.",
-      "published": "Mon, 27 Apr 2026 23:02:22 GMT"
+      "link": "https://www.cnbc.com/2026/04/28/starbucks-sbux-q2-2026-earnings.html",
+      "title": "Starbucks raises full-year outlook as turnaround takes hold — despite higher gas prices",
+      "article": "Starbucks' global same-store sales, which only includes cafes open at least a year, increased 6.2%, fueled by more visits to its locations.",
+      "fp": "starbucks raises full-year outlook as turnaround takes hold — despite higher gas prices starbucks' global same-store sales, which only includes cafes open at least a year, increased 6.2%, fueled by more visits to its locations.",
+      "published": "Tue, 28 Apr 2026 21:31:31 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/spotify-peloton-fitness-content-hub.html",
-      "title": "Spotify teams up with Peloton to launch global fitness content hub",
-      "article": "Spotify teams with Peloton to launch fitness content, potentially opening new revenue streams while expanding Peloton’s global reach.",
-      "fp": "spotify teams up with peloton to launch global fitness content hub spotify teams with peloton to launch fitness content, potentially opening new revenue streams while expanding peloton’s global reach.",
-      "published": "Mon, 27 Apr 2026 13:04:36 GMT"
+      "link": "https://www.cnbc.com/2026/04/28/pentagon-ai-chief-confirms-work-with-google-after-anthropic-blacklist.html",
+      "title": "Pentagon AI chief confirms DOD's expanded use of Google, says reliance on one model 'never a good thing'",
+      "article": "The Pentagon's AI chief discussed the DOD's expanded use of Google Gemini after the blacklisting of Anthropic.",
+      "fp": "pentagon ai chief confirms dod's expanded use of google, says reliance on one model 'never a good thing' the pentagon's ai chief discussed the dod's expanded use of google gemini after the blacklisting of anthropic.",
+      "published": "Tue, 28 Apr 2026 21:34:49 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/lpa-drugs-from-novartis-amgen-and-eli-lilly-aim-to-prevent-heart-attacks.html",
-      "title": "Pharma bets a little-known form of cholesterol will underpin its next blockbuster heart drugs",
-      "article": "Novartis, Amgen and Eli Lilly are betting that slashing levels of a particularly bad form of cholesterol could deliver the next blockbusters in cardiology.",
-      "fp": "pharma bets a little-known form of cholesterol will underpin its next blockbuster heart drugs novartis, amgen and eli lilly are betting that slashing levels of a particularly bad form of cholesterol could deliver the next blockbusters in cardiology.",
-      "published": "Mon, 27 Apr 2026 19:28:58 GMT"
+      "link": "https://www.cnbc.com/2026/04/28/us-humiliated-germany-merz-europe-iran-war-energy-prices-fuel.html",
+      "title": "U.S. is 'being humiliated by Iran,' says Germany's Merz, as Europe's patience wanes",
+      "article": "The U.S. is being \"humiliated\" by the Iranian regime, Germany's chancellor has said, as European leaders grow increasingly frustrated at the war with Iran.",
+      "fp": "u.s. is 'being humiliated by iran,' says germany's merz, as europe's patience wanes the u.s. is being \"humiliated\" by the iranian regime, germany's chancellor has said, as european leaders grow increasingly frustrated at the war with iran.",
+      "published": "Tue, 28 Apr 2026 16:39:02 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/musk-altman-trial-openai-jury-selection.html",
-      "title": "Judge in Musk v. Altman seats nine-person jury. Opening arguments start Tuesday",
-      "article": "The Musk v. Altman trial kicked off at a federal courthouse in Oakland, California, with jury selection followed by opening arguments.",
-      "fp": "judge in musk v. altman seats nine-person jury. opening arguments start tuesday the musk v. altman trial kicked off at a federal courthouse in oakland, california, with jury selection followed by opening arguments.",
-      "published": "Mon, 27 Apr 2026 22:59:32 GMT"
+      "link": "https://www.marketwatch.com/story/buying-crypto-in-a-bear-market-is-a-cheaper-way-to-play-the-ai-boom-this-former-tiger-management-executive-says-868096eb?mod=mw_rss_topstories",
+      "title": "Why buying crypto in a bear market may be a cheaper way to play the AI boom",
+      "article": "Artificial intelligence may be one of the most crowded trades in financial markets right now — but bitcoin, which is currently mired in a bear market, could be a cheaper way to play the AI boom.",
+      "fp": "why buying crypto in a bear market may be a cheaper way to play the ai boom artificial intelligence may be one of the most crowded trades in financial markets right now — but bitcoin, which is currently mired in a bear market, could be a cheaper way to play the ai boom.",
+      "published": "Tue, 28 Apr 2026 21:43:00 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/trump-iran-war-strait-of-hormuz-rubio.html",
-      "title": "Trump discussed Iran's Hormuz Strait proposal with top aides, White House says",
-      "article": "The Trump administration has repeatedly insisted that the central goal of the conflict is keeping Iran from ever obtaining a nuclear weapon.",
-      "fp": "trump discussed iran's hormuz strait proposal with top aides, white house says the trump administration has repeatedly insisted that the central goal of the conflict is keeping iran from ever obtaining a nuclear weapon.",
-      "published": "Mon, 27 Apr 2026 18:10:42 GMT"
+      "link": "https://www.cnbc.com/2026/04/28/airlines-fares-fuel.html",
+      "title": "U.S. airlines are hiking fares — and travelers keep booking",
+      "article": "Executives say travelers keep booking despite big jumps in airfare as they seek to cover the cost of fuel.",
+      "fp": "u.s. airlines are hiking fares — and travelers keep booking executives say travelers keep booking despite big jumps in airfare as they seek to cover the cost of fuel.",
+      "published": "Tue, 28 Apr 2026 20:28:17 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_4555_AnalystReport_1777311812000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "Analyst Report: Digital Realty Trust Inc",
-      "article": "Analyst Report: Digital Realty Trust Inc",
-      "fp": "analyst report: digital realty trust inc analyst report: digital realty trust inc",
-      "published": "2026-04-27T17:43:32Z"
+      "link": "https://www.cnbc.com/2026/04/28/women-investors-market-volatility.html",
+      "title": "Women tend to be 'risk-appropriate' investors, expert says: How that helps them in volatile markets",
+      "article": "Many studies show that women are more likely to adopt a conservative approach to investing. In times of market volatility, that tactic can pay off.",
+      "fp": "women tend to be 'risk-appropriate' investors, expert says: how that helps them in volatile markets many studies show that women are more likely to adopt a conservative approach to investing. in times of market volatility, that tactic can pay off.",
+      "published": "Tue, 28 Apr 2026 16:45:48 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_2809_AnalystReport_1777311812000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "Analyst Report: Chubb Ltd",
-      "article": "Analyst Report: Chubb Ltd",
-      "fp": "analyst report: chubb ltd analyst report: chubb ltd",
-      "published": "2026-04-27T17:43:32Z"
+      "link": "https://www.marketwatch.com/story/starbucks-is-getting-customers-back-into-its-stores-faster-than-expected-f4ee80ab?mod=mw_rss_topstories",
+      "title": "Starbucks is seeing a resurgence, thanks to younger and lower-income customers",
+      "article": "Starbucks is seeing a resurgence, thanks to younger and lower-income customers",
+      "fp": "starbucks is seeing a resurgence, thanks to younger and lower-income customers starbucks is seeing a resurgence, thanks to younger and lower-income customers",
+      "published": "Tue, 28 Apr 2026 22:54:00 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/congressional-republicans-trump-white-house-ballroom.html",
-      "title": "Congressional Republicans rally around Trump's White House ballroom project",
-      "article": "A group of Senate Republicans is proposing a bill to authorize $400 million in federal funds for the construction of a White House ballroom.",
-      "fp": "congressional republicans rally around trump's white house ballroom project a group of senate republicans is proposing a bill to authorize $400 million in federal funds for the construction of a white house ballroom.",
-      "published": "Mon, 27 Apr 2026 23:13:27 GMT"
+      "link": "https://www.cnbc.com/2026/04/28/dhs-tsa-shutdown-congress.html",
+      "title": "DHS shutdown: Congressional dysfunction imperils pay for TSA, Secret Service",
+      "article": "The Department of Homeland Security has been shut down since February, as Congress continues to look for a compromise to fund the agency.",
+      "fp": "dhs shutdown: congressional dysfunction imperils pay for tsa, secret service the department of homeland security has been shut down since february, as congress continues to look for a compromise to fund the agency.",
+      "published": "Tue, 28 Apr 2026 22:49:00 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/trump-ballroom-whcd-doj-lawsuit.html",
-      "title": "Trump ballroom lawsuit plaintiff rejects DOJ demand to drop case after 'assassination attempt'",
-      "article": "Trump and others say the proposed White House ballroom would be much more secure than the Washington Hilton Hotel, where Saturday's shooting occurred.",
-      "fp": "trump ballroom lawsuit plaintiff rejects doj demand to drop case after 'assassination attempt' trump and others say the proposed white house ballroom would be much more secure than the washington hilton hotel, where saturday's shooting occurred.",
-      "published": "Mon, 27 Apr 2026 17:12:07 GMT"
+      "link": "https://www.cnbc.com/2026/04/28/jetblue-fort-lauderdale-flights.html",
+      "title": "JetBlue is full steam ahead on Fort Lauderdale, regardless of Spirit's fate",
+      "article": "JetBlue, United, Frontier and others added service to airports Spirit services after the carrier filed for bankruptcy for the second time in less than a year.",
+      "fp": "jetblue is full steam ahead on fort lauderdale, regardless of spirit's fate jetblue, united, frontier and others added service to airports spirit services after the carrier filed for bankruptcy for the second time in less than a year.",
+      "published": "Tue, 28 Apr 2026 17:30:53 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/trump-supreme-court-maha-glyphosate.html",
-      "title": "MAHA is mad. Its alliance with Trump is about to face its biggest test",
-      "article": "Supreme Court arguments Monday and the farm bill put MAHA squarely at odds with President Donald Trump and the majority of Republicans in Congress.",
-      "fp": "maha is mad. its alliance with trump is about to face its biggest test supreme court arguments monday and the farm bill put maha squarely at odds with president donald trump and the majority of republicans in congress.",
-      "published": "Mon, 27 Apr 2026 16:07:27 GMT"
+      "link": "https://www.cnbc.com/2026/04/28/fcc-begins-review-of-disney-broadcast-licenses-years-ahead-of-schedule.html",
+      "title": "FCC launches review of Disney broadcast licenses years ahead of schedule",
+      "article": "The Federal Communications Commission has told Disney to file its broadcast license renewals early, citing concerns around its DEI policies.",
+      "fp": "fcc launches review of disney broadcast licenses years ahead of schedule the federal communications commission has told disney to file its broadcast license renewals early, citing concerns around its dei policies.",
+      "published": "Tue, 28 Apr 2026 20:17:21 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_46856_StockPicks_1777289280000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "Weekly Stock List",
-      "article": "Weekly Stock List",
-      "fp": "weekly stock list weekly stock list",
-      "published": "2026-04-27T11:28:00Z"
+      "link": "https://www.cnbc.com/2026/04/28/resorts-world-casino-opens-in-new-york-city.html",
+      "title": "First Vegas-style casino opens in New York City",
+      "article": "New York City's first full-scale casino with live table games opened to gamblers more than a decade after New York voters approved an expansion of gambling.",
+      "fp": "first vegas-style casino opens in new york city new york city's first full-scale casino with live table games opened to gamblers more than a decade after new york voters approved an expansion of gambling.",
+      "published": "Tue, 28 Apr 2026 21:02:30 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/cole-allen-whcd-arraigment-trump.html",
-      "title": "Cole Allen charged with trying to assassinate Trump at WHCD event",
-      "article": "The Secret Service is facing scrutiny over security at the White House Correspondents' Dinner, where President Donald Trump was evacuated Saturday.",
-      "fp": "cole allen charged with trying to assassinate trump at whcd event the secret service is facing scrutiny over security at the white house correspondents' dinner, where president donald trump was evacuated saturday.",
-      "published": "Mon, 27 Apr 2026 21:44:22 GMT"
+      "link": "https://www.marketwatch.com/story/these-5-ai-proof-jobs-are-hiring-heres-how-much-they-pay-and-how-to-get-them-8ef4b0f7?mod=mw_rss_topstories",
+      "title": "These 5 AI-proof jobs are hiring — here’s how much they pay and how to get them",
+      "article": "Careers that are not as vulnerable to AI right now share a few common traits: they require physical presence, specialized training, or real-time human interaction.",
+      "fp": "these 5 ai-proof jobs are hiring — here’s how much they pay and how to get them careers that are not as vulnerable to ai right now share a few common traits: they require physical presence, specialized training, or real-time human interaction.",
+      "published": "Tue, 28 Apr 2026 21:17:00 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/social-security-benefits-reduced.html",
-      "title": "Social Security benefits can be reduced for some retirees who work. How that may change",
-      "article": "A new bill in Congress calls for eliminating the retirement earnings test, which reduces Social Security for some workers who are younger than retirement age.",
-      "fp": "social security benefits can be reduced for some retirees who work. how that may change a new bill in congress calls for eliminating the retirement earnings test, which reduces social security for some workers who are younger than retirement age.",
-      "published": "Mon, 27 Apr 2026 15:51:32 GMT"
+      "link": "https://www.cnbc.com/2026/04/28/trump-white-house-ballroom-whcd.html",
+      "title": "Trump ballroom unlikely to get White House Correspondents' dinners or end president's off-site events, critics say",
+      "article": "Critics say a White House ballroom would be a \"vanity\" project for President Donald Trump. He and the Department of Justice say it's needed for security.",
+      "fp": "trump ballroom unlikely to get white house correspondents' dinners or end president's off-site events, critics say critics say a white house ballroom would be a \"vanity\" project for president donald trump. he and the department of justice say it's needed for security.",
+      "published": "Tue, 28 Apr 2026 22:28:11 GMT"
     },
     {
-      "link": "https://www.cnbc.com/2026/04/27/25percent-of-gen-z-women-think-they-must-choose-between-love-and-career.html",
-      "title": "25% of Gen Z women think they must choose between love and career: It's 'the greatest challenge for women,' says expert",
-      "article": "Many Gen Z women believe to build their careers properly, they must put romantic relationships on hold, according to a new survey.",
-      "fp": "25% of gen z women think they must choose between love and career: it's 'the greatest challenge for women,' says expert many gen z women believe to build their careers properly, they must put romantic relationships on hold, according to a new survey.",
-      "published": "Mon, 27 Apr 2026 14:53:14 GMT"
+      "link": "https://www.cnbc.com/2026/04/28/trump-jimmy-kimmel-monologue-disney-abc.html",
+      "title": "ABC faces renewed Trump backlash as Kimmel says comments 'not, by any stretch' call for violence",
+      "article": "While it's not the first time Kimmel has faced backlash over a show monologue, the renewed challenges now fall under freshly installed Disney CEO Josh D'Amaro.",
+      "fp": "abc faces renewed trump backlash as kimmel says comments 'not, by any stretch' call for violence while it's not the first time kimmel has faced backlash over a show monologue, the renewed challenges now fall under freshly installed disney ceo josh d'amaro.",
+      "published": "Tue, 28 Apr 2026 15:19:31 GMT"
     },
     {
-      "link": "https://www.marketwatch.com/story/we-believe-its-real-my-mom-received-a-check-from-a-class-action-lawsuit-it-bounced-could-this-be-a-scam-cffa7bdb?mod=mw_rss_topstories",
-      "title": "‘We believe it’s real’: My mom received a check from a class-action lawsuit. It bounced. Could this be a scam?",
-      "article": "‘We believe it’s real’: My mom received a check from a class-action lawsuit. It bounced. Could this be a scam?",
-      "fp": "‘we believe it’s real’: my mom received a check from a class-action lawsuit. it bounced. could this be a scam? ‘we believe it’s real’: my mom received a check from a class-action lawsuit. it bounced. could this be a scam?",
-      "published": "Mon, 27 Apr 2026 22:30:00 GMT"
+      "link": "https://www.cnbc.com/2026/04/28/jeffrey-epstein-doj-gao-congress.html",
+      "title": "DOJ's handling of Epstein files to get congressional watchdog scrutiny",
+      "article": "The Government Accountability Office, at the best of Congress, will investigate the Department of Justice's handling of the Epstein files.",
+      "fp": "doj's handling of epstein files to get congressional watchdog scrutiny the government accountability office, at the best of congress, will investigate the department of justice's handling of the epstein files.",
+      "published": "Tue, 28 Apr 2026 15:45:31 GMT"
     },
     {
-      "link": "https://www.marketwatch.com/story/i-hope-to-retire-early-im-56-and-have-80-in-a-traditional-ira-and-20-in-a-roth-am-i-in-trouble-8ec58195?mod=mw_rss_topstories",
-      "title": "‘I hope to retire early’: I’m 56 and have 80% in a traditional IRA and 20% in a Roth. Am I in trouble?",
-      "article": "“We have $3.5 million in savings — $2.5 million of which are in retirement accounts.”",
-      "fp": "‘i hope to retire early’: i’m 56 and have 80% in a traditional ira and 20% in a roth. am i in trouble? “we have $3.5 million in savings — $2.5 million of which are in retirement accounts.”",
-      "published": "Mon, 27 Apr 2026 22:01:00 GMT"
+      "link": "https://www.cnbc.com/2026/04/28/james-comey-indicted-trump-seashell-8647.html",
+      "title": "James Comey charged with threatening Trump's life in ‘8647’ seashell post",
+      "article": "Trump had accused the former FBI Director Comey of \"calling for the assassination of the president\" by sharing the image of the numbers in an Instagram post.",
+      "fp": "james comey charged with threatening trump's life in ‘8647’ seashell post trump had accused the former fbi director comey of \"calling for the assassination of the president\" by sharing the image of the numbers in an instagram post.",
+      "published": "Tue, 28 Apr 2026 22:17:07 GMT"
     }
   ],
   "japan_news": [
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260427/k10015109551000.html",
-      "title": "日立が過去最高益 イラン情勢で生産・原材料調達などに影響も",
-      "article": "「日立製作所」の昨年度1年間の決算はデータセンター向けの電力需要の高まりなどを背景に、送配電の設備に関する事業が好調だったことなどから最終的な利益が過去最高となりました。一方、会社はイラン情勢を受けて一部の生産や原材料の調達などに影響が出ていることを明らかにしました。",
-      "fp": "日立が過去最高益 イラン情勢で生産・原材料調達などに影響も 「日立製作所」の昨年度1年間の決算はデータセンター向けの電力需要の高まりなどを背景に、送配電の設備に関する事業が好調だったことなどから最終的な利益が過去最高となりました。一方、会社はイラン情勢を受けて一部の生産や原材料の調達などに影響が出ていることを明らかにしました。",
-      "published": "Mon, 27 Apr 2026 20:28:50 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260428/k10015109931000.html",
+      "title": "株価 終値6万円割れ 日銀の追加利上げ意識される",
+      "article": "株価 終値6万円割れ 日銀の追加利上げ意識される",
+      "fp": "株価 終値6万円割れ 日銀の追加利上げ意識される 株価 終値6万円割れ 日銀の追加利上げ意識される",
+      "published": "Tue, 28 Apr 2026 16:38:35 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260427/k10015109511000.html",
-      "title": "東京エレクトロン台湾子会社に7億円余罰金 TSMC機密を違法取得",
-      "article": "半導体の受託生産で世界最大手のTSMCの機密情報を違法に取得したとして、台湾の裁判所は半導体製造装置メーカー大手「東京エレクトロン」の現地にある子会社に対し、日本円で罰金およそ7億6000万円の支払いを命じるとともに、この子会社の元従業員に懲役10年の判決を言い渡しました。",
-      "fp": "東京エレクトロン台湾子会社に7億円余罰金 tsmc機密を違法取得 半導体の受託生産で世界最大手のtsmcの機密情報を違法に取得したとして、台湾の裁判所は半導体製造装置メーカー大手「東京エレクトロン」の現地にある子会社に対し、日本円で罰金およそ7億6000万円の支払いを命じるとともに、この子会社の元従業員に懲役10年の判決を言い渡しました。",
-      "published": "Mon, 27 Apr 2026 19:53:06 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260428/k10015110631000.html",
+      "title": "NY原油100ドル超に値上がり 今月中旬以来",
+      "article": "28日のニューヨーク原油市場では、国際的な取り引きの指標となるWTIの先物価格が上昇し、1バレル＝100ドルを超えました。これは、アメリカとイランの戦闘終結に向けてイラン側から新たな提案が示されているものの、市場では双方の対面協議が行われるか依然として不透明だとの見方が広がったためです。WTIの先物価格が、1バレル＝100ドルを超えるのは今月中旬以来です。",
+      "fp": "ny原油100ドル超に値上がり 今月中旬以来 28日のニューヨーク原油市場では、国際的な取り引きの指標となるwtiの先物価格が上昇し、1バレル＝100ドルを超えました。これは、アメリカとイランの戦闘終結に向けてイラン側から新たな提案が示されているものの、市場では双方の対面協議が行われるか依然として不透明だとの見方が広がったためです。wtiの先物価格が、1バレル＝100ドルを超えるのは今月中旬以来です。",
+      "published": "Tue, 28 Apr 2026 21:38:37 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260427/k10015109341000.html",
-      "title": "NTT AI需要で国内データセンター3倍超に拡大 33年度までに",
-      "article": "AI向けのデータセンターの需要が急速に高まる中、NTTは、2033年度までに国内で運営するデータセンターの規模を、これまでの3倍余りに拡大する方針を明らかにしました。",
-      "fp": "ntt ai需要で国内データセンター3倍超に拡大 33年度までに ai向けのデータセンターの需要が急速に高まる中、nttは、2033年度までに国内で運営するデータセンターの規模を、これまでの3倍余りに拡大する方針を明らかにしました。",
-      "published": "Mon, 27 Apr 2026 17:14:59 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260429/k10015110721000.html",
+      "title": "世界銀行 エネルギー価格がイラン情勢で去年比24％上昇見通し",
+      "article": "世界銀行 エネルギー価格がイラン情勢で去年比24％上昇見通し",
+      "fp": "世界銀行 エネルギー価格がイラン情勢で去年比24％上昇見通し 世界銀行 エネルギー価格がイラン情勢で去年比24％上昇見通し",
+      "published": "Wed, 29 Apr 2026 06:37:45 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260428/k10015109601000.html",
-      "title": "政府 原油の代替調達 約6割の確保にめど 需要まかなう方針",
-      "article": "中東情勢をめぐって政府はホルムズ海峡を経由しない原油の代替調達について、来月はおよそ6割の確保にめどがついたとして、新たに行う20日分の国家備蓄の放出と組み合わせることで需要をまかなう方針です。一方、石油関連製品の供給を懸念する声は根強く、きめ細かく対応できるかが政府に問われています。",
-      "fp": "政府 原油の代替調達 約6割の確保にめど 需要まかなう方針 中東情勢をめぐって政府はホルムズ海峡を経由しない原油の代替調達について、来月はおよそ6割の確保にめどがついたとして、新たに行う20日分の国家備蓄の放出と組み合わせることで需要をまかなう方針です。一方、石油関連製品の供給を懸念する声は根強く、きめ細かく対応できるかが政府に問われています。",
-      "published": "Tue, 28 Apr 2026 06:47:44 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260428/k10015110511000.html",
+      "title": "東京ガス“中東情勢の影響で9月ごろから料金上昇の可能性”",
+      "article": "東京ガス“中東情勢の影響で9月ごろから料金上昇の可能性”",
+      "fp": "東京ガス“中東情勢の影響で9月ごろから料金上昇の可能性” 東京ガス“中東情勢の影響で9月ごろから料金上昇の可能性”",
+      "published": "Tue, 28 Apr 2026 19:46:19 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260427/k10015109381000.html",
-      "title": "村田製作所 取引先や従業員の個人情報など約8万8000件流出か",
-      "article": "社内システムへの不正アクセスが明らかになった電子部品大手の「村田製作所」は、取引先や従業員の個人情報など、合わせておよそ8万8000件が外部に流出したか、流出したおそれがあるとする調査結果を公表しました。流出した情報が悪用されたケースは、現時点では確認されていないということです。",
-      "fp": "村田製作所 取引先や従業員の個人情報など約8万8000件流出か 社内システムへの不正アクセスが明らかになった電子部品大手の「村田製作所」は、取引先や従業員の個人情報など、合わせておよそ8万8000件が外部に流出したか、流出したおそれがあるとする調査結果を公表しました。流出した情報が悪用されたケースは、現時点では確認されていないということです。",
-      "published": "Mon, 27 Apr 2026 16:52:05 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260428/k10015110451000.html",
+      "title": "中部電力 中東情勢受けて今年度の業績見通しは「未定」と発表",
+      "article": "中部電力 中東情勢受けて今年度の業績見通しは「未定」と発表",
+      "fp": "中部電力 中東情勢受けて今年度の業績見通しは「未定」と発表 中部電力 中東情勢受けて今年度の業績見通しは「未定」と発表",
+      "published": "Tue, 28 Apr 2026 18:48:47 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260427/k10015109301000.html",
-      "title": "中東での新車販売台数が減少 自動車各社 イラン情勢影響",
-      "article": "主要な自動車メーカーが公表した先月の中東での新車販売台数は、大幅な減少となりました。多くのメーカーは、イラン情勢の緊迫化によるホルムズ海峡の事実上の封鎖が影響したと説明しています。",
-      "fp": "中東での新車販売台数が減少 自動車各社 イラン情勢影響 主要な自動車メーカーが公表した先月の中東での新車販売台数は、大幅な減少となりました。多くのメーカーは、イラン情勢の緊迫化によるホルムズ海峡の事実上の封鎖が影響したと説明しています。",
-      "published": "Mon, 27 Apr 2026 16:11:27 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260428/k10015110361000.html",
+      "title": "電気・ガス料金 5月使用分は大手のほとんどで値上がりへ",
+      "article": "5月に使用する大手各社の電気・ガス料金はほとんどの会社で値上がりします。今回の料金にはイラン情勢の影響はまだ反映されていないということで、今後、さらに値上がりするという見方が強くなっています。",
+      "fp": "電気・ガス料金 5月使用分は大手のほとんどで値上がりへ 5月に使用する大手各社の電気・ガス料金はほとんどの会社で値上がりします。今回の料金にはイラン情勢の影響はまだ反映されていないということで、今後、さらに値上がりするという見方が強くなっています。",
+      "published": "Tue, 28 Apr 2026 17:55:26 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260427/k10015109291000.html",
-      "title": "“ナフサ供給不安”企業の44％「すでに影響」 生団連調べ",
-      "article": "食品や小売りなどの企業が加盟する団体は、プラスチックなどの原料となる石油製品「ナフサ」についてイラン情勢に伴う影響を調査したところ、回答した企業の44％が「すでに影響が出ている」と答えたという調査結果を明らかにしました。",
-      "fp": "“ナフサ供給不安”企業の44％「すでに影響」 生団連調べ 食品や小売りなどの企業が加盟する団体は、プラスチックなどの原料となる石油製品「ナフサ」についてイラン情勢に伴う影響を調査したところ、回答した企業の44％が「すでに影響が出ている」と答えたという調査結果を明らかにしました。",
-      "published": "Mon, 27 Apr 2026 14:53:47 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260428/k10015110341000.html",
+      "title": "ホンダ “2040年販売の新車すべてをEV等とする”目標を撤回へ",
+      "article": "EV事業の不振で巨額の損失が発生した「ホンダ」は2040年に販売する新車すべてをEVと燃料電池車にするとした目標を撤回する方針を固めました。新しい戦略では、EVの販売比率などは示さない方向で、脱炭素に向けた道筋の大幅な修正を余儀なくされた形です。",
+      "fp": "ホンダ “2040年販売の新車すべてをev等とする”目標を撤回へ ev事業の不振で巨額の損失が発生した「ホンダ」は2040年に販売する新車すべてをevと燃料電池車にするとした目標を撤回する方針を固めました。新しい戦略では、evの販売比率などは示さない方向で、脱炭素に向けた道筋の大幅な修正を余儀なくされた形です。",
+      "published": "Tue, 28 Apr 2026 17:52:42 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260427/k10015109471000.html",
-      "title": "東京ガス 10月使用分から家庭向けガスの基本料金値上げへ",
-      "article": "東京ガスは家庭向けガスの基本料金についてことし10月の使用分から一律で月額150円値上げすると発表しました。人件費の高騰などが主な理由で、値上げは第2次石油危機の時以来、46年ぶりだとしています。",
-      "fp": "東京ガス 10月使用分から家庭向けガスの基本料金値上げへ 東京ガスは家庭向けガスの基本料金についてことし10月の使用分から一律で月額150円値上げすると発表しました。人件費の高騰などが主な理由で、値上げは第2次石油危機の時以来、46年ぶりだとしています。",
-      "published": "Mon, 27 Apr 2026 18:31:06 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260428/k10015110331000.html",
+      "title": "肥料の主原料「尿素」の輸入価格17％上昇 イラン情勢影響で",
+      "article": "イラン情勢を受けて肥料の主な原料、「尿素」の平均の輸入価格は、先月、前の月より17％上昇しました。農林水産省では、尿素は中東の生産量が多く、ホルムズ海峡の事実上の封鎖にともなって国際的に値上がりしている影響を受けたとみています。",
+      "fp": "肥料の主原料「尿素」の輸入価格17％上昇 イラン情勢影響で イラン情勢を受けて肥料の主な原料、「尿素」の平均の輸入価格は、先月、前の月より17％上昇しました。農林水産省では、尿素は中東の生産量が多く、ホルムズ海峡の事実上の封鎖にともなって国際的に値上がりしている影響を受けたとみています。",
+      "published": "Tue, 28 Apr 2026 17:20:02 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260427/k10015109451000.html",
-      "title": "観光施設の「二重価格」 ガイドライン作成の議論開始 観光庁",
-      "article": "観光施設の間で外国人旅行者など、地元の人たち以外の利用料を高くするといった「二重価格」を導入する動きが増える中、観光庁は有識者会議を設置して料金設定のガイドラインの作成に向けた議論を始めました。",
-      "fp": "観光施設の「二重価格」 ガイドライン作成の議論開始 観光庁 観光施設の間で外国人旅行者など、地元の人たち以外の利用料を高くするといった「二重価格」を導入する動きが増える中、観光庁は有識者会議を設置して料金設定のガイドラインの作成に向けた議論を始めました。",
-      "published": "Mon, 27 Apr 2026 18:26:25 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260428/k10015109801000.html",
+      "title": "JR西日本 りそなグループと資本業務提携の方向で最終調整",
+      "article": "JR西日本が金融大手のりそなグループと資本業務提携する方向で最終調整に入ったことが分かりました。りそな傘下の銀行の株式、およそ20％を取得して新たに銀行サービスに参入し、決済やポイントだけでなく預金やローンなどを通じて顧客を囲い込むねらいがあると見られ、鉄道事業者の間で、金融と連携した経済圏づくりが一段と活発になりそうです。",
+      "fp": "jr西日本 りそなグループと資本業務提携の方向で最終調整 jr西日本が金融大手のりそなグループと資本業務提携する方向で最終調整に入ったことが分かりました。りそな傘下の銀行の株式、およそ20％を取得して新たに銀行サービスに参入し、決済やポイントだけでなく預金やローンなどを通じて顧客を囲い込むねらいがあると見られ、鉄道事業者の間で、金融と連携した経済圏づくりが一段と活発になりそうです。",
+      "published": "Tue, 28 Apr 2026 13:34:36 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260427/k10015109431000.html",
-      "title": "大阪・関西万博の剰余金 夢洲整備など3つの分野で活用へ",
-      "article": "大阪・関西万博の成果を検証する有識者会議で、最大370億円を見込む運営費の剰余金の活用方法が示されました。「夢洲」（ゆめしま）の会場跡地を整備するなど3つの分野に充てる方針です。",
-      "fp": "大阪・関西万博の剰余金 夢洲整備など3つの分野で活用へ 大阪・関西万博の成果を検証する有識者会議で、最大370億円を見込む運営費の剰余金の活用方法が示されました。「夢洲」（ゆめしま）の会場跡地を整備するなど3つの分野に充てる方針です。",
-      "published": "Mon, 27 Apr 2026 17:44:16 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260428/k10015110151000.html",
+      "title": "食料品の消費税ゼロ 財源や事務負担など課題整理 実務者会議",
+      "article": "食料品の消費税減税をめぐり、「国民会議」の実務者会議はこれまでのヒアリングを踏まえて課題を整理しました。低所得者対策として合理的だという意見の一方、代替財源の確保や事業者の負担軽減を求める声が上がったということで、夏前をめどとする中間とりまとめに向けて議論を加速することを確認しました。",
+      "fp": "食料品の消費税ゼロ 財源や事務負担など課題整理 実務者会議 食料品の消費税減税をめぐり、「国民会議」の実務者会議はこれまでのヒアリングを踏まえて課題を整理しました。低所得者対策として合理的だという意見の一方、代替財源の確保や事業者の負担軽減を求める声が上がったということで、夏前をめどとする中間とりまとめに向けて議論を加速することを確認しました。",
+      "published": "Tue, 28 Apr 2026 20:47:47 +0900"
+    },
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260428/k10015110141000.html",
+      "title": "デンソー ロームへの買収提案 取り下げを正式決定",
+      "article": "トヨタグループの大手自動車部品メーカー「デンソー」は半導体大手「ローム」への買収の提案について、賛同が得られなかったとして取り下げることを決めました。ロームはデンソーとは製品開発などで協業を行いつつ、東芝、三菱電機の3社でパワー半導体事業の統合に向けた協議を進めていく方針です。",
+      "fp": "デンソー ロームへの買収提案 取り下げを正式決定 トヨタグループの大手自動車部品メーカー「デンソー」は半導体大手「ローム」への買収の提案について、賛同が得られなかったとして取り下げることを決めました。ロームはデンソーとは製品開発などで協業を行いつつ、東芝、三菱電機の3社でパワー半導体事業の統合に向けた協議を進めていく方針です。",
+      "published": "Tue, 28 Apr 2026 18:25:11 +0900"
+    },
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260428/k10015110271000.html",
+      "title": "財政審 医療費70歳以上も原則3割負担にすべきとの意見出される",
+      "article": "財務大臣の諮問機関、財政制度等審議会で社会保障制度改革について議論が行われ、現役世代の保険料負担を軽減する観点から、70歳以上の医療費の窓口負担を原則3割とし、工程表を作成して取り組んでいくべきだという意見が出されました。",
+      "fp": "財政審 医療費70歳以上も原則3割負担にすべきとの意見出される 財務大臣の諮問機関、財政制度等審議会で社会保障制度改革について議論が行われ、現役世代の保険料負担を軽減する観点から、70歳以上の医療費の窓口負担を原則3割とし、工程表を作成して取り組んでいくべきだという意見が出されました。",
+      "published": "Tue, 28 Apr 2026 16:49:59 +0900"
+    },
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260428/k10015110261000.html",
+      "title": "出光興産 ベトナムに原油供給へ 供給網の維持につながるか",
+      "article": "ホルムズ海峡の事実上の封鎖を受けて、アジア各国で原油の安定供給への懸念が高まる中、石油元売り大手の「出光興産」はベトナム向けにホルムズ海峡を通らないルートで調達した原油を供給する方針を固めました。ベトナムからは日本向けに燃料や、石油由来の原料を使った家電などが輸出されていて、サプライチェーンの維持につながるかが焦点です。",
+      "fp": "出光興産 ベトナムに原油供給へ 供給網の維持につながるか ホルムズ海峡の事実上の封鎖を受けて、アジア各国で原油の安定供給への懸念が高まる中、石油元売り大手の「出光興産」はベトナム向けにホルムズ海峡を通らないルートで調達した原油を供給する方針を固めました。ベトナムからは日本向けに燃料や、石油由来の原料を使った家電などが輸出されていて、サプライチェーンの維持につながるかが焦点です。",
+      "published": "Tue, 28 Apr 2026 16:48:33 +0900"
+    },
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260429/k10015110731000.html",
+      "title": "米自動車 GM 約800億円分の関税が返還される見込みと明らかに",
+      "article": "アメリカの大手自動車メーカーのGM＝ゼネラル・モーターズは、トランプ政権の相互関税などの措置が連邦最高裁判所に無効と判断されたことを受け、日本円でおよそ800億円が返還される見込みだと明らかにしました。",
+      "fp": "米自動車 gm 約800億円分の関税が返還される見込みと明らかに アメリカの大手自動車メーカーのgm＝ゼネラル・モーターズは、トランプ政権の相互関税などの措置が連邦最高裁判所に無効と判断されたことを受け、日本円でおよそ800億円が返還される見込みだと明らかにしました。",
+      "published": "Wed, 29 Apr 2026 06:35:42 +0900"
+    },
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260428/k10015110041000.html",
+      "title": "中国 米メタによるAI企業の買収を禁止 技術流出懸念か",
+      "article": "中国政府は、アメリカの旧フェイスブック、「メタ」による中国発のAI企業の買収を禁止することを決めたと発表し、取り引きの撤回を求めました。先端技術をめぐる対立が続くアメリカにAI関連の技術が流出することへの懸念が背景にあるとみられます。",
+      "fp": "中国 米メタによるai企業の買収を禁止 技術流出懸念か 中国政府は、アメリカの旧フェイスブック、「メタ」による中国発のai企業の買収を禁止することを決めたと発表し、取り引きの撤回を求めました。先端技術をめぐる対立が続くアメリカにai関連の技術が流出することへの懸念が背景にあるとみられます。",
+      "published": "Tue, 28 Apr 2026 13:28:10 +0900"
+    },
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260428/k10015110291000.html",
+      "title": "キャベツやレタス 5月は平年より1割以上安く 農水省見通し公表",
+      "article": "キャベツやレタス 5月は平年より1割以上安く 農水省見通し公表",
+      "fp": "キャベツやレタス 5月は平年より1割以上安く 農水省見通し公表 キャベツやレタス 5月は平年より1割以上安く 農水省見通し公表",
+      "published": "Tue, 28 Apr 2026 16:51:36 +0900"
+    },
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260428/k10015110351000.html",
+      "title": "高松 栗林公園の土産物店 商品の入荷止まり 品切れに懸念",
+      "article": "石油製品の安定供給への懸念が続くなか、観光客が大勢訪れる高松市の栗林公園の土産物店では、石油製品から作られる商品の入荷が止まっていて、店では品切れを懸念しています。",
+      "fp": "高松 栗林公園の土産物店 商品の入荷止まり 品切れに懸念 石油製品の安定供給への懸念が続くなか、観光客が大勢訪れる高松市の栗林公園の土産物店では、石油製品から作られる商品の入荷が止まっていて、店では品切れを懸念しています。",
+      "published": "Tue, 28 Apr 2026 20:59:18 +0900"
+    },
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260428/k10015110521000.html",
+      "title": "宮城 塩釜 重油流出で漁業者支援へ 農水省など関係省庁",
+      "article": "宮城県の港で海上保安部の巡視船から重油が流出し、漁業に影響が出ていることを受けて28日、国の対策を検討する会合が開かれ、鈴木農林水産大臣は、迅速な賠償を前提として被害を受けた海産物の廃棄作業などの支援に取り組む考えを示しました。",
+      "fp": "宮城 塩釜 重油流出で漁業者支援へ 農水省など関係省庁 宮城県の港で海上保安部の巡視船から重油が流出し、漁業に影響が出ていることを受けて28日、国の対策を検討する会合が開かれ、鈴木農林水産大臣は、迅速な賠償を前提として被害を受けた海産物の廃棄作業などの支援に取り組む考えを示しました。",
+      "published": "Tue, 28 Apr 2026 20:55:44 +0900"
+    },
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260428/k10015110171000.html",
+      "title": "愛媛 八幡浜 トロール漁で重油高・資材値上げに懸念",
+      "article": "愛媛 八幡浜 トロール漁で重油高・資材値上げに懸念",
+      "fp": "愛媛 八幡浜 トロール漁で重油高・資材値上げに懸念 愛媛 八幡浜 トロール漁で重油高・資材値上げに懸念",
+      "published": "Tue, 28 Apr 2026 15:21:58 +0900"
+    },
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260428/k10015110071000.html",
+      "title": "宮城 松島のかまぼこ店 レシート用紙の調達に影響",
+      "article": "宮城 松島のかまぼこ店 レシート用紙の調達に影響",
+      "fp": "宮城 松島のかまぼこ店 レシート用紙の調達に影響 宮城 松島のかまぼこ店 レシート用紙の調達に影響",
+      "published": "Tue, 28 Apr 2026 14:48:27 +0900"
+    },
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260428/k10015110081000.html",
+      "title": "宮城 松島のホテル 固形燃料入手できず料理変更の検討も",
+      "article": "宮城県の観光地、松島にあるホテルでは、イラン情勢を受けて陶板焼きなどの料理に欠かせない固形燃料が手に入りづらくなり、このままの状況が続けばメニューの変更も検討せざるをえない状況となっています。",
+      "fp": "宮城 松島のホテル 固形燃料入手できず料理変更の検討も 宮城県の観光地、松島にあるホテルでは、イラン情勢を受けて陶板焼きなどの料理に欠かせない固形燃料が手に入りづらくなり、このままの状況が続けばメニューの変更も検討せざるをえない状況となっています。",
+      "published": "Tue, 28 Apr 2026 14:46:10 +0900"
     }
   ]
 }
