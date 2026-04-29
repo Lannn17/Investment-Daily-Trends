@@ -1,22 +1,22 @@
 {
   "links": [
-    "https://finance.yahoo.com/markets/stocks/live/stock-market-today-wednesday-april-29-dow-nasdaq-sp-futures-powell-mag7-231405065.html",
-    "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-fed-powell-robinhood-stock/?src=A00220&yptr=yahoo",
-    "http://www3.nhk.or.jp/news/html/20260429/k10015110731000.html",
-    "http://www3.nhk.or.jp/news/html/20260429/k10015111211000.html",
-    "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-april-29-2026-values-continue-to-fall-this-week-113845501.html",
-    "https://finance.yahoo.com/research/reports/ARGUS_46877_MarketOutlook_1777461993000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-    "https://www.investors.com/news/federal-reserve-meeting-jerome-powell-passes-torch-kevin-warsh-sp500/?src=A00220&yptr=yahoo",
-    "http://www3.nhk.or.jp/news/html/20260429/k10015110721000.html"
+    "https://www.cnbc.com/2026/04/29/amazon-amzn-q1-earnings-report-2026.html",
+    "https://www.cnbc.com/2026/04/29/oil-prices-brent-wti-trump-iran.html",
+    "https://www.cnbc.com/2026/04/29/fed-interest-rate-decision-april-2026.html",
+    "https://www.cnbc.com/2026/04/29/alphabet-googl-q1-2026-earnings.html",
+    "https://www.cnbc.com/2026/04/29/microsoft-msft-q3-earnings-report-2026.html",
+    "http://www3.nhk.or.jp/news/html/20260430/k10015111271000.html",
+    "http://www3.nhk.or.jp/news/html/20260430/k10015111161000.html",
+    "http://www3.nhk.or.jp/news/html/20260429/k10015110781000.html"
   ],
   "fingerprints": [
-    "今日股市：标普500指数与nasdaq在“magnificent 7”财报及美联储主席jerome powell（鲍威尔）最终政策决定前寻求上涨 stock market today: s&p 500, nasdaq search for gains ahead of 'magnificent 7' earnings, fed chair powell's final policy decision",
-    "美联储会议：当jerome powell（鲍威尔）将接力棒交给kevin warsh（沃什）时的关键问题（现场直播） fed meeting: key questions as powell passes torch to warsh (live coverage)",
-    "今日股市：受donald trump（特朗普）战争新闻影响道琼斯指数下跌，油价飙升；seagate因财报表现强劲股价飙升（现场直播） stock market today: dow sinks on trump war news as oil surges; seagate rockets on results (live coverage)",
-    "每日焦点：全球对美国债务的需求 daily spotlight: global demand for u.s. debt",
-    "今日（2026年4月29日，周三）bitcoin与ethereum价格：本周价值持续下跌 bitcoin and ethereum prices today, wednesday, april 29, 2026: values continue to fall this week",
-    "日元汇率一度跌至1美元兑160日元区间，为约3周以来首次，纽约外汇市场 29日のニューヨーク外国為替市場では、円を売ってドルを買う動きが出て円相場は一時、1ドル＝160円台まで値下がりしました。1ドル＝160円台をつけるのは今月7日以来、およそ3週間ぶりです。アメリカとイランの間で戦闘終結に向けた協議が停滞するなか、トランプ大統領がイランの港を出入りする船舶への封鎖措置について、長期的な対応に備えるよう側近に指示したと伝えられるなどしたことで、有事に強いとされるドルを買う動きが再び強まった形です。",
-    "世界银行预测受伊朗局势影响，能源价格将较去年上涨24％ 世界銀行 エネルギー価格がイラン情勢で去年比24％上昇見通し",
-    "美国汽车公司gm透露预计将获约800亿日元的关税退税 アメリカの大手自動車メーカーのgm＝ゼネラル・モーターズは、トランプ政権の相互関税などの措置が連邦最高裁判所に無効と判断されたことを受け、日本円でおよそ800億円が返還される見込みだと明らかにしました。"
+    "donald trump（特朗普）表示将封锁iran直至其达成核协议，brent原油价格突破118美元 the latest move higher comes amid reports that the u.s. will look to extend its blockade of iranian ports.",
+    "fed维持利率不变，但出现1992年以来最严重的分歧 the federal reserve on wednesday released its latest decision on interest rates.",
+    "受内存价格飙升影响，microsoft预计2026年资本支出将达1900亿美元 microsoft's forecast on revenue and operating margin was light, but the company sees $190 billion in 2026 capital spending, well above wall street's estimate.",
+    "alphabet将2026年资本支出提高至1900亿美元，并预计2027年将“显著增加” alphabet reported first-quarter earnings, posting booming cloud revenue and upping its full-year capex spend to as much as $190 billion.",
+    "amazon财报超出预期，云计算业务增长强劲 revenue in amazon's cloud computing segment expanded 28% year over year, topping analysts' estimates.",
+    "美联储（frb）连续3次会议维持利率不变，jerome powell（鲍威尔）主席表示“担忧法律层面冲击” アメリカのfrb＝連邦準備制度理事会は金融政策を決める会合を開き、イラン情勢を受けた物価上昇などを踏まえ、利下げを見送り政策金利を据え置くと発表しました。5月に任期を終えるパウエル議長は会合後の記者会見で「懸念しているのはfrbに対する一連の法的な攻撃だ」と述べ、政治から独立して金融政策を判断する重要性を強調しました。",
+    "受伊朗局势长期化担忧影响，纽约原油市场价格上涨至每桶108美元区间 29日のニューヨーク原油市場では、アメリカとイランの間で戦闘終結に向けた協議が停滞するなか、ホルムズ海峡の事実上の封鎖が続くとの懸念から、国際的な取り引きの指標となるwtiの先物価格は一時、1バレル＝108ドル台まで上昇しました。これは、4月上旬以来、およそ3週間ぶりの高値水準です。",
+    "与日本有关的大型油轮通过霍尔木兹海峡 イランの国営メディアは原油を積載した日本関係の大型タンカーがイラン当局の許可を得てホルムズ海峡を通過したと報じました。船の位置情報を公開している「マリントラフィック」では目的地は名古屋とされ、このまま日本に向かった場合、ホルムズ海峡の事実上の封鎖以降、日本企業が管理する船舶で海峡を通過した初めての事例になります。高市総理大臣は、日本人乗組員3人が乗船した日本関係船舶1隻が、ホルムズ海峡を無事に通過し、日本に向けて航行していることを確認したと明らかにしました。"
   ]
 }
