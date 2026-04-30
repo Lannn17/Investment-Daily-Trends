@@ -1,196 +1,287 @@
 {
   "market_news": [
     {
-      "link": "https://finance.yahoo.com/markets/crypto/articles/western-union-unveils-timeline-stablecoin-145505891.html",
-      "title": "Western Union Unveils Timeline For Stablecoin Launch And Plans For A Linked Consumer Card",
-      "article": "Western Union Unveils Timeline For Stablecoin Launch And Plans For A Linked Consumer Card",
-      "fp": "western union unveils timeline for stablecoin launch and plans for a linked consumer card western union unveils timeline for stablecoin launch and plans for a linked consumer card",
-      "published": "2026-04-30T14:55:05Z"
+      "link": "https://www.cnbc.com/2026/04/30/intel-has-best-month-ever-after-years-of-losing-to-tsmc-and-nvidia.html",
+      "title": "Intel's stock more than doubles in April for best month in chipmaker's 55 years on Nasdaq",
+      "article": "Intel's market cap more than doubled in April, boosted by a blowout earnings report and optimism that the chipmaker is in the midst of a revival.",
+      "fp": "intel's stock more than doubles in april for best month in chipmaker's 55 years on nasdaq intel's market cap more than doubled in april, boosted by a blowout earnings report and optimism that the chipmaker is in the midst of a revival.",
+      "published": "Thu, 30 Apr 2026 20:10:36 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/economy/policy/article/feds-favored-inflation-gauge-shows-rising-prices-as-war-heated-up-131007113.html",
-      "title": "Fed's favored inflation gauge shows rising prices as war heated up",
-      "article": "Fed's favored inflation gauge shows rising prices as war heated up",
-      "fp": "fed's favored inflation gauge shows rising prices as war heated up fed's favored inflation gauge shows rising prices as war heated up",
-      "published": "2026-04-30T13:10:07Z"
+      "link": "https://www.cnbc.com/2026/04/30/inside-the-fed-powell-and-warsh-set-to-clash.html",
+      "title": "Inside the Fed: Powell vows he won't be a 'shadow chair,' but a Warsh clash will be tough to avoid",
+      "article": "When the Fed gathers again, it will mark the first time a sitting and former chair conduct business together in nearly 80 years.",
+      "fp": "inside the fed: powell vows he won't be a 'shadow chair,' but a warsh clash will be tough to avoid when the fed gathers again, it will mark the first time a sitting and former chair conduct business together in nearly 80 years.",
+      "published": "Thu, 30 Apr 2026 19:25:06 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/article/trump-bets-hormuz-blockade-will-break-iran-before-triggering-a-global-crisis-143651937.html",
-      "title": "Trump bets Hormuz blockade will break Iran before triggering a global crisis",
-      "article": "Trump bets Hormuz blockade will break Iran before triggering a global crisis",
-      "fp": "trump bets hormuz blockade will break iran before triggering a global crisis trump bets hormuz blockade will break iran before triggering a global crisis",
-      "published": "2026-04-30T14:36:51Z"
+      "link": "https://www.cnbc.com/2026/04/30/apples-stock-has-gone-nowhere-for-6-months-traders-expect-a-wild-ride-thursday-night.html",
+      "title": "Apple's stock has gone nowhere for 6 months. Traders expect a wild ride Thursday night",
+      "article": "Implied volatility in the stock suggests a 3.5% swing after earnings tonight, compared to an average move of just 1.8% following the last four quarterly reports.",
+      "fp": "apple's stock has gone nowhere for 6 months. traders expect a wild ride thursday night implied volatility in the stock suggests a 3.5% swing after earnings tonight, compared to an average move of just 1.8% following the last four quarterly reports.",
+      "published": "Thu, 30 Apr 2026 17:38:34 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/sectors/energy/articles/japex-targets-long-term-value-143617563.html",
-      "title": "JAPEX Targets Long-Term Value With Norwegian Shelf Expansion",
-      "article": "JAPEX Targets Long-Term Value With Norwegian Shelf Expansion",
-      "fp": "japex targets long-term value with norwegian shelf expansion japex targets long-term value with norwegian shelf expansion",
-      "published": "2026-04-30T14:36:17Z"
+      "link": "https://www.cnbc.com/2026/04/30/ai-boom-big-tech-capital-expenditures-now-seen-topping-1-trillion-in-2027-.html",
+      "title": "AI boom: Big Tech capital expenditures now seen topping $1 trillion in 2027",
+      "article": "The overall cost has been causing heads to spin, but analysts say they're seeing flowthrough from investments to revenue.",
+      "fp": "ai boom: big tech capital expenditures now seen topping $1 trillion in 2027 the overall cost has been causing heads to spin, but analysts say they're seeing flowthrough from investments to revenue.",
+      "published": "Thu, 30 Apr 2026 18:26:43 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_3671_AnalystReport_1777547024000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "Analyst Report: DR Horton Inc",
-      "article": "Analyst Report: DR Horton Inc",
-      "fp": "analyst report: dr horton inc analyst report: dr horton inc",
-      "published": "2026-04-30T11:03:44Z"
+      "link": "https://www.marketwatch.com/story/alphabet-hits-a-milestone-as-it-closes-in-on-nvidia-00622b31?mod=mw_rss_topstories",
+      "title": "Alphabet hits a milestone as it closes in on Nvidia",
+      "article": "Alphabet added a record $421 billion to its market cap as massive cloud growth and AI momentum sent shares soaring.",
+      "fp": "alphabet hits a milestone as it closes in on nvidia alphabet added a record $421 billion to its market cap as massive cloud growth and ai momentum sent shares soaring.",
+      "published": "Thu, 30 Apr 2026 23:08:00 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/sectors/energy/articles/bp-signs-mou-venezuela-cocuina-145313556.html",
-      "title": "BP signs MoU with Venezuela for Cocuina-Manakin gas project",
-      "article": "BP signs MoU with Venezuela for Cocuina-Manakin gas project",
-      "fp": "bp signs mou with venezuela for cocuina-manakin gas project bp signs mou with venezuela for cocuina-manakin gas project",
-      "published": "2026-04-30T14:53:13Z"
+      "link": "https://www.marketwatch.com/story/gold-posts-its-biggest-2-month-drop-ever-how-its-price-could-still-double-over-the-next-5-years-f9004621?mod=mw_rss_topstories",
+      "title": "Gold posts its biggest 2-month drop ever. How its price could still double over the next 5 years.",
+      "article": "Gold prices cemented the worst two-month decline in history on Thursday, based on the price of heavily-traded futures contracts.",
+      "fp": "gold posts its biggest 2-month drop ever. how its price could still double over the next 5 years. gold prices cemented the worst two-month decline in history on thursday, based on the price of heavily-traded futures contracts.",
+      "published": "Thu, 30 Apr 2026 21:56:00 GMT"
     },
     {
-      "link": "https://www.investors.com/research/ibd-stock-analysis/enova-stock-enva-ai-machine-learning-fueled-fintech/?src=A00220&yptr=yahoo",
-      "title": "AI-Fueled Fintech Teases Breakout Flashing These Telltale Clues",
-      "article": "AI-Fueled Fintech Teases Breakout Flashing These Telltale Clues",
-      "fp": "ai-fueled fintech teases breakout flashing these telltale clues ai-fueled fintech teases breakout flashing these telltale clues",
-      "published": "2026-04-30T14:35:57Z"
+      "link": "https://www.marketwatch.com/story/could-powells-decision-to-stay-worsen-relations-between-the-fed-and-the-white-house-ba91a3f9?mod=mw_rss_topstories",
+      "title": "Could Powell’s decision to stay worsen relations between the Fed and the White House?",
+      "article": "“I think there’s a point where standing up to Trump moves into poking the bear with a sharp stick,” one analyst says.",
+      "fp": "could powell’s decision to stay worsen relations between the fed and the white house? “i think there’s a point where standing up to trump moves into poking the bear with a sharp stick,” one analyst says.",
+      "published": "Thu, 30 Apr 2026 21:27:00 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/crypto/articles/polymarket-taps-chainalysis-strengthen-onchain-143200648.html",
-      "title": "Polymarket Taps Chainalysis to Strengthen Onchain Market Integrity",
-      "article": "Polymarket Taps Chainalysis to Strengthen Onchain Market Integrity",
-      "fp": "polymarket taps chainalysis to strengthen onchain market integrity polymarket taps chainalysis to strengthen onchain market integrity",
-      "published": "2026-04-30T14:32:00Z"
+      "link": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-buys-18-million-150700302.html",
+      "title": "Cathie Wood buys $18 million of beaten-down AI stock",
+      "article": "Cathie Wood buys $18 million of beaten-down AI stock",
+      "fp": "cathie wood buys $18 million of beaten-down ai stock cathie wood buys $18 million of beaten-down ai stock",
+      "published": "2026-04-30T15:07:00Z"
     },
     {
-      "link": "https://www.barrons.com/articles/cardinal-health-earnings-stock-price-2e31b671?siteid=yhoof2&yptr=yahoo",
-      "title": "Cardinal Health Is One of the S&P 500’s Biggest Decliners Today. A Guidance Hike Didn’t Matter.",
-      "article": "Cardinal Health Is One of the S&P 500’s Biggest Decliners Today. A Guidance Hike Didn’t Matter.",
-      "fp": "cardinal health is one of the s&p 500’s biggest decliners today. a guidance hike didn’t matter. cardinal health is one of the s&p 500’s biggest decliners today. a guidance hike didn’t matter.",
-      "published": "2026-04-30T14:51:00Z"
+      "link": "https://www.cnbc.com/2026/04/30/reddit-rddt-q1-2026-earnings-report.html",
+      "title": "Reddit reports 69% jump in revenue, topping analyst estimates",
+      "article": "Reddit reported first-quarter earnings and revenue that exceeded Wall Street expectations.",
+      "fp": "reddit reports 69% jump in revenue, topping analyst estimates reddit reported first-quarter earnings and revenue that exceeded wall street expectations.",
+      "published": "Thu, 30 Apr 2026 22:57:54 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/crypto/articles/mara-1-5-billion-long-142900528.html",
-      "title": "MARA’s $1.5 Billion Long Ridge Deal Adds Power Capacity for AI and Bitcoin Mining",
-      "article": "MARA’s $1.5 Billion Long Ridge Deal Adds Power Capacity for AI and Bitcoin Mining",
-      "fp": "mara’s $1.5 billion long ridge deal adds power capacity for ai and bitcoin mining mara’s $1.5 billion long ridge deal adds power capacity for ai and bitcoin mining",
-      "published": "2026-04-30T14:29:00Z"
+      "link": "https://www.cnbc.com/2026/04/30/investor-jack-selby-markets-underpricing-middle-east-ai-pullback-risk.html",
+      "title": "Inside Wealth: Markets are underpricing the risk of Middle East pullback in AI, says tech investor Jack Selby",
+      "article": "Middle East investors account for roughly a quarter of global AI investments over the next 5 years, said Jack Selby, managing director of Thiel Capital.",
+      "fp": "inside wealth: markets are underpricing the risk of middle east pullback in ai, says tech investor jack selby middle east investors account for roughly a quarter of global ai investments over the next 5 years, said jack selby, managing director of thiel capital.",
+      "published": "Thu, 30 Apr 2026 21:06:01 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/nexperia-says-not-trying-harm-142606348.html",
-      "title": "Nexperia says it is not trying to harm Wingtech shareholders",
-      "article": "Nexperia says it is not trying to harm Wingtech shareholders",
-      "fp": "nexperia says it is not trying to harm wingtech shareholders nexperia says it is not trying to harm wingtech shareholders",
-      "published": "2026-04-30T14:26:06Z"
+      "link": "https://www.cnbc.com/2026/04/30/what-bettors-think-apple-will-talk-about-on-its-earnings-call.html",
+      "title": "Apple execs to talk China and tariffs, but will avoid discussing foldable iPhone, per traders on Kalshi",
+      "article": "Apple is set to report earnings after the bell on Thursday, with its conference call scheduled for 5:00 pm ET.",
+      "fp": "apple execs to talk china and tariffs, but will avoid discussing foldable iphone, per traders on kalshi apple is set to report earnings after the bell on thursday, with its conference call scheduled for 5:00 pm et.",
+      "published": "Thu, 30 Apr 2026 17:56:28 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/globus-medical-inc-gmed-bares-142547805.html",
-      "title": "Globus Medical Inc. (GMED): Bares Capital Is Buying This Stock",
-      "article": "Globus Medical Inc. (GMED): Bares Capital Is Buying This Stock",
-      "fp": "globus medical inc. (gmed): bares capital is buying this stock globus medical inc. (gmed): bares capital is buying this stock",
-      "published": "2026-04-30T14:25:47Z"
+      "link": "https://www.cnbc.com/2026/04/30/treasury-i-bond-rate-through-october-2026.html",
+      "title": "Treasury Department announces new Series I bond rate of 4.26% for the next six months",
+      "article": "The U.S. Department of the Treasury has announced new Series I bond rates through October 2026.",
+      "fp": "treasury department announces new series i bond rate of 4.26% for the next six months the u.s. department of the treasury has announced new series i bond rates through october 2026.",
+      "published": "Thu, 30 Apr 2026 15:06:35 GMT"
     },
     {
-      "link": "https://www.barrons.com/articles/pce-inflation-report-oil-prices-rates-1404b783?siteid=yhoof2&yptr=yahoo",
-      "title": "PCE Inflation Hits Highest Since 2023. The Case for Rate Hikes Is Getting Stronger.",
-      "article": "PCE Inflation Hits Highest Since 2023. The Case for Rate Hikes Is Getting Stronger.",
-      "fp": "pce inflation hits highest since 2023. the case for rate hikes is getting stronger. pce inflation hits highest since 2023. the case for rate hikes is getting stronger.",
-      "published": "2026-04-30T14:49:00Z"
+      "link": "https://www.marketwatch.com/story/the-memory-trade-is-faltering-as-western-digitals-stock-slides-in-the-face-of-earnings-beat-9b99694e?mod=mw_rss_topstories",
+      "title": "The memory trade is faltering as Western Digital’s stock slides in the face of earnings beat",
+      "article": "Investors are panning upbeat results from Western Digital and Sandisk after massive one-year stock rallies.",
+      "fp": "the memory trade is faltering as western digital’s stock slides in the face of earnings beat investors are panning upbeat results from western digital and sandisk after massive one-year stock rallies.",
+      "published": "Thu, 30 Apr 2026 22:40:00 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/wayfair-inc-w-bares-capital-142409712.html",
-      "title": "Wayfair Inc. (W): Bares Capital Trims Position",
-      "article": "Wayfair Inc. (W): Bares Capital Trims Position",
-      "fp": "wayfair inc. (w): bares capital trims position wayfair inc. (w): bares capital trims position",
-      "published": "2026-04-30T14:24:09Z"
+      "link": "https://www.marketwatch.com/story/mortgage-rates-increase-to-6-3-but-thats-not-stopping-home-buyers-8f24ecbb?mod=mw_rss_topstories",
+      "title": "Mortgage rates increase to 6.3% — but home buyers aren’t scared away",
+      "article": "Mortgage rates increase to 6.3% — but home buyers aren’t scared away",
+      "fp": "mortgage rates increase to 6.3% — but home buyers aren’t scared away mortgage rates increase to 6.3% — but home buyers aren’t scared away",
+      "published": "Thu, 30 Apr 2026 22:01:00 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/align-technology-inc-algn-one-142332806.html",
-      "title": "Align Technology Inc. (ALGN): One of the Best Stocks to Buy According to Bares Capital",
-      "article": "Align Technology Inc. (ALGN): One of the Best Stocks to Buy According to Bares Capital",
-      "fp": "align technology inc. (algn): one of the best stocks to buy according to bares capital align technology inc. (algn): one of the best stocks to buy according to bares capital",
-      "published": "2026-04-30T14:23:32Z"
+      "link": "https://www.cnbc.com/2026/04/30/trump-blockade-iran-oil-strait-hormuz.html",
+      "title": "Trump said his blockade would cause Iran's oil industry to 'explode' this week. Why that won't happen",
+      "article": "The U.S. and Iran are locked in a standoff that will only break when one side decides it can no longer tolerate the pain. Who will move is unclear.",
+      "fp": "trump said his blockade would cause iran's oil industry to 'explode' this week. why that won't happen the u.s. and iran are locked in a standoff that will only break when one side decides it can no longer tolerate the pain. who will move is unclear.",
+      "published": "Thu, 30 Apr 2026 16:36:21 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_46890_TopBottomInsiderActivity_1777543504000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "Daily – Vickers Top Buyers & Sellers for 04/30/2026",
-      "article": "Daily – Vickers Top Buyers & Sellers for 04/30/2026",
-      "fp": "daily – vickers top buyers & sellers for 04/30/2026 daily – vickers top buyers & sellers for 04/30/2026",
-      "published": "2026-04-30T10:05:04Z"
+      "link": "https://www.cnbc.com/2026/04/30/rivian-renegotiates-doe-loan-adjusts-capacity-plans-for-georgia-plant.html",
+      "title": "Rivian renegotiates DOE loan down to $4.5 billion, adjusts capacity plans for Georgia plant",
+      "article": "The DOE loan was previously set to support two phases of production for a total of 400,000 units annually.",
+      "fp": "rivian renegotiates doe loan down to $4.5 billion, adjusts capacity plans for georgia plant the doe loan was previously set to support two phases of production for a total of 400,000 units annually.",
+      "published": "Thu, 30 Apr 2026 22:21:00 GMT"
     },
     {
-      "link": "https://www.barrons.com/articles/palantir-stock-buy-rating-ai-earnings-ae47ba4f?siteid=yhoof2&yptr=yahoo",
-      "title": "Palantir Stock Gets a Fresh Buy Rating. Earnings Will Show Whether AI Growth Is Real.",
-      "article": "Palantir Stock Gets a Fresh Buy Rating. Earnings Will Show Whether AI Growth Is Real.",
-      "fp": "palantir stock gets a fresh buy rating. earnings will show whether ai growth is real. palantir stock gets a fresh buy rating. earnings will show whether ai growth is real.",
-      "published": "2026-04-30T14:47:00Z"
+      "link": "https://www.cnbc.com/2026/04/30/trump-iran-war-centcom-hormuz-congress.html",
+      "title": "Trump admin. faces critical 60-day Iran war deadline, but floats ceasefire loophole",
+      "article": "The U.S. and Israel began their war against Iran Feb. 28, and U.S. law requires congressional authorization for a war to go beyond 60 days.",
+      "fp": "trump admin. faces critical 60-day iran war deadline, but floats ceasefire loophole the u.s. and israel began their war against iran feb. 28, and u.s. law requires congressional authorization for a war to go beyond 60 days.",
+      "published": "Thu, 30 Apr 2026 20:59:06 GMT"
     },
     {
-      "link": "https://www.investors.com/news/defense-stocks-textron-earnings-txt-stock-aerovironment-stock-buy-lockheed-martin-rtx/?src=A00220&yptr=yahoo",
-      "title": "Textron Leads Defense Advance On Earnings, Analyst Rates AeroVironment A Buy",
-      "article": "Textron Leads Defense Advance On Earnings, Analyst Rates AeroVironment A Buy",
-      "fp": "textron leads defense advance on earnings, analyst rates aerovironment a buy textron leads defense advance on earnings, analyst rates aerovironment a buy",
-      "published": "2026-04-30T14:18:16Z"
+      "link": "https://www.cnbc.com/2026/04/30/blue-owl-shares-private-credit-spacex-gains.html",
+      "title": "Blue Owl shares surge after private credit firm cites 10X gains from SpaceX",
+      "article": "Blue Owl said it's made 10 times its investment in SpaceX, which is headed for a record IPO later this year.",
+      "fp": "blue owl shares surge after private credit firm cites 10x gains from spacex blue owl said it's made 10 times its investment in spacex, which is headed for a record ipo later this year.",
+      "published": "Thu, 30 Apr 2026 19:36:55 GMT"
     },
     {
-      "link": "https://www.investors.com/news/technology/eli-lilly-stock-eli-lilly-earnings-q1-2026/?src=A00220&yptr=yahoo",
-      "title": "Eli Lilly's 'Blowout' Quarter: Here's What Has 'Overwhelming' Demand",
-      "article": "Eli Lilly's 'Blowout' Quarter: Here's What Has 'Overwhelming' Demand",
-      "fp": "eli lilly's 'blowout' quarter: here's what has 'overwhelming' demand eli lilly's 'blowout' quarter: here's what has 'overwhelming' demand",
-      "published": "2026-04-30T14:14:56Z"
+      "link": "https://www.cnbc.com/2026/04/30/california-gas-price-iran-war-oil.html",
+      "title": "California gas prices hit $6 per gallon as fuel costs jump nearly 30 cents in a week across the U.S.",
+      "article": "Fuel costs are rising after it gas became clear that Iran is not reopening the Strait of Hormuz, one of the most important oil export corridors in the world.",
+      "fp": "california gas prices hit $6 per gallon as fuel costs jump nearly 30 cents in a week across the u.s. fuel costs are rising after it gas became clear that iran is not reopening the strait of hormuz, one of the most important oil export corridors in the world.",
+      "published": "Thu, 30 Apr 2026 15:44:08 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/news/mortgage-rate-forecast-november-2023-140556792.html",
-      "title": "Mortgage rate forecast: May 2026",
-      "article": "Mortgage rate forecast: May 2026",
-      "fp": "mortgage rate forecast: may 2026 mortgage rate forecast: may 2026",
-      "published": "2026-04-30T14:09:42Z"
+      "link": "https://www.cnbc.com/2026/04/30/fda-novo-lilly-glp-1s-compounding.html",
+      "title": "FDA proposes excluding Novo, Lilly weight loss drugs from bulk compounding list in win for the companies",
+      "article": "If that proposal is finalized, the exclusion would likely limit the mass compounding of those medicines ​unless they appear on the FDA's ⁠drug shortage ⁠list.",
+      "fp": "fda proposes excluding novo, lilly weight loss drugs from bulk compounding list in win for the companies if that proposal is finalized, the exclusion would likely limit the mass compounding of those medicines ​unless they appear on the fda's ⁠drug shortage ⁠list.",
+      "published": "Thu, 30 Apr 2026 15:02:15 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-falls-4-rotation-concerns-144656471.html",
-      "title": "NVIDIA Falls 4% on Rotation Concerns: How Strong Profitability Could Save the Bull Case",
-      "article": "NVIDIA Falls 4% on Rotation Concerns: How Strong Profitability Could Save the Bull Case",
-      "fp": "nvidia falls 4% on rotation concerns: how strong profitability could save the bull case nvidia falls 4% on rotation concerns: how strong profitability could save the bull case",
-      "published": "2026-04-30T14:46:56Z"
+      "link": "https://www.marketwatch.com/story/spacex-may-face-an-easier-path-to-s-p-500-entry-if-these-newly-proposed-rules-take-hold-b3ba6bff?mod=mw_rss_topstories",
+      "title": "SpaceX may face an easier path to S&P 500 entry if these newly proposed rules take hold",
+      "article": "As SpaceX, Anthropic and OpenAI reportedly gear up for IPOs, S&P Dow Jones Indices is considering whether to allow ‘fast-track’ entry and relax profitability requirements.",
+      "fp": "spacex may face an easier path to s&p 500 entry if these newly proposed rules take hold as spacex, anthropic and openai reportedly gear up for ipos, s&p dow jones indices is considering whether to allow ‘fast-track’ entry and relax profitability requirements.",
+      "published": "Thu, 30 Apr 2026 22:22:00 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/cybersecurity-firm-check-point-software-140729881.html",
-      "title": "Cybersecurity firm Check Point Software first-quarter profit beats estimates, cuts 2026 revenue outlook",
-      "article": "Cybersecurity firm Check Point Software first-quarter profit beats estimates, cuts 2026 revenue outlook",
-      "fp": "cybersecurity firm check point software first-quarter profit beats estimates, cuts 2026 revenue outlook cybersecurity firm check point software first-quarter profit beats estimates, cuts 2026 revenue outlook",
-      "published": "2026-04-30T14:07:29Z"
+      "link": "https://www.cnbc.com/2026/04/30/trump-executive-order-expanding-retirement-account-access.html",
+      "title": "Trump signs executive order expanding retirement account access for workers",
+      "article": "The president's executive order expands retirement account access for workers and will be integrated with the Saver's Match.",
+      "fp": "trump signs executive order expanding retirement account access for workers the president's executive order expands retirement account access for workers and will be integrated with the saver's match.",
+      "published": "Thu, 30 Apr 2026 22:20:45 GMT"
     },
     {
-      "link": "https://www.investors.com/news/cathie-wood-ark-invest-robinhood-stock-kratos-defense-intellia-therapeutics-arkb/?src=A00220&yptr=yahoo",
-      "title": "Cathie Wood Buys Tumbling Robinhood Stock, ARK Adds $30 Mil Of This Stock",
-      "article": "Cathie Wood Buys Tumbling Robinhood Stock, ARK Adds $30 Mil Of This Stock",
-      "fp": "cathie wood buys tumbling robinhood stock, ark adds $30 mil of this stock cathie wood buys tumbling robinhood stock, ark adds $30 mil of this stock",
-      "published": "2026-04-30T13:59:26Z"
+      "link": "https://www.cnbc.com/2026/04/30/hershey-gum-mints-ozempic-breath.html",
+      "title": "Hershey says GLP-1s are driving higher gum and mint sales",
+      "article": "Sales of Hershey's Ice Breakers rose 8% in the first quarter, thanks to the trend.",
+      "fp": "hershey says glp-1s are driving higher gum and mint sales sales of hershey's ice breakers rose 8% in the first quarter, thanks to the trend.",
+      "published": "Thu, 30 Apr 2026 15:49:09 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/aehr-test-systems-aehr-10-135805258.html",
-      "title": "Aehr Test Systems (AEHR): 10 Small-Cap Stocks That Are On Fire Right Now",
-      "article": "Aehr Test Systems (AEHR): 10 Small-Cap Stocks That Are On Fire Right Now",
-      "fp": "aehr test systems (aehr): 10 small-cap stocks that are on fire right now aehr test systems (aehr): 10 small-cap stocks that are on fire right now",
-      "published": "2026-04-30T13:58:05Z"
+      "link": "https://www.marketwatch.com/story/saving-for-retirement-when-you-make-less-than-35-000-wont-be-much-easier-with-trumps-new-executive-order-dbe72ddf?mod=mw_rss_topstories",
+      "title": "Saving for retirement when you make less than $35,000 won’t be much easier with Trump’s new executive order",
+      "article": "Experts have been working to fix this problem for decades — but outside of workplace plans, success has been hard to come by.",
+      "fp": "saving for retirement when you make less than $35,000 won’t be much easier with trump’s new executive order experts have been working to fix this problem for decades — but outside of workplace plans, success has been hard to come by.",
+      "published": "Thu, 30 Apr 2026 22:22:00 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/options/articles/retirement-rich-life-poor-couple-144605002.html",
-      "title": "'Retirement Rich But Life Poor'—This Couple Focused On Building Retirement Wealth. Now They Wonder If They're Missing Their Life In The Process",
-      "article": "'Retirement Rich But Life Poor'—This Couple Focused On Building Retirement Wealth. Now They Wonder If They're Missing Their Life In The Process",
-      "fp": "'retirement rich but life poor'—this couple focused on building retirement wealth. now they wonder if they're missing their life in the process 'retirement rich but life poor'—this couple focused on building retirement wealth. now they wonder if they're missing their life in the process",
-      "published": "2026-04-30T14:46:05Z"
+      "link": "https://www.cnbc.com/2026/04/30/congress-dhs-tsa-funding.html",
+      "title": "Trump signs DHS funding bill, ending shutdown for most of agency, including TSA",
+      "article": "Trump on Thursday signed legislation to fund the Department of Homeland Security after the House approved the bill earlier in the afternoon.",
+      "fp": "trump signs dhs funding bill, ending shutdown for most of agency, including tsa trump on thursday signed legislation to fund the department of homeland security after the house approved the bill earlier in the afternoon.",
+      "published": "Thu, 30 Apr 2026 20:54:05 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/fastly-fsly-laliga-partner-ai-135743535.html",
-      "title": "Fastly (FSLY), LALIGA Partner on AI-Driven Real-Time Anti-Piracy Project",
-      "article": "Fastly (FSLY), LALIGA Partner on AI-Driven Real-Time Anti-Piracy Project",
-      "fp": "fastly (fsly), laliga partner on ai-driven real-time anti-piracy project fastly (fsly), laliga partner on ai-driven real-time anti-piracy project",
-      "published": "2026-04-30T13:57:43Z"
+      "link": "https://www.cnbc.com/2026/04/30/grad-school-loan-caps-final-rule.html",
+      "title": "Trump administration finalizes federal student loan caps—what it means for borrowers",
+      "article": "The final regulation keeps a narrow definition of professional degrees that are subject to the higher annual and lifetime graduate loan limits.",
+      "fp": "trump administration finalizes federal student loan caps—what it means for borrowers the final regulation keeps a narrow definition of professional degrees that are subject to the higher annual and lifetime graduate loan limits.",
+      "published": "Thu, 30 Apr 2026 20:01:56 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/sectors/healthcare/articles/oruka-therapeutics-orka-reports-positive-135736753.html",
-      "title": "Oruka Therapeutics (ORKA) Reports Positive Phase 2a Results for Psoriasis Treatment ORKA-001",
-      "article": "Oruka Therapeutics (ORKA) Reports Positive Phase 2a Results for Psoriasis Treatment ORKA-001",
-      "fp": "oruka therapeutics (orka) reports positive phase 2a results for psoriasis treatment orka-001 oruka therapeutics (orka) reports positive phase 2a results for psoriasis treatment orka-001",
-      "published": "2026-04-30T13:57:36Z"
+      "link": "https://www.cnbc.com/2026/04/30/pricey-nfl-nba-ownership-stakes-investors-leagues-valuations.html",
+      "title": "Pricey NFL, NBA ownership stakes are pushing investors to smaller leagues and driving valuations higher",
+      "article": "Priced out of the NBA and NFL, investors are asking bankers about opportunities to buy minority stakes in teams with lower valuations.",
+      "fp": "pricey nfl, nba ownership stakes are pushing investors to smaller leagues and driving valuations higher priced out of the nba and nfl, investors are asking bankers about opportunities to buy minority stakes in teams with lower valuations.",
+      "published": "Thu, 30 Apr 2026 17:31:30 GMT"
+    },
+    {
+      "link": "https://www.marketwatch.com/story/the-numbers-dont-lie-if-i-had-invested-my-social-security-in-the-s-p-500-id-have-4-million-is-the-system-broken-d41b1779?mod=mw_rss_topstories",
+      "title": "‘The numbers don’t lie’: If I had invested my Social Security in the S&P 500 I’d have $4 million. Is the system broken?",
+      "article": "‘The numbers don’t lie’: If I had invested my Social Security in the S&P 500 I’d have $4 million. Is the system broken?",
+      "fp": "‘the numbers don’t lie’: if i had invested my social security in the s&p 500 i’d have $4 million. is the system broken? ‘the numbers don’t lie’: if i had invested my social security in the s&p 500 i’d have $4 million. is the system broken?",
+      "published": "Thu, 30 Apr 2026 22:14:00 GMT"
+    },
+    {
+      "link": "https://www.marketwatch.com/story/liv-golf-has-lost-its-saudi-funding-golfers-who-rejoin-the-pga-tour-may-face-financial-fallout-9bae103a?mod=mw_rss_topstories",
+      "title": "LIV Golf has lost its Saudi funding. Golfers who rejoin the PGA Tour may face financial fallout.",
+      "article": "A Saudi sovereign fund reportedly poured more than $5 billion into the golf league. The fund now says its investment priorities have changed.",
+      "fp": "liv golf has lost its saudi funding. golfers who rejoin the pga tour may face financial fallout. a saudi sovereign fund reportedly poured more than $5 billion into the golf league. the fund now says its investment priorities have changed.",
+      "published": "Thu, 30 Apr 2026 21:43:00 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/30/fisa-section-702-congress-extension.html",
+      "title": "FISA Section 702: Congress passes short-term surveillance program extension just before deadline",
+      "article": "The controversial foreign surveillance program was due to expire by the end of Thursday.",
+      "fp": "fisa section 702: congress passes short-term surveillance program extension just before deadline the controversial foreign surveillance program was due to expire by the end of thursday.",
+      "published": "Thu, 30 Apr 2026 21:09:18 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/30/senate-prediction-markets-trading-ban-kalshi-polymarket.html",
+      "title": "U.S. senators ban themselves from prediction markets trading",
+      "article": "The move came after Democratic lawmakers asked the Commodity Futures Trading Commission to prohibit event contracts on elections, war and military actions.",
+      "fp": "u.s. senators ban themselves from prediction markets trading the move came after democratic lawmakers asked the commodity futures trading commission to prohibit event contracts on elections, war and military actions.",
+      "published": "Thu, 30 Apr 2026 21:37:12 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/30/trump-taps-nicole-saphier-for-surgeon-general-after-pulling-casey-means.html",
+      "title": "Trump taps Nicole Saphier for surgeon general after pulling Casey Means nomination",
+      "article": "Means' nomination had stalled in the Senate over concerns about her controversial stances on vaccines, birth control, pesticides and psychedelics.",
+      "fp": "trump taps nicole saphier for surgeon general after pulling casey means nomination means' nomination had stalled in the senate over concerns about her controversial stances on vaccines, birth control, pesticides and psychedelics.",
+      "published": "Thu, 30 Apr 2026 18:38:33 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/30/congress-house-maha-pesticide-farm-bill-roundup-bayer-glyphosate.html",
+      "title": "House strips MAHA-hated pesticide provisions from farm bill",
+      "article": "MAHA advocates said the language that was stripped could have provided liability protection for Bayer in lawsuits involving its Roundup weedkiller.",
+      "fp": "house strips maha-hated pesticide provisions from farm bill maha advocates said the language that was stripped could have provided liability protection for bayer in lawsuits involving its roundup weedkiller.",
+      "published": "Thu, 30 Apr 2026 17:29:01 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/30/trump-assassination-attempt.html",
+      "title": "Trump says 'I don't think about' another assassination attempt",
+      "article": "Trump also said he was not inclined to wear a bulletproof vest, as some people have suggested after the arrest of a gunman over the weekend.",
+      "fp": "trump says 'i don't think about' another assassination attempt trump also said he was not inclined to wear a bulletproof vest, as some people have suggested after the arrest of a gunman over the weekend.",
+      "published": "Thu, 30 Apr 2026 21:39:33 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/04/30/trump-assassination-cole-allen-detention-whcd.html",
+      "title": "Cole Allen agrees to stay in jail before Trump assassination attempt trial",
+      "article": "Prosecutors say Allen was armed with a shotgun, a handgun and several knives when he tried to storm the White House Correspondents' Association dinner.",
+      "fp": "cole allen agrees to stay in jail before trump assassination attempt trial prosecutors say allen was armed with a shotgun, a handgun and several knives when he tried to storm the white house correspondents' association dinner.",
+      "published": "Thu, 30 Apr 2026 21:52:55 GMT"
     }
   ],
   "japan_news": [
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111661000.html",
+      "title": "長期金利 2.5％超 原油先物価格上昇で物価高加速に警戒感",
+      "article": "イラン情勢をめぐるアメリカとイランの協議に不透明感が広がる中、30日の債券市場では長期金利が2.5％を超え、およそ27年ぶりの高い水準となりました。原油先物価格が一段と上昇し、国内の物価高が加速するのではないかという警戒感が強まったのが背景で、日中は株安と円安も進みました。",
+      "fp": "長期金利 2.5％超 原油先物価格上昇で物価高加速に警戒感 イラン情勢をめぐるアメリカとイランの協議に不透明感が広がる中、30日の債券市場では長期金利が2.5％を超え、およそ27年ぶりの高い水準となりました。原油先物価格が一段と上昇し、国内の物価高が加速するのではないかという警戒感が強まったのが背景で、日中は株安と円安も進みました。",
+      "published": "Thu, 30 Apr 2026 19:27:08 +0900"
+    },
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111271000.html",
+      "title": "NY原油1バレル＝110ドル台まで上昇 イラン事態悪化懸念で",
+      "article": "30日のニューヨーク原油市場ではトランプ大統領が近くイランへの新たな軍事行動の計画について軍から説明を受けると報じられるなか、国際的な取り引きの指標となるWTIの先物価格が一時、1バレル＝110ドル台まで上昇しました。これは4月上旬以来、およそ3週間ぶりの高値水準です。",
+      "fp": "ny原油1バレル＝110ドル台まで上昇 イラン事態悪化懸念で 30日のニューヨーク原油市場ではトランプ大統領が近くイランへの新たな軍事行動の計画について軍から説明を受けると報じられるなか、国際的な取り引きの指標となるwtiの先物価格が一時、1バレル＝110ドル台まで上昇しました。これは4月上旬以来、およそ3週間ぶりの高値水準です。",
+      "published": "Thu, 30 Apr 2026 18:22:34 +0900"
+    },
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111831000.html",
+      "title": "大手銀行 住宅ローン固定金利引き上げ 長期金利上昇を背景に",
+      "article": "大手銀行 住宅ローン固定金利引き上げ 長期金利上昇を背景に",
+      "fp": "大手銀行 住宅ローン固定金利引き上げ 長期金利上昇を背景に 大手銀行 住宅ローン固定金利引き上げ 長期金利上昇を背景に",
+      "published": "Thu, 30 Apr 2026 18:20:47 +0900"
+    },
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111451000.html",
+      "title": "株価 値下がり 原油先物価格の上昇で",
+      "article": "株価 値下がり 原油先物価格の上昇で",
+      "fp": "株価 値下がり 原油先物価格の上昇で 株価 値下がり 原油先物価格の上昇で",
+      "published": "Thu, 30 Apr 2026 16:32:21 +0900"
+    },
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111331000.html",
+      "title": "3月の鉱工業生産指数2か月連続低下 基調判断「一進一退」維持",
+      "article": "企業の生産活動を示す3月の鉱工業生産指数は、2か月連続で低下しました。経済産業省は、4月と5月は指数の上昇が見込まれるものの、イラン情勢も念頭に基調判断は「一進一退」で据え置きました。",
+      "fp": "3月の鉱工業生産指数2か月連続低下 基調判断「一進一退」維持 企業の生産活動を示す3月の鉱工業生産指数は、2か月連続で低下しました。経済産業省は、4月と5月は指数の上昇が見込まれるものの、イラン情勢も念頭に基調判断は「一進一退」で据え置きました。",
+      "published": "Thu, 30 Apr 2026 12:57:55 +0900"
+    },
     {
       "link": "http://www3.nhk.or.jp/news/html/20260430/k10015112161000.html",
       "title": "不正会計のニデックに違約金 東証が正式発表 KDDIにも",
@@ -206,11 +297,18 @@
       "published": "Thu, 30 Apr 2026 21:47:27 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111901000.html",
-      "title": "政府備蓄米 2回の入札通じ8割余落札 値下がりの見方背景か",
-      "article": "ことし生産されるコメを対象とした政府備蓄米の買い入れで、これまでの2回の入札を通じ予定数量の8割余りが落札されました。関係者によりますと、国が設定した価格は業者間の取引価格を大きく下回るということで、業界でさらに値下がりするとの見方が強まっていることがうかがえます。",
-      "fp": "政府備蓄米 2回の入札通じ8割余落札 値下がりの見方背景か ことし生産されるコメを対象とした政府備蓄米の買い入れで、これまでの2回の入札を通じ予定数量の8割余りが落札されました。関係者によりますと、国が設定した価格は業者間の取引価格を大きく下回るということで、業界でさらに値下がりするとの見方が強まっていることがうかがえます。",
-      "published": "Thu, 30 Apr 2026 19:56:27 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111821000.html",
+      "title": "投資ファンド 牧野フライスのTOB断念 政府勧告受け入れる",
+      "article": "工作機械メーカーの牧野フライス製作所に対するTOB＝株式公開買い付けをめぐって、政府から中止するよう勧告を受けていたアジア系の投資ファンドが、30日、勧告を受け入れ、TOBを断念すると明らかにしました。",
+      "fp": "投資ファンド 牧野フライスのtob断念 政府勧告受け入れる 工作機械メーカーの牧野フライス製作所に対するtob＝株式公開買い付けをめぐって、政府から中止するよう勧告を受けていたアジア系の投資ファンドが、30日、勧告を受け入れ、tobを断念すると明らかにしました。",
+      "published": "Thu, 30 Apr 2026 19:47:50 +0900"
+    },
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260501/k10015112141000.html",
+      "title": "米アップル 3か月間決算 新型iPhone売り上げ好調 業績押し上げ",
+      "article": "アメリカのIT大手、「アップル」が4月30日に発表した3月までの3か月間の決算では、売り上げが前の年の同じ時期から16.5％増えて、1111億8400万ドル、日本円にしておよそ17兆4000億円、最終的な利益も19.3％増えて、295億7800万ドル、日本円にしておよそ4兆6000億円となりました。新型iPhoneの売り上げが好調だったことなどが背景にあります。4月に明らかになったティム・クックCEOの退任表明から初めてとなる電話会見が行われていて、今後の戦略をめぐる発言に注目が集まっています。",
+      "fp": "米アップル 3か月間決算 新型iphone売り上げ好調 業績押し上げ アメリカのit大手、「アップル」が4月30日に発表した3月までの3か月間の決算では、売り上げが前の年の同じ時期から16.5％増えて、1111億8400万ドル、日本円にしておよそ17兆4000億円、最終的な利益も19.3％増えて、295億7800万ドル、日本円にしておよそ4兆6000億円となりました。新型iphoneの売り上げが好調だったことなどが背景にあります。4月に明らかになったティム・クックceoの退任表明から初めてとなる電話会見が行われていて、今後の戦略をめぐる発言に注目が集まっています。",
+      "published": "Fri, 01 May 2026 06:26:59 +0900"
     },
     {
       "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111611000.html",
@@ -220,39 +318,11 @@
       "published": "Thu, 30 Apr 2026 19:52:07 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111821000.html",
-      "title": "投資ファンド 牧野フライスのTOB断念 政府勧告受け入れる",
-      "article": "工作機械メーカーの牧野フライス製作所に対するTOB＝株式公開買い付けをめぐって、政府から中止するよう勧告を受けていたアジア系の投資ファンドが、30日、勧告を受け入れ、TOBを断念すると明らかにしました。",
-      "fp": "投資ファンド 牧野フライスのtob断念 政府勧告受け入れる 工作機械メーカーの牧野フライス製作所に対するtob＝株式公開買い付けをめぐって、政府から中止するよう勧告を受けていたアジア系の投資ファンドが、30日、勧告を受け入れ、tobを断念すると明らかにしました。",
-      "published": "Thu, 30 Apr 2026 19:47:50 +0900"
-    },
-    {
-      "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111911000.html",
-      "title": "台湾で再生医療向け細胞量産工場開所 日本からの受注拡大期待",
-      "article": "台湾で再生医療向け細胞量産工場開所 日本からの受注拡大期待",
-      "fp": "台湾で再生医療向け細胞量産工場開所 日本からの受注拡大期待 台湾で再生医療向け細胞量産工場開所 日本からの受注拡大期待",
-      "published": "Thu, 30 Apr 2026 19:46:38 +0900"
-    },
-    {
       "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111591000.html",
       "title": "日本航空 今年度1100億円黒字の予想 燃料コスト増はカバー可能",
       "article": "航空大手の日本航空は今年度の業績見通しを明らかにし、最終的な利益は昨年度に比べ20％減って、1100億円の黒字になるとしています。ただ、イラン情勢を受けた航空燃料のコストの増加は国際線の燃油サーチャージの引き上げや好調なインバウンド需要などでカバーできるとしています。",
       "fp": "日本航空 今年度1100億円黒字の予想 燃料コスト増はカバー可能 航空大手の日本航空は今年度の業績見通しを明らかにし、最終的な利益は昨年度に比べ20％減って、1100億円の黒字になるとしています。ただ、イラン情勢を受けた航空燃料のコストの増加は国際線の燃油サーチャージの引き上げや好調なインバウンド需要などでカバーできるとしています。",
       "published": "Thu, 30 Apr 2026 19:41:26 +0900"
-    },
-    {
-      "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111921000.html",
-      "title": "石油備蓄の追加放出 開始が5月2日にずれ込む 悪天候影響",
-      "article": "イラン情勢を受けて政府が行う、石油の「国家備蓄」の追加放出について、悪天候で準備作業が遅れたため、当初予定していた5月1日から、2日にずれ込むことになりました。",
-      "fp": "石油備蓄の追加放出 開始が5月2日にずれ込む 悪天候影響 イラン情勢を受けて政府が行う、石油の「国家備蓄」の追加放出について、悪天候で準備作業が遅れたため、当初予定していた5月1日から、2日にずれ込むことになりました。",
-      "published": "Thu, 30 Apr 2026 19:28:18 +0900"
-    },
-    {
-      "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111661000.html",
-      "title": "長期金利 2.5％超 原油先物価格上昇で物価高加速に警戒感",
-      "article": "イラン情勢をめぐるアメリカとイランの協議に不透明感が広がる中、30日の債券市場では長期金利が2.5％を超え、およそ27年ぶりの高い水準となりました。原油先物価格が一段と上昇し、国内の物価高が加速するのではないかという警戒感が強まったのが背景で、日中は株安と円安も進みました。",
-      "fp": "長期金利 2.5％超 原油先物価格上昇で物価高加速に警戒感 イラン情勢をめぐるアメリカとイランの協議に不透明感が広がる中、30日の債券市場では長期金利が2.5％を超え、およそ27年ぶりの高い水準となりました。原油先物価格が一段と上昇し、国内の物価高が加速するのではないかという警戒感が強まったのが背景で、日中は株安と円安も進みました。",
-      "published": "Thu, 30 Apr 2026 19:27:08 +0900"
     },
     {
       "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111751000.html",
@@ -262,18 +332,25 @@
       "published": "Thu, 30 Apr 2026 19:25:03 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111841000.html",
-      "title": "円相場 値下がり 一時1ドル＝160円台に イラン情勢長期化懸念",
-      "article": "4月30日の東京外国為替市場、アメリカとイランの間で戦闘終結に向けた協議が停滞する中、原油の先物価格が上昇したことを受けて、ドルを買って円を売る動きが進み、円相場は値下がりしました。",
-      "fp": "円相場 値下がり 一時1ドル＝160円台に イラン情勢長期化懸念 4月30日の東京外国為替市場、アメリカとイランの間で戦闘終結に向けた協議が停滞する中、原油の先物価格が上昇したことを受けて、ドルを買って円を売る動きが進み、円相場は値下がりしました。",
-      "published": "Thu, 30 Apr 2026 19:19:46 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111711000.html",
+      "title": "レギュラーガソリン全国平均 1リットルあたり169.7円に",
+      "article": "レギュラーガソリンの小売価格は今週27日時点の全国平均で1リットルあたり169.7円と前の週より0.2円値上がりしました。政府による激変緩和措置で170円程度の水準が続いています。",
+      "fp": "レギュラーガソリン全国平均 1リットルあたり169.7円に レギュラーガソリンの小売価格は今週27日時点の全国平均で1リットルあたり169.7円と前の週より0.2円値上がりしました。政府による激変緩和措置で170円程度の水準が続いています。",
+      "published": "Thu, 30 Apr 2026 15:35:02 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111831000.html",
-      "title": "大手銀行 住宅ローン固定金利引き上げ 長期金利上昇を背景に",
-      "article": "大手銀行 住宅ローン固定金利引き上げ 長期金利上昇を背景に",
-      "fp": "大手銀行 住宅ローン固定金利引き上げ 長期金利上昇を背景に 大手銀行 住宅ローン固定金利引き上げ 長期金利上昇を背景に",
-      "published": "Thu, 30 Apr 2026 18:20:47 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111911000.html",
+      "title": "台湾で再生医療向け細胞量産工場開所 日本からの受注拡大期待",
+      "article": "台湾で再生医療向け細胞量産工場開所 日本からの受注拡大期待",
+      "fp": "台湾で再生医療向け細胞量産工場開所 日本からの受注拡大期待 台湾で再生医療向け細胞量産工場開所 日本からの受注拡大期待",
+      "published": "Thu, 30 Apr 2026 19:46:38 +0900"
+    },
+    {
+      "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111921000.html",
+      "title": "石油備蓄の追加放出 開始が5月2日にずれ込む 悪天候影響",
+      "article": "イラン情勢を受けて政府が行う、石油の「国家備蓄」の追加放出について、悪天候で準備作業が遅れたため、当初予定していた5月1日から、2日にずれ込むことになりました。",
+      "fp": "石油備蓄の追加放出 開始が5月2日にずれ込む 悪天候影響 イラン情勢を受けて政府が行う、石油の「国家備蓄」の追加放出について、悪天候で準備作業が遅れたため、当初予定していた5月1日から、2日にずれ込むことになりました。",
+      "published": "Thu, 30 Apr 2026 19:28:18 +0900"
     },
     {
       "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111601000.html",
@@ -283,13 +360,6 @@
       "published": "Thu, 30 Apr 2026 17:30:51 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111451000.html",
-      "title": "株価 値下がり 原油先物価格の上昇で",
-      "article": "株価 値下がり 原油先物価格の上昇で",
-      "fp": "株価 値下がり 原油先物価格の上昇で 株価 値下がり 原油先物価格の上昇で",
-      "published": "Thu, 30 Apr 2026 16:32:21 +0900"
-    },
-    {
       "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111701000.html",
       "title": "花王 臨時総会で投資ファンドが求めた調達先の調査提案を否決",
       "article": "日用品大手の花王は4月30日、臨時の株主総会を開き、原材料のパーム油などの調達先をめぐり、香港の投資ファンドがみずからが選んだメンバーによる調査を行うよう求めた提案が否決されました。会社は第三者による調査を実施し、年内に結果を公表する方針です。",
@@ -297,11 +367,11 @@
       "published": "Thu, 30 Apr 2026 16:14:10 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111711000.html",
-      "title": "レギュラーガソリン全国平均 1リットルあたり169.7円に",
-      "article": "レギュラーガソリンの小売価格は今週27日時点の全国平均で1リットルあたり169.7円と前の週より0.2円値上がりしました。政府による激変緩和措置で170円程度の水準が続いています。",
-      "fp": "レギュラーガソリン全国平均 1リットルあたり169.7円に レギュラーガソリンの小売価格は今週27日時点の全国平均で1リットルあたり169.7円と前の週より0.2円値上がりしました。政府による激変緩和措置で170円程度の水準が続いています。",
-      "published": "Thu, 30 Apr 2026 15:35:02 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111901000.html",
+      "title": "政府備蓄米 2回の入札通じ8割余落札 値下がりの見方背景か",
+      "article": "ことし生産されるコメを対象とした政府備蓄米の買い入れで、これまでの2回の入札を通じ予定数量の8割余りが落札されました。関係者によりますと、国が設定した価格は業者間の取引価格を大きく下回るということで、業界でさらに値下がりするとの見方が強まっていることがうかがえます。",
+      "fp": "政府備蓄米 2回の入札通じ8割余落札 値下がりの見方背景か ことし生産されるコメを対象とした政府備蓄米の買い入れで、これまでの2回の入札を通じ予定数量の8割余りが落札されました。関係者によりますと、国が設定した価格は業者間の取引価格を大きく下回るということで、業界でさらに値下がりするとの見方が強まっていることがうかがえます。",
+      "published": "Thu, 30 Apr 2026 19:56:27 +0900"
     },
     {
       "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111691000.html",
@@ -311,25 +381,18 @@
       "published": "Thu, 30 Apr 2026 14:58:40 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111331000.html",
-      "title": "3月の鉱工業生産指数2か月連続低下 基調判断「一進一退」維持",
-      "article": "企業の生産活動を示す3月の鉱工業生産指数は、2か月連続で低下しました。経済産業省は、4月と5月は指数の上昇が見込まれるものの、イラン情勢も念頭に基調判断は「一進一退」で据え置きました。",
-      "fp": "3月の鉱工業生産指数2か月連続低下 基調判断「一進一退」維持 企業の生産活動を示す3月の鉱工業生産指数は、2か月連続で低下しました。経済産業省は、4月と5月は指数の上昇が見込まれるものの、イラン情勢も念頭に基調判断は「一進一退」で据え置きました。",
-      "published": "Thu, 30 Apr 2026 12:57:55 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260501/k10015111991000.html",
+      "title": "“農業しながら太陽光発電”規制を強化へ 農水省",
+      "article": "田んぼや畑で作物を育てながら行う太陽光発電について、農林水産省は適切に栽培されていないケースが相次いでいるなどとして、認める基準に作物の販売実績を加えるなど規制を強化する方針です。",
+      "fp": "“農業しながら太陽光発電”規制を強化へ 農水省 田んぼや畑で作物を育てながら行う太陽光発電について、農林水産省は適切に栽培されていないケースが相次いでいるなどとして、認める基準に作物の販売実績を加えるなど規制を強化する方針です。",
+      "published": "Fri, 01 May 2026 05:34:39 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111571000.html",
-      "title": "中国 4月製造業景況感  節目上回る 生産が増加 原油高が焦点に",
-      "article": "中国の4月の製造業の景況感を示す指数は、航空宇宙や電機などの業種で生産や受注が増加したことから、景気判断の節目となる「50」を2か月連続で上回りました。ただ、イラン情勢を背景に原油価格が高止まりしていて、今後、企業の景況感にどう影響するかが焦点となります。",
-      "fp": "中国 4月製造業景況感  節目上回る 生産が増加 原油高が焦点に 中国の4月の製造業の景況感を示す指数は、航空宇宙や電機などの業種で生産や受注が増加したことから、景気判断の節目となる「50」を2か月連続で上回りました。ただ、イラン情勢を背景に原油価格が高止まりしていて、今後、企業の景況感にどう影響するかが焦点となります。",
-      "published": "Thu, 30 Apr 2026 12:55:39 +0900"
-    },
-    {
-      "link": "http://www3.nhk.or.jp/news/html/20260430/k10015111431000.html",
-      "title": "きょうのおはBiz4月30日(木) 日銀 “タカ派”の姿勢にじむも…",
-      "article": "NHKニュース「おはよう日本」で平日朝に放送している経済ニュースコーナー「おはBiz」。最新のビジネストレンドや働き方、お役立ちサービスやスタートアップ企業の情報など、ギュギュっとコンパクトにお届けします。",
-      "fp": "きょうのおはbiz4月30日(木) 日銀 “タカ派”の姿勢にじむも… nhkニュース「おはよう日本」で平日朝に放送している経済ニュースコーナー「おはbiz」。最新のビジネストレンドや働き方、お役立ちサービスやスタートアップ企業の情報など、ギュギュっとコンパクトにお届けします。",
-      "published": "Thu, 30 Apr 2026 11:53:22 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260501/k10015111981000.html",
+      "title": "鈴木農相 “ロヒンギャの人たちへの食料支援を検討”",
+      "article": "バングラデシュを訪れている鈴木農林水産大臣は、ロヒンギャの人たちが避難生活を続けている難民キャンプを訪問し、日本として食料面での支援を検討する考えを示しました。",
+      "fp": "鈴木農相 “ロヒンギャの人たちへの食料支援を検討” バングラデシュを訪れている鈴木農林水産大臣は、ロヒンギャの人たちが避難生活を続けている難民キャンプを訪問し、日本として食料面での支援を検討する考えを示しました。",
+      "published": "Fri, 01 May 2026 05:40:01 +0900"
     }
   ]
 }
