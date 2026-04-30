@@ -1,22 +1,22 @@
 {
   "links": [
-    "https://www.cnbc.com/2026/04/29/amazon-amzn-q1-earnings-report-2026.html",
-    "https://www.cnbc.com/2026/04/29/oil-prices-brent-wti-trump-iran.html",
-    "https://www.cnbc.com/2026/04/29/fed-interest-rate-decision-april-2026.html",
-    "https://www.cnbc.com/2026/04/29/alphabet-googl-q1-2026-earnings.html",
-    "https://www.cnbc.com/2026/04/29/microsoft-msft-q3-earnings-report-2026.html",
-    "http://www3.nhk.or.jp/news/html/20260430/k10015111271000.html",
-    "http://www3.nhk.or.jp/news/html/20260430/k10015111161000.html",
-    "http://www3.nhk.or.jp/news/html/20260429/k10015110781000.html"
+    "https://finance.yahoo.com/research/reports/ARGUS_46894_MarketOutlook_1777548366000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
+    "https://finance.yahoo.com/markets/stocks/live/stock-market-today-thursday-april-30-dow-nasdaq-sp-mixed-earnings-fed-233115208.html",
+    "http://www3.nhk.or.jp/news/html/20260430/k10015112041000.html",
+    "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-inflation-data-meta-stock-meta-earnings/?src=A00220&yptr=yahoo",
+    "http://www3.nhk.or.jp/news/html/20260430/k10015112191000.html",
+    "https://www.investors.com/news/valero-energy-earnings-q1-oil-stock-vlo-surging-spreads/?src=A00220&yptr=yahoo",
+    "http://www3.nhk.or.jp/news/html/20260430/k10015112181000.html",
+    "https://www.barrons.com/articles/qualcomm-earnings-stock-price-datacenter-6296d00b?siteid=yhoof2&yptr=yahoo"
   ],
   "fingerprints": [
-    "donald trump（特朗普）表示将封锁iran直至其达成核协议，brent原油价格突破118美元 the latest move higher comes amid reports that the u.s. will look to extend its blockade of iranian ports.",
-    "fed维持利率不变，但出现1992年以来最严重的分歧 the federal reserve on wednesday released its latest decision on interest rates.",
-    "受内存价格飙升影响，microsoft预计2026年资本支出将达1900亿美元 microsoft's forecast on revenue and operating margin was light, but the company sees $190 billion in 2026 capital spending, well above wall street's estimate.",
-    "alphabet将2026年资本支出提高至1900亿美元，并预计2027年将“显著增加” alphabet reported first-quarter earnings, posting booming cloud revenue and upping its full-year capex spend to as much as $190 billion.",
-    "amazon财报超出预期，云计算业务增长强劲 revenue in amazon's cloud computing segment expanded 28% year over year, topping analysts' estimates.",
-    "美联储（frb）连续3次会议维持利率不变，jerome powell（鲍威尔）主席表示“担忧法律层面冲击” アメリカのfrb＝連邦準備制度理事会は金融政策を決める会合を開き、イラン情勢を受けた物価上昇などを踏まえ、利下げを見送り政策金利を据え置くと発表しました。5月に任期を終えるパウエル議長は会合後の記者会見で「懸念しているのはfrbに対する一連の法的な攻撃だ」と述べ、政治から独立して金融政策を判断する重要性を強調しました。",
-    "受伊朗局势长期化担忧影响，纽约原油市场价格上涨至每桶108美元区间 29日のニューヨーク原油市場では、アメリカとイランの間で戦闘終結に向けた協議が停滞するなか、ホルムズ海峡の事実上の封鎖が続くとの懸念から、国際的な取り引きの指標となるwtiの先物価格は一時、1バレル＝108ドル台まで上昇しました。これは、4月上旬以来、およそ3週間ぶりの高値水準です。",
-    "与日本有关的大型油轮通过霍尔木兹海峡 イランの国営メディアは原油を積載した日本関係の大型タンカーがイラン当局の許可を得てホルムズ海峡を通過したと報じました。船の位置情報を公開している「マリントラフィック」では目的地は名古屋とされ、このまま日本に向かった場合、ホルムズ海峡の事実上の封鎖以降、日本企業が管理する船舶で海峡を通過した初めての事例になります。高市総理大臣は、日本人乗組員3人が乗船した日本関係船舶1隻が、ホルムズ海峡を無事に通過し、日本に向けて航行していることを確認したと明らかにしました。"
+    "qualcomm soars after earnings thanks to ceo’s big tease qualcomm soars after earnings thanks to ceo’s big tease",
+    "stock market today: dow climbs, nasdaq sinks as tech stocks sell off after 'magnificent 7' results stock market today: dow climbs, nasdaq sinks as tech stocks sell off after 'magnificent 7' results",
+    "valero energy earnings skyrocket as key metric swells amid iran war valero energy earnings skyrocket as key metric swells amid iran war",
+    "stock market today: dow up 600 points on inflation data; caterpillar soars past entry, meta plunges (live coverage) stock market today: dow up 600 points on inflation data; caterpillar soars past entry, meta plunges (live coverage)",
+    "daily spotlight: fed dissents put rate cuts in doubt daily spotlight: fed dissents put rate cuts in doubt",
+    "円相場 一時1ドル＝155円台まで値上がり 市場介入の見方も 外国為替市場では4月30日夜、円を買う動きが急激に広がり、日中、1ドル＝160円台後半だった円相場は5円以上円高が進んで一時1ドル＝155円台まで値上がりしました。片山財務大臣が円安を強くけん制したあとの急激な動きに、市場関係者からは政府・日銀が市場介入に踏み切ったのではないかという見方も出ています。",
+    "フォルクスワーゲン 3か月間決算 最終利益は去年より29％余減 ドイツの自動車大手、フォルクスワーゲンはことし3月までの3か月間の決算を発表し、アメリカの関税措置や中国市場での競争の激化などの影響で、最終的な利益は去年の同じ時期に比べて29％余り減少しました。",
+    "欧州中央銀行 7会合連続で金利据え置き 今後は利上げ焦点か ヨーロッパ中央銀行は金融政策を決める理事会で主要な政策金利を7会合連続で据え置くことを決めました。イラン情勢を受けたエネルギー価格の高騰が続くなか今後は利上げに踏み切るかどうかが焦点となります。"
   ]
 }
