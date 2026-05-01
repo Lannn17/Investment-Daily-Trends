@@ -70,15 +70,16 @@ JAPAN_NEWS_URLS     = [u.strip() for u in get_cfg('japan_news',  'url', '').spli
 
 # ── Gemini model chains ───────────────────────────────────────────────────────
 GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY')
-DEFAULT_MODEL  = os.environ.get('GEMINI_MODEL') or 'gemini-3.1-flash-lite-preview'
+DEFAULT_MODEL  = os.environ.get('GEMINI_MODEL')   or 'gemini-3.1-flash-lite-preview'
+FALLBACK_MODEL = os.environ.get('GEMINI_FALLBACK') or 'gemini-2.5-flash'
 
 def _chain(*models):
     return [m.strip() for m in models if m and m.strip()]
 
-SCORE_MODEL_CHAIN     = _chain(os.environ.get('SCORE_MODEL'),     DEFAULT_MODEL)
-TRANSLATE_MODEL_CHAIN = _chain(os.environ.get('TRANSLATE_MODEL'), DEFAULT_MODEL)
-SUMMARY_MODEL_CHAIN   = _chain(os.environ.get('SUMMARY_MODEL'),   DEFAULT_MODEL)
-WATCHLIST_MODEL_CHAIN = _chain(os.environ.get('WATCHLIST_MODEL'), DEFAULT_MODEL)
+SCORE_MODEL_CHAIN     = _chain(os.environ.get('SCORE_MODEL'),     DEFAULT_MODEL, FALLBACK_MODEL)
+TRANSLATE_MODEL_CHAIN = _chain(os.environ.get('TRANSLATE_MODEL'), DEFAULT_MODEL, FALLBACK_MODEL)
+SUMMARY_MODEL_CHAIN   = _chain(os.environ.get('SUMMARY_MODEL'),   DEFAULT_MODEL, FALLBACK_MODEL)
+WATCHLIST_MODEL_CHAIN = _chain(os.environ.get('WATCHLIST_MODEL'), DEFAULT_MODEL, FALLBACK_MODEL)
 
 print(f"[models] score={SCORE_MODEL_CHAIN} translate={TRANSLATE_MODEL_CHAIN} "
       f"summary={SUMMARY_MODEL_CHAIN} watchlist={WATCHLIST_MODEL_CHAIN}")

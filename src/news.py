@@ -27,7 +27,7 @@ def fetch_feed(url):
         headers = {'User-Agent': ua.random.strip()}
         resp = requests.get(url, headers=headers, timeout=20)
         if resp.status_code == 200:
-            return feedparser.parse(resp.text)
+            return feedparser.parse(resp.content)
         print(f"  [rss] HTTP {resp.status_code} for {url}")
     except Exception as e:
         print(f"  [rss] Fetch failed ({url}): {e}")

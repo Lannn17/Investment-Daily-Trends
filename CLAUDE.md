@@ -1,6 +1,6 @@
 # CLAUDE.md — Project Memory
 
-Current version: v0.7.2
+Current version: v0.7.3
 
 ---
 
@@ -100,4 +100,4 @@ Follows Semantic Versioning: `vMAJOR.MINOR.PATCH`
 - **Email structure**: Block 1 = Price Dashboard, Block 2 = Market News (always separated)
 - **Price table**: today-only view; 5-day tab removed as of v0.2.0
 - **Block 1 AI analysis**: all indices, commodities, FX, and watchlist items analysed in one combined Gemini call
-- **Gemini model**: gemini-3.1-flash-lite-preview (default); fallback models via env vars
+- **Gemini model**: gemini-3.1-flash-lite-preview (default); gemini-2.5-flash (fallback) — **do not change models without explicit user instruction**

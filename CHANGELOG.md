@@ -5,6 +5,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [v0.7.3] - 2026-05-01
+
+### Fixed
+- RSS encoding: pass `resp.content` (raw bytes) to feedparser instead of `resp.text` so feedparser reads the XML encoding declaration; fixes garbled Japanese text from NHK RSS feeds
+- Gemini fallback: added `gemini-2.5-flash` as second model in all chains so AI calls survive primary model quota exhaustion
+
+中文摘要：修复 NHK RSS 日文乱码（改用原始字节让 feedparser 自行处理编码）；为所有 AI 调用链添加 `gemini-2.5-flash` 备用模型，防止主模型配额耗尽时全面失败。
+
+---
+
 ## [v0.7.2] - 2026-04-13
 
 ### Fixed
