@@ -1,22 +1,22 @@
 {
   "links": [
-    "http://www3.nhk.or.jp/news/html/20260430/k10015111841000.html",
-    "https://www.cnbc.com/2026/04/30/eli-lilly-lly-earnings-q1-2026.html",
-    "https://www.cnbc.com/2026/04/30/google-microsoft-and-amazon-all-report-cloud-beats-in-earnings.html",
-    "http://www3.nhk.or.jp/news/html/20260501/k10015112331000.html",
-    "https://www.cnbc.com/2026/04/30/apple-aapl-q2-2026-earnings-report.html",
-    "https://www.cnbc.com/2026/04/30/oil-prices-today-brent-wti-us-iran-war-trump.html",
-    "http://www3.nhk.or.jp/news/html/20260501/k10015112351000.html",
-    "https://www.cnbc.com/2026/04/30/pce-inflation-rate-march-2026.html"
+    "http://www3.nhk.or.jp/news/html/20260501/k10015112741000.html",
+    "https://finance.yahoo.com/markets/stocks/live/stock-market-today-friday-may-1-records-apple-iran-231056146.html",
+    "https://www.cnbc.com/2026/05/01/oil-prices-today-brent-wti-us-iran-war-trump-war-powers-deadline.html",
+    "http://www3.nhk.or.jp/news/html/20260501/k10015112931000.html",
+    "https://www.cnbc.com/2026/05/01/atlassian-team-q3-stock-2026-earnings.html",
+    "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-apple-earnings-roblox-sandisk-westen-digital/?src=A00220&yptr=yahoo",
+    "https://finance.yahoo.com/markets/stocks/articles/bank-america-resets-microsoft-stock-010300179.html",
+    "http://www3.nhk.or.jp/news/html/20260501/k10015112501000.html"
   ],
   "fingerprints": [
-    "apple营收指引超预期，受iphone和mac需求强劲推动 apple reported 17% revenue growth, topping estimates, even as iphone sales came up short.",
-    "google云业务增长超过microsoft和amazon，三家公司均因ai需求超预期 amazon, google and microsoft all reported better-than-expected first-quarter cloud results, signaling an acceleration of ai demand",
-    "3月核心通胀率达3.2%，一季度经济增长率不及预期仅为2% consumers faced escalating prices in march as the iran war sent oil soaring and created a new level of challenges for the fed.",
-    "受美伊局势升级担忧影响，brent原油在涨至每桶126美元后回落 brent crude surged to its highest levels since early 2022, before paring gains, as the middle east conflict chokes supplies.",
-    "eli lilly季度业绩大幅超过预期并上调前景展望，zepbound和mounjaro销售额飙升 lilly hiked its full-year sales outlook by $2 billion, and also raised its adjusted profit guidance.",
-    "纽约市场日元汇率处于1美元兑156日元区间，市场对干预汇市的警惕感增强 4月30日のニューヨーク外国為替市場では円相場が一時、1ドル＝155円台まで急激に値上がりした流れを引き継ぎ、1ドル＝156円台を中心にした取り引きとなっています。政府・日銀が市場介入に踏み切ったとの見方も出るなか、市場では介入への警戒感が再び高まっています。",
-    "日元汇率下跌，一度跌至1美元兑160日元区间，对伊朗局势长期化的担忧加剧 4月30日の東京外国為替市場、アメリカとイランの間で戦闘終結に向けた協議が停滞する中、原油の先物価格が上昇したことを受けて、ドルを買って円を売る動きが進み、円相場は値下がりしました。",
-    "道琼斯指数上涨790美元，nasdaq与s&p 500指数创下历史新高 4月30日のニューヨーク株式市場では、好調な業績を発表した企業に買い注文が集まり、ダウ平均株価は前日から790ドルの大幅な値上がりとなりました。ハイテク関連の銘柄が多いナスダックの株価指数などは最高値を更新しました。"
+    "今日股市：道琼斯指数、s&p 500、nasdaq在创下新高后继续上涨，财报陆续发布 stock market today: dow, s&p 500, nasdaq rise after record highs as earnings roll in",
+    "今日股市：道琼斯指数因apple财报表现强劲而上涨；roblox、sandisk、western digital股价大跌（实时报道） stock market today: dow rises as apple jumps on earnings; roblox, sandisk, western digital dive (live coverage)",
+    "bank of america在财报发布后下调了microsoft的股票预期 bank of america resets microsoft stock forecast after earnings",
+    "受伊朗已对和平协议草案作出回应的报道影响，油价下跌 under the 1973 war powers resolution, a u.s. president needs to withdraw troops 60 days after reporting their deployment to congress",
+    "atlassian财报显示云业务与数据中心业务强劲增长，股价飙升28% atlassian's stock has been hit hard in the \"saas-pocalypse\" sweeping software names as ai threatens to disrupt their business models.",
+    "政府和日本央行的市场干预或达5万亿日元规模 民间公司推测 政府・日銀の市場介入 5兆円規模か 民間会社の推計",
+    "日元汇率 受政府和日本央行市场干预影响大幅走强 30日、政府・日銀による市場介入が行われた外国為替市場、1日の日中は1ドル＝157円前後での取り引きが続いていましたが、夕方には一時、円が買われ、1ドル＝155円台半ばまで円高が進むなど荒い値動きとなりました。",
+    "【今日ohabiz 5月1日（周五）】“市场干预” 未来日元汇率走向如何？ nhkニュース「おはよう日本」で平日朝に放送している経済ニュースコーナー「おはbiz」。最新のビジネストレンドや働き方、お役立ちサービスやスタートアップ企業の情報など、ギュギュっとコンパクトにお届けします。"
   ]
 }
