@@ -1,214 +1,235 @@
 {
   "market_news": [
     {
-      "link": "https://finance.yahoo.com/personal-finance/investing/article/gold-and-silver-prices-today-monday-may-4-gold-and-silver-down-this-morning-after-project-freedom-announcement-110939701.html",
-      "title": "Gold and silver prices today, Monday, May 4: Gold and silver down this morning after 'Project Freedom' announcement",
-      "article": "Gold and silver prices today, Monday, May 4: Gold and silver down this morning after 'Project Freedom' announcement",
-      "fp": "gold and silver prices today, monday, may 4: gold and silver down this morning after 'project freedom' announcement gold and silver prices today, monday, may 4: gold and silver down this morning after 'project freedom' announcement",
-      "published": "2026-05-04T11:09:39Z"
+      "link": "https://www.cnbc.com/2026/05/04/gamestop-ebay-takeover-bid-ryan-cohen-gaming-retail-ecommerce.html",
+      "title": "GameStop stock sinks after surprise eBay takeover bid, Cohen's combative CNBC interview",
+      "article": "GameStop made a takeover bid for eBay, offering $125 per share in a cash-and-stock deal that values the e-commerce platform at roughly $55.5 billion.",
+      "fp": "gamestop stock sinks after surprise ebay takeover bid, cohen's combative cnbc interview gamestop made a takeover bid for ebay, offering $125 per share in a cash-and-stock deal that values the e-commerce platform at roughly $55.5 billion.",
+      "published": "Mon, 04 May 2026 20:15:50 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/article/circle-coinbase-surge-after-lawmakers-unveil-revised-stablecoin-rule-142938657.html",
-      "title": "Circle, Coinbase surge after lawmakers unveil revised stablecoin rule",
-      "article": "Circle, Coinbase surge after lawmakers unveil revised stablecoin rule",
-      "fp": "circle, coinbase surge after lawmakers unveil revised stablecoin rule circle, coinbase surge after lawmakers unveil revised stablecoin rule",
-      "published": "2026-05-04T14:29:38Z"
+      "link": "https://www.cnbc.com/2026/05/03/pirro-fed-powell.html",
+      "title": "Pirro changes course in Fed investigation, move unlikely to satisfy Powell",
+      "article": "The U.S. attorney opted not to appeal a ruling that had blocked her subpoenas to the Fed.",
+      "fp": "pirro changes course in fed investigation, move unlikely to satisfy powell the u.s. attorney opted not to appeal a ruling that had blocked her subpoenas to the fed.",
+      "published": "Mon, 04 May 2026 21:48:07 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/article/gamestop-stock-falls-after-company-proposes-56-billion-deal-for-ebay-122615350.html",
-      "title": "GameStop stock falls after company proposes $56 billion deal for eBay",
-      "article": "GameStop stock falls after company proposes $56 billion deal for eBay",
-      "fp": "gamestop stock falls after company proposes $56 billion deal for ebay gamestop stock falls after company proposes $56 billion deal for ebay",
-      "published": "2026-05-04T12:26:15Z"
+      "link": "https://www.cnbc.com/2026/05/04/spirit-airlines-shut-down-ceo-dave-davis.html",
+      "title": "Spirit Airlines CEO on carrier's collapse: 'We just kind of ran out of runway'",
+      "article": "Spirit Airlines shut down before dawn on Saturday ending its run as the most famous U.S. discount airline.",
+      "fp": "spirit airlines ceo on carrier's collapse: 'we just kind of ran out of runway' spirit airlines shut down before dawn on saturday ending its run as the most famous u.s. discount airline.",
+      "published": "Mon, 04 May 2026 21:28:34 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/news/factbox-global-drugmakers-rush-boost-174250083.html",
-      "title": "Factbox-Global drugmakers rush to boost US presence as tariff threat looms",
-      "article": "Factbox-Global drugmakers rush to boost US presence as tariff threat looms",
-      "fp": "factbox-global drugmakers rush to boost us presence as tariff threat looms factbox-global drugmakers rush to boost us presence as tariff threat looms",
-      "published": "2026-05-04T13:45:52Z"
+      "link": "https://www.cnbc.com/2026/05/04/paramount-skydance-psky-earnings-q1-2026.html",
+      "title": "Paramount earnings, revenue beat expectations as streaming business offers a boost",
+      "article": "Paramount Skydance said it added streaming subscribers during the first quarter even as it instituted its first price hike since 2024.",
+      "fp": "paramount earnings, revenue beat expectations as streaming business offers a boost paramount skydance said it added streaming subscribers during the first quarter even as it instituted its first price hike since 2024.",
+      "published": "Mon, 04 May 2026 20:48:58 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/crypto/articles/bitmine-reports-5-18-million-143700546.html",
-      "title": "BitMine Reports 5.18 Million ETH Holdings as Staking Revenue Reaches $297 Million",
-      "article": "BitMine Reports 5.18 Million ETH Holdings as Staking Revenue Reaches $297 Million",
-      "fp": "bitmine reports 5.18 million eth holdings as staking revenue reaches $297 million bitmine reports 5.18 million eth holdings as staking revenue reaches $297 million",
-      "published": "2026-05-04T14:37:00Z"
+      "link": "https://www.cnbc.com/2026/05/04/traders-are-doubtful-cohens-gamestop-can-pull-off-monster-ebay-acquisition.html",
+      "title": "Traders are doubtful Cohen's GameStop can pull off monster eBay acquisition",
+      "article": "Traders on Kalshi and Polymarket give the company just a 25% and 15% chance, respectively, of successfully buying the online marketplace.",
+      "fp": "traders are doubtful cohen's gamestop can pull off monster ebay acquisition traders on kalshi and polymarket give the company just a 25% and 15% chance, respectively, of successfully buying the online marketplace.",
+      "published": "Mon, 04 May 2026 19:30:48 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/sectors/energy/articles/big-oil-transformed-shareholder-friendly-145344888.html",
-      "title": "Big Oil Has Transformed Into Shareholder-Friendly Cash Machines, Says CNBC’s Halftime Report",
-      "article": "Big Oil Has Transformed Into Shareholder-Friendly Cash Machines, Says CNBC’s Halftime Report",
-      "fp": "big oil has transformed into shareholder-friendly cash machines, says cnbc’s halftime report big oil has transformed into shareholder-friendly cash machines, says cnbc’s halftime report",
-      "published": "2026-05-04T14:53:44Z"
+      "link": "https://www.cnbc.com/2026/05/04/ups-fedex-amazon-logistics.html",
+      "title": "UPS, FedEx stocks sink after Amazon expands logistics network to other businesses",
+      "article": "UPS and FedEx stocks sank Monday after Amazon announced it was opening up its supply chain network to outside companies.",
+      "fp": "ups, fedex stocks sink after amazon expands logistics network to other businesses ups and fedex stocks sank monday after amazon announced it was opening up its supply chain network to outside companies.",
+      "published": "Mon, 04 May 2026 20:03:20 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_46912_MarketSummary_1777893329000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "Market Digest: AMP, EPD, FCX, FHI, LLY, RCL, WDC, WY, META, HCA",
-      "article": "Market Digest: AMP, EPD, FCX, FHI, LLY, RCL, WDC, WY, META, HCA",
-      "fp": "market digest: amp, epd, fcx, fhi, lly, rcl, wdc, wy, meta, hca market digest: amp, epd, fcx, fhi, lly, rcl, wdc, wy, meta, hca",
-      "published": "2026-05-04T11:15:29Z"
+      "link": "https://www.cnbc.com/2026/05/04/fed-kevin-warsh-interest-rates.html",
+      "title": "Warsh's take on Fed independence is met with confusion and some concern",
+      "article": "Fed chair nominee Kevin Warsh is putting his own spin on the independence of monetary policy. Many former Fed officials aren't sold.",
+      "fp": "warsh's take on fed independence is met with confusion and some concern fed chair nominee kevin warsh is putting his own spin on the independence of monetary policy. many former fed officials aren't sold.",
+      "published": "Mon, 04 May 2026 14:21:20 GMT"
     },
     {
-      "link": "https://www.investors.com/news/tesla-rival-xiaomi-su7-orders-model-3/?src=A00220&yptr=yahoo",
-      "title": "Tesla Rival Jumps On Strong Orders For Updated Model 3 Competitor",
-      "article": "Tesla Rival Jumps On Strong Orders For Updated Model 3 Competitor",
-      "fp": "tesla rival jumps on strong orders for updated model 3 competitor tesla rival jumps on strong orders for updated model 3 competitor",
-      "published": "2026-05-04T13:49:00Z"
+      "link": "https://www.cnbc.com/2026/05/04/the-markets-next-test-could-come-down-to-two-stocks.html",
+      "title": "The market's next test could come down to two stocks",
+      "article": "AMD and Palantir results will drive the market this week. Options traders have a bullish tilt on the stocks ahead of the reports.",
+      "fp": "the market's next test could come down to two stocks amd and palantir results will drive the market this week. options traders have a bullish tilt on the stocks ahead of the reports.",
+      "published": "Mon, 04 May 2026 15:18:58 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/tyson-foods-delivers-q2-earnings-144800039.html",
-      "title": "Tyson Foods delivers Q2 earnings beat, supported by chicken business strength",
-      "article": "Tyson Foods delivers Q2 earnings beat, supported by chicken business strength",
-      "fp": "tyson foods delivers q2 earnings beat, supported by chicken business strength tyson foods delivers q2 earnings beat, supported by chicken business strength",
-      "published": "2026-05-04T14:48:00Z"
+      "link": "https://www.cnbc.com/2026/05/04/sec-and-elon-musk-agree-to-settle-lawsuit-over-twitter-buyout-in-2022.html",
+      "title": "SEC and Elon Musk agree to settle lawsuit over Twitter buyout in 2022",
+      "article": "The SEC and Elon Musk agreed to settle a lawsuit filed by the regulator last year against the world's richest person.",
+      "fp": "sec and elon musk agree to settle lawsuit over twitter buyout in 2022 the sec and elon musk agreed to settle a lawsuit filed by the regulator last year against the world's richest person.",
+      "published": "Mon, 04 May 2026 20:52:38 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/strong-results-lifted-ge-vernova-145046035.html",
-      "title": "Strong Results Lifted GE Vernova (GEV) in Q1",
-      "article": "Strong Results Lifted GE Vernova (GEV) in Q1",
-      "fp": "strong results lifted ge vernova (gev) in q1 strong results lifted ge vernova (gev) in q1",
-      "published": "2026-05-04T14:50:46Z"
+      "link": "https://www.cnbc.com/2026/05/04/spirit-airlines-flights-rivals.html",
+      "title": "How Spirit Airlines' demise will benefit rivals — and raise airfares even more",
+      "article": "Spirit Airlines' collapse will give some carriers more pricing power as they race to capture Spirit's customers.",
+      "fp": "how spirit airlines' demise will benefit rivals — and raise airfares even more spirit airlines' collapse will give some carriers more pricing power as they race to capture spirit's customers.",
+      "published": "Mon, 04 May 2026 16:31:11 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/sectors/healthcare/articles/guggenheim-trims-amgen-price-target-145030912.html",
-      "title": "Guggenheim Trims Amgen Price Target to $340: Is the Biotech Giant Losing Its Edge?",
-      "article": "Guggenheim Trims Amgen Price Target to $340: Is the Biotech Giant Losing Its Edge?",
-      "fp": "guggenheim trims amgen price target to $340: is the biotech giant losing its edge? guggenheim trims amgen price target to $340: is the biotech giant losing its edge?",
-      "published": "2026-05-04T14:50:30Z"
+      "link": "https://www.cnbc.com/2026/05/04/novo-nordisk-wegovy-pill-beating-eli-lilly-foundayo-early.html",
+      "title": "Novo Nordisk’s head start on GLP-1 pills forces investors to rethink Eli Lilly's dominance",
+      "article": "Early signs from the launch of Novo Nordisk's Wegovy pill and Eli Lilly & Co.'s Foundayo are making investors rethink the opportunity for GLP-1 pills.",
+      "fp": "novo nordisk’s head start on glp-1 pills forces investors to rethink eli lilly's dominance early signs from the launch of novo nordisk's wegovy pill and eli lilly & co.'s foundayo are making investors rethink the opportunity for glp-1 pills.",
+      "published": "Mon, 04 May 2026 21:13:28 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/why-micron-stock-keeps-going-144718579.html",
-      "title": "Why Micron Stock Keeps Going Up",
-      "article": "Why Micron Stock Keeps Going Up",
-      "fp": "why micron stock keeps going up why micron stock keeps going up",
-      "published": "2026-05-04T14:47:18Z"
+      "link": "https://www.cnbc.com/2026/05/04/whats-behind-eli-lillys-down-and-up-day-after-last-weeks-surge.html",
+      "title": "What's behind Eli Lilly's down-and-up day after last week's post-earnings surge",
+      "article": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
+      "fp": "what's behind eli lilly's down-and-up day after last week's post-earnings surge every weekday, the investing club releases the homestretch; an actionable afternoon update just in time for the last hour of trading.",
+      "published": "Mon, 04 May 2026 18:29:36 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-lifts-ionq-price-145510449.html",
-      "title": "Morgan Stanley Lifts IonQ Price Target to $47: Is the Quantum Computing Stock Finally Ready to Deliver?",
-      "article": "Morgan Stanley Lifts IonQ Price Target to $47: Is the Quantum Computing Stock Finally Ready to Deliver?",
-      "fp": "morgan stanley lifts ionq price target to $47: is the quantum computing stock finally ready to deliver? morgan stanley lifts ionq price target to $47: is the quantum computing stock finally ready to deliver?",
-      "published": "2026-05-04T14:55:10Z"
+      "link": "https://www.cnbc.com/2026/05/04/circle-jumps-16percent-on-clarity-act-compromise-that-preserves-stablecoin-rewards.html",
+      "title": "Circle jumps nearly 20% on Clarity Act compromise that preserves stablecoin rewards",
+      "article": "Lawmakers over the weekend reached a compromise on the market structure bill known as the CLARITY Act that keeps stablecoin reward programs intact.",
+      "fp": "circle jumps nearly 20% on clarity act compromise that preserves stablecoin rewards lawmakers over the weekend reached a compromise on the market structure bill known as the clarity act that keeps stablecoin reward programs intact.",
+      "published": "Mon, 04 May 2026 20:13:45 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/red-rock-resorts-rrr-faced-143431652.html",
-      "title": "Red Rock Resorts (RRR) Faced Pressure Despite Strong Fundamentals",
-      "article": "Red Rock Resorts (RRR) Faced Pressure Despite Strong Fundamentals",
-      "fp": "red rock resorts (rrr) faced pressure despite strong fundamentals red rock resorts (rrr) faced pressure despite strong fundamentals",
-      "published": "2026-05-04T14:34:31Z"
+      "link": "https://www.cnbc.com/2026/05/04/berkshire-shares-trade-higher-as-buffett-successor-abel-scores-good-marks-at-meeting-earnings-jump.html",
+      "title": "Berkshire shares trade lower even after Abel scores good marks at meeting, earnings jump",
+      "article": "Many in the investment community were reassured by Abel's firm grasp over Berkshire's sprawling enterprise.",
+      "fp": "berkshire shares trade lower even after abel scores good marks at meeting, earnings jump many in the investment community were reassured by abel's firm grasp over berkshire's sprawling enterprise.",
+      "published": "Mon, 04 May 2026 20:03:39 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/universal-logistics-slips-q1-loss-142824186.html",
-      "title": "Universal Logistics slips to Q1 loss as intermodal collapse deepens",
-      "article": "Universal Logistics slips to Q1 loss as intermodal collapse deepens",
-      "fp": "universal logistics slips to q1 loss as intermodal collapse deepens universal logistics slips to q1 loss as intermodal collapse deepens",
-      "published": "2026-05-04T14:28:24Z"
+      "link": "https://www.marketwatch.com/story/amazon-is-taking-on-fedex-and-ups-that-may-not-be-so-simple-101f1bcf?mod=mw_rss_topstories",
+      "title": "Amazon is taking on FedEx and UPS. That may not be so simple.",
+      "article": "FedEx and UPS shares are falling, but one analyst isn’t sure that Amazon’s new service will have a significantly disruptive effect.",
+      "fp": "amazon is taking on fedex and ups. that may not be so simple. fedex and ups shares are falling, but one analyst isn’t sure that amazon’s new service will have a significantly disruptive effect.",
+      "published": "Mon, 04 May 2026 23:05:00 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/makes-cognex-corporation-cgnx-compelling-142431901.html",
-      "title": "What Makes Cognex Corporation (CGNX) a Compelling Stock?",
-      "article": "What Makes Cognex Corporation (CGNX) a Compelling Stock?",
-      "fp": "what makes cognex corporation (cgnx) a compelling stock? what makes cognex corporation (cgnx) a compelling stock?",
-      "published": "2026-05-04T14:24:31Z"
+      "link": "https://www.marketwatch.com/story/tesla-just-hit-a-symbolic-self-driving-milestone-real-world-success-will-be-tougher-5fb93525?mod=mw_rss_topstories",
+      "title": "Tesla just hit a ‘symbolic’ self-driving milestone. Real-world success will be tougher.",
+      "article": "Tesla has reached the threshold Musk once said would be required to achieve “safe unsupervised self-driving,” but the company still faces various hurdles.",
+      "fp": "tesla just hit a ‘symbolic’ self-driving milestone. real-world success will be tougher. tesla has reached the threshold musk once said would be required to achieve “safe unsupervised self-driving,” but the company still faces various hurdles.",
+      "published": "Mon, 04 May 2026 23:02:00 GMT"
     },
     {
-      "link": "https://www.investors.com/news/technology/axsome-stock-axsome-therapeutics-earnings-q1-2026/?src=A00220&yptr=yahoo",
-      "title": "Axsome Continues To Breakneck Pace On Solid First-Quarter Sales",
-      "article": "Axsome Continues To Breakneck Pace On Solid First-Quarter Sales",
-      "fp": "axsome continues to breakneck pace on solid first-quarter sales axsome continues to breakneck pace on solid first-quarter sales",
-      "published": "2026-05-04T14:18:19Z"
+      "link": "https://www.cnbc.com/2026/05/04/anthropic-goldman-blackstone-ai-venture.html",
+      "title": "Anthropic teams with Goldman, Blackstone and others on $1.5 billion AI venture targeting PE-owned firms",
+      "article": "The move marks Anthropic's latest effort to deepen its lead in the market for enterprise AI as competition intensifies with rivals including OpenAI",
+      "fp": "anthropic teams with goldman, blackstone and others on $1.5 billion ai venture targeting pe-owned firms the move marks anthropic's latest effort to deepen its lead in the market for enterprise ai as competition intensifies with rivals including openai",
+      "published": "Mon, 04 May 2026 18:55:20 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/triggered-agilysys-agys-sharp-sell-141346190.html",
-      "title": "Here’s What Triggered Agilysys’ (AGYS) Sharp Sell Off",
-      "article": "Here’s What Triggered Agilysys’ (AGYS) Sharp Sell Off",
-      "fp": "here’s what triggered agilysys’ (agys) sharp sell off here’s what triggered agilysys’ (agys) sharp sell off",
-      "published": "2026-05-04T14:13:46Z"
+      "link": "https://www.marketwatch.com/story/heres-just-how-quickly-micron-has-risen-up-the-ranks-of-the-top-u-s-companies-fd95ae8d?mod=mw_rss_topstories",
+      "title": "Here’s just how quickly Micron has risen up the ranks of the top U.S companies",
+      "article": "At the start of last year, Micron wasn’t even among the top 100 U.S. companies. Its fortunes have changed dramatically since then.",
+      "fp": "here’s just how quickly micron has risen up the ranks of the top u.s companies at the start of last year, micron wasn’t even among the top 100 u.s. companies. its fortunes have changed dramatically since then.",
+      "published": "Mon, 04 May 2026 23:00:00 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/believe-genedx-holdings-corp-wgs-140354735.html",
-      "title": "Do You Believe in GeneDx Holdings Corp.’s (WGS) Durable Competitive Moat?",
-      "article": "Do You Believe in GeneDx Holdings Corp.’s (WGS) Durable Competitive Moat?",
-      "fp": "do you believe in genedx holdings corp.’s (wgs) durable competitive moat? do you believe in genedx holdings corp.’s (wgs) durable competitive moat?",
-      "published": "2026-05-04T14:03:54Z"
+      "link": "https://www.cnbc.com/2026/05/04/musk-altman-open-ai-settlement-trial-brockman.html",
+      "title": "Musk texted OpenAI's Brockman about settlement two days before trial began",
+      "article": "Elon Musk co-founded OpenAI in 2015 and sued the company, President Greg Brockman and CEO Sam Altman in 2024.",
+      "fp": "musk texted openai's brockman about settlement two days before trial began elon musk co-founded openai in 2015 and sued the company, president greg brockman and ceo sam altman in 2024.",
+      "published": "Mon, 04 May 2026 21:17:18 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/rbc-bearings-rbc-gained-multiple-135846161.html",
-      "title": "RBC Bearings (RBC) Gained From Multiple Converging Tailwinds",
-      "article": "RBC Bearings (RBC) Gained From Multiple Converging Tailwinds",
-      "fp": "rbc bearings (rbc) gained from multiple converging tailwinds rbc bearings (rbc) gained from multiple converging tailwinds",
-      "published": "2026-05-04T13:58:46Z"
+      "link": "https://www.cnbc.com/2026/05/04/bret-taylor-sierra-fundraise-openai.html",
+      "title": "Bret Taylor's Sierra raises nearly $1 billion months after last capital push",
+      "article": "Sierra's $950 million Series E funding round was led by Tiger and Google's GV, with participation from Benchmark, Sequoia, Greenoaks and others.",
+      "fp": "bret taylor's sierra raises nearly $1 billion months after last capital push sierra's $950 million series e funding round was led by tiger and google's gv, with participation from benchmark, sequoia, greenoaks and others.",
+      "published": "Mon, 04 May 2026 23:02:27 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_46922_StockPicks_1777897281000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "Weekly Stock List",
-      "article": "Weekly Stock List",
-      "fp": "weekly stock list weekly stock list",
-      "published": "2026-05-04T12:21:21Z"
+      "link": "https://www.marketwatch.com/story/the-silent-crisis-taxing-your-grocery-bill-could-get-a-lot-louder-93ddd167?mod=mw_rss_topstories",
+      "title": "The silent crisis taxing your grocery bill could get a lot louder",
+      "article": "As fertilizer costs hit 2026 highs and U.S. farmers cut planting, investors are looking to these stocks to hedge against food scarcity.",
+      "fp": "the silent crisis taxing your grocery bill could get a lot louder as fertilizer costs hit 2026 highs and u.s. farmers cut planting, investors are looking to these stocks to hedge against food scarcity.",
+      "published": "Mon, 04 May 2026 22:07:00 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_3613_AnalystReport_1777893329000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "Analyst Report: Federated Hermes Inc",
-      "article": "Analyst Report: Federated Hermes Inc",
-      "fp": "analyst report: federated hermes inc analyst report: federated hermes inc",
-      "published": "2026-05-04T11:15:29Z"
+      "link": "https://www.cnbc.com/2026/05/04/open-ai-executive-leaves-thrive-capital.html",
+      "title": "OpenAI sales leader leaves for role at Thrive Capital",
+      "article": "James Dyett joined OpenAI in 2023, shortly after the company underwent a period of explosive growth with the launch of its ChatGPT chatbot.",
+      "fp": "openai sales leader leaves for role at thrive capital james dyett joined openai in 2023, shortly after the company underwent a period of explosive growth with the launch of its chatgpt chatbot.",
+      "published": "Mon, 04 May 2026 22:54:54 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-refinance-rates-today-monday-may-4-2026-100000052.html",
-      "title": "Mortgage and refinance interest rates today, May 4, 2026: Will rates rise again this week?",
-      "article": "Mortgage and refinance interest rates today, May 4, 2026: Will rates rise again this week?",
-      "fp": "mortgage and refinance interest rates today, may 4, 2026: will rates rise again this week? mortgage and refinance interest rates today, may 4, 2026: will rates rise again this week?",
-      "published": "2026-05-04T10:00:00Z"
+      "link": "https://www.cnbc.com/2026/05/04/chinese-carmaker-geely.html",
+      "title": "How Chinese carmaker Geely put roots in the U.S.",
+      "article": "Chinese company Zhejiang Geely Holding Group has big investments in three automakers already doing business in the U.S.",
+      "fp": "how chinese carmaker geely put roots in the u.s. chinese company zhejiang geely holding group has big investments in three automakers already doing business in the u.s.",
+      "published": "Mon, 04 May 2026 19:22:49 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/economy/articles/americans-3-states-drowning-debt-144500991.html",
-      "title": "Americans in these 3 states are drowning in debt. Here’s how to keep your head above water",
-      "article": "Americans in these 3 states are drowning in debt. Here’s how to keep your head above water",
-      "fp": "americans in these 3 states are drowning in debt. here’s how to keep your head above water americans in these 3 states are drowning in debt. here’s how to keep your head above water",
-      "published": "2026-05-04T14:45:00Z"
+      "link": "https://www.cnbc.com/2026/05/04/how-to-figure-out-which-stocks-are-in-your-portfolio.html",
+      "title": "Which stocks do I actually own? Why experts say it's important to know",
+      "article": "Whether you object to owning certain stocks or want to add investments to your portfolio smartly, it's important to know what you actually hold, experts say.",
+      "fp": "which stocks do i actually own? why experts say it's important to know whether you object to owning certain stocks or want to add investments to your portfolio smartly, it's important to know what you actually hold, experts say.",
+      "published": "Mon, 04 May 2026 17:04:28 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/economy/articles/couple-70s-sold-home-700k-142000854.html",
-      "title": "A couple in their 70s sold their home for a $700K ‘BoomerBus’ — now they have to rework their plan around $5 gas",
-      "article": "A couple in their 70s sold their home for a $700K ‘BoomerBus’ — now they have to rework their plan around $5 gas",
-      "fp": "a couple in their 70s sold their home for a $700k ‘boomerbus’ — now they have to rework their plan around $5 gas a couple in their 70s sold their home for a $700k ‘boomerbus’ — now they have to rework their plan around $5 gas",
-      "published": "2026-05-04T14:20:00Z"
+      "link": "https://finance.yahoo.com/markets/stocks/articles/amex-gbt-agrees-6-3-163512714.html",
+      "title": "Amex GBT agrees to $6.3 billion take-private deal with Long Lake",
+      "article": "Amex GBT agrees to $6.3 billion take-private deal with Long Lake",
+      "fp": "amex gbt agrees to $6.3 billion take-private deal with long lake amex gbt agrees to $6.3 billion take-private deal with long lake",
+      "published": "2026-05-04T16:35:12Z"
     },
     {
-      "link": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-monday-may-4-2026-100000428.html",
-      "title": "Best CD rates today, May 4, 2026 (Lock in up to 4.1% APY)",
-      "article": "Best CD rates today, May 4, 2026 (Lock in up to 4.1% APY)",
-      "fp": "best cd rates today, may 4, 2026 (lock in up to 4.1% apy) best cd rates today, may 4, 2026 (lock in up to 4.1% apy)",
-      "published": "2026-05-04T10:00:00Z"
+      "link": "https://www.cnbc.com/2026/05/04/trump-retirement-savings-rich.html",
+      "title": "Trump said $465,000 in retirement savings is 'rich.' Is it?",
+      "article": "President Donald Trump said savers who build a $465,000 nest egg would be \"rich.\" Whether that's true depends on one's perception of wealth.",
+      "fp": "trump said $465,000 in retirement savings is 'rich.' is it? president donald trump said savers who build a $465,000 nest egg would be \"rich.\" whether that's true depends on one's perception of wealth.",
+      "published": "Mon, 04 May 2026 14:34:11 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/personal-finance/banking/article/connection-between-money-and-mental-health-130000083.html",
-      "title": "The connection between money and mental health: Why it matters more than you think",
-      "article": "The connection between money and mental health: Why it matters more than you think",
-      "fp": "the connection between money and mental health: why it matters more than you think the connection between money and mental health: why it matters more than you think",
-      "published": "2026-05-04T13:00:00Z"
+      "link": "https://finance.yahoo.com/research/reports/ARGUS_3086_AnalystReport_1777916646000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
+      "title": "Analyst Report: Trane Technologies plc",
+      "article": "Analyst Report: Trane Technologies plc",
+      "fp": "analyst report: trane technologies plc analyst report: trane technologies plc",
+      "published": "2026-05-04T17:44:06Z"
     },
     {
-      "link": "https://finance.yahoo.com/personal-finance/mortgages/article/chase-home-loans-lmortgage-rate-sale-2-weeks-only-130000648.html",
-      "title": "Chase Home Loans launches another mortgage rate sale for 2 weeks only",
-      "article": "Chase Home Loans launches another mortgage rate sale for 2 weeks only",
-      "fp": "chase home loans launches another mortgage rate sale for 2 weeks only chase home loans launches another mortgage rate sale for 2 weeks only",
-      "published": "2026-05-04T13:00:00Z"
+      "link": "https://finance.yahoo.com/research/reports/ARGUS_3392_AnalystReport_1777916646000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
+      "title": "Analyst Report: SLB Ltd",
+      "article": "Analyst Report: SLB Ltd",
+      "fp": "analyst report: slb ltd analyst report: slb ltd",
+      "published": "2026-05-04T17:44:06Z"
     },
     {
-      "link": "https://finance.yahoo.com/personal-finance/mortgages/article/heloc-home-equity-loan-rates-today-monday-may-4-2026-100000600.html",
-      "title": "HELOC and home equity loan rates, Monday, May 4, 2026: How to use your home equity to build wealth",
-      "article": "HELOC and home equity loan rates, Monday, May 4, 2026: How to use your home equity to build wealth",
-      "fp": "heloc and home equity loan rates, monday, may 4, 2026: how to use your home equity to build wealth heloc and home equity loan rates, monday, may 4, 2026: how to use your home equity to build wealth",
-      "published": "2026-05-04T10:00:00Z"
+      "link": "https://www.cnbc.com/2026/05/04/scotus-jeffries-redistrict-new-york.html",
+      "title": "After SCOTUS Voting Rights ruling, Jeffries ramps up quest to redistrict New York",
+      "article": "Democrats are vowing to fight back after the Supreme Court eliminated a majority-Black Louisiana House district, as more states look to redraw maps.",
+      "fp": "after scotus voting rights ruling, jeffries ramps up quest to redistrict new york democrats are vowing to fight back after the supreme court eliminated a majority-black louisiana house district, as more states look to redraw maps.",
+      "published": "Mon, 04 May 2026 19:56:33 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/200-month-startup-says-youll-140500756.html",
-      "title": "For $200 a month, a startup says you'll never have to think about home maintenance again. Is it worth it?",
-      "article": "For $200 a month, a startup says you'll never have to think about home maintenance again. Is it worth it?",
-      "fp": "for $200 a month, a startup says you'll never have to think about home maintenance again. is it worth it? for $200 a month, a startup says you'll never have to think about home maintenance again. is it worth it?",
-      "published": "2026-05-04T14:05:00Z"
+      "link": "https://www.cnbc.com/2026/05/04/trump-cole-allen-jail-jan-6-judge-whcd.html",
+      "title": "Pirro rips judge in Trump attack case for apologizing to Cole Allen over jail conditions",
+      "article": "Cole Allen is charged with trying to assassinate President Donald Trump at the White House Correspondents' Association dinner at the Washington Hilton Hotel.",
+      "fp": "pirro rips judge in trump attack case for apologizing to cole allen over jail conditions cole allen is charged with trying to assassinate president donald trump at the white house correspondents' association dinner at the washington hilton hotel.",
+      "published": "Mon, 04 May 2026 20:44:51 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/05/04/supreme-court-abortion-pill-mifepristone.html",
+      "title": "Supreme Court temporarily lifts mail ban on abortion pill mifepristone",
+      "article": "Two drugmakers, Danco Laboratories and GenBioPro, over the weekend asked the Supreme Court to restore the ability to order Mifepristone through the mail.",
+      "fp": "supreme court temporarily lifts mail ban on abortion pill mifepristone two drugmakers, danco laboratories and genbiopro, over the weekend asked the supreme court to restore the ability to order mifepristone through the mail.",
+      "published": "Mon, 04 May 2026 15:37:07 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/05/04/the-devil-wears-prada-2-kicks-off-summer-box-office.html",
+      "title": "'The Devil Wears Prada 2' kicks off summer movie season in style with $77 million opening",
+      "article": "Disney and 20th Century Studios' \"The Devil Wears Prada 2\" opened the summer movie season with $77 million in ticket sales.",
+      "fp": "'the devil wears prada 2' kicks off summer movie season in style with $77 million opening disney and 20th century studios' \"the devil wears prada 2\" opened the summer movie season with $77 million in ticket sales.",
+      "published": "Mon, 04 May 2026 23:14:02 GMT"
+    },
+    {
+      "link": "https://www.marketwatch.com/story/he-is-constantly-criticizing-her-my-son-in-law-told-my-daughter-to-give-up-her-job-do-i-intervene-eaef801a?mod=mw_rss_topstories",
+      "title": "‘He is constantly criticizing her’: My son-in-law told my daughter to give up her job. Do I intervene?",
+      "article": "‘He is constantly criticizing her’: My son-in-law told my daughter to give up her job. Do I intervene?",
+      "fp": "‘he is constantly criticizing her’: my son-in-law told my daughter to give up her job. do i intervene? ‘he is constantly criticizing her’: my son-in-law told my daughter to give up her job. do i intervene?",
+      "published": "Mon, 04 May 2026 22:55:00 GMT"
     }
   ]
 }
