@@ -1,25 +1,88 @@
 {
   "market_news": [
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/why-amd-stock-exploded-higher-150235791.html",
-      "title": "Why AMD Stock Exploded Higher Today",
-      "article": "Why AMD Stock Exploded Higher Today",
-      "fp": "why amd stock exploded higher today why amd stock exploded higher today",
-      "published": "2026-05-06T15:02:35Z"
+      "link": "https://www.cnbc.com/2026/05/06/us-iran-peace-deal-nuclear-moratorium.html",
+      "title": "Trump says Iran will be bombed at a 'much higher level' if it doesn't agree to peace deal",
+      "article": "Stocks rose and oil prices plunged on news reports signaling the U.S. and Iran could soon strike an agreement to end the war.",
+      "fp": "trump says iran will be bombed at a 'much higher level' if it doesn't agree to peace deal stocks rose and oil prices plunged on news reports signaling the u.s. and iran could soon strike an agreement to end the war.",
+      "published": "Wed, 06 May 2026 20:56:21 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/microsoft-corporation-msft-slid-amid-151116770.html",
-      "title": "Microsoft Corporation (MSFT) Slid Amid Broad-Based Sell-Off in Software Companies",
-      "article": "Microsoft Corporation (MSFT) Slid Amid Broad-Based Sell-Off in Software Companies",
-      "fp": "microsoft corporation (msft) slid amid broad-based sell-off in software companies microsoft corporation (msft) slid amid broad-based sell-off in software companies",
-      "published": "2026-05-06T15:11:16Z"
+      "link": "https://www.cnbc.com/2026/05/06/airlines-jet-fuel-iran-war.html",
+      "title": "Airlines spent 56.4% more on jet fuel in month after Iran war started, U.S. government says",
+      "article": "U.S. airlines spent 56.4% more on jet fuel in March than they did in February, U.S. government data released Wednesday shows.",
+      "fp": "airlines spent 56.4% more on jet fuel in month after iran war started, u.s. government says u.s. airlines spent 56.4% more on jet fuel in march than they did in february, u.s. government data released wednesday shows.",
+      "published": "Wed, 06 May 2026 19:15:47 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/article/corning-stock-surges-to-intraday-high-after-company-lands-500-million-nvidia-deal-144931492.html",
-      "title": "Corning stock surges to intraday high after company lands $500 million Nvidia deal",
-      "article": "Corning stock surges to intraday high after company lands $500 million Nvidia deal",
-      "fp": "corning stock surges to intraday high after company lands $500 million nvidia deal corning stock surges to intraday high after company lands $500 million nvidia deal",
-      "published": "2026-05-06T14:49:31Z"
+      "link": "https://www.cnbc.com/2026/05/06/private-payrolls-rose-by-109000-in-april-topping-expectations-adp-says.html",
+      "title": "Private payrolls rose by 109,000 in April, topping expectations, ADP says",
+      "article": "The report provided more evidence of a stable labor market and less incentive for the Fed to lower interest rates.",
+      "fp": "private payrolls rose by 109,000 in april, topping expectations, adp says the report provided more evidence of a stable labor market and less incentive for the fed to lower interest rates.",
+      "published": "Wed, 06 May 2026 13:49:25 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/05/06/disney-dis-earnings-q2-2026.html",
+      "title": "Disney pops 7% after streaming, parks drive revenue beat in first report under CEO Josh D'Amaro",
+      "article": "Disney revenue topped analyst expectations when the media giant reported its fiscal second-quarter earnings on Wednesday.",
+      "fp": "disney pops 7% after streaming, parks drive revenue beat in first report under ceo josh d'amaro disney revenue topped analyst expectations when the media giant reported its fiscal second-quarter earnings on wednesday.",
+      "published": "Wed, 06 May 2026 21:27:30 GMT"
+    },
+    {
+      "link": "https://www.marketwatch.com/story/traders-point-to-suspicious-activity-in-the-oil-market-on-wednesday-3a6821d9?mod=mw_rss_topstories",
+      "title": "Traders point to suspicious activity in the oil market on Wednesday",
+      "article": "Oil contracts worth $1.7 billion changed hands in the hour before an Axios report sent oil prices lower Wednesday. Some experts are calling the spike in activity suspicious.",
+      "fp": "traders point to suspicious activity in the oil market on wednesday oil contracts worth $1.7 billion changed hands in the hour before an axios report sent oil prices lower wednesday. some experts are calling the spike in activity suspicious.",
+      "published": "Wed, 06 May 2026 22:36:00 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/05/06/snap-q1-earnings-report-2026.html",
+      "title": "Snap issues cautious guidance as Perplexity deal ends, Middle East 'geopolitical situation' causes uncertainty",
+      "article": "Snap reported first-quarter earnings and provided cautious sales guidance while revealing it no longer has a deal with the generative AI startup Perplexity.",
+      "fp": "snap issues cautious guidance as perplexity deal ends, middle east 'geopolitical situation' causes uncertainty snap reported first-quarter earnings and provided cautious sales guidance while revealing it no longer has a deal with the generative ai startup perplexity.",
+      "published": "Wed, 06 May 2026 22:19:30 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/05/06/nvidia-corning-optical-factories-nc-texas-ai.html",
+      "title": "Nvidia to invest up to $3.2 billion in Corning as part of massive optical fiber deal with 3 new factories focused on AI",
+      "article": "Corning is opening three new advanced manufacturing plants in the U.S. dedicated entirely to optical technologies for Nvidia.",
+      "fp": "nvidia to invest up to $3.2 billion in corning as part of massive optical fiber deal with 3 new factories focused on ai corning is opening three new advanced manufacturing plants in the u.s. dedicated entirely to optical technologies for nvidia.",
+      "published": "Wed, 06 May 2026 20:12:47 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/05/06/warner-bros-discovery-net-loss-paramount-deal.html",
+      "title": "Warner Bros. Discovery books $2.9 billion net loss tied to Paramount deal, restructuring costs",
+      "article": "Paramount agreed to pay a Netflix termination fee, but the cost lives on WBD's books until the close of the deal.",
+      "fp": "warner bros. discovery books $2.9 billion net loss tied to paramount deal, restructuring costs paramount agreed to pay a netflix termination fee, but the cost lives on wbd's books until the close of the deal.",
+      "published": "Wed, 06 May 2026 22:56:02 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/05/06/elon-musks-spacex-chip-fab-in-texas-to-cost-up-to-119-billion.html",
+      "title": "Elon Musk's Terafab chip factory in Texas could cost up to $119 billion, filing shows",
+      "article": "Elon Musk's giant Terafab facility in Texas could cost up to $119 billion, with hopes of manufacturing chips for Tesla, SpaceX and xAI",
+      "fp": "elon musk's terafab chip factory in texas could cost up to $119 billion, filing shows elon musk's giant terafab facility in texas could cost up to $119 billion, with hopes of manufacturing chips for tesla, spacex and xai",
+      "published": "Wed, 06 May 2026 19:40:16 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/05/06/uber-and-disney-are-seeing-the-same-remarkable-dynamic-in-this-economy-both-stocks-are-surging.html",
+      "title": "Uber and Disney are seeing the same remarkable dynamic in this economy. Both stocks are surging",
+      "article": "Uber and Disney pointed to a resilient spending backdrop, with consumers continuing to shell out for rides, food delivery, vacations and theme park trips.",
+      "fp": "uber and disney are seeing the same remarkable dynamic in this economy. both stocks are surging uber and disney pointed to a resilient spending backdrop, with consumers continuing to shell out for rides, food delivery, vacations and theme park trips.",
+      "published": "Wed, 06 May 2026 20:04:33 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/05/06/why-boeing-and-honeywell-are-rallying-plus-the-ai-trade-gets-a-boost-.html",
+      "title": "Why Boeing and Honeywell are rallying — plus, the AI trade gets another boost",
+      "article": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
+      "fp": "why boeing and honeywell are rallying — plus, the ai trade gets another boost every weekday, the investing club releases the homestretch; an actionable afternoon update just in time for the last hour of trading.",
+      "published": "Wed, 06 May 2026 18:58:39 GMT"
+    },
+    {
+      "link": "https://www.cnbc.com/2026/05/06/apples-rd-spending-climbs-to-10percent-of-revenue-on-ai-investments.html",
+      "title": "Apple's R&D investments top 10% of sales as AI race creates 'sense of urgency'",
+      "article": "Apple’s R&D spending has crossed 10% of revenue for the first time in at least 30 years, and increased twice as fast as sales in the latest quarter.",
+      "fp": "apple's r&d investments top 10% of sales as ai race creates 'sense of urgency' apple’s r&d spending has crossed 10% of revenue for the first time in at least 30 years, and increased twice as fast as sales in the latest quarter.",
+      "published": "Wed, 06 May 2026 18:08:53 GMT"
     },
     {
       "link": "https://finance.yahoo.com/markets/crypto/articles/coinbase-ceo-makes-critical-move-052101559.html",
@@ -29,216 +92,167 @@
       "published": "2026-05-06T05:21:01Z"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/onsemi-ceo-issues-bold-2-150700152.html",
-      "title": "Onsemi CEO issues bold 2-word message after earnings",
-      "article": "Onsemi CEO issues bold 2-word message after earnings",
-      "fp": "onsemi ceo issues bold 2-word message after earnings onsemi ceo issues bold 2-word message after earnings",
-      "published": "2026-05-06T15:07:00Z"
+      "link": "https://www.cnbc.com/2026/05/06/anthropic-ceo-dario-amodei-says-company-crew-80-fold-in-first-quarter.html",
+      "title": "Anthropic CEO says 80-fold growth in first quarter explains 'difficulties with compute'",
+      "article": "At Anthropic's developer conference in San Francisco, CEO Dario Amodei said the company is 'working as quickly as possible' to provide additional compute.",
+      "fp": "anthropic ceo says 80-fold growth in first quarter explains 'difficulties with compute' at anthropic's developer conference in san francisco, ceo dario amodei said the company is 'working as quickly as possible' to provide additional compute.",
+      "published": "Wed, 06 May 2026 22:28:44 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/sectors/healthcare/articles/novo-nordisk-swallows-competition-wegovy-145406212.html",
-      "title": "Novo Nordisk Swallows the Competition with Wegovy Pill Surge",
-      "article": "Novo Nordisk Swallows the Competition with Wegovy Pill Surge",
-      "fp": "novo nordisk swallows the competition with wegovy pill surge novo nordisk swallows the competition with wegovy pill surge",
-      "published": "2026-05-06T14:54:06Z"
+      "link": "https://www.cnbc.com/2026/05/06/surging-gas-prices-are-hurting-lower-income-households-harder-study-shows.html",
+      "title": "Surging gas prices are hitting lower-income households harder, New York Fed study shows",
+      "article": "Surging gas prices are hitting lower-income households harder, New York Fed study shows",
+      "fp": "surging gas prices are hitting lower-income households harder, new york fed study shows surging gas prices are hitting lower-income households harder, new york fed study shows",
+      "published": "Wed, 06 May 2026 19:27:54 GMT"
     },
     {
-      "link": "https://www.investors.com/news/technology/novo-nordisk-stock-novo-nordisk-earnings-q1-2026/?src=A00220&yptr=yahoo",
-      "title": "Novo Nordisk Jumps On 'Strongest-Ever' Launch In Weight Loss",
-      "article": "Novo Nordisk Jumps On 'Strongest-Ever' Launch In Weight Loss",
-      "fp": "novo nordisk jumps on 'strongest-ever' launch in weight loss novo nordisk jumps on 'strongest-ever' launch in weight loss",
-      "published": "2026-05-06T14:53:07Z"
+      "link": "https://www.cnbc.com/2026/05/06/even-if-an-iran-deal-calms-energy-markets-one-oil-stock-can-still-stand-out-.html",
+      "title": "Even if an Iran deal calms energy markets, one oil stock can still stand out",
+      "article": "Shell plc (SHEL), along with other large integrated oil companies, have benefited from higher oil prices and should warrant investor attention.",
+      "fp": "even if an iran deal calms energy markets, one oil stock can still stand out shell plc (shel), along with other large integrated oil companies, have benefited from higher oil prices and should warrant investor attention.",
+      "published": "Wed, 06 May 2026 16:20:14 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/crypto/articles/morgan-stanley-adds-crypto-trading-144800638.html",
-      "title": "Morgan Stanley Adds Crypto Trading to E*Trade With 0.50% Transaction Fees",
-      "article": "Morgan Stanley Adds Crypto Trading to E*Trade With 0.50% Transaction Fees",
-      "fp": "morgan stanley adds crypto trading to e*trade with 0.50% transaction fees morgan stanley adds crypto trading to e*trade with 0.50% transaction fees",
-      "published": "2026-05-06T14:48:00Z"
+      "link": "https://www.cnbc.com/2026/05/06/car-payments-squeeze-americans.html",
+      "title": "Car payments squeeze Americans as auto debt hits $1.68 trillion, report finds",
+      "article": "Auto debt has swelled to $1.68 trillion, a new analysis finds. Americans face costlier vehicles, higher interest rates and lengthier loan terms.",
+      "fp": "car payments squeeze americans as auto debt hits $1.68 trillion, report finds auto debt has swelled to $1.68 trillion, a new analysis finds. americans face costlier vehicles, higher interest rates and lengthier loan terms.",
+      "published": "Wed, 06 May 2026 17:54:46 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/ussf-selects-lockheed-martin-corporation-143653195.html",
-      "title": "USSF Selects Lockheed Martin Corporation (LMT) For Space-Based Interceptor Program",
-      "article": "USSF Selects Lockheed Martin Corporation (LMT) For Space-Based Interceptor Program",
-      "fp": "ussf selects lockheed martin corporation (lmt) for space-based interceptor program ussf selects lockheed martin corporation (lmt) for space-based interceptor program",
-      "published": "2026-05-06T14:36:53Z"
+      "link": "https://www.marketwatch.com/story/arms-stock-soars-as-the-company-puts-a-big-number-on-its-newest-venture-21bce404?mod=mw_rss_topstories",
+      "title": "Arm puts a big number on its newest venture, but its stock falls",
+      "article": "The chip designer said it has more than $2 billion in customer demand for its first-ever data-center CPU",
+      "fp": "arm puts a big number on its newest venture, but its stock falls the chip designer said it has more than $2 billion in customer demand for its first-ever data-center cpu",
+      "published": "Wed, 06 May 2026 22:38:00 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/part-ai-boom-nobody-talking-150500578.html",
-      "title": "This Is the Part of the AI Boom Nobody Is Talking About -- and the Stock Sitting at the Center of It",
-      "article": "This Is the Part of the AI Boom Nobody Is Talking About -- and the Stock Sitting at the Center of It",
-      "fp": "this is the part of the ai boom nobody is talking about -- and the stock sitting at the center of it this is the part of the ai boom nobody is talking about -- and the stock sitting at the center of it",
-      "published": "2026-05-06T15:05:00Z"
+      "link": "https://www.marketwatch.com/story/zuckerbergs-multi-mark-ai-clone-is-a-huge-red-flag-for-meta-shareholders-53e58b30?mod=mw_rss_topstories",
+      "title": "Zuckerberg’s ‘Multi Mark’ AI clone is a huge red flag for Meta shareholders",
+      "article": "Replacing authentic leadership with a digital doppelgänger isn’t innovation — it’s a high-tech retreat from accountability.",
+      "fp": "zuckerberg’s ‘multi mark’ ai clone is a huge red flag for meta shareholders replacing authentic leadership with a digital doppelgänger isn’t innovation — it’s a high-tech retreat from accountability.",
+      "published": "Wed, 06 May 2026 21:24:00 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/boeing-company-ba-u-navy-143641887.html",
-      "title": "The Boeing Company (BA), U.S. Navy Complete First Test Flight of MQ-25A Stingray",
-      "article": "The Boeing Company (BA), U.S. Navy Complete First Test Flight of MQ-25A Stingray",
-      "fp": "the boeing company (ba), u.s. navy complete first test flight of mq-25a stingray the boeing company (ba), u.s. navy complete first test flight of mq-25a stingray",
-      "published": "2026-05-06T14:36:41Z"
+      "link": "https://www.cnbc.com/2026/05/06/berkshire-hathaway-mclane-autonomous-freight-trucking-aurora.html",
+      "title": "Berkshire-owned distribution giant to deploy driverless big rigs across U.S. Sun Belt",
+      "article": "Berkshire Hathaway-owned McLane, one of America's biggest distribution companies, is deploying self-driving big rigs with Aurora for its restaurants business.",
+      "fp": "berkshire-owned distribution giant to deploy driverless big rigs across u.s. sun belt berkshire hathaway-owned mclane, one of america's biggest distribution companies, is deploying self-driving big rigs with aurora for its restaurants business.",
+      "published": "Wed, 06 May 2026 15:54:19 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/economy/policy/articles/us-tariff-refund-process-running-143200073.html",
-      "title": "US tariff refund process running 'smoother' than expected, Switzerland's K+N says",
-      "article": "US tariff refund process running 'smoother' than expected, Switzerland's K+N says",
-      "fp": "us tariff refund process running 'smoother' than expected, switzerland's k+n says us tariff refund process running 'smoother' than expected, switzerland's k+n says",
-      "published": "2026-05-06T14:32:00Z"
+      "link": "https://www.cnbc.com/2026/05/06/anthropic-spacex-data-center-capacity.html",
+      "title": "Anthropic, SpaceX announce compute deal that includes space development",
+      "article": "Anthropic has signed a deal with SpaceX, which owns rival xAI, to use all of the compute capacity at the company’s Colossus 1 data center in Memphis, Tennessee.",
+      "fp": "anthropic, spacex announce compute deal that includes space development anthropic has signed a deal with spacex, which owns rival xai, to use all of the compute capacity at the company’s colossus 1 data center in memphis, tennessee.",
+      "published": "Wed, 06 May 2026 19:31:53 GMT"
     },
     {
-      "link": "https://www.investors.com/news/technology/insulet-stock-insulet-earnings-q1-2026/?src=A00220&yptr=yahoo",
-      "title": "Why This Stock Sold Off Despite Its 'Dominant' First-Quarter Report",
-      "article": "Why This Stock Sold Off Despite Its 'Dominant' First-Quarter Report",
-      "fp": "why this stock sold off despite its 'dominant' first-quarter report why this stock sold off despite its 'dominant' first-quarter report",
-      "published": "2026-05-06T15:00:37Z"
+      "link": "https://www.cnbc.com/2026/05/06/kalshi-traders-confident-sec-will-end-mandatory-quarterly-earnings-reports.html",
+      "title": "Goodbye quarterly earnings? Here's when traders believe this big change will happen",
+      "article": "Traders are evenly divided as to whether the change will happen by Jan. 1. That would be an unusually fast timeline for the commission.",
+      "fp": "goodbye quarterly earnings? here's when traders believe this big change will happen traders are evenly divided as to whether the change will happen by jan. 1. that would be an unusually fast timeline for the commission.",
+      "published": "Wed, 06 May 2026 17:48:21 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/makes-caci-international-caci-investment-145742749.html",
-      "title": "Here’s What Makes CACI International (CACI) an Investment Bet",
-      "article": "Here’s What Makes CACI International (CACI) an Investment Bet",
-      "fp": "here’s what makes caci international (caci) an investment bet here’s what makes caci international (caci) an investment bet",
-      "published": "2026-05-06T14:57:42Z"
+      "link": "https://www.cnbc.com/2026/05/06/novo-nordisk-ceo-mike-doustdar-ozempic-maker-looking-for-deals.html",
+      "title": "Novo Nordisk CEO says the drugmaker is more active than ever in seeking out deals",
+      "article": "Novo Nordisk CEO Mike Doustdar says the Ozempic and Wegovy maker is looking for deals more than ever before.",
+      "fp": "novo nordisk ceo says the drugmaker is more active than ever in seeking out deals novo nordisk ceo mike doustdar says the ozempic and wegovy maker is looking for deals more than ever before.",
+      "published": "Wed, 06 May 2026 17:00:21 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/led-tyler-technologies-tyl-relative-143853705.html",
-      "title": "Here’s What Led Tyler Technologies’ (TYL) Relative Weakness",
-      "article": "Here’s What Led Tyler Technologies’ (TYL) Relative Weakness",
-      "fp": "here’s what led tyler technologies’ (tyl) relative weakness here’s what led tyler technologies’ (tyl) relative weakness",
-      "published": "2026-05-06T14:38:53Z"
+      "link": "https://www.cnbc.com/2026/05/06/mamdani-ken-griffin-nyc-miami-tax.html",
+      "title": "Ken Griffin: Citadel expanding in Miami in response to NYC mayor Mamdani's 'poor taste' tax video",
+      "article": "Mamdani's office said in response to Griffin, \"our tax system is fundamentally broken. It rewards extreme wealth while working people are pushed to the brink.\"",
+      "fp": "ken griffin: citadel expanding in miami in response to nyc mayor mamdani's 'poor taste' tax video mamdani's office said in response to griffin, \"our tax system is fundamentally broken. it rewards extreme wealth while working people are pushed to the brink.\"",
+      "published": "Wed, 06 May 2026 15:13:22 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_46942_MarketSummary_1778065523000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "Market Digest: CAH, SHOP, DXCM, PLTR, GFS",
-      "article": "Market Digest: CAH, SHOP, DXCM, PLTR, GFS",
-      "fp": "market digest: cah, shop, dxcm, pltr, gfs market digest: cah, shop, dxcm, pltr, gfs",
-      "published": "2026-05-06T11:05:23Z"
+      "link": "https://www.marketwatch.com/story/everyones-paying-more-for-gas-but-only-some-are-cutting-back-heres-why-6366212e?mod=mw_rss_topstories",
+      "title": "Everyone’s paying more for gas, but only some are cutting back. Here’s why.",
+      "article": "When gas prices surged in March, lower-income drivers tried to cut back, but they still felt the sticker shock. On the other hand, rich drivers barely flinched.",
+      "fp": "everyone’s paying more for gas, but only some are cutting back. here’s why. when gas prices surged in march, lower-income drivers tried to cut back, but they still felt the sticker shock. on the other hand, rich drivers barely flinched.",
+      "published": "Wed, 06 May 2026 22:11:00 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/curtiss-wright-corporation-cw-moderate-143654833.html",
-      "title": "Curtiss-Wright Corporation (CW) a Moderate Buy, Per Wall Street",
-      "article": "Curtiss-Wright Corporation (CW) a Moderate Buy, Per Wall Street",
-      "fp": "curtiss-wright corporation (cw) a moderate buy, per wall street curtiss-wright corporation (cw) a moderate buy, per wall street",
-      "published": "2026-05-06T14:36:54Z"
+      "link": "https://www.cnbc.com/2026/05/06/elon-musk-odds-low-to-win-openai-suit.html",
+      "title": "Will Elon Musk win his lawsuit against Sam Altman's OpenAI? Here's what prediction markets think",
+      "article": "Trading activity on Elon Musk's suit against OpenAI is the second highest out of all prediction market contracts related to the billionaire.",
+      "fp": "will elon musk win his lawsuit against sam altman's openai? here's what prediction markets think trading activity on elon musk's suit against openai is the second highest out of all prediction market contracts related to the billionaire.",
+      "published": "Wed, 06 May 2026 21:28:02 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/northrop-grumman-corporation-noc-among-143651193.html",
-      "title": "Northrop Grumman Corporation (NOC): Among the Best Large Cap Defense Stocks to Buy According to Hedge Funds",
-      "article": "Northrop Grumman Corporation (NOC): Among the Best Large Cap Defense Stocks to Buy According to Hedge Funds",
-      "fp": "northrop grumman corporation (noc): among the best large cap defense stocks to buy according to hedge funds northrop grumman corporation (noc): among the best large cap defense stocks to buy according to hedge funds",
-      "published": "2026-05-06T14:36:51Z"
+      "link": "https://www.cnbc.com/2026/05/06/fanduel-ceo-amy-howe-out.html",
+      "title": "FanDuel CEO Amy Howe is out after five years at the sportsbook",
+      "article": "Howe has overseen FanDuel during a time of dramatic expansion in sports gambling and as prediction markets have exploded in popularity.",
+      "fp": "fanduel ceo amy howe is out after five years at the sportsbook howe has overseen fanduel during a time of dramatic expansion in sports gambling and as prediction markets have exploded in popularity.",
+      "published": "Wed, 06 May 2026 20:49:41 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/bwx-technologies-inc-bwxt-reports-143649133.html",
-      "title": "BWX Technologies, Inc. (BWXT) Reports Q1 2026 Results",
-      "article": "BWX Technologies, Inc. (BWXT) Reports Q1 2026 Results",
-      "fp": "bwx technologies, inc. (bwxt) reports q1 2026 results bwx technologies, inc. (bwxt) reports q1 2026 results",
-      "published": "2026-05-06T14:36:49Z"
+      "link": "https://www.marketwatch.com/story/restaurants-really-dont-want-to-sell-fake-meat-and-beyond-meat-is-suffering-030b5592?mod=mw_rss_topstories",
+      "title": "Restaurants really don’t want to sell fake meat — and Beyond Meat is suffering",
+      "article": "Beyond Meat’s stock fell further Wednesday after it offered a weak forecast, and as it prepares to move further into a crowded protein-drink market.",
+      "fp": "restaurants really don’t want to sell fake meat — and beyond meat is suffering beyond meat’s stock fell further wednesday after it offered a weak forecast, and as it prepares to move further into a crowded protein-drink market.",
+      "published": "Wed, 06 May 2026 23:02:00 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/general-dynamics-corporation-gd-one-143648189.html",
-      "title": "Is General Dynamics Corporation (GD) One of the Best Large Cap Defense Stocks to Buy According to Hedge Funds?",
-      "article": "Is General Dynamics Corporation (GD) One of the Best Large Cap Defense Stocks to Buy According to Hedge Funds?",
-      "fp": "is general dynamics corporation (gd) one of the best large cap defense stocks to buy according to hedge funds? is general dynamics corporation (gd) one of the best large cap defense stocks to buy according to hedge funds?",
-      "published": "2026-05-06T14:36:48Z"
+      "link": "https://finance.yahoo.com/research/reports/ARGUS_3274_AnalystReport_1778091857000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
+      "title": "Analyst Report: OGE Energy Corp",
+      "article": "Analyst Report: OGE Energy Corp",
+      "fp": "analyst report: oge energy corp analyst report: oge energy corp",
+      "published": "2026-05-06T18:24:17Z"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/deutsche-bank-lifts-price-target-143646764.html",
-      "title": "Deutsche Bank Lifts Price Target on Woodward, Inc. (WWD) to $470, Maintains Buy Rating",
-      "article": "Deutsche Bank Lifts Price Target on Woodward, Inc. (WWD) to $470, Maintains Buy Rating",
-      "fp": "deutsche bank lifts price target on woodward, inc. (wwd) to $470, maintains buy rating deutsche bank lifts price target on woodward, inc. (wwd) to $470, maintains buy rating",
-      "published": "2026-05-06T14:36:46Z"
+      "link": "https://finance.yahoo.com/research/reports/ARGUS_3645_AnalystReport_1778091857000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
+      "title": "Analyst Report: PayPal Holdings Inc",
+      "article": "Analyst Report: PayPal Holdings Inc",
+      "fp": "analyst report: paypal holdings inc analyst report: paypal holdings inc",
+      "published": "2026-05-06T18:24:17Z"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/transdigm-group-incorporated-tdg-reports-143644913.html",
-      "title": "TransDigm Group Incorporated (TDG) Reports Financial Results For Q2 2026",
-      "article": "TransDigm Group Incorporated (TDG) Reports Financial Results For Q2 2026",
-      "fp": "transdigm group incorporated (tdg) reports financial results for q2 2026 transdigm group incorporated (tdg) reports financial results for q2 2026",
-      "published": "2026-05-06T14:36:44Z"
+      "link": "https://www.cnbc.com/2026/05/06/jeffrey-epstein-howard-lutnick-house-oversight-commerce.html",
+      "title": "Epstein files: Commerce Sec. Howard Lutnick questioned by House Oversight panel",
+      "article": "Howard Lutnick admitted to a Senate committee in February that he and his family visited Epstein's private island in the U.S. Virgin Islands in 2012.",
+      "fp": "epstein files: commerce sec. howard lutnick questioned by house oversight panel howard lutnick admitted to a senate committee in february that he and his family visited epstein's private island in the u.s. virgin islands in 2012.",
+      "published": "Wed, 06 May 2026 19:21:48 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/analysts-see-24-upside-ge-143639145.html",
-      "title": "Analysts See 24% Upside To GE Aerospace (GE)",
-      "article": "Analysts See 24% Upside To GE Aerospace (GE)",
-      "fp": "analysts see 24% upside to ge aerospace (ge) analysts see 24% upside to ge aerospace (ge)",
-      "published": "2026-05-06T14:36:39Z"
+      "link": "https://www.cnbc.com/2026/05/06/marco-rubio-vatican-2028-election-trump.html",
+      "title": "Marco Rubio heads to the Vatican as 2028 presidential buzz ramps up",
+      "article": "Secretary of State Marco Rubio is a frontrunner to succeed President Donald Trump in 2028, and Trump is sending him to meet with Pope Leo XIV.",
+      "fp": "marco rubio heads to the vatican as 2028 presidential buzz ramps up secretary of state marco rubio is a frontrunner to succeed president donald trump in 2028, and trump is sending him to meet with pope leo xiv.",
+      "published": "Wed, 06 May 2026 19:52:46 GMT"
     },
     {
-      "link": "https://finance.yahoo.com/economy/policy/articles/maryland-moving-ban-companies-walmart-150337817.html",
-      "title": "Maryland is moving to ban companies like Walmart and Kroger from ‘surveillance pricing’ — what it is and how to avoid it",
-      "article": "Maryland is moving to ban companies like Walmart and Kroger from ‘surveillance pricing’ — what it is and how to avoid it",
-      "fp": "maryland is moving to ban companies like walmart and kroger from ‘surveillance pricing’ — what it is and how to avoid it maryland is moving to ban companies like walmart and kroger from ‘surveillance pricing’ — what it is and how to avoid it",
-      "published": "2026-05-06T15:03:37Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/manitowoc-mtw-q1-2026-earnings-150636303.html",
-      "title": "Manitowoc (MTW) Q1 2026 Earnings Transcript",
-      "article": "Manitowoc (MTW) Q1 2026 Earnings Transcript",
-      "fp": "manitowoc (mtw) q1 2026 earnings transcript manitowoc (mtw) q1 2026 earnings transcript",
-      "published": "2026-05-06T15:06:36Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_4837_AnalystReport_1778065523000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "Analyst Report: Shopify Inc",
-      "article": "Analyst Report: Shopify Inc",
-      "fp": "analyst report: shopify inc analyst report: shopify inc",
-      "published": "2026-05-06T11:05:23Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/markets/stocks/articles/conestoga-capital-advisors-sold-paylocity-145933997.html",
-      "title": "Conestoga Capital Advisors Sold Paylocity Holding Corp. (PCTY) in Q1",
-      "article": "Conestoga Capital Advisors Sold Paylocity Holding Corp. (PCTY) in Q1",
-      "fp": "conestoga capital advisors sold paylocity holding corp. (pcty) in q1 conestoga capital advisors sold paylocity holding corp. (pcty) in q1",
-      "published": "2026-05-06T14:59:33Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_46946_MarketOutlook_1778066527000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "Daily Spotlight: Valuation Measures Reasonable",
-      "article": "Daily Spotlight: Valuation Measures Reasonable",
-      "fp": "daily spotlight: valuation measures reasonable daily spotlight: valuation measures reasonable",
-      "published": "2026-05-06T11:22:07Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/research/reports/ARGUS_46945_TechnicalAnalysis_1778066492000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-      "title": "Technical Assessment: Bullish in the Intermediate-Term",
-      "article": "Technical Assessment: Bullish in the Intermediate-Term",
-      "fp": "technical assessment: bullish in the intermediate-term technical assessment: bullish in the intermediate-term",
-      "published": "2026-05-06T11:21:32Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/sectors/healthcare/articles/107-old-beloved-burger-chain-192759062.html",
-      "title": "107-year-old beloved burger chain closes locations",
-      "article": "107-year-old beloved burger chain closes locations",
-      "fp": "107-year-old beloved burger chain closes locations 107-year-old beloved burger chain closes locations",
-      "published": "2026-05-05T19:27:59Z"
-    },
-    {
-      "link": "https://finance.yahoo.com/sectors/technology/articles/fleet-safety-starts-c-suite-150236566.html",
-      "title": "Fleet Safety Starts in the C-Suite",
-      "article": "Fleet Safety Starts in the C-Suite",
-      "fp": "fleet safety starts in the c-suite fleet safety starts in the c-suite",
-      "published": "2026-05-06T15:02:36Z"
+      "link": "https://www.cnbc.com/2026/05/06/former-yankee-mariano-rivera-mlb-salary-cap.html",
+      "title": "Yankees legend Mariano Rivera says he supports an MLB salary cap",
+      "article": "Former New York Yankee Mariano Rivera says he supports MLB salary cap as long as small-market teams are also spending.",
+      "fp": "yankees legend mariano rivera says he supports an mlb salary cap former new york yankee mariano rivera says he supports mlb salary cap as long as small-market teams are also spending.",
+      "published": "Wed, 06 May 2026 16:52:37 GMT"
     }
   ],
   "japan_news": [
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260506/k10015115201000.html",
-      "title": "日産 欧州の従業員約900人削減 英工場の生産ラインは統合へ",
-      "article": "経営再建中の日産自動車は、ヨーロッパの従業員の1割程度にあたるおよそ900人を削減することを明らかにしました。イギリスの工場で2つの生産ラインを1つに統合し、稼働率を高める方針です。",
-      "fp": "日産 欧州の従業員約900人削減 英工場の生産ラインは統合へ 経営再建中の日産自動車は、ヨーロッパの従業員の1割程度にあたるおよそ900人を削減することを明らかにしました。イギリスの工場で2つの生産ラインを1つに統合し、稼働率を高める方針です。",
-      "published": "Wed, 06 May 2026 08:39:52 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260507/k10015115491000.html",
+      "title": "G7貿易相会合 重要鉱物の供給網多角化に向けた連携を確認",
+      "article": "G7＝主要7か国の貿易相会合が6日、フランスで開かれ、レアアースなどの重要鉱物について、各国が連携して供給網の多角化を進めていくことを確認しました。会合後に発表された閣僚声明では、中国による輸出規制を念頭に「経済的威圧に対し、必要に応じて行動する用意がある」としています。",
+      "fp": "g7貿易相会合 重要鉱物の供給網多角化に向けた連携を確認 g7＝主要7か国の貿易相会合が6日、フランスで開かれ、レアアースなどの重要鉱物について、各国が連携して供給網の多角化を進めていくことを確認しました。会合後に発表された閣僚声明では、中国による輸出規制を念頭に「経済的威圧に対し、必要に応じて行動する用意がある」としています。",
+      "published": "Thu, 07 May 2026 06:12:09 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260506/k10015115261000.html",
-      "title": "米証券取引委員会 企業による決算報告“半年ごとに”改正案",
-      "article": "アメリカの証券取引委員会は上場企業に義務づけている四半期ごとの決算報告について、半年ごとの報告を企業が選択できるようにする制度の改正案を公表しました。企業側の負担を軽くするなどのねらいがありますが、投資家からは情報開示の頻度が減ることへの懸念も出ています。",
-      "fp": "米証券取引委員会 企業による決算報告“半年ごとに”改正案 アメリカの証券取引委員会は上場企業に義務づけている四半期ごとの決算報告について、半年ごとの報告を企業が選択できるようにする制度の改正案を公表しました。企業側の負担を軽くするなどのねらいがありますが、投資家からは情報開示の頻度が減ることへの懸念も出ています。",
-      "published": "Wed, 06 May 2026 12:43:41 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260507/k10015115611000.html",
+      "title": "独BMW 米関税“現在の水準のまま”とみて業績見通し据え置き",
+      "article": "ドイツの自動車大手BMWのことし3月までの3か月の決算は、中国での販売の落ち込みなどから、最終的な利益は23％余り減少しました。一方、アメリカのトランプ大統領はEU＝ヨーロッパ連合から輸入する自動車への関税率を引き上げる考えを明らかにしましたが、BMW側は「関税は現在の水準にとどまる」という見方を示し、ことしの業績の見通しを据え置きました。",
+      "fp": "独bmw 米関税“現在の水準のまま”とみて業績見通し据え置き ドイツの自動車大手bmwのことし3月までの3か月の決算は、中国での販売の落ち込みなどから、最終的な利益は23％余り減少しました。一方、アメリカのトランプ大統領はeu＝ヨーロッパ連合から輸入する自動車への関税率を引き上げる考えを明らかにしましたが、bmw側は「関税は現在の水準にとどまる」という見方を示し、ことしの業績の見通しを据え置きました。",
+      "published": "Thu, 07 May 2026 07:54:25 +0900"
     },
     {
-      "link": "http://www3.nhk.or.jp/news/html/20260506/k10015115021000.html",
-      "title": "G7貿易相会合 日本は多角的貿易体制の重要性訴える方針",
-      "article": "G7＝主要7か国の貿易相会合が6日、フランスで開かれます。イラン情勢の緊張が続く中、日本としてはアジアで生産される製品の供給が滞れば、世界経済全体に影響が広がるおそれがあるとして、多角的貿易体制の重要性を訴えていく方針です。",
-      "fp": "g7貿易相会合 日本は多角的貿易体制の重要性訴える方針 g7＝主要7か国の貿易相会合が6日、フランスで開かれます。イラン情勢の緊張が続く中、日本としてはアジアで生産される製品の供給が滞れば、世界経済全体に影響が広がるおそれがあるとして、多角的貿易体制の重要性を訴えていく方針です。",
-      "published": "Wed, 06 May 2026 05:03:41 +0900"
+      "link": "http://www3.nhk.or.jp/news/html/20260507/k10015115451000.html",
+      "title": "“空飛ぶクルマ 来年以降商用化” 官民協議会がロードマップ",
+      "article": "大阪・関西万博でも大きな注目を集めた「空飛ぶクルマ」について、官民で作る協議会は、実用化に向けたロードマップを改訂し、国内での商用運航を来年2027年から再来年2028年に一部地域で始めるという目標を明確にしました。実用化に向けて、利用者の安全を確保しながら、利便性をどう高めていくかが課題になります。",
+      "fp": "“空飛ぶクルマ 来年以降商用化” 官民協議会がロードマップ 大阪・関西万博でも大きな注目を集めた「空飛ぶクルマ」について、官民で作る協議会は、実用化に向けたロードマップを改訂し、国内での商用運航を来年2027年から再来年2028年に一部地域で始めるという目標を明確にしました。実用化に向けて、利用者の安全を確保しながら、利便性をどう高めていくかが課題になります。",
+      "published": "Thu, 07 May 2026 04:51:48 +0900"
     }
   ]
 }

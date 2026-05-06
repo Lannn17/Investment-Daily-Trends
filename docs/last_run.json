@@ -1,22 +1,22 @@
 {
   "links": [
-    "http://www3.nhk.or.jp/news/html/20260506/k10015115351000.html",
-    "https://finance.yahoo.com/news/oil-prices-little-changed-ceasefire-231239399.html",
-    "http://www3.nhk.or.jp/news/html/20260506/k10015115311000.html",
-    "https://www.investors.com/news/technology/amd-stock-soars-chipmaker-defies-skeptics/?src=A00220&yptr=yahoo",
-    "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-deal-amd-stock/?src=A00220&yptr=yahoo",
-    "http://www3.nhk.or.jp/news/html/20260506/k10015115581000.html",
-    "https://finance.yahoo.com/markets/stocks/live/stock-market-today-nasdaq-sp-500-dow-gain-on-rising-hopes-for-iran-peace-upbeat-tech-earnings-231128773.html",
-    "https://finance.yahoo.com/economy/policy/article/st-louis-feds-musalem-more-worried-about-inflation-than-jobs-now-sees-holding-rates-for-some-time-151347167.html"
+    "https://www.cnbc.com/2026/05/06/amd-lisa-su-stock-forecast-earnings.html",
+    "http://www3.nhk.or.jp/news/html/20260507/k10015115631000.html",
+    "https://www.cnbc.com/2026/05/06/oil-prices-trump-pauses-strait-of-hormuz-escort-effort.html",
+    "https://www.cnbc.com/2026/05/06/doordash-dash-earnings-q1-2026.html",
+    "https://www.cnbc.com/2026/05/06/apollo-ceo-rowan-market-correction-rival-insurers.html",
+    "http://www3.nhk.or.jp/news/html/20260506/k10015115201000.html",
+    "https://www.cnbc.com/2026/05/06/iran-war-jet-fuel-europe-asia-summer-flights.html",
+    "http://www3.nhk.or.jp/news/html/20260506/k10015115261000.html"
   ],
   "fingerprints": [
-    "st louis fed的musalem（穆萨勒姆）目前比起就业更担心通胀，认为利率将维持“一段时间” st louis fed's musalem more worried about inflation than jobs now, sees holding rates for 'some time'",
-    "今日股市：受伊朗和平希望升温及科技股财报表现强劲提振，nasdaq、s&p 500和dow上涨 stock market today: nasdaq, s&p 500, dow gain on rising hopes for iran peace, upbeat tech earnings",
-    "今日股市：受美伊达成协议的希望推动，dow高歌猛进；lumentum股价下滑（实时报道） stock market today: dow charges higher on u.s.-iran deal hopes; lumentum slides (live coverage)",
-    "amd用看涨报告证明了怀疑者是错误的，股价飙升 amd proves skeptics wrong. stock soars on bullish report.",
-    "据巴基斯坦消息人士称美国与伊朗接近达成框架性和平协议，油价随之下滑 oil slides after pakistani source says us and iran are close to framework peace deal",
-    "日元汇率急剧升值，一度达到1美元兑155日元水平，市场出现再次干预的预测 6日の外国為替市場では、午後に入って急速に円高が進む場面があり、円相場は一時、1ドル＝155円台前半まで値上がりしました。市場関係者からは政府・日銀による市場介入が再び行われたのではないかとの見方も出ています。",
-    "纽约原油市场价格一度跌破90美元，受伊朗局势紧张缓解的预期影响 6日のニューヨーク原油市場では、イラン情勢の緊張緩和への期待感から、国際的な取り引きの指標となるwtiの先物価格が一時、1バレル＝90ドルを割り込み、88ドル台まで下落しました。",
-    "honda决定无限期冻结加拿大ev工厂计划，旨在重新评估战略 北米のev事業の見直しで巨額の損失が発生し、戦略の見直しを進めている「ホンダ」は、カナダで建設を検討しているev工場の計画について、無期限で凍結する方針を固めたことがわかりました。"
+    "伊朗战争引发航空燃油短缺风险，或将扰乱亚洲与欧洲夏季出行 oil executives have warned that the supply disruption in the middle east will soon cause actual fuel shortages in some parts of the world.",
+    "美伊两国达成结束战争协议在望，油价大跌逾7% oil prices fell sharply after axios reported that the u.s. and iran were closing in on an agreement to bring an end to the conflict.",
+    "apollo首席执行官marc rowan（罗文）警告市场将迎来回调，并抨击竞争对手保险公司的“恶劣”做法 apollo ceo marc rowan warned that markets face an elevated risk of unexpected shocks, saying he is positioning the firm defensively for an expected correction.",
+    "doordash财报强劲且订单增长指引乐观，股价大涨12% doordash is in the middle of a massive spending initiative as it builds out a new tech platform following a string of acquisitions.",
+    "amd首席执行官lisa su（苏姿丰）解释业绩预测大幅调整背后的原因，公司股价随财报发布飙升19% ceo lisa su highlighted the growing demand for central processing units, doubling her long-term forecast after strong first-quarter earnings.",
+    "ny dow上涨逾600美元，nasdaq与s&p 500指数再创历史新高 6日のニューヨーク株式市場では、アメリカとイランとの戦闘終結に向けた期待感を背景に買い注文が出て、ダウ平均株価の終値は前日から600ドル余りの値上がりとなり、5万ドルの大台に迫りました。",
+    "nissan计划削减欧洲约900名员工，英国工厂生产线将进行整合 経営再建中の日産自動車は、ヨーロッパの従業員の1割程度にあたるおよそ900人を削減することを明らかにしました。イギリスの工場で2つの生産ラインを1つに統合し、稼働率を高める方針です。",
+    "美国证券交易委员会（sec）提议将企业财报披露频率改为“半年一次” アメリカの証券取引委員会は上場企業に義務づけている四半期ごとの決算報告について、半年ごとの報告を企業が選択できるようにする制度の改正案を公表しました。企業側の負担を軽くするなどのねらいがありますが、投資家からは情報開示の頻度が減ることへの懸念も出ています。"
   ]
 }
