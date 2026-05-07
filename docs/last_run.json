@@ -1,22 +1,22 @@
 {
   "links": [
-    "http://www3.nhk.or.jp/news/html/20260507/k10015115781000.html",
-    "https://finance.yahoo.com/markets/stocks/live/stock-market-today-dow-sp-500-nasdaq-tick-up-as-crude-oil-falls-in-wait-for-iran-us-deal-update-231446182.html",
-    "https://www.investors.com/news/nuclear-stock-earnings-vistra-nuscale-energy-fuels-oklo-nano-nuclear/?src=A00220&yptr=yahoo",
-    "https://finance.yahoo.com/research/reports/ARGUS_46959_MarketOutlook_1778152943000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-    "http://www3.nhk.or.jp/news/html/20260507/k10015116121000.html",
-    "https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-hit-record-high-015244872.html",
-    "http://www3.nhk.or.jp/news/html/20260507/k10015116221000.html",
-    "https://www.investors.com/news/technology/apple-stock-notches-record-high-ahead-of-wwdc-2026/?src=A00220&yptr=yahoo"
+    "https://www.cnbc.com/2026/05/07/iran-war-hormuz-strait-ceasefire-trump.html",
+    "http://www3.nhk.or.jp/news/html/20260507/k10015116081000.html",
+    "http://www3.nhk.or.jp/news/html/20260507/k10015115711000.html",
+    "http://www3.nhk.or.jp/news/html/20260507/k10015115951000.html",
+    "https://www.marketwatch.com/story/theres-a-new-worry-keeping-treasury-yields-and-borrowing-costs-higher-d3595fe1?mod=mw_rss_topstories",
+    "https://www.cnbc.com/2026/05/07/heres-what-to-expect-from-fridays-release-of-the-april-jobs-report.html",
+    "https://www.cnbc.com/2026/05/07/whirlpool-says-iran-war-causing-recession-level-industry-decline-the-shares-are-down-20percent.html",
+    "https://www.cnbc.com/2026/05/07/iran-war-stock-market.html"
   ],
   "fingerprints": [
-    "受美伊达成和平协议预期影响，油价持续回落，股市涨跌互现 stocks mixed as oil prices continue pullback on hopes of us-iran peace deal",
-    "今日股市：受原油价格下跌及市场等待美伊协议最新消息影响，dow、s&p 500、nasdaq小幅上涨 stock market today: dow, s&p 500, nasdaq tick up as crude oil falls in wait for iran-us deal update",
-    "每日焦点：小盘股与新兴市场 daily spotlight: small-caps and emerging markets",
-    "apple股价在wwdc消息发布前创下历史新高 apple stock notches record high ahead of wwdc news",
-    "s&p 500核能概念股vistra受财报提振突破关键价位 s&p 500 nuclear play vistra pops above key level on earnings",
-    "政府・日銀（日本银行）分析认为存在追加4万亿日元规模市场干预的可能性 4月30日に政府・日銀が市場介入に踏み切った外国為替市場では、その後も急激に円高が進む場面があり、民間の金融仲介会社は、日銀の統計から5月1日から6日の間で4兆円規模の市場介入が行われた可能性があると分析しています。",
-    "日元汇率对美元升值，市场对干预的警惕感持续 円相場 ドルに対して値上がり 市場介入への警戒感続く",
-    "三村淳（みむらあつし）财务官未明确说明连休期间日元急升是否为干预所致，并对投机行为进行牵制 外国為替市場で連休中、円相場が急激に円高方向に動く場面があったことについて、財務省の三村財務官は7日朝、記者団の取材に対し「特にコメントする必要はない」と述べ、政府・日銀が市場介入を実施したかどうか明言を避けたうえで、投機的な動きはなお続いているとして市場をけん制しました。"
+    "以下是周五发布的4月就业报告值得期待的看点 the total picture is one of a labor market that, while undoubtedly cooling, is generally stable and resilient despite a number of challenges.",
+    "美国与伊朗在霍尔木兹海峡交火；双方均声称对方先行开火 centcom's statement does not mention the status of the u.s.-iran ceasefire, which has already been frayed by repeated claims that its terms are being breached.",
+    "伊朗战争引发的市场恐慌为投资者带来一线生机 market volatility offers investors a good time to reexamine if their stock allocations align well with their risk tolerance.",
+    "whirlpool称伊朗战争导致“行业陷入衰退水平的下滑”，股价下跌12% \"war in iran resulted in recession-level industry decline in the u.s. as consumer confidence collapsed in late february and march,\" the company said.",
+    "一项新的担忧正导致美国国债收益率和借贷成本持续走高 oil, the iran war and inflation risks are putting a new floor under longer-duration treasury yields",
+    "日经平均指数收盘首次突破62000日元大关，刷新历史最高纪录，单日涨幅超3300日元创历史最大 連休明けの7日の東京株式市場、イラン情勢をめぐる緊張緩和への期待などを背景に買い注文が広がり、日経平均株価は初めて6万2000円台で取り引きを終え、最高値を更新しました。また株価の上昇幅は3300円を超え、終値としてこれまでで最大となりました。",
+    "日本央行3月会议纪要显示伊朗局势引发物价上涨风险，市场对加速加息的预期增强 日銀は、政策金利の据え置きを決めたことし3月の金融政策決定会合の議事要旨を7日、公表しました。会合はイランへの軍事作戦が始まって3週間ほどで開かれましたが、物価上昇が一段と進むリスクが指摘されていたほか、利上げを加速させる必要性を意識すべきだといった意見も出ていました。",
+    "mitsubishi ufj与google达成合作，将利用ai技术构建下一代金融基础设施 大手金融グループの三菱ufjフィナンシャル・グループはアメリカのit大手、グーグルと個人向け金融の分野で提携すると発表しました。決済や資産運用に買い物支援など金融以外のサービスを組み合わせた次世代の金融インフラづくりを目指すとしています。"
   ]
 }
